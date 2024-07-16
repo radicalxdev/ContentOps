@@ -1,0 +1,276 @@
+tasks:
+  - name: "Introduction & Overview"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Welcome to the Expedition on code documentation and analysis!"
+            - type: "text"
+              content: "In this expedition, you will apply the skills you acquired from the three previous missions to create comprehensive documentation for an existing codebase. You will focus on generating detailed code explanationsand inline comments, project documentation for the Alfred AI project."
+            - type: "text"
+              content: "We'll be using the branch, `add/tickets` in the Alfred AI project management repository. If you need the link again, you can find it here: https://github.com/alfred-ai-co/w2-python-code-generation-and-completion/tree/main/app. Let's get started!"
+        edges:
+          - text: "Ready to start!"
+            target_node_id: "node_1"
+      - id: node_1
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Awesome! Let me give you an overview of the expedition and the scenario."
+            - type: "text"
+              content: "Suppose a coworker had recently pushed some code into a new feature branch, `add/tickets`. Unfortunately, they left little comments in the code and reviewing their commit messages didn't get you very far. You're tasked with generating documentation for the new feature branch so the team, both technical and non technical, can understand the code better."
+            - type: "text"
+              content: "We'll worry about giving feedback to your coworker later. For now, we'll add the documentation and finally make a pull request to merge the feature branch into the main branch. Let's get started!"
+        edges:
+          - text: "Got it!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "As an overview of the tasks, we'll be doing these things:"
+            - type: "text"
+              content: "1. Generative AI to understand the feature branch.\n 2. Create a README file for the database schema.\n 3. Create inline documentation for the changed methods.\n 4. Extend the root folder's README file for the new feature.\n 5. Commit changes and make a Pull Request for review."
+            - type: "text"
+              content: "This expedition will enhance your skills in using GitHub Copilot Chat for documentation and code understanding, making you more efficient in handling complex codebases. If you have any questions, please reach out to me. I'll also inform you when to make a pull request and how to do so."
+            - type: "text"
+              content: "When you're ready, let's start with the first task breakdown."
+  - name: "Project Understanding and Explanation"
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "It's always a good idea to start with a high-level explanation of the project. Let's do that now."
+            - type: "text"
+              content: "First, switch to the latest feature branch, the `add/tickets` branch. You can use the command `git checkout add/tickets` to switch to the branch. In case your coworker made any new changes, it's also wise to pull the latest changes from the remote repository with the command `git pull origin add/tickets`."
+            - type: "text"
+              content: "Second, use Github Copilot chat to generate explanations for the project and specific files such as `tickets.py`"
+            - type: "text"
+              content: "Once you're done, let me know! I'll ask you a short question about the new tickets feature."
+        edges:
+          - text: "I have an understanding of the project"
+            target_node_id: "node_1"
+      - id: node_1
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Cool! First question is which of these fields are required to create a new ticket?"
+        edges:
+          - text: "project_id"
+            target_node_id: "node_2a"
+          - text: "description"
+            target_node_id: "node_2b"
+      - id: node_2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Yes, project_id is required as noted in the `app/api_models/tickets.py` file! Good work. Let's go to the next question."
+        edges:
+          - text: "Ready to go"
+            target_node_id: "node_3"
+      - id: node_2b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "No, description isn't required but rather it is made optional by the type hint. Let's go to the next question."
+        edges:
+          - text: "Ready to go"
+            target_node_id: "node_3"
+      - id: node_3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Second quick question: What is the key relationship between the tickets and projects?"
+        edges:
+          - text: "Each Project can have many Tickets and each Ticket belongs to a Project. A one to many relationship."
+            target_node_id: "node_4a"
+          - text: "Each Project can only have one Ticket. A one to one relationship."
+            target_node_id: "node_4b"
+      - id: node_4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Yes, each Project can have many Tickets and each Ticket belongs to a Project. Good work."
+        edges:
+          - text: "Ready to go"
+            target_node_id: "END"
+      - id: node_4b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Actually, a project can have multiple tickets. This is because nn the base.py file, a Project and a Ticket have a one-to-many relationship. This means a single Project can have multiple Tickets associated with it, but each Ticket can only belong to one Project. This relationship is established using SQLAlchemy's relationship function and is enforced in the database through a foreign key from Ticket to Project. "
+        edges:
+          - text: "Ready to go"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Now, let's move on to the next task!"
+  - name: "Generate a README.md file for the database schema"
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this task, we need to create a README.md file for the database schema in app/db_models. Let's do that now."
+            - type: "text"
+              content: "- Document the module’s related files\n - Document the Database Fields among `Projects` and `Tickets` such as all related columns, fields, and types.\n - Document the relationships between `Projects` and `Tickets` such as any foreign keys"
+            - type: "text"
+              content: "You can use copilot to generate a README.md file for the database schema and place it within the `app/db_models` folder. This README.md file will be used to document the database schema's relationships and fields."
+        edges:
+          - text: "Generated and placed the README.md file"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Awesome, we should be able to refer to that README.md file to understand the database schema without having to look at the code. Let's move on to the next task!"
+  - name: "Generate inline documentation for the CRUD operations"
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this task, include function documentation such as required parameters and outputs with their respective types. One way to do this is to use the inline chat feature with GitHub Copilot Chat."
+            - type: "text"
+              content: "Head to the `app/db_models/crud.py` file and generate inline documentation for all of the CRUD operations. This should include the new tickets feature, but also any undocumented functions as well. This should give us information about the function's inputs and outputs."
+            - type: "text"
+              content: "Once you're done, let me know!"
+        edges:
+          - text: "Generated documentation"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
+  - name: "Generate inline documentation for the API Routes"
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Your team member forgot to include type annotations, use the existing app/api/routes/projects.py file and the documentation on the database schema you prepared to add type annotations. These should always be added for best practices!"
+            - type: "text"
+              content: "In this task, include type annotations and function documentation such as required parameters and outputs with their respective types. One way to do this is to use the inline chat feature with GitHub Copilot Chat like we did in the previous task."
+            - type: "text"
+              content: "Let's do this for both the `app/api/routes/projects.py` file and `app/api/routes/tickets.py` file. Here is an example of what should change, notice how there isn't any type hinting for the `create_ticket` function."
+            - type: "text"
+              content: |
+                ```
+                @router.post('', response_model=TicketResponse)
+                async def create_ticket(ticket, db = Depends(get_db)):
+                    db_ticket = crud.create_ticket(db, ticket.project_id, ticket.title, ticket.description, ticket.status, ticket.priority)
+                    return db_ticket
+                ```
+            - type: "text"
+              content: "Once you're done, let me know!"
+        edges:
+          - text: "Added types and documentation"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
+  - name: "Extend the root folder README.md file for the new Tickets feature"
+    id: "6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Given the existing table for the projects feature, be sure to fully document the tickets feature within the README file such as the endpoint’s operations, HTTP method, and the URL. There already exists a README.md file in the root folder, so you can add the tickets feature to the existing README.md file."
+            - type: "text"
+              content: "Previously, the team already wrote a section about the `projects` feature, so you can add the `tickets` feature right underneath it."
+            - type: "text"
+              content: "Use Github Copilot to not only update the README.md file, but also add any relevant documentation for the tickets feature."
+            - type: "text"
+              content: "Once you're done, let me know!"
+        edges:
+          - text: "Extended README file"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Great, let's move on to the final task!"
+  - name: "Commit and make Pull Request"
+    id: "7"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Now that we are done, commit your changes by using the command, `git commit -m 'Your commit message'` and push your changes to GitHub by using the command, `git push`. Be sure to include in your commit message, what files were changed and what changes were made."
+            - type: "text"
+              content: "Then, create a pull request for the feature branch to merge into the `main` branch so I can review your changes. You will have to name your pull request as `Task - 7 <FEATURE>`. I will review your pull request and provide feedback!"
+        edges:
+          - text: "Submitted Pull Request!"
+            target_node_id: "pr_review"
+      - id: pr_review
+        type: pr_feedback
+        body:
+          parts:
+            - type: "text"
+              content: "Cool! Give me a minute to read your PR..."
+            - type: conditional
+              condition: 
+                func: "handle_action"
+                args: ['pr_feedback', 'Search PR for extensive documentation on the new `Tickets` feature where routes, functions, and database operations are documented. There must exist a README.md file in the root folder that includes the `Tickets` feature. There must exist a README file in the `app/db_models` folder detailing the database schema such as the relationship between the `Projects` and `Tickets` tables.']
+              status: 
+                - type: "success"
+                  content: "PR Reviewed successfully!"
+                - type: "no_matches"
+                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR."
+                  extra_edges:
+                    - text: "Retry PR"
+                      target_node_id: "pr_review"
+                - type: "error"
+                  content: "Seems to be an error. Please try again later."
+                  extra_edges:
+                    - text: "Retry PR"
+                      target_node_id: "pr_review"
+            - type: "text"
+              content: "Ready to go? Let's move on"
+        edges:
+          - text: "I am good to go, let's move on"
+            target_node_id: "END"
+          - text: "Resubmitted PR, please check again"
+            target_node_id: "pr_review"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Great! We've completed the expedition! We added much needed documentation to the new `Tickets` feature using Generative AI where now the team can easily understand the code better."
+            - type: "text"
+              content: "Hopefully, this gave you insights as to how GitHub Copilot can help you document your code efficiently and improve communication across teams."
