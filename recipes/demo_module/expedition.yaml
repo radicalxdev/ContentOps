@@ -245,7 +245,7 @@ tasks:
             - type: conditional
               condition: 
                 func: "handle_action"
-                args: ['pr_feedback', 'Search PR for extensive documentation on the new `Tickets` feature where routes, functions, and database operations are documented. There must exist a README.md file in the root folder that includes the `Tickets` feature. There must exist a README file in the `app/db_models` folder detailing the database schema such as the relationship between the `Projects` and `Tickets` tables.']
+                args: ['pr_feedback', 'Search PR for extensive documentation on the new `Tickets` feature where routes, functions, and database operations are documented. There must exist a README.md file in the root folder that includes the `Tickets` feature. There must exist a README file in the `app/db_models` folder detailing the database schema such as the relationship between the `Projects` and `Tickets` tables.', 'f0WtZD7ZIU9QMo8ZnOx6']
               status: 
                 - type: "success"
                   content: "PR Reviewed successfully!"

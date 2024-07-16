@@ -1,0 +1,57 @@
+tasks:
+  - name: "Test out Eval Nodes"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here we are testing the Eval Nodes"
+            - type: "text"
+              content: "Choose Next"
+        edges:
+          - text: "Next"
+            target_node_id: "EVAL"
+      - id: EVAL
+        type: knowledge_eval
+        body:
+          parts:
+            - type: "question"
+              question: "What is the primary benefit of using GitHub Copilot Chat for generating inline code documentation?"
+              choice_values:  ["It writes the entire code for you.", "It helps create a more readable and maintainable codebase.", "It automatically fixes all code errors.", "It provides a user interface for project management."]
+              answers:  ["b"]
+              hint: "Not really. The primary benefit of using GitHub Copilot Chat for generating inline code documentation is that it helps create a more readable and maintainable codebase. Proper documentation makes it easier for other developers to understand and work with the code. Therefore, the correct answer is B."
+            - type: "question"
+              question: "Which command do you use in the Chat view to generate documentation for the entire workspace?"
+              choice_values:  ["@workspace /describe #file", "@workspace document this project", "@workspace /explain", "@workspace /doc"]
+              answers:  ["b"]
+              hint: "Not quite. The correct command is `@workspace document this project`. This command is used to generate documentation for the entire workspace in the Chat view, helping to create comprehensive project documentation."
+            - type: "question"
+              question: "How can you generate inline documentation for a selected block of code using GitHub Copilot Chat?"
+              choice_values:  ["Right-click the code block and select 'Generate Docs'.", "Type /doc in the Chat view.", "Use the command @workspace /describe #file.", "Select the code block and press Ctrl + D."]
+              answers:  ["a"]
+              hint: "That's not correct. You can generate inline documentation for a selected block of code by right-clicking the code block and selecting "Generate Docs." This helps create detailed and context-specific comments for your code."
+            - type: "question"
+              question: "What should you always do after generating documentation with GitHub Copilot Chat?"
+              choice_values:  ["Immediately push the changes to the main branch.", "Review the documentation for accuracy and completeness.", "Share the documentation with your team.", "Delete the auto-generated comments."]
+              answers:  ["b"]
+              hint: "Not exactly. You should always review the documentation for accuracy and completeness after generating it with GitHub Copilot Chat. This ensures the documentation is correct and useful for other developers."
+            - type: "text"
+              content: "Great job! You completed the quiz!"
+          metadata:
+            choice_keys: ["a", "b", "c", "d"]
+        edges:
+            - text: "Ready to move on"
+              target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                - We explored the benefits of using GitHub Copilot Chat for generating inline code documentation.
+                - We learned how to generate comprehensive project documentation and detailed code explanations.
+                - We covered the importance of reviewing and verifying the generated documentation for accuracy and completeness.
+            - type: "text"
+              content: "Up next, we'll dive in the next module where we'll explore advanced features and best practices for using Github Copilot in your development workflow. Thanks for participating!"
