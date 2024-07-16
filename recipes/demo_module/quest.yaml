@@ -1,0 +1,370 @@
+tasks:
+  - name: "Quest"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Hello! Now that we have covered how to use GitHub Copilot to develop code features and implement code improvements, let's explore how GitHub Copilot can make your documentation tasks easier and more efficient."
+            - type: "text"
+              content: "But before we dive in, I'd love to know a bit about your experience. Have you ever used GitHub Copilot before?"
+        edges:
+          - text: "Yes, I have some experience"
+            target_node_id: "screen2a"
+          - text: "No, I am new to this"
+            target_node_id: "screen2b"
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's awesome! Since you're familiar with it, you'll find some advanced tips and best practices to level up your usage. It's a great tool for making your code more readable and maintainable."
+            - type: "text"
+              content: "Let's dive in and see how GitHub Copilot can enhance your documentation workflow."
+        edges:
+          - text: "What does this module involve?"
+            target_node_id: "screen3"
+          - text: "Let's get started"
+            target_node_id: "screen3"
+      - id: screen2b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "No worries! We'll take it step-by-step to get you up to speed. You'll find it helpful and easy to use."
+            - type: "text"
+              content: "- Let's dive in and see how GitHub Copilot can enhance your documentation workflow. If you haven't already, make sure you have Visual Studio Code (VSCode) and the GitHub Copilot with Chat extensions installed."
+        edges:
+          - text: "I've set up my environment"
+            target_node_id: "screen3"
+          - text: "Let's get started"
+            target_node_id: "screen3"
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's get started! Here's what we'll cover in this unit: "
+            - type: "text"
+              content: |
+                - Introduction to Github Copilot's Documentation Features
+                - Benefits of Using Github Copilot
+                - Best practices for effective documentation with github copilot
+                - Use cases for github copilot chat
+            - type: "text"
+              content: "This module will allow you to explore different GitHub features for documentation so that you are ready to incorporate this into your documentation workflow. Are you ready to dive in?"
+        edges:
+          - text: "Sounds good, let's dive in!"
+            target_node_id: "screen4"
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot enhances your documentation by providing context-aware suggestions, saving time and effort, integrating code snippets and examples, and ensuring contextual relevance."
+            - type: "text"
+              content: "For instance, when you're writing a README file, Copilot can suggest comprehensive sections and examples based on your project's code and structure."
+            - type: "text"
+              content: "It also helps with language assistance, making it easier for non-native English writers to create clear and professional documentation."
+            - type: "text"
+              content: "Additionally, Copilot can suggest useful links to official documentation and provide shortcuts to enhance workflow efficiency."
+        edges:
+          - text: "Dive into Context-Aware Suggestions, Ada!"
+            target_node_id: "screen5"
+          - text: "Show me more benefits, Ada!"
+            target_node_id: "screen6"
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "One of the key benefits of GitHub Copilot is its context-aware suggestions. It understands the structure of your project and provides relevant documentation and code snippets."
+            - type: "text"
+              content: "For example, in a multi-environment deployment scenario, Copilot can suggest environment-specific resource names, ensuring consistency and accuracy."
+            - type: "text"
+              content: "This adaptability helps you maintain a coherent and organized project, reducing the time spent on manual documentation tasks."
+        edges:
+          - text: "How does it save time and effort, Ada?"
+            target_node_id: "screen6"
+          - text: "Tell me more about integration of code snippets"
+            target_node_id: "screen7"
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot can significantly save you time and effort by drafting initial documentation for you. Imagine having a tool that understands your code and writes a comprehensive README file in minutes!"
+            - type: "text"
+              content: "Here's a side-by-side comparison of a manually written README versus one generated by Copilot. Notice how Copilot covers all essential sections quickly and accurately."
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "This not only speeds up the documentation process but also ensures that you spend less time on repetitive tasks and more on coding and development."
+        edges:
+          - text: "Show me how to integrate code snippets."
+            target_node_id: "screen7"
+          - text: "What about contextual relevance?"
+            target_node_id: "screen8"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "Another powerful feature of GitHub Copilot is its ability to seamlessly integrate code snippets and examples into your documentation."
+            - type: "text"
+              content: "For instance, when documenting a function, Copilot can automatically generate a usage example based on the function's code, making your documentation more practical and useful."
+            - type: "text"
+              content: "This not only enhances the readability of your documentation but also provides real-world examples that can help users understand how to use the code effectively."
+        edges:
+          - text: "How does it ensure contextual relevance"
+            target_node_id: "screen8"
+          - text: "Tell me about user control and flexibility"
+            target_node_id: "screen9"
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot ensures contextual relevance by adapting its suggestions based on the content and structure of your project."
+            - type: "text"
+              content: "For example, when documenting Azure services, Copilot can provide accurate resource names and descriptions that are relevant to your specific use case."
+            - type: "text"
+              content: "This helps maintain consistency and relevancy in your documentation, making it easier for users to understand and use your code."
+        edges:
+          - text: "What about user control and flexibility"
+            target_node_id: "screen9"
+          - text: "How does it help with language assistance"
+            target_node_id: "screen10"
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot provides non-disruptive suggestions, giving you full control over which suggestions to accept or ignore."
+            - type: "text"
+              content: "You can filter and accept only the most relevant suggestions, ensuring that the documentation aligns with your style and requirements."
+            - type: "text"
+              content: "This flexibility allows you to maintain the quality and accuracy of your documentation while leveraging the power of AI to enhance your workflow."
+        edges:
+          - text: "How does it assist with language and phrasing"
+            target_node_id: "screen10"
+          - text: "Show me how it links to official documentation"
+            target_node_id: "screen11"
+      - id: screen10
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot assists non-native English writers by providing clear and professional documentation suggestions."
+            - type: "text"
+              content: "For instance, if you're struggling with phrasing a complex technical explanation, Copilot can offer more readable and professional alternatives."
+            - type: "text"
+              content: "This helps ensure that your documentation is accessible and understandable to a wider audience, regardless of their language proficiency."
+        edges:
+          - text: "How does it link to official documentation"
+            target_node_id: "screen11"
+          - text: "What about efficiency with shortcuts"
+            target_node_id: "screen12"
+      - id: screen11
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot can suggest useful links to official documentation, helping you provide comprehensive resources for your users."
+              content: "For example, while describing Kubernetes integration, Copilot might suggest a link to the official Azure documentation on Kubernetes."
+            - type: "text"
+              content: "This ensures that your documentation is not only accurate but also well-supported with official references, enhancing its credibility and usefulness."
+        edges:
+          - text: "How does it link to official documentation"
+            target_node_id: "screen12"
+          - text: "What about efficiency with shortcuts"
+            target_node_id: "screen13"
+      - id: screen12
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot offers shortcuts to enhance your workflow efficiency, allowing you to navigate and synthesize suggestions quickly."
+              content: "For example, you can use shortcuts to access specific documentation sections, insert code snippets, and perform common actions with minimal effort."
+            - type: "text"
+              content: "These shortcuts save you time and streamline your documentation process, making it more efficient and productive."
+        edges:
+          - text: "Tell me about best practices for using Copilot"
+            target_node_id: "screen13"
+          - text: "What are some use cases for GitHub Copilot Chat"
+            target_node_id: "screen14"
+      - id: screen13
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "To make the most out of GitHub Copilot, it's important to maintain control and relevance in your documentation process."
+              content: "Always review and refine Copilot's suggestions to ensure they meet your standards and requirements."
+            - type: "text"
+              content: "Provide clear scope and intent when using Copilot, and utilize chat participants, slash commands, and variables to improve the quality of the generated documentation."
+        edges:
+          - text: "What are some use cases for GitHub Copilot Chat"
+            target_node_id: "screen13"
+          - text: "Show me an example of using these best practices"
+            target_node_id: "screen14"
+      - id: screen14
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot Chat can be used for various purposes, including generating workspace explanations, creating inline documentation, and generating external project documentation. For example, you can ask:"
+            - type: "text"
+              content: |
+                - @workspace Explain this project
+                - @workspace /explain Explain the dependencies of this project
+                - @workspace /explain #file:program.cs Explain how this file is used in this project
+              content: "These use cases help you quickly understand and document your code, improving overall project clarity and maintainability."
+        edges:
+          - text: "Show me an example of using these best practices"
+            target_node_id: "screen15"
+          - text: "How do I generate inline documentation"
+            target_node_id: "screen14"
+      - id: screen15
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "Let's see an example of creating context-aware documentation with GitHub Copilot."
+            - type: "text"
+              content: "We can provide context:"
+            - type: "text"
+              content: |
+                - Command: @workspace /describe #file
+                - Prompt: 'Describe the function of this file in the context of our'
+            - type: "text"
+              content: "Filter and Refine:"
+            - type: "text"
+              content: "Review Suggestions: Demonstrate how to select and refine the best suggestions."
+            - type: "text"
+              content: "Integrate Code Snippets:"
+            - type: "text"
+              content: |
+                - Command: @editor /explain #selection
+                - Prompt: 'Explain what this code snippet does and provide an example'
+        edges:
+          - text: "How do I generate inline documentation?"
+            target_node_id: "screen16"
+      - id: screen16
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "GitHub Copilot can also help you generate external project documentation, such as README files or project summaries. For example, you can ask:"
+            - type: "text"
+              content: |
+                - `@workspace Generate a project summary that can be used at an executive briefing`
+                - `@workspace Generate a README markdown document that can be used as a repo description`
+            - type: "text"
+              content: "This ensures that your project documentation is comprehensive and professionally presented."
+        edges:
+          - text: "How do I review and correct Copilot's output?"
+            target_node_id: "screen17"
+          - text: "Show me more best practices!"
+            target_node_id: "screen18"
+      - id: screen17
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "When using GitHub Copilot, it's important to review and correct its output to ensure accuracy and completeness."
+            - type: "text"
+              content: "Check for alignment with the provided code and questions, and correct any errors or inaccuracies."
+            - type: "text"
+              content: "Adding additional information or context can help provide comprehensive documentation that meets your standards"
+        edges:
+          - text: "Show me more best practices, Ada"
+            target_node_id: "screen18"
+          - text: "Let's wrap up this lesson, Ada!"
+            target_node_id: "screen19"
+      - id: screen18
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "Here are some additional best practices to help you make the most out of GitHub Copilot:"
+            - type: "text"
+              content: |
+                - **Stay in Control:** Always maintain control over the documentation process.
+                - **Review Suggestions:** Critically evaluate and refine Copilot’s suggestions.
+                - **Ask Clear Questions:** Frame questions effectively to get the best results.
+                - **Provide Ample Context:** Give comprehensive context to improve Copilot’s outputs.
+        edges:
+          - text: "Let's wrap up this lesson, Ada!"
+            target_node_id: "screen19"
+      - id: screen19
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "<URL>"
+            - type: "text"
+              content: "Outstanding work, [userName]! You've learned how to use GitHub Copilot to enhance your documentation workflows effectively."
+            - type: "text"
+              content: "We covered the importance of documentation, the benefits of using GitHub Copilot, and best practices for creating high-quality documentation."
+            - type: "text"
+              content: "Next up, you will practice generating code explanations using Github Copilot Chat! To do so, we will need to set up a GitHub repository. I'll make one for you, add you as a collaborator, and then you can start using it in the next sections!"
+        edges:
+          - text: "Begin Setup"
+            target_node_id: "github_setup"
+      - id: github_setup
+        type: github_setup
+        body:
+          parts:
+            - type: "text"
+              content: "Setting up GitHub repository..."
+            - type: conditional
+              condition: 
+                func: "handle_action"
+                args: ['github_onboard']
+              status: 
+                - type: "success"
+                  content: "GitHub setup completed successfully."
+                - type: "failure"
+                  content: "GitHub setup failed. Please try again later."
+                  extra_edges:
+                    - text: "Retry"
+                      target_node_id: "github_setup"
+            - type: "text"
+              content: "Please click on Finish to complete the test."
+        edges:
+          - text: "Finish"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Feel free to take a look at the repository for Alfred AI."
+            - type: "text"
+              content: "When you feel ready, the next lesson awaits. Just hit the button at the bottom of your screen to continue."
