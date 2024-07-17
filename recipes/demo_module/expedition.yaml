@@ -1,6 +1,6 @@
 tasks:
-  - name: "Introduction & Overview"
-    context: "This is a test for context that will be injected to the prompt"
+  - name: "Tasks Overview"
+    context: "In this tutorial segment, learners at Alfred AI are tasked with creating comprehensive documentation for Project Hermes, an advanced AI-driven customer support system. They begin by understanding the importance of documentation and breaking down the process into manageable tasks: generating project explanations using GitHub Copilot Chat, switching to the latest feature branch, creating a README.md file for the database schema, generating inline documentation for CRUD operations in the app/db_models/crud.py file, and documenting endpoints for the new Tickets feature. Finally, they commit their changes and create a pull request for review. Each step is detailed to ensure learners can navigate the codebase, improve its maintainability, and provide a clear guide for future developers."
     id: "1"
     nodes:
       - id: START
@@ -8,124 +8,159 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Welcome to the Expedition on code documentation and analysis!"
-            - type: "text"
-              content: "In this expedition, you will apply the skills you acquired from the three previous missions to create comprehensive documentation for an existing codebase. You will focus on generating detailed code explanationsand inline comments, project documentation for the Alfred AI project."
-            - type: "text"
-              content: "We'll be using the branch, `add/tickets` in the Alfred AI project management repository. If you need the link again, you can find it here: https://github.com/alfred-ai-co/w2-python-code-generation-and-completion/tree/main/app. Let's get started!"
+              content: "Welcome to your next challenge! 🌟 Imagine you're exploring a vast library of code without a guidebook. Our goal today is to create that guidebook for Project Hermes, Alfred AI's advanced AI-driven customer support system. We'll dive deep into the code and document every crucial detail to ensure that future developers can navigate it with ease. Ready to get started?"
         edges:
-          - text: "Ready to start!"
-            target_node_id: "node_1"
-      - id: node_1
+          - text: "Yes, let's get started!"
+            target_node_id: "screen2"
+          - text: "Tell me more about the importance of this task."
+            target_node_id: "screen1a"
+      - id: screen1a
         type: message
         body:
           parts:
             - type: "text"
-              content: "Awesome! Let me give you an overview of the expedition and the scenario."
-            - type: "text"
-              content: "Suppose a coworker had recently pushed some code into a new feature branch, `add/tickets`. Unfortunately, they left little comments in the code and reviewing their commit messages didn't get you very far. You're tasked with generating documentation for the new feature branch so the team, both technical and non technical, can understand the code better."
-            - type: "text"
-              content: "We'll worry about giving feedback to your coworker later. For now, we'll add the documentation and finally make a pull request to merge the feature branch into the main branch. Let's get started!"
+              content: "Comprehensive documentation is like a roadmap for developers. It ensures everyone understands the project, its purpose, and how to contribute effectively. Without it, new developers can feel lost, and even experienced ones can make mistakes. Let's dive into why this expedition is crucial and how it will benefit Project Hermes. Ready to proceed?"
         edges:
-          - text: "Got it!"
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen2"
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's break down our expedition into manageable tasks. Here's what we'll cover:"
+            - type: "text"
+              content: |
+                1. **Project Understanding and Explanation**:
+                    - Use GitHub Copilot Chat to generate explanations for the project and specific files such as `tickets.py`.
+                    - Understand the overall structure and purpose of the project.
+                2. **Switch to the latest feature branch: add/tickets**:
+                    - Use the command `git checkout add/tickets` to switch to the new branch.
+                3. **Create a README.md file for the database schema in `app/db_models`**:
+                    - Document related files, database fields, and relationships.
+                4. **Create Inline Documentation for the `app/db_models/crud.py` File**:
+                    - Include function documentation, parameters, and outputs.
+                5. **Create Inline Documentation for `app/api/routes/projects.py` and `app/api/routes/tickets.py`**:
+                    - Add type annotations and document the code.
+                6. **Extend the root folder README.md file for the new `Tickets` feature**:
+                    - Document the endpoints, operations, HTTP methods, and update the folder structure.
+                7. **Commit Changes and Create a Pull Request**:
+                    - Create a comprehensive commit message and pull request detailing the documentation added.
+        edges:
+          - text: "Got it! What's next?"
+            target_node_id: "screen3"
+          - text: "Can you explain more about one of these tasks?"
+            target_node_id: "screen2a"
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Which task would you like more details on?"
+        edges:
+          - text: "Task 1: Project Understanding and Explanation"
+            target_node_id: "screen2b"
+          - text: "Task 2: Switching Branche"
+            target_node_id: "screen2c"
+          - text: "Task 3: Creating README.md for Database Schema"
+            target_node_id: "screen2d"
+          - text: "Task 4: Creating Inline Documentation"
+            target_node_id: "screen2e"
+          - text: "Task 5: Extending README.md for Tickets Feature"
+            target_node_id: "screen2f"
+          - text: "Task 6: Committing Changes and Creating a Pull Request"
+            target_node_id: "screen2g"
+          - text: "Back to Overview"
+            target_node_id: "screen2"
+      - id: screen2b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To understand the project, we'll use GitHub Copilot Chat to generate explanations for the overall structure and specific files such as `tickets.py`. This will help us get a clear picture of the project's purpose and how different components interact. Ready to move to the next task?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen3"
+          - text: "I have another question."
+            target_node_id: "screen2a"
+      - id: screen2c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To switch to the latest feature branch that your coworker has pushed, use the following command:This will allow you to access the latest updates and work on the new tickets feature. Ready to move to the next task?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen3"
+          - text: "I have another question."
+            target_node_id: "screen2a"
+      - id: screen2d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "We'll create a README.md file for the database schema in `app/db_models`. This will include documentation for related files, database fields, and relationships. This ensures a clear understanding of the database structure and its components. Ready to move to the next task?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen3"
+          - text: "I have another question."
+            target_node_id: "screen2a"
+      - id: screen2e
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "We'll generate inline documentation for the `app/db_models/crud.py` file and all functions. This includes documenting function parameters and outputs to improve code readability and maintainability. Ready to move to the next task?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen3"
+          - text: "I have another question."
+            target_node_id: "screen2a"
+      - id: screen2f
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "We'll extend the root folder README.md file to include the new Tickets feature. This involves documenting the endpoint’s operations, HTTP methods, and updating the folder structure. Ready to move to the next task?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen3"
+          - text: "I have another question."
+            target_node_id: "screen2a"
+      - id: screen2g
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Lastly, we'll commit our changes and create a pull request against the `main` branch for review. Make sure to write a comprehensive commit message and pull request description detailing the documentation added for the ticket feature. Ready to move to the next task?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen3"
+          - text: "I have another question."
+            target_node_id: "screen2a"
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's start by understanding the overall structure and purpose of the project using GitHub Copilot Chat. This will help us get a clear picture of how different components interact and the project's goals. First, we'll generate explanations for the project and specific files such as `tickets.py`."
+            - type: "text"
+              content: "When you're all set and ready to go, let me know!"
+        edges:
+          - text: "All set and ready!"
             target_node_id: "END"
       - id: END
         type: message
         body:
           parts:
             - type: "text"
-              content: "As an overview of the tasks, we'll be doing these things:"
+              content: "Awesome! By now, you should have a general idea about the codebase and ready to contribute. Let's keep going!"
             - type: "text"
-              content: "1. Generative AI to understand the feature branch.\n 2. Create a README file for the database schema.\n 3. Create inline documentation for the changed methods.\n 4. Extend the root folder's README file for the new feature.\n 5. Commit changes and make a Pull Request for review."
+              content: "Now, let's switch to the latest feature branch where your coworker has pushed their code for the tickets feature. Use the following command in the terminal: `git checkout add/tickets`"
             - type: "text"
-              content: "This expedition will enhance your skills in using GitHub Copilot Chat for documentation and code understanding, making you more efficient in handling complex codebases. If you have any questions, please reach out to me. I'll also inform you when to make a pull request and how to do so."
-            - type: "text"
-              content: "When you're ready, let's start with the first task breakdown."
-  - name: "Project Understanding and Explanation"
-    context: "This is a test for context that will be injected to the prompt"
-    id: "2"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "It's always a good idea to start with a high-level explanation of the project. Let's do that now."
-            - type: "text"
-              content: "First, switch to the latest feature branch, the `add/tickets` branch. You can use the command `git checkout add/tickets` to switch to the branch. In case your coworker made any new changes, it's also wise to pull the latest changes from the remote repository with the command `git pull origin add/tickets`."
-            - type: "text"
-              content: "Second, use Github Copilot chat to generate explanations for the project and specific files such as `tickets.py`"
-            - type: "text"
-              content: "Once you're done, let me know! I'll ask you a short question about the new tickets feature."
-        edges:
-          - text: "I have an understanding of the project"
-            target_node_id: "node_1"
-      - id: node_1
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Cool! First question is which of these fields are required to create a new ticket?"
-        edges:
-          - text: "project_id"
-            target_node_id: "node_2a"
-          - text: "description"
-            target_node_id: "node_2b"
-      - id: node_2a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Yes, project_id is required as noted in the `app/api_models/tickets.py` file! Good work. Let's go to the next question."
-        edges:
-          - text: "Ready to go!"
-            target_node_id: "node_3"
-      - id: node_2b
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "No, description isn't required but rather it is made optional by the type hint. Let's go to the next question."
-        edges:
-          - text: "Ready to go"
-            target_node_id: "node_3"
-      - id: node_3
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Second quick question: What is the key relationship between the tickets and projects?"
-        edges:
-          - text: "Each Project can have many Tickets and each Ticket belongs to a Project. A one to many relationship."
-            target_node_id: "node_4a"
-          - text: "Each Project can only have one Ticket. A one to one relationship."
-            target_node_id: "node_4b"
-      - id: node_4a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Yes, each Project can have many Tickets and each Ticket belongs to a Project. Good work."
-        edges:
-          - text: "Ready to go."
-            target_node_id: "END"
-      - id: node_4b
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Actually, a project can have multiple tickets. This is because nn the base.py file, a Project and a Ticket have a one-to-many relationship. This means a single Project can have multiple Tickets associated with it, but each Ticket can only belong to one Project. This relationship is established using SQLAlchemy's relationship function and is enforced in the database through a foreign key from Ticket to Project. "
-        edges:
-          - text: "I'm ready"
-            target_node_id: "END"
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Now, let's move on to the next task!"
+              content: "This will allow you to access the latest updates and work on the new tickets feature."
   - name: "Generate a README.md file for the database schema"
-    context: "This is a test for context that will be injected to the prompt"
+    context: "In this task, learners are instructed to create a README.md file for the database schema within the app/db_models folder of Project Hermes. This README.md file should document the module's related files, database fields for Projects and Tickets, including all related columns, fields, and types, and the relationships between Projects and Tickets, such as any foreign keys. Learners will use GitHub Copilot to generate this README.md file, ensuring it accurately reflects the database schema's structure and relationships. This documentation will allow future developers to understand the database schema without needing to delve into the code. Once the README.md file is generated and placed in the specified folder, learners can proceed to the next task."
     id: "3"
     nodes:
       - id: START
@@ -135,7 +170,10 @@ tasks:
             - type: "text"
               content: "In this task, we need to create a README.md file for the database schema in app/db_models. Let's do that now."
             - type: "text"
-              content: "- Document the module’s related files\n - Document the Database Fields among `Projects` and `Tickets` such as all related columns, fields, and types.\n - Document the relationships between `Projects` and `Tickets` such as any foreign keys"
+              content: |
+                - Document the module's related files
+                - Document the Database Fields among `Projects` and `Tickets` such as all related columns, fields, and types.
+                - Document the relationships between `Projects` and `Tickets` such as any foreign keys
             - type: "text"
               content: "You can use copilot to generate a README.md file for the database schema and place it within the `app/db_models` folder. This README.md file will be used to document the database schema's relationships and fields."
         edges:
@@ -148,7 +186,7 @@ tasks:
             - type: "text"
               content: "Awesome, we should be able to refer to that README.md file to understand the database schema without having to look at the code. Let's move on to the next task!"
   - name: "Generate inline documentation for the CRUD operations"
-    context: "This is a test for context that will be injected to the prompt"
+    context: "In this task, learners are instructed to generate inline documentation for all CRUD operations in the app/db_models/crud.py file, including the new tickets feature and any undocumented functions. This documentation should detail the functions' inputs, required parameters, and outputs with their respective types. Learners will use the inline chat feature with GitHub Copilot Chat to accomplish this. Once the documentation is generated, it should provide clear information about each function's purpose, parameters, and return values, enhancing the understanding and maintainability of the code. After completing this task, learners can move on to the next step in the project."
     id: "4"
     nodes:
       - id: START
@@ -171,7 +209,7 @@ tasks:
             - type: "text"
               content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
   - name: "Generate inline documentation for the API Routes"
-    context: "This is a test for context that will be injected to the prompt"
+    context: "In this task, learners are instructed to add type annotations and generate inline documentation for the app/api/routes/projects.py and app/api/routes/tickets.py files. They need to include function documentation detailing required parameters and outputs with their respective types. This task emphasizes the importance of type annotations for best practices. Learners are guided to use the inline chat feature with GitHub Copilot Chat, similar to the previous task, to assist in adding type hints and documentation. An example is provided to highlight the lack of type annotations in the create_ticket function, which they need to address. This task aims to enhance the code's clarity and maintainability by ensuring all functions have proper documentation and type annotations. After completing this task, learners can proceed to the next step in the project."
     id: "5"
     nodes:
       - id: START
@@ -179,7 +217,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Your team member forgot to include type annotations, use the existing app/api/routes/projects.py file and the documentation on the database schema you prepared to add type annotations. These should always be added for best practices!"
+              content: "Your team member forgot to include type annotations, use the existing `app/api/routes/projects.py` file and the documentation on the database schema you prepared to add type annotations. These should always be added for best practices!"
             - type: "text"
               content: "In this task, include type annotations and function documentation such as required parameters and outputs with their respective types. One way to do this is to use the inline chat feature with GitHub Copilot Chat like we did in the previous task."
             - type: "text"
@@ -204,7 +242,7 @@ tasks:
             - type: "text"
               content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
   - name: "Extend the root folder README.md file for the new Tickets feature"
-    context: "This is a test for context that will be injected to the prompt"
+    context: "In this task, learners are instructed to extend the existing README.md file in the root folder to include comprehensive documentation for the new tickets feature. They need to document the endpoint's operations, HTTP methods, and URLs, similar to how the projects feature is documented. Learners are guided to use GitHub Copilot to update the README.md file and add any relevant documentation for the tickets feature. By ensuring that the tickets feature is fully documented, learners will help maintain consistency and clarity in the project's documentation, making it easier for future developers to understand and work with the codebase. Once this task is completed, they can proceed to the final task."
     id: "6"
     nodes:
       - id: START
@@ -229,7 +267,7 @@ tasks:
             - type: "text"
               content: "Great, let's move on to the final task!"
   - name: "Commit and make Pull Request"
-    context: "This is a test for context that will be injected to the prompt"
+    context: "In this task, learners are instructed to commit their changes and create a pull request to merge the feature branch into the main branch. They are guided to use the command git commit -m 'Your commit message' to commit their changes and git push to push the changes to GitHub. The commit message should include details about the changed files and the modifications made. For the pull request, learners must title it 'Task - 7 <FEATURE>' to ensure you can easily find it for review. You will then review the pull request, looking for extensive documentation on the new Tickets feature, including routes, functions, and database operations, as well as the presence of README.md files in both the root folder and the app/db_models folder detailing the database schema and relationships between tables. This final task ensures that the documentation is thoroughly reviewed and approved, enhancing the project's maintainability and clarity for future developers."
     id: "7"
     nodes:
       - id: START
@@ -250,10 +288,15 @@ tasks:
             - type: "text"
               content: "Cool! Give me a minute to read your PR..."
             - type: conditional
-              condition: 
+              condition:
                 func: "handle_action"
-                args: ['pr_feedback', 'Search PR for extensive documentation on the new `Tickets` feature where routes, functions, and database operations are documented. There must exist a README.md file in the root folder that includes the `Tickets` feature. There must exist a README file in the `app/db_models` folder detailing the database schema such as the relationship between the `Projects` and `Tickets` tables.', 'f0WtZD7ZIU9QMo8ZnOx6']
-              status: 
+                args:
+                  [
+                    "pr_feedback",
+                    "Search PR for extensive documentation on the new `Tickets` feature where routes, functions, and database operations are documented. There must exist a README.md file in the root folder that includes the `Tickets` feature. There must exist a README file in the `app/db_models` folder detailing the database schema such as the relationship between the `Projects` and `Tickets` tables.",
+                    "f0WtZD7ZIU9QMo8ZnOx6",
+                  ]
+              status:
                 - type: "success"
                   content: "PR Reviewed successfully!"
                 - type: "no_matches"

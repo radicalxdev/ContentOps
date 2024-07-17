@@ -8,333 +8,351 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Hello! Now that we have covered how to use GitHub Copilot to develop code features and implement code improvements, let's explore how GitHub Copilot can make your documentation tasks easier and more efficient."
-            - type: "text"
-              content: "But before we dive in, I'd love to know a bit about your experience. Have you ever used GitHub Copilot before?"
+              content: "Hello! Imagine you've just bought a new IKEA bookshelf with dozens of pieces and no assembly instructions. How would you feel trying to put it together on your own?"
         edges:
-          - text: "Yes, I have some experience"
+          - text: "It would be frustrating and confusing."
             target_node_id: "screen2a"
-          - text: "No, I am new to this"
+          - text: "I'd probably manage, but it would take a lot of time."
             target_node_id: "screen2b"
+          - text: "I love a challenge, I'd figure it out!"
+            target_node_id: "screen2c"
       - id: screen2a
         type: message
         body:
           parts:
             - type: "text"
-              content: "That's awesome! Since you're familiar with it, you'll find some advanced tips and best practices to level up your usage. It's a great tool for making your code more readable and maintainable."
+              content: "That's a common reaction! Just like clear assembly instructions make building IKEA furniture easier, good documentation makes working with code more manageable. However, creating effective documentation can be quite challenging. Let's take a moment to understand some common difficulties developers face. Which of these challenges do you encounter the most?"
             - type: "text"
               content: "Let's dive in and see how GitHub Copilot can enhance your documentation workflow."
         edges:
-          - text: "What does this module involve?"
+          - text: "Struggling to understand complex code"
             target_node_id: "screen3"
-          - text: "Let's get started"
+          - text: "Spending too much time documenting"
+            target_node_id: "screen3"
+          - text: "Challenges with maintaining code"
+            target_node_id: "screen3"
+          - text: "Losing crucial project knowledge"
             target_node_id: "screen3"
       - id: screen2b
         type: message
         body:
           parts:
             - type: "text"
-              content: "No worries! We'll take it step-by-step to get you up to speed. You'll find it helpful and easy to use."
-            - type: "text"
-              content: "- Let's dive in and see how GitHub Copilot can enhance your documentation workflow. If you haven't already, make sure you have Visual Studio Code (VSCode) and the GitHub Copilot with Chat extensions installed."
+              content: "That makes sense, just like tackling a complex IKEA furniture piece without instructions, it takes a lot more time. Clear documentation is like having those instructions—it saves time and effort. Yet, creating effective documentation can be challenging. Let's take a moment to understand some common difficulties developers face. Which of these challenges do you encounter the most?"
         edges:
-          - text: "I've set up my environment"
+          - text: "Struggling to understand complex code"
             target_node_id: "screen3"
-          - text: "Let's get started!"
+          - text: "Spending too much time documenting"
+            target_node_id: "screen3"
+          - text: "Challenges with maintaining code"
+            target_node_id: "screen3"
+          - text: "Losing crucial project knowledge"
+            target_node_id: "screen3"
+      - id: screen2c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's a great attitude! However, even the most complex IKEA furniture is easier to assemble with clear instructions. Similarly, good documentation makes working with code less daunting. But effective documentation is challenging. Let's take a moment to understand some common difficulties developers face. Which of these challenges do you encounter the most?"
+        edges:
+          - text: "Struggling to understand complex code"
+            target_node_id: "screen3"
+          - text: "Spending too much time documenting"
+            target_node_id: "screen3"
+          - text: "Challenges with maintaining code"
+            target_node_id: "screen3"
+          - text: "Losing crucial project knowledge"
             target_node_id: "screen3"
       - id: screen3
         type: message
         body:
           parts:
             - type: "text"
-              content: "Let's get started! Here's what we'll cover in this unit: "
+              content: "I see. Documentation is crucial for understanding and maintaining code, but it comes with its own set of challenges. Let's take a closer look at some common difficulties developers face:"
             - type: "text"
               content: |
-                - Introduction to Github Copilot's Documentation Features
-                - Benefits of Using Github Copilot
-                - Best practices for effective documentation with github copilot
-                - Use cases for github copilot chat
-            - type: "text"
-              content: "This module will allow you to explore different GitHub features for documentation so that you are ready to incorporate this into your documentation workflow. Are you ready to dive in?"
+                - **Difficulty understanding code**: Without clear documentation, developers may struggle to understand the purpose and functionality of different parts of the codebase, making it challenging to grasp complex logic or algorithms.
+                - **Increased time and effort**: Developers often spend excessive time deciphering code and understanding its behavior, which slows down development processes and delays project delivery.
+                - **Higher error rates**: Misunderstandings about how certain functions or components are intended to be used can result in errors, bugs, or unintended behavior in the software.
+                - **Difficulty in maintenance**: Without proper documentation, developers may hesitate to make changes for fear of breaking existing functionality, which can impede the software's evolution and lead to stagnation or technical debt.
+                - **Limited collaboration**: Poor documentation can hinder effective communication about the codebase, leading to misunderstandings and conflicting interpretations among team members.
+                - **Lack of transparency**: Stakeholders, such as project managers or clients, may struggle to understand the progress of a project without adequate documentation.
+                - **Suboptimal onboarding processes**: New developers joining a poorly documented project must spend more time deciphering code, slowing down their integration and productivity.
+                - **Knowledge loss**: Critical knowledge about the codebase may reside solely in the minds of individual developers, leading to valuable insights being lost if these developers leave the project or organization.
         edges:
-          - text: "Sounds good, let's dive in!"
+          - text: "Got it, what's next?"
             target_node_id: "screen4"
       - id: screen4
         type: message
         body:
           parts:
             - type: "text"
-              content: "GitHub Copilot enhances your documentation by providing context-aware suggestions, saving time and effort, integrating code snippets and examples, and ensuring contextual relevance."
+              content: "In this module, we'll explore how GitHub Copilot can streamline your documentation workflow using GitHub Copilot. Here’s what we'll cover:"
             - type: "text"
-              content: "For instance, when you're writing a README file, Copilot can suggest comprehensive sections and examples based on your project's code and structure."
+              content: |
+                - **Introduction to GitHub Copilot’s Documentation Features:** Discover how Copilot can assist you in creating top-notch documentation effortlessly.
+                - **Benefits of Using GitHub Copilot:** Learn how Copilot can save you time, enhance your workflow, and improve documentation quality.
+                - **Best Practices for Effective Documentation with GitHub Copilot:** Get tips and tricks to maximize the effectiveness of your documentation.
+                - **Use Cases for GitHub Copilot Chat:** Explore practical scenarios where Copilot can make a significant impact.
             - type: "text"
-              content: "It also helps with language assistance, making it easier for non-native English writers to create clear and professional documentation."
-            - type: "text"
-              content: "Additionally, Copilot can suggest useful links to official documentation and provide shortcuts to enhance workflow efficiency."
+              content: "Before we dive in, I'd love to know a bit about your experience. Have you ever used GitHub Copilot for documentation before?"
         edges:
-          - text: "Dive into Context-Aware Suggestions, Ada!"
-            target_node_id: "screen5"
-          - text: "Show me more benefits, Ada!"
-            target_node_id: "screen6"
-      - id: screen5
+          - text: "Yes, I have some experience."
+            target_node_id: "screen5a"
+          - text: "No, I am new to this."
+            target_node_id: "screen5b"
+      - id: screen5a
         type: message
         body:
           parts:
             - type: "text"
-              content: "One of the key benefits of GitHub Copilot is its context-aware suggestions. It understands the structure of your project and provides relevant documentation and code snippets."
-            - type: "text"
-              content: "For example, in a multi-environment deployment scenario, Copilot can suggest environment-specific resource names, ensuring consistency and accuracy."
-            - type: "text"
-              content: "This adaptability helps you maintain a coherent and organized project, reducing the time spent on manual documentation tasks."
+              content: "Fantastic! Since you're already familiar with GitHub Copilot, let's take your skills to the next level. How would you like to proceed? A quick refresher to warm up or dive straight into the advanced tips?"
         edges:
-          - text: "How does it save time and effort, Ada?"
+          - text: "Quick refresher, please!"
+            target_node_id: "screen5c"
+          - text: "Straight to the advanced tips!"
             target_node_id: "screen6"
-          - text: "Tell me more about integration of code snippets"
-            target_node_id: "screen7"
+      - id: screen5b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "No problem at all! I'm here to help you get up to speed with GitHub Copilot. You'll soon find it incredibly helpful and easy to use. I'll guide you step-by-step on how it can transform your documentation process. How would you like to start? A brief introduction to get you acquainted or an in-depth walkthrough to dive deeper?"
+        edges:
+          - text: "Brief introduction, please!"
+            target_node_id: "screen5c"
+          - text: "In-depth walkthrough, please!"
+            target_node_id: "screen6"
+      - id: screen5c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure thing! GitHub Copilot is an AI-powered tool that assists in generating code, comments, and documentation. It can help you write clearer and more comprehensive documentation by suggesting relevant information based on the context of your code. This saves time and ensures consistency. Ready to dive into the details?"
+        edges:
+          - text: "Yes, let's dive in!"
+            target_node_id: "screen6"
+          - text: "I'd like more examples first."
+            target_node_id: "screen5d"
+      - id: screen5d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are some examples of how GitHub Copilot can enhance your documentation:"
+            - type: "text"  
+              content: |
+                - **Code Comments**: It can suggest comments for complex code segments, explaining their purpose and functionality.
+                - **README Files**: It helps generate comprehensive README files that provide an overview of your project.
+                - **API Documentation**: It assists in creating detailed API documentation, describing endpoints, parameters, and responses.
+                - **Error Explanations**: It can explain errors and suggest fixes, making debugging easier.
+            - type: "text"
+              content: "These features make your codebase more understandable and maintainable. Ready to move on?"
+        edges:
+          - text: "Yes, let's get going!"
+            target_node_id: "screen6"
       - id: screen6
         type: message
         body:
           parts:
             - type: "text"
-              content: "GitHub Copilot can significantly save you time and effort by drafting initial documentation for you. Imagine having a tool that understands your code and writes a comprehensive README file in minutes!"
+              content: "Great! GitHub Copilot Chat can be used at various points in the development process to help developers generate documentation. When working with unfamiliar or poorly documented code, GitHub Copilot Chat can explain selected code blocks or files. These explanations are also useful for nontechnical stakeholders who need to understand how the code works. Let's explore the features available in Visual Studio Code:"
             - type: "text"
-              content: "Here's a side-by-side comparison of a manually written README versus one generated by Copilot. Notice how Copilot covers all essential sections quickly and accurately."
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
+              content: |
+                - **Inline Chat**: Start an inline chat conversation directly from the editor for help while you're coding.
+                - **Chat View**: Have an AI assistant on the side to help you at any time.
+                - **Quick Chat**: Ask a quick question and get back into what you're doing.
+                - **Smart Actions**: Run smart actions to complete certain tasks without even having to write a prompt.
             - type: "text"
-              content: "This not only speeds up the documentation process but also ensures that you spend less time on repetitive tasks and more on coding and development."
+              content: "These features enable you to ask questions and get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. The `Explain This` and `Generate Docs` smart actions allow you to generate explanations and documentation for your code with just a few clicks. To get the highest-quality response, it is essential to ask the right questions."
         edges:
-          - text: "Show me how to integrate code snippets."
+          - text: "How do I optimise my questions for the best responses?"
             target_node_id: "screen7"
-          - text: "What about contextual relevance?"
-            target_node_id: "screen8"
       - id: screen7
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "Another powerful feature of GitHub Copilot is its ability to seamlessly integrate code snippets and examples into your documentation."
+              content: "To get the best results from GitHub Copilot Chat, it's important to provide questions that include a clear scope and intent. You can use chat participants, slash commands, and chat variables to supplement the natural language text in your questions. The context and intent provided by these specialized descriptors help GitHub Copilot Chat generate more accurate and useful responses.\nWhen writing questions or prompts for Github Copilot Chat, consider the following tips:"
             - type: "text"
-              content: "For instance, when documenting a function, Copilot can automatically generate a usage example based on the function's code, making your documentation more practical and useful."
+              content: |
+                - **Chat participants**: Use participants like `@workspace` or `@terminal` to help GitHub Copilot Chat understand the larger context of your question.
+                - **Slash commands**: Use commands like `/explain` to indicate the intent of your question.
+                - **Chat variables**: Use variables like `#file` or `#editor` to specify where GitHub Copilot Chat can find specific information related to your question.
             - type: "text"
-              content: "This not only enhances the readability of your documentation but also provides real-world examples that can help users understand how to use the code effectively."
+              content: "For example, you can use @workspace to indicate that the context is your workspace files, /explain to request an explanation, and #file, #editor, or #selection to focus on a specific area of interest. Not every question requires a combination of these descriptors, but using them appropriately can help GitHub Copilot Chat to generate the intended response. "
+            - type: "text"
+              content: "GitHub Copilot Chat can also be used to generate code explanations."
         edges:
-          - text: "How does it ensure contextual relevance"
+          - text: "Tell me more about Code Explanations with GitHub Copilot Chat."
             target_node_id: "screen8"
-          - text: "Tell me about user control and flexibility"
-            target_node_id: "screen9"
       - id: screen8
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "GitHub Copilot ensures contextual relevance by adapting its suggestions based on the content and structure of your project."
-            - type: "text"
-              content: "For example, when documenting Azure services, Copilot can provide accurate resource names and descriptions that are relevant to your specific use case."
-            - type: "text"
-              content: "This helps maintain consistency and relevancy in your documentation, making it easier for users to understand and use your code."
+              content: "Generating explanations can be incredibly useful when you encounter complex or unfamiliar code and need to understand how it works. GitHub Copilot Chat can generate detailed natural language descriptions of selected code blocks, files, or even entire workspaces. These explanations help you grasp the purpose and behavior of the code, making it easier to work with and maintain."
         edges:
-          - text: "What about user control and flexibility"
+          - text: "How do I use Copilot Chat to generate explanations?"
+            target_node_id: "screen8a"
+      - id: screen8a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot Chat helps explain selected code by generating natural language descriptions of the code's functionality and purpose. For example, if you select the method of a class, GitHub Copilot Chat can generate an explanation that describes what the method does and how to implement it, including:"
+            - type: "text"
+              content: |
+                - **Input parameters and return values**: Details about what inputs the method accepts and what it returns.
+                - **Dependencies**: Information about any other parts of the code the method relies on.
+                - **Purpose**: The role the method plays in the larger application.
+        edges:
+          - text: "What are the ways to generate explanations?"
+            target_node_id: "screen8b"
+      - id: screen8b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "There are several ways to generate an explanation of selected code using GitHub Copilot Chat:"
+            - type: "text"
+              content: |
+                1. **Inline chat**: Select the code in the editor and use `/explain` in your prompt.
+                2. **Explain This smart action**: Use the smart action to generate an explanation.
+                3. **Chat view**: Open the Chat view and use `/explain #selection` in your prompt.
+        edges:
+          - text: "How about generating explanations for a broader scope?"
+            target_node_id: "screen8c"
+      - id: screen8c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot Chat can also generate explanations that address a broader scope. For example, you can use @workspace in the chat view to generate an explanation for an entire workspace. Responses can include:"
+            - type: "text"
+              content: |
+                - **Project summary**: An overview of the project.
+                - **Purpose**: The main goals and objectives of the project.
+                - **Relevant information**: Details about the workspace that help you understand its context.
+        edges:
+          - text: "Show me some example questions."
+            target_node_id: "screen8d"
+      - id: screen8d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are some examples of questions you can ask Copilot Chat to generate explanations:"
+            - type: "text"
+              content: |
+                - **Chat view**: `@workspace Explain this project`
+                - **Chat view**: `@workspace /explain Explain the dependencies of this project`
+                - **Chat view**: `@workspace /explain #file:program.cs Explain how this file is used in the project`
+                - **Inline chat**: `/explain #selection Explain how this method works`
+                - **Inline chat**: `/explain Explain this code block`
+            - type: "text"
+              content: "Next, we will go over how to generate Documentation using GitHub Copilot Chat."
+        edges:
+          - text: "What types of Documentation can it generate?"
             target_node_id: "screen9"
-          - text: "How does it help with language assistance"
-            target_node_id: "screen10"
       - id: screen9
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "GitHub Copilot provides non-disruptive suggestions, giving you full control over which suggestions to accept or ignore."
+              content: "GitHub Copilot Chat can generate different types of documentation, each serving a specific purpose:"
             - type: "text"
-              content: "You can filter and accept only the most relevant suggestions, ensuring that the documentation aligns with your style and requirements."
-            - type: "text"
-              content: "This flexibility allows you to maintain the quality and accuracy of your documentation while leveraging the power of AI to enhance your workflow."
+              content: |
+                - **Inline Documentation**: Describes the contents of a code file, helping developers and testers understand and work on the code.
+                - **External Project Documentation**: Provides an overview of the project for executive stakeholders, project managers, end users, and developers.
+                Generating documentation with GitHub Copilot Chat is easy and efficient. Let's explore how it works!
         edges:
-          - text: "How does it assist with language and phrasing"
+          - text: "How do I generate inline documentation?"
             target_node_id: "screen10"
-          - text: "Show me how it links to official documentation"
-            target_node_id: "screen11"
       - id: screen10
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "GitHub Copilot assists non-native English writers by providing clear and professional documentation suggestions."
+              content: "Good inline documentation improves the readability and maintainability of a codebase, making it easier for developers to understand and work with. Writing inline documentation can be time-consuming, especially for complex codebases. GitHub Copilot Chat can help by generating inline documentation quickly and accurately."
             - type: "text"
-              content: "For instance, if you're struggling with phrasing a complex technical explanation, Copilot can offer more readable and professional alternatives."
+              content: "Here are some ways to generate inline documentation using GitHub Copilot Chat:"
             - type: "text"
-              content: "This helps ensure that your documentation is accessible and understandable to a wider audience, regardless of their language proficiency."
+              content: |
+                1. **Natural Language Prompt**: Construct a natural language prompt to generate the desired documentation.
+                2. **Inline Chat Command**: Enter the `/doc` command in the inline chat to generate comments describing the selected code.
+                3. **Generate Docs Smart Action**: Use the smart action to generate comments describing the selected code.
+                GitHub Copilot Chat generates inline documentation that explains the code’s functionality and purpose, saving you valuable time.
         edges:
-          - text: "How does it link to official documentation"
+          - text: "How about generating external documentation?"
             target_node_id: "screen11"
-          - text: "What about efficiency with shortcuts"
-            target_node_id: "screen12"
       - id: screen11
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "GitHub Copilot can suggest useful links to official documentation, helping you provide comprehensive resources for your users."
-              content: "For example, while describing Kubernetes integration, Copilot might suggest a link to the official Azure documentation on Kubernetes."
+              content: "External project documentation provides a high-level overview of the project, helping stakeholders understand its scope and goals. Using GitHub Copilot Chat, you can generate comprehensive documentation for your entire workspace."
             - type: "text"
-              content: "This ensures that your documentation is not only accurate but also well-supported with official references, enhancing its credibility and usefulness."
+              content: "To generate external project documentation, you can use the @workspace participant followed by a natural language description. This can include summaries, purposes, and other relevant information."
+              content: "Here are some example prompts that help create a high-level overview that aids developers and stakeholders in understanding the project's goals and structure."
+            - type: "text"
+              content: |
+                - `@workspace Generate a project summary that can be used at an executive briefing`
+                - `@workspace Generate a readme markdown document that can be used as a repo description`
         edges:
-          - text: "How does it link to official documentation"
+          - text: "What are the benefits of using GitHub Copilot for documentation?"
             target_node_id: "screen12"
-          - text: "What about efficiency with shortcuts"
-            target_node_id: "screen13"
       - id: screen12
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "GitHub Copilot offers shortcuts to enhance your workflow efficiency, allowing you to navigate and synthesize suggestions quickly."
-              content: "For example, you can use shortcuts to access specific documentation sections, insert code snippets, and perform common actions with minimal effort."
+              content: "Using GitHub Copilot for documentation offers several key benefits that can enhance your workflow. Let's explore them:"
             - type: "text"
-              content: "These shortcuts save you time and streamline your documentation process, making it more efficient and productive."
+              content: |
+                1. **Context-Aware Suggestions**: Adapts to project architectures for consistent and accurate suggestions.
+                2. **Time and Effort Saving**: Drafts documentation quickly and efficiently, saving time.
+                3. **Code Snippets Integration**: Embeds code snippets seamlessly, enhancing practicality.
+                4. **Contextual Relevance**: Ensures consistency and relevancy by adapting to content.
+                5. **User Control and Flexibility**: Allows full control over suggestions, maintaining quality and accuracy.
+                6. **Language Assistance**: Helps non-native English writers craft clear, professional documentation.
+                7. **Linking to Official Documentation**: Suggests useful links, enhancing credibility.
+                8. **Efficiency with Shortcuts**: Enhances workflow efficiency with shortcuts, speeding up navigation and synthesis.
+            - type: "text"
+              content: "By leveraging these benefits, you can improve your documentation process and overall project quality. However, it is important to review and correct the output that it provides you. "
         edges:
-          - text: "Tell me about best practices for using Copilot"
+          - text: "What considerations should I keep in mind when reviewing and correcting GitHub Copilot Chat's Output?"
             target_node_id: "screen13"
-          - text: "What are some use cases for GitHub Copilot Chat"
-            target_node_id: "screen14"
       - id: screen13
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "To make the most out of GitHub Copilot, it's important to maintain control and relevance in your documentation process."
-              content: "Always review and refine Copilot's suggestions to ensure they meet your standards and requirements."
+              content: "While GitHub Copilot Chat generates useful documentation, it's essential to review and correct the output to ensure its quality. Here are some key considerations:"
             - type: "text"
-              content: "Provide clear scope and intent when using Copilot, and utilize chat participants, slash commands, and variables to improve the quality of the generated documentation."
+              content: |
+                - **Check for accuracy and completeness:** Verify that the documentation accurately reflects the code and includes all necessary details.
+                - **Verify alignment with the provided code and questions:** Ensure the documentation aligns with your project's specific requirements and context.
+                - **Correct any errors or inaccuracies:** Make necessary adjustments to fix any mistakes or inaccuracies.
+                - **Add additional information or context:** Enhance the documentation with extra details or context to make it comprehensive and useful.
         edges:
-          - text: "Show me some use cases for GitHub Copilot Chat"
-            target_node_id: "screen13"
-          - text: "Show me an example of using these best practices, Ada"
+          - text: "Got it, let's move on!"
             target_node_id: "screen14"
       - id: screen14
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "GitHub Copilot Chat can be used for various purposes, including generating workspace explanations, creating inline documentation, and generating external project documentation. For example, you can ask:"
-            - type: "text"
-              content: |
-                - @workspace Explain this project
-                - @workspace /explain Explain the dependencies of this project
-                - @workspace /explain #file:program.cs Explain how this file is used in this project
-              content: "These use cases help you quickly understand and document your code, improving overall project clarity and maintainability."
+              content: "Great job! GitHub Copilot Chat offers powerful features to help you generate explanations and documentation for your code. By leveraging the inline chat, chat view, quick chat, and smart actions, you can ask questions and get help without leaving the Visual Studio Code environment. Remember to provide clear questions with appropriate chat participants, slash commands, and chat variables to generate more accurate and useful responses."
         edges:
-          - text: "Show me an example of using these best practices"
+          - text: "Got it, what part is next?"
             target_node_id: "screen15"
-          - text: "How do I generate inline documentation?"
-            target_node_id: "screen14"
       - id: screen15
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
             - type: "text"
-              content: "Let's see an example of creating context-aware documentation with GitHub Copilot."
-            - type: "text"
-              content: "We can provide context:"
-            - type: "text"
-              content: |
-                - Command: @workspace /describe #file
-                - Prompt: 'Describe the function of this file in the context of our'
-            - type: "text"
-              content: "Filter and Refine:"
-            - type: "text"
-              content: "Review Suggestions: Demonstrate how to select and refine the best suggestions."
-            - type: "text"
-              content: "Integrate Code Snippets:"
-            - type: "text"
-              content: |
-                - Command: @editor /explain #selection
-                - Prompt: 'Explain what this code snippet does and provide an example'
-        edges:
-          - text: "How do I generate inline documentation?"
-            target_node_id: "screen16"
-      - id: screen16
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
-            - type: "text"
-              content: "GitHub Copilot can also help you generate external project documentation, such as README files or project summaries. For example, you can ask:"
-            - type: "text"
-              content: |
-                - `@workspace Generate a project summary that can be used at an executive briefing`
-                - `@workspace Generate a README markdown document that can be used as a repo description`
-            - type: "text"
-              content: "This ensures that your project documentation is comprehensive and professionally presented."
-        edges:
-          - text: "How do I review and correct Copilot's output?"
-            target_node_id: "screen17"
-          - text: "Show me more best practices!"
-            target_node_id: "screen18"
-      - id: screen17
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
-            - type: "text"
-              content: "When using GitHub Copilot, it's important to review and correct its output to ensure accuracy and completeness."
-            - type: "text"
-              content: "Check for alignment with the provided code and questions, and correct any errors or inaccuracies."
-            - type: "text"
-              content: "Adding additional information or context can help provide comprehensive documentation that meets your standards"
-        edges:
-          - text: "Show me more best practices, Ada"
-            target_node_id: "screen18"
-          - text: "Let's wrap up this lesson"
-            target_node_id: "screen19"
-      - id: screen18
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
-            - type: "text"
-              content: "Here are some additional best practices to help you make the most out of GitHub Copilot:"
-            - type: "text"
-              content: |
-                - **Stay in Control:** Always maintain control over the documentation process.
-                - **Review Suggestions:** Critically evaluate and refine Copilot’s suggestions.
-                - **Ask Clear Questions:** Frame questions effectively to get the best results.
-                - **Provide Ample Context:** Give comprehensive context to improve Copilot’s outputs.
-        edges:
-          - text: "Let's wrap up this lesson, Ada!"
-            target_node_id: "screen19"
-      - id: screen19
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://lh3.googleusercontent.com/pw/AP1GczN5L3rGZCda5cUALuHSpBP44Xz-yCkyTv0zly8LPTSKe9HE2bnw_LNWthqyx9oqrFF8cEBlIjj8bIT-NT2vY8tZkbic9nAkZv3ahF0GSW-MDLyrcxQAVcvsHHr-nygmjCAbj5pqS5FIxCa-ZN2vNTVN=w1866-h1050-s-no-gm"
-            - type: "text"
-              content: "Outstanding work, [userName]! You've learned how to use GitHub Copilot to enhance your documentation workflows effectively."
-            - type: "text"
-              content: "We covered the importance of documentation, the benefits of using GitHub Copilot, and best practices for creating high-quality documentation."
-            - type: "text"
-              content: "Next up, you will practice generating code explanations using Github Copilot Chat! To do so, we will need to set up a GitHub repository. I'll make one for you, add you as a collaborator, and then you can start using it in the next sections!"
+              content: "Alright, that's a wrap for this quest. Next, let's set up a GitHub repository for you that you'll use for the upcoming missions."
         edges:
           - text: "Begin Setup"
             target_node_id: "github_setup"
@@ -357,7 +375,7 @@ tasks:
                     - text: "Retry"
                       target_node_id: "github_setup"
             - type: "text"
-              content: "Please click on Finish to complete the test."
+              content: "Please store this link; we'll use it for the next missions!"
         edges:
           - text: "Finish"
             target_node_id: "END"
@@ -366,6 +384,4 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Feel free to take a look at the repository for Alfred AI."
-            - type: "text"
-              content: "When you feel ready, the next lesson awaits."
+              content: "Well done, and see you in the next quest!"
