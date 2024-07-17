@@ -31,7 +31,7 @@ tasks:
               question: "How can you generate inline documentation for a selected block of code using GitHub Copilot Chat?"
               choice_values:  ["Right-click the code block and select 'Generate Docs'.", "Type /doc in the Chat view.", "Use the command @workspace /describe #file.", "Select the code block and press Ctrl + D."]
               answers:  ["a"]
-              hint: "That's not correct. You can generate inline documentation for a selected block of code by right-clicking the code block and selecting "Generate Docs." This helps create detailed and context-specific comments for your code."
+              hint: "That's not correct. You can generate inline documentation for a selected block of code by right-clicking the code block and selecting `Generate Docs` This helps create detailed and context-specific comments for your code."
             - type: "question"
               question: "What should you always do after generating documentation with GitHub Copilot Chat?"
               choice_values:  ["Immediately push the changes to the main branch.", "Review the documentation for accuracy and completeness.", "Share the documentation with your team.", "Delete the auto-generated comments."]

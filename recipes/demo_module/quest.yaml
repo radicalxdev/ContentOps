@@ -1,5 +1,6 @@
 tasks:
   - name: "Quest"
+    context: "User is learning how to use Github Copilot for Code Documentation"
     id: "1"
     nodes:
       - id: START
