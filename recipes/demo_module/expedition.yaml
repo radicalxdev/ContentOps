@@ -1,5 +1,6 @@
 tasks:
   - name: "Introduction & Overview"
+    context: "This is a test for context that will be injected to the prompt"
     id: "1"
     nodes:
       - id: START
@@ -41,6 +42,7 @@ tasks:
             - type: "text"
               content: "When you're ready, let's start with the first task breakdown."
   - name: "Project Understanding and Explanation"
+    context: "This is a test for context that will be injected to the prompt"
     id: "2"
     nodes:
       - id: START
@@ -76,7 +78,7 @@ tasks:
             - type: "text"
               content: "Yes, project_id is required as noted in the `app/api_models/tickets.py` file! Good work. Let's go to the next question."
         edges:
-          - text: "Ready to go"
+          - text: "Ready to go!"
             target_node_id: "node_3"
       - id: node_2b
         type: message
@@ -105,7 +107,7 @@ tasks:
             - type: "text"
               content: "Yes, each Project can have many Tickets and each Ticket belongs to a Project. Good work."
         edges:
-          - text: "Ready to go"
+          - text: "Ready to go."
             target_node_id: "END"
       - id: node_4b
         type: message
@@ -114,7 +116,7 @@ tasks:
             - type: "text"
               content: "Actually, a project can have multiple tickets. This is because nn the base.py file, a Project and a Ticket have a one-to-many relationship. This means a single Project can have multiple Tickets associated with it, but each Ticket can only belong to one Project. This relationship is established using SQLAlchemy's relationship function and is enforced in the database through a foreign key from Ticket to Project. "
         edges:
-          - text: "Ready to go"
+          - text: "I'm ready"
             target_node_id: "END"
       - id: END
         type: message
@@ -123,6 +125,7 @@ tasks:
             - type: "text"
               content: "Now, let's move on to the next task!"
   - name: "Generate a README.md file for the database schema"
+    context: "This is a test for context that will be injected to the prompt"
     id: "3"
     nodes:
       - id: START
@@ -145,6 +148,7 @@ tasks:
             - type: "text"
               content: "Awesome, we should be able to refer to that README.md file to understand the database schema without having to look at the code. Let's move on to the next task!"
   - name: "Generate inline documentation for the CRUD operations"
+    context: "This is a test for context that will be injected to the prompt"
     id: "4"
     nodes:
       - id: START
@@ -167,6 +171,7 @@ tasks:
             - type: "text"
               content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
   - name: "Generate inline documentation for the API Routes"
+    context: "This is a test for context that will be injected to the prompt"
     id: "5"
     nodes:
       - id: START
@@ -199,6 +204,7 @@ tasks:
             - type: "text"
               content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
   - name: "Extend the root folder README.md file for the new Tickets feature"
+    context: "This is a test for context that will be injected to the prompt"
     id: "6"
     nodes:
       - id: START
@@ -206,7 +212,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Given the existing table for the projects feature, be sure to fully document the tickets feature within the README file such as the endpoint’s operations, HTTP method, and the URL. There already exists a README.md file in the root folder, so you can add the tickets feature to the existing README.md file."
+              content: "Given the existing table for the projects feature, be sure to fully document the tickets feature within the README file such as the endpoint's operations, HTTP method, and the URL. There already exists a README.md file in the root folder, so you can add the tickets feature to the existing README.md file."
             - type: "text"
               content: "Previously, the team already wrote a section about the `projects` feature, so you can add the `tickets` feature right underneath it."
             - type: "text"
@@ -223,6 +229,7 @@ tasks:
             - type: "text"
               content: "Great, let's move on to the final task!"
   - name: "Commit and make Pull Request"
+    context: "This is a test for context that will be injected to the prompt"
     id: "7"
     nodes:
       - id: START

@@ -1,5 +1,6 @@
 tasks:
   - name: "Introduction"
+    context: "Introduce Generating Inline Code Documentation with GitHub Copilot Chat"
     id: "1"
     nodes:
       - id: START
@@ -30,14 +31,14 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/d6981d00-3315-4caa-9e3a-1fde1840dffa/Untitled.png?id=43d32baa-2bb0-4f05-b832-ed983bf80164&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721210400000&signature=GCo-OMTwTQYLiIZRjaSP62HVHMFBbl7JBvGZj9gY4uA&downloadName=Untitled.png"
             - type: "text"
               content: "Great! Now, let's ask GitHub Copilot Chat to generate inline code documentation for the selected code. Enter the following command in the Chat view:"
             - type: "text"
               content: "```generate inline code documentation for the selected code```"
             - type: "text"
               content: "```@workspace document this project```\n Or you can send: \n```@workspace #selection generate inline code documentation for the selected code```"
-            - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/d6981d00-3315-4caa-9e3a-1fde1840dffa/Untitled.png?id=43d32baa-2bb0-4f05-b832-ed983bf80164&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721210400000&signature=GCo-OMTwTQYLiIZRjaSP62HVHMFBbl7JBvGZj9gY4uA&downloadName=Untitled.png"
             - type: "text"
               content: "It should look something like so. The response includes suggested code comments and a portion of the associated code. You could manually move code comments into the actual code file."
             - type: "text"
@@ -52,6 +53,7 @@ tasks:
             - type: "text"
               content: "Fantastic! Now, let's move on to generating inline code documentation using the inline chat feature. This is useful for documenting specific methods within your code. Ready to continue?"
   - name: "Generate Inline Code Documentation using Chat View"
+    context: "Generating Inline Code Documentation with GitHub Copilot Chat"
     id: "2"
     nodes:
       - id: START
@@ -62,7 +64,6 @@ tasks:
               content: "Great! Scroll to the top of the `app/db_models/crud.py` file and select the `create_project` method."
             - type: "text"
               content: "To open an inline chat, press Ctrl + I. Once you have the inline chat open, let me know!"
-            - type: "text"
         edges:
           - text: "Inline chat is open"
             target_node_id: "node_1"
@@ -70,10 +71,10 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Now, let's generate inline documentation for the create_project method. Enter the following prompt: `/doc`"
             - type: "image"
               content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/45de80b6-0e75-445b-a357-21cec732efed/Untitled.png?id=3fa5d9dd-7af1-4732-8695-2c547f250872&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721210400000&signature=ysW1OcjvxGY_xJs3IEeCBzRsEWd4P8d3Ag1Uqitg0-I&downloadName=Untitled.png"
+            - type: "text"
+              content: "Now, let's generate inline documentation for the create_project method. Enter the following prompt: `/doc`"
             - type: "text"
               content: "Notice that the suggested documentation for the Project class includes a summary and descriptions of the parameters. To insert the generated documentation into your code, select `Accept`. You can always select Discard if you want to reject the suggested update."
             - type: "text"
@@ -88,18 +89,17 @@ tasks:
             - type: "text"
               content: "Now, let's move on to generating inline code documentation using the Generate Docs smart action. Ready to proceed?"
   - name: "Generate inline code documentation using the Generate Docs smart action"
+    context: "Generating Inline Code Documentation with GitHub Copilot Chat"
     id: "3"
     nodes:
       - id: START
         type: message
         body:
           parts:
-            - type: "text"
-              content: "In the Visual Studio Code editor, select the `update_project` method. Right-click the selected code block, select Copilot, and then select Generate Docs."
             - type: "image"
               content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/47e574cb-c3b1-46f1-a711-c8689d24769a/Untitled.png?id=2bad4d57-80d3-4d38-9595-96b6a6f65d4a&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721210400000&signature=VlJIYsSTDBHQprxZI-XkGx1DLGExQ2ZZCk7TyC6HjBo&downloadName=Untitled.png"
             - type: "text"
-              content: "Take a minute to review the suggested code comments. Notice that the Generate Docs smart action and inline chat produce similar results."
+              content: "In the Visual Studio Code editor, select the `update_project` method. Right-click the selected code block, select Copilot, and then select Generate Docs. Take a minute to review the results."
         edges:
           - text: "Reviewed the documentation"
             target_node_id: "node_1"
@@ -122,10 +122,10 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Great, notice that the generated documentation includes comments for each of the methods."
             - type: "image"
               content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/3444a8f5-8a8c-43c0-8231-0edd2c8848ba/Untitled.png?id=19489d89-657a-430c-b2d9-60d1dd7a5b3f&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721210400000&signature=ork4Dq9sipazAjBmwnXBIpEgmxBJJNQKymusmtsrUTo&downloadName=Untitled.png"
+            - type: "text"
+              content: "Great, notice that the generated documentation includes comments for each of the methods."
             - type: "text"
               content: "If you find any issues in the generated documentation, make sure to modify the suggested changes before continuing."
             - type: "text"

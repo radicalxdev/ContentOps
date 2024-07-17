@@ -1,5 +1,6 @@
 tasks:
   - name: "Framework Selection"
+    context: "User is selecting a framework to use for their project."
     id: "1"
     nodes:
       - id: START
@@ -46,7 +47,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Fantastic! Did you notice the follow-up question suggested by GitHub Copilot Chat? These questions help build a conversation history, allowing the AI to understand your context better. By appending prompts like "document the project constraints" or "document the project dependencies," you can get detailed information about the project."
+              content: "Fantastic! Did you notice the follow-up question suggested by GitHub Copilot Chat? These questions help build a conversation history, allowing the AI to understand your context better. By appending prompts like 'document the project constraints' or 'document the project dependencies,' you can get detailed information about the project."
             - type: "text"
               content: "If you saw a follow-up question, go ahead and review it. If not, let's move on to the next step."
         edges:
@@ -74,6 +75,7 @@ tasks:
             - type: "text"
               content: "Ready to continue?"
   - name: "File-Specific Explanations"
+    context: "User is getting explanations on files specifically with Github Copilot features."
     id: "2"
     nodes:
       - id: START
