@@ -91,7 +91,7 @@ tasks:
             - type: "text"
               content: "This will ensure that everything is set up correctly and you're ready to start the exercise using GitHub Copilot Chat to generate explanations."
         edges:
-          - text: "Application is running! What's next?"
+          - text: "Application is running! What is next?"
             target_node_id: "screen4a"
       - id: screen4a
         type: message
