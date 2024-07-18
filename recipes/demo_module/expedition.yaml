@@ -161,7 +161,7 @@ tasks:
               content: "This will allow you to access the latest updates and work on the new tickets feature."
   - name: "Generate a README.md file for the database schema"
     context: "In this task, learners are instructed to create a README.md file for the database schema within the app/db_models folder of Project Hermes. This README.md file should document the module's related files, database fields for Projects and Tickets, including all related columns, fields, and types, and the relationships between Projects and Tickets, such as any foreign keys. Learners will use GitHub Copilot to generate this README.md file, ensuring it accurately reflects the database schema's structure and relationships. This documentation will allow future developers to understand the database schema without needing to delve into the code. Once the README.md file is generated and placed in the specified folder, learners can proceed to the next task."
-    id: "3"
+    id: "2"
     nodes:
       - id: START
         type: message
@@ -187,7 +187,7 @@ tasks:
               content: "Awesome, we should be able to refer to that README.md file to understand the database schema without having to look at the code. Let's move on to the next task!"
   - name: "Generate inline documentation for the CRUD operations"
     context: "In this task, learners are instructed to generate inline documentation for all CRUD operations in the app/db_models/crud.py file, including the new tickets feature and any undocumented functions. This documentation should detail the functions' inputs, required parameters, and outputs with their respective types. Learners will use the inline chat feature with GitHub Copilot Chat to accomplish this. Once the documentation is generated, it should provide clear information about each function's purpose, parameters, and return values, enhancing the understanding and maintainability of the code. After completing this task, learners can move on to the next step in the project."
-    id: "4"
+    id: "3"
     nodes:
       - id: START
         type: message
@@ -210,7 +210,7 @@ tasks:
               content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
   - name: "Generate inline documentation for the API Routes"
     context: "In this task, learners are instructed to add type annotations and generate inline documentation for the app/api/routes/projects.py and app/api/routes/tickets.py files. They need to include function documentation detailing required parameters and outputs with their respective types. This task emphasizes the importance of type annotations for best practices. Learners are guided to use the inline chat feature with GitHub Copilot Chat, similar to the previous task, to assist in adding type hints and documentation. An example is provided to highlight the lack of type annotations in the create_ticket function, which they need to address. This task aims to enhance the code's clarity and maintainability by ensuring all functions have proper documentation and type annotations. After completing this task, learners can proceed to the next step in the project."
-    id: "5"
+    id: "4"
     nodes:
       - id: START
         type: message
@@ -243,7 +243,7 @@ tasks:
               content: "Awesome, documenting the functions will help us understand the code better such as what parameters are required and what the function returns as annotations. Let's move on to the next task!"
   - name: "Extend the root folder README.md file for the new Tickets feature"
     context: "In this task, learners are instructed to extend the existing README.md file in the root folder to include comprehensive documentation for the new tickets feature. They need to document the endpoint's operations, HTTP methods, and URLs, similar to how the projects feature is documented. Learners are guided to use GitHub Copilot to update the README.md file and add any relevant documentation for the tickets feature. By ensuring that the tickets feature is fully documented, learners will help maintain consistency and clarity in the project's documentation, making it easier for future developers to understand and work with the codebase. Once this task is completed, they can proceed to the final task."
-    id: "6"
+    id: "5"
     nodes:
       - id: START
         type: message
@@ -268,7 +268,7 @@ tasks:
               content: "Great, let's move on to the final task!"
   - name: "Commit and make Pull Request"
     context: "In this task, learners are instructed to commit their changes and create a pull request to merge the feature branch into the main branch. They are guided to use the command git commit -m 'Your commit message' to commit their changes and git push to push the changes to GitHub. The commit message should include details about the changed files and the modifications made. For the pull request, learners must title it 'Task - 7 <FEATURE>' to ensure you can easily find it for review. You will then review the pull request, looking for extensive documentation on the new Tickets feature, including routes, functions, and database operations, as well as the presence of README.md files in both the root folder and the app/db_models folder detailing the database schema and relationships between tables. This final task ensures that the documentation is thoroughly reviewed and approved, enhancing the project's maintainability and clarity for future developers."
-    id: "7"
+    id: "6"
     nodes:
       - id: START
         type: message
