@@ -265,7 +265,7 @@ tasks:
                 - Enhancing Features: Adding new features with a clear understanding of the existing code.
                 - Project Development: Ensuring smooth and consistent progress.
         edges:
-          - text: "Got it! Let's move on."
+          - text: "Got it! Let's move on"
             target_node_id: "screen15"
       - id: screen15
         type: message
@@ -353,11 +353,11 @@ tasks:
             - type: "text"
               content: |
                 ```python
-                @router.put('{project_id}', response_model=ProjectResponse)
+                @router.put('{{project_id}}', response_model=ProjectResponse)
                 async def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):
                     db_project = crud.update_project(db, project_id, project.name, project.description)
                     if db_project is None:
-                        raise HTTPException(status_code=404, detail=f"Project with id {project_id} not found")
+                        raise HTTPException(status_code=404, detail=f"Project with id {{project_id}} not found")
                     return db_project
                 ```
         edges:
@@ -444,10 +444,10 @@ tasks:
               content: "Navigate to the running server instance at `http://127.0.0.1:8000/docs`. Send a sample request to the `/api/projects` endpoint by opening the POST endpoint, clicking 'Try It Out,' and executing the following request: It is expected that this request will return a 500 internal server error. Let me know once you encounter the error."
             - type: "text"
               content: |
-                {
+                {{
                   "name": 12345,
                   "description": "This is a test project"
-                }
+                }}
         edges:
           - text: "Encountered the error! What's next?"
             target_node_id: "screen29"
@@ -460,7 +460,7 @@ tasks:
             - type: "text"
               content: "`/explain #terminalSelection`"
         edges:
-          - text: "Done! What's next?"
+          - text: "Done! What's next"
             target_node_id: "screen30"
       - id: screen30
         type: message
@@ -482,7 +482,7 @@ tasks:
             - type: "text"
               content: "`@workspace #terminalSelection Where do I fix the error?`"
         edges:
-          - text: "Done! What's next?"
+          - text: "Done! What is next?"
             target_node_id: "screen32"
       - id: screen32
         type: message
@@ -498,7 +498,7 @@ tasks:
                 for error in exc.errors():
                     field = " -> ".join(str(loc) for loc in error['loc'])
                     message = error['msg']
-                    error_detail = f"Error in field '{field}': {message}"
+                    error_detail = f"Error in field '{{field}}': {{message}}"
                     errors.append(error_detail)
 
                 error_response = ErrorResponse(status=422, message=errors)
@@ -521,10 +521,10 @@ tasks:
             - type: "text"
               content: |
                 ```json
-                {
+                {{
                   "name": 12345,
                   "description": "This is a test project"
-                }
+                }}
                 ```
         edges:
           - text: "Done! What's next?"
@@ -537,7 +537,7 @@ tasks:
               content: "Excellent work! You've successfully diagnosed and resolved an error using GitHub Copilot Chat. This skill is crucial for maintaining high code quality and efficiency. "
   - name: "Implementing New Features with Generative AI"
     context: "Learners explore implementing new features with proper exception handling using GitHub Copilot Chat. They begin by understanding the importance of exception handling for maintaining application stability, improving user experience, and easing debugging. Learners then select the GET, PUT, and DELETE operations in the projects.py file and ask GitHub Copilot Chat for guidance on handling exceptions during these operations. Following detailed instructions from Copilot, they review and implement the suggested exception handling code within these methods, incorporating try-catch blocks to manage errors gracefully. After accepting and applying the proposed changes, learners save the updated projects.py file, ensuring their new features are robust and reliable. This task enhances their ability to use AI tools for adding features with proper error management, ultimately improving the quality and stability of their applications."
-    id: "4"
+    id: "6"
     nodes:
       - id: START
         type: message
@@ -573,20 +573,20 @@ tasks:
             - type: "text"
               content: |
                 ```python
-                @router.get('/{project_id}', response_model=ProjectResponse)
+                @router.get('/{{project_id}}', response_model=ProjectResponse)
                 async def read_project(project_id: int, db: Session = Depends(get_db)):
                     db_project = crud.get_project(db, project_id)
                     return db_project
 
-                @router.put('/{project_id}', response_model=ProjectResponse)
+                @router.put('/{{project_id}}', response_model=ProjectResponse)
                 async def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):
                     db_project = crud.update_project(db, project_id, project.name, project.description)
                     return db_project
 
-                @router.delete('/{project_id}')
+                @router.delete('/{{project_id}}')
                 async def delete_project(project_id: int, db: Session = Depends(get_db)):
                     crud.delete_project(db, project_id)
-                    return {'message': f'Project with id {project_id} deleted'}
+                    return {{'message': f'Project with id {{project_id}} deleted'}}
                 ```
         edges:
           - text: "Selected the code lines! What's next?"
@@ -642,7 +642,7 @@ tasks:
             - type: "text"
               content: |
                 ```python
-                @router.get('/{project_id}', response_model=ProjectResponse)
+                @router.get('/{{project_id}}', response_model=ProjectResponse)
                 async def read_project(project_id: int, db: Session = Depends(get_db)):
                     try:
                         db_project = crud.get_project(db, project_id)
@@ -650,7 +650,7 @@ tasks:
                     except Exception as e:
                         raise HTTPException(status_code=500, detail=str(e))
 
-                @router.put('/{project_id}', response_model=ProjectResponse)
+                @router.put('/{{project_id}}', response_model=ProjectResponse)
                 async def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):
                     try:
                         db_project = crud.update_project(db, project_id, project.name, project.description)
@@ -658,11 +658,11 @@ tasks:
                     except Exception as e:
                         raise HTTPException(status_code=500, detail=str(e))
 
-                @router.delete('/{project_id}')
+                @router.delete('/{{project_id}}')
                 async def delete_project(project_id: int, db: Session = Depends(get_db)):
                     try:
                         crud.delete_project(db, project_id)
-                        return {'message': f'Project with id {project_id} deleted'}
+                        return {{'message': f'Project with id {{project_id}} deleted'}}
                     except Exception as e:
                         raise HTTPException(status_code=500, detail=str(e))
                 ```
@@ -686,7 +686,7 @@ tasks:
               content: "Fantastic! You've successfully implemented new features with proper exception handling using GitHub Copilot Chat. This ensures your application is reliable and robust."
   - name: "Summary & Recap"
     context: "In this comprehensive tutorial, learners at Alfred AI are guided through setting up and using GitHub Copilot Chat to decode complex code structures, understand detailed file explanations, diagnose, and resolve errors efficiently. The journey begins with preparing their environment by installing Visual Studio Code, Python, and the necessary GitHub Copilot extensions. Learners use GitHub Copilot Chat to gain insights into new projects and specific project files, enhancing their ability to debug, add features, and maintain project development. They delve deeper into individual files, like app/api/routes/projects.py, using Copilot to generate detailed explanations. This understanding aids in troubleshooting complex code and improving workflow. The tutorial also covers diagnosing and fixing errors by using GitHub Copilot Chat to analyze error tracebacks and apply recommended fixes, such as resolving a TypeError in the JSONResponse class. By restarting the server and confirming the fixes, learners enhance their skills in maintaining high code quality and efficiency, ultimately mastering the use of AI tools to streamline their coding tasks."
-    id: "5"
+    id: "7"
     nodes:
       - id: START
         type: message

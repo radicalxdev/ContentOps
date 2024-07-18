@@ -1,0 +1,6 @@
+[submodule "lib/lib/intelflow"]
+	path = lib/lib/intelflow
+	url = https://github.com/radicalxdev/intelflow.git
+[submodule "lib/intelflow"]
+	path = lib/intelflow
+	url = https://github.com/radicalxdev/intelflow.git
