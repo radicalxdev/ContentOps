@@ -1,344 +1,464 @@
 tasks:
-  - name: "Introduction to Project Documentation"
-    context: "learners are guided through setting up and using GitHub Copilot Chat to decode complex code structures, understand detailed file explanations, diagnose and resolve errors efficiently, and implement new features with proper exception handling. They start by preparing their environment, installing necessary tools, and using GitHub Copilot Chat to gain insights into new projects and specific project files, enhancing their debugging, feature addition, and project development capabilities. The tutorial includes in-depth steps for using Copilot Chat to generate and review explanations for complex code sections, fix errors, and understand project dependencies. Learners also explore how to implement exception handling in their code to maintain application stability and improve user experience. Finally, they generate comprehensive project documentation for Project Hermes, including a project overview, requirements, constraints, dependencies, summary, and a README file, ensuring accurate and complete documentation. This holistic approach empowers learners to leverage AI tools for efficient coding and robust project management."
-    id: "1"
+  - name: Introduction to Project Documentation
+    context: learners are guided through setting up and using GitHub Copilot Chat
+      to decode complex code structures, understand detailed file explanations, diagnose
+      and resolve errors efficiently, and implement new features with proper exception
+      handling. They start by preparing their environment, installing necessary tools,
+      and using GitHub Copilot Chat to gain insights into new projects and specific
+      project files, enhancing their debugging, feature addition, and project development
+      capabilities. The tutorial includes in-depth steps for using Copilot Chat to
+      generate and review explanations for complex code sections, fix errors, and
+      understand project dependencies. Learners also explore how to implement exception
+      handling in their code to maintain application stability and improve user experience.
+      Finally, they generate comprehensive project documentation for Project Hermes,
+      including a project overview, requirements, constraints, dependencies, summary,
+      and a README file, ensuring accurate and complete documentation. This holistic
+      approach empowers learners to leverage AI tools for efficient coding and robust
+      project management.
+    id: '1'
     nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Hello! At Alfred AI, we understand the importance of comprehensive project documentation. You've been assigned to document Project Hermes, our advanced AI-driven customer support system. This documentation will help new developers understand the project and provide stakeholders with crucial insights into its scope and objectives. Ready to get started?"
-            - type: "text"
-              content: "Let's start by generating a high-level summary of the project using GitHub Copilot Chat. This will help you quickly create an overview of your project. Ready to begin?"
-        edges:
-          - text: "Yes, let's get started!"
-            target_node_id: "screen2"
-          - text: "Yes, let's get started!"
-            target_node_id: "screen1a"
-      - id: screen1a
-        type: screenshot_eval
-        body:
-          parts:
-            - type: "text"
-              content: "Creating documentation is a crucial part of software development. It helps developers understand the codebase, its purpose, and how to use it. Project documentation provides stakeholders with essential information about the project's scope and purpose. Let's dive into the key sections that good documentation should include. Ready to proceed?"
-        edges:
-          - text: "Yes, let's proceed."
-            target_node_id: "screen2"
-          - text: "I'd like to know more about the types of documentation"
-            target_node_id: "screen1b"
-      - id: screen1b
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://imgs.search.brave.com/b5HbkkIZQr2TJNo2NvN_Nnda0VAgajwPptuGPtgPrcg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by92/ZXJ0aWNhbC1waWN0/dXJlLWVuZ2xpc2gt/YnVsbGRvZy1maWVs/ZF8xODE2MjQtNDI4/NzMuanBnP3NpemU9/NjI2JmV4dD1qcGc"
-            - type: "text"
-              content: "Project documentation often includes:"
-            - type: "text"
-              content: |
-                - **Project Overview**: A high-level summary of the project.
-                - **Project Requirements**: Functional and nonfunctional requirements.
-                - **Project Constraints**: Time, budget, or technical constraints.
-                - **Project Dependencies**: Libraries, frameworks, and other components.
-                - **Project Summary**: A brief summary of the project's purpose and goals.
-            - type: "text"
-              content: "Understanding these sections helps ensure comprehensive documentation. Ready to see how GitHub Copilot Chat can assist you?"
-        edges:
-          - text: "Yes, let's proceed!"
-            target_node_id: "screen2"
-      - id: screen2
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "To start, ensure you have the Alfred AI project open in Visual Studio Code. Make sure you have the GitHub Copilot and GitHub Copilot Chat extensions installed and an active GitHub Copilot subscription. Ready to continue?"
-        edges:
-          - text: "I have it and ready to go!"
-            target_node_id: "screen3"
-          - text: "I need help setting it up."
-            target_node_id: "screen2a"
-      - id: screen2a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "No problem! Here's what you need:"
-            - type: "text"
-              content: |
-                1. **Visual Studio Code**: Download and install from [code.visualstudio.com](https://code.visualstudio.com/).
-                2. **GitHub Copilot and Copilot Chat Extensions**: Search and install these from the VS Code extensions marketplace.
-                3. **Python**: Download and install Python from [python.org](https://python.org/).
-            - type: "text"
-              content: "If you need help for your setup, let me know by describing your issue in the chat."
-        edges:
-          - text: "All set, let's continue"
-            target_node_id: "screen3"
-      - id: screen3
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Important! Always review the documentation generated by GitHub Copilot. You need to verify accuracy and completeness. The documentation generated by GitHub Copilot is a starting point. You may need to add, remove, or modify the content to meet the specific needs of your project. Ready to proceed with generating documentation?"
-        edges:
-          - text: "Yes, I'm ready to proceed!"
-            target_node_id: "screen4"
-          - text: "I need more information"
-            target_node_id: "screen3a"
-      - id: screen3a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "It's crucial to ensure that the generated documentation accurately reflects your project's specifics. Always cross-check the details and make necessary adjustments. Properly tailored documentation helps in better understanding and maintaining the project. Ready to generate the documentation now?"
-        edges:
-          - text: "Yes, let's move forward"
-            target_node_id: "screen4"
-      - id: screen4
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Let's start by ensuring you have the Alfred AI project open in Visual Studio Code. This is essential for generating accurate and relevant documentation. Start by opening the Alfred AI project in Visual Studio Code."
-        edges:
-          - text: "Project is open, what's next?"
-            target_node_id: "screen5"
-          - text: "I need some help setting it up."
-            target_node_id: "screen4a"
-      - id: screen4a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "To open the Alfred AI project in Visual Studio Code:"
-            - type: "text"
-              content: |
-                1. Launch Visual Studio Code.
-                2. Open the project folder containing the Alfred AI project files.
-                Once the project is open, let's proceed.
-                3. Click on "File" in the top menu.
-                4. Select "Open Folder" and navigate to the Alfred AI project folder.
-                5. Click "Select Folder" to open it in Visual Studio Code.
-            - type: "text"
-              content: "Once the project is open, let's proceed."
-        edges:
-          - text: "Project is open, what should I do next?"
-            target_node_id: "screen5"
-      - id: screen5
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Great! Now, let's open the Chat view:"
-            - type: "text"
-              content: |
-                1. On the left side menu, select "Chat".
-                2. Alternatively, you can press Ctrl + Alt + I.
-            - type: "text"
-              content: "Ready to generate the project documentation?"
-        edges:
-          - text: "Yes, let's generate documentation."
-            target_node_id: "screen6"
-          - text: "Need help opening the Chat view."
-            target_node_id: "screen5a"
-      - id: screen5a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "If you're having trouble:"
-            - type: "text"
-              content: |
-                - Ensure that the GitHub Copilot Chat extension is installed.
-                - Check that Visual Studio Code is updated to the latest version.
-                - Restart Visual Studio Code if necessary.
-            - type: "text"
-              content: "Ready to generate the project documentation?"
-        edges:
-          - text: "Yes, let's generate documentation."
-            target_node_id: "screen6"
-      - id: screen6
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Now, let’s generate the overall project documentation:"
-            - type: "text"
-              content: |
-                1. In the Chat view, enter the following prompt: `@workspace document this project`
-                2. Press Enter and wait for the response.
-                3. Take a minute to review the project documentation generated for the Alfred AI, Project Management API repository.
-            - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/df8eb936-6aea-42f6-bcc6-edc0bd844afa/Untitled.png?id=d2257b4b-ab10-44fc-a6e4-d10b8666e973&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721325600000&signature=ik8VbY-xMofbS_ZTeJ34PGU9YSRQCIwDT58NRpekliM&downloadName=Untitled.png"
-            - type: "text"
-              content: "Notice that the suggested project documentation is similar to the project explanation generated in the previous unit. By appending prompts like 'document the project constraints' or 'document the project dependencies,' you can get detailed information about the project."
-        edges:
-          - text: "Done, what should I do next?"
-            target_node_id: "screen7"
-          - text: "Done, what should I do next?"
-            target_node_id: "screen6a"
-      - id: screen6a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Review the documentation generated by GitHub Copilot. Ensure it covers key sections like project overview, requirements, constraints, dependencies, and summary. If you need more details on any section, you can append prompts like:"
-            - type: "text"
-              content: |
-                - `document the project constraints`
-                - `document the project dependencies`
-            - type: "text"
-              content: "Ready to continue?"
-        edges:
-          - text: "Yes, let's move on to the next step."
-            target_node_id: "screen7"
-          - text: "Need to generate additional documentation."
-            target_node_id: "screen7"
-      - id: screen6a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "To generate more specific sections, use the Chat view to enter prompts like:"
-            - type: "text"
-              content: |
-                - "document the project requirements"
-                - "document the project constraints"
-                - "document the project architecture"
-                - "document the project design"
-                - "document the project testing"
-                - "document the project deployment"
-                - "document the project summary"
-            - type: "text"
-              content: "Tailor the documentation to meet your project's specific needs. Ready to move on?"
-        edges:
-          - text: "Okay, let's proceed."
-            target_node_id: "screen7"
-      - id: screen7
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Next, let's generate the project dependencies documentation:"
-            - type: "text"
-              content: |
-                1. In the Chat view, enter the following prompt: `@workspace document the project dependencies`
-                2. Press Enter and wait for the response.
-            - type: "image" 
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/ae931d58-88cb-4193-83f6-f902afc2d89c/Untitled.png?id=fc5fdf02-696e-42df-a8da-2368d49dce12&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721325600000&signature=sIzRP4HzjnvuvdLmR0pX0qlZDFDLG7BIJKHV_jvutdo&downloadName=Untitled.png"
-            - type: "text"
-              content: "Take a minute to review the project dependencies documentation."
-        edges:
-          - text: "Done with the review, what's next?"
-            target_node_id: "screen8"
-          - text: "Need more help."
-            target_node_id: "screen7a"
-      - id: screen7a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Review the dependencies documentation generated by GitHub Copilot. Ensure it lists all the libraries, frameworks, and components your project relies on. If you need to refine or expand the information, you can ask follow-up questions in the Chat view."
-        edges:
-          - text: "Yes, all set, let's move on!"
-            target_node_id: "screen8"
-          - text: "Need to generate more specific dependencies information."
-            target_node_id: "screen7b"
-      - id: screen7b
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "To generate more detailed dependencies information, you can use the Chat view to enter prompts like:"
-            - type: "text"
-              content: |
-                - `document the project's library dependencies`
-                - `document the project's framework dependencies`
-                - `document the project's component dependencies`
-            - type: "text"
-              content: "Tailor the documentation to cover all necessary details. Ready to proceed?"
-        edges:
-          - text: "Yes, let's continue on!"
-            target_node_id: "screen8"
-      - id: screen8
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Now, let's generate a README file for the Alfred AI project:"
-            - type: "text"
-              content: |
-                - 1. In the Chat view, enter the following prompt: `@workspace generate a readme document that can be used as a repo description`
-                - 2. Press Enter and wait for the response.
-            - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/e5188a25-4d7d-4741-af3f-8dae2f076877/Untitled.png?id=fcfd8d2a-62b4-4f68-8b66-845436e51e81&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721325600000&signature=WkBHmCmoHt2zbSW4zHMb0qhcV_Ugy3LOIE6SBfWmans&downloadName=Untitled.png"
-            - type: "text"
-              content: "Take a minute to review the README generated for the Alfred AI project."
-            - type: "text"
-              content: "The README file content generated by Copilot Chat provides a high-level overview of the project with several sections that are often included in this type of file. Adjust the prompt to specify the README sections preferred by your organization. You can also write individual prompts to generate specific sections of a README document."
-        edges:
-          - text: "Understood, what is next?"
-            target_node_id: "screen9"
-          - text: "Need more help."
-            target_node_id: "screen8a"
-      - id: screen8a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Review the generated README file. Ensure it provides a comprehensive overview of the project, covering all necessary sections. If you need to refine or expand the information, you can enter additional prompts in the Chat view."
-            - type: "text"
-              content: |
-                - `document the project's library dependencies`
-                - `document the project's framework dependencies`
-                - `document the project's component dependencies`
-            - type: "text"
-              content: "Tailor the documentation to cover all necessary details. Ready to proceed?"
-        edges:
-          - text: "Okay got it, we can move on."
-            target_node_id: "screen9"
-      - id: screen9
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Congratulations! You've successfully used GitHub Copilot Chat to generate comprehensive project documentation for Project Hermes. This documentation includes the project overview, requirements, constraints, dependencies, summary, and a README file."
-            - type: "text"
-              content: |
-                - **Review and Accuracy*': Always review the documentation generated by GitHub Copilot to ensure it meets your project's needs. Adjust, add, or remove content as necessary.
-        edges:
-          - text: "Let's recap"
-            target_node_id: "screen10"
-      - id: screen10
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "In this exercise, you used GitHub Copilot Chat to generate project documentation for the Alfred AI project. By using the Chat view and the `@workspace` participant, you were able to:"
-            - type: "text"
-              content: |
-                1. Generate documentation for the project overview.
-                2. List and describe project requirements.
-                3. Outline project constraints.
-                4. Detail project dependencies.
-                5. Summarize the project effectively.
-                6. Create a comprehensive README file.
-            - type: "text"
-              content: "Remember, the documentation generated by GitHub Copilot Chat is a starting point. It's crucial to review and refine the content to ensure accuracy and completeness. Tailoring the documentation to your project's specific needs helps other developers understand the project and its goals more effectively."
-        edges:
-          - text: "Awesome!"
-            target_node_id: "END"
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Great job completing this mission! Up next, you'll learn more advanced features of GitHub Copilot Chat and how to use them to streamline your development workflow even further. Ready to continue?"
+    - body:
+        parts:
+        - content: Hello! At Alfred AI, we understand the importance of comprehensive
+            project documentation. You've been assigned to document Project Hermes,
+            our advanced AI-driven customer support system. This documentation will
+            help new developers understand the project and provide stakeholders with
+            crucial insights into its scope and objectives. Ready to get started?
+          type: text
+        - content: Let's start by generating a high-level summary of the project using
+            GitHub Copilot Chat. This will help you quickly create an overview of
+            your project. Ready to begin?
+          type: text
+      edges:
+      - target_node_id: screen2
+        text: Yes, let's get started!
+      - target_node_id: screen1a
+        text: Tell me more about the importance of documentation.
+      id: START
+      type: message
+    - body:
+        parts:
+        - content: Creating documentation is a crucial part of software development.
+            It helps developers understand the codebase, its purpose, and how to use
+            it. Project documentation provides stakeholders with essential information
+            about the project's scope and purpose. Let's dive into the key sections
+            that good documentation should include. Ready to proceed?
+          type: text
+      edges:
+      - target_node_id: screen2
+        text: Yes, let's proceed.
+      - target_node_id: screen1b
+        text: I'd like to know more about the types of documentation
+      id: screen1a
+      type: message
+    - body:
+        parts:
+        - content: https://imgs.search.brave.com/b5HbkkIZQr2TJNo2NvN_Nnda0VAgajwPptuGPtgPrcg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by92/ZXJ0aWNhbC1waWN0/dXJlLWVuZ2xpc2gt/YnVsbGRvZy1maWVs/ZF8xODE2MjQtNDI4/NzMuanBnP3NpemU9/NjI2JmV4dD1qcGc
+          type: image
+        - content: 'Project documentation often includes:'
+          type: text
+        - content: '- **Project Overview**: A high-level summary of the project.
 
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Awesome! Let's proceed to generate documentation for the project requirements. This will include both functional and nonfunctional requirements."
-            - type: "text"
-              content: "Ready to continue?"
+            - **Project Requirements**: Functional and nonfunctional requirements.
+
+            - **Project Constraints**: Time, budget, or technical constraints.
+
+            - **Project Dependencies**: Libraries, frameworks, and other components.
+
+            - **Project Summary**: A brief summary of the project''s purpose and goals.
+
+            '
+          type: text
+        - content: Understanding these sections helps ensure comprehensive documentation.
+            Ready to see how GitHub Copilot Chat can assist you?
+          type: text
+      edges:
+      - target_node_id: screen2
+        text: Yes, let's proceed!
+      id: screen1b
+      type: message
+    - body:
+        parts:
+        - content: To start, ensure you have the Alfred AI project open in Visual
+            Studio Code. Make sure you have the GitHub Copilot and GitHub Copilot
+            Chat extensions installed and an active GitHub Copilot subscription. Ready
+            to continue?
+          type: text
+      edges:
+      - target_node_id: screen3
+        text: I have it and ready to go!
+      - target_node_id: screen2a
+        text: I need help setting it up.
+      id: screen2
+      type: message
+    - body:
+        parts:
+        - content: 'No problem! Here''s what you need:'
+          type: text
+        - content: '1. **Visual Studio Code**: Download and install from [code.visualstudio.com](https://code.visualstudio.com/).
+
+            2. **GitHub Copilot and Copilot Chat Extensions**: Search and install
+            these from the VS Code extensions marketplace.
+
+            3. **Python**: Download and install Python from [python.org](https://python.org/).
+
+            '
+          type: text
+        - content: If you need help for your setup, let me know by describing your
+            issue in the chat.
+          type: text
+      edges:
+      - target_node_id: screen3
+        text: All set, let's continue
+      id: screen2a
+      type: message
+    - body:
+        parts:
+        - content: Important! Always review the documentation generated by GitHub
+            Copilot. You need to verify accuracy and completeness. The documentation
+            generated by GitHub Copilot is a starting point. You may need to add,
+            remove, or modify the content to meet the specific needs of your project.
+            Ready to proceed with generating documentation?
+          type: text
+      edges:
+      - target_node_id: screen4
+        text: Yes, I'm ready to proceed!
+      - target_node_id: screen3a
+        text: I need more information
+      id: screen3
+      type: message
+    - body:
+        parts:
+        - content: It's crucial to ensure that the generated documentation accurately
+            reflects your project's specifics. Always cross-check the details and
+            make necessary adjustments. Properly tailored documentation helps in better
+            understanding and maintaining the project. Ready to generate the documentation
+            now?
+          type: text
+      edges:
+      - target_node_id: screen4
+        text: Yes, let's move forward
+      id: screen3a
+      type: message
+    - body:
+        parts:
+        - content: Let's start by ensuring you have the Alfred AI project open in
+            Visual Studio Code. This is essential for generating accurate and relevant
+            documentation. Start by opening the Alfred AI project in Visual Studio
+            Code.
+          type: text
+      edges:
+      - target_node_id: screen5
+        text: Project is open, what's next?
+      - target_node_id: screen4a
+        text: I need some help setting it up.
+      id: screen4
+      type: message
+    - body:
+        parts:
+        - content: 'To open the Alfred AI project in Visual Studio Code:'
+          type: text
+        - content: '1. Launch Visual Studio Code.
+
+            2. Open the project folder containing the Alfred AI project files.
+
+            Once the project is open, let''s proceed.
+
+            3. Click on "File" in the top menu.
+
+            4. Select "Open Folder" and navigate to the Alfred AI project folder.
+
+            5. Click "Select Folder" to open it in Visual Studio Code.
+
+            '
+          type: text
+        - content: Once the project is open, let's proceed.
+          type: text
+      edges:
+      - target_node_id: screen5
+        text: Project is open, what should I do next?
+      id: screen4a
+      type: message
+    - body:
+        parts:
+        - content: 'Great! Now, let''s open the Chat view:'
+          type: text
+        - content: '1. On the left side menu, select "Chat".
+
+            2. Alternatively, you can press Ctrl + Alt + I.
+
+            '
+          type: text
+        - content: Ready to generate the project documentation?
+          type: text
+      edges:
+      - target_node_id: screen6
+        text: Yes, let's generate documentation.
+      - target_node_id: screen5a
+        text: Need help opening the Chat view.
+      id: screen5
+      type: message
+    - body:
+        parts:
+        - content: 'If you''re having trouble:'
+          type: text
+        - content: '- Ensure that the GitHub Copilot Chat extension is installed.
+
+            - Check that Visual Studio Code is updated to the latest version.
+
+            - Restart Visual Studio Code if necessary.
+
+            '
+          type: text
+        - content: Ready to generate the project documentation?
+          type: text
+      edges:
+      - target_node_id: screen6
+        text: Yes, let's generate documentation.
+      id: screen5a
+      type: message
+    - body:
+        parts:
+        - content: "Now, let\u2019s generate the overall project documentation:"
+          type: text
+        - content: '1. In the Chat view, enter the following prompt: `@workspace document
+            this project`
+
+            2. Press Enter and wait for the response.
+
+            3. Take a minute to review the project documentation generated for the
+            Alfred AI, Project Management API repository.
+
+            '
+          type: text
+        - content: https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/df8eb936-6aea-42f6-bcc6-edc0bd844afa/Untitled.png?id=d2257b4b-ab10-44fc-a6e4-d10b8666e973&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721325600000&signature=ik8VbY-xMofbS_ZTeJ34PGU9YSRQCIwDT58NRpekliM&downloadName=Untitled.png
+          type: image
+        - content: Notice that the suggested project documentation is similar to the
+            project explanation generated in the previous unit. By appending prompts
+            like 'document the project constraints' or 'document the project dependencies,'
+            you can get detailed information about the project.
+          type: text
+      edges:
+      - target_node_id: screen7
+        text: Done, what should I do next?
+      - target_node_id: screen6a
+        text: Done, What's next?
+      id: screen6
+      type: message
+    - body:
+        parts:
+        - content: 'Review the documentation generated by GitHub Copilot. Ensure it
+            covers key sections like project overview, requirements, constraints,
+            dependencies, and summary. If you need more details on any section, you
+            can append prompts like:'
+          type: text
+        - content: '- `document the project constraints`
+
+            - `document the project dependencies`
+
+            '
+          type: text
+        - content: Ready to continue?
+          type: text
+      edges:
+      - target_node_id: screen7
+        text: Yes, let's move on to the next step.
+      - target_node_id: screen7
+        text: Need to generate additional documentation.
+      id: screen6a
+      type: message
+    - body:
+        parts:
+        - content: 'To generate more specific sections, use the Chat view to enter
+            prompts like:'
+          type: text
+        - content: '- "document the project requirements"
+
+            - "document the project constraints"
+
+            - "document the project architecture"
+
+            - "document the project design"
+
+            - "document the project testing"
+
+            - "document the project deployment"
+
+            - "document the project summary"
+
+            '
+          type: text
+        - content: Tailor the documentation to meet your project's specific needs.
+            Ready to move on?
+          type: text
+      edges:
+      - target_node_id: screen7
+        text: Okay, let's proceed.
+      id: screen6a
+      type: message
+    - body:
+        parts:
+        - content: 'Next, let''s generate the project dependencies documentation:'
+          type: text
+        - content: '1. In the Chat view, enter the following prompt: `@workspace document
+            the project dependencies`
+
+            2. Press Enter and wait for the response.
+
+            '
+          type: text
+        - content: https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/ae931d58-88cb-4193-83f6-f902afc2d89c/Untitled.png?id=fc5fdf02-696e-42df-a8da-2368d49dce12&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721325600000&signature=sIzRP4HzjnvuvdLmR0pX0qlZDFDLG7BIJKHV_jvutdo&downloadName=Untitled.png
+          type: image
+        - content: Take a minute to review the project dependencies documentation.
+          type: text
+      edges:
+      - target_node_id: screen8
+        text: Done with the review, what's next?
+      - target_node_id: screen7a
+        text: Need more help.
+      id: screen7
+      type: message
+    - body:
+        parts:
+        - content: Review the dependencies documentation generated by GitHub Copilot.
+            Ensure it lists all the libraries, frameworks, and components your project
+            relies on. If you need to refine or expand the information, you can ask
+            follow-up questions in the Chat view.
+          type: text
+      edges:
+      - target_node_id: screen8
+        text: Yes, all set, let's move on!
+      - target_node_id: screen7b
+        text: Need to generate more specific dependencies information.
+      id: screen7a
+      type: message
+    - body:
+        parts:
+        - content: 'To generate more detailed dependencies information, you can use
+            the Chat view to enter prompts like:'
+          type: text
+        - content: '- `document the project''s library dependencies`
+
+            - `document the project''s framework dependencies`
+
+            - `document the project''s component dependencies`
+
+            '
+          type: text
+        - content: Tailor the documentation to cover all necessary details. Ready
+            to proceed?
+          type: text
+      edges:
+      - target_node_id: screen8
+        text: Yes, let's continue on!
+      id: screen7b
+      type: message
+    - body:
+        parts:
+        - content: 'Now, let''s generate a README file for the Alfred AI project:'
+          type: text
+        - content: '- 1. In the Chat view, enter the following prompt: `@workspace
+            generate a readme document that can be used as a repo description`
+
+            - 2. Press Enter and wait for the response.
+
+            '
+          type: text
+        - content: https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/e5188a25-4d7d-4741-af3f-8dae2f076877/Untitled.png?id=fcfd8d2a-62b4-4f68-8b66-845436e51e81&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721325600000&signature=WkBHmCmoHt2zbSW4zHMb0qhcV_Ugy3LOIE6SBfWmans&downloadName=Untitled.png
+          type: image
+        - content: Take a minute to review the README generated for the Alfred AI
+            project.
+          type: text
+        - content: The README file content generated by Copilot Chat provides a high-level
+            overview of the project with several sections that are often included
+            in this type of file. Adjust the prompt to specify the README sections
+            preferred by your organization. You can also write individual prompts
+            to generate specific sections of a README document.
+          type: text
+      edges:
+      - target_node_id: screen9
+        text: Understood, what is next?
+      - target_node_id: screen8a
+        text: Need more help.
+      id: screen8
+      type: message
+    - body:
+        parts:
+        - content: Review the generated README file. Ensure it provides a comprehensive
+            overview of the project, covering all necessary sections. If you need
+            to refine or expand the information, you can enter additional prompts
+            in the Chat view.
+          type: text
+        - content: '- `document the project''s library dependencies`
+
+            - `document the project''s framework dependencies`
+
+            - `document the project''s component dependencies`
+
+            '
+          type: text
+        - content: Tailor the documentation to cover all necessary details. Ready
+            to proceed?
+          type: text
+      edges:
+      - target_node_id: screen9
+        text: Okay got it, we can move on.
+      id: screen8a
+      type: message
+    - body:
+        parts:
+        - content: Congratulations! You've successfully used GitHub Copilot Chat to
+            generate comprehensive project documentation for Project Hermes. This
+            documentation includes the project overview, requirements, constraints,
+            dependencies, summary, and a README file.
+          type: text
+        - content: '- **Review and Accuracy*'': Always review the documentation generated
+            by GitHub Copilot to ensure it meets your project''s needs. Adjust, add,
+            or remove content as necessary.
+
+            '
+          type: text
+      edges:
+      - target_node_id: screen10
+        text: Let's recap
+      id: screen9
+      type: message
+    - body:
+        parts:
+        - content: 'In this exercise, you used GitHub Copilot Chat to generate project
+            documentation for the Alfred AI project. By using the Chat view and the
+            `@workspace` participant, you were able to:'
+          type: text
+        - content: '1. Generate documentation for the project overview.
+
+            2. List and describe project requirements.
+
+            3. Outline project constraints.
+
+            4. Detail project dependencies.
+
+            5. Summarize the project effectively.
+
+            6. Create a comprehensive README file.
+
+            '
+          type: text
+        - content: Remember, the documentation generated by GitHub Copilot Chat is
+            a starting point. It's crucial to review and refine the content to ensure
+            accuracy and completeness. Tailoring the documentation to your project's
+            specific needs helps other developers understand the project and its goals
+            more effectively.
+          type: text
+      edges:
+      - target_node_id: END
+        text: Awesome!
+      id: screen10
+      type: message
+    - body:
+        parts:
+        - content: Great job completing this mission! Up next, you'll learn more advanced
+            features of GitHub Copilot Chat and how to use them to streamline your
+            development workflow even further. Ready to continue?
+          type: text
+      id: END
+      type: message
