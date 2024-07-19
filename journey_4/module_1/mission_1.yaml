@@ -1,6 +1,8 @@
+# Mission #1: Creating Unit Tests Using GitHub Copilot Chat
+
 tasks:
-  - name: "Creating Unit Tests Using GitHub Copilot Chat"
-    context: "This course focuses on utilizing GitHub Copilot Chat to develop unit tests for assessing functionality and boundary conditions, ensuring code meets specified requirements. It also emphasizes identifying and fixing bugs in unreliable code by designing and implementing functional unit tests for new features, enhancing overall code reliability and performance."
+  - name: "Introduction"
+    context: "Introduce the user to the scenario and prompt them to take the first action."
     id: "1"
     nodes:
       - id: START
@@ -25,6 +27,10 @@ tasks:
         edges:
           - text: "Ready to learn!"
             target_node_id: "screen3"
+  - name: "Setting Up the Repository"
+    context: "Guide the user through the initial repository setup."
+    id: "2"
+    nodes:
       - id: screen3
         type: message
         body:
@@ -53,6 +59,10 @@ tasks:
         edges:
           - text: "Checked out the main branch"
             target_node_id: "screen5"
+  - name: "Code Review and Comprehension"
+    context: "Help the user understand the existing code in the `scheduler.py` file."
+    id: "3"
+    nodes:
       - id: screen5
         type: message
         body:
@@ -87,6 +97,10 @@ tasks:
         edges:
           - text: "Understood"
             target_node_id: "screen7"
+  - name: "Generating and Reviewing Unit Tests"
+    context: "Utilize GitHub Copilot to generate and review unit tests."
+    id: "4"
+    nodes:
       - id: screen7
         type: message
         body:
@@ -127,6 +141,10 @@ tasks:
         edges:
           - text: "Added the necessary tests"
             target_node_id: "screen9"
+  - name: "Implementing and Running Tests"
+    context: "Assist the user in creating, running, and interpreting unit tests."
+    id: "5"
+    nodes:
       - id: screen9
         type: message
         body:
@@ -184,6 +202,10 @@ tasks:
         edges:
           - text: "Created the test script"
             target_node_id: "screen14"
+  - name: "Best Practices and Summary"
+    context: "Summarize the session and reinforce best practices for unit testing."
+    id: "6"
+    nodes:
       - id: screen14
         type: message
         body:
