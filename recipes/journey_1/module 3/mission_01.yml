@@ -1,0 +1,217 @@
+tasks:
+  - name: "Introduction and Setup and Scenario"
+    context: "In this educational module, learners are engaged in an interactive mission where they adopt the role of a lead developer at Alfred AI tasked with building a new web application feature using the Interview Pattern Approach in Prompt Engineering. The journey begins with an introduction to the mission and the importance of aligning the new feature with business requirements and user needs through AI-assisted project planning. Learners are guided through a series of messages that explain the Interview Pattern Approach, highlighting its ability to ask context-specific questions to ensure comprehensive project coverage and iterative development. As they progress, learners explore the benefits of this approach, such as thorough contextual understanding, continuous improvement, and effective handling of complex projects. Through interactive choices, they learn to apply this method to generate detailed project plans, enhancing their understanding of AI-driven project management and its practical applications in real-world scenarios."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Hello, {username}! Welcome to the Interview Pattern Approach mission in Prompt Engineering. As a lead developer at Alfred AI, you're tasked with building a new feature for your web application. To ensure this feature aligns perfectly with business requirements and user needs, we'll leverage AI to craft a comprehensive project plan. This mission will guide you through an interactive process, ensuring that you capture every essential detail for success. Prepared to begin the mission?"
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+          - text: "Tell me more about the Interview Pattern Approach."
+            target_node_id: "screen1a"
+      - id: screen1a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The Interview Pattern Approach is a powerful technique that leverages AI to gather all necessary details interactively for crafting a comprehensive project plan. By asking relevant and context-specific questions, it ensures that no critical aspect is overlooked, providing a thorough understanding of project requirements and goals. This approach not only saves time but also enhances the accuracy and depth of your project planning. All set to move on?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "END"
+          - text: "I'd like to know more about its benefits."
+            target_node_id: "screen1b"
+      - id: screen1b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The Interview Pattern Approach offers several key benefits:\n- **Comprehensive Coverage**: Ensures all aspects of the project are considered, leaving no stone unturned.\n- **Contextual Understanding**: Uses the project context to generate relevant and precise suggestions.\n- **Iterative Development**: Allows for continuous refinement and improvement of the project plan, adapting to new insights and requirements.\nBy understanding these benefits, you can significantly enhance your project planning process. Ready to proceed?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "END"
+          - text: "How does it improve project planning?"
+            target_node_id: "screen1c"
+      - id: screen1c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The Interview Pattern Approach significantly enhances project planning by utilizing AI to ask detailed, contextually relevant questions. This method ensures that all critical aspects are covered, resulting in a robust and comprehensive project plan. It helps in identifying potential issues early and provides a clear roadmap for successful project execution. Ready to give it a try?"
+        edges:
+          - text: "Yes, let's start!"
+            target_node_id: "END"
+          - text: "Can it handle complex projects?"
+            target_node_id: "screen1d"
+      - id: screen1d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The Interview Pattern Approach is designed to handle projects of any complexity. It breaks down complex requirements into manageable parts and ensures that all dependencies and constraints are meticulously considered. This approach facilitates clear and effective planning, even for the most intricate projects. Ready to dive in?"
+        edges:
+          - text: "Let's start!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Great! Let's get your environment set up for this mission. Here are the steps:\n1. Clone the GitHub repository https://github.com/alfred-ai-co/w2-python-code-generation-and-completion\n2. Follow the README instructions to start local server with `fastapi dev app/main.py` and preview the server with `/docs`\nReady to continue?"
+  - name: "Understand the New Feature Request and Current Codebase"
+    context: "In this segment of the educational module, learners are guided through an exploration of a codebase to gain a comprehensive understanding of its structure. The process begins with instructions to use the @workspace command in their terminal, which provides a broad overview of the codebase. This step is crucial for setting the context for Github Copilot's suggestions, enabling it to offer more specific guidance. Learners are encouraged to review Github Copilot's responses to familiarize themselves with the overall layout and key components of the project. If additional information is needed, they can learn more about the @workspace command, which summarizes the project structure and helps in understanding the interactions between different components. Following this, learners are introduced to the interview pattern approach to further refine their understanding of a new feature. They are prompted to act as a product manager, using AI to ask context-specific questions that help define the feature. By reviewing Github Copilot's responses and follow-up questions, learners can ensure all necessary aspects are covered, leading to a deeper understanding and strategic planning for the project."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's dive into the codebase to get a clear understanding of its structure. Here's what you need to do:\n1. Use the `@workspace` command in your terminal to get a broad overview of the codebase.\n2. Take a moment to review Copilot's response. This will give you a good sense of the overall structure and key components.\nWe'll start with trying the command `@workspace` to get a general idea of the current codebase. The commands help us create context for Copilot so its suggestions are more specific. In this case, we won't use the `/explain` command since we want a general overview of the codebase itself rather than selected line of code.\nOnce you're familiar with the layout, we'll move on to the next step. Ready to continue?"
+        edges:
+          - text: "Understood, let's proceed!"
+            target_node_id: "END"
+          - text: "Need more information on `@workspace`."
+            target_node_id: "screen3a"
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The `@workspace` command provides an overview of the entire codebase. It scans through the files and gives you a summary of the project structure, helping you to understand how different components interact with each other. This is crucial for getting a high-level view of the project and making informed decisions during development. Ready to continue?"
+        edges:
+          - text: "Understood, let's proceed!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Take a minute to review Copilot's response. Notice how we have a very general prompt about “how does the codebase work,” but using the `@workspace` command helps provide the context."
+            - type: "text"
+              content: "History of the chat is also included as context for follow-up questions. At this point, we want to get a better understanding of the feature and use the context of the current project to get suggestions about our strategy. Let's employ the `interview pattern` approach with the following prompt:\n\n```\nYou will act as a product manager for Alfred AI, which is developing an AI-powered task prioritization tool for a project management application. You will interview me, asking all the relevant questions necessary for you to generate the best possible description of this new feature.\n```\n\nReview Copilot's response and follow-up questions to ensure they cover all necessary aspects. Ready to answer the questions?"
+  - name: "Interview Pattern Q&A in Action"
+    context: "In this learning module, learners continue their journey by defining the main functionality of an AI-powered task prioritization feature. They begin by answering specific questions posed by Github Copilot to clarify the feature's functionality. A sample prompt is provided to guide them: “The feature is intended to receive a set of tasks or tickets and analyze them. It can then suggest reorganizing their priorities based on inputs such as project status updates or sprint planning notes.” This exercise leverages the interview pattern approach for brainstorming and clarifying application requirements. Learners are encouraged to apply Copilot's contextual awareness of the codebase to generate detailed and specific answers, aiding in well-reasoned development directions. If additional assistance is needed, an example answer outlines the key functionality and considerations, such as deadlines, dependencies, team workload, and task complexity. This step-by-step method helps learners refine their understanding and move towards creating a comprehensive and actionable project plan."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Now let's answer Copilot's questions to define the main functionality of the AI-powered task prioritization feature. Here is a sample prompt you can use:\n\n```\nThe feature is intended to receive a set of tasks or tickets and analyze them. It can then suggest reorganizing their priorities based on inputs such as project status updates or sprint planning notes.\n```\n\nThe interview pattern approach is great for brainstorming and answering questions about the application. Now, when we apply Copilot's contextual awareness of our existing codebase, we can drill down to much more specific answers as developers to move in a well-reasoned direction. Let me know when you're ready to move forward."
+        edges:
+          - text: "Yes, let's move on!"
+            target_node_id: "screen6"
+          - text: "I need more help with the answers."
+            target_node_id: "screen5a"
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here's an example of how you might answer Copilot's Q&A:\n- **Functionality**: The feature analyzes tasks and suggests reorganization based on project updates or sprint planning notes.\n- **Considerations**: It considers factors such as deadlines, dependencies, team members' existing tickets, and task complexity for reprioritization.\n\nReady to continue?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen6"
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                During experimentation, have you noticed anything? Not in every case since Copilot is non-deterministic, but there is a possibility that Copilot can have mistakes. In the case below where we have answered several questions from Copilot, it requires human intervention.
+            - type: "text"
+              content: |
+                Does this mean Copilot is bad? Definitely not! In some cases, these questions to drill down the specifics of the new feature is incredibly important. In other cases, it's obviously too much.
+            - type: "text"
+              content: |
+                This is where you as the AI-enabled Developer can use this `interview pattern` prompting technique to gain clarity on either the feature itself or your own approach to the problem at hand to brainstorm and iterate in a short amount of time very quickly.
+            - type: "text"
+              content: |
+                Let's wrap things up here! Let's answer one more question, but now provide a new set of instructions to start taking the question-answer context of the chat into a high-level plan for implementation. Try a prompt like so:
+                1. Summarize the key points from the Q&A.
+                2. Use the following prompt to generate suggestions:
+                
+                ```kotlin
+                Given the questions and answers, as well as the context of the @workspace, what are suggestions and directions to build the feature?
+                ```
+        edges:
+          - text: "Yes, let's go!"
+            target_node_id: "screen7"
+          - text: "I need some help with summarizing."
+            target_node_id: "screen6a"
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To effectively summarize the Q&A, follow these steps:
+                - **Key Points**: Identify the main functionality, considerations, and priorities discussed.
+                - **Context**: Ensure the summary aligns with the project's context.
+            - type: "text"
+              content: |
+                Example Summary:
+                
+                ```vbnet
+                The AI-powered task prioritization feature will analyze tasks and suggest reorganization based on project updates. Key factors include deadlines, dependencies, team workload, and task complexity. The primary goal is to unblock team members and prioritize high-impact items.
+                ```
+            - type: "text"
+              content: |
+                Ready to continue?
+        edges:
+          - text: "Yes, let's go ahead!"
+            target_node_id: "screen7"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Examine Copilot's response. Notice now how the prompting technique from `interview pattern` helped us brainstorm a deeper understanding of the new feature and consider new factors that perhaps haven't been thought of yet. Then, it helped us create a high-level plan that we can further drill down with prompts to get a good direction of where to start.
+                
+                Here's an example structure:
+                1. **Task Analysis**: Implement AI to analyze tasks based on input data.
+                2. **Prioritization Algorithm**: Develop an algorithm to prioritize tasks based on deadlines, dependencies, and workload.
+                3. **Integration**: Integrate the feature with the existing project management application.
+                4. **Testing**: Test the feature thoroughly to ensure accuracy.
+                5. **Deployment**: Deploy the feature in the production environment.
+            - type: "text"
+              content: |
+                Once you review the high-level plan, let's move to the conclusion.
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "END"
+          - text: "What aspects should I consider when refining my plan?"
+            target_node_id: "screen7a"
+      - id: screen7a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To refine the high-level plan, consider the following aspects:
+                - **Task Analysis**: Define how the AI will analyze tasks and gather input data.
+                - **Prioritization Algorithm**: Specify the criteria and factors for task prioritization.
+                - **Integration**: Plan the steps for integrating the new feature with the existing application.
+                - **Testing and Deployment**: Outline the processes for testing the feature thoroughly and deploying it to production.
+            - type: "text"
+              content: "Ready to move onward?"
+        edges:
+          - text: "Yes, let's move ahead!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                We utilized the `interview pattern` prompting technique to have a Q&A session with Copilot. We gave the prompt a specific role and then gave it some direction by describing the potential new feature. It asked thoughtful questions but needs the intervention of a human to create a high-level plan which let us distill information into development plans within the context of our codebase.
+            - type: "text"
+              content: |
+                Congratulations, {username}! You've effectively applied the Interview Pattern Approach to develop a high-level plan for your new feature. This process has taught you how to interactively gather crucial information, resulting in a thorough and well-organized project plan. Excellent work!

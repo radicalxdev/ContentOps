@@ -1,0 +1,901 @@
+tasks:
+  - name: "Welcome and Introduction"
+    context: "Developing a complex app can often lead to situations where a minor change causes everything to break. The challenge of tracking down that one elusive bug hidden among thousands of lines of code underscores the importance of having robust unit tests. This quest emphasizes developing unit tests for specific conditions using GitHub Copilot to ensure functionality, identify and fix bugs, and enhance overall code reliability and performance."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Link to GIF of Ada AI greeting with a welcoming gesture.]"
+            - type: "text"
+              content: "Hello, {username}! Imagine you're developing a complex app, and a minor change causes everything to break. How would you feel about tracking down that one elusive bug hidden among thousands of lines of code?"
+        edges:
+          - text: "Overwhelmed."
+            target_node_id: "screen2a"
+          - text: "It would take time, but I'd manage."
+            target_node_id: "screen2b"
+          - text: "Bring it on!"
+            target_node_id: "screen2c"
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's a common reaction, [userName]. Debugging can be a daunting task. This is where unit tests come in handy—they isolate and verify each part of the code, making debugging much simpler. Let's dive into why unit testing is so crucial. Which of these benefits stands out to you the most?"
+        edges:
+          - text: "Ensures individual components work correctly."
+            target_node_id: "screen3"
+          - text: "Maintains code reliability and quality."
+            target_node_id: "screen3"
+      - id: screen2b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "I get it, [userName]. Unit tests act like a safety net—they catch issues early, saving you a lot of time and effort. Let's explore why unit testing is so essential. Which of these benefits resonates with you?"
+        edges:
+          - text: "Ensures individual components work correctly."
+            target_node_id: "screen3"
+          - text: "Maintains code reliability and quality."
+            target_node_id: "screen3"
+      - id: screen2c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Great attitude, [userName]! Even the most skilled developers benefit from tools that streamline the debugging process. Unit tests ensure each part of your code functions as intended. Let's look at why unit testing is essential. Which of these benefits do you find most compelling?"
+        edges:
+          - text: "Ensures individual components work correctly."
+            target_node_id: "screen3"
+          - text: "Maintains code reliability and quality."
+            target_node_id: "screen3"
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Unit testing is a cornerstone of software development. Here's why it's vital:"
+            - type: "text"
+              content: |
+                - **Ensures the functionality of individual components:**
+                    - Verifies that each part of the code works correctly, simplifying debugging.
+                    - Helps ensure every component performs as intended, contributing to a stable system.
+                - **Maintains code reliability and quality:**
+                    - Prevents new changes from breaking existing functionality, maintaining code integrity.
+                    - Supports continuous integration and deployment (CI/CD), catching issues early.
+            - type: "text"
+              content: "Ready to discover how GitHub Copilot can assist with unit testing?"
+        edges:
+          - text: "Yes, show me!"
+            target_node_id: "screen4"
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of GitHub Copilot suggesting test cases in Visual Studio Code."
+            - type: "text"
+              content: "In this module, we'll explore how GitHub Copilot and Copilot Chat can revolutionize your unit testing workflow. Here's what we'll cover:"
+            - type: "text"
+              content: |
+                - **Using GitHub Copilot and Copilot Chat for generating unit tests:**
+                    - Learn how these AI tools can help quickly and accurately create test cases.
+                    - Discover how Copilot suggests and completes test cases based on your code, making testing efficient and less error-prone.
+                - **Tools: Visual Studio Code, Python extension, pytest framework:**
+                    - **Visual Studio Code:** A lightweight, powerful code editor.
+                    - **Python extension:** Enhances Python development in Visual Studio Code.
+                    - **pytest framework:** A robust, simple testing framework for Python.
+            - type: "text"
+              content: "Before we dive in, how familiar are you with these tools?"
+        edges:
+          - text: "I know them all well."
+            target_node_id: "screen5a"
+          - text: "I know some, but not all."
+            target_node_id: "screen5b"
+          - text: "I'm new to these tools."
+            target_node_id: "screen5c"
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Fantastic, [userName]! Since you're already familiar with these tools, we can jump right into using GitHub Copilot for unit testing. Ready to get started?"
+        edges:
+          - text: "Yes, let's dive in!"
+            target_node_id: "screen6"
+      - id: screen5b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "No problem, [userName]. Let's quickly review the tools we'll be using so you're all set. Ready for a brief overview?"
+        edges:
+          - text: "Yes, give me a quick review."
+            target_node_id: "screen5d"
+      - id: screen5c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "No worries, [userName]! I'm here to help you get up to speed. We'll go through a detailed introduction to these tools so you're comfortable using them. Ready to begin?"
+        edges:
+          - text: "Yes, let's start!"
+            target_node_id: "screen5d"
+      - id: screen5d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure thing, [userName]! Here's a quick refresher on the tools:"
+            - type: "text"
+              content: |
+                - **Visual Studio Code:** A lightweight, powerful code editor.
+                - **Python extension:** Enhances Python development in Visual Studio Code.
+                - **pytest framework:** A simple, robust testing framework for Python.
+            - type: "text"
+              content: "Ready to dive into using GitHub Copilot for unit testing?"
+        edges:
+          - text: "Yes, let's begin!"
+            target_node_id: "screen6"
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of GitHub Copilot suggesting unit test cases in Visual Studio Code."
+            - type: "text"
+              content: "Now that you're familiar with the tools, let's explore how GitHub Copilot can help you generate unit tests efficiently. Here's what we'll cover:"
+            - type: "text"
+              content: |
+                - **Code line completions for writing code efficiently:**
+                    - GitHub Copilot suggests code completions as you type, speeding up the coding process.
+                    - Ideal for generating boilerplate code, repetitive patterns, and complete unit test cases.
+                    - **Example:** As you start typing a test function, Copilot can suggest the function signature, assertions, and specific test cases based on the function being tested.
+            - type: "text"
+              content: "Ready to see code completions in action?"
+        edges:
+          - text: "Yes, show me!"
+            target_node_id: "screen7"
+          - text: "Can you explain more about code completions?"
+            target_node_id: "screen6a"
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure! Code line completions help you by predicting and suggesting the next line of code as you type. This feature can generate boilerplate code, repetitive patterns, and complete unit test cases quickly and accurately."
+        edges:
+          - text: "Got it, let's proceed!"
+            target_node_id: "screen7"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of GitHub Copilot suggesting code completions for a test function."
+            - type: "text"
+              content: "Here's how GitHub Copilot's code completions work in practice:"
+            - type: "text"
+              content: |
+                1. **Start typing a test function:**
+                    - As you type, Copilot predicts the next line based on context.
+                    - Copilot can suggest the function signature, assertions, and specific test cases.
+            - type: "text"
+              content: "**Example:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_addition():
+                    result = add(2, 3)
+                    assert result == 5
+                ```
+            - type: "text"
+              content: "See how it works?"
+        edges:
+          - text: "Yes, what's next?"
+            target_node_id: "screen8"
+          - text: "I'd like more examples."
+            target_node_id: "screen7a"
+      - id: screen7a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of GitHub Copilot's code completions:"
+            - type: "text"
+              content: "**Testing a string function:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_to_upper():
+                    result = to_upper('hello')
+                    assert result == 'HELLO'
+                ```
+            - type: "text"
+              content: "**Testing a sorting function:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_sort_list():
+                    result = sort_list([3, 1, 2])
+                    assert result == [1, 2, 3]
+                ```
+            - type: "text"
+              content: "Ready to move on to the next feature?"
+        edges:
+          - text: "Yes, what's next?"
+            target_node_id: "screen8"
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of GitHub Copilot's inline chat feature within Visual Studio Code."
+            - type: "text"
+              content: "Next, let's look at how GitHub Copilot's inline chat can assist you directly in the editor."
+            - type: "text"
+              content: |
+                - **Inline chat for help directly in the editor:**
+                    - Start a conversation with GitHub Copilot right within your code editor.
+                    - Ask questions and get instant suggestions without leaving your workspace.
+                    - **Example:** Highlight a function and ask, "How do I test this function?" Copilot will provide suggestions inline.
+            - type: "text"
+              content: "Ready to try inline chat?"
+        edges:
+          - text: "Bring it on!"
+            target_node_id: "screen9"
+          - text: "Can you explain more about inline chat?"
+            target_node_id: "screen8a"
+      - id: screen8a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Inline chat allows you to interact with GitHub Copilot directly within your code editor. You can ask questions and receive immediate suggestions without leaving your workspace."
+        edges:
+          - text: "Got it, let's proceed!"
+            target_node_id: "screen9"
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of GitHub Copilot's inline chat feature suggesting how to test a function."
+            - type: "text"
+              content: "Here's how GitHub Copilot's inline chat works in practice:"
+            - type: "text"
+              content: |
+                1. **Highlight a function:**
+                    - Ask Copilot, "How do I test this function?"
+                    - Copilot provides immediate suggestions inline.
+            - type: "text"
+              content: "**Example:**"
+            - type: "text"
+              content: "Highlighting a `calculate_total` function and asking for test suggestions, Copilot might suggest:"
+            - type: "text"
+              content: |
+                ```python
+                def test_calculate_total():
+                    result = calculate_total([5, 10, 15])
+                    assert result == 30
+                ```
+            - type: "text"
+              content: "See how it works?"
+        edges:
+          - text: "Yes, what's next?"
+            target_node_id: "screen10"
+          - text: "I'd like more examples."
+            target_node_id: "screen9a"
+      - id: screen9a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of using GitHub Copilot's inline chat:"
+            - type: "text"
+              content: "**Testing a reverse string function:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_reverse_string():
+                    result = reverse_string('hello')
+                    assert result == 'olleh'
+                ```
+            - type: "text"
+              content: "**Testing a factorial function:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_factorial():
+                    result = factorial(5)
+                    assert result == 120
+                ```
+            - type: "text"
+              content: "Ready to move on to the next feature?"
+        edges:
+          - text: "Let's go!"
+            target_node_id: "screen10"
+      - id: screen10
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of GitHub Copilot's chat view in Visual Studio Code."
+            - type: "text"
+              content: "Lastly, let's explore the chat view for more detailed AI assistance."
+            - type: "text"
+              content: |
+                - **Chat view for AI assistance:**
+                    - Opens a dedicated pane in Visual Studio Code for detailed interaction with GitHub Copilot.
+                    - Ask broader questions about best practices, alternative approaches, or detailed explanations.
+                    - **Example:** Ask Copilot, "What are the edge cases for this function?" or "Generate unit tests for this class," and receive comprehensive responses and code examples.
+            - type: "text"
+              content: "Ready to see the chat view in action?"
+        edges:
+          - text: "Yes, show me!"
+            target_node_id: "screen11"
+          - text: "Can you explain more about the chat view?"
+            target_node_id: "screen10a"
+      - id: screen10a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The chat view opens a dedicated pane in Visual Studio Code for detailed interaction with GitHub Copilot. You can ask broader questions and get comprehensive responses and code examples."
+        edges:
+          - text: "Got it, let's proceed!"
+            target_node_id: "screen11"
+      - id: screen11
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of GitHub Copilot's chat view generating unit tests for a class."
+            - type: "text"
+              content: "Here's how GitHub Copilot's chat view works in practice:"
+            - type: "text"
+              content: |
+                1. **Open the chat view:**
+                    - Ask Copilot, "Generate unit tests for this class."
+                    - Copilot provides detailed test cases and explanations.
+            - type: "text"
+              content: "**Example:**"
+            - type: "text"
+              content: "Asking to generate tests for a `User` class, Copilot might suggest:"
+            - type: "text"
+              content: |
+                ```python
+                def test_user_creation():
+                    user = User(name='Alice', age=30)
+                    assert user.name == 'Alice'
+                    assert user.age == 30
+                ```
+            - type: "text"
+              content: "See how it works?"
+        edges:
+          - text: "Sure!"
+            target_node_id: "screen12"
+          - text: "I'd like more examples."
+            target_node_id: "screen11a"
+      - id: screen11a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of using GitHub Copilot's chat view:"
+            - type: "text"
+              content: "**Testing an `Order` class:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_order_total():
+                    order = Order(items=[Item(price=10), Item(price=20)])
+                    assert order.total() == 30
+                ```
+            - type: "text"
+              content: "**Testing an `Inventory` class:**"
+            - type: "text"
+              content: |
+                ```python
+                def test_inventory_add_item():
+                    inventory = Inventory()
+                    item = Item(name='Laptop')
+                    inventory.add_item(item)
+                    assert item in inventory.items
+                ```
+            - type: "text"
+              content: "Ready to move on to the next feature?"
+        edges:
+          - text: "On to the next feature!"
+            target_node_id: "screen12"
+      - id: screen12
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of Ada AI explaining edge cases and boundary conditions."
+            - type: "text"
+              content: "Great job so far, [userName]! Now, let's delve into advanced unit test generation by focusing on edge cases and boundary conditions. These tests ensure your code handles the most extreme and unexpected inputs robustly."
+            - type: "text"
+              content: "Ready to learn about edge cases and boundary conditions?"
+        edges:
+          - text: "Yes, let's go!"
+            target_node_id: "screen13"
+          - text: "Can you explain more about why they are important?"
+            target_node_id: "screen12a"
+      - id: screen12a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Absolutely! Testing edge cases and boundary conditions is crucial for robust software. Here's why:"
+            - type: "text"
+              content: |
+                - **Null Inputs:** Functions receiving null values can lead to unexpected errors.
+                - **Invalid Parameters:** Ensures your code handles incorrect or malicious inputs gracefully.
+                - **Boundary Values:** Tests extreme values at the edges of input ranges.
+            - type: "text"
+              content: "Missing these tests can result in unpredictable software failures in production. By thoroughly testing these scenarios, you enhance the robustness and reliability of your software."
+        edges:
+          - text: "Yes, let's go!"
+            target_node_id: "screen13"
+      - id: screen13
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of code snippets showing null inputs, invalid parameters, and boundary values."
+            - type: "text"
+              content: "Let's look at some examples of edge cases and boundary conditions you should test for:"
+            - type: "text"
+              content: "**Null Inputs:** Scenarios where functions receive null values."
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_addition_with_null():
+                    result = add(None, 3)
+                    assert result is None
+                ```
+            - type: "text"
+              content: "**Invalid Parameters:** Testing with parameters outside the expected range or format."
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_addition_with_invalid_parameters():
+                    result = add('two', 3)
+                    assert result is None
+                ```
+            - type: "text"
+              content: "**Boundary Values:** Extreme values at the edges of the input domain."
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_addition_with_boundary_values():
+                    result = add(1e10, -1e10)
+                    assert result == 0
+                ```
+            - type: "text"
+              content: "Ready to generate these with GitHub Copilot?"
+        edges:
+          - text: "Yes, let's generate!"
+            target_node_id: "screen14"
+          - text: "Can you show more examples?"
+            target_node_id: "screen13a"
+      - id: screen13a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of edge cases and boundary conditions:"
+            - type: "text"
+              content: "**Testing a function with a list input:**"
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_sort_list_with_null():
+                    result = sort_list(None)
+                    assert result is None
+                ```
+            - type: "text"
+              content: "**Testing a function with an empty input:**"
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_sort_list_with_empty():
+                    result = sort_list([])
+                    assert result == []
+                ```
+            - type: "text"
+              content: "Ready to generate these with GitHub Copilot?"
+        edges:
+          - text: "Start generating!"
+            target_node_id: "screen14"
+      - id: screen14
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of GitHub Copilot suggesting edge case tests in Visual Studio Code."
+            - type: "text"
+              content: "Here's how GitHub Copilot can help you generate edge case tests:"
+            - type: "text"
+              content: |
+                1. **Type the function you want to test:**
+                    - Copilot will suggest edge case tests based on the function.
+                    - **Example:**
+                    ```python
+                    def test_addition_with_null():
+                        result = add(None, 3)
+                        assert result is None
+                    ```
+            - type: "text"
+              content: "Ready to see Copilot generate these tests?"
+        edges:
+          - text: "Yes, let's see it!"
+            target_node_id: "screen15"
+          - text: "Can you show another example?"
+            target_node_id: "screen14a"
+      - id: screen14a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure! Here's another example:"
+            - type: "text"
+              content: |
+                1. **Type the function you want to test:**
+                    - Copilot will suggest edge case tests.
+                    - **Example:**
+                    ```python
+                    def test_divide_with_zero():
+                        result = divide(5, 0)
+                        assert result is None
+                    ```
+            - type: "text"
+              content: "Ready to see Copilot generate these tests?"
+        edges:
+          - text: "Yes, let's see it!"
+            target_node_id: "screen15"
+      - id: screen15
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of GitHub Copilot generating edge case tests for a function."
+            - type: "text"
+              content: "Here's how GitHub Copilot generates edge case tests:"
+            - type: "text"
+              content: |
+                1. **Start typing a test function for edge cases:**
+                    - As you type, Copilot predicts and suggests edge case tests.
+                    - **Example:**
+                    ```python
+                    def test_handle_edge_cases():
+                        result = handle_edge_case(None)
+                        assert result is None
+                    ```
+            - type: "text"
+              content: "See how it works?"
+        edges:
+          - text: "Yes, show me!"
+            target_node_id: "screen16"
+          - text: "I'd like more examples."
+            target_node_id: "screen15a"
+      - id: screen15a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of edge case tests generated by GitHub Copilot:"
+            - type: "text"
+              content: "**Testing a string manipulation function:**"
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_reverse_string_with_null():
+                    result = reverse_string(None)
+                    assert result is None
+                ```
+            - type: "text"
+              content: "**Testing a mathematical function:**"
+            - type: "text"
+              content: |
+                **Example:**
+                ```python
+                def test_multiply_with_large_numbers():
+                    result = multiply(1e10, 1e10)
+                    assert result == 1e20
+                ```
+            - type: "text"
+              content: "Ready to move on?"
+        edges:
+          - text: "Let's move forward!"
+            target_node_id: "screen16"
+      - id: screen16
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of Visual Studio Code with the Test Explorer and context menu options highlighted."
+            - type: "text"
+              content: "Great progress, [userName]! Now, let's explore how to run and manage your unit tests using Visual Studio Code and the Python extension. These tools make it easy to execute, debug, and manage your tests efficiently."
+            - type: "text"
+              content: "Ready to learn how?"
+        edges:
+          - text: "Yes, let's go!"
+            target_node_id: "screen17"
+          - text: "Can you explain more about running tests?"
+            target_node_id: "screen16a"
+      - id: screen16a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure! Here's how you can run your test cases:"
+            - type: "text"
+              content: |
+                1. **Run Test Cases:**
+                    - **Shortcuts:** Click the green play button next to your test functions to run individual tests.
+                    - **Context Menu:** Right-click on a test function or file and select "Run" from the context menu.
+            - type: "text"
+              content: "Ready to see this in action?"
+        edges:
+          - text: "Yes, let's see it!"
+            target_node_id: "screen17"
+      - id: screen17
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of Visual Studio Code showing the process of running test cases using the green play button and context menu."
+            - type: "text"
+              content: "Here's how to run test cases in Visual Studio Code:"
+            - type: "text"
+              content: |
+                1. **Run Individual Tests:**
+                    - Click the green play button next to your test functions.
+                    - **Example:**
+                    ```python
+                    def test_addition():
+                        result = add(2, 3)
+                        assert result == 5
+                    ```
+                2. **Run from Context Menu:**
+                    - Right-click on a test function or file and select "Run" from the context menu.
+            - type: "text"
+              content: "See how easy it is?"
+        edges:
+          - text: "Yes, what's next?"
+            target_node_id: "screen18"
+          - text: "I'd like more examples."
+            target_node_id: "screen17a"
+      - id: screen17a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of running test cases:"
+            - type: "text"
+              content: |
+                1. **Run a Test File:**
+                    - Right-click on the test file in the editor and select "Run".
+                2. **Run All Tests:**
+                    - Use the Test Explorer to run all tests in your project.
+            - type: "text"
+              content: "Ready to move on?"
+        edges:
+          - text: "Show me the next step!"
+            target_node_id: "screen18"
+      - id: screen18
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of Visual Studio Code with the debug option highlighted."
+            - type: "text"
+              content: "Now, let's look at how to debug your test cases using Visual Studio Code:"
+            - type: "text"
+              content: |
+                1. **Debug Test Cases:**
+                    - Click the green play button with a bug icon next to your test functions.
+                    - **Context Menu:** Right-click on a test function or file and select "Debug" from the context menu.
+                    - **Example:**
+                    ```python
+                    def test_addition():
+                        result = add(2, 3)
+                        assert result == 5
+                    ```
+            - type: "text"
+              content: "Ready to see debugging in action?"
+        edges:
+          - text: "Yes, would love to!"
+            target_node_id: "screen19"
+          - text: "Can you explain more about debugging?"
+            target_node_id: "screen18a"
+      - id: screen18a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure! Here's how you can debug your test cases:"
+            - type: "text"
+              content: |
+                1. **Debug Individual Tests:**
+                    - Click the green play button with a bug icon next to your test functions.
+                2. **Debug from Context Menu:**
+                    - Right-click on a test function or file and select "Debug" from the context menu.
+            - type: "text"
+              content: "Ready to see this in action?"
+        edges:
+          - text: "Sure!"
+            target_node_id: "screen19"
+      - id: screen19
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of Visual Studio Code showing the debugging process for a test case."
+            - type: "text"
+              content: "Here's how to debug test cases in Visual Studio Code:"
+            - type: "text"
+              content: |
+                1. **Debug Individual Tests:**
+                    - Click the green play button with a bug icon next to your test functions.
+                    - **Example:**
+                    ```python
+                    def test_addition():
+                        result = add(2, 3)
+                        assert result == 5
+                    ```
+                2. **Debug from Context Menu:**
+                    - Right-click on a test function or file and select "Debug" from the context menu.
+            - type: "text"
+              content: "See how it works?"
+        edges:
+          - text: "What's the next part?"
+            target_node_id: "screen20"
+          - text: "I'd like more examples."
+            target_node_id: "screen19a"
+      - id: screen19a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of debugging test cases:"
+            - type: "text"
+              content: |
+                1. **Debug a Test File:**
+                    - Right-click on the test file in the editor and select "Debug".
+                2. **Debug All Tests:**
+                    - Use the Test Explorer to debug all tests in your project.
+            - type: "text"
+              content: "Ready to move on?"
+        edges:
+          - text: "Let's keep going!"
+            target_node_id: "screen20"
+      - id: screen20
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of the Test Explorer in Visual Studio Code."
+            - type: "text"
+              content: "Next, let's explore the Test Explorer in Visual Studio Code:"
+            - type: "text"
+              content: |
+                1. **Test Explorer Overview:**
+                    - Access the Test Explorer by clicking on the beaker icon in the Activity Bar.
+                    - Provides a comprehensive view of all test cases in your workspace.
+            - type: "text"
+              content: "Ready to see how it works?"
+        edges:
+          - text: "Yes, show me!"
+            target_node_id: "screen21"
+          - text: "Can you explain more about managing tests?"
+            target_node_id: "screen20a"
+      - id: screen20a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Sure! Here's how you can manage your test cases with the Test Explorer:"
+            - type: "text"
+              content: |
+                1. **Tree View:**
+                    - Displays your test cases organized by test file and function.
+                    - Run or debug individual tests, groups of tests, or all tests in your project.
+                2. **Test Results:**
+                    - Shows the status of each test (pass, fail, skipped) with color-coded indicators.
+                    - Clicking on a failed test displays the error message and stack trace.
+            - type: "text"
+              content: "Ready to see this in action?"
+        edges:
+          - text: "Let's make it happen!"
+            target_node_id: "screen21"
+      - id: screen21
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of Visual Studio Code showing the Test Explorer in action."
+            - type: "text"
+              content: "Here's how to use the Test Explorer in Visual Studio Code:"
+            - type: "text"
+              content: |
+                1. **Access Test Explorer:**
+                    - Click on the beaker icon in the Activity Bar.
+                    - **Example:**
+                    ```python
+                    def test_addition():
+                        result = add(2, 3)
+                        assert result == 5
+                    ```
+                2. **Run/Debug Tests:**
+                    - Use the Test Explorer to run or debug individual tests, groups of tests, or all tests in your project.
+                3. **View Test Results:**
+                    - Check the status of each test (pass, fail, skipped) with color-coded indicators.
+                    - Click on a failed test to see the error message and stack trace.
+            - type: "text"
+              content: "See how it works?"
+        edges:
+          - text: "Let's keep going!"
+            target_node_id: "screen22"
+          - text: "I'd like more examples."
+            target_node_id: "screen21a"
+      - id: screen21a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here are more examples of using the Test Explorer:"
+            - type: "text"
+              content: |
+                1. **Run All Tests:**
+                    - Click the run button at the top of the Test Explorer to run all tests in your project.
+                2. **Debug a Group of Tests:**
+                    - Select a group of tests and use the debug option to start a debugging session.
+            - type: "text"
+              content: "Ready to move on?"
+        edges:
+          - text: "Let's move forward!"
+            target_node_id: "screen22"
+      - id: screen22
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Illustration of Ada AI summarizing the features of Visual Studio Code for testing."
+            - type: "text"
+              content: "Great work, [userName]! Here's a summary of how Visual Studio Code and the Python extension help you run and manage unit tests:"
+            - type: "text"
+              content: |
+                1. **Run/Debug Test Cases:**
+                    - Use shortcuts and context menu options to run or debug individual tests.
+                    - Click the green play button or the green play button with a bug icon to start a debugging session.
+                2. **Test Explorer:**
+                    - Access the Test Explorer for a comprehensive view of all test cases.
+                    - Manage and view test results with color-coded indicators.
+            - type: "text"
+              content: "By leveraging these features, you can efficiently execute, debug, and manage your unit tests, ensuring the reliability and quality of your codebase."
+            - type: "text"
+              content: "Ready to move on to the next part?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen23"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Congratulations! You've successfully learned how to run and manage your unit tests using Visual Studio Code and the Python extension. Keep practicing these steps to master unit testing."
+        edges:
+          - text: "Finish"
+            target_node_id: "END"
