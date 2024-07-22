@@ -1,0 +1,159 @@
+tasks:
+  - name: "Introduction and Setup"
+    context: "In this sequential learning module, learners are introduced to the Chain-of-Thought Approach in Prompt Engineering while working on the Project Management API. The mission begins with an introduction to the task of integrating webhooks to notify services about events such as user registrations and transaction completions. Learners are guided through setting up their development environment and using the @workspace command to organize the new webhook function within the codebase. They are taught to compare standard prompting techniques with the Chain-of-Thought reasoning approach, which breaks down tasks into logical steps to generate more accurate and context-aware responses. Through this method, learners gain a deeper understanding of the project requirements, enhancing their ability to manage complex tasks and improve project planning with AI-driven insights. The module emphasizes practical application and iterative learning, preparing learners to effectively implement and refine AI-powered features."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Hello, {userName}! Welcome to the Chain-of-Thought Approach mission in Prompt Engineering. Your team is working on the Project Management API and needs to integrate webhooks created by another team to notify their service about events like user registration and transaction completions. Your task is to build a function to send these requests. This mission will guide you through using the Chain-of-Thought reasoning technique to create this function. Ready to start?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+          - text: "Tell me more about the Chain-of-Thought Approach."
+            target_node_id: "screen1a"
+      - id: screen1a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The Chain-of-Thought Approach is a technique that enhances AI's reasoning abilities by breaking down tasks into logical steps. By guiding AI through a structured thought process, we can generate more accurate and context-aware responses. This approach is especially useful for complex tasks that require detailed instructions. Ready to proceed?
+        edges:
+          - text: "Yes, let's move on!"
+            target_node_id: "END"
+          - text: "I'd like to know more about its benefits."
+            target_node_id: "screen1b"
+      - id: screen1b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The Chain-of-Thought Approach offers several benefits:
+                - **Structured Reasoning**: Encourages AI to follow a logical sequence, improving the accuracy of responses.
+                - **Handling Complexity**: Makes it easier to manage complex tasks by breaking them down into manageable steps.
+                - **Improved Output**: Generates more detailed and contextually relevant responses.
+            - type: "text"
+              content: |
+                By understanding these benefits, you can enhance your prompt engineering skills. Ready to proceed?
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "END"
+          - text: "How does it improve project planning?"
+            target_node_id: "screen1c"
+      - id: screen1c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The Chain-of-Thought Approach enhances project planning by encouraging AI to consider all relevant factors step-by-step. This method ensures thorough coverage of requirements, resulting in a robust project plan. Ready to give it a try?
+        edges:
+          - text: "Yes, let's start!"
+            target_node_id: "END"
+          - text: "Can it handle complex projects?"
+            target_node_id: "screen1d"
+      - id: screen1d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The Chain-of-Thought Approach is designed to handle complex projects by breaking down tasks into smaller, logical steps. This method ensures all dependencies and constraints are considered, facilitating effective planning. Ready to dive in?
+        edges:
+          - text: "Let's start!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Great! Let's get your environment set up for this mission. Here are the steps:
+                1. Clone the GitHub repository https://github.com/alfred-ai-co/w2-python-code-generation-and-completion.
+                2. Follow the README instructions to start the local server with `fastapi dev app/main.py` and preview the server with `/docs`.
+            - type: "text"
+              content: "Ready to continue?"
+  - name: "Organizing Code with Different Prompt Techniques"
+    context: "In this part of the learning module, learners focus on organizing a new webhook function within their codebase using different prompting techniques. Initially, they use the @workspace command to get a straightforward recommendation. They then compare this with the Chain-of-Thought reasoning approach, which breaks down the task into logical steps, considering module placement, function usage, file location, and separation of concerns. Both techniques suggest placing the function within the app/api/ module, but the Chain-of-Thought approach additionally recommends creating a new file to adhere to the single responsibility principle. This comparison helps learners understand the nuances of each technique and prepares them to dive deeper into more examples, enhancing their prompt engineering and project planning skills."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/11799f51-e0b9-4514-97f3-a1ab071c8b32/Untitled.png"
+            - type: "text"
+              content: |
+                Let's start by using the `@workspace` command to get a recommendation for organizing the new webhook function within the codebase. Here's an example prompt:
+                
+                ```python
+                @workspace I need to develop a function that can send a request to a URL as a webhook. Where should I place the new function within the codebase?
+                ```
+            - type: "text"
+              content: "Take a moment to review the responses."
+        edges:
+          - text: "Reviewed the responses."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Next, let's compare this with the Chain-of-Thought reasoning approach. We'll reset the Copilot chat by pressing the 'plus' button at the top right corner and use the following prompt:
+                
+                ```python
+                @workspace Task: I need to develop a function that can send a request to a URL as a webhook. Where should I place the new function within the codebase? Let's think about this step-by-step.
+                
+                Step-by-Step Reasoning:
+                1. Start with reasoning over an appropriate module to place the new webhook function within the codebase.
+                2. Next, think about how this function would be used throughout the codebase. Consider constraints like where the file is located and separation of concerns.
+                3. Finally, suggest a module to place the webhooks file within the codebase.
+                ```
+            - type: "image"
+              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/c8ef05a1-27d3-4f4b-9703-7db0fd18c363/Untitled.png"
+            - type: "text"
+              content: |
+                Take a minute to examine the responses. Notice the difference in recommendations. Both responses suggest placing the new feature within the `app/api/` module, but the Chain-of-Thought reasoning also recommends creating a new file within the `app/api/` folder, adhering to the single responsibility principle. Let's dive deeper into a few more examples like the difference of the code suggestion when given two prompting techniques.
+  - name: "Prompt Technique Comparison with Chain of Thought"
+    context: "In this part of the learning module, learners compare the code generation outputs of Copilot using zero-shot prompts and the Chain-of-Thought reasoning approach to handle specific requirements for creating a function. The comparison highlights how the Chain-of-Thought approach provides a more detailed, step-by-step process, enhancing the specificity and accuracy of the output compared to the less detailed zero-shot prompts. This demonstrates the value of structured reasoning in handling complex tasks. The module concludes with a summary emphasizing the power of the Chain-of-Thought technique in generating thorough and context-aware responses, congratulating learners on their successful application of this approach to create a webhook function."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Now, let's compare the code generation outputs of Copilot using Chain of Thought and zero-shot prompts for creating the same output. We will introduce specific requirements for the function to see how each technique handles the task.
+                
+                **Zero-shot Prompt Output:**
+            - type: "image"
+              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/fe3c79b8-c9c2-4af9-baf4-66ab6dfb43a7/Untitled.png"
+            - type: "text"
+              content: |
+                **Chain of Thought Reasoning Output:**
+            - type: "image"
+              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/900463cc-7471-46b6-99da-526666a216ee/Untitled.png"
+            - type: "text"
+              content: |
+                Notice how the Chain-of-Thought reasoning provides a more detailed and step-by-step approach, while the zero-shot prompt is less specific. Ready to proceed to the summary?
+        edges:
+          - text: "Yes, let's proceed to the summary!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The Chain-of-Thought reasoning technique is a powerful tool for handling specific and complex requirements. It encourages the AI to follow logical steps, improving the accuracy and relevance of its responses. While not drastically different in every case, it's a valuable method for ensuring thorough and well-structured outputs.
+            - type: "text"
+              content: |
+                Congratulations, {userName}! 🎉 You've successfully applied the Chain-of-Thought Approach to create a function for sending data to webhooks. This mission has taught you how to leverage structured reasoning to generate more accurate and context-aware responses. Excellent work!
