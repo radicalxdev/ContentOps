@@ -1,0 +1,169 @@
+tasks:
+  - name: "Introduction and Setup"
+    context: "In this mission, learners are introduced to the 'Creating Code Using GitHub Copilot Inline Chat' task, where they will contribute to the development of an MVP for Alfred AI's Project Management API. The mission focuses on building ticket routes and their respective data operations, leveraging GitHub Copilot's inline chat feature for contextual coding interactions. Learners are guided to start the mission or learn more about the scenario, which involves using an existing project management API. This exercise demonstrates the practical application of GitHub Copilot's features to enhance development efficiency and interaction."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Hello, {username}! Welcome to the 'Creating Code Using GitHub Copilot Inline Chat' mission. You're tasked with contributing to the development of an MVP with Alfred AI's Project Management API. After creating the projects as data items and exposing their operations with endpoint routes, it's time to build the ticket routes and their respective data operations. This exercise will demonstrate how GitHub Copilot's inline chat feature is incredibly useful for contextual interactions while coding.
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                For this mission, we'll refer to an existing project management API with Alfred AI. The focus is on demonstrating GitHub Copilot's inline chat feature for building ticket routes and their data operations. You can find the project at this [GitHub Repository](https://github.com/alfred-ai-co/Code_by_using_Copilot_code_line_completions). Ready to proceed?
+
+
+  - name: "Creating Pydantic Models with Github Copilot Inline Chat"
+    context: "In this mission, learners focus on creating Pydantic models for the tickets feature in Alfred AI's Project Management API using GitHub Copilot's inline chat feature. The task begins with implementing the TicketCreate model, which includes fields for project_id, title, and optional description, status, and priority strings. Learners are guided to use the inline chat to prompt Copilot for code suggestions. Following this, they extend the TicketCreate model by creating a TicketResponse model that adds id and created_at fields. This exercise demonstrates the effectiveness of GitHub Copilot's inline chat for generating and refining code based on contextual interactions, enhancing the development workflow."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/60a44aa4-ad82-4a9a-b7b8-b2872d89defc/Untitled.png?id=ba3e0c6c-f0d8-4e54-be38-b907c6fe8987&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=6Y0zl364J_dAJACJdZzjNDOPO6vV1sSNMp4FQmImvc8&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Our first task is to implement the tickets feature by creating data models for validation. This allows us to serialize data, add type safety, and control incoming requests and responses. Follow these steps:
+                1. Create a new file in the `app/api_models/` folder named `tickets.py`.
+                2. Create a TicketCreate model with project_id: int, title: str, and optional strings description, status, and priority with default values of None.
+            - type: "text"
+              content: |
+                Open inline chat by pressing `Ctrl + I`, then enter the following prompt:
+                
+                ```python
+                Create a TicketCreate model with project_id: int, title: str, as well as description, status, and priority as optional strings whose default values are none.
+                ```
+            - type: "text"
+              content: "Take a minute to review GitHub Copilot's suggestion and consider the task requirements."
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/c2e6fbb6-6a3c-4108-868c-60deab2a3e82/Untitled.png?id=635397bb-3bde-46d2-a7cb-2c511569f313&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=ZrLn9CEmAoFUWNfZ7K92xwBORjeYLg-r18qAxPg06fM&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Now, let's create the TicketResponse model, which extends TicketCreate by adding id: int and created_at: datetime. Use the following prompt in the inline chat:
+                
+                ```python
+                Create a Pydantic model named TicketResponse that is a subclass of TicketCreate and adds fields: id (integer) and created_at (datetime).
+                ```
+            - type: "text"
+              content: "Review the suggestions from GitHub Copilot."
+
+
+  - name: "Generating Database Operations for Tickets with Github Copilot Inline Chat"
+    context: "In this part of the mission, learners focus on generating database operations for tickets using GitHub Copilot's inline chat feature. They are guided to create a create_ticket function in the app/db_models/crud.py file by providing a detailed prompt in the inline chat. This function takes several parameters and creates a new ticket in the database. The task highlights the importance of using comments and good prompting strategies to direct Copilot effectively, resulting in more specific and accurate code suggestions. This exercise reinforces the practical application of Copilot in generating CRUD functions and improving development efficiency."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/48de97d4-6ad5-44a4-b59b-e4a9787eb7da/Untitled.png?id=28c567c9-2ade-4045-897a-e55e9774cdcc&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=RZT71w2V5DscP-XIONQVXoNiBfvdWU4JMJTl-CRRYHY&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Next, we'll create the database operations (CRUD functions) to interact with the database. Head to the app/db_models/crud.py file and follow these steps:
+                1. Open inline chat and use the prompt:
+                
+                ```python
+                Create a function named create_ticket that takes db (Session), project_id (int), title (str), description (str), status (str), and priority (str) as parameters and creates a new Ticket in the database.
+                ```
+            - type: "text"
+              content: |
+                Take a minute to review the code suggestions from GitHub Copilot.
+        edges:
+          - text: "Review the code suggestions."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Notice how comments can help direct Copilot. Adding comments and using good prompting strategies can result in more specific outputs. The last thing we need to do now is to add the API routes and we can do so with inline chat as well!
+
+  - name: "Generating Database Operations for Tickets with Github Copilot Inline Chat"
+    context: "In this final set of the mission, learners complete the CRUD operations for the ticket management feature and add the corresponding API routes using GitHub Copilot's inline chat feature. They create functions for reading, updating, and deleting tickets by providing specific prompts in the inline chat and reviewing Copilot's suggestions. Subsequently, they add the create, read, update, and delete methods for ticket routes in a new tickets.py file. The mission concludes with a summary that guides learners to run the FastAPI server and verify the new routes on the /docs page, congratulating them on successfully using GitHub Copilot to enhance their development workflow."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's complete the CRUD operations by implementing read, update, and delete functions. Follow these steps:
+                1. Use inline chat with the following prompts:
+                
+                ```python
+                Create a function named get_ticket that retrieves a ticket by its ID from the database.
+                ```
+
+                ```python
+                Create a function named update_ticket that updates a ticket's details in the database.
+                ```
+
+                ```python
+                Create a function named delete_ticket that deletes a ticket from the database.
+                ```
+            - type: "text"
+              content: "Review and accept the code suggestions for each function."
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/48de97d4-6ad5-44a4-b59b-e4a9787eb7da/Untitled.png?id=28c567c9-2ade-4045-897a-e55e9774cdcc&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=RZT71w2V5DscP-XIONQVXoNiBfvdWU4JMJTl-CRRYHY&downloadName=Untitled.png"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "screen6"
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Now we'll add routes to the API that call the CRUD functions. Follow these steps:
+                1. Create a new file in app/api/routes/ named tickets.py.
+                2. Use inline chat with the prompt:
+                
+                ```python
+                Generate the create, read, update, and delete methods for Tickets routes.
+                ```
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/02439f72-910c-4a8a-bc88-7a9a4ade47bd/Untitled.png?id=98ba2037-b9ce-4094-814c-e993bfe71430&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=M6-Tha6du1FnF3a3GvnWf1EwJLUHUvXysYLUun35dGs&downloadName=Untitled.png"
+            - type: "text"
+              content: "Review the suggestions to ensure the methods are correctly defined and referenced."
+        edges:
+          - text: "Yes, let's summarize!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                We've completed the implementation of ticket routes and their respective data operations using GitHub Copilot's inline chat feature. We created data validation models, wrote the database operations, and built the API routes.
+            - type: "text"
+              content: |
+                We can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/eba3c78d-db70-4355-9487-d822438d2466/Untitled.png?id=afa80d59-0370-4cc1-afcc-be69c4584ad6&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=6iyRHmGYZzi-Z3PXPrDR_CAF-UKBYDFcaR9A4blSg3I&downloadName=Untitled.png"
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/eeaa9d9f-a030-4ff8-9aaa-d4dbc4ff8513/Untitled.png?id=32034d44-5397-4771-a071-faed8f31e8d7&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=ZQlQ-H7sG4MaU79NkFAZFP2Vw3yOc2eFnOtEi0coMQg&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                We can now see Tickets as a new set of routes available within the /docs page!
+                Congratulations, {username}! 🎉 You've successfully used GitHub Copilot Inline Chat to create code. Excellent work!

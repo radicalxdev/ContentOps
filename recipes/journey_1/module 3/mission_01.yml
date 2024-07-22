@@ -1,5 +1,5 @@
 tasks:
-  - name: "Introduction and Setup and Scenario"
+  - name: "Introduction and Setup"
     context: "In this educational module, learners are engaged in an interactive mission where they adopt the role of a lead developer at Alfred AI tasked with building a new web application feature using the Interview Pattern Approach in Prompt Engineering. The journey begins with an introduction to the mission and the importance of aligning the new feature with business requirements and user needs through AI-assisted project planning. Learners are guided through a series of messages that explain the Interview Pattern Approach, highlighting its ability to ask context-specific questions to ensure comprehensive project coverage and iterative development. As they progress, learners explore the benefits of this approach, such as thorough contextual understanding, continuous improvement, and effective handling of complex projects. Through interactive choices, they learn to apply this method to generate detailed project plans, enhancing their understanding of AI-driven project management and its practical applications in real-world scenarios."
     id: "1"
     nodes:

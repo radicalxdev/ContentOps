@@ -1,0 +1,247 @@
+tasks:
+  - name: "Introduction and Setup"
+    context: "In this mission, learners focus on improving code reliability and performance using GitHub Copilot Chat. They start by understanding the learning objectives, which include collaborating with Copilot to enhance code reliability and implementing asynchronous APIs for better performance. Learners are guided to prepare the repository by cloning it from GitHub, creating environment files, and activating the shell script to set up the development or production environment. This setup prepares them for the upcoming exercises, where they will use Copilot Chat to generate and evaluate suggestions for improving code reliability and performance."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Hello, {username}! Welcome to the 'Improve Code Reliability and Performance using GitHub Copilot Chat' mission. This training focuses on using GitHub Copilot Chat to generate suggestions for improving code reliability and performance in a sample application. Remember, the suggestions from Copilot do not represent best practices or comprehensive solutions. Use your judgment and expertise to evaluate and implement these suggestions. Ready to start?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+          - text: "Tell me more about the objectives."
+            target_node_id: "screen1a"
+          - text: "What is code reliability?"
+            target_node_id: "screen1b"
+
+      - id: screen1a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Developers should strive for a balance between code reliability and performance. A successful balance produces the following mutually beneficial results:
+                - Applications meet functional requirements
+                - Applications that deliver a seamless and efficient user experience.
+                That's why in this mission, you'll use GitHub Copilot to generate suggestions that help improve code reliability and performance in a sample application. The learning objectives are to demonstrate how to collaborate with Copilot to implement code reliability and use Copilot to implement asynchronous API for improving code performance.
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Yes, let's move on!"
+            target_node_id: "END"
+          - text: "What is code reliability?"
+            target_node_id: "screen1b"
+
+      - id: screen1b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Code reliability refers to the likelihood that software functions correctly under specific conditions and for a certain period of time. Improving code reliability helps to ensure that your software performs as expected and meets user requirements. In this exercise, you use Github Copilot Chat to generate suggestions that help you improve code reliability and performance in a sample application.
+                
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Yes, let's move on!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's prepare the repository for this exercise. Follow these steps:
+                1. Clone the GitHub repository found at: https://github.com/alfred-ai-co/Improve-Code-Quality-with-Copilot
+                2. Create a `dev.env` and `prod.env` file based on the `env.example`, setting the variable `APP_ENV` to “dev” or “prod” respectively.
+                3. In the terminal, activate the shell script `start.sh` with the command: `/start.sh <args>`, where you may set `dev` or `prod` as the argument. By default, a `dev` environment is instantiated.
+            - type: "text"
+              content: "Ready to continue?"
+
+  - name: "Collaborate with Copilot to implement Code Reliability"
+    context: "In this segment of the mission, learners focus on collaborating with GitHub Copilot to enhance code reliability. They start by prompting Copilot to analyze and suggest improvements for code reliability, including error handling and type management. After reviewing the suggestions, they specifically focus on handling database errors with SQLAlchemy. Copilot provides advanced methods such as transaction management and connection pooling. Learners then prompt Copilot for a detailed implementation strategy to handle SQLAlchemy exceptions, observing how Copilot suggests modifications and demonstrates specific strategies based on the project's configuration. This exercise emphasizes the practical use of Copilot in improving code reliability through collaborative problem-solving."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Code reliability refers to the likelihood that the software functions correctly under specific conditions and for a certain period of time. Improving reliability helps ensure that the software performs as expected and meets user requirements. Let's work WITH Copilot, consider some of its suggestions, and see how we can use generative AI tools to help us reason over how to best refactor the code for reliability.
+            - type: "text"
+              content: |
+                Enter the following prompt with a variety of chat participants or commands to help describe the context to Copilot:
+                
+                ```python
+                @workspace /explain Analyze and show me how I can improve code reliability in the repository such as error handling or managing types
+                ```
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen3a"
+
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Examine Copilot's response. It may suggest strategies such as `error handling` with exceptions, `type checking` or annotations, unit and integration testing, and logging among others.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/10c5b9e5-1d02-44b5-b03d-c13f668c9db2/Untitled.png?id=576f9278-b56a-43b5-b3f3-3d8ecfecc4a2&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=_naqNEzA6t7lqbtGbi2ccwSNWDCo4f4fKLGUoDPZT8M&downloadName=Untitled.png"
+            - type: "text"
+              content: "Ready to focus on handling database errors with SQLAlchemy?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen3b"
+
+      - id: screen3b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's focus on handling database errors with SQLAlchemy. Use this prompt:
+                
+                ```python
+                @workspace /explain Show me how I can improve the reliability of my API in handling any database problems with SQLAlchemy
+                ```
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen3c"
+
+      - id: screen3c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Review Copilot's suggestions for advanced methods such as transaction management and connection pooling.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/2f88b0b1-57ea-410d-814f-7ab7f03d0cf7/Untitled.png?id=6df9f5c9-ea53-4ea7-bbcc-22f6bbb587f0&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=g5yWXyEq21sNTTFJDostkLmCMhJMqmDeG7zUmcHT1zM&downloadName=Untitled.png"
+            - type: "text"
+              content: "Ready to implement a strategy for handling SQLAlchemy exceptions?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen3d"
+
+      - id: screen3d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Send a more specific prompt to implement a strategy for handling SQLAlchemy exceptions:
+                
+                ```python
+                @workspace Show me how I can implement a strategy to handle error handling by following the API patterns currently implemented in files like #file:crud.py #file:http_error.py #file:tickets.py where we specifically handle SQLAlchemy exceptions and handle them appropriately in the API
+                ```
+            - type: "text"
+              content: "Ready to review Copilot's detailed implementation suggestions?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Observe how Copilot suggests new files, modifies files, and demonstrates highly specific suggestions based on your project's configuration.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/ec6c7d2a-5b2e-4cc1-b835-39921e9b7f83/Untitled.png?id=3c32f3eb-ed41-4f7b-b773-95b631382492&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=0ROOjZo4KwNo39-mz8Kp1h4W6rT8j-dLAbpqvA2OBBQ&downloadName=Untitled.png"
+            - type: "text"
+              content: "Ready to proceed to improving code performance?"
+
+  - name: "Collaborate with Copilot to implement an Asynchronistic API for Code Performance"
+    context: "In this segment of the mission, learners focus on improving code performance using GitHub Copilot Chat by managing synchronous and asynchronous events in the API. They start by prompting Copilot for general suggestions on performance improvements, then narrow down to implementing asynchronous handlers for routes. Copilot provides recommendations for handling multiple requests simultaneously, enhancing the application's performance. Learners review and implement these suggestions, noting the focus on asynchronous route handling due to SQLAlchemy's non-native async support. The mission concludes with a summary, emphasizing the importance of reviewing and evaluating Copilot's suggestions before implementation, showcasing how Copilot can assist in enhancing code reliability and performance."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/9baf3a15-61c6-42aa-a4a6-e95a409cdd07/Untitled.png?id=04a5abed-6df8-4301-bfe0-7d34cbe84550&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=0zOwB2SfcEwh1AQGgzgvHFwJtfJ_8bkgmoiK35UpPqo&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Similar to code reliability, we can have conversations with Copilot to improve the performance of our code. To the experienced eye, the routes defined in the current API implementation are synchronous events within the FastAPI server, meaning concurrent requests will be done one-by-one and expensive requests will require the rest of the line to wait.
+                
+                ```python
+                @workspace How can I improve my program's performance by managing synchronous and asynchronous events in the API?
+                ```
+            - type: "text"
+              content: "One thing to note is that the library, `SQLAlchemy`, is not natively async which means it can still block the event loop. For demonstration purposes, this exercise focuses on modifying the route handling with FastAPI to be asynchronous rather than synchronous."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen4a"
+
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Examine Copilot's response. It may suggest using asynchronous handlers, background tasks, and other methods. We will focus on asynchronous handlers for routes.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/b2edbc68-8924-4056-b83f-efe6e3e0eb12/Untitled.png?id=d47e173c-ed72-4c8e-bdb2-c24e80d778a1&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=a6ur3tTFjpAvpFHcRJDCm1QnHZKi9eJoWR8rM5PxXWM&downloadName=Untitled.png"
+            - type: "text"
+              content: "Ready to implement asynchronous handlers?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen4b"
+
+      - id: screen4b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's ask a more specific command to utilize the framework's support for asynchronism:
+                
+                ```python
+                @workspace #file:api.py #file:projects.py How do I use asynchronous handlers to improve the performance of my application?
+                ```
+            - type: "text"
+              content: "Ready to review Copilot's recommendations?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen4c"
+
+      - id: screen4c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Review Copilot's recommendations for asynchronous handlers for all routes, which can handle multiple requests simultaneously without waiting for other requests to complete.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/114e8aed-0c8f-4db0-b16b-2cb57a60a8c7/Untitled.png?id=91c69f80-d729-49d5-ba08-3cf5682d66a2&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=sx2bKUMaj1bS8KwkdRSyunDPlZeYRRVfzSFV4ChO1gc&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Notice how Copilot recommends the asynchronous handlers for all of the routes such as projects.py where it can handle multiple requests at the same time without waiting for other requests to complete. In our case, because we are using SQLAlchemy which does not natively support asynchronous operations, this would not be a major change for the app's performance. But this would allow the API to handle multiple requests by returning a coroutine per route and allow the API to accept requests while processing them at the same time.
+            - type: "text"
+              content: "Ready to summarize the mission?"
+        edges:
+          - text: "Yes, let's summarize!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Congratulations, {username}! You've successfully used GitHub Copilot Chat to generate suggestions for improving code reliability and performance. This exercise demonstrated how to interact with Copilot to enhance code stability and efficiency. Remember, always review and assess the suggestions before implementing them.

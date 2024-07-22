@@ -9,7 +9,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Hello, {userName}! Welcome to the Chain-of-Thought Approach mission in Prompt Engineering. Your team is working on the Project Management API and needs to integrate webhooks created by another team to notify their service about events like user registration and transaction completions. Your task is to build a function to send these requests. This mission will guide you through using the Chain-of-Thought reasoning technique to create this function. Ready to start?
+                Hello, {username}! Welcome to the Chain-of-Thought Approach mission in Prompt Engineering. Your team is working on the Project Management API and needs to integrate webhooks created by another team to notify their service about events like user registration and transaction completions. Your task is to build a function to send these requests. This mission will guide you through using the Chain-of-Thought reasoning technique to create this function. Ready to start?
         edges:
           - text: "Yes, let's get started!"
             target_node_id: "END"
@@ -156,4 +156,4 @@ tasks:
                 The Chain-of-Thought reasoning technique is a powerful tool for handling specific and complex requirements. It encourages the AI to follow logical steps, improving the accuracy and relevance of its responses. While not drastically different in every case, it's a valuable method for ensuring thorough and well-structured outputs.
             - type: "text"
               content: |
-                Congratulations, {userName}! 🎉 You've successfully applied the Chain-of-Thought Approach to create a function for sending data to webhooks. This mission has taught you how to leverage structured reasoning to generate more accurate and context-aware responses. Excellent work!
+                Congratulations, {username}! You've successfully applied the Chain-of-Thought Approach to create a function for sending data to webhooks. This mission has taught you how to leverage structured reasoning to generate more accurate and context-aware responses. Excellent work!
