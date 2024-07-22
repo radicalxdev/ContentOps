@@ -1,7 +1,9 @@
+# Mission #2: Develop Unit Tests for Specific Conditions With GitHub Copilot
+
 tasks:
-  - name: "Develop Unit Tests for Specific Conditions With GitHub Copilot"
-    context: "This mission focuses on developing unit tests for specific conditions using GitHub Copilot, streamlining the process of writing tests to assess functionality and boundary conditions. It also covers identifying and fixing bugs in unreliable code, enhancing overall code reliability and performance."
-    id: "2"
+  - name: "Introduction"
+    context: "Introduce the new feature and prepare the user for writing unit tests."
+    id: "1"
     nodes:
       - id: START
         type: message
@@ -14,6 +16,10 @@ tasks:
         edges:
           - text: "Ready to start!"
             target_node_id: "screen2"
+  - name: "Setting Up and Understanding the Feature Script"
+    context: "Guide the user to switch to the feature script and understand the new code."
+    id: "2"
+    nodes:
       - id: screen2
         type: message
         body:
@@ -52,6 +58,10 @@ tasks:
         edges:
           - text: "Got it"
             target_node_id: "screen4"
+  - name: "Generating and Reviewing Unit Tests"
+    context: "Assist the user in generating and reviewing unit tests using GitHub Copilot."
+    id: "3"
+    nodes:
       - id: screen4
         type: message
         body:
@@ -110,6 +120,10 @@ tasks:
         edges:
           - text: "Fantastic"
             target_node_id: "screen7"
+  - name: "Running Tests and Fixing Errors"
+    context: "Help the user run the tests, interpret the results, and fix any errors."
+    id: "4"
+    nodes:
       - id: screen7
         type: message
         body:
@@ -165,16 +179,11 @@ tasks:
         edges:
           - text: "Got it"
             target_node_id: "screen9"
+  - name: "Best Practices and Summary"
+    context: "Provide a mission summary and emphasize best practices."
+    id: "5"
+    nodes:
       - id: screen9
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Now, create a Pull Request from the feature branch to the main branch. This will merge your changes into the main codebase."
-        edges:
-          - text: "Created the Pull Request"
-            target_node_id: "screen10"
-      - id: screen10
         type: message
         body:
           parts:
@@ -187,8 +196,8 @@ tasks:
                 - **Continuous Integration:** Use CI/CD pipelines to automate testing and deployment processes.
         edges:
           - text: "Understood"
-            target_node_id: "screen11"
-      - id: screen11
+            target_node_id: "screen10"
+      - id: screen10
         type: message
         body:
           parts:

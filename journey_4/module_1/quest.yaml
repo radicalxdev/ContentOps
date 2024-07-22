@@ -1,5 +1,5 @@
 tasks:
-  - name: "Welcome and Introduction"
+  - name: "Introduction to GitHub Copilot Tools"
     context: "Developing a complex app can often lead to situations where a minor change causes everything to break. The challenge of tracking down that one elusive bug hidden among thousands of lines of code underscores the importance of having robust unit tests. This quest emphasizes developing unit tests for specific conditions using GitHub Copilot to ensure functionality, identify and fix bugs, and enhance overall code reliability and performance."
     id: "1"
     nodes:
