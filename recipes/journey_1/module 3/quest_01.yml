@@ -1,0 +1,444 @@
+tasks:
+  - name: "Introduction to Prompt Engineering"
+    context: "This interactive quest introduces you to prompt engineering for developers, focusing on designing effective prompts for generative AI models. It begins with a friendly welcome and offers two initial options: learning what a prompt is or diving into prompt engineering. The first option explains that a prompt is the input provided to an AI system, which can range from simple words to complex text or images, illustrated with an example using GitHub Copilot. Following this, the quest shifts to the concept of prompt engineering, emphasizing its importance in guiding AI models to produce relevant and high-quality responses. The quest then highlights the benefits of effective prompt engineering, such as improved output quality, efficient use of resources, and better explainability of AI-generated results. It concludes by offering options to explore more about these benefits or proceed to the next topic."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Welcome to the Quest on Prompt Engineering for Developers! This quest aims to equip you with the skills to design effective prompts for generative AI models, enhancing your capabilities in various development tasks.
+        edges:
+          - text: "What is a prompt?"
+            target_node_id: "screen1a"
+          - text: "What is prompt engineering?"
+            target_node_id: "screen2"
+
+      - id: screen1a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                A prompt, in the context of generative AI, is the input that you provide to the AI system to generate an output. The prompt can be as simple as a single word or as complex as a paragraph of text or an image.
+                Would you like to see an example of a prompt?
+        edges:
+          - text: "Yes, show me an example."
+            target_node_id: "screen1b"
+          - text: "What is prompt engineering?"
+            target_node_id: "screen2"
+
+      - id: screen1b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Suppose you're writing a program in Python and need to implement a function that calculates the square root of a number. You could start by typing a comment describing what the function should do:
+                
+                ```css
+                Calculate the square root of a number
+                ```
+                
+                GitHub Copilot will then suggest the following code to implement the function, based on the prompt you provided:
+                
+                ```lua
+                def sqrt(num):
+                    return math.sqrt(num)
+                ```
+                
+                Now, let's learn about prompt engineering!
+        edges:
+          - text: "What is prompt engineering?"
+            target_node_id: "screen2"
+
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Prompt engineering is a crucial skill for developers and engineers working with generative AI models. It involves designing effective prompts to guide these models in producing relevant and desired responses. Mastering prompt engineering ensures accurate and creative outputs that closely resemble human-produced content.
+                Shall we explore why understanding prompt engineering principles is important?
+        edges:
+          - text: "Yes, let's explore!"
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Prompt engineering is essential because it allows you to fine-tune the input to a generative AI model, ensuring the output aligns with your goals and requirements. Without effective prompt engineering, the results may be generic, irrelevant, or even harmful.
+                Would you like to know more about why it is important?
+        edges:
+          - text: "Yes, tell me more."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here are a few reasons why prompt engineering is so crucial:
+                
+                - **Quality of output**: Clear and specific instructions ensure that the AI system generates high-quality output that aligns with your intentions.
+                - **Efficient use of resources**: Crafting precise prompts helps avoid generating unnecessary or irrelevant outputs, saving time and computational resources.
+                - **Explainability**: Understanding how the AI system generates its outputs allows you to explain and justify the decisions made by the system, improving transparency and trust.
+                
+                Would you like to proceed to the next topic?
+
+  - name: "Naive vs Effective Prompting"
+    context: "In this segment, the quest demonstrates the impact of prompt detail on the quality of AI-generated outputs. It presents two prompts: one generic and one detailed. The first prompt, 'Write code for a web application,' is identified as too vague, often resulting in generic and less useful code. In contrast, the second prompt, 'Write a Python Flask application with a REST API that has endpoints for creating, reading, updating, and deleting (CRUD) user data stored in a PostgreSQL database,' provides specific context and structure, leading to a more detailed and relevant output. The quest then encourages learners to explore how to construct effective prompts by choosing to learn more about creating detailed and useful prompts."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Let's take an example of these two prompts:
+                
+                1. "Write code for a web application."
+                2. "Write a Python Flask application with a REST API that has endpoints for creating, reading, updating, and deleting (CRUD) user data stored in a PostgreSQL database."
+                
+                Which do you think would produce a better output?
+        edges:
+          - text: "1"
+            target_node_id: "screen5a"
+          - text: "2"
+            target_node_id: "END"
+
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Not quite, this prompt is too vague and usually produces generic outputs. This is a naive prompt, lacking detail and context, leading to suboptimal results.
+                
+                Would you like to learn how to construct effective prompts?
+        edges:
+          - text: "Yes, let's learn about effective prompts."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Yes, this prompt provides more context and structure, resulting in a more detailed and relevant output. "Write code for a web application." would be considered a naive prompt, lacking detail and context, leading to suboptimal results.
+                
+                Would you like to go through what should go into an effective prompt?
+
+  - name: "Elements of a well-constructed prompt"
+    context: "This section explores the key components of effective prompts for AI models. It outlines four essential elements: clarity, context, input data, and output indicators. Clarity involves providing clear and specific instructions to avoid ambiguity, while context includes setting the background to ensure relevant responses. Input data involves supplying specific information to guide the model, and output indicators involve defining benchmarks like tone, style, and length to ensure the AI's responses meet desired standards. Each component is explained in detail, with examples provided for clarity, context, and input data, and guidance on setting output benchmarks. Learners are encouraged to explore each component thoroughly before moving on to the next section."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Effective prompts include several key components:
+                
+                1. **Clarity**: Clear and specific guidelines for the AI model.
+                2. **Context**: Setting and background information to help the model generate relevant content.
+                3. **Input Data**: Specific data or information to guide the model's responses.
+                4. **Output Indicator**: Benchmarks for evaluating the output, such as tone, style, length, and other desired qualities.
+                
+                Would you like to explore each component in detail?
+        edges:
+          - text: "Yes, let's dive into the details."
+            target_node_id: "screen7"
+          - text: "Let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Clear instructions ensure the AI understands what it needs to do, reducing ambiguity. Here are some guidelines you should follow: 
+                
+                - Use simple language, avoiding ambiguous or complex terminology that could confuse the model.
+                - Provide a clear and detailed description of the task.
+                - Clearly specify the type of response you are looking for.
+                
+                For example: "Write a Python script that connects to a PostgreSQL database and retrieves all records from a table named 'employees'."
+                
+                Would you like to explore the next component, context?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen8"
+          - text: "Let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Providing context helps the AI model understand the background and specifics of the task, leading to more relevant and accurate responses. Here are some guidelines:
+                
+                - Provide a brief introduction or explanation of the circumstances.
+                - Include relevant details such as people, places, events, or concepts.
+                
+                For example: "You are developing an internal tool for HR. Write a Python script that connects to a PostgreSQL database using psycopg2 and retrieves all records from a table named 'employees'."
+                
+                Would you like to explore the next component, input data?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen9"
+          - text: "Let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Providing specific data or information guides the model's responses, producing more accurate results. Here are some guidelines:
+                
+                - Clearly define the data that the AI should use.
+                - Provide any necessary background information on the data.
+                
+                For example: "Given a dataset of user login attempts, write a Python function that detects suspicious login patterns based on IP address and login time."
+                
+                Shall we move on to the final component, output indicators?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "END"
+          - text: "Let's move on to the next section."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Setting benchmarks for the output ensures that the AI's responses meet specific criteria and quality standards. Here are some guidelines:
+                
+                - Specify the tone, style, and length of the response.
+                - Include any other desired qualities.
+                
+                For example: "Write a Python function that detects suspicious login patterns based on IP address and login time. Ensure the function is well-documented and includes unit tests."
+                
+                Ready to move on to the next section?
+
+  - name: "Steps in Prompt Engineering"
+    context: "This section outlines the steps involved in prompt engineering to achieve effective AI responses. It starts with defining the goal, where you establish a clear objective for the AI's output. Next, you craft an initial prompt based on this goal, ensuring it is clear and specific. The third step involves testing the prompt to evaluate the relevance and completeness of the AI's response. Following this, you analyze the response to identify any shortcomings or gaps. In the refinement stage, you modify the prompt to address these issues and improve specificity. Finally, you iterate through testing and refining until the prompt consistently generates the desired output. Each step is explained with examples and encourages learners to explore the detailed process or move on to the next section."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Steps in prompt engineering:
+                
+                1. **Define the Goal**: Establish a clear objective for the AI model's output.
+                2. **Craft the Initial Prompt**: Create a clear and specific prompt based on the goal.
+                3. **Test the Prompt**: Evaluate the AI's response for relevance and completeness.
+                4. **Analyze the Response**: Identify areas where the AI's output falls short of the goal.
+                5. **Refine the Prompt**: Modify the prompt to address gaps and improve specificity.
+                6. **Iterate the Process**: Repeat testing and refinement until the desired response is achieved.
+                
+                Would you like to explore each step in detail?
+        edges:
+          - text: "Yes, let's dive into the details."
+            target_node_id: "screen12"
+          - text: "Let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen12
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Establish a clear objective for what you want the AI model to generate.
+                
+                - **Example**: "Create a Python script that automates the generation of daily sales reports from a MySQL database."
+                
+                Defining a clear goal sets the direction for crafting an effective prompt.
+                
+                Ready to move on to the next step?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen13"
+          - text: "Understood, let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen13
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Create an initial prompt based on the defined goal.
+                
+                - **Example**: "Write a Python script using SQLAlchemy that connects to a MySQL database, retrieves daily sales data, and generates a summary report in CSV format."
+                
+                The initial prompt should be clear and specific, guiding the AI model to generate the desired output.
+                
+                Would you like to proceed to the next step?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen14"
+          - text: "Got it, let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen14
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Evaluate the AI's response to the initial prompt for relevance and completeness.
+                
+                - **Example**: The response may include the basic script but miss handling edge cases or providing error messages.
+                
+                Testing the prompt helps identify gaps and areas for improvement in the initial prompt.
+                
+                Shall we move on to analyzing the response?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen15"
+          - text: "I understand, let's move on to the next section."
+            target_node_id: "END"
+
+      - id: screen15
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Review the AI's output to identify areas where it falls short of the goal.
+                
+                - **Example**: The initial prompt fails to include instructions for handling database connection errors.
+                
+                Analyzing the response helps pinpoint specific shortcomings that need to be addressed.
+                
+                Ready to move on to refining the prompt?
+        edges:
+          - text: "Yes, let's proceed."
+            target_node_id: "screen16"
+          - text: "Got it, let's continue to the next section."
+            target_node_id: "END"
+
+      - id: screen16
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Modify the prompt to include additional context and specificity.
+                
+                - **Example**: "Write a Python script using SQLAlchemy that connects to a MySQL database, retrieves daily sales data, generates a summary report in CSV format, and includes error handling for database connection issues."
+                
+                Refining the prompt ensures that it addresses the identified gaps and provides clearer guidance to the AI model.
+                
+                Shall we discuss the final step?
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "END"
+          - text: "Understood, let's move on to the next section."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Repeat testing and refinement until the desired response is achieved.
+                
+                - **Example**: Final prompt might be: "Write a Python script using SQLAlchemy that connects to a MySQL database, retrieves daily sales data, generates a summary report in CSV format, includes error handling for database connection issues, and logs errors to a file."
+                
+                Iterating the process helps fine-tune the prompt, ensuring it guides the AI model to produce the best possible output.
+                
+                Ready to move on to the next section?
+
+  - name: "Conclusion"
+    context: "In this final section, the quest provides a comprehensive summary of the topics covered, including the basics of prompt engineering, its importance, and the distinctions between naive and effective prompting. It also recaps the essential components of a well-constructed prompt and the steps involved in effective prompt engineering. Following this, a preview of the next quest is offered, which will delve into advanced prompt engineering techniques to further enhance skills and tackle more complex challenges with generative AI. Learners are invited to either continue with the upcoming advanced quest or review a brief overview of the current lesson."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Great job so far! We've covered what prompt engineering is, why it's important, the difference between naive and effective prompting, the elements of a well-constructed prompt, and the steps in effective prompt engineering.
+        edges:
+          - text: "Great!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Up next, we'll dive into advanced prompt engineering techniques. Get ready to enhance your skills further and tackle more complex challenges with generative AI.
+                
+                Excited to get started?

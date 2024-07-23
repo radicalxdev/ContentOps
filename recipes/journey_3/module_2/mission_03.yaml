@@ -1,0 +1,269 @@
+tasks:
+  - name: "Setting Up and Generating Initial Documentation"
+    context: "In this mission, learners will use GitHub Copilot Chat to create detailed inline comments for the Alfred AI project. They will select code blocks in Visual Studio Code and use Chat view, inline chat, and Generate Docs smart action to generate documentation. This mission improves code readability and maintainability by providing clear explanations of the code's purpose and usage."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Hello, {username}! Welcome to the 'Generate Inline Code Documentation using GitHub Copilot Chat' mission. Documenting your code is an important aspect of the software development process. Code comments help developers understand the codebase, its purpose, and how to use it."
+            - type: "text"
+              content: "GitHub Copilot Chat can help you document your code by generating inline code comments. You have the following options:\n- Construct a natural language prompt to generate the desired documentation.\n- Enter the `/doc` command in the inline chat to generate comments that describe the selected code.\n- Use the Generate Docs smart action to generate comments that describe the selected code."
+            - type: "text"
+              content: "Properly documenting your code creates a more readable and maintainable codebase that's easier for other developers to understand and work with."
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen2"
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this exercise, you will use GitHub Copilot Chat to generate inline code documentation for the Alfred AI project."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen2a"
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ensure that you have the Alfred AI project open in Visual Studio Code."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Project open!"
+            target_node_id: "screen2b"
+      - id: screen2b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open the `app/api/routes/projects.py` file."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "File open!"
+            target_node_id: "screen2c"
+      - id: screen2c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Select all the code starting from the import statements to the end of the file."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Code selected!"
+            target_node_id: "screen2d"
+      - id: screen2d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open the Chat view in Visual Studio Code by selecting 'Chat' from the Activity Bar, or by pressing `Ctrl + Alt + I`."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Chat view open!"
+            target_node_id: "screen2e"
+      - id: screen2e
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In the Chat view, enter the following prompt:\n```python\n@workspace #selection generate inline code documentation for the selected code\n```"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Take a minute to review the suggested code documentation."
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "The response includes suggested code comments that you can manually move into the actual code file."
+            - type: "text"
+              content: "Ready to proceed?"
+  - name: "Generating Documentation Using Inline Chat"
+    context: "In this mission, learners will use GitHub Copilot Chat to create detailed inline comments for the Alfred AI project. They will select code blocks in Visual Studio Code and use Chat view, inline chat, and Generate Docs smart action to generate documentation. This mission improves code readability and maintainability by providing clear explanations of the code's purpose and usage."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Now, you will generate inline code documentation using inline chat."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen3a"
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Scroll to the top of the `app/db_models/crud.py` file and select the `create_project` method."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Method selected!"
+            target_node_id: "screen3b"
+      - id: screen3b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To open an inline chat, press `Ctrl + I`."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Inline chat open!"
+            target_node_id: "screen3c"
+      - id: screen3c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Enter the following prompt:\n```python\n/doc\n```"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Take a minute to review the code documentation generated."
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Notice that the suggested documentation for the `create_project` method includes a summary and descriptions of the parameters."
+            - type: "text"
+              content: "To insert the generated documentation into your code, select Accept. You can always select Discard if you want to reject the suggested update."
+            - type: "text"
+              content: "Ready to proceed?"
+  - name: "Generating Documentation Using Smart Actions"
+    context: "In this mission, learners will use GitHub Copilot Chat to create detailed inline comments for the Alfred AI project. They will select code blocks in Visual Studio Code and use Chat view, inline chat, and Generate Docs smart action to generate documentation. This mission improves code readability and maintainability by providing clear explanations of the code's purpose and usage."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Next, you will generate inline code documentation using the Generate Docs smart action."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen4a"
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In the Visual Studio Code editor, select the `update_project` method."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Method selected!"
+            target_node_id: "screen4b"
+      - id: screen4b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Right-click the selected code block, select Copilot, and then select Generate Docs."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Docs generated!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Take a minute to review the suggested code comments."
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Notice that the Generate Docs smart action and inline chat produce similar results. If necessary, edit the suggested update."
+            - type: "text"
+              content: "Once your review is complete, select Discard. Rather than adding inline comments to each method individually, you can generate comments for the entire class at once."
+            - type: "text"
+              content: "Ready to proceed?"
+  - name: "Generating Documentation for Multiple Methods"
+    context: "In this mission, learners will use GitHub Copilot Chat to create detailed inline comments for the Alfred AI project. They will select code blocks in Visual Studio Code and use Chat view, inline chat, and Generate Docs smart action to generate documentation. This mission improves code readability and maintainability by providing clear explanations of the code's purpose and usage."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Rather than adding inline comments to each method individually, you can generate comments for the entire class at once."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen5a"
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Select all of the CRUD operations for projects inside the `crud.py` file."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "CRUD operations selected!"
+            target_node_id: "screen5b"
+      - id: screen5b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open the chat and add the following message:\n```python\n#file:crud.py #selection Generate documentation for all of the CRUD operations\n```"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen5c"
+      - id: screen5c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Wait for the documentation to be generated."
+            - type: "text"
+              content: "On the top right of the code block, click on `Insert at Cursor` or use the keyboard shortcut `Ctrl + Enter`."
+            - type: "text"
+              content: "Review the suggested changes."
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Notice that the generated documentation includes comments for each of the methods. If you find issues in the generated documentation, modify the suggested changes before continuing."
+            - type: "text"
+              content: "Ready to summarize the mission?"
+        edges:
+          - text: "Yes, let's summarize!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Congratulations, {username}! 🎉 You've successfully used GitHub Copilot Chat to generate inline code documentation for the Alfred AI project. By using the Chat view, inline chat, and the Generate Docs smart action, you generated code comments that create a more readable and maintainable codebase."
+            - type: "text"
+              content: "Inline code documentation is an essential part of software development that helps developers understand the codebase, its purpose, and how to use it."

@@ -1,0 +1,670 @@
+tasks:
+  - name: "Intro to Unit Testing"
+    context: "The Intro to Unit Testing section introduces the importance of unit testing for ensuring code reliability. It begins with a scenario where a developer needs to write unit tests for a critical AI-driven recommendation system lacking comprehensive tests. The section presents different approaches: understanding the existing codebase, consulting the team, and writing basic unit tests. It emphasizes the importance of each approach and introduces examples of effective unit tests, such as testing function outputs, edge cases, and invalid inputs. The benefits of automated unit tests, including enhanced code reliability, support for CI/CD, time savings, and improved code quality, are highlighted, along with the role of AI tools like GitHub Copilot in streamlining the process."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Welcome to the Unit Testing Quest! Imagine this scenario: You've joined a new project at Alfred AI, tasked with ensuring the reliability of a critical AI-driven recommendation system. As you dive into the code, you realize that the system lacks comprehensive unit tests, making it challenging to verify the functionality of individual components. You know that effective unit testing is crucial for maintaining high code quality and ensuring that changes do not introduce bugs.\n\nHow would you approach the task of writing unit tests to ensure the robustness of the codebase?"
+        edges:
+          - text: "I would start by understanding the existing codebase."
+            target_node_id: "screen2a"
+          - text: "I would consult my team to understand testing requirements."
+            target_node_id: "screen2b"
+          - text: "I would begin writing basic unit tests for key functions."
+            target_node_id: "screen2c"
+
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Great choice, [userName]! Understanding the existing codebase is a crucial first step. Unit testing isolates each part of the code, verifying that every component functions correctly. This helps identify issues at the smallest unit level, making debugging more manageable and ensuring each part performs as intended.
+
+                However, this approach can be time-consuming. Let’s see how we can make this process more efficient.
+        edges:
+          - text: "Can you give me examples of effective unit tests?"
+            target_node_id: "screen3"
+          - text: "What are the benefits of automated unit tests?"
+            target_node_id: "END"
+
+      - id: screen2b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Consulting your team is a smart approach, [userName]. Gaining insights from experienced colleagues can help you understand the testing requirements and existing testing practices. This collaborative effort ensures that you cover all critical aspects of the code.
+
+                Imagine how much more efficient this process would be with automated assistance.
+        edges:
+          - text: "Can you give me examples of effective unit tests?"
+            target_node_id: "screen3"
+          - text: "What are the benefits of automated unit tests?"
+            target_node_id: "END"
+
+      - id: screen2c
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Starting with basic unit tests for key functions is a proactive approach, [userName]. Unit testing ensures the functionality of individual components, helps maintain code reliability, and supports continuous integration and continuous deployment (CI/CD).
+
+                Writing these tests manually can be time-consuming. Let’s explore how AI tools like GitHub Copilot can help streamline this process.
+        edges:
+          - text: "Can you give me examples of effective unit tests?"
+            target_node_id: "screen3"
+          - text: "What are the benefits of automated unit tests?"
+            target_node_id: "END"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Absolutely, here are some detailed examples illustrating effective unit tests:
+
+                - **Testing Function Outputs**:
+                ```python
+                def test_addition():
+                    assert add(2, 3) == 5
+                ```
+                - **Testing Edge Cases**:
+                ```python
+                def test_divide_by_zero():
+                    with pytest.raises(ValueError):
+                        divide(10, 0)
+                ```
+                - **Testing Invalid Inputs**:
+                ```python
+                def test_invalid_input():
+                    with pytest.raises(TypeError):
+                        multiply("a", 3)
+                ```
+
+                Effective unit tests focus on verifying the correctness of individual functions and handling various input scenarios, including edge cases and invalid inputs.
+        edges:
+          - text: "What are the benefits of automated unit tests?"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Automated unit tests offer several significant benefits:
+
+                - **Ensures Code Reliability**: Regularly run unit tests to ensure that new changes do not break existing functionality.
+                - **Supports CI/CD**: Automated tests catch issues early in the development process, facilitating continuous integration and continuous deployment.
+                - **Saves Time**: Automated tests are faster than manual testing, allowing for quick identification of issues and reducing the time spent on debugging.
+                - **Enhances Code Quality**: Automated tests help maintain high-quality code that is easier to maintain, extend, and refactor.
+
+                Using AI tools like GitHub Copilot can further streamline the process of writing and managing these tests, making it more efficient and effective.
+  - name: "Generating Unit Tests"
+    context: "The Generating Unit Tests section showcases how GitHub Copilot assists in writing efficient unit tests. It introduces features like code line completions, inline chat, and the chat view in Visual Studio Code to streamline test creation. An example demonstrates generating unit tests for an add function, highlighting Copilot's ability to quickly create comprehensive tests. The section explains using inline chat to ask for test suggestions directly in the editor and the chat view for more detailed queries and discussions, enhancing the unit testing process."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Now, you'll see how GitHub Copilot can assist you in writing efficient unit tests. GitHub Copilot offers several powerful features that streamline the process of creating test cases, making your workflow more productive and ensuring high-quality code.
+        edges:
+          - text: "Tell me more about GitHub Copilot's features."
+            target_node_id: "screen6"
+          - text: "Show me an example of generating unit tests."
+            target_node_id: "screen7"
+
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here’s a quick refresher to GitHub Copilot’s features which can assist in writing unit tests:
+
+                1. **Code Line Completions**:
+                    - GitHub Copilot suggests code completions as you type, speeding up the coding process.
+                    - **Example:** As you start typing a test function, Copilot can automatically suggest the function signature, assertions, and specific test cases based on the function being tested.
+                2. **Inline Chat**:
+                    - Inline chat allows you to start a conversation with GitHub Copilot within your code editor, getting instant suggestions without leaving your workspace.
+                    - **Example:** Highlight a function and ask Copilot, "How do I test this function?" Copilot will provide immediate suggestions inline.
+                3. **Chat View**:
+                    - The chat view opens a dedicated pane in Visual Studio Code for more extensive queries and discussions about your code.
+                    - **Example:** Ask Copilot, "What are the edge cases for this function?" or "Generate unit tests for this class," and receive comprehensive responses and code examples.
+        edges:
+          - text: "Show me an example of generating unit tests."
+            target_node_id: "screen7"
+          - text: "How do I use inline chat effectively?"
+            target_node_id: "screen8"
+
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Let's see GitHub Copilot in action. Here’s an example of how Copilot assists in generating unit tests:
+
+                **Example Function**:
+                ```python
+                def add(a, b):
+                    return a + b
+                ```
+
+                **Prompt**:
+                "Generate unit tests for the add function."
+
+                **Generated Tests**:
+                ```python
+                def test_add_positive_numbers():
+                    assert add(2, 3) == 5
+
+                def test_add_negative_numbers():
+                    assert add(-1, -1) == -2
+
+                def test_add_zero():
+                    assert add(0, 0) == 0
+                ```
+
+                With GitHub Copilot, you can quickly create comprehensive unit tests, saving time and ensuring thorough coverage.
+        edges:
+          - text: "How do I use inline chat effectively?"
+            target_node_id: "screen8"
+          - text: "How do I use the chat view for AI assistance?"
+            target_node_id: "END"
+
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Inline chat is a powerful feature that allows you to interact with GitHub Copilot directly in your editor. Here's how you can use it effectively:
+
+                - **Highlight Code**: Select a function or code block you want to test.
+                - **Ask for Help**: Type your query directly in the editor. For example, "How do I test this function?"
+                - **Receive Suggestions**: GitHub Copilot will provide immediate suggestions inline, without you having to leave your workspace.
+
+                **Example**:
+                You highlight the add function and ask, "How do I test this function?" Copilot instantly suggests relevant unit tests.
+        edges:
+          - text: "Show me an example of the chat view."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                The chat view in Visual Studio Code opens a dedicated pane for more extensive queries and discussions. This feature is ideal for complex questions and deeper insights.
+
+                - **Open the Chat View**: Access the chat view pane in Visual Studio Code.
+                - **Ask Questions**: Pose detailed questions like, "What are the edge cases for this function?" or "Generate unit tests for this class."
+                - **Receive Comprehensive Responses**: GitHub Copilot provides detailed responses and code examples, helping you understand and test your code more thoroughly.
+
+                **Example**:
+                Ask Copilot, "Generate unit tests for edge cases for the add function," and receive a complete set of test cases, including those for edge scenarios.
+  - name: "Advanced Unit Test Generation"
+    context: "The Advanced Unit Test Generation section delves into creating unit tests for edge cases and boundary conditions using GitHub Copilot Chat. It explains the importance of testing null inputs, invalid parameters, and boundary values to ensure code robustness. An example demonstrates generating unit tests for a divide function, including handling a zero denominator, large numbers, and zero numerator. The process involves opening the function in Visual Studio Code, asking Copilot for edge case tests, and reviewing and refining the generated tests. This ensures comprehensive coverage and reliability in your code."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Welcome to the advanced section of our quest! In this module, you'll learn how to generate unit tests for edge cases and boundary conditions using GitHub Copilot Chat. These tests are crucial for ensuring your code handles all possible input scenarios, maintaining robustness and reliability.
+        edges:
+          - text: "Tell me more about edge cases and boundary conditions."
+            target_node_id: "screen11"
+          - text: "Show me an example of generating unit tests for edge cases."
+            target_node_id: "screen12"
+
+      - id: screen11
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Edge cases and boundary conditions are critical to thorough unit testing:
+
+                - **Null Inputs**: Scenarios where functions receive null values, potentially causing unexpected errors.
+                - **Invalid Parameters**: Testing with parameters outside the expected range or format to ensure code handles incorrect inputs gracefully.
+                - **Boundary Values**: Extreme values at the edges of the input domain, ensuring correct performance at input limits.
+
+                Understanding and testing these scenarios help ensure your code is robust and error-free under all conditions.
+        edges:
+          - text: "Show me an example of generating unit tests for edge cases."
+            target_node_id: "screen12"
+
+      - id: screen12
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Let's see how GitHub Copilot Chat can help generate unit tests for edge cases and boundary conditions.
+
+                **Example Function**:
+                ```python
+                def divide(numerator, denominator):
+                    if denominator == 0:
+                        raise ValueError("Denominator cannot be zero.")
+                    return numerator / denominator
+                ```
+                **Prompt**:
+                "Generate unit tests for edge cases for the divide function, including cases for zero denominator and large numbers."
+
+                **Generated Tests**:
+                ```python
+                import pytest
+
+                def test_divide_zero_denominator():
+                    with pytest.raises(ValueError):
+                        divide(10, 0)
+
+                def test_divide_large_numbers():
+                    assert divide(1e10, 1) == 1e10
+
+                def test_divide_zero_numerator():
+                    assert divide(0, 10) == 0
+                ```
+
+                **Explanation**:
+                
+                - **First Test**: Verifies the function raises a ValueError when the denominator is zero, ensuring error handling.
+                - **Second Test**: Tests the function with large numbers to ensure it handles boundary values.
+                - **Third Test**: Checks that the function returns zero when the numerator is zero.
+        edges:
+          - text: "How do I use GitHub Copilot Chat to generate these tests?"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Using GitHub Copilot Chat to generate unit tests is simple and efficient. Here’s how you can do it:
+
+                1. **Open the Function in Visual Studio Code**: Ensure the function you want to test is open in the editor.
+                2. **Ask for Edge Case Tests**: Use the inline chat or chat view to ask Copilot to generate tests. For example, highlight the divide function and prompt, "Generate unit tests for edge cases for the divide function, including cases for zero denominator and large numbers."
+                3. **Review and Refine**: Review the generated tests for accuracy and completeness. Refine them as needed to ensure they cover all relevant scenarios.
+  - name: "Managing Unit Tests"
+    context: "The Managing Unit Tests section guides you on running and managing unit tests using Visual Studio Code and the Python extension. It explains how to run and debug test cases, highlighting features like the green play button for running tests and the bug icon for starting debugging sessions. The section introduces Test Explorer, a tool for managing test cases, viewing test results, and identifying issues efficiently. An example demonstrates setting breakpoints and using debugging tools to inspect variables and fix issues. These features ensure your code remains reliable and any problems are identified early in the development process."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You will now learn how to run and manage unit tests using Visual Studio Code and the Python extension. Efficiently running and managing your tests ensures that your code remains reliable and any issues are identified early in the development process.
+        edges:
+          - text: "Tell me more about running and debugging test cases."
+            target_node_id: "screen15"
+          - text: "Show me how to manage test cases with Test Explorer."
+            target_node_id: "screen16"
+
+      - id: screen15
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Visual Studio Code, along with the Python extension, provides powerful features for running and debugging unit tests:
+
+                1. **Run Test Cases**:
+                    - Click the green play button next to individual test functions to run them.
+                    - Use keyboard shortcuts or context menu options to run tests quickly.
+                2. **Debug Test Cases**:
+                    - Start a debugging session by clicking the green play button with a bug icon next to the test function.
+                    - Alternatively, select "Debug" from the context menu for more debugging options.
+
+                These features make it easy to run and debug tests directly within your development environment, saving time and improving efficiency.
+        edges:
+          - text: "How do I manage test cases with Test Explorer?"
+            target_node_id: "screen16"
+          - text: "Can you show me an example of debugging a test case?"
+            target_node_id: "END"
+
+      - id: screen16
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Test Explorer in Visual Studio Code provides a comprehensive view of all test cases in your workspace, allowing you to manage and view test results efficiently:
+
+                1. **Test Explorer Overview**:
+                    - Access Test Explorer from the sidebar to see a list of all test cases.
+                    - View the status of each test, including pass, fail, and skipped tests, with color-coded indicators.
+                2. **Managing Test Cases**:
+                    - Run or debug individual tests, groups of tests, or all tests in your project using Test Explorer.
+                    - Easily identify failing tests and access error messages and stack traces to understand the issues.
+
+                Test Explorer streamlines the process of managing and running your unit tests, ensuring that you can quickly identify and address any problems.
+        edges:
+          - text: "Can you show me an example of debugging a test case?"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Let's look at an example of debugging a test case using Visual Studio Code:
+
+                1. **Set a Breakpoint**: Open the test function and set a breakpoint at the desired line by clicking in the gutter next to the line number.
+                2. **Start Debugging**: Click the green play button with a bug icon next to the test function to start the debugging session.
+                3. **Inspect Variables and State**: Use the debugging tools to step through the code, inspect variables, and understand the state of your application at each breakpoint.
+
+                This process helps you identify and fix issues in your code efficiently.
+  - name: "Best Practices"
+    context: "The Best Practices section outlines strategies for writing and managing unit tests to ensure high-quality, maintainable code. It emphasizes writing clear and concise test cases by focusing on single aspects and using descriptive names. The importance of maintaining high test coverage is highlighted, with tools like coverage.py recommended for measuring and improving coverage. Regularly refactoring tests for readability and organization is also discussed. An example process using coverage.py is provided to show how to measure and improve test coverage. Following these practices ensures robust and reliable code."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You'll learn best practices for writing and managing unit tests to ensure your code is top-notch. By adopting these practices, you'll be able to create clear, maintainable, and effective tests, making your development process smoother and your code more reliable.
+        edges:
+          - text: "Tell me more about writing clear and concise test cases."
+            target_node_id: "screen20"
+          - text: "Why is maintaining test coverage important?"
+            target_node_id: "screen21"
+
+      - id: screen20
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Writing clear and concise test cases is essential for understanding and debugging your tests:
+
+                1. **Focus on Single Aspect**:
+                    - Ensure each test case focuses on a single aspect of the functionality.
+                    - This makes it easier to pinpoint issues when a test fails.
+                2. **Descriptive Naming**:
+                    - Name your test functions descriptively to reflect what they are testing.
+                    - **Example**: Use test_add_with_positive_numbers instead of just test_add.
+
+                Following these guidelines helps make your tests more readable and easier to manage.
+        edges:
+          - text: "Why is maintaining test coverage important?"
+            target_node_id: "screen21"
+          - text: "What does regularly refactoring tests involve?"
+            target_node_id: "screen22"
+
+      - id: screen21
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Maintaining high test coverage ensures that most parts of your code are tested, helping to catch potential bugs and improve the reliability of the codebase:
+
+                1. **Aim for High Coverage**:
+                    - Test coverage measures the percentage of code covered by your tests.
+                    - Aim to cover as much of your code as possible to ensure thorough testing.
+                2. **Use Coverage Tools**:
+                    - Tools like [coverage.py](http://coverage.py/) help measure test coverage and identify areas that need more testing.
+                    - Regularly review coverage reports to ensure comprehensive testing.
+
+                Maintaining high test coverage enhances the overall quality and robustness of your code.
+        edges:
+          - text: "What does regularly refactoring tests involve?"
+            target_node_id: "screen22"
+          - text: "How do I use tools like coverage.py?"
+            target_node_id: "END"
+
+      - id: screen22
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Regularly refactoring your tests is as important as refactoring your code. This practice improves readability and maintainability:
+
+                1. **Improve Readability**:
+                    - Refactor tests to make them clearer and more concise.
+                    - Remove duplicated code and ensure that tests are logically organized.
+                2. **Organize Tests**:
+                    - Group related tests into test classes or modules.
+                    - This organization helps manage and navigate your test suite more efficiently.
+
+                By regularly refactoring your tests, you ensure that they remain effective and easy to understand.
+        edges:
+          - text: "How do I use tools like coverage.py?"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Using tools like coverage.py helps you measure and improve your test coverage:
+
+                1. **Install Coverage.py**:
+                    - Install the tool using pip: pip install coverage.
+                2. **Run Coverage**:
+                    - Run your tests with coverage enabled: coverage run -m pytest.
+                3. **Generate Reports**:
+                    - Generate a coverage report to see which parts of your code are covered: coverage report -m.
+                4. **Review and Improve**:
+                    - Review the report to identify untested parts of your code and add tests as needed.
+
+                Using coverage tools ensures your tests comprehensively cover your codebase, leading to higher quality and reliability.
+  - name: "Common Pitfalls"
+    context: "The Common Pitfalls guides learners through common pitfalls in unit testing and provides strategies to avoid and fix them. It begins by introducing the concept of common mistakes in unit testing, encouraging learners to recognize and address these issues to create more robust and reliable tests. The next screen details specific mistakes, such as writing fragile tests, overlooking edge cases, and ignoring test failures. The following screen offers solutions, including writing resilient tests, documenting and testing edge cases, and using continuous integration systems to catch and address test failures promptly. The final screen presents examples of these mistakes and their fixes, with annotated code snippets to illustrate the points. By understanding and implementing these strategies, learners can improve the reliability and effectiveness of their unit tests."
+    id: "6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Let's identify common pitfalls in unit testing and provide tips on how to avoid and fix these mistakes. Understanding these pitfalls will help you create more robust and reliable tests.
+        edges:
+          - text: "Tell me about common mistakes in unit testing."
+            target_node_id: "screen25"
+          - text: "How do I avoid and fix these mistakes?"
+            target_node_id: "screen26"
+
+      - id: screen25
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here are some common mistakes in unit testing:
+
+                1. **Writing Fragile Tests**:
+                    - Tests that break with minor changes in the codebase can be a hindrance. This often happens when tests are too tightly coupled with the implementation.
+                2. **Overlooking Edge Cases**:
+                    - Failing to test edge cases can lead to undetected bugs in unusual scenarios.
+                3. **Ignoring Test Failures**:
+                    - Skipping over failed tests can lead to larger issues down the road.
+        edges:
+          - text: "How do I avoid and fix these mistakes?"
+            target_node_id: "screen26"
+
+      - id: screen26
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here’s how to avoid and fix common unit testing mistakes:
+
+                1. **Avoiding Fragile Tests**:
+                    - Write tests that are resilient to changes in the codebase. Use abstraction to avoid tightly coupling tests with the code's internal implementation.
+                    - **Example**: Instead of checking the exact sequence of method calls, verify the outcome of the function.
+                2. **Testing Edge Cases**:
+                    - Document common edge cases for each function and ensure they are included in your test suite.
+                    - **Example**: If testing a sorting function, include tests for an empty list, a list with one element, and a list with already sorted elements.
+                3. **Addressing Test Failures**:
+                    - Implement a continuous integration system that runs your tests automatically and alerts you of failures. Make it a priority to address these failures as soon as possible.
+                    - **Example**: Use tools like Jenkins or GitHub Actions to automate your test suite and provide instant feedback on test results.
+        edges:
+          - text: "Got it."
+            target_node_id: "screen27"
+
+      - id: screen27
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Let's look at some examples of common mistakes in unit testing and how to fix them:
+
+                1. **Fragile Test Example**:
+                ```python
+                def test_method_calls():
+                    obj = MyClass()
+                    obj.method1()
+                    obj.method2()
+                    assert obj.sequence == ["method1", "method2"]
+                ```
+                    - **Issue**: This test is fragile because it checks the exact sequence of method calls.
+                    - **Fix**: Focus on the outcome:
+                ```python
+                def test_method_outcome():
+                    obj = MyClass()
+                    result = obj.process()
+                    assert result == expected_result
+                ```
+                2. **Edge Case Example**:
+                    - **Issue**: Overlooking edge cases in a sorting function.
+                    - **Fix**: Add tests for edge cases:
+                ```python
+                def test_sorting_edge_cases():
+                    assert sort([]) == []
+                    assert sort([1]) == [1]
+                    assert sort([3, 2, 1]) == [1, 2, 3]
+                ```
+                3. **Ignoring Test Failures**:
+                    - **Issue**: Ignoring failed tests.
+                    - **Fix**: Use CI tools to run tests and alert failures:
+                ```yaml
+                name: CI
+
+                on: [push]
+
+                jobs:
+                  build:
+                    runs-on: ubuntu-latest
+                    steps:
+                    - uses: actions/checkout@v2
+                    - name: Set up Python
+                      uses: actions/setup-python@v2
+                      with:
+                        python-version: 3.x
+                    - name: Install dependencies
+                      run: |
+                        pip install pytest
+                    - name: Run tests
+                      run: |
+                        pytest
+                ```
+        edges:
+          - text: "Alright, what’s next?"
+            target_node_id: "screen28"
+
+      - id: screen28
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Excellent work completing the quest! You’ve explored the powerful features of GitHub Copilot and Visual Studio Code, which can significantly enhance your unit testing process. Remember to:
+
+                1. **Utilize Different Features**: Use code line completions, inline chat, and the Test Explorer to create, run, and manage unit tests efficiently.
+                2. **Maintain Best Practices**: Write clear and concise test cases, maintain high test coverage, and regularly refactor your tests.
+                3. **Troubleshoot Effectively**: Avoid common pitfalls and use troubleshooting tips to keep your tests robust and reliable.
+
+                Keep practicing and integrating these tools into your workflow. By doing so, you’ll enhance your proficiency and improve the overall quality and reliability of your codebase.
+        edges:
+          - text: "End Quest"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Congratulations! You have successfully completed this module on enhancing your unit testing skills with GitHub Copilot. Throughout this module, you have learned various strategies for writing and managing unit tests, consulting team members, and leveraging GitHub Copilot to generate accurate and comprehensive tests efficiently. By incorporating the techniques discussed in this module, you can improve your workflow and ensure the robustness of your codebase. Remember to review and refine the generated tests to ensure accuracy and completeness. Thank you for your participation in this module. We hope you found it valuable and that it enhances your unit testing practices. 

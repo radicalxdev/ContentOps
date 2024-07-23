@@ -1,6 +1,6 @@
 tasks:
-  - name: "Welcome and Introduction"
-    context: "Developing a complex app can often lead to situations where a minor change causes everything to break. The challenge of tracking down that one elusive bug hidden among thousands of lines of code underscores the importance of having robust unit tests. This quest emphasizes developing unit tests for specific conditions using GitHub Copilot to ensure functionality, identify and fix bugs, and enhance overall code reliability and performance."
+  - name: "Intro to software testing with AI"
+    context: "This section introduces learners to the importance of efficient software testing methods, contrasting traditional manual and automated approaches with AI-powered solutions. It begins with an engaging scenario where learners must choose between manual testing, using automated tools, or exploring AI-powered solutions. Manual testing is thorough but time-consuming and error-prone, while traditional automated tools save time but require significant maintenance and have limited adaptability. AI-powered testing offers benefits such as automated test creation, improved accuracy, and enhanced scalability. The section provides examples of these benefits and introduces AI-powered testing tools like Katalon Studio, TestCraft, and Testim Automate, with a focus on Katalon Studio for its comprehensive AI features. This introduction aims to show how AI can revolutionize software testing by improving efficiency, accuracy, and scalability."
     id: "1"
     nodes:
       - id: START
@@ -8,894 +8,486 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Link to GIF of Ada AI greeting with a welcoming gesture.]"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
-              content: "Hello, {username}! Imagine you're developing a complex app, and a minor change causes everything to break. How would you feel about tracking down that one elusive bug hidden among thousands of lines of code?"
+              content: |
+                "Imagine this: You’re part of a team developing a critical software application. Ensuring its quality is paramount, but the traditional testing methods seem too slow and cumbersome. What steps would you take to ensure the software meets high-quality standards efficiently?"
         edges:
-          - text: "Overwhelmed."
+          - text: "I would manually test every component."
             target_node_id: "screen2a"
-          - text: "It would take time, but I'd manage."
+          - text: "I would use automated testing tools."
             target_node_id: "screen2b"
-          - text: "Bring it on!"
+          - text: "I would explore AI-powered testing solutions."
             target_node_id: "screen2c"
+
       - id: screen2a
         type: message
         body:
           parts:
+            - type: "image"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
-              content: "That's a common reaction, [userName]. Debugging can be a daunting task. This is where unit tests come in handy—they isolate and verify each part of the code, making debugging much simpler. Let's dive into why unit testing is so crucial. Which of these benefits stands out to you the most?"
+              content: |
+                "Manual testing is thorough, but it can be time-consuming and prone to human error, {username}. Here are some challenges with manual testing:"
+                - **Time-Consuming:** Testing every component manually takes a lot of time and resources.
+                - **Error-Prone:** Human errors are more likely to occur, leading to missed defects.
+                - **Scalability Issues:** Difficult to scale testing efforts as the project grows."
         edges:
-          - text: "Ensures individual components work correctly."
+          - text: "Can you show me how AI can help?"
             target_node_id: "screen3"
-          - text: "Maintains code reliability and quality."
-            target_node_id: "screen3"
+
       - id: screen2b
         type: message
         body:
           parts:
+            - type: "image"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
-              content: "I get it, [userName]. Unit tests act like a safety net—they catch issues early, saving you a lot of time and effort. Let's explore why unit testing is so essential. Which of these benefits resonates with you?"
+              content: |
+                "Automated testing tools are a great start, {username}. They save time and reduce errors, but integrating AI can take your testing to the next level. Here are some limitations of traditional automated testing tools:"
+                - **Maintenance Overhead:** Automated scripts require constant updates and maintenance.
+                - **Limited Adaptability:** Scripts may not adapt well to changes in the application.
+                - **Complex Setup:** Setting up and managing automated tests can be complex."
         edges:
-          - text: "Ensures individual components work correctly."
+          - text: "Can you show me how AI can help?"
             target_node_id: "screen3"
-          - text: "Maintains code reliability and quality."
-            target_node_id: "screen3"
+
       - id: screen2c
         type: message
         body:
           parts:
+            - type: "image"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
-              content: "Great attitude, [userName]! Even the most skilled developers benefit from tools that streamline the debugging process. Unit tests ensure each part of your code functions as intended. Let's look at why unit testing is essential. Which of these benefits do you find most compelling?"
+              content: |
+                "Exploring AI-powered testing solutions is a smart choice, {username}. AI can significantly enhance testing efficiency and effectiveness. Here are some benefits of using AI in software testing:"
+                - **Automated Test Creation:** AI can generate test cases automatically.
+                - **Improved Accuracy:** AI reduces human error and identifies defects more accurately.
+                - **Enhanced Scalability:** AI-powered tools can easily scale to test large and complex applications."
         edges:
-          - text: "Ensures individual components work correctly."
+          - text: "Can you show me examples of these benefits?"
             target_node_id: "screen3"
-          - text: "Maintains code reliability and quality."
-            target_node_id: "screen3"
+
       - id: screen3
         type: message
         body:
           parts:
             - type: "text"
-              content: "Unit testing is a cornerstone of software development. Here's why it's vital:"
-            - type: "text"
               content: |
-                - **Ensures the functionality of individual components:**
-                    - Verifies that each part of the code works correctly, simplifying debugging.
-                    - Helps ensure every component performs as intended, contributing to a stable system.
-                - **Maintains code reliability and quality:**
-                    - Prevents new changes from breaking existing functionality, maintaining code integrity.
-                    - Supports continuous integration and deployment (CI/CD), catching issues early.
-            - type: "text"
-              content: "Ready to discover how GitHub Copilot can assist with unit testing?"
+                "Sure, here are a few examples of how AI enhances software testing:"
+                - **Automated Test Creation:** AI can analyze code and generate relevant test cases, reducing the time and effort needed for test creation.
+                - **Improved Accuracy:** AI algorithms can detect patterns and anomalies that human testers might miss, ensuring more accurate defect detection.
+                - **Enhanced Scalability:** AI-powered tools can handle large volumes of tests, making it easier to test complex applications thoroughly."
         edges:
-          - text: "Yes, show me!"
-            target_node_id: "screen4"
-      - id: screen4
+          - text: "Got it, what's next?"
+            target_node_id: "END"
+
+      - id: END
         type: message
         body:
           parts:
             - type: "image"
-              content: "Illustration of GitHub Copilot suggesting test cases in Visual Studio Code."
-            - type: "text"
-              content: "In this module, we'll explore how GitHub Copilot and Copilot Chat can revolutionize your unit testing workflow. Here's what we'll cover:"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                - **Using GitHub Copilot and Copilot Chat for generating unit tests:**
-                    - Learn how these AI tools can help quickly and accurately create test cases.
-                    - Discover how Copilot suggests and completes test cases based on your code, making testing efficient and less error-prone.
-                - **Tools: Visual Studio Code, Python extension, pytest framework:**
-                    - **Visual Studio Code:** A lightweight, powerful code editor.
-                    - **Python extension:** Enhances Python development in Visual Studio Code.
-                    - **pytest framework:** A robust, simple testing framework for Python.
+                "AI-powered tools are revolutionizing software testing. Here are some key players:
+
+                **Katalon Studio:**
+                - Comprehensive platform for web, API, desktop, and mobile testing.
+                - Key features: StudioAssist (GPT-powered test generation), SmartWait, self-healing tests, visual testing, test failure analysis, and anomaly detection.
+
+                **TestCraft:**
+                - AI-driven platform leveraging Selenium for regression testing.
+                - Key features: User-friendly interface, cross-browser testing, machine learning for web element identification, and adaptation to dynamic changes.
+
+                **Testim Automate:**
+                - Machine learning-based test automation platform.
+                - Key features: End-to-end test recording, smart locators, and continuous adaptation to changes.
+
+                We'll focus on Katalon Studio in this module because it offers a comprehensive suite of AI-powered features that enhance efficiency, accuracy, and scalability in testing."
+
+  - name: "Types of testing"
+    context: "This section introduces learners to various types of software testing and how AI can enhance each one. It starts by assessing the user's familiarity with AI in software testing, offering either a quick refresher or an in-depth introduction. The refresher highlights the efficiency, accuracy, and scalability benefits of AI in testing. Learners then explore different types of software testing, including unit, integration, system, acceptance, performance, and security testing, with examples provided for each. Finally, the section explains how AI can enhance these testing types, such as generating unit tests, simulating user behaviors, and detecting vulnerabilities, showcasing AI's impact on improving testing efficiency and effectiveness."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
             - type: "text"
-              content: "Before we dive in, how familiar are you with these tools?"
+              content: "Before we dive in, I'd love to know a bit about your experience with AI in software testing."
         edges:
-          - text: "I know them all well."
+          - text: "Yes, I'm have some experience."
             target_node_id: "screen5a"
-          - text: "I know some, but not all."
+          - text: "No, I am new to this."
             target_node_id: "screen5b"
-          - text: "I'm new to these tools."
-            target_node_id: "screen5c"
+
       - id: screen5a
         type: message
         body:
           parts:
             - type: "text"
-              content: "Fantastic, [userName]! Since you're already familiar with these tools, we can jump right into using GitHub Copilot for unit testing. Ready to get started?"
+              content: |
+                "That’s great! Since you're already familiar with AI in software testing, let's take your skills to the next level. How would you like to proceed? A quick refresher to warm up or dive straight into the advanced tips?"
         edges:
-          - text: "Yes, let's dive in!"
+          - text: "Quick refresher, please!"
             target_node_id: "screen6"
+          - text: "Straight to the advanced tips!"
+            target_node_id: "screen7"
+
       - id: screen5b
         type: message
         body:
           parts:
             - type: "text"
-              content: "No problem, [userName]. Let's quickly review the tools we'll be using so you're all set. Ready for a brief overview?"
-        edges:
-          - text: "Yes, give me a quick review."
-            target_node_id: "screen5d"
-      - id: screen5c
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "No worries, [userName]! I'm here to help you get up to speed. We'll go through a detailed introduction to these tools so you're comfortable using them. Ready to begin?"
-        edges:
-          - text: "Yes, let's start!"
-            target_node_id: "screen5d"
-      - id: screen5d
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Sure thing, [userName]! Here's a quick refresher on the tools:"
-            - type: "text"
               content: |
-                - **Visual Studio Code:** A lightweight, powerful code editor.
-                - **Python extension:** Enhances Python development in Visual Studio Code.
-                - **pytest framework:** A simple, robust testing framework for Python.
-            - type: "text"
-              content: "Ready to dive into using GitHub Copilot for unit testing?"
+                "No problem at all, {username}! I'm here to help you get up to speed with AI in software testing. You'll soon find it incredibly helpful and easy to use. I'll guide you step-by-step on how it can transform your testing process. How would you like to start? A brief introduction to get you acquainted or an in-depth walkthrough to dive deeper?"
         edges:
-          - text: "Yes, let's begin!"
+          - text: "Brief introduction, please!"
             target_node_id: "screen6"
+          - text: "In-depth walkthrough, Ada!"
+            target_node_id: "screen7"
+
       - id: screen6
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Illustration of GitHub Copilot suggesting unit test cases in Visual Studio Code."
-            - type: "text"
-              content: "Now that you're familiar with the tools, let's explore how GitHub Copilot can help you generate unit tests efficiently. Here's what we'll cover:"
             - type: "text"
               content: |
-                - **Code line completions for writing code efficiently:**
-                    - GitHub Copilot suggests code completions as you type, speeding up the coding process.
-                    - Ideal for generating boilerplate code, repetitive patterns, and complete unit test cases.
-                    - **Example:** As you start typing a test function, Copilot can suggest the function signature, assertions, and specific test cases based on the function being tested.
-            - type: "text"
-              content: "Ready to see code completions in action?"
+                "Sure thing! AI in software testing enhances efficiency and accuracy by automating test creation, identifying defects, and scaling to handle complex applications. It's a game-changer in ensuring software quality, cost-effectiveness, security, and performance optimization. Ready to dive into the details?"
         edges:
-          - text: "Yes, show me!"
+          - text: "Yes, let's dive in!"
             target_node_id: "screen7"
-          - text: "Can you explain more about code completions?"
+          - text: "I'd like more examples first."
             target_node_id: "screen6a"
+
       - id: screen6a
         type: message
         body:
           parts:
             - type: "text"
-              content: "Sure! Code line completions help you by predicting and suggesting the next line of code as you type. This feature can generate boilerplate code, repetitive patterns, and complete unit test cases quickly and accurately."
+              content: |
+                "Here are some examples of how AI enhances software testing:"
+
+                - **Automated Test Creation:**
+                  - AI can analyze code and generate relevant test cases, reducing the time and effort needed for test creation.
+                - **Improved Accuracy:**
+                  - AI algorithms can detect patterns and anomalies that human testers might miss, ensuring more accurate defect detection.
+                - **Enhanced Scalability:**
+                  - AI-powered tools can handle large volumes of tests, making it easier to test complex applications thoroughly."
         edges:
-          - text: "Got it, let's proceed!"
+          - text: "Yes, let's go!"
             target_node_id: "screen7"
+
       - id: screen7
         type: message
         body:
           parts:
             - type: "image"
-              content: "Gif of GitHub Copilot suggesting code completions for a test function."
-            - type: "text"
-              content: "Here's how GitHub Copilot's code completions work in practice:"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                1. **Start typing a test function:**
-                    - As you type, Copilot predicts the next line based on context.
-                    - Copilot can suggest the function signature, assertions, and specific test cases.
-            - type: "text"
-              content: "**Example:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_addition():
-                    result = add(2, 3)
-                    assert result == 5
-                ```
-            - type: "text"
-              content: "See how it works?"
+                "To fully grasp the impact of AI in software testing, it's important to understand the different types of testing involved. Here are the key types:"
+
+                - **Unit Testing:** Verifies individual components or functions.
+                - **Integration Testing:** Ensures different modules work together correctly.
+                - **System Testing:** Evaluates the complete and integrated software.
+                - **Acceptance Testing:** Determines if the software meets user requirements.
+                - **Performance Testing:** Assesses the software's speed, scalability, and stability.
+                - **Security Testing:** Identifies vulnerabilities in the system."
         edges:
-          - text: "Yes, what's next?"
+          - text: "Can you give me an example for each type?"
             target_node_id: "screen8"
-          - text: "I'd like more examples."
-            target_node_id: "screen7a"
-      - id: screen7a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of GitHub Copilot's code completions:"
-            - type: "text"
-              content: "**Testing a string function:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_to_upper():
-                    result = to_upper('hello')
-                    assert result == 'HELLO'
-                ```
-            - type: "text"
-              content: "**Testing a sorting function:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_sort_list():
-                    result = sort_list([3, 1, 2])
-                    assert result == [1, 2, 3]
-                ```
-            - type: "text"
-              content: "Ready to move on to the next feature?"
-        edges:
-          - text: "Yes, what's next?"
-            target_node_id: "screen8"
+          - text: "How does AI enhance these types of testing?"
+            target_node_id: "END"
+
       - id: screen8
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Illustration of GitHub Copilot's inline chat feature within Visual Studio Code."
-            - type: "text"
-              content: "Next, let's look at how GitHub Copilot's inline chat can assist you directly in the editor."
             - type: "text"
               content: |
-                - **Inline chat for help directly in the editor:**
-                    - Start a conversation with GitHub Copilot right within your code editor.
-                    - Ask questions and get instant suggestions without leaving your workspace.
-                    - **Example:** Highlight a function and ask, "How do I test this function?" Copilot will provide suggestions inline.
-            - type: "text"
-              content: "Ready to try inline chat?"
+                "Here are examples of each type of testing:"
+
+                - **Unit Testing:**
+                  - Testing a function that calculates the sum of two numbers to ensure it returns the correct result.
+                - **Integration Testing:**
+                  - Ensuring a payment processing module works correctly with the shopping cart module.
+                - **System Testing:**
+                  - Verifying the entire e-commerce application works as intended, from browsing products to checkout.
+                - **Acceptance Testing:**
+                  - Checking if the software meets user requirements by validating real-world scenarios.
+                - **Performance Testing:**
+                  - Measuring the application's response time and stability under high traffic conditions.
+                - **Security Testing:**
+                  - Identifying and addressing vulnerabilities that could lead to unauthorized access or data breaches."
         edges:
-          - text: "Bring it on!"
-            target_node_id: "screen9"
-          - text: "Can you explain more about inline chat?"
-            target_node_id: "screen8a"
-      - id: screen8a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Inline chat allows you to interact with GitHub Copilot directly within your code editor. You can ask questions and receive immediate suggestions without leaving your workspace."
-        edges:
-          - text: "Got it, let's proceed!"
-            target_node_id: "screen9"
-      - id: screen9
+          - text: "How does AI enhance these types of testing?"
+            target_node_id: "END"
+
+      - id: END
         type: message
         body:
           parts:
             - type: "image"
-              content: "Gif of GitHub Copilot's inline chat feature suggesting how to test a function."
-            - type: "text"
-              content: "Here's how GitHub Copilot's inline chat works in practice:"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                1. **Highlight a function:**
-                    - Ask Copilot, "How do I test this function?"
-                    - Copilot provides immediate suggestions inline.
-            - type: "text"
-              content: "**Example:**"
-            - type: "text"
-              content: "Highlighting a `calculate_total` function and asking for test suggestions, Copilot might suggest:"
-            - type: "text"
-              content: |
-                ```python
-                def test_calculate_total():
-                    result = calculate_total([5, 10, 15])
-                    assert result == 30
-                ```
-            - type: "text"
-              content: "See how it works?"
-        edges:
-          - text: "Yes, what's next?"
-            target_node_id: "screen10"
-          - text: "I'd like more examples."
-            target_node_id: "screen9a"
-      - id: screen9a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of using GitHub Copilot's inline chat:"
-            - type: "text"
-              content: "**Testing a reverse string function:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_reverse_string():
-                    result = reverse_string('hello')
-                    assert result == 'olleh'
-                ```
-            - type: "text"
-              content: "**Testing a factorial function:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_factorial():
-                    result = factorial(5)
-                    assert result == 120
-                ```
-            - type: "text"
-              content: "Ready to move on to the next feature?"
-        edges:
-          - text: "Let's go!"
-            target_node_id: "screen10"
-      - id: screen10
+                "AI can significantly enhance each type of testing:"
+
+                - **Unit Testing:**
+                  - AI can automatically generate unit tests, ensuring comprehensive coverage of all code paths.
+                - **Integration Testing:**
+                  - AI helps identify integration points and create tests to ensure seamless module interactions.
+                - **System Testing:**
+                  - AI can simulate various user behaviors and system conditions to thoroughly test the entire system.
+                - **Acceptance Testing:**
+                  - AI can generate realistic user scenarios to validate if the software meets user requirements.
+                - **Performance Testing:**
+                  - AI can create complex load scenarios and analyze performance metrics to identify bottlenecks.
+                - **Security Testing:**
+                  - AI can detect vulnerabilities and simulate attacks to assess the security of the system."
+
+  - name: "AI overcoming challenges in Testing"
+    context: "This section delves into the impact of AI on overcoming challenges in software testing, particularly within continuous delivery and DevOps environments. AI enhances efficiency by reducing the time from idea to production by up to 55% and shifts testing from a reactive to a proactive approach. Common bottlenecks in software testing include high demand for testing, labor-intensive manual efforts, complexity of software requiring various types of tests, narrow testing windows, and the need for ongoing regression testing. AI addresses these issues by automating test case creation and execution, reducing manual effort, managing complex test types, accelerating testing processes, and ensuring seamless integration of new features with continuous monitoring and testing."
+    id: "3"
+    nodes:
+      - id: START
         type: message
         body:
           parts:
             - type: "image"
-              content: "Illustration of GitHub Copilot's chat view in Visual Studio Code."
-            - type: "text"
-              content: "Lastly, let's explore the chat view for more detailed AI assistance."
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                - **Chat view for AI assistance:**
-                    - Opens a dedicated pane in Visual Studio Code for detailed interaction with GitHub Copilot.
-                    - Ask broader questions about best practices, alternative approaches, or detailed explanations.
-                    - **Example:** Ask Copilot, "What are the edge cases for this function?" or "Generate unit tests for this class," and receive comprehensive responses and code examples.
-            - type: "text"
-              content: "Ready to see the chat view in action?"
+                "AI has a significant impact on software testing, especially within continuous delivery and DevOps infrastructures. Here's an overview of how AI enhances software testing:"
+
+                - **AI in Continuous Delivery and DevOps:**
+                  - **Efficiency:** AI increases efficiency, reducing the time from idea to production by up to 55%.
+                  - **Proactive Approach:** Shifts testing from a reactive quality assurance mindset to a proactive engineering approach.
+                - **Key Bottlenecks in Software Testing:**
+                  - **Volume of Requests:** High demand for testing.
+                  - **Manual Testing Effort:** Time-consuming and labor-intensive.
+                  - **Complexity of Software:** Requires different types of tests.
+                  - **Narrow Testing Windows:** Reduced time for thorough testing.
+                  - **Regression Testing Needs:** Ensuring new features don’t affect existing functionality."
         edges:
-          - text: "Yes, show me!"
+          - text: "Can you give me examples of these bottlenecks?"
             target_node_id: "screen11"
-          - text: "Can you explain more about the chat view?"
-            target_node_id: "screen10a"
-      - id: screen10a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "The chat view opens a dedicated pane in Visual Studio Code for detailed interaction with GitHub Copilot. You can ask broader questions and get comprehensive responses and code examples."
-        edges:
-          - text: "Got it, let's proceed!"
-            target_node_id: "screen11"
+          - text: "How does AI address these bottlenecks?"
+            target_node_id: "END"
+
       - id: screen11
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Gif of GitHub Copilot's chat view generating unit tests for a class."
-            - type: "text"
-              content: "Here's how GitHub Copilot's chat view works in practice:"
             - type: "text"
               content: |
-                1. **Open the chat view:**
-                    - Ask Copilot, "Generate unit tests for this class."
-                    - Copilot provides detailed test cases and explanations.
-            - type: "text"
-              content: "**Example:**"
-            - type: "text"
-              content: "Asking to generate tests for a `User` class, Copilot might suggest:"
-            - type: "text"
-              content: |
-                ```python
-                def test_user_creation():
-                    user = User(name='Alice', age=30)
-                    assert user.name == 'Alice'
-                    assert user.age == 30
-                ```
-            - type: "text"
-              content: "See how it works?"
+                "Sure, here are some examples of bottlenecks in software testing:"
+
+                - **Volume of Requests:**
+                  - A high demand for testing can overwhelm testing teams, leading to delays.
+                - **Manual Testing Effort:**
+                  - Manual testing is labor-intensive, consuming significant time and resources.
+                - **Complexity of Software:**
+                  - Complex software requires multiple types of tests (e.g., UI, API, mobile), increasing testing effort.
+                - **Narrow Testing Windows:**
+                  - Continuous delivery often reduces the time available for thorough testing.
+                - **Regression Testing Needs:**
+                  - Ensuring that new features don’t negatively affect existing functionality requires ongoing regression testing."
         edges:
-          - text: "Sure!"
-            target_node_id: "screen12"
-          - text: "I'd like more examples."
-            target_node_id: "screen11a"
-      - id: screen11a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of using GitHub Copilot's chat view:"
-            - type: "text"
-              content: "**Testing an `Order` class:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_order_total():
-                    order = Order(items=[Item(price=10), Item(price=20)])
-                    assert order.total() == 30
-                ```
-            - type: "text"
-              content: "**Testing an `Inventory` class:**"
-            - type: "text"
-              content: |
-                ```python
-                def test_inventory_add_item():
-                    inventory = Inventory()
-                    item = Item(name='Laptop')
-                    inventory.add_item(item)
-                    assert item in inventory.items
-                ```
-            - type: "text"
-              content: "Ready to move on to the next feature?"
-        edges:
-          - text: "On to the next feature!"
-            target_node_id: "screen12"
-      - id: screen12
+          - text: "Got it, what's next?"
+            target_node_id: "END"
+
+      - id: END
         type: message
         body:
           parts:
             - type: "image"
-              content: "Illustration of Ada AI explaining edge cases and boundary conditions."
-            - type: "text"
-              content: "Great job so far, [userName]! Now, let's delve into advanced unit test generation by focusing on edge cases and boundary conditions. These tests ensure your code handles the most extreme and unexpected inputs robustly."
-            - type: "text"
-              content: "Ready to learn about edge cases and boundary conditions?"
-        edges:
-          - text: "Yes, let's go!"
-            target_node_id: "screen13"
-          - text: "Can you explain more about why they are important?"
-            target_node_id: "screen12a"
-      - id: screen12a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Absolutely! Testing edge cases and boundary conditions is crucial for robust software. Here's why:"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                - **Null Inputs:** Functions receiving null values can lead to unexpected errors.
-                - **Invalid Parameters:** Ensures your code handles incorrect or malicious inputs gracefully.
-                - **Boundary Values:** Tests extreme values at the edges of input ranges.
-            - type: "text"
-              content: "Missing these tests can result in unpredictable software failures in production. By thoroughly testing these scenarios, you enhance the robustness and reliability of your software."
-        edges:
-          - text: "Yes, let's go!"
-            target_node_id: "screen13"
-      - id: screen13
+                "AI can significantly address these bottlenecks in software testing by:"
+
+                - **Volume of Requests:**
+                  - AI automates test case creation and execution, handling a large volume of tests efficiently.
+                - **Manual Testing Effort:**
+                  - AI reduces manual effort by automating repetitive tasks and identifying defects quickly.
+                - **Complexity of Software:**
+                  - AI can manage and execute various types of tests, ensuring comprehensive coverage.
+                - **Narrow Testing Windows:**
+                  - AI accelerates testing processes, fitting thorough testing into shorter timeframes.
+                - **Regression Testing Needs:**
+                  - AI continuously monitors and tests new features against
+
+  - name: "Intro to Katalon"
+    context: "This section introduces learners to Katalon Studio and its AI-powered features that enhance software testing processes. Katalon integrates AI capabilities to improve efficiency, accuracy, and scalability, starting with automated test case creation from Jira tickets, allowing testers to review and refine these test cases. It acts as a testing copilot, offering real-time suggestions, automated comments, error detection, and adaptive learning during testing. Key features include the ability to combine multiple application types into one project, a recorder and spy tool for capturing user interactions, self-healing for automatic locator updates, and smart wait for improved test reliability. Katalon ensures comprehensive test coverage through various testing types, test suites, and the TestCloud feature for cross-environment testing. Streamlined integrations with analytics, Jira, real-time result sharing, and CI/CD pipelines further enhance teamwork and productivity. Finally, getting started with Katalon Studio involves straightforward steps like downloading, creating projects, configuring environments, and integrating with CI/CD for automated testing."
+    id: "4"
+    nodes:
+      - id: START
         type: message
         body:
           parts:
             - type: "image"
-              content: "Illustration of code snippets showing null inputs, invalid parameters, and boundary values."
-            - type: "text"
-              content: "Let's look at some examples of edge cases and boundary conditions you should test for:"
-            - type: "text"
-              content: "**Null Inputs:** Scenarios where functions receive null values."
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                **Example:**
-                ```python
-                def test_addition_with_null():
-                    result = add(None, 3)
-                    assert result is None
-                ```
-            - type: "text"
-              content: "**Invalid Parameters:** Testing with parameters outside the expected range or format."
-            - type: "text"
-              content: |
-                **Example:**
-                ```python
-                def test_addition_with_invalid_parameters():
-                    result = add('two', 3)
-                    assert result is None
-                ```
-            - type: "text"
-              content: "**Boundary Values:** Extreme values at the edges of the input domain."
-            - type: "text"
-              content: |
-                **Example:**
-                ```python
-                def test_addition_with_boundary_values():
-                    result = add(1e10, -1e10)
-                    assert result == 0
-                ```
-            - type: "text"
-              content: "Ready to generate these with GitHub Copilot?"
+                "Katalon integrates various AI capabilities to enhance your software testing process, offering features that improve efficiency, accuracy, and scalability:"
+
+                ### AI-Powered Test Case Generation
+
+                - **Automated Test Case Creation from Jira Tickets:** Katalon AI reads Jira tickets, comprehending context and requirements, converting extracted information into detailed test cases automatically.
+                - **Customization and Refinement:** Allows testers to review and refine generated test cases to meet specific testing criteria.
+                - **Efficiency Improvement:** Speeds up test case creation, allowing focus on critical issues and complex scenarios."
         edges:
-          - text: "Yes, let's generate!"
+          - text: "Tell me more about Katalon's capabilities."
+            target_node_id: "screen13A"
+
+      - id: screen13A
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                "Katalon AI acts as a testing copilot, providing real-time suggestions and feedback during testing:"
+
+                - **Katalon AI as a Testing Copilot:** Provides real-time suggestions and feedback during testing.
+                - **Automated Comments and Recommendations:** Analyzes ongoing tests, offering comments, potential improvements, and alternative test paths.
+                - **Error Detection and Solutions:** Identifies potential issues and suggests fixes during test execution.
+                - **Learning and Adaptation:** Continuously learns from test execution data to improve assistance over time."
+        edges:
+          - text: "Show me Katalon’s AI-powered features in detail."
             target_node_id: "screen14"
-          - text: "Can you show more examples?"
-            target_node_id: "screen13a"
-      - id: screen13a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of edge cases and boundary conditions:"
-            - type: "text"
-              content: "**Testing a function with a list input:**"
-            - type: "text"
-              content: |
-                **Example:**
-                ```python
-                def test_sort_list_with_null():
-                    result = sort_list(None)
-                    assert result is None
-                ```
-            - type: "text"
-              content: "**Testing a function with an empty input:**"
-            - type: "text"
-              content: |
-                **Example:**
-                ```python
-                def test_sort_list_with_empty():
-                    result = sort_list([])
-                    assert result == []
-                ```
-            - type: "text"
-              content: "Ready to generate these with GitHub Copilot?"
-        edges:
-          - text: "Start generating!"
-            target_node_id: "screen14"
+          - text: "How does Katalon support integrations?"
+            target_node_id: "screen16"
+
       - id: screen14
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Gif of GitHub Copilot suggesting edge case tests in Visual Studio Code."
-            - type: "text"
-              content: "Here's how GitHub Copilot can help you generate edge case tests:"
             - type: "text"
               content: |
-                1. **Type the function you want to test:**
-                    - Copilot will suggest edge case tests based on the function.
-                    - **Example:**
-                    ```python
-                    def test_addition_with_null():
-                        result = add(None, 3)
-                        assert result is None
-                    ```
-            - type: "text"
-              content: "Ready to see Copilot generate these tests?"
+                "Let's delve deeper into how these features enhance testing efficiency:"
+
+                - **Combine Multiple Application Types:** Create tests for a web application, API, mobile app, and desktop application all within one project, streamlining test management.
+                - **Recorder and Spy:** Use the recorder to capture user interactions with the application, automatically generating test scripts that can be edited and reused.
+                - **Self-Healing:** If an element locator changes due to a UI update, Katalon’s self-healing feature will automatically find the new locator and update the test script, ensuring continuous test execution.
+                - **Smart Wait:** Smart Wait ensures that the test steps wait for the necessary elements to be fully loaded and interactive before proceeding, reducing false negatives and improving test reliability."
         edges:
-          - text: "Yes, let's see it!"
+          - text: "What about comprehensive test coverage?"
             target_node_id: "screen15"
-          - text: "Can you show another example?"
-            target_node_id: "screen14a"
-      - id: screen14a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Sure! Here's another example:"
-            - type: "text"
-              content: |
-                1. **Type the function you want to test:**
-                    - Copilot will suggest edge case tests.
-                    - **Example:**
-                    ```python
-                    def test_divide_with_zero():
-                        result = divide(5, 0)
-                        assert result is None
-                    ```
-            - type: "text"
-              content: "Ready to see Copilot generate these tests?"
-        edges:
-          - text: "Yes, let's see it!"
-            target_node_id: "screen15"
+
       - id: screen15
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Gif of GitHub Copilot generating edge case tests for a function."
-            - type: "text"
-              content: "Here's how GitHub Copilot generates edge case tests:"
             - type: "text"
               content: |
-                1. **Start typing a test function for edge cases:**
-                    - As you type, Copilot predicts and suggests edge case tests.
-                    - **Example:**
-                    ```python
-                    def test_handle_edge_cases():
-                        result = handle_edge_case(None)
-                        assert result is None
-                    ```
-            - type: "text"
-              content: "See how it works?"
+                "Katalon Studio ensures comprehensive test coverage with versatile features:"
+
+                - **Supports Multiple Testing Types:** Includes data-driven, BDD, and keyword-driven testing.
+                - **Test Suites and Collections:** Group test cases to cover different scenarios.
+                - **TestCloud:** Run tests across various environments."
         edges:
-          - text: "Yes, show me!"
+          - text: "How does Katalon support integrations?"
             target_node_id: "screen16"
-          - text: "I'd like more examples."
-            target_node_id: "screen15a"
-      - id: screen15a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of edge case tests generated by GitHub Copilot:"
-            - type: "text"
-              content: "**Testing a string manipulation function:**"
-            - type: "text"
-              content: |
-                **Example:**
-                ```python
-                def test_reverse_string_with_null():
-                    result = reverse_string(None)
-                    assert result is None
-                ```
-            - type: "text"
-              content: "**Testing a mathematical function:**"
-            - type: "text"
-              content: |
-                **Example:**
-                ```python
-                def test_multiply_with_large_numbers():
-                    result = multiply(1e10, 1e10)
-                    assert result == 1e20
-                ```
-            - type: "text"
-              content: "Ready to move on?"
-        edges:
-          - text: "Let's move forward!"
-            target_node_id: "screen16"
+
       - id: screen16
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Illustration of Visual Studio Code with the Test Explorer and context menu options highlighted."
-            - type: "text"
-              content: "Great progress, [userName]! Now, let's explore how to run and manage your unit tests using Visual Studio Code and the Python extension. These tools make it easy to execute, debug, and manage your tests efficiently."
-            - type: "text"
-              content: "Ready to learn how?"
-        edges:
-          - text: "Yes, let's go!"
-            target_node_id: "screen17"
-          - text: "Can you explain more about running tests?"
-            target_node_id: "screen16a"
-      - id: screen16a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Sure! Here's how you can run your test cases:"
             - type: "text"
               content: |
-                1. **Run Test Cases:**
-                    - **Shortcuts:** Click the green play button next to your test functions to run individual tests.
-                    - **Context Menu:** Right-click on a test function or file and select "Run" from the context menu.
-            - type: "text"
-              content: "Ready to see this in action?"
+                "Katalon Studio streamlines integrations to enhance teamwork and productivity:"
+
+                - **Analytics:** Gain insights on test executions.
+                - **Jira Integration:** Track and submit bugs.
+                - **Real-Time Results Sharing:** Share test results via email, Slack, Teams.
+                - **CI/CD Integration:** Katalon Runtime Engine for seamless integration."
         edges:
-          - text: "Yes, let's see it!"
-            target_node_id: "screen17"
-      - id: screen17
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Gif of Visual Studio Code showing the process of running test cases using the green play button and context menu."
-            - type: "text"
-              content: "Here's how to run test cases in Visual Studio Code:"
-            - type: "text"
-              content: |
-                1. **Run Individual Tests:**
-                    - Click the green play button next to your test functions.
-                    - **Example:**
-                    ```python
-                    def test_addition():
-                        result = add(2, 3)
-                        assert result == 5
-                    ```
-                2. **Run from Context Menu:**
-                    - Right-click on a test function or file and select "Run" from the context menu.
-            - type: "text"
-              content: "See how easy it is?"
-        edges:
-          - text: "Yes, what's next?"
-            target_node_id: "screen18"
-          - text: "I'd like more examples."
-            target_node_id: "screen17a"
-      - id: screen17a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of running test cases:"
-            - type: "text"
-              content: |
-                1. **Run a Test File:**
-                    - Right-click on the test file in the editor and select "Run".
-                2. **Run All Tests:**
-                    - Use the Test Explorer to run all tests in your project.
-            - type: "text"
-              content: "Ready to move on?"
-        edges:
-          - text: "Show me the next step!"
-            target_node_id: "screen18"
-      - id: screen18
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Illustration of Visual Studio Code with the debug option highlighted."
-            - type: "text"
-              content: "Now, let's look at how to debug your test cases using Visual Studio Code:"
-            - type: "text"
-              content: |
-                1. **Debug Test Cases:**
-                    - Click the green play button with a bug icon next to your test functions.
-                    - **Context Menu:** Right-click on a test function or file and select "Debug" from the context menu.
-                    - **Example:**
-                    ```python
-                    def test_addition():
-                        result = add(2, 3)
-                        assert result == 5
-                    ```
-            - type: "text"
-              content: "Ready to see debugging in action?"
-        edges:
-          - text: "Yes, would love to!"
-            target_node_id: "screen19"
-          - text: "Can you explain more about debugging?"
-            target_node_id: "screen18a"
-      - id: screen18a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Sure! Here's how you can debug your test cases:"
-            - type: "text"
-              content: |
-                1. **Debug Individual Tests:**
-                    - Click the green play button with a bug icon next to your test functions.
-                2. **Debug from Context Menu:**
-                    - Right-click on a test function or file and select "Debug" from the context menu.
-            - type: "text"
-              content: "Ready to see this in action?"
-        edges:
-          - text: "Sure!"
-            target_node_id: "screen19"
-      - id: screen19
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Gif of Visual Studio Code showing the debugging process for a test case."
-            - type: "text"
-              content: "Here's how to debug test cases in Visual Studio Code:"
-            - type: "text"
-              content: |
-                1. **Debug Individual Tests:**
-                    - Click the green play button with a bug icon next to your test functions.
-                    - **Example:**
-                    ```python
-                    def test_addition():
-                        result = add(2, 3)
-                        assert result == 5
-                    ```
-                2. **Debug from Context Menu:**
-                    - Right-click on a test function or file and select "Debug" from the context menu.
-            - type: "text"
-              content: "See how it works?"
-        edges:
-          - text: "What's the next part?"
-            target_node_id: "screen20"
-          - text: "I'd like more examples."
-            target_node_id: "screen19a"
-      - id: screen19a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of debugging test cases:"
-            - type: "text"
-              content: |
-                1. **Debug a Test File:**
-                    - Right-click on the test file in the editor and select "Debug".
-                2. **Debug All Tests:**
-                    - Use the Test Explorer to debug all tests in your project.
-            - type: "text"
-              content: "Ready to move on?"
-        edges:
-          - text: "Let's keep going!"
-            target_node_id: "screen20"
-      - id: screen20
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Illustration of the Test Explorer in Visual Studio Code."
-            - type: "text"
-              content: "Next, let's explore the Test Explorer in Visual Studio Code:"
-            - type: "text"
-              content: |
-                1. **Test Explorer Overview:**
-                    - Access the Test Explorer by clicking on the beaker icon in the Activity Bar.
-                    - Provides a comprehensive view of all test cases in your workspace.
-            - type: "text"
-              content: "Ready to see how it works?"
-        edges:
-          - text: "Yes, show me!"
-            target_node_id: "screen21"
-          - text: "Can you explain more about managing tests?"
-            target_node_id: "screen20a"
-      - id: screen20a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Sure! Here's how you can manage your test cases with the Test Explorer:"
-            - type: "text"
-              content: |
-                1. **Tree View:**
-                    - Displays your test cases organized by test file and function.
-                    - Run or debug individual tests, groups of tests, or all tests in your project.
-                2. **Test Results:**
-                    - Shows the status of each test (pass, fail, skipped) with color-coded indicators.
-                    - Clicking on a failed test displays the error message and stack trace.
-            - type: "text"
-              content: "Ready to see this in action?"
-        edges:
-          - text: "Let's make it happen!"
-            target_node_id: "screen21"
-      - id: screen21
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Gif of Visual Studio Code showing the Test Explorer in action."
-            - type: "text"
-              content: "Here's how to use the Test Explorer in Visual Studio Code:"
-            - type: "text"
-              content: |
-                1. **Access Test Explorer:**
-                    - Click on the beaker icon in the Activity Bar.
-                    - **Example:**
-                    ```python
-                    def test_addition():
-                        result = add(2, 3)
-                        assert result == 5
-                    ```
-                2. **Run/Debug Tests:**
-                    - Use the Test Explorer to run or debug individual tests, groups of tests, or all tests in your project.
-                3. **View Test Results:**
-                    - Check the status of each test (pass, fail, skipped) with color-coded indicators.
-                    - Click on a failed test to see the error message and stack trace.
-            - type: "text"
-              content: "See how it works?"
-        edges:
-          - text: "Let's keep going!"
-            target_node_id: "screen22"
-          - text: "I'd like more examples."
-            target_node_id: "screen21a"
-      - id: screen21a
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: "Here are more examples of using the Test Explorer:"
-            - type: "text"
-              content: |
-                1. **Run All Tests:**
-                    - Click the run button at the top of the Test Explorer to run all tests in your project.
-                2. **Debug a Group of Tests:**
-                    - Select a group of tests and use the debug option to start a debugging session.
-            - type: "text"
-              content: "Ready to move on?"
-        edges:
-          - text: "Let's move forward!"
-            target_node_id: "screen22"
-      - id: screen22
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Illustration of Ada AI summarizing the features of Visual Studio Code for testing."
-            - type: "text"
-              content: "Great work, [userName]! Here's a summary of how Visual Studio Code and the Python extension help you run and manage unit tests:"
-            - type: "text"
-              content: |
-                1. **Run/Debug Test Cases:**
-                    - Use shortcuts and context menu options to run or debug individual tests.
-                    - Click the green play button or the green play button with a bug icon to start a debugging session.
-                2. **Test Explorer:**
-                    - Access the Test Explorer for a comprehensive view of all test cases.
-                    - Manage and view test results with color-coded indicators.
-            - type: "text"
-              content: "By leveraging these features, you can efficiently execute, debug, and manage your unit tests, ensuring the reliability and quality of your codebase."
-            - type: "text"
-              content: "Ready to move on to the next part?"
-        edges:
-          - text: "Yes, let's continue!"
-            target_node_id: "screen23"
+          - text: "How do I get started with Katalon Studio?"
+            target_node_id: "END"
+
       - id: END
         type: message
         body:
           parts:
             - type: "text"
-              content: "Congratulations! You've successfully learned how to run and manage your unit tests using Visual Studio Code and the Python extension. Keep practicing these steps to master unit testing."
+              content: |
+                "Getting started with Katalon Studio is straightforward. Follow these steps to begin leveraging its powerful features:"
+
+                1. **Download and Install:** Download Katalon Studio from the official website and follow the installation instructions.
+                2. **Create a New Project:** Launch Katalon Studio and create a new project to start organizing your tests.
+                3. **Configure Test Environments:** Set up the environments in which you want to execute your tests.
+                4. **Create Test Cases:** Use the recorder, spy, and other tools to create and manage your test cases.
+                5. **Integrate with CI/CD:** Configure Katalon Studio to integrate with your CI/CD pipeline for automated testing."
+
+  - name: "Best Practices & Summary"
+    context: "This section covers best practices for using Katalon Studio, such as integrating testing early, automating tests, aligning with CI/CD pipelines, focusing on high-risk areas, and involving end-users. Real-world examples show Katalon Studio's impact on e-commerce, financial, and healthcare projects by automating testing, ensuring security, and performing load tests. The summary emphasizes the importance of software testing for quality assurance, cost-effectiveness, security, compliance, and performance. It highlights Katalon's AI features, including automated test case generation, real-time assistance, comprehensive test coverage, and seamless integrations with tools like Jira and CI/CD pipelines."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            - type: "text"
+              content: |
+                "To get the most out of Katalon Studio, here are some best practices to follow:"
+
+                1. **Shift-Left Testing:** Integrate testing early in the development process to catch defects sooner.
+                2. **Automated Testing:** Implement automated tests to reduce manual effort and increase coverage.
+                3. **Continuous Testing:** Align testing with CI/CD pipelines for faster feedback and quicker releases.
+                4. **Risk-Based Testing:** Focus on high-risk areas to maximize the impact of your testing efforts.
+                5. **User-Centered Testing:** Involve end-users in testing to ensure the software meets real-world needs and expectations."
         edges:
-          - text: "Finish"
+          - text: "Can you show me some real-world use cases?"
+            target_node_id: "screen19"
+
+      - id: screen19
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            - type: "text"
+              content: |
+                "Here are some real-world examples of how Katalon Studio is used to enhance software testing in development projects:"
+
+                - **E-commerce Website:**
+                    - **Challenge:** Ensuring seamless user experience across multiple devices and browsers.
+                    - **Solution:** Using Katalon Studio to automate cross-browser and mobile testing, integrating tests into their CI/CD pipeline to ensure compatibility and functionality with every code change.
+                - **Financial Application:**
+                    - **Challenge:** Maintaining security and compliance with industry regulations.
+                    - **Solution:** Implementing automated security tests and compliance checks using Katalon Studio's integration with security testing tools, ensuring the application adheres to regulatory standards without manual intervention.
+                - **Healthcare System:**
+                    - **Challenge:** Ensuring the reliability and performance of critical healthcare software.
+                    - **Solution:** Leveraging Katalon Studio for performance and load testing, automating these tests to run regularly, identifying bottlenecks, and ensuring the system can scale and perform under high user load conditions."
+        edges:
+          - text: "Got it, what’s next?"
             target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            - type: "text"
+              content: |
+                "Great job completing the AI in Software Testing Quest! Here's a quick recap:"
+
+                **Importance of Software Testing:**
+
+                - **Quality Assurance:** Ensures software meets user requirements, increasing satisfaction and minimizing post-release issues.
+                - **Cost-Effectiveness:** Detects bugs early, reducing the cost of fixing them later.
+                - **Security and Compliance:** Identifies vulnerabilities and ensures compliance with regulations.
+                - **Performance Optimization:** Assesses speed, scalability, and stability for optimal performance.
+
+                **Software Testing with Katalon AI:**
+
+                - **Automated Test Case Generation:** Creates test cases from Jira tickets, reducing manual effort and improving accuracy.
+                - **Testing Assistance:** Provides real-time suggestions, automated comments, and error detection during testing.
+                - **Comprehensive Test Coverage:** Supports multiple testing types and runs tests across various environments.
+                - **Streamlined Integrations:** Integrates with tools like Jira and CI/CD pipelines for seamless testing and feedback."

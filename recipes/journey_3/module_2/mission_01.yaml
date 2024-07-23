@@ -1,0 +1,526 @@
+tasks:
+  - name: "Welcome and Introduction"
+    context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Hello, {username}! Welcome to the \"Generate Code Explanations using GitHub Copilot Chat\" mission. GitHub Copilot Chat leverages conversational AI and smart commands to assist you with various coding tasks. One powerful feature is its ability to generate detailed explanations for unfamiliar and complex code. Ready to start?"
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen1a"
+      - id: screen1a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this mission, you'll use GitHub Copilot to generate explanations for various purposes:"
+            - type: "text"
+              content: |
+                - **Understanding New Projects:** Get a comprehensive overview of an entire workspace or specific project files when joining a new project.
+                - **Deciphering Complex Code:** Receive explanations for specific lines or sections of code that are difficult to understand.
+                - **Diagnosing Errors:** Obtain insights into why certain lines of code are causing errors and how to fix them.
+                - **Implementing Features:** Learn how to add new features to your project with provided code snippets and detailed implementation guidance.
+            - type: "text"
+              content: "Prepare your environment by ensuring you have:"
+            - type: "text"
+              content: |
+                - Visual Studio Code
+                - The C# Dev Kit extension for Visual Studio Code
+                - The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code
+                - Sample code projects created using C#
+                - A GitHub account with an active subscription for GitHub Copilot
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Yes, let's move on!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To complete the exercises in this module, ensure you have Python installed. Then follow these steps at the root directory of the project:"
+            - type: "text"
+              content: |
+                1. Install dependencies: `pip install -r requirements.txt`
+                2. Run the application: `fastapi dev app/main.py` (use `dev` or `run` as the `fastapi` argument)
+                3. Navigate to `http://localhost:8000` to view the application
+            - type: "text"
+              content: "Ready to continue?"
+  - name: "Understanding and Explaining the Code"
+    context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this section, you'll use GitHub Copilot Chat to understand a new project or specific project files. This feature helps you quickly get up to speed with unfamiliar codebases by providing detailed explanations."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen3a"
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "First, open the Chat view in Visual Studio Code by selecting \"Chat\" from the Activity Bar, or by pressing `Ctrl + Alt + I`."
+            - type: "text"
+              content: "Ready to continue?"
+        edges:
+          - text: "Chat view open!"
+            target_node_id: "screen3b"
+      - id: screen3b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In the Chat view, ask GitHub Copilot Chat to explain the project by entering the following command:"
+            - type: "text"
+              content: "@workspace Explain this project"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen3c"
+      - id: screen3c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Take a minute to review the response generated by GitHub Copilot Chat in the Chat view."
+        edges:
+          - text: "Reviewed!"
+            target_node_id: "screen3d"
+      - id: screen3d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Follow-up questions help build a history of your conversation, allowing the AI to understand your context better and provide more relevant responses."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen3e"
+      - id: screen3e
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open the `app/core/settings/app.py` file in the editor. This file contains the code configuring FastAPI by setting `BaseAppSettings` with default values and initializing its keyword arguments within the `main.py`."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "File open!"
+            target_node_id: "screen3f"
+      - id: screen3f
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Request a file explanation by entering:"
+            - type: "text"
+              content: "@workspace /explain #file:app.py"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Review the detailed explanation generated by GitHub Copilot Chat. This explanation includes information about the file's purpose, structure, and key components."
+            - type: "text"
+              content: "Ready to proceed?"
+  - name: "File-Specific and Selected Code Explanations"
+    context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this section, you will use GitHub Copilot Chat to generate explanations for specific files within your project. This helps you understand the purpose, structure, and key components of individual files, making it easier to work with unfamiliar codebases."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen4a"
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open the `app/api/routes/projects.py` file in the editor."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "File open!"
+            target_node_id: "screen4b"
+      - id: screen4b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In the Chat view, ask GitHub Copilot Chat to explain the file by entering:"
+            - type: "text"
+              content: "@workspace /explain #file:projects.py"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen4c"
+      - id: screen4c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Review the detailed explanation generated by GitHub Copilot Chat in the Chat view."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen4d"
+      - id: screen4d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Notice that GitHub Copilot Chat suggests a follow-up question at the bottom of the Chat view. Review this to gain further insights into the file or to ask additional questions about specific sections."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen5"
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Even experienced developers encounter code that's difficult to understand. Rather than spending time trying to decipher complex code, you can ask GitHub Copilot Chat to provide an explanation."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen5a"
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ensure that you have `app/api/routes/projects.py` open in the editor. Select the lines for the `update_project` method:"
+            - type: "text"
+              content: |
+                @router.put('{project_id}', response_model=ProjectResponse)
+                async def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):
+                    db_project = crud.update_project(db, project_id, project.name, project.description)
+                    if db_project is None:
+                        raise HTTPException(status_code=404, detail=f"Project with id {project_id} not found")
+                    return db_project
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Code selected!"
+            target_node_id: "screen5b"
+      - id: screen5b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Request a method explanation by right-clicking the selected code, selecting `Copilot`, and then selecting `Explain This` from the context menu. Optionally, you may also use the Chat view to explain specific code lines by typing `#selection Explain this`."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Review the detailed explanation generated by GitHub Copilot Chat in the Chat view."
+            - type: "text"
+              content: "Ready to proceed?"
+  - name: "Error Explanations and Fixes"
+    context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Managing errors is an essential aspect of software development. When you encounter an error in your code that's difficult to understand, you can ask GitHub Copilot Chat to provide an explanation."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen6a"
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open a new Terminal using `Ctrl + Shift +` or open an existing terminal using `Ctrl +`."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Terminal open!"
+            target_node_id: "screen6b"
+      - id: screen6b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/dc3c6ab1-dac5-4faa-be7c-34fd7c2f5d0f/Untitled.png?id=38dcec91-fc7e-47cb-881d-a3c925ee3263&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=4aSt-6dnxPqkpLz2IwTb_2mBd6Pq4ZRXKtZcTk7nYdU&downloadName=Untitled.png"
+            - type: "text"
+              content: "Start the server using the following command from the root directory:"
+            - type: "text"
+              content: "fastapi dev app/main.py"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Server started!"
+            target_node_id: "screen6c"
+      - id: screen6c
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/eb894209-1873-49db-9a90-15368cd2afe0/Untitled.png?id=2dc1ca1d-bbc9-4939-be7b-d8400c97584d&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=sY4klkaYn0JRPh7IzP_HNtdCGPUFW4JveMcWG02GdQU&downloadName=Untitled.png"
+            - type: "text"
+              content: "Send a request to the running server instance at `http://127.0.0.1:8000/docs`. Open the `POST` endpoint and click `Try It Out` to send a request. Use the following request data:"
+            - type: "text"
+              content: |
+                {
+                  "name": 12345,
+                  "description": "string"
+                }
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Request sent!"
+            target_node_id: "screen6d"
+      - id: screen6d
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/811d7e1e-67bf-4753-b795-239788c3b969/Untitled.png?id=8a446226-7abc-4a54-94f6-bb316333551d&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=kT0czFcFdYcHTR0zz7oMsX80TFn3vAh4UUgSqdN8ibE&downloadName=Untitled.png"
+            - type: "text"
+              content: "It is expected that this request will return a `500 internal server error`. Review the error output in the terminal."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Reviewed!"
+            target_node_id: "screen6e"
+      - id: screen6e
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/55f951a2-54c6-41ce-a0af-6b4953ad2cb5/Untitled.png?id=a801cd12-ee97-4762-a287-a4ee4b861fcd&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=GDAyee-uWmSowIA1lwPZVLi7i1PGhjzNIy_Em7e6txU&downloadName=Untitled.png"
+            - type: "text"
+              content: "Highlight the error message in the terminal and use GitHub Copilot Chat to diagnose the error by entering:"
+            - type: "text"
+              content: "@workspace /explain #terminalSelection"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen6f"
+      - id: screen6f
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/7e2c4895-6bec-4c00-8823-e47e732c0b9e/Untitled.png?id=74923678-f490-47e7-8e55-0180adce8730&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=9zH8aHKGFzOR2tQKXz0OlWBnBk5UFcy4KvE00zstqEE&downloadName=Untitled.png"
+            - type: "text"
+              content: "Review the response from GitHub Copilot Chat, which will include information about the error and suggestions for fixing it."
+            - type: "text"
+              content: "Ready to fix the error?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen7"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Use GitHub Copilot Chat to fix the JSONResponse class TypeError. Highlight the error message in the terminal and use the following command:"
+            - type: "text"
+              content: "@workspace #terminalSelection Where do I fix the error?"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen7a"
+      - id: screen7a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/7d308737-e524-4905-b94f-b04fa5d3e257/Untitled.png?id=e949adb8-1684-4326-8d82-6332c36238c2&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=rdmCZPrI3OqXHzXhcqaIP0QrGXGdGvDZOG96tJCUyTg&downloadName=Untitled.png"
+            - type: "text"
+              content: "Review GitHub Copilot's recommendation to resolve the issue."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen7b"
+      - id: screen7b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Follow the recommendation to head to the `app/api/errors/validation_error.py` file and replace the `message` property of the `JSONResponse` class to `content`:"
+            - type: "text"
+              content: |
+                async def http422_error_handler(_: Request, exc: RequestValidationError):
+                    errors = []
+                    for error in exc.errors():
+                        field = " -> ".join(str(loc) for loc in error['loc'])
+                        message = error['msg']
+                        error_detail = f"Error in field '{field}': {message}"
+                        errors.append(error_detail)
+                
+                    error_response = ErrorResponse(status=422, message=errors)
+                    return JSONResponse(
+                        status_code=422,
+                        content=error_response.model_dump()
+                    )
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Fix applied!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/987d2ba0-f7d1-46ad-9b63-4724e4cdf969/Untitled.png?id=fe4a5c68-f2b0-491b-a3aa-6569f4b93ff4&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=9Agu8iUmGj7y7gZlXjobhBVKOJmLkflZWICLdeE1O24&downloadName=Untitled.png"
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/bef8c4a1-57e2-4c49-9fb5-ce7e981749f3/Untitled.png?id=9f4e7feb-a903-4973-b7d3-841934088713&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=cugW1UZ328M6yjW3-1y-mTRLrLOFzvA9tR0x30ooq3E&downloadName=Untitled.png"
+            - type: "text"
+              content: "Send a valid request to the server to confirm the fix. Replace `12345` in the sample request with a valid string and verify the successful `200` response."
+            - type: "text"
+              content: "Ready to proceed?"
+  - name: "Implementing and Explaining New Features"
+    context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
+    id: 6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "In this section, you will use GitHub Copilot Chat to explain how to manage exceptions during the `GET`, `PUT`, and `DELETE` operations. This will enhance the reliability and robustness of your application."
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen8a"
+      - id: screen8a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Select the code lines for the `GET`, `PUT`, and `DELETE` operations:"
+            - type: "text"
+              content: |
+                @router.get('/{project_id}', response_model=ProjectResponse)
+                async def read_project(project_id: int, db: Session = Depends(get_db)):
+                    db_project = crud.get_project(db, project_id)
+                    return db_project
+                
+                @router.put('/{project_id}', response_model=ProjectResponse)
+                async def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):
+                    db_project = crud.update_project(db, project_id, project.name, project.description)
+                    return db_project
+                
+                @router.delete('/{project_id}')
+                async def delete_project(project_id: int, db: Session = Depends(get_db)):
+                    crud.delete_project(db, project_id)
+                    return {'message': f'Project with id {project_id} deleted'}
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Code selected!"
+            target_node_id: "screen8b"
+      - id: screen8b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ask GitHub Copilot Chat to explain how to handle exceptions during these operations by entering:"
+            - type: "text"
+              content: "@workspace #file:projects.py #selection How can I handle exceptions during the processing of the GET, PUT, and DELETE operations?"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen8c"
+      - id: screen8c
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/f17ff2cf-d0de-41ef-9dc2-723183b5c308/Untitled.png?id=218696c7-50c8-4485-8fe3-9a11589a94f8&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=AC4sveAbInT0WxrZIgCNdz8iF1PZXy7Kft0qZZQaKmk&downloadName=Untitled.png"
+            - type: "text"
+              content: "Review the response in the Chat view, which includes detailed explanations and code snippets for handling exceptions."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Got it, let's continue!"
+            target_node_id: "screen8d"
+      - id: screen8d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Use inline chat for detailed instructions by selecting the routes and pressing `Ctrl + I`. Enter the following prompt:"
+            - type: "text"
+              content: "How can I handle exceptions thrown during the download process?"
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Command entered!"
+            target_node_id: "screen8e"
+      - id: screen8e
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/6f28a9bc-0e00-4f2e-b600-36a1dbbfd746/Untitled.png?id=cf310351-49ff-4068-ba15-087b23a601cc&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=uqhC4Yh_UlSL2x72vo6YdYFAP-KJW72aFRcNR-bUs7I&downloadName=Untitled.png"
+            - type: "text"
+              content: "Review the inline response and accept the proposed code to implement the exception handling."
+            - type: "text"
+              content: "Ready to proceed?"
+        edges:
+          - text: "Code applied!"
+            target_node_id: "screen8f"
+      - id: screen8f
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/d817f720-d1f6-4e20-b51e-179264196bed/Untitled.png?id=97349bef-9b73-43f7-a680-9432027220bf&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=wOh3N81TvfN3p_ffiP4V0m0iFY3_WT2IMlk8bGsvA8A&downloadName=Untitled.png"
+            - type: "text"
+              content: "Save the changes to `app/api/routes/projects.py` to ensure the exception handling code is properly integrated. You can click on the `Accept` to accept the generated suggestions."
+            - type: "text"
+              content: "Ready to summarize the mission?"
+        edges:
+          - text: "Code applied!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Congratulations, {username}! You've successfully used GitHub Copilot Chat to generate code explanations for various purposes, including understanding new projects, deciphering complex code, diagnosing errors, and implementing new features. This mission has enhanced your ability to work with unfamiliar codebases and improve your overall productivity as a developer."
