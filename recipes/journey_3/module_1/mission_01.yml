@@ -86,7 +86,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the response from GitHub Copilot."
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/e87fa146-462c-464b-9244-68bdea483473/Untitled.png?id=47b914fd-5fa0-4a6e-a93f-0f315a352822&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=diZ4uZXs9bKQ1fckFyZYqyYwUrLmXlegWShTmPiI120&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
         edges:
           - text: "Got it, let's continue!"
             target_node_id: "screen3"
@@ -114,7 +114,7 @@ tasks:
               content: |
                 Finally, let's take a sneak peek at Copilot's analysis on how to properly unit test the `scheduler.py` file. We'll write the tests using the `pytest` framework.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/5d6c3068-917f-43db-93fb-5fb168a37a20/Untitled.png?id=6ae96366-e470-4d20-85d9-84293c8c3d2e&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=qTto2EibW9EmZa3yw667bTn_svvcMb4T1uviikj6eX8&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Take a minute to review the response from Github Copilot and then let's get into unit testing!"
 
@@ -149,7 +149,7 @@ tasks:
                 Make the tests using the pytest framework
                 ```
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/e87fa146-462c-464b-9244-68bdea483473/Untitled.png?id=47b914fd-5fa0-4a6e-a93f-0f315a352822&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=diZ4uZXs9bKQ1fckFyZYqyYwUrLmXlegWShTmPiI120&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
         edges:
           - text: "Understood, let's move on!"
             target_node_id: "END"
@@ -169,9 +169,9 @@ tasks:
               content: |
                 Optionally, you may set flags like `vv` or `s` to see debug outputs and logs respectively.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/341e8bb2-08ea-4766-a4f3-1118dcb4e196/Untitled.png?id=a4542a4a-3a36-43df-9a6e-d9dc8704eb06&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=givnYpFiwxKoqamjBoaWo9k2H9Vh-B60QxAc4koMaso&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/38bf2dc0-64a5-4387-bfdd-43ff158fde19/Untitled.png?id=041fc7ab-7e4c-497a-8b64-4274fe1e912e&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=fjQnWgPCR-KU4R1vw4FLa4MAWvXshUugn3UpteENZow&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 After reviewing, let me know if you are ready to move on!

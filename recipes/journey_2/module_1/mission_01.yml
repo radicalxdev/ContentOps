@@ -186,7 +186,7 @@ tasks:
                 ```
             - type: "text"
               content: "Ready to move on to the next task?"
-  - name: "Interview Pattern Q&A in Action"
+  - name: "Generate a Delete Operation"
     context: "In this task, learners focus on generating an update operation for the Project Management API using GitHub Copilot. They are guided to create a function update_project that updates a project's name and description in the database. Following the provided comment, they review the code suggestions from Copilot, ensuring the function retrieves the project by its ID, updates the necessary fields, commits the transaction, and returns the updated project. This step-by-step process helps learners understand how to effectively use Copilot to implement CRUD operations, reinforcing their coding skills and improving development efficiency."
     id: "4"
     nodes:

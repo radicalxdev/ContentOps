@@ -403,7 +403,13 @@ tasks:
           - type: "text"
             content: "When documenting a new API endpoint, instead of a vague prompt like 'Describe this endpoint,' you should provide a detailed prompt such as 'Generate documentation for the create_user endpoint, including its parameters, expected input/output, and error handling.' After Copilot generates the documentation, review it to ensure it accurately describes the endpoint and adheres to your project's documentation standards."
   - name: "Question #7"
-    context: "Keeping documentation up-to-date."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "7"
     nodes:
     - id: START

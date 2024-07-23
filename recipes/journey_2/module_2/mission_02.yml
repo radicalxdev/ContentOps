@@ -95,7 +95,7 @@ tasks:
               content: |
                 Examine Copilot's response. It may suggest strategies such as `error handling` with exceptions, `type checking` or annotations, unit and integration testing, and logging among others.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/10c5b9e5-1d02-44b5-b03d-c13f668c9db2/Untitled.png?id=576f9278-b56a-43b5-b3f3-3d8ecfecc4a2&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=_naqNEzA6t7lqbtGbi2ccwSNWDCo4f4fKLGUoDPZT8M&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Ready to focus on handling database errors with SQLAlchemy?"
         edges:
@@ -127,7 +127,7 @@ tasks:
               content: |
                 Review Copilot's suggestions for advanced methods such as transaction management and connection pooling.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/2f88b0b1-57ea-410d-814f-7ab7f03d0cf7/Untitled.png?id=6df9f5c9-ea53-4ea7-bbcc-22f6bbb587f0&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=g5yWXyEq21sNTTFJDostkLmCMhJMqmDeG7zUmcHT1zM&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Ready to implement a strategy for handling SQLAlchemy exceptions?"
         edges:
@@ -159,7 +159,7 @@ tasks:
               content: |
                 Observe how Copilot suggests new files, modifies files, and demonstrates highly specific suggestions based on your project's configuration.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/ec6c7d2a-5b2e-4cc1-b835-39921e9b7f83/Untitled.png?id=3c32f3eb-ed41-4f7b-b773-95b631382492&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=0ROOjZo4KwNo39-mz8Kp1h4W6rT8j-dLAbpqvA2OBBQ&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Ready to proceed to improving code performance?"
 
@@ -172,7 +172,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/9baf3a15-61c6-42aa-a4a6-e95a409cdd07/Untitled.png?id=04a5abed-6df8-4301-bfe0-7d34cbe84550&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=0zOwB2SfcEwh1AQGgzgvHFwJtfJ_8bkgmoiK35UpPqo&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Similar to code reliability, we can have conversations with Copilot to improve the performance of our code. To the experienced eye, the routes defined in the current API implementation are synchronous events within the FastAPI server, meaning concurrent requests will be done one-by-one and expensive requests will require the rest of the line to wait.
@@ -196,7 +196,7 @@ tasks:
               content: |
                 Examine Copilot's response. It may suggest using asynchronous handlers, background tasks, and other methods. We will focus on asynchronous handlers for routes.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/b2edbc68-8924-4056-b83f-efe6e3e0eb12/Untitled.png?id=d47e173c-ed72-4c8e-bdb2-c24e80d778a1&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=a6ur3tTFjpAvpFHcRJDCm1QnHZKi9eJoWR8rM5PxXWM&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Ready to implement asynchronous handlers?"
         edges:
@@ -228,7 +228,7 @@ tasks:
               content: |
                 Review Copilot's recommendations for asynchronous handlers for all routes, which can handle multiple requests simultaneously without waiting for other requests to complete.
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/114e8aed-0c8f-4db0-b16b-2cb57a60a8c7/Untitled.png?id=91c69f80-d729-49d5-ba08-3cf5682d66a2&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=sx2bKUMaj1bS8KwkdRSyunDPlZeYRRVfzSFV4ChO1gc&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Notice how Copilot recommends the asynchronous handlers for all of the routes such as projects.py where it can handle multiple requests at the same time without waiting for other requests to complete. In our case, because we are using SQLAlchemy which does not natively support asynchronous operations, this would not be a major change for the app's performance. But this would allow the API to handle multiple requests by returning a coroutine per route and allow the API to accept requests while processing them at the same time.

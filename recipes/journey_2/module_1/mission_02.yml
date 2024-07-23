@@ -31,7 +31,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/60a44aa4-ad82-4a9a-b7b8-b2872d89defc/Untitled.png?id=ba3e0c6c-f0d8-4e54-be38-b907c6fe8987&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=6Y0zl364J_dAJACJdZzjNDOPO6vV1sSNMp4FQmImvc8&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Our first task is to implement the tickets feature by creating data models for validation. This allows us to serialize data, add type safety, and control incoming requests and responses. Follow these steps:
@@ -54,7 +54,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/c2e6fbb6-6a3c-4108-868c-60deab2a3e82/Untitled.png?id=635397bb-3bde-46d2-a7cb-2c511569f313&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=ZrLn9CEmAoFUWNfZ7K92xwBORjeYLg-r18qAxPg06fM&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now, let's create the TicketResponse model, which extends TicketCreate by adding id: int and created_at: datetime. Use the following prompt in the inline chat:
@@ -75,7 +75,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/48de97d4-6ad5-44a4-b59b-e4a9787eb7da/Untitled.png?id=28c567c9-2ade-4045-897a-e55e9774cdcc&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=RZT71w2V5DscP-XIONQVXoNiBfvdWU4JMJTl-CRRYHY&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Next, we'll create the database operations (CRUD functions) to interact with the database. Head to the app/db_models/crud.py file and follow these steps:
@@ -98,7 +98,7 @@ tasks:
               content: |
                 Notice how comments can help direct Copilot. Adding comments and using good prompting strategies can result in more specific outputs. The last thing we need to do now is to add the API routes and we can do so with inline chat as well!
 
-  - name: "Generating Database Operations for Tickets with Github Copilot Inline Chat"
+  - name: "Adding API Routes with GitHub Copilot Inline Chat"
     context: "In this final set of the mission, learners complete the CRUD operations for the ticket management feature and add the corresponding API routes using GitHub Copilot's inline chat feature. They create functions for reading, updating, and deleting tickets by providing specific prompts in the inline chat and reviewing Copilot's suggestions. Subsequently, they add the create, read, update, and delete methods for ticket routes in a new tickets.py file. The mission concludes with a summary that guides learners to run the FastAPI server and verify the new routes on the /docs page, congratulating them on successfully using GitHub Copilot to enhance their development workflow."
     id: "4"
     nodes:
@@ -125,7 +125,7 @@ tasks:
             - type: "text"
               content: "Review and accept the code suggestions for each function."
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/48de97d4-6ad5-44a4-b59b-e4a9787eb7da/Untitled.png?id=28c567c9-2ade-4045-897a-e55e9774cdcc&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=RZT71w2V5DscP-XIONQVXoNiBfvdWU4JMJTl-CRRYHY&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
         edges:
           - text: "Yes, let's proceed!"
             target_node_id: "screen6"
@@ -143,7 +143,7 @@ tasks:
                 Generate the create, read, update, and delete methods for Tickets routes.
                 ```
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/02439f72-910c-4a8a-bc88-7a9a4ade47bd/Untitled.png?id=98ba2037-b9ce-4094-814c-e993bfe71430&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=M6-Tha6du1FnF3a3GvnWf1EwJLUHUvXysYLUun35dGs&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Review the suggestions to ensure the methods are correctly defined and referenced."
         edges:
@@ -160,9 +160,9 @@ tasks:
               content: |
                 We can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/eba3c78d-db70-4355-9487-d822438d2466/Untitled.png?id=afa80d59-0370-4cc1-afcc-be69c4584ad6&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=6iyRHmGYZzi-Z3PXPrDR_CAF-UKBYDFcaR9A4blSg3I&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/eeaa9d9f-a030-4ff8-9aaa-d4dbc4ff8513/Untitled.png?id=32034d44-5397-4771-a071-faed8f31e8d7&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=ZQlQ-H7sG4MaU79NkFAZFP2Vw3yOc2eFnOtEi0coMQg&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 We can now see Tickets as a new set of routes available within the /docs page!

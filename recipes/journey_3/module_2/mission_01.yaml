@@ -277,7 +277,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/dc3c6ab1-dac5-4faa-be7c-34fd7c2f5d0f/Untitled.png?id=38dcec91-fc7e-47cb-881d-a3c925ee3263&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=4aSt-6dnxPqkpLz2IwTb_2mBd6Pq4ZRXKtZcTk7nYdU&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Start the server using the following command from the root directory:"
             - type: "text"
@@ -292,7 +292,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/eb894209-1873-49db-9a90-15368cd2afe0/Untitled.png?id=2dc1ca1d-bbc9-4939-be7b-d8400c97584d&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=sY4klkaYn0JRPh7IzP_HNtdCGPUFW4JveMcWG02GdQU&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Send a request to the running server instance at `http://127.0.0.1:8000/docs`. Open the `POST` endpoint and click `Try It Out` to send a request. Use the following request data:"
             - type: "text"
@@ -311,7 +311,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/811d7e1e-67bf-4753-b795-239788c3b969/Untitled.png?id=8a446226-7abc-4a54-94f6-bb316333551d&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=kT0czFcFdYcHTR0zz7oMsX80TFn3vAh4UUgSqdN8ibE&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "It is expected that this request will return a `500 internal server error`. Review the error output in the terminal."
             - type: "text"
@@ -324,7 +324,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/55f951a2-54c6-41ce-a0af-6b4953ad2cb5/Untitled.png?id=a801cd12-ee97-4762-a287-a4ee4b861fcd&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=GDAyee-uWmSowIA1lwPZVLi7i1PGhjzNIy_Em7e6txU&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Highlight the error message in the terminal and use GitHub Copilot Chat to diagnose the error by entering:"
             - type: "text"
@@ -339,7 +339,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/7e2c4895-6bec-4c00-8823-e47e732c0b9e/Untitled.png?id=74923678-f490-47e7-8e55-0180adce8730&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=9zH8aHKGFzOR2tQKXz0OlWBnBk5UFcy4KvE00zstqEE&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Review the response from GitHub Copilot Chat, which will include information about the error and suggestions for fixing it."
             - type: "text"
@@ -365,7 +365,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/7d308737-e524-4905-b94f-b04fa5d3e257/Untitled.png?id=e949adb8-1684-4326-8d82-6332c36238c2&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=rdmCZPrI3OqXHzXhcqaIP0QrGXGdGvDZOG96tJCUyTg&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Review GitHub Copilot's recommendation to resolve the issue."
             - type: "text"
@@ -404,9 +404,9 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/987d2ba0-f7d1-46ad-9b63-4724e4cdf969/Untitled.png?id=fe4a5c68-f2b0-491b-a3aa-6569f4b93ff4&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=9Agu8iUmGj7y7gZlXjobhBVKOJmLkflZWICLdeE1O24&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/bef8c4a1-57e2-4c49-9fb5-ce7e981749f3/Untitled.png?id=9f4e7feb-a903-4973-b7d3-841934088713&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=cugW1UZ328M6yjW3-1y-mTRLrLOFzvA9tR0x30ooq3E&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Send a valid request to the server to confirm the fix. Replace `12345` in the sample request with a valid string and verify the successful `200` response."
             - type: "text"
@@ -469,7 +469,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/f17ff2cf-d0de-41ef-9dc2-723183b5c308/Untitled.png?id=218696c7-50c8-4485-8fe3-9a11589a94f8&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=AC4sveAbInT0WxrZIgCNdz8iF1PZXy7Kft0qZZQaKmk&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Review the response in the Chat view, which includes detailed explanations and code snippets for handling exceptions."
             - type: "text"
@@ -495,7 +495,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/6f28a9bc-0e00-4f2e-b600-36a1dbbfd746/Untitled.png?id=cf310351-49ff-4068-ba15-087b23a601cc&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=uqhC4Yh_UlSL2x72vo6YdYFAP-KJW72aFRcNR-bUs7I&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Review the inline response and accept the proposed code to implement the exception handling."
             - type: "text"
@@ -508,7 +508,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/d817f720-d1f6-4e20-b51e-179264196bed/Untitled.png?id=97349bef-9b73-43f7-a680-9432027220bf&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721822400000&signature=wOh3N81TvfN3p_ffiP4V0m0iFY3_WT2IMlk8bGsvA8A&downloadName=Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Save the changes to `app/api/routes/projects.py` to ensure the exception handling code is properly integrated. You can click on the `Accept` to accept the generated suggestions."
             - type: "text"

@@ -273,7 +273,13 @@ tasks:
             - type: "text"
               content: "For example, if a function is supposed to return the square of a number, an assertion would check that `square(4)` returns `16`. If the function returns any other value, the test would fail, indicating a bug in the implementation."
   - name: "Question #5"
-    context: "GitHub Copilot's role in creating unit tests."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "5"
     nodes:
       - id: START
