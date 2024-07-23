@@ -1,0 +1,650 @@
+tasks:
+  - name: "Question #1"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "1"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Hello {username}, and welcome to your personalized learning journey with me! Before we dive into the exciting modules ahead, I'd like to get a sense of your current understanding of generative AI and its applications. This will help me tailor the learning experience to your needs. Ready to get started?"
+      edges:
+        - text: "Yes, I'm ready!"
+          target_node_id: screen2
+    - id: screen2
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's start with the basics of Generative AI!"
+          - type: "text"
+            content: "Which architecture is fundamental in training Generative Adversarial Networks (GANs)?\n\nA. Autoencoder\nB. Encoder-Decoder\nC. Generator and Discriminator\nD. Convolutional Neural Network"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Great! Now, let's talk about latent space in Generative AI."
+  - name: "Question #2"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "2"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "In the context of Generative AI, what does the term 'latent space' refer to?\n\nA. The input space of the neural network\nB. The compressed representation of input data\nC. The final output space of the model\nD. The space where training data is stored"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Moving on, here's a question about stabilizing GAN training."
+  - name: "Question #3"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "3"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Which of the following methods is commonly used to stabilize GAN training?\n\nA. Increasing learning rate\nB. Using dropout layers\nC. Adding noise to training data\nD. Implementing Wasserstein loss"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's talk about Variational Autoencoders (VAEs) now."
+  - name: "Question #4"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "4"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "What is the primary advantage of using Variational Autoencoders (VAEs) over traditional autoencoders?\n\nA. Simpler architecture\nB. Deterministic outputs\nC. Better latent space exploration\nD. Higher reconstruction error"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "One more on Generative AI fundamentals."
+  - name: "Question #5"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "5"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Which evaluation metric is often used to assess the performance of Generative AI models in generating realistic data?\n\nA. F1 Score\nB. Inception Score\nC. Accuracy\nD. Mean Squared Error"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Now let's shift our focus to advanced generative AI development tools."
+  - name: "Question #6"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "6"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "How does GitHub Copilot enhance code development workflows?\n\nA. By enforcing code standards\nB. By integrating with version control systems\nC. By suggesting context-aware code snippets in real-time\nD. By managing project dependencies"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's explore AI algorithms in code completion."
+  - name: "Question #7"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "7"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Which algorithm is typically used by AI-powered tools for code completion and generation?\n\nA. Random Forest\nB. Long Short-Term Memory (LSTM)\nC. Transformer-based models\nD. K-Nearest Neighbors (KNN)"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's one about AI-based code completion tools."
+  - name: "Question #8"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "8"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's one about AI-based code completion tools."
+          - type: "text"
+            content: "Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?\n\nA. IntelliJ IDEA\nB. Eclipse\nC. GitHub Copilot\nD. Sublime Text"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's discuss transfer learning in AI development."
+  - name: "Question #9"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "9"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "How does transfer learning benefit the development of AI-powered software tools?\n\nA. By training models from scratch\nB. By reusing pre-trained models on new tasks, reducing training time and data requirements\nC. By ignoring previously trained models\nD. By increasing the size of datasets required for training"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's a question about AI-based linting tools."
+  - name: "Question #10"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "10"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's a question about AI-based linting tools."
+          - type: "text"
+            content: "What is the primary purpose of using AI-based linting tools in software development?\n\nA. To compile code\nB. To enforce coding standards and detect code smells\nC. To optimize runtime performance\nD. To handle version control"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's talk about AI in CI/CD pipelines."
+  - name: "Question #11"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "11"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's talk about AI in CI/CD pipelines."
+          - type: "text"
+            content: "How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?\n\nA. By introducing more manual checks\nB. By predicting and mitigating potential deployment failures\nC. By eliminating automated tests\nD. By slowing down the deployment process"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's one about resource allocation in scalable systems."
+  - name: "Question #12"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "12"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's one about resource allocation in scalable systems."
+          - type: "text"
+            content: "Which AI technique is effective for optimizing resource allocation in scalable system design?\n\nA. K-Means Clustering\nB. Reinforcement Learning\nC. Decision Trees\nD. Linear Regression"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Now, let's talk about static code analysis."
+  - name: "Question #13"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "13"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Now, let's talk about static code analysis."
+          - type: "text"
+            content: "What is the primary function of AI in static code analysis?\n\nA. To execute code\nB. To detect runtime errors\nC. To identify potential vulnerabilities and code smells\nD. To compile code"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's explore AI-driven test automation."
+  - name: "Question #14"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "14"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "In AI-driven test automation, what is the role of predictive analytics?\n\nA. Writing manual test cases\nB. Forecasting potential defects and failures\nC. Executing tests\nD. Increasing test execution time"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's a question about regression testing."
+  - name: "Question #15"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "15"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "How does AI enhance the process of regression testing?\n\nA. By reducing the number of test cases\nB. By automatically identifying and prioritizing affected areas\nC. By eliminating the need for test data\nD. By extending the testing cycle"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's discuss flaky tests."
+  - name: "Question #16"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "16"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Which AI technique is used to identify flaky tests that pass and fail intermittently?\n\nA. Clustering\nB. Time Series Analysis\nC. Dimensionality Reduction\nD. Decision Trees"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Now, let's talk about anomaly detection in software deployment."
+  - name: "Question #17"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "17"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Now, let's talk about anomaly detection in software deployment."
+          - type: "text"
+            content: "What AI technique is most effective for anomaly detection during software deployment?\n\nA. Supervised Learning\nB. Unsupervised Learning\nC. Semi-Supervised Learning\nD. Reinforcement Learning"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's explore AI in canary deployments."
+  - name: "Question #18"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "18"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Let's explore AI in canary deployments."
+          - type: "text"
+            content: "Which of the following best describes the role of AI in canary deployments?\n\nA. To manage rollback procedures manually\nB. To dynamically adjust the rollout percentage based on real-time metrics\nC. To deploy software to all users simultaneously\nD. To replace all manual QA checks"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's one about AI-driven sprint planning."
+  - name: "Question #19"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "19"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Here's one about AI-driven sprint planning."
+          - type: "text"
+            content: "How can AI-driven tools facilitate more effective sprint planning?\n\nA. By eliminating the need for team meetings\nB. By providing data-driven insights and workload predictions\nC. By increasing the number of tasks\nD. By removing task dependencies"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Finally, let's talk about requirement gathering."
+  - name: "Question #20"
+    context: |
+      This probe assesses your understanding of generative AI and its applications, including GANs, latent space, and AI-based tools like GitHub Copilot.
+      It covers topics such as stabilizing GAN training, VAEs, AI-driven code completion, and AI's role in CI/CD pipelines, resource allocation, and test automation.
+      Your responses will help personalize your learning experience for the upcoming modules.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
+    id: "20"
+    nodes:
+    - id: START
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Finally, let's talk about requirement gathering."
+          - type: "text"
+            content: "Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?\n\nA. Natural Language Processing (NLP)\nB. Image Recognition\nC. Graph Theory\nD. Signal Processing"
+      edges:
+        - text: "a"
+          target_node_id: END
+        - text: "b"
+          target_node_id: END
+        - text: "c"
+          target_node_id: END
+        - text: "d"
+          target_node_id: END
+    - id: END
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Great job, {username}! You've completed the pre-assessment probe. Your responses will help me personalize your learning experience and ensure you get the most out of this program. Good luck with the upcoming modules, and let's make this journey exciting and productive!"
