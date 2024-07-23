@@ -1,0 +1,239 @@
+tasks:
+  - name: "Introduction and Setup"
+    context: "In this mission, learners focus on creating unit tests for specific conditions using GitHub Copilot. They start by understanding the importance of testing specific conditions to ensure the code handles edge cases and uncommon scenarios correctly. This step is crucial for maintaining robust and reliable software. The mission also highlights the benefits of unit testing specific conditions, such as increased robustness, reliability, and documentation of expected behavior. Learners are then prepared to write unit tests for a new feature that allows multiple assignees to be assigned to a single project automatically. This mission emphasizes the importance of comprehensive testing to ensure the new feature works as expected across various scenarios."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Link to GIF of Ada AI holding a document with a welcoming gesture.]"
+            - type: "text"
+              content: |
+                Hello, {userName}! Welcome to the mission on creating unit tests for specific conditions using GitHub Copilot. You’re now adding a new feature to the scheduler that allows multiple assignees to be assigned to a single project automatically. Ready to write a unit test to check this new feature?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+          - text: "Tell me more about unit testing specific conditions."
+            target_node_id: "screen1a"
+
+      - id: screen1a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Testing specific conditions ensures that your code handles edge cases and uncommon scenarios correctly. This is crucial for maintaining robust and reliable software. GitHub Copilot can help streamline this process by generating targeted unit tests. Ready to proceed?
+        edges:
+          - text: "Yes, let's move on!"
+            target_node_id: "END"
+          - text: "I'd like to know more about the benefits."
+            target_node_id: "screen1b"
+
+      - id: screen1b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The benefits of unit testing specific conditions include:
+                - **Robustness**: Ensures your code can handle unusual or extreme inputs.
+                - **Reliability**: Increases confidence in your code's behavior across different scenarios.
+                - **Documentation**: Provides clear examples of how your code should handle various situations.
+            - type: "text"
+              content: "Understanding these benefits can help you appreciate the importance of unit testing for specific conditions. Ready to proceed?"
+        edges:
+          - text: "Yes, let's proceed!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's clone the repostitory and start the mission with this link: https://github.com/alfred-ai-co/python-unit-tests-using-github-copilot-tools
+                Once cloned and ready to go, let me know! If you cloned it in the previous mission, you can skip this step.
+
+  - name: "Code Explanations with Copilot Chat"
+    context: "In this part of the mission, learners set up their environment to understand and test the scheduler_feature.py file using GitHub Copilot. They start by using the @workspace command to understand the program better. After reviewing the response from Copilot, they ask follow-up questions to clarify the inputs, outputs, and expected behaviors of the functions. Learners then create a new test file in the tests/ folder to store the unit tests. They take a sneak peek at Copilot's analysis on how to properly unit test the scheduler_feature.py file using the pytest framework, noting the covered testing scenarios and identifying opportunities to ask more questions for specific scenarios. This process ensures a comprehensive understanding and preparation for writing effective unit tests."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Great! Let's get started by setting up your environment. Head to the `scheduler_feature.py` file and use the chat commands to understand the program better. Type the following command:
+                
+                ```python
+                @workspace /explain #file:scheduler_feature.py
+                ```
+            - type: "text"
+              content: "Take a minute to review the response from GitHub Copilot."
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/3d04155b-0b62-4c47-901e-c9b92619f177/Untitled.png?id=4c42a3aa-7c33-410d-9116-62daa39b3fc0&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=TBdhmgIRJdGlR_YfCJJL1t0ZoxfC2h7o06bLxF1QrIo&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Let’s start asking follow-up questions to get a better understanding before writing unit tests. We should start with understanding inputs and outputs. Then we can narrow down the number of cases we need to create. Use the following prompt:
+                
+                ```python
+                #file:scheduler_feature.py Come up with what is needed to properly unit test the file. Let's think about this step-by-step. What are the inputs and outputs of this file? What are the function's expected behaviors? What are the function's expected outputs?
+                ```
+        edges:
+          - text: "Got it, let's proceed!"
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Open a new file within the `tests/` folder as `tests/test_scheduler_feature.py` since Copilot needs a location to send the tests. Use the following command to create the test file:
+                
+                ```python
+                @workspace /tests #file:scheduler_feature.py
+                ```
+        edges:
+          - text: "File created, let's proceed!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let’s take a sneak peek at Copilot's analysis on how to properly unit test the `scheduler_feature.py` file. We’ll write the tests using the `pytest` framework.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/d47eb5be-2819-4de7-bb38-8d7d5794e455/Untitled.png?id=1e3b11e0-93cf-4251-a609-a90b4c0981f9&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=KXIJBMAwEC3T09uqMfWzN8G8boka6U-HpPpH0HCwWs4&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Take a minute to analyze the response. Notice how Copilot specifies what is covered in the testing scenarios. This gives us an opportunity to ask more questions for specific scenarios beyond what is mentioned.
+
+  - name: "Create unit tests for specific conditions using Github Copilot"
+    context: "In this part of the mission, learners focus on generating and running unit tests for specific conditions using GitHub Copilot. They start by selecting the contents of the scheduler_feature.py file and prompting Copilot to identify any edge cases that should be tested. After reviewing Copilot's suggested edge cases, they proceed to insert the generated tests into the tests/test_scheduler_feature.py file using the inline chat feature. Once the tests are inserted, learners run them using pytest, with optional verbosity flags for detailed output. They review any test failures and prepare to resolve them, ensuring the code handles all specific conditions and edge cases effectively."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                GitHub Copilot can help you create unit tests for specific conditions in your code. For example, you can use Copilot to test the behavior of a method when it receives specific input.
+            - type: "text"
+              content: |
+                Select the contents of the `scheduler_feature.py` file and send the following command:
+                
+                ```python
+                @workspace #selection are there any edge cases that should also be tested
+                ```
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/a4056a85-040c-456b-90fe-0a01d5bd069b/Untitled.png?id=e4c542fa-cdf9-461d-a254-110268cf40a9&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=aVzcGild4lbteMWDgzWE4isaN560TjiVcJEUKkTuG7U&downloadName=Untitled.png"
+            - type: "text"
+              content: "Take a minute to review Copilot’s suggested edge cases to cover within the `test_scheduler_feature.py` file:"
+        edges:
+          - text: "Got it, let's proceed!"
+            target_node_id: "screen6"
+
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/24c13387-579f-4272-82ae-1196390f1835/Untitled.png?id=3ce9096a-4dd4-4a04-97e7-333f03dc0ace&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=TXiDguNJLZIG8VkwuI9Qgj9Oxwr4exTsnBMmAnvFCrw&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Head to the `tests/test_scheduler_feature.py` file. Let’s have Copilot generate tests for the newly suggested edge cases and then insert them into the file. Once generated, select a blank line with your cursor in the file and press `Ctrl + Enter` or select the `Insert at Cursor` option within the chat in the top right of the generated code.
+        edges:
+          - text: "Tests inserted, let's run them!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Run the tests as before using:
+                
+                ```python
+                pytest tests/test_scheduler_feature.py
+                ```
+            - type: "text"
+              content: |
+                You can also use verbosity flags to see debug outputs:
+                
+                ```python
+                pytest tests/test_scheduler_feature.py -vv -s
+                ```
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/5b12d912-8985-4ae9-b15d-1effac2d38a0/Untitled.png?id=0fff996e-2c61-47ce-b74b-46393e6bbd14&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=AdHOaTOlGRNRi5NP3zJEba8pbwwDmxKA80hE4JK5LO4&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                It is expected that some tests might fail. Here’s an example of a test failure. Let's resolve them!
+
+  - name: "Create unit tests for specific conditions using Github Copilot"
+    context: "In the final part of the mission, learners resolve unit testing bugs with the help of GitHub Copilot. They start by highlighting the contents of the test output and using a command to ask Copilot for assistance in fixing the identified bugs. After reviewing Copilot's suggested fixes and inserting them into the code, learners re-run the tests using pytest to ensure the issues are resolved. The mission concludes with a summary that highlights the benefits of using Copilot to write and analyze unit tests for specific conditions, improving code quality, increasing test coverage, and enhancing development velocity."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                When we encounter a bug, we can analyze the failing test case and ask Copilot for assistance. Highlight the contents of the test output and use the following command:
+                
+                ```python
+                @workspace /fix #file:scheduler_feature.py #terminalSelection
+                ```
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/05e6438d-4267-4386-85a1-f32a34afe16c/Untitled.png?id=65b1dd28-873c-4732-a823-ccc7dc5cd6f1&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=JwxoyA1wb6lXvsiHhvv3NKfeMOzfB5FZXCwkSO2tGfQ&downloadName=Untitled.png"
+            - type: "text"
+              content: |
+                Take a minute to review the output. Notice how it provides a method for fixing the problem. If you need more help as to where to insert the fix, you can highlight the function and ask for insertion guidance with the `#selection` context command.
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/02245247-c165-4214-8962-7a412cc15844/Untitled.png?id=e71d7d52-f93a-4d05-90a4-f307a2f35725&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=596wIgSekM7Y44_Jg1jtwF6QElFBOULhiq5Hxo2NU70&downloadName=Untitled.png"
+            - type: "text"
+              content: "In case you need help with insertion:"
+        edges:
+          - text: "Fix applied, let's re-run the tests!"
+            target_node_id: "screen9"
+
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Finally, let's check the tests and make sure they work! Run the same `pytest` command again:
+                
+                ```python
+                pytest tests/test_scheduler_feature.py
+                ```
+            - type: "text"
+              content: |
+                You should see an output like this:
+            - type: "image"
+              content: "https://file.notion.so/f/f/43a92826-71a1-4057-8884-809bc640049f/a5c315a5-ab3a-41fd-bb78-8f3dc76e9807/Untitled.png?id=8fa0e3b8-7e69-4105-b461-7bb56f90ec88&table=block&spaceId=43a92826-71a1-4057-8884-809bc640049f&expirationTimestamp=1721764800000&signature=xos59xcv5R0HfIkQs5ywqEtA4QBfU8cD8aiiuTxPPVQ&downloadName=Untitled.png"
+        edges:
+          - text: "Tests passed, let's continue!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "So far we came up with more scenarios for Github Copilot to write unit tests with the scheduler_feature.py file. We considered more edge cases, found a failing test, and used Copilot to generate a fix for us. Finally, we were able to have passing tests with the pytest framework."
+            - type: "text"
+              content: |
+                Utilizing Copilot in this way helps developers speed up their development velocity because it ensures that the quality of the code is improved as well as increasing code coverage per project. You can also check out the solution in the branch, `git checkout solution/tests_scheduler_feature`!
+            - type: "text"
+              content: |
+                Utilizing Copilot in this way helps developers improve code quality and increase coverage, enhancing development velocity. Excellent work!
