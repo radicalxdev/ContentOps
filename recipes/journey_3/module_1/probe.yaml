@@ -1,0 +1,623 @@
+tasks:
+  - name: "Question #1"
+    context: "Unit testing using GitHub Copilot."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Hello {username}! Congratulations on completing the module on unit testing using GitHub Copilot. You've learned how to leverage Copilot for generating and improving unit tests. This probe will help reinforce your understanding and highlight any areas that may need further review. Ready to get started?"
+        edges:
+          - text: "Yes, I'm ready!"
+            target_node_id: screen2
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Alright {username}, let's begin with our first question!"
+            - type: "text"
+              content: "What is the primary function of GitHub Copilot in generating unit tests?\n\nA. Manually writing all the test cases for the user\nB. Suggesting possible input parameters and expected output values\nC. Generating code snippets for test cases based on the code specified by the user\nD. Compiling and running the tests automatically"
+        edges:
+          - text: "a"
+            target_node_id: screen2_incorrect
+          - text: "b"
+            target_node_id: screen2_incorrect
+          - text: "c"
+            target_node_id: screen2_correct
+          - text: "d"
+            target_node_id: screen2_incorrect
+      - id: screen2_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Excellent, {username}! GitHub Copilot helps generate code snippets for unit tests based on the user-provided code."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen2a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen2_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Not quite, {username}. GitHub Copilot helps generate code snippets for unit tests based on the user-provided code."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen2a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot assists developers by generating code snippets for unit tests that are based on the existing code specified by the user. This involves analyzing the code and providing relevant test cases that cover various scenarios and edge cases. This feature significantly reduces the time and effort required to write unit tests manually, ensuring that tests are comprehensive and relevant."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, if a developer writes a function to calculate the sum of two numbers, Copilot can generate unit test snippets that test this function with different sets of input values to ensure it works correctly in all cases."
+  - name: "Question #2"
+    context: "Test Explorer in Visual Studio Code."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ready for the next one, {username}? Let's see how the Test Explorer in Visual Studio Code aids in unit testing!"
+            - type: "text"
+              content: "What role does the Test Explorer in Visual Studio Code play in unit testing?\n\nA. Writing new code snippets for unit tests\nB. Running and debugging unit tests, viewing the results, and managing test cases\nC. Generating test cases based on the code context\nD. Compiling the main application code"
+        edges:
+          - text: "a"
+            target_node_id: screen3_incorrect
+          - text: "b"
+            target_node_id: screen3_correct
+          - text: "c"
+            target_node_id: screen3_incorrect
+          - text: "d"
+            target_node_id: screen3_incorrect
+      - id: screen3_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Spot on, {username}! The Test Explorer in Visual Studio Code helps run, debug, and manage unit tests and view their results."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen3a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen3_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not correct, {username}. The Test Explorer in Visual Studio Code helps run, debug, and manage unit tests and view their results."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen3a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The Test Explorer in Visual Studio Code is a powerful tool that aids developers in managing their unit tests. It allows them to run and debug tests, view the results, and organize test cases effectively. This feature streamlines the testing process, making it easier to identify and fix issues in the code by providing a visual interface for managing and executing tests."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, after writing unit tests for a new feature, a developer can use the Test Explorer to run all tests, see which ones pass or fail, and debug any failing tests directly within the IDE."
+  - name: "Question #3"
+    context: "Arrange, Act, Assert pattern."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ready for another question, {username}? Let's talk about the Arrange, Act, Assert pattern!"
+            - type: "text"
+              content: "How does the Arrange, Act, Assert pattern benefit unit test structure?\n\nA. Organizes code in the main application\nB. Structures unit tests into setup, execution, and verification phases\nC. Compiles and runs the unit tests\nD. Enhances the performance of the main function"
+        edges:
+          - text: "a"
+            target_node_id: screen4_incorrect
+          - text: "b"
+            target_node_id: screen4_correct
+          - text: "c"
+            target_node_id: screen4_incorrect
+          - text: "d"
+            target_node_id: screen4_incorrect
+      - id: screen4_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's correct, {username}! The Arrange, Act, Assert (AAA) pattern structures unit tests into three phases: setup, execution, and verification."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen4a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen4_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not quite right, {username}. The Arrange, Act, Assert (AAA) pattern structures unit tests into three phases: setup, execution, and verification."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen4a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The Arrange, Act, Assert (AAA) pattern is a widely adopted approach for structuring unit tests. It divides the test into three distinct phases: Arrange (setting up the test scenario and initializing necessary objects), Act (executing the functionality being tested), and Assert (verifying that the outcome is as expected). This clear separation of concerns makes tests easier to read, understand, and maintain, ensuring that each test case is well-organized and focused on specific behavior."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, in testing a function that adds two numbers, the Arrange phase would set up the numbers to be added, the Act phase would call the addition function, and the Assert phase would check that the result matches the expected sum."
+  - name: "Question #4"
+    context: "Assertions in unit tests."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's continue, {username}! Here's a question about assertions in unit tests."
+            - type: "text"
+              content: "Why are assertions generated in unit tests?\n\nA. To enhance the performance of the function\nB. To prevent invalid data from being processed by the function\nC. To check if the function returns the expected output\nD. To compile the unit tests"
+        edges:
+          - text: "a"
+            target_node_id: screen5_incorrect
+          - text: "b"
+            target_node_id: screen5_incorrect
+          - text: "c"
+            target_node_id: screen5_correct
+          - text: "d"
+            target_node_id: screen5_incorrect
+      - id: screen5_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Exactly, {username}! Assertions in unit tests verify that the function returns the expected output."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen5a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen5_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not it, {username}. Assertions in unit tests verify that the function returns the expected output."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen5a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Assertions are a crucial part of unit tests, used to verify that a function's output matches the expected result. They ensure that the function behaves correctly for various input scenarios, catching any deviations from expected behavior. By using assertions, developers can confidently validate that their code works as intended and quickly identify any bugs or issues that need to be addressed."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, if a function is supposed to return the square of a number, an assertion would check that `square(4)` returns `16`. If the function returns any other value, the test would fail, indicating a bug in the implementation."
+  - name: "Question #5"
+    context: "GitHub Copilot's role in creating unit tests."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ready for another one, {username}? Let's talk about GitHub Copilot's role in creating unit tests!"
+            - type: "text"
+              content: "What does GitHub Copilot provide when creating unit tests for specific conditions?\n\nA. A user interface for manually writing tests\nB. Automatically runs the tests and provides the results\nC. Suggests completions and generates tests based on the code context\nD. Compiles the test cases"
+        edges:
+          - text: "a"
+            target_node_id: screen6_incorrect
+          - text: "b"
+            target_node_id: screen6_incorrect
+          - text: "c"
+            target_node_id: screen6_correct
+          - text: "d"
+            target_node_id: screen6_incorrect
+      - id: screen6_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Exactly, {username}! GitHub Copilot suggests and generates unit tests based on the code context."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen6a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen6_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not quite right, {username}. GitHub Copilot suggests and generates unit tests based on the code context."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen6a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "When creating unit tests, GitHub Copilot offers suggestions and generates test cases based on the context of the existing code. By analyzing the code, Copilot can recommend relevant test scenarios, input parameters, and expected outputs, helping developers quickly create comprehensive and effective unit tests. This context-aware assistance ensures that the generated tests are aligned with the specific functionality and edge cases of the code."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, if a developer writes a function to check if a number is prime, Copilot can suggest unit tests for various input values (e.g., prime numbers, non-prime numbers, edge cases like 0 and 1) to ensure the function handles all possible scenarios correctly."
+  - name: "Question #6"
+    context: "Benefits of using GitHub Copilot for generating unit tests."
+    id: "6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's move on, {username}! Here's a question about the benefits of using GitHub Copilot for generating unit tests."
+            - type: "text"
+              content: "What is a key benefit of using GitHub Copilot for generating unit tests?\n\nA. Reduces the need for manual testing\nB. Suggests a range of unit tests based on the code context, saving development time\nC. Automatically fixes bugs in the code\nD. Compiles the main application code"
+        edges:
+          - text: "a"
+            target_node_id: screen7_incorrect
+          - text: "b"
+            target_node_id: screen7_correct
+          - text: "c"
+            target_node_id: screen7_incorrect
+          - text: "d"
+            target_node_id: screen7_incorrect
+      - id: screen7_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's correct, {username}! GitHub Copilot saves development time by suggesting a range of unit tests based on the code context."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen7a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen7_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not it, {username}. GitHub Copilot saves development time by suggesting a range of unit tests based on the code context."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen7a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen7a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "One of the key benefits of using GitHub Copilot for generating unit tests is its ability to suggest a variety of unit tests based on the specific context of the code being tested. This feature saves significant development time as it provides relevant test cases quickly, ensuring that the tests cover different scenarios and edge cases. Developers can then review and refine these suggestions, making the unit testing process more efficient."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, when testing a function that calculates discounts based on user membership levels, Copilot can generate unit tests for various membership types (e.g., regular, premium, VIP) and different purchase amounts, ensuring comprehensive test coverage."
+  - name: "Question #7"
+    context: "Code line completions when writing unit tests."
+    id: "7"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here's another one, {username}! Let's discuss how GitHub Copilot enhances code line completions when writing unit tests."
+            - type: "text"
+              content: "How does GitHub Copilot enhance code line completions when writing unit tests?\n\nA. By integrating with version control systems\nB. By suggesting code completions as you type, including test function signatures and assertions\nC. By managing project dependencies\nD. By debugging the code"
+        edges:
+          - text: "a"
+            target_node_id: screen8_incorrect
+          - text: "b"
+            target_node_id: screen8_correct
+          - text: "c"
+            target_node_id: screen8_incorrect
+          - text: "d"
+            target_node_id: screen8_incorrect
+      - id: screen8_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Exactly, {username}! GitHub Copilot suggests code completions as you type, including function signatures and assertions, enhancing the unit test writing process."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen8a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen8_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not quite right, {username}. GitHub Copilot suggests code completions as you type, including function signatures and assertions, enhancing the unit test writing process."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen8a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen8a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot enhances the process of writing unit tests by providing real-time code completion suggestions. As developers type, Copilot suggests test function signatures, common assertions, and other relevant code snippets. This feature speeds up the test writing process, helps maintain consistency in test structures, and ensures that important components of unit tests are not overlooked."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, while writing a unit test for a function that adds items to a shopping cart, Copilot might suggest the initial test function signature and typical assertions, such as checking if the item count increases correctly and the total price updates as expected."
+  - name: "Question #8"
+    context: "Edge cases and boundary conditions in unit tests."
+    id: "8"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Ready for the next one, {username}? Let's talk about edge cases and boundary conditions in unit tests."
+            - type: "text"
+              content: "How can edge cases and boundary conditions improve unit tests?\n\nA. By reducing the number of tests\nB. By ensuring the code handles all possible input scenarios, including extremes\nC. By focusing only on common use cases\nD. By ignoring invalid inputs"
+        edges:
+          - text: "a"
+            target_node_id: screen9_incorrect
+          - text: "b"
+            target_node_id: screen9_correct
+          - text: "c"
+            target_node_id: screen9_incorrect
+          - text: "d"
+            target_node_id: screen9_incorrect
+      - id: screen9_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's correct, {username}! Testing edge cases and boundary conditions ensures that the code handles all input scenarios, including extremes."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen9a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen9_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not quite right, {username}. Testing edge cases and boundary conditions ensures that the code handles all input scenarios, including extremes."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen9a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen9a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Including edge cases and boundary conditions in unit tests is crucial for ensuring that the code handles all possible input scenarios, especially the extremes. Edge cases often reveal bugs that regular cases do not, as they test the limits of the code's logic and its ability to handle unusual or unexpected inputs. By incorporating these tests, developers can improve the robustness and reliability of their code."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, when testing a function that calculates the factorial of a number, it is important to include tests for edge cases like `0!` and negative numbers, as well as large positive numbers, to ensure the function behaves correctly in all situations."
+  - name: "Question #9"
+    context: "Identifying edge cases for testing with GitHub Copilot."
+    id: "9"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here's the next one, {username}! Let's discuss how GitHub Copilot helps identify edge cases for testing."
+            - type: "text"
+              content: "How can GitHub Copilot help identify edge cases for testing?\n\nA. By ignoring uncommon scenarios\nB. By suggesting tests that cover a range of inputs, including boundary conditions\nC. By focusing only on typical use cases\nD. By writing all tests manually"
+        edges:
+          - text: "a"
+            target_node_id: screen10_incorrect
+          - text: "b"
+            target_node_id: screen10_correct
+          - text: "c"
+            target_node_id: screen10_incorrect
+          - text: "d"
+            target_node_id: screen10_incorrect
+      - id: screen10_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's right, {username}! GitHub Copilot suggests tests that include edge cases and boundary conditions, covering a wide range of inputs."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen10a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen10_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not it, {username}. GitHub Copilot suggests tests that include edge cases and boundary conditions, covering a wide range of inputs."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen10a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen10a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot helps identify edge cases by suggesting tests that cover a wide range of input scenarios, including boundary conditions. This ensures that the tests are comprehensive and that the code is validated against both common and uncommon inputs. By automatically generating such test cases, Copilot aids developers in identifying potential issues that may not be immediately apparent."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: END
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, when testing a function that processes date inputs, Copilot might suggest edge case tests for leap years, end-of-month dates, and invalid dates (e.g., February 30th), ensuring the function handles these scenarios correctly."
+  - name: "Question #10"
+    context: "Primary purpose of assertions in unit tests."
+    id: "10"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Almost there, {username}! Here's a question about the primary purpose of assertions in unit tests."
+            - type: "text"
+              content: "What is the primary purpose of assertions in unit tests?\n\nA. To compile the main application code\nB. To verify that the function behaves as expected under specific conditions\nC. To reduce the number of test cases\nD. To generate test data"
+        edges:
+          - text: "a"
+            target_node_id: screen11_incorrect
+          - text: "b"
+            target_node_id: screen11_correct
+          - text: "c"
+            target_node_id: screen11_incorrect
+          - text: "d"
+            target_node_id: screen11_incorrect
+      - id: screen11_correct
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's correct, {username}! Assertions in unit tests verify that functions behave as expected under specific conditions."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen11a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen11_incorrect
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "That's not correct, {username}. Assertions in unit tests verify that functions behave as expected under specific conditions."
+        edges:
+          - text: "Explain more, Ada!"
+            target_node_id: screen11a
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen11a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The primary purpose of assertions in unit tests is to verify that the code behaves as expected under specific conditions. Assertions compare the actual output of a function to the expected output, ensuring that the function produces correct results for given inputs. If the assertion fails, it indicates that the function does not meet the expected behavior, highlighting a potential issue that needs to be addressed."
+        edges:
+          - text: "Give me an example, Ada!"
+            target_node_id: screen11b
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: screen11b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, an assertion in a unit test for a function that calculates the area of a rectangle would check that the function returns `20` when given inputs `4` (width) and `5` (height). If the function returns any other value, the assertion would fail, signaling a bug in the implementation."
+        edges:
+          - text: "On to the next, Ada!"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module."
+            - type: "text"
+              content: "**Recap:**\n\n- We explored how GitHub Copilot generates code snippets for unit tests based on user-provided code.\n- We discussed the role of the Test Explorer in Visual Studio Code for managing unit tests.\n- We highlighted the benefits of the Arrange, Act, Assert pattern and the importance of assertions in unit tests.\n- We emphasized the significance of edge cases and boundary conditions in unit testing and how Copilot helps identify them."
+            - type: "text"
+              content: "Up next, we'll dive into the next module, where we'll explore how to streamline your documentation workflow using GitHub Copilot's features."
