@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.giphy.com/media/Ada_AI_greeting.gif"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Welcome aboard! Imagine this scenario: You’ve just joined Alfred AI and are eager to start working on the codebase for a new AI-driven recommendation system, a critical component for an upcoming product launch. You’ve been assigned a new feature that's due in two days, and you're pressed for time. You want to impress your new team, but upon accessing the repository, you discover that there is very little documentation, making it challenging to understand the intricate logic and architecture behind the code.
@@ -26,7 +26,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/developer_analyzing_code.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 That’s a commendable first step, {username}. However, independently deciphering an unfamiliar codebase can be both time-consuming and error-prone. Imagine how much smoother your workflow would be if the code had been well-documented from the start. Proper documentation not only smooths onboarding for new developers and reduces the time and effort required to understand the code but also addresses several key challenges:
@@ -46,7 +46,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/developer_collaborating.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Asking colleagues for guidance is a common and often effective approach, {username}. However, this can disrupt their work and potentially slow down your own progress. Imagine how much smoother your workflow would be if the code had been well-documented from the start. Proper documentation not only smooths onboarding for new developers and reduces the time and effort required to understand the code but also addresses several key challenges:
@@ -66,7 +66,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/developer_writing_documentation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Taking the initiative to document what you understand is a proactive step, {username}. However, imagine how much easier this task would be if the code had been well-documented from the start. Proper documentation not only smooths onboarding for new developers and reduces the time and effort required to understand the code but also addresses several key challenges:
@@ -125,7 +125,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/github_copilot_documentation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 In this module, we’ll delve into how GitHub Copilot can revolutionize your documentation workflow. Here’s what we’ll cover:
@@ -185,7 +185,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/github_copilot_chat_features.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 GitHub Copilot Chat is excellent for generating documentation, especially with unfamiliar or poorly documented code, providing real-time explanations directly in the editor.
@@ -236,7 +236,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/chat_participants_slash_commands.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 To get the best results from GitHub Copilot Chat, provide questions with clear scope and intent. Using chat participants, slash commands, and chat variables enhances the natural language text in your questions. These descriptors help GitHub Copilot Chat generate more accurate and useful responses.
@@ -287,7 +287,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/copilot_chat_explanation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 GitHub Copilot Chat explains selected code by generating natural language descriptions of its functionality and purpose. For example, if you select a method, Copilot can describe what the method does, including:
@@ -303,7 +303,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/workspace_explanation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 GitHub Copilot Chat can also generate explanations that address a broader scope. For example, you can use `@workspace` in the chat view to generate an explanation for an entire workspace. Responses can include:
@@ -353,7 +353,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/inline_documentation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 High-quality inline documentation enhances code readability and maintainability, making collaboration easier. Creating comprehensive documentation can be time-consuming, but GitHub Copilot Chat streamlines this by quickly generating detailed and accurate inline comments.
@@ -394,7 +394,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/external_documentation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 External project documentation provides a high-level overview of a project, detailing its scope, goals, and key elements. This ensures that stakeholders, such as executive leaders, project managers, and end users understand the project’s overall structure and objectives. GitHub Copilot Chat can assist in generating comprehensive external documentation for your entire workspace efficiently.
@@ -468,7 +468,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/reviewing_documentation.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 While GitHub Copilot Chat generates useful documentation, it's crucial to review and refine it for quality and reliability. Here are some key considerations for this process:
@@ -487,7 +487,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://example.com/ada_ai_checklist.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Excellent work! You’ve now explored the powerful features of GitHub Copilot Chat, which can significantly enhance your ability to generate explanations and documentation for your code. By leveraging features such as inline chat, chat view, quick chat, and smart actions, you can efficiently create high-quality documentation directly within the Visual Studio Code environment.

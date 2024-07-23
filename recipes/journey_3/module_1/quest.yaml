@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Link to GIF of Ada AI greeting with a welcoming gesture.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Welcome to the Unit Testing Quest! Imagine this scenario: You've joined a new project at Alfred AI, tasked with ensuring the reliability of a critical AI-driven recommendation system. As you dive into the code, you realize that the system lacks comprehensive unit tests, making it challenging to verify the functionality of individual components. You know that effective unit testing is crucial for maintaining high code quality and ensuring that changes do not introduce bugs.\n\nHow would you approach the task of writing unit tests to ensure the robustness of the codebase?"
         edges:
@@ -24,7 +24,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual of a developer analyzing code on multiple monitors.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Great choice, [userName]! Understanding the existing codebase is a crucial first step. Unit testing isolates each part of the code, verifying that every component functions correctly. This helps identify issues at the smallest unit level, making debugging more manageable and ensuring each part performs as intended.
@@ -41,7 +41,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual of a developer collaborating with colleagues in an office setting.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Consulting your team is a smart approach, [userName]. Gaining insights from experienced colleagues can help you understand the testing requirements and existing testing practices. This collaborative effort ensures that you cover all critical aspects of the code.
@@ -58,7 +58,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual of a developer writing unit tests at their desk.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Starting with basic unit tests for key functions is a proactive approach, [userName]. Unit testing ensures the functionality of individual components, helps maintain code reliability, and supports continuous integration and continuous deployment (CI/CD).
@@ -124,7 +124,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer using GitHub Copilot in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now, you'll see how GitHub Copilot can assist you in writing efficient unit tests. GitHub Copilot offers several powerful features that streamline the process of creating test cases, making your workflow more productive and ensuring high-quality code.
@@ -139,7 +139,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual representation of GitHub Copilot’s interface in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here’s a quick refresher to GitHub Copilot’s features which can assist in writing unit tests:
@@ -164,7 +164,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of GitHub Copilot suggesting a unit test in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's see GitHub Copilot in action. Here’s an example of how Copilot assists in generating unit tests:
@@ -202,7 +202,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer using inline chat in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Inline chat is a powerful feature that allows you to interact with GitHub Copilot directly in your editor. Here's how you can use it effectively:
@@ -222,7 +222,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual of the chat view pane in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 The chat view in Visual Studio Code opens a dedicated pane for more extensive queries and discussions. This feature is ideal for complex questions and deeper insights.
@@ -242,7 +242,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer using GitHub Copilot to handle edge cases and boundary conditions.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Welcome to the advanced section of our quest! In this module, you'll learn how to generate unit tests for edge cases and boundary conditions using GitHub Copilot Chat. These tests are crucial for ensuring your code handles all possible input scenarios, maintaining robustness and reliability.
@@ -257,7 +257,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Diagram illustrating different types of edge cases and boundary conditions.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Edge cases and boundary conditions are critical to thorough unit testing:
@@ -276,7 +276,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of a Python function in Visual Studio Code with GitHub Copilot Chat.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's see how GitHub Copilot Chat can help generate unit tests for edge cases and boundary conditions.
@@ -320,7 +320,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual representation of GitHub Copilot Chat interface in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Using GitHub Copilot Chat to generate unit tests is simple and efficient. Here’s how you can do it:
@@ -337,7 +337,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer running unit tests in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 You will now learn how to run and manage unit tests using Visual Studio Code and the Python extension. Efficiently running and managing your tests ensures that your code remains reliable and any issues are identified early in the development process.
@@ -352,7 +352,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of Visual Studio Code with test functions and run/debug options.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Visual Studio Code, along with the Python extension, provides powerful features for running and debugging unit tests:
@@ -376,7 +376,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual representation of Test Explorer in Visual Studio Code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Test Explorer in Visual Studio Code provides a comprehensive view of all test cases in your workspace, allowing you to manage and view test results efficiently:
@@ -398,7 +398,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of Visual Studio Code with a test case being debugged.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's look at an example of debugging a test case using Visual Studio Code:
@@ -417,7 +417,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer surrounded by checklists and code snippets.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 You'll learn best practices for writing and managing unit tests to ensure your code is top-notch. By adopting these practices, you'll be able to create clear, maintainable, and effective tests, making your development process smoother and your code more reliable.
@@ -432,7 +432,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of well-named test functions in a code editor.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Writing clear and concise test cases is essential for understanding and debugging your tests:
@@ -456,7 +456,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual representation of test coverage metrics.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Maintaining high test coverage ensures that most parts of your code are tested, helping to catch potential bugs and improve the reliability of the codebase:
@@ -480,7 +480,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer refactoring test code.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Regularly refactoring your tests is as important as refactoring your code. This practice improves readability and maintainability:
@@ -502,7 +502,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of a coverage report generated by coverage.py.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Using tools like coverage.py helps you measure and improve your test coverage:
@@ -526,7 +526,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer encountering issues while running tests.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's identify common pitfalls in unit testing and provide tips on how to avoid and fix these mistakes. Understanding these pitfalls will help you create more robust and reliable tests.
@@ -541,7 +541,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Visual representation of common unit testing mistakes.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are some common mistakes in unit testing:
@@ -561,7 +561,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer fixing unit test issues.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here’s how to avoid and fix common unit testing mistakes:
@@ -584,7 +584,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Screenshot of unit test code with annotations pointing out mistakes.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's look at some examples of common mistakes in unit testing and how to fix them:
@@ -647,7 +647,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Illustration of a developer surrounded by checkmarks and code snippets.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Excellent work completing the quest! You’ve explored the powerful features of GitHub Copilot and Visual Studio Code, which can significantly enhance your unit testing process. Remember to:

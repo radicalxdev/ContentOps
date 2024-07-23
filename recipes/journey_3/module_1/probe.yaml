@@ -1,6 +1,12 @@
 tasks:
   - name: "Question #1"
-    context: "Unit testing using GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "1"
     nodes:
       - id: START
@@ -69,7 +75,13 @@ tasks:
             - type: "text"
               content: "For instance, if a developer writes a function to calculate the sum of two numbers, Copilot can generate unit test snippets that test this function with different sets of input values to ensure it works correctly in all cases."
   - name: "Question #2"
-    context: "Test Explorer in Visual Studio Code."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "2"
     nodes:
       - id: START
@@ -129,7 +141,13 @@ tasks:
             - type: "text"
               content: "For example, after writing unit tests for a new feature, a developer can use the Test Explorer to run all tests, see which ones pass or fail, and debug any failing tests directly within the IDE."
   - name: "Question #3"
-    context: "Arrange, Act, Assert pattern."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "3"
     nodes:
       - id: START
@@ -189,7 +207,13 @@ tasks:
             - type: "text"
               content: "For instance, in testing a function that adds two numbers, the Arrange phase would set up the numbers to be added, the Act phase would call the addition function, and the Assert phase would check that the result matches the expected sum."
   - name: "Question #4"
-    context: "Assertions in unit tests."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "4"
     nodes:
       - id: START
@@ -309,7 +333,13 @@ tasks:
             - type: "text"
               content: "For example, if a developer writes a function to check if a number is prime, Copilot can suggest unit tests for various input values (e.g., prime numbers, non-prime numbers, edge cases like 0 and 1) to ensure the function handles all possible scenarios correctly."
   - name: "Question #6"
-    context: "Benefits of using GitHub Copilot for generating unit tests."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "6"
     nodes:
       - id: START
@@ -369,7 +399,13 @@ tasks:
             - type: "text"
               content: "For instance, when testing a function that calculates discounts based on user membership levels, Copilot can generate unit tests for various membership types (e.g., regular, premium, VIP) and different purchase amounts, ensuring comprehensive test coverage."
   - name: "Question #7"
-    context: "Code line completions when writing unit tests."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "7"
     nodes:
       - id: START
@@ -429,7 +465,13 @@ tasks:
             - type: "text"
               content: "For example, while writing a unit test for a function that adds items to a shopping cart, Copilot might suggest the initial test function signature and typical assertions, such as checking if the item count increases correctly and the total price updates as expected."
   - name: "Question #8"
-    context: "Edge cases and boundary conditions in unit tests."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "8"
     nodes:
       - id: START
@@ -489,7 +531,13 @@ tasks:
             - type: "text"
               content: "For example, when testing a function that calculates the factorial of a number, it is important to include tests for edge cases like `0!` and negative numbers, as well as large positive numbers, to ensure the function behaves correctly in all situations."
   - name: "Question #9"
-    context: "Identifying edge cases for testing with GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "9"
     nodes:
       - id: START
@@ -549,7 +597,13 @@ tasks:
             - type: "text"
               content: "For instance, when testing a function that processes date inputs, Copilot might suggest edge case tests for leap years, end-of-month dates, and invalid dates (e.g., February 30th), ensuring the function handles these scenarios correctly."
   - name: "Question #10"
-    context: "Primary purpose of assertions in unit tests."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for unit testing.
+      It includes targeted questions on generating and improving unit tests, optimizing responses, maintaining code quality, and using testing tools.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create effective unit tests with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "10"
     nodes:
       - id: START

@@ -1,6 +1,12 @@
 tasks:
   - name: "Question #1"
-    context: "How to provide context to GitHub Copilot for better code suggestions."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "1"
     nodes:
     - id: START
@@ -69,7 +75,13 @@ tasks:
           - type: "text"
             content: "For example, when writing a function to calculate the area of a rectangle, naming the function `calculateRectangleArea` and adding a comment like `// Function to calculate the area of a rectangle given width and height` provides Copilot with enough context to generate precise code for this function. Additionally, having related modules, such as geometry utilities, open in the editor can further improve suggestion accuracy."
   - name: "Question #2"
-    context: "Optimizing interactions with GitHub Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "2"
     nodes:
     - id: START
@@ -129,7 +141,13 @@ tasks:
           - type: "text"
             content: "For instance, instead of asking 'How do I use an API?' a more effective prompt would be 'Show me how to use the Fetch API in JavaScript to retrieve data from a public API endpoint and display it on a webpage.' This specific request helps Copilot provide a detailed and contextually relevant response."
   - name: "Question #3"
-    context: "Effect of maintaining high code quality when using GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "3"
     nodes:
     - id: START
@@ -189,7 +207,13 @@ tasks:
           - type: "text"
             content: "For example, if a developer maintains clean and well-documented code when implementing a new feature, Copilot will be more likely to generate suggestions that include proper documentation, adhere to coding standards, and integrate seamlessly with the existing codebase. This helps maintain overall code quality and consistency."
   - name: "Question #4"
-    context: "How GitHub Copilot determines code completion suggestions."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "4"
     nodes:
     - id: START
@@ -249,7 +273,13 @@ tasks:
           - type: "text"
             content: "For instance, if a developer is writing a function to handle user authentication in a file where other authentication-related functions are defined, Copilot will use this context to suggest code that aligns with the existing authentication logic and conventions in the file."
   - name: "Question #5"
-    context: "Handling multiple code completion suggestions generated by GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "5"
     nodes:
     - id: START
@@ -309,7 +339,13 @@ tasks:
           - type: "text"
             content: "For example, if Copilot generates several different ways to implement a sorting algorithm, the developer can use the arrows to review each implementation and choose the one that best fits their requirements or coding style."
   - name: "Question #6"
-    context: "Purpose of the inline chat feature in GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "6"
     nodes:
     - id: START
@@ -369,7 +405,13 @@ tasks:
           - type: "text"
             content: "For instance, if a developer is unsure about how to use a specific method in a library, they can use the inline chat to ask, 'How do I use the `find` method in the lodash library?' Copilot can then provide a detailed explanation and example directly in the editor, saving time and keeping the workflow uninterrupted."
   - name: "Question #7"
-    context: "Benefits of GitHub Copilot when dealing with unfamiliar libraries or frameworks."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "7"
     nodes:
     - id: START
@@ -429,7 +471,13 @@ tasks:
           - type: "text"
             content: "For example, if a developer is using a new framework like Next.js for the first time, they can ask Copilot for help by typing 'How do I set up routing in Next.js?' Copilot can then generate sample code and explanations, guiding the developer through the process of setting up routes in their project."
   - name: "Question #8"
-    context: "Enhancing the development of initial code structures with GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "8"
     nodes:
     - id: START
@@ -489,7 +537,13 @@ tasks:
           - type: "text"
             content: "For instance, if a developer is creating a new function to handle user authentication and has written the initial comments, Copilot can suggest the necessary code to implement the function based on those comments, streamlining the development process and ensuring that the code matches the described functionality."
   - name: "Question #9"
-    context: "Role of chat participants, slash commands, and chat variables in GitHub Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "9"
     nodes:
     - id: START
@@ -549,7 +603,13 @@ tasks:
           - type: "text"
             content: "For example, a developer might use a slash command like `/explain` followed by a specific function name to get a detailed explanation of what the function does. This clear context helps Copilot provide a precise and relevant response."
   - name: "Question #10"
-    context: "Importance of reviewing code generated by GitHub Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for developing code features.
+      It includes questions on providing context for better code suggestions, optimizing interactions with Copilot Chat, maintaining high code quality, understanding code completion suggestions, and reviewing generated code.
+      Learners will solidify their knowledge, identify areas for improvement, and enhance their ability to create precise and efficient code with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "10"
     nodes:
     - id: START

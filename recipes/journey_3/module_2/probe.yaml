@@ -1,6 +1,12 @@
 tasks:
   - name: "Question #1"
-    context: "Importance of detailed context in GitHub Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "1"
     nodes:
     - id: START
@@ -69,7 +75,13 @@ tasks:
           - type: "text"
             content: "Suppose you need Copilot to document a function that calculates the average of a list of numbers. Instead of asking 'What does this function do?', a more effective prompt would be 'Explain the purpose and functionality of the calculate_average function, including its parameters and return value.' This detailed prompt provides Copilot with the necessary context for a thorough explanation."
   - name: "Question #2"
-    context: "How chat participants assist Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "2"
     nodes:
     - id: START
@@ -129,7 +141,13 @@ tasks:
           - type: "text"
             content: "If you're debugging an issue and have terminal output showing an error message, using @terminal in your prompt can help Copilot understand the context of the error and suggest possible fixes. For example, you could use '@terminal What does this error mean and how can I fix it?' and Copilot would analyze the terminal output to provide a relevant solution."
   - name: "Question #3"
-    context: "Importance of reviewing Copilot's output."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "3"
     nodes:
     - id: START
@@ -187,7 +205,13 @@ tasks:
           - type: "text"
             content: "If Copilot generates documentation for a function that handles user authentication, you need to verify that the documentation accurately describes the function's parameters, process, and security considerations. For instance, the documentation should correctly outline how user credentials are verified, how tokens are generated, and any security measures implemented to protect user data."
   - name: "Question #4"
-    context: "Potential limitations of relying solely on Copilot."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "4"
     nodes:
     - id: START
@@ -247,7 +271,13 @@ tasks:
           - type: "text"
             content: "Suppose your project includes a custom algorithm for processing financial transactions. Copilot might generate basic documentation explaining the code structure and functionality, but it might miss the specific business rules and constraints that apply to your algorithm. You would need to manually add these details to ensure the documentation accurately reflects the project's requirements."
   - name: "Question #5"
-    context: "Commands for understanding function purposes."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "5"
     nodes:
     - id: START
@@ -307,7 +337,13 @@ tasks:
           - type: "text"
             content: "If you have a function named `calculate_discount` in your code, using the command `/explain #function calculate_discount` will prompt Copilot to generate an explanation detailing what the function does, how it calculates discounts, what parameters it requires, and what it returns. This helps you and other developers understand the function's role in the project."
   - name: "Question #6"
-    context: "Best practices for using Copilot for documentation."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "6"
     nodes:
     - id: START
@@ -427,7 +463,13 @@ tasks:
           - type: "text"
             content: "If you update a function to include additional parameters, Copilot can flag the documentation for that function as potentially outdated. It will prompt you to review and update the documentation to include the new parameters, ensuring that the documentation accurately describes the function's current behavior."
   - name: "Question #8"
-    context: "Accepting Copilot's documentation suggestions."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "8"
     nodes:
     - id: START
@@ -487,7 +529,13 @@ tasks:
           - type: "text"
             content: "If Copilot suggests documentation for a function that processes user input, review the suggested comments to ensure they correctly describe the input parameters, processing logic, and output. Make any necessary adjustments to ensure accuracy and clarity, such as adding details about input validation and error handling that Copilot might have missed."
   - name: "Question #9"
-    context: "Steps after generating initial project documentation."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "9"
     nodes:
     - id: START
@@ -547,7 +595,13 @@ tasks:
           - type: "text"
             content: "After Copilot generates documentation for a new API endpoint, review the content to ensure it accurately describes the endpoint's purpose, parameters, expected input/output, and any error handling. Make any necessary edits to ensure the documentation is complete and aligns with your project's standards, providing a useful reference for other developers."
   - name: "Question #10"
-    context: "Better quality responses from Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
+      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
+      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "10"
     nodes:
     - id: START

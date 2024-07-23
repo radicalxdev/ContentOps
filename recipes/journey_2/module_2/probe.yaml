@@ -1,6 +1,13 @@
 tasks:
   - name: "Question #1"
-    context: "How to provide context to GitHub Copilot for better code suggestions."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "1"
     nodes:
       - id: START
@@ -69,7 +76,14 @@ tasks:
             - type: "text"
               content: "For instance, if a class handling multiple responsibilities is identified, Copilot might suggest splitting it into separate classes, each handling a single responsibility. A class managing both user authentication and database operations could be refactored into an `AuthenticationService` and a `DatabaseService` class."
   - name: "Question #2"
-    context: "How GitHub Copilot Chat helps with bug fixes."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "2"
     nodes:
       - id: START
@@ -129,7 +143,14 @@ tasks:
             - type: "text"
               content: "For example, if a `NullPointerException` is detected in a Java method, Copilot might suggest adding a null check before accessing the object or initializing the object properly, thus preventing the exception from occurring."
   - name: "Question #3"
-    context: "Purpose of code refactoring."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "3"
     nodes:
       - id: START
@@ -189,7 +210,14 @@ tasks:
             - type: "text"
               content: "For instance, refactoring a long and complex function into several smaller, well-named functions improves readability and makes the code easier to test and maintain. A function called `processData` that handles data validation, transformation, and saving could be split into `validateData`, `transformData`, and `saveData` functions."
   - name: "Question #4"
-    context: "Factors for improving code quality."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "4"
     nodes:
       - id: START
@@ -249,7 +277,14 @@ tasks:
             - type: "text"
               content: "For example, improving the readability and modularity of a codebase might involve breaking down a monolithic application into smaller microservices, each responsible for a specific functionality. This makes the code easier to manage, test, and scale."
   - name: "Question #5"
-    context: "Importance of context and intent when developing prompts for GitHub Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "5"
     nodes:
       - id: START
@@ -309,7 +344,14 @@ tasks:
             - type: "text"
               content: "For instance, if a developer wants to add error handling to a function, a well-formed prompt would be 'Add error handling to the `fetchData` function to manage network timeouts and API errors,' rather than a vague prompt like 'Improve the function.' This specific context and intent guide Copilot to generate targeted and useful code suggestions."
   - name: "Question #6"
-    context: "Improving code reliability."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "6"
     nodes:
       - id: START
@@ -369,7 +411,14 @@ tasks:
             - type: "text"
               content: "For instance, adding comprehensive error handling in a function that processes user input can prevent crashes due to invalid inputs. This could involve using try-catch blocks in languages like JavaScript to gracefully handle exceptions and provide meaningful error messages to users."
   - name: "Question #7"
-    context: "How GitHub Copilot Chat helps with code quality improvements."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "7"
     nodes:
       - id: START
@@ -429,7 +478,14 @@ tasks:
             - type: "text"
               content: "For example, if a function is too long and complex, Copilot might suggest refactoring it into smaller, single-responsibility functions. It could also recommend using design patterns like the Singleton or Observer patterns where applicable, and suggest code style adjustments to align with established coding guidelines."
   - name: "Question #8"
-    context: "Learning new coding techniques with GitHub Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "8"
     nodes:
       - id: START
@@ -489,7 +545,14 @@ tasks:
             - type: "text"
               content: "For instance, if a developer wants to learn about asynchronous programming in JavaScript, they can ask Copilot Chat to provide examples of using `async` and `await` for handling asynchronous operations. Copilot can then generate code snippets that demonstrate these techniques, helping the developer understand and apply them in their projects."
   - name: "Question #9"
-    context: "Purpose of chat participants, slash commands, and chat variables in GitHub Copilot Chat."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "9"
     nodes:
       - id: START
@@ -549,7 +612,14 @@ tasks:
             - type: "text"
               content: "For example, a developer might use a slash command like `/refactor` to indicate they need refactoring suggestions for a particular function. By providing this context, Copilot can focus its suggestions on improving the structure and readability of that specific function."
   - name: "Question #10"
-    context: "Importance of reviewing GitHub Copilot's suggestions."
+    context: |
+      This probe reinforces your understanding of using GitHub Copilot for code improvements.
+      It covers enhancing modularity, fixing bugs, refactoring, and improving code quality.
+      It also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.
+      Learners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "10"
     nodes:
       - id: START

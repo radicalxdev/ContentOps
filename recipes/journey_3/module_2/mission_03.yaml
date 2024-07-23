@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "Ada AI holding a document with a welcoming gesture."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Welcome to the 'Generate Inline Code Documentation using GitHub Copilot Chat' mission. Documenting your code is an important aspect of the software development process. Code comments help developers understand the codebase, its purpose, and how to use it."
             - type: "text"
@@ -89,7 +89,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the suggested code documentation."
             - type: "image"
-              content: "Screenshot showing the generated response with suggested code comments and a portion of the associated code."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "The response includes suggested code comments that you can manually move into the actual code file."
             - type: "text"
@@ -147,7 +147,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the code documentation generated."
             - type: "image"
-              content: "Screenshot showing the generated documentation for the `create_project` method."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Notice that the suggested documentation for the `create_project` method includes a summary and descriptions of the parameters."
             - type: "text"
@@ -196,7 +196,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the suggested code comments."
             - type: "image"
-              content: "Screenshot showing the generated documentation for the `update_project` method."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Notice that the Generate Docs smart action and inline chat produce similar results. If necessary, edit the suggested update."
             - type: "text"
@@ -249,7 +249,7 @@ tasks:
             - type: "text"
               content: "Review the suggested changes."
             - type: "image"
-              content: "Screenshot showing the generated documentation for all CRUD operations."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Notice that the generated documentation includes comments for each of the methods. If you find issues in the generated documentation, modify the suggested changes before continuing."
             - type: "text"
@@ -262,7 +262,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "Ada AI celebrating with a thumbs-up gesture."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Congratulations, {username}! 🎉 You've successfully used GitHub Copilot Chat to generate inline code documentation for the Alfred AI project. By using the Chat view, inline chat, and the Generate Docs smart action, you generated code comments that create a more readable and maintainable codebase."
             - type: "text"

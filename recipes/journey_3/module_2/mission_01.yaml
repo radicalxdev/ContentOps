@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "Ada AI holding a document with a welcoming gesture."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Welcome to the \"Generate Code Explanations using GitHub Copilot Chat\" mission. GitHub Copilot Chat leverages conversational AI and smart commands to assist you with various coding tasks. One powerful feature is its ability to generate detailed explanations for unfamiliar and complex code. Ready to start?"
         edges:
@@ -521,6 +521,6 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "Ada AI celebrating with a thumbs-up gesture."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Congratulations, {username}! You've successfully used GitHub Copilot Chat to generate code explanations for various purposes, including understanding new projects, deciphering complex code, diagnosing errors, and implementing new features. This mission has enhanced your ability to work with unfamiliar codebases and improve your overall productivity as a developer."
