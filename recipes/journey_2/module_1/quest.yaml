@@ -1,0 +1,1276 @@
+tasks:
+  - name: "Intro to GitHub Copilot"
+    context: "The Intro to GitHub Copilot section introduces learners to using GitHub Copilot tools in Visual Studio Code to enhance coding productivity. It starts with an overview of GitHub Copilot and GitHub Copilot Chat, explaining how these extensions generate code suggestions based on input or chat interactions. The section demonstrates how to use clear prompts, chat participants, slash commands, and chat variables for accurate responses. It also covers setting up complex workspaces with GitHub Copilot and highlights key features like code line completions, inline chat, chat view, quick chat, and smart actions, all aimed at streamlining the coding process and keeping developers efficient."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Welcome to the Quest on developing code features using GitHub Copilot tools! Imagine you're working on a new AI-driven project and need to develop several features quickly and efficiently. Visual Studio Code, enhanced with GitHub Copilot and GitHub Copilot Chat extensions, is here to assist you. These tools can generate suggestions that extend or improve your applications, significantly increasing your productivity.
+
+                Are you ready to explore how GitHub Copilot can transform your coding experience?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen3"
+          - text: "Tell me more about GitHub Copilot tools."
+            target_node_id: "screen2"
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Visual representation of GitHub Copilot and GitHub Copilot Chat in Visual Studio Code.]"
+            - type: "text"
+              content: |
+                Visual Studio Code implements GitHub Copilot using two powerful extensions:
+
+                - **GitHub Copilot Extension**: Generates code completion suggestions based on the code you enter in the editor or your code comments.
+                - **GitHub Copilot Chat Extension**: Provides code suggestions based on chat interactions or smart actions that act on selected code.
+
+                Together, these extensions offer a comprehensive set of features to help you develop code more efficiently.
+        edges:
+          - text: "Got it!"
+            target_node_id: "screen3"
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Illustration of a developer using GitHub Copilot Chat in Visual Studio Code.]"
+            - type: "text"
+              content: |
+                GitHub Copilot Chat helps you create code through chat interfaces and smart actions, providing suggestions based on your prompts. Let’s explore how GitHub Copilot Chat can enhance your coding experience.
+        edges:
+          - text: "Show me how GitHub Copilot Chat works."
+            target_node_id: "screen4"
+          - text: "How do I use prompts with GitHub Copilot Chat?"
+            target_node_id: "screen5"
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Screenshot of GitHub Copilot Chat providing code suggestions in Visual Studio Code.]"
+            - type: "text"
+              content: |
+                GitHub Copilot Chat generates code suggestions based on your prompts or questions. For example, if you ask Copilot to create a new method, it can provide suggestions for one or more method signatures and implementations. You can review these suggestions and accept or discard them to quickly create an initial version of your code.
+
+                **Example**:
+
+                ```python
+                # Prompt: Create a method to calculate the average of a list of numbers
+                def calculate_average(numbers):
+                    return sum(numbers) / len(numbers)
+                ```
+
+                This process helps you develop code more quickly and accurately, especially when working with unfamiliar resources like new libraries, frameworks, or APIs.
+        edges:
+          - text: "How do I use prompts with GitHub Copilot Chat?"
+            target_node_id: "screen5"
+          - text: "Show me an example with unfamiliar resources."
+            target_node_id: "screen6"
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Illustration of a developer entering a prompt in GitHub Copilot Chat.]"
+            - type: "text"
+              content: |
+                Providing clear and concise prompts to GitHub Copilot Chat improves the quality of the generated responses. Use a conversational style to describe your requirements and provide context.
+
+                **Example**:
+
+                ```
+                Prompt: Create a method to fetch data from a REST API and handle errors.
+                ```
+
+                GitHub Copilot Chat uses the information you provide to generate code suggestions that meet your needs and match your coding style. This approach helps you create accurate and useful code quickly.
+        edges:
+          - text: "Show me an example with unfamiliar resources."
+            target_node_id: "screen6"
+          - text: "How do chat participants, slash commands, and chat variables work?"
+            target_node_id: "screen7"
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Screenshot of GitHub Copilot Chat providing code suggestions for a new library.]"
+            - type: "text"
+              content: |
+                GitHub Copilot Chat is especially helpful when you need to develop code that implements unfamiliar resources. For instance, if you need to use a new library, framework, or API, Copilot can generate relevant code suggestions based on your prompts.
+
+                **Example**:
+
+                ```
+                Prompt: Create a Node.js function to fetch data from an API using the Axios library.
+                ```
+
+                **Suggested Code**:
+
+                ```javascript
+                const axios = require('axios');
+
+                async function fetchData(url) {
+                    try {
+                        const response = await axios.get(url);
+                        return response.data;
+                    } catch (error) {
+                        console.error('Error fetching data:', error);
+                        throw error;
+                    }
+                }
+                ```
+
+                Reviewing the suggestions can also teach you how to implement the new resources, making you more proficient with unfamiliar technologies.
+        edges:
+          - text: "How do chat participants, slash commands, and chat variables work?"
+            target_node_id: "screen7"
+          - text: "Got it, let’s move on."
+            target_node_id: "screen8"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Visual representation of chat participants, slash commands, and chat variables in use.]"
+            - type: "text"
+              content: |
+                Using specialized descriptors like chat participants, slash commands, and chat variables helps GitHub Copilot Chat generate more accurate and useful responses:
+
+                - **Chat Participants**: `@workspace`, `@terminal` – Help Copilot understand the context of your question.
+                - **Slash Commands**: `/explain`, `/new` – Indicate the intent or purpose of your question.
+                - **Chat Variables**: `#file`, `#editor` – Focus Copilot on specific elements within your context.
+
+                **Example**:
+
+                ```
+                Prompt: @workspace /new console application in C#
+                ```
+
+                This prompt includes a chat participant (`@workspace`) and a slash command (`/new`) to help Copilot understand your intent and generate a relevant response.
+        edges:
+          - text: "Got it, let’s move on."
+            target_node_id: "screen8"
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Screenshot of GitHub Copilot Chat setting up a complex workspace.]"
+            - type: "text"
+              content: |
+                GitHub Copilot can scaffold more complex workspaces. For example, you can create a workspace for a Node.js application that uses the Express framework, the Pug template engine, and TypeScript.
+
+                **Example Prompt**:
+
+                ```
+                Prompt: @workspace /new Node.js Express Pug TypeScript
+                ```
+
+                GitHub Copilot Chat will generate the necessary setup for this complex workspace, allowing you to focus on developing your application.
+        edges:
+          - text: "Alright, let’s move to the next thing."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Screenshot of Visual Studio Code with GitHub Copilot and GitHub Copilot Chat extensions active.]"
+            - type: "text"
+              content: |
+                Visual Studio Code provides easy access to the following GitHub Copilot and GitHub Copilot Chat features:
+
+                - **Code Line Completions**: Write code more efficiently with code line completions.
+                - **Inline Chat**: Start a conversation directly in the editor for real-time help while coding.
+                - **Chat View**: Open an AI assistant on the side that can assist you anytime.
+                - **Quick Chat**: Ask a quick question and get back to your work seamlessly.
+                - **Smart Actions**: Execute smart actions to complete tasks without needing to write a prompt.
+
+                These features accelerate code development and keep you productive within the Visual Studio Code environment.
+  - name: "Code Line Completions"
+    context: "The Code Line Completions section introduces how GitHub Copilot generates code suggestions as you type, helping you code faster and more accurately. It demonstrates the process with an example, showing how Copilot suggests completing a method to calculate total expenditures. The section explains how to accept or reject suggestions and how to cycle through different options. It also highlights the influence of code comments on suggestions, helping you generate code based on descriptive comments. The following screens delve into using the Chat view in Visual Studio Code, accessing it, and managing code blocks, enhancing the coding experience through interactive and efficient AI assistance."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                This feature generates suggestions as you enter code, using the context of your application to provide accurate and helpful completions. Let’s see how this can accelerate your coding process.
+        edges:
+          - text: "Show me an example of code line completions."
+            target_node_id: "screen10A"
+
+      - id: screen10A
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Imagine you're working on a class that processes customer expenditures. You need to create a method that returns the sum of all expenditures. As you start typing the method signature, GitHub Copilot generates a suggestion to complete the code line.
+
+                **Example**:
+
+                ```python
+                class CustomerExpenditures:
+                    def __init__(self, expenditures):
+                        self.expenditures = expenditures
+
+                    def total_expenditures(self):
+                        # GitHub Copilot suggests the following completion
+                        return sum(self.expenditures)
+                ```
+
+                If you’re satisfied with the suggestion, press the **Tab** key or select **Accept**. This saves you time and helps you write accurate code.
+        edges:
+          - text: "How do I accept or reject suggestions?"
+            target_node_id: "screen10B"
+          - text: "Show me more about exploring different options."
+            target_node_id: "screen10C"
+
+      - id: screen10B
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Accepting or rejecting suggestions from GitHub Copilot is straightforward:
+
+                - **Accepting Suggestions**: If you’re satisfied with a suggestion, press the **Tab** key or click **Accept**.
+                - **Rejecting Suggestions**: If the suggestion doesn’t match your intent, continue typing to dismiss it or press **Esc**.
+
+                This flexibility allows you to quickly integrate useful suggestions into your code or explore alternative options until you find the best fit.
+        edges:
+          - text: "Show me more about exploring different options."
+            target_node_id: "screen10C"
+          - text: "How do code comments influence suggestions?"
+            target_node_id: "END"
+
+      - id: screen10C
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                GitHub Copilot allows you to explore different options for constructing your code:
+
+                - **Cycling Through Suggestions**: As you type a call statement for a method, GitHub Copilot provides suggestions for various method overloads. Use the arrow keys to cycle through these options and press **Tab** to accept the one that matches your intent.
+
+                **Example**:
+
+                ```python
+                # Typing a method call
+                result = customer.total_expenditures()
+
+                # GitHub Copilot suggests different overloads and implementations
+                ```
+
+                This process helps you quickly explore different coding styles and techniques, enhancing your development experience.
+        edges:
+          - text: "Let's wrap it up!"
+            target_node_id: END
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                GitHub Copilot also generates code line completion suggestions based on your code comments.
+
+                **Example**:
+
+                ```python
+                # Method to calculate total expenditures
+                def calculate_total(self):
+                    # GitHub Copilot suggests the following completion
+                    return sum(self.expenditures)
+                ```
+
+                The suggested code completion uses information from your existing code and the code comment that describes the method. This helps you develop an initial code structure quickly and accurately.
+  - name: "Chat View"
+    context: "The Chat View section introduces the AI assistant feature in Visual Studio Code, which helps with code development, exploring options, and resolving issues. It guides users on accessing the Chat view, either from the Activity Bar or with a shortcut. The Chat view allows users to ask questions, explore coding techniques, and get information on resources, providing interactive results like text, images, and file trees. Users learn how to open Chat in the editor for multitasking and see an example response for creating an Express app, showcasing its rich, interactive nature. The section explains managing code blocks by copying, inserting into the editor, creating new files, or running commands in the terminal, enhancing the coding workflow with practical examples and actionable options."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Chat view provides an AI assistant that can help you develop your code, explore coding options, and resolve issues—all within the Visual Studio Code environment. Let’s dive into how this feature can enhance your coding experience.
+        edges:
+          - text: "How do I access the Chat view?"
+            target_node_id: "screen11A"
+
+      - id: screen11A
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                To access the Chat view in Visual Studio Code:
+
+                - Select **Chat** from the Activity Bar, or
+                - Press **Ctrl** + **Alt** + **I**.
+
+                The Chat view enables a chat conversation with GitHub Copilot directly in Visual Studio Code’s Side Bar panel. It displays a greeting message and sample questions the first time you open it.
+        edges:
+          - text: "What can I do with the Chat view?"
+            target_node_id: "screen11B"
+          - text: "How do I open chat in the editor?"
+            target_node_id: "screen11C"
+
+      - id: screen11B
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                In the Chat view, you can:
+
+                - **Ask Questions**: Get help with code, errors, or logic issues without leaving the Visual Studio Code environment.
+                - **Explore Coding Options**: Learn new coding techniques, explore different coding styles, and improve your coding skills.
+                - **Get Information**: Ask about using resources, such as libraries, frameworks, or APIs.
+
+                The Chat view provides rich and interactive results, including text, images, buttons, references, and file trees.
+        edges:
+          - text: "Show me an example response from the Chat view."
+            target_node_id: "screen11D"
+          - text: "How do I open Chat in the editor?"
+            target_node_id: "screen11C"
+
+      - id: screen11C
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                If you need access to other Visual Studio Code views while using the Chat interface, you can open Chat in the editor:
+
+                - Select **Open in Editor** from the Chat view's context menu.
+
+                This allows you to continue your chat conversation while accessing other views and tools within Visual Studio Code.
+        edges:
+          - text: "Show me an example response from the Chat view."
+            target_node_id: "screen11D"
+          - text: "Got it, let’s move on."
+            target_node_id: "screen11E"
+
+      - id: screen11D
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here’s an example response from GitHub Copilot Chat when you ask it to create an Express app:
+
+                **Prompt**:
+
+                ```
+                Create an Express app.
+                ```
+
+                **Response**:
+
+                - **Text Explanation**: Describes how to set up the Express app.
+                - **File Tree**: Shows a suggested workspace structure for the app.
+                - **Button**: Allows you to create the new workspace with one click.
+
+                This rich and interactive response helps you understand and implement new features quickly and efficiently.
+        edges:
+          - text: "Got it, let’s move on."
+            target_node_id: "screen11E"
+
+      - id: screen11E
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                GitHub Copilot Chat may return source code in response to your questions. You can manage these code blocks in various ways to integrate them into your development workflow efficiently.
+        edges:
+          - text: "How do I manage Code Blocks?"
+            target_node_id: "screen11F"
+
+      - id: screen11F
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                When GitHub Copilot Chat returns a code block, you have several options for managing it. Hover over the code block to display the options:
+
+                1. **Copy**: Copy the code block to your clipboard.
+                2. **Insert at Cursor (Ctrl+Enter)**: Insert the code block directly at the cursor position in your active editor.
+
+                For more options, click the More Actions (...) button:
+
+                1. **Insert Into New File**: Create a new file and insert the code block.
+                2. **Insert into Terminal (Ctrl+Alt+Enter)**: Insert the code block as a command in the integrated terminal, ready to run.
+        edges:
+          - text: "Show me an example of inserting a code block."
+            target_node_id: "screen11G"
+          - text: "How do I run a command from a code block?"
+            target_node_id: "END"
+
+      - id: screen11G
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Screenshot of inserting a code block into the active editor.]"
+            - type: "text"
+              content: |
+                Let’s see an example of how to insert a code block into your active editor:
+
+                1. **Hover**: Hover over the code block to display the management options.
+                2. **Insert at Cursor (Ctrl+Enter)**: Click this option to insert the code block directly at the cursor position.
+
+                **Example**:
+
+                ```python
+                # Code block returned by GitHub Copilot Chat
+                def add(a, b):
+                    return a + b
+                ```
+
+                This option allows you to quickly integrate the suggested code into your project.
+        edges:
+          - text: "How do I run a command from a code block?"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                If GitHub Copilot Chat detects that a code block contains a command, you can run it directly in the integrated terminal:
+
+                1. **Hover**: Hover over the code block to display the management options.
+                2. **Insert into Terminal (Ctrl+Alt+Enter)**: Click this option to insert the command text into the terminal.
+
+                **Example**:
+
+                ```
+                # Command returned by GitHub Copilot Chat
+                npm install express
+                ```
+
+                This option creates or opens the active terminal and inserts the command text, ready for you to run.
+  - name: "Inline Chat"
+    context: "The Inline Chat section introduces the inline chat interface in Visual Studio Code, which provides AI assistance without disrupting your coding flow. It explains how to access inline chat and its functionalities, such as asking questions about existing code, modifying or replacing code, and generating new code snippets. Examples illustrate these capabilities, showing how to quickly understand, improve, and create code using prompts.The section guides users on developing new features with inline chat, offering a step-by-step process to create methods or other components. It also covers creating regular expressions, demonstrating how to generate and understand them through interactive prompts. Overall, this section highlights the efficiency and versatility of using inline chat to enhance coding productivity and accuracy."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                The inline chat interface provides access to powerful AI features while keeping you focused on your code. Let’s explore how you can use inline chat to enhance your coding experience.
+        edges:
+          - text: "How do I access inline chat?"
+            target_node_id: "screen12A"
+          - text: "I know the basics, but how do I create new features with Inline Chat?"
+            target_node_id: "screen13"
+
+      - id: screen12A
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                To access inline chat in the code editor:
+
+                - Press `Ctrl` + `I` on the keyboard.
+
+                The inline chat interface will open, allowing you to interact with GitHub Copilot Chat directly within your code editor.
+        edges:
+          - text: "What can I do with inline chat?"
+            target_node_id: "screen12B"
+
+      - id: screen12B
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You can use inline chat in various ways to enhance your coding workflow:
+
+                1. **Ask Questions About Existing Code**:
+                    - Get explanations and clarifications about specific parts of your code.
+
+                    **Example**:
+
+                    ```
+                    Inline Chat Prompt: What does this function do?
+                    ```
+
+                2. **Modify or Replace Existing Code**:
+                    - Request modifications or replacements for your current code.
+
+                    **Example**:
+
+                    ```
+                    Inline Chat Prompt: Replace this function with one that uses a list comprehension.
+                    ```
+
+                3. **Generate New Code**:
+                    - Generate new code snippets based on your requirements.
+
+                    **Example**:
+
+                    ```
+                    Inline Chat Prompt: Generate a function to calculate the factorial of a number.
+                    ```
+
+                These functionalities help you stay focused on your code while leveraging the power of AI to improve and expedite your development process.
+        edges:
+          - text: "Show me an example of asking a question about existing code."
+            target_node_id: "screen12C"
+          - text: "Show me an example of modifying or replacing code."
+            target_node_id: "screen12D"
+
+      - id: screen12C
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Using inline chat to ask questions about existing code can provide valuable insights and clarifications.
+
+                **Example**:
+
+                ```python
+                def add(a, b):
+                    return a + b
+                ```
+
+                **Inline Chat Prompt**:
+
+                ```
+                What does this function do?
+                ```
+
+                **Response**:
+
+                ```
+                This function, named `add`, takes two parameters `a` and `b` and returns their sum.
+                ```
+
+                This feature helps you understand and document your code more effectively.
+        edges:
+          - text: "Show me an example of modifying or replacing code."
+            target_node_id: "screen13"
+
+      - id: screen12D
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You can use inline chat to modify or replace existing code, making your coding process more efficient.
+
+                **Example**:
+
+                ```python
+                def add(a, b):
+                    result = a + b
+                    return result
+                ```
+
+                **Inline Chat Prompt**:
+
+                ```
+                Replace this function with one that uses a list comprehension.
+                ```
+
+                **Response**:
+
+                ```python
+                def add(a, b):
+                    return [a + b for _ in range(1)][0]
+                ```
+
+                This allows you to quickly implement changes and improvements to your code.
+        edges:
+          - text: "Show me an example of generating new code."
+            target_node_id: "screen12E"
+          - text: "Got it, let’s move on."
+            target_node_id: "screen13"
+
+      - id: screen12E
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Generating new code with inline chat can accelerate your development process.
+
+                **Inline Chat Prompt**:
+
+                ```
+                Generate a function to calculate the factorial of a number.
+                ```
+
+                **Response**:
+
+                ```python
+                def factorial(n):
+                    if n == 0:
+                        return 1
+                    else:
+                        return n * factorial(n-1)
+                ```
+
+                This feature helps you quickly create new functions and code segments based on your requirements.
+        edges:
+          - text: "Got it, let’s move on."
+            target_node_id: "screen13"
+
+      - id: screen13
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You can use the inline chat interface to develop new code features such as user interface components, API endpoints, or data processing pipelines. Let’s explore how to create a new feature step-by-step.
+        edges:
+          - text: "Show me the steps to create a new feature."
+            target_node_id: "screen13A"
+
+      - id: screen13A
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                To create a new code feature using inline chat, follow these steps:
+
+                1. **Select Code**: Select the relevant code in the editor.
+                2. **Open Inline Chat**: Press **Ctrl** + **I** to open the inline chat interface.
+                3. **Enter a Prompt**: Describe the feature you want to create.
+                4. **Review Suggestions**: Review the suggestions provided by Copilot Chat and refine your prompt if necessary.
+                5. **Accept a Suggestion**: Once you're satisfied, accept a suggestion to integrate it into your code.
+        edges:
+          - text: "Show me an example."
+            target_node_id: "screen13B"
+
+      - id: screen13B
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here’s an example that demonstrates how to create a new method using inline chat:
+
+                1. **Select Code**:
+
+                    ```python
+                    class DataProcessor:
+                        def __init__(self, data):
+                            self.data = data
+                    ```
+
+                2. **Open Inline Chat**: Press **Ctrl** + **I**.
+                3. **Enter a Prompt**:
+
+                    ```
+                    Add a method to calculate the average of the data.
+                    ```
+
+                4. **Review Suggestions**: Review the suggestions provided by Copilot Chat.
+                5. **Accept a Suggestion**: Once you're satisfied, accept the suggestion.
+        edges:
+          - text: "Show me the resulting code."
+            target_node_id: "screen13C"
+          - text: "How do I refine my prompt?"
+            target_node_id: "screen13D"
+
+      - id: screen13C
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                After accepting the suggestion, here is the resulting code with the new method added:
+
+                **Code**:
+
+                ```python
+                class DataProcessor:
+                    def __init__(self, data):
+                        self.data = data
+
+                    def calculate_average(self):
+                        return sum(self.data) / len(self.data)
+                ```
+
+                This process allows you to quickly and efficiently add new features to your code using inline chat.
+        edges:
+          - text: "How do I refine my prompt?"
+            target_node_id: "screen13D"
+          - text: "Let’s move forward."
+            target_node_id: "screen14"
+
+      - id: screen13D
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                If the initial suggestions don't meet your needs, you can refine your prompt to get more accurate responses. Here are some tips:
+
+                1. **Be Specific**: Clearly describe what you need.
+                    - Example: "Add a method to calculate the average of a list of integers."
+                2. **Provide Context**: Include relevant information about your code or project.
+                    - Example: "In the `DataProcessor` class, add a method to calculate the average of the data list."
+                3. **Use Examples**: Provide examples of input and output if possible.
+                    - Example: "Add a method to calculate the average of the data list. For example, if the data is [1, 2, 3, 4], the method should return 2.5."
+
+                By refining your prompt, you can guide GitHub Copilot Chat to generate more accurate and useful code suggestions.
+        edges:
+          - text: "Let’s move forward."
+            target_node_id: "screen14"
+
+      - id: screen14
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Regular expressions are patterns used to match character combinations in strings. They can be complex and difficult to understand, but GitHub Copilot Chat can help you generate them quickly and accurately. Let’s see how.
+        edges:
+          - text: "Show me how to create a regular expression."
+            target_node_id: "screen14A"
+
+      - id: screen14A
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Screenshot of Visual Studio Code with steps highlighted.]"
+            - type: "text"
+              content: |
+                To create a regular expression using inline chat, follow these steps:
+
+                1. **Select Code**: Select the relevant code in the editor.
+                2. **Open Inline Chat**: Press **Ctrl** + **I** to open the inline chat interface.
+                3. **Enter a Prompt**: Describe the data pattern you need to validate.
+                4. **Review Suggestions**: Review the suggestions provided by Copilot Chat.
+                5. **Accept a Suggestion**: Once you're satisfied, accept a suggestion to integrate it into your code.
+        edges:
+          - text: "Show me an example."
+            target_node_id: "screen14B"
+
+      - id: screen14B
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here’s an example that demonstrates how to create a regular expression for validating email addresses using inline chat:
+
+                1. **Select Code**:
+
+                    ```python
+                    # This function needs a regular expression to validate email addresses
+                    def validate_email(email):
+                        pass
+                    ```
+
+                2. **Open Inline Chat**: Press **Ctrl** + **I**.
+                3. **Enter a Prompt**:
+
+                    ```
+                    Create a regular expression to validate email addresses.
+                    ```
+
+                4. **Review Suggestions**: Review the regular expression provided by Copilot Chat.
+                5. **Accept a Suggestion**: Once you're satisfied, accept the suggestion.
+        edges:
+          - text: "Show me the resulting code."
+            target_node_id: "screen14C"
+          - text: "Explain the components of the regular expression."
+            target_node_id: "END"
+
+      - id: screen14C
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                After accepting the suggestion, here is the resulting code with the new regular expression added:
+
+                **Code**:
+
+                ```python
+                import re
+
+                def validate_email(email):
+                    regex = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+                    return re.match(regex, email) is not None
+                ```
+
+                This regular expression matches valid email addresses, ensuring they meet the required format.
+        edges:
+          - text: "Explain the components of the regular expression."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "[Visual breakdown of the regular expression components.]"
+            - type: "text"
+              content: |
+                Let’s break down the regular expression generated by Copilot Chat to validate email addresses:
+
+                1. `^`: Indicates the start of a line. The email address must start here.
+                2. `[a-zA-Z0-9._%+-]+`: Matches one or more (+) of the characters inside the square brackets. Characters can be lowercase (a-z), uppercase (A-Z), numeric (0-9), or special characters (., _, %, +, -).
+                3. `@`: Literal "at" symbol (@).
+                4. `[a-zA-Z0-9.-]+`: Matches the domain name portion with characters (a-z, A-Z, 0-9, ., -).
+                5. `\.`: Literal period (.) character.
+                6. `[a-zA-Z]{2,}`: Matches the domain extension with two or more alphabetic characters.
+                7. `$`: Indicates the end of a line. The email address must end here.
+
+                This regex matches any string that starts with one or more alphanumeric or special characters, followed by an @ symbol, a domain name, a period, and finally two or more alphabetic characters.
+  - name: "GitHub Copilot Best Practices"
+    context: "The GitHub Copilot Best Practices section outlines strategies for maximizing the effectiveness of GitHub Copilot. It emphasizes the importance of providing context, using meaningful function names, and adding detailed comments. Users are encouraged to keep related files open and include necessary references. Examples illustrate how to use top-level comments, prime Copilot with sample code, and iterate on solutions through Copilot Chat. Key practices include using chat participants and slash commands for better responses, breaking tasks into smaller prompts, and refining generated code iteratively. These techniques help users leverage Copilot's capabilities to improve coding efficiency and accuracy, ensuring more relevant and useful suggestions."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                While GitHub Copilot helps you write code faster and with fewer errors, it's essential to understand how to provide the right context and guidance to get the most out of its suggestions. Let's dive into these best practices.
+        edges:
+          - text: "Show me how to get the most out of Copilot inline suggestions."
+            target_node_id: "screen16"
+
+      - id: screen16
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                To get the most out of GitHub Copilot’s inline suggestions, follow these actions and behaviors:
+
+                1. **Provide Context**: Give Copilot enough context to understand what you're doing.
+                2. **Open Files**: Keep related files open in Visual Studio Code to set the context.
+                3. **Top-Level Comments**: Add a brief, high-level comment in your code files to provide context.
+                4. **Appropriate Includes and References**: Manually set the necessary includes or module references.
+        edges:
+          - text: "Give me some more suggestions."
+            target_node_id: "screen16A"
+          - text: "Tell me more about providing context to Copilot."
+            target_node_id: "screen17"
+
+      - id: screen16A
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You can follow these actions and behaviors in addition to the ones above:
+
+                1. **Meaningful Function Names**: Use descriptive function names to help Copilot understand the function's purpose.
+                2. **Specific and Well-Scoped Function Comments**: Add detailed comments to functions for better suggestions.
+                3. **Prime Copilot with Sample Code**: Insert desirable code samples to guide Copilot’s suggestions.
+                4. **Maintain High-Quality Code**: Keep the quality of your code high to ensure better suggestions.
+        edges:
+          - text: "Tell me more about providing context to Copilot."
+            target_node_id: "screen17"
+          - text: "How do I use top-level comments effectively?"
+            target_node_id: "screen18"
+
+      - id: screen17
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Copilot works best when it has sufficient context, just as you would provide a colleague with context when asking for help. Here’s how you can provide context to Copilot:
+
+                1. **Open Files**: Keep all related files open to help Copilot see the bigger picture.
+                2. **Top-Level Comments**: Add high-level comments to describe the overall purpose of your code.
+                3. **Appropriate Includes**: Manually set the necessary includes or module references for your project.
+        edges:
+          - text: "How do I use top-level comments effectively?"
+            target_node_id: "screen18"
+          - text: "What about meaningful function names?"
+            target_node_id: "screen19"
+
+      - id: screen18
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Adding a top-level comment in your code file can help Copilot understand the overall context of your code.
+
+                **Example**:
+
+                ```python
+                # This module handles user authentication and authorization.
+                class UserAuth:
+                    def __init__(self, user_data):
+                        self.user_data = user_data
+                ```
+
+                A brief, high-level comment at the top of your file can guide Copilot to provide better suggestions.
+        edges:
+          - text: "What about meaningful function names?"
+            target_node_id: "screen19"
+          - text: "How do I use specific function comments?"
+            target_node_id: "screen20"
+
+      - id: screen19
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Using meaningful function names helps Copilot understand the purpose of your functions and provide more accurate suggestions.
+
+                **Example**:
+
+                ```python
+                def fetch_user_data(user_id):
+                    # Fetches data for a given user ID
+                    pass
+                ```
+
+                Avoid generic names like `fetchData()` and use descriptive names like `fetch_user_data()` to help Copilot generate relevant code.
+        edges:
+          - text: "How do I use specific function comments?"
+            target_node_id: "screen20"
+          - text: "How do I prime Copilot with sample code?"
+            target_node_id: "screen21"
+
+      - id: screen20
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Adding specific and well-scoped comments to your functions can help Copilot generate more accurate code suggestions.
+
+                **Example**:
+
+                ```python
+                def calculate_total_price(items):
+                    """
+                    Calculate the total price of items in the cart.
+
+                    Parameters:
+                    items (list): List of items where each item is a dictionary with 'price' and 'quantity'.
+
+                    Returns:
+                    float: Total price of all items.
+                    """
+                    pass
+                ```
+
+                These comments provide Copilot with additional context about the function’s purpose and parameters.
+        edges:
+          - text: "How do I prime Copilot with sample code?"
+            target_node_id: "screen21"
+          - text: "Alright, let’s move on!"
+            target_node_id: "screen22"
+
+      - id: screen21
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                One trick to get Copilot on the right page is to copy and paste desirable code samples into an open editor tab. This helps Copilot understand the style and structure you want to emulate.
+
+                **Example**:
+
+                ```python
+                # Sample code for using the latest version of a library
+                import new_library
+
+                def new_function():
+                    return new_library.perform_action()
+                ```
+
+                After Copilot generates code that matches your goal, you can delete the sample code. This approach is particularly useful for ensuring Copilot uses the latest library versions.
+        edges:
+          - text: "Alright, let’s move on!"
+            target_node_id: "screen22"
+
+      - id: screen22
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                When interacting with GitHub Copilot through chat, there are several things you can do to optimize your experience:
+
+                1. **Use Chat Participants, Slash Commands, and Chat Variables**: Collect extra context about your code or specific technologies.
+                2. **Be Specific and Keep It Simple**: Break large tasks into smaller, manageable prompts.
+                3. **Iterate on Your Solution**: Refine and improve the generated code through iterative prompts.
+        edges:
+          - text: "Let’s move forward!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Using chat participants and slash commands can help Copilot Chat provide better responses:
+
+                - **Chat Participants**: Use `@workspace` for project-related questions or `@vscode` for Visual Studio Code features.
+                - **Slash Commands**: Specify your intent with commands like `/explain` to learn about a codebase, `/fix` for help with issues, or `/tests` for creating test cases.
+                - **Chat Variables**: Reference specific files or contexts using the `#` symbol, such as `#file`.
+
+                **Example**:
+
+                ```
+                @workspace /explain #file:package.json Can you suggest improvements to this file?
+                ```
+
+                These tools help Copilot Chat understand the context and intent of your questions, providing more relevant and accurate responses.
+  - name: "Wrap up + Summary"
+    context: "The Wrap up + Summary section emphasizes the combined use of GitHub Copilot and Copilot Chat to enhance coding efficiency. It illustrates how to start with inline code completions and then use Copilot Chat for further refinements, such as adding error handling. Key takeaways include leveraging Copilot's tools like code line completions, inline chat, and chat view, following best practices for providing context, using descriptive names and comments, and utilizing chat features for precise coding solutions."
+    id: "6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                When asking Copilot Chat for help, you aren't stuck with the first response. You can iterate and prompt Copilot to improve the solution. Copilot retains the context of the generated code and your current conversation.
+
+                **Example**:
+
+                1. **Initial Prompt**:
+
+                    ```
+                    Create a function to fetch data from an API using Axios.
+                    ```
+
+                2. **Initial Response**:
+
+                    ```javascript
+                    const axios = require('axios');
+
+                    async function fetchData(url) {
+                        const response = await axios.get(url);
+                        return response.data;
+                    }
+                    ```
+
+                3. **Refinement Prompt**:
+
+                    ```
+                    Add error handling to the fetchData function.
+                    ```
+
+                4. **Refined Response**:
+
+                    ```javascript
+                    const axios = require('axios');
+
+                    async function fetchData(url) {
+                        try {
+                            const response = await axios.get(url);
+                            return response.data;
+                        } catch (error) {
+                            console.error('Error fetching data:', error);
+                            throw error;
+                        }
+                    }
+                    ```
+
+                By iterating on your prompts, you can refine and improve the code generated by Copilot.
+        edges:
+          - text: "Got it, let’s move on!"
+            target_node_id: "screen25"
+
+      - id: screen25
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Using GitHub Copilot and Copilot Chat together can significantly enhance your coding efficiency:
+
+                1. **Code Completion with Copilot**: Use the GitHub Copilot extension for inline code completions and suggestions as you type.
+                2. **Interactive Assistance with Copilot Chat**: Use GitHub Copilot Chat for more extensive interactions, asking questions, and refining your code through chat prompts.
+                3. **Combine Features**: Leverage the strengths of both extensions to tackle different aspects of your development tasks. For example, use inline completions for quick code generation and Copilot Chat for more complex queries and iterative improvements.
+
+                By combining these features, you can create a seamless and efficient coding workflow.
+        edges:
+          - text: "Show me an example of using both extensions together."
+            target_node_id: "screen26"
+
+      - id: screen26
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Here’s an example of how to use both GitHub Copilot extensions together:
+
+                1. **Start with Code Completion**:
+                    - Begin typing a function, and let GitHub Copilot suggest code completions.
+
+                    ```python
+                    def fetch_data(url):
+                        response = requests.get(url)
+                        return response.json()
+                    ```
+
+                2. **Use Copilot Chat for Refinement**:
+                    - Open Copilot Chat (Ctrl + I) and ask for improvements.
+
+                    ```
+                    Add error handling to the fetch_data function.
+                    ```
+
+                3. **Incorporate Suggestions**:
+                    - Review and accept the refined code suggestion.
+
+                    ```python
+                    def fetch_data(url):
+                        try:
+                            response = requests.get(url)
+                            response.raise_for_status()
+                            return response.json()
+                        except requests.exceptions.HTTPError as http_err:
+                            print(f"HTTP error occurred: {http_err}")
+                        except Exception as err:
+                            print(f"Other error occurred: {err}")
+                    ```
+
+                By using both extensions, you can quickly generate and iteratively improve your code.
+        edges:
+          - text: "Got it, what’s next?"
+            target_node_id: "screen27"
+
+      - id: screen27
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Great work! Here are a few takeaways from this quest:
+
+                - GitHub Copilot in Visual Studio Code offers various tools to streamline coding, including code line completions, inline chat, and chat view, enhancing efficiency and accuracy.
+                - GitHub Copilot Chat allows for interactive code creation and learning new libraries or frameworks with clear, scoped prompts.
+                - Code line completions provide context-based suggestions, while inline chat helps with creating features, modifying code, and generating regular expressions.
+                - The chat view assists with questions, error resolution, and learning new techniques, offering options to manage code blocks effectively.
+                - Best practices include providing context, using meaningful names and comments, priming with sample code, and utilizing chat participants, slash commands, and variables for precise and iterative coding solutions.
+        edges:
+          - text: "End Quest"
+            target_node_id: END
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Congratulations! You've completed the GitHub Copilot Quest. Keep exploring and enhancing your coding skills with GitHub Copilot and Copilot Chat. Happy coding!

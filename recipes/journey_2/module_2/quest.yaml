@@ -1,0 +1,340 @@
+tasks:
+  - name: "Intro to Code Improvements with GitHub Copilot"
+    context: "The \"Intro to Code Improvements with GitHub Copilot\" section explains how GitHub Copilot Chat helps enhance code quality, reliability, performance, and security. It highlights the importance of coding experience and the time required for code improvements, emphasizing that analyzing and improving large codebases can be time-consuming. GitHub Copilot assists by identifying issues, accelerating the improvement process, and providing best practice guidance, ultimately saving time and effort while still requiring foundational coding skills."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Gif of Ada AI greeting with a welcoming gesture."
+            - type: "text"
+              content: "In this quest, we'll explore how GitHub Copilot can assist you in improving your codebase. GitHub Copilot Chat provides suggestions for enhancing code quality, reliability, performance, and security based on the context of your code. This quest will guide you through leveraging GitHub Copilot Chat to implement various code improvements."
+        edges:
+          - text: "How does GitHub Copilot assist with code improvements?"
+            target_node_id: "screen2"
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual of a developer coding with multiple screens displaying code."
+            - type: "text"
+              content: "Implementing code improvements typically requires extensive experience and time. Understanding software development principles, coding concepts, programming languages, and best practices is crucial. Practical experience with codebases and development tools is also essential for effectively implementing code improvements."
+        edges:
+          - text: "Tell me more about the time required for code improvements."
+            target_node_id: "screen3"
+          - text: "How can GitHub Copilot help in this process?"
+            target_node_id: "END"
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual of a developer working late at night."
+            - type: "text"
+              content: "Implementing code improvements can be a time-consuming process. Analyzing your codebase, identifying areas for improvement, and implementing necessary changes can take hundreds or even thousands of hours. Large codebases and projects with tight deadlines add complexity to this process, making it difficult to manage."
+        edges:
+          - text: "How can GitHub Copilot help in this process?"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual of GitHub Copilot suggesting code improvements."
+            - type: "text"
+              content: "GitHub Copilot doesn't eliminate the need for foundational coding skills, but it provides significant assistance. It helps identify issues, accelerates the implementation process, and suggests improvements to your codebase. GitHub Copilot Chat provides guidance on best practices and helps you write cleaner, more efficient code, saving you time and effort."
+  - name: "Types of Code Improvements"
+    context: "This section highlights how GitHub Copilot Chat aids in enhancing various aspects of your code. It explains the importance of crafting effective prompts for Copilot to provide relevant suggestions and how to evaluate and implement these suggestions. The section categorizes code improvements into quality, reliability, performance, and security. Each category is discussed with examples of how Copilot can help, such as suggesting refactoring for better code quality, improving error handling for reliability, optimizing algorithms for performance, and enhancing data encryption for security."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of GitHub Copilot Chat assisting a developer with code improvements."
+            - type: "text"
+              content: "GitHub Copilot Chat assists developers in making code improvements by providing relevant suggestions based on the context of their codebase. This process involves two key elements; building effective prompts and evaluating and implementing the suggested updates."
+        edges:
+          - text: "How do I craft effective prompts?"
+            target_node_id: "screen5a"
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To create an effective prompt for GitHub Copilot, you need a clear understanding of what you want to achieve. Your prompts should be concise, specific, and focused. For example, if you want to improve code quality, you might create a prompt that asks GitHub Copilot to suggest refactoring updates to enhance the modularity of a specific class or method. Effective prompts help GitHub Copilot understand your goals and provide relevant suggestions. When GitHub Copilot receives prompts that are defined too broadly or vaguely, it may not be able to generate useful suggestions. We extensively covered prompting in Journey 1. If you need a refresher, you can go back and review it."
+        edges:
+          - text: "How do I evaluate and implement suggestions?"
+            target_node_id: "screen5b"
+      - id: screen5b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "GitHub Copilot Chat generates suggestions that reflect the context of your codebase and the intent of your prompt. You must be able to evaluate the suggestions and determine which ones are appropriate for your code. You also need to implement the suggestions in your codebase. This could involve changing code structure, refactoring code, or adding new features. Having the skills to evaluate and implement the suggestions provided by GitHub Copilot Chat is essential for making effective code improvements."
+        edges:
+          - text: "How can GitHub Copilot help with code quality improvements?"
+            target_node_id: "screen6"
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of different code improvement categories."
+            - type: "text"
+              content: "GitHub Copilot Chat provides guidance and suggestions that help you improve your code and accelerate your development process. The following categories of code improvements are covered in this module:\n- **Code Quality**: Enhance the readability, maintainability, and efficiency of your code.\n- **Code Reliability**: Improve the robustness, error handling, and stability of your code.\n- **Code Performance**: Optimize the speed, memory usage, and efficiency of your code.\n- **Code Security**: Enhance the security, privacy, and protection of your code and data."
+        edges:
+          - text: "How can GitHub Copilot help with code quality improvements?"
+            target_node_id: "screen7"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of clean, well-structured code on a monitor."
+            - type: "text"
+              content: "GitHub Copilot can suggest improvements to code quality, such as refactoring updates, design pattern suggestions, or code style enhancements. These suggestions can help you write cleaner, more maintainable code that follows best practices and coding standards.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code quality:\n- **Prompt**: 'Suggest refactoring updates to enhance the modularity of the `User` class.'\n- **Prompt**: 'Provide design pattern suggestions to improve the internal structure of the `OrderService` class.'\n- **Prompt**: 'Recommend code style enhancements to make the `ProductController` class more readable.'"
+        edges:
+          - text: "How can GitHub Copilot help with code reliability improvements?"
+            target_node_id: "screen8"
+          - text: "I need more details and examples."
+            target_node_id: "END"
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of robust code handling errors effectively."
+            - type: "text"
+              content: "GitHub Copilot can suggest improvements to code reliability, such as better error handling, more robust input validation, or enhanced exception handling. These suggestions can help you write more reliable code that handles edge cases and unexpected conditions more effectively.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code reliability:\n- **Prompt**: 'Suggest better error handling strategies for the `PaymentService` class.'\n- **Prompt**: 'Improve input validation in the `LoginForm` class to prevent invalid user input.'\n- **Prompt**: 'Enhance exception handling in the `DatabaseConnection` class to handle connection errors more gracefully.'"
+        edges:
+          - text: "How can GitHub Copilot help with code performance improvements?"
+            target_node_id: "screen9"
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code running efficiently with optimized performance."
+            - type: "text"
+              content: "GitHub Copilot can suggest improvements to code performance, such as optimizing algorithms, reducing memory usage, or improving the efficiency of code execution. These suggestions can help you write more efficient code that runs faster and consumes fewer resources.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code performance:\n- **Prompt**: 'Optimize the sorting algorithm used in the `ProductList` class to improve performance.'\n- **Prompt**: 'Reduce memory usage in the `ImageProcessing` class to make it more efficient.'\n- **Prompt**: 'Improve the efficiency of the `SearchService` class to speed up search queries.'"
+        edges:
+          - text: "How can GitHub Copilot help with code security improvements?"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of secure code protecting sensitive data."
+            - type: "text"
+              content: "GitHub Copilot can suggest improvements to code security, such as enhancing data encryption, implementing secure authentication mechanisms, or preventing common security vulnerabilities. These suggestions can help you write more secure code that protects sensitive data and prevents unauthorized access.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code security:\n- **Prompt**: 'Enhance data encryption in the `UserCredentials` class to protect user passwords.'\n- **Prompt**: 'Implement secure authentication mechanisms in the `LoginService` class to prevent unauthorized access.'\n- **Prompt**: 'Implement secure exception handling in the `SecurityService` class to prevent common security vulnerabilities.'"
+  - name: "Code Quality Improvements"
+    context: "The \"Code Quality Improvements\" section focuses on enhancing your code to make it cleaner, more maintainable, and aligned with best practices. GitHub Copilot can suggest various improvements, including refactoring updates, design pattern suggestions, and code style enhancements. Examples include prompts for improving the modularity of the User class, applying design patterns to the OrderService class, and enhancing the readability of the ProductController class. These suggestions help write better-quality code."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of clean, well-structured code on a monitor."
+            - type: "text"
+              content: "Improving code quality is essential for writing cleaner, more maintainable code that follows best practices and coding standards. GitHub Copilot can suggest various improvements to help you achieve this. These improvements can include refactoring updates, design pattern suggestions, and code style enhancements."
+        edges:
+          - text: "Show me an example of refactoring updates."
+            target_node_id: "screen11a"
+      - id: screen11a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code being refactored for better modularity."
+            - type: "text"
+              content: "GitHub Copilot can suggest refactoring updates to enhance the modularity of your classes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Suggest refactoring updates to enhance the modularity of the `User` class.'"
+        edges:
+          - text: "Show me an example of design pattern suggestions."
+            target_node_id: "screen11b"
+      - id: screen11b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of a design pattern being applied to code."
+            - type: "text"
+              content: "GitHub Copilot can provide design pattern suggestions to improve the internal structure of your classes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Provide design pattern suggestions to improve the internal structure of the `OrderService` class.'"
+        edges:
+          - text: "Show me an example of code style enhancements."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code with improved readability and style."
+            - type: "text"
+              content: "GitHub Copilot can recommend code style enhancements to make your classes more readable. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Recommend code style enhancements to make the `ProductController` class more readable.'"
+  - name: "Code Reliability Improvements"
+    context: "The \"Code Reliability Improvements\" section emphasizes creating robust applications that handle edge cases and unexpected conditions effectively. GitHub Copilot can suggest enhancements such as better error handling, more robust input validation, and enhanced exception handling. Examples include prompts for improving error handling in the PaymentService class, enhancing input validation in the LoginForm class, and refining exception handling in the DatabaseConnection class. These suggestions help write more reliable code."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of reliable, error-free code on a monitor."
+            - type: "text"
+              content: "Improving code reliability is crucial for creating robust applications that handle edge cases and unexpected conditions effectively. GitHub Copilot can suggest various improvements to help you achieve this, such as better error handling, more robust input validation, and enhanced exception handling."
+        edges:
+          - text: "Show me an example of better error handling strategies."
+            target_node_id: "screen12a"
+      - id: screen12a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code with improved error handling."
+            - type: "text"
+              content: "GitHub Copilot can suggest better error handling strategies for your classes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Suggest better error handling strategies for the `PaymentService` class.'"
+        edges:
+          - text: "Show me an example of improved input validation."
+            target_node_id: "screen12b"
+      - id: screen12b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code with robust input validation."
+            - type: "text"
+              content: "GitHub Copilot can improve input validation in your classes to prevent invalid user input. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Improve input validation in the `LoginForm` class to prevent invalid user input.'"
+        edges:
+          - text: "Show me an example of enhanced exception handling."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code with enhanced exception handling."
+            - type: "text"
+              content: "GitHub Copilot can enhance exception handling in your classes to handle connection errors more gracefully. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Enhance exception handling in the `DatabaseConnection` class to handle connection errors more gracefully.'"
+  - name: "Code Performance Improvements"
+    context: "The \"Code Performance Improvements\" section focuses on enhancing the efficiency of your applications. GitHub Copilot can suggest optimizations such as improving algorithms, reducing memory usage, and enhancing code execution. Examples include prompts for optimizing the sorting algorithm in the ProductList class, reducing memory usage in the ImageProcessing class, and improving the efficiency of the SearchService class. These suggestions help create high-performance, resource-efficient code."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of a high-performance code execution with speed metrics."
+            - type: "text"
+              content: "Enhancing code performance is essential for creating applications that run efficiently and use fewer resources. GitHub Copilot can suggest various improvements, such as optimizing algorithms, reducing memory usage, and improving the efficiency of code execution."
+        edges:
+          - text: "Show me an example of optimizing algorithms."
+            target_node_id: "screen13a"
+      - id: screen13a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of an optimized sorting algorithm in code."
+            - type: "text"
+              content: "GitHub Copilot can optimize algorithms to enhance performance. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Optimize the sorting algorithm used in the `ProductList` class to improve performance.'"
+        edges:
+          - text: "Show me an example of reducing memory usage."
+            target_node_id: "screen13b"
+      - id: screen13b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of code with reduced memory usage."
+            - type: "text"
+              content: "GitHub Copilot can suggest ways to reduce memory usage in your classes to make them more efficient. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Reduce memory usage in the `ImageProcessing` class to make it more efficient.'"
+        edges:
+          - text: "Show me an example of improving code efficiency."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of efficient code execution."
+            - type: "text"
+              content: "GitHub Copilot can improve the efficiency of code execution to speed up processes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Improve the efficiency of the `SearchService` class to speed up search queries.'"
+  - name: "Code Security Improvements"
+    context: "The \"Code Security Improvements\" section focuses on protecting sensitive data and preventing unauthorized access. GitHub Copilot can suggest enhancements such as improving data encryption, implementing secure authentication mechanisms, and preventing security vulnerabilities. Examples include prompts for enhancing data encryption in the UserCredentials class, implementing secure authentication in the LoginService class, and improving secure exception handling in the SecurityService class. These suggestions help write more secure code."
+    id: "6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of secure code practices with a shield and lock icon."
+            - type: "text"
+              content: "Enhancing code security is critical to protect sensitive data and prevent unauthorized access. GitHub Copilot can suggest improvements, such as enhancing data encryption, implementing secure authentication mechanisms, and preventing common security vulnerabilities."
+        edges:
+          - text: "Show me an example of enhancing data encryption."
+            target_node_id: "screen14a"
+          - text: "Show me an example of secure exception handling."
+            target_node_id: "END"
+      - id: screen14a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of encrypted data in code."
+            - type: "text"
+              content: "GitHub Copilot can enhance data encryption to protect user information. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Enhance data encryption in the `UserCredentials` class to protect user passwords.'"
+        edges:
+          - text: "Show me another example of implementing secure authentication mechanisms."
+            target_node_id: "screen14b"
+          - text: "Show me another example of secure exception handling."
+            target_node_id: "END"
+      - id: screen14b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of secure authentication process in code."
+            - type: "text"
+              content: "GitHub Copilot can suggest secure authentication mechanisms to prevent unauthorized access. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Implement secure authentication mechanisms in the `LoginService` class to prevent unauthorized access.'"
+        edges:
+          - text: "Show me another example of secure exception handling."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of secure exception handling in code."
+            - type: "text"
+              content: "GitHub Copilot can improve secure exception handling to prevent common security vulnerabilities. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Implement secure exception handling in the `SecurityService` class to prevent common security vulnerabilities.'"
+  - name: "Summary"
+    context: "The \"Summary\" section highlights how GitHub Copilot Chat enhances your code in key areas: improving code quality with refactoring, design patterns, and style enhancements; boosting reliability with better error handling and input validation; optimizing performance through algorithm and memory efficiency; and enhancing security with data encryption and secure authentication. It also guides users on accessing these tools in Visual Studio Code to streamline code improvements effectively."
+    id: "7"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "Visual representation of Visual Studio Code with GitHub Copilot tools highlighted."
+            - type: "text"
+              content: "To utilize GitHub Copilot Chat effectively, it's essential to understand how to access its tools in Visual Studio Code. The GitHub Copilot extensions provide easy access to several powerful features designed to enhance your coding experience and streamline the process of implementing code improvements, as discussed extensively in the previous module of this journey."
+        edges:
+          - text: "Give me a summary of this quest"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here's a quick summary on how GitHub Copilot Chat can enhance your code:\n1. **Code Quality**: Provides refactoring updates, design pattern suggestions, and code style enhancements to help you write cleaner, maintainable code.\n2. **Code Reliability**: Suggests better error handling, robust input validation, and enhanced exception handling to improve code reliability.\n3. **Code Performance**: Offers optimization suggestions for algorithms, memory usage, and execution efficiency to boost code performance.\n4. **Code Security**: Recommends improvements for data encryption, secure authentication mechanisms, and vulnerability prevention to enhance code security."
