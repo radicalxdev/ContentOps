@@ -8,7 +8,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "GIF of Ada AI greeting with a welcoming gesture."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Welcome to the world of Generative AI! Generative AI is a type of artificial intelligence that can create entirely new content from scratch. Unlike traditional AI systems, which are primarily designed for pattern recognition and classification, Generative AI uses deep learning techniques to produce human-like text, images, music, and even code. With Generative AI, the system is trained on a large corpus of data, which allows it to learn the patterns and relationships in the data and generate new content that is similar to the input data. This allows Generative AI systems to create content that is not only realistic but also unique and creative.\n\nWant to learn more about Generative AI?"
       edges:
@@ -21,7 +21,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Diagram showing the process of training a Generative AI model."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "At its core, Generative AI works by understanding and internalizing the distribution and nuances of vast amounts of data. Through extensive training on these datasets, it can generate outputs that are novel and not just copies. This involves complex algorithms and models that learn from the input data and can then produce new, unique content.\n\nDo you want to learn about its application in various fields?"
       edges:
@@ -34,7 +34,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Infographic detailing the evolution from traditional AI to Generative AI."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Generative AI represents a significant leap from traditional AI. Traditional AI focuses on analyzing and making decisions based on data, while Generative AI goes further by creating new, unseen outputs. This capability opens up numerous possibilities across various industries, from entertainment to healthcare to software development.\n\nWould you like to know more about its application in various fields or understand how it works?"
       edges:
@@ -47,7 +47,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Diagram showing the process of training a Generative AI model."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "At its core, Generative AI works by understanding and internalizing the distribution and nuances of vast amounts of data. Through extensive training on these datasets, it can generate outputs that are novel and not just copies. This involves complex algorithms and models that learn from the input data and can then produce new, unique content.\n\nDo you want to learn about its applications in various fields?"
       edges:
@@ -58,7 +58,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual representation of Generative AI applications in various fields (entertainment, healthcare, software development)."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Generative AI has a wide range of applications across various fields:\n\n- **Entertainment**: It creates realistic animations, enhances game development, and generates compelling narratives.\n- **Healthcare**: AI models can generate synthetic medical data for research, develop personalized treatment plans, and assist in drug discovery.\n- **Software Development**: Generative AI can write code, document processes, and even refactor existing code to improve efficiency.\n\nThese applications illustrate the transformative potential of Generative AI in driving innovation and efficiency across industries."
       edges:
@@ -69,7 +69,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Collage of outputs from GPT-4 and OpenAI Codex"
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Here are some examples of different Generative AI systems:\n\n- **DALL-E**: A model by OpenAI that generates detailed and creative images from textual descriptions.\n- **Midjourney**: An AI model that creates stunning visual content from textual descriptions.\n- **ChatGPT**: An extension of the GPT-3 model by OpenAI, fine-tuned for generating human-like conversational text.\n- **GitHub Copilot**: Powered by OpenAI Codex, this tool assists developers by providing code suggestions and automating repetitive coding tasks.\n\nThese generative AI models, built on Large Language Models (LLMs), demonstrate the versatility and power of AI in generating diverse and contextually relevant content across various domains."
       edges:
@@ -82,7 +82,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Illustration showing the connection between LLMs and Generative AI systems"
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Large Language Models (LLMs) are a key component of many Generative AI systems. These models are trained on large amounts of text data, which allows them to understand the patterns and rules of human language. This understanding is then leveraged by Generative AI systems to create new, unique, and creative content.\n\nIn essence, LLMs are the 'brains' behind Generative AI systems. Without the vast language understanding provided by LLMs, Generative AI systems would not be able to produce human-like text, images, or code."
   - name: "Introduction to LLMs"
@@ -94,7 +94,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual representation of a language model processing text data."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Large Language Models (or LLMs) are machine learning algorithms trained on large amounts of natural language data, such as books, articles, and even social media posts. This training allows the model to understand the patterns and rules of human language, which in turn enables it to perform a wide range of natural language processing tasks.\n\nWould you like to know how LLMs work or what tasks they can perform?"
       edges:
@@ -107,7 +107,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Diagram illustrating how LLMs work."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Instead of being explicitly programmed with rules, LLMs are fed large amounts of text data and trained to identify patterns and relationships within that data. During training, the model predicts the next word in a sequence, learning to understand context and patterns over time. This process enables the model to generate accurate and human-like text.\n\nLet's move on to some tasks that LLMs can perform."
       edges:
@@ -118,7 +118,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Collage showing different tasks performed by LLMs (text generation, translation, summarization, sentiment analysis, question answering)."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "LLMs excel at a wide range of tasks:\n\n- **Text Generation**: Creating original text based on a given prompt.\n- **Text Completion**: Finishing partially completed sentences or paragraphs.\n- **Language Translation**: Translating text from one language to another.\n- **Summarization**: Condensing longer texts into shorter versions.\n- **Sentiment Analysis**: Determining the sentiment of a piece of text (e.g., positive or negative).\n\nEach of these tasks showcases the versatility and power of LLMs."
       edges:
@@ -129,7 +129,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual examples of LLM applications in different contexts."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Here are some real-world examples of LLMs in action:\n\n- **Customer Support**: LLMs can generate accurate and helpful responses to customer inquiries, improving support efficiency.\n- **Content Creation**: Writers use LLMs to generate ideas, draft articles, and create content faster.\n- **Education**: LLMs help generate educational materials, summarize complex topics, and provide personalized tutoring.\n\nThese examples demonstrate the broad applicability and effectiveness of LLMs across various fields."
   - name: "Capabilities of Generative AI"
@@ -141,7 +141,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual representation of Generative AI applications (text generation, code generation, etc.)."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Generative AI is incredibly versatile, offering a wide range of capabilities. Let's explore some of the most impactful applications, from generating human-like text to enhancing software development with code generation and optimization.\n\nAre you ready to explore what Generative AI can do?"
       edges:
@@ -152,7 +152,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Infographic highlighting key capabilities of Generative AI (text generation, text-to-code, code refactoring, code translation, unit test generation)."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Generative AI can perform a variety of tasks that significantly enhance productivity and creativity. These include:\n\n- **Text Generation**: Creating human-like text for creative writing, conversational agents, and more.\n- **Text-to-Code**: Converting natural language descriptions into functional code.\n- **Code Refactoring**: Analyzing and optimizing existing code to improve performance and readability.\n- **Code Translation**: Translating code from one programming language to another.\n- **Unit Test Generation**: Creating unit tests to ensure code functionality and robustness.\n\nWe will explore each of these capabilities throughout this program."
   - name: "Limitations of Generative AI"
@@ -164,7 +164,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual representation of Generative AI with some warning signs indicating limitations."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Now that we've covered how LLMs and generative AI tools function and their capabilities to enhance your efficiency as a software developer, it's important to also discuss their limitations and implications. Understanding these challenges is crucial for effectively using and improving AI models.\n\nReady to explore the limitations of Generative AI?"
       edges:
@@ -177,7 +177,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Infographic showing the importance of knowing AI limitations."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Understanding the limitations of Generative AI helps us set realistic expectations, mitigate risks, and work towards improving these technologies. It ensures we use AI responsibly and effectively, avoiding potential pitfalls and maximizing benefits.\n\nShall we explore some of these limitations?"
       edges:
@@ -188,7 +188,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "A symbolic representation of an AI model with various warning signs around it. These warning signs could include icons for bias (e.g., a scale tilted to one side), outdated information (e.g., a calendar with a past date highlighted), context misinterpretation (e.g., a question mark inside a speech bubble), limited creativity (e.g., a lightbulb with a chain), and hallucinations (e.g., a cloud with random symbols)."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Understanding the limitations of Generative AI is crucial for effectively using and improving AI models. Here are the key areas we'll explore:\n\n**Scope and Quality**: Poor or biased training data leads to inaccurate or biased outputs.\n\n**Cutoff Dates**: AI models are trained up to a specific date and lack awareness of more recent events.\n\n**Context Understanding**: AI models often struggle with context, leading to misinterpretations and inflexible responses.\n\n**Limited Creativity**: AI creativity is limited by its training data, often resulting in repetitive or unoriginal outputs.\n\n**Hallucinations**: AI sometimes produces incorrect or nonsensical information, known as 'hallucinations.'\n\nDo you want to explore these in more detail?"
       edges:
@@ -199,7 +199,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual of data quality impacting AI outputs."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "### Scope and Quality\n\nGenerative AI models rely heavily on the quality and scope of their training data. If the data is limited, biased, or of poor quality, the generated outputs will reflect these shortcomings.\n\n**Examples**:\n\n- **Bias**: Biased training data results in biased outputs.\n- **Inaccuracy**: Limited data leads to incomplete understanding and inaccurate responses.\n\nLet's move on to the next one!"
       edges:
@@ -210,7 +210,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Calendar with a highlighted cutoff date."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "### Cutoff Dates\n\nGenerative AI models are trained on data available up to a certain date. This means they lack awareness of events, developments, or information that emerged after that date.\n\n**Examples**:\n\n- **Outdated Information**: A model trained on data up to 2021 won't know about events or advancements from 2022 or later.\n- **Irrelevance**: Inability to provide accurate responses to queries about recent events or technologies.\n\nWould you like to learn about another limitation?"
       edges:
@@ -221,7 +221,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual of an AI model misinterpreting a context."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "### Context Understanding\n\nGenerative AI models often struggle with fully understanding context, especially in new or unique scenarios outside their training parameters.\n\n**Examples**:\n\n- **Misinterpretation**: The model may misinterpret context-specific nuances, leading to irrelevant or incorrect outputs.\n- **Inflexibility**: Difficulty in adapting to new contexts or understanding subtle, situation-specific details.\n\nWould you like to learn about another limitation?"
       edges:
@@ -232,7 +232,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual representation of AI producing repetitive content."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "### Limited Creativity\n\nGenerative AI models can only be creative within the boundaries of their training data. They cannot generate entirely new ideas or think outside the box independently.\n\n**Examples**:\n\n- **Predictable Outputs**: AI-generated content often feels repetitive or lacks originality compared to human creativity.\n- **No Novelty**: Inability to produce truly novel ideas or concepts that were not part of the training data."
       edges:
@@ -243,7 +243,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual of AI generating nonsensical or incorrect information."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "### Hallucinations\n\nGenerative AI models sometimes produce outputs that seem plausible but are factually incorrect or nonsensical, known as 'hallucinations.'\n\n**Examples**:\n\n- **Incorrect Facts**: The model may generate statements or data that are entirely fabricated or inaccurate.\n- **Logical Errors**: Outputs that do not logically follow from the input provided, leading to confusing or misleading information."
       edges:
@@ -275,7 +275,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual representation of future advancements in AI technology."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "The future of Generative AI is promising, with potential advancements including:\n\n- **Enhanced Creativity**: Improved algorithms enabling more original and creative outputs.\n- **Deeper Context Understanding**: Models better grasping context, reducing errors.\n- **Ethical AI**: Advances in fairness and bias mitigation for more equitable outcomes.\n- **Revolutionary Applications**: Transforming industries like healthcare, finance, education, and entertainment through personalized experiences and task automation.\n\nHow do you see yourself applying Generative AI in your projects or career?"
       edges:
@@ -288,7 +288,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Visual of developers brainstorming project ideas with AI assistance."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "That's great to hear! Generative AI offers countless opportunities to innovate and enhance various projects. Whether it's automating repetitive tasks, generating creative content, or improving software development processes, the applications are vast.\n\nConsider how you can leverage Generative AI to:\n\n- Boost productivity in your development workflow.\n- Create personalized user experiences.\n- Automate documentation and testing.\n\nWould you like to see examples of how others are using Generative AI?"
       edges:
@@ -301,7 +301,7 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Collage of diverse Generative AI applications in different industries."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Here are some inspiring examples of how Generative AI is being applied across various fields:\n\n- **Healthcare**: AI models generate synthetic medical data for research, develop personalized treatment plans, and assist in drug discovery.\n- **Finance**: AI generates financial reports, predicts market trends, and automates customer service.\n- **Education**: AI creates customized learning materials, generates practice exercises, and provides personalized tutoring.\n- **Entertainment**: AI generates scripts, creates realistic animations, and composes music.\n\nThese examples showcase the transformative potential of Generative AI.\n\nReady to wrap up this module?"
       edges:
@@ -312,6 +312,6 @@ tasks:
       body:
         parts:
           - type: "image"
-            content: "Ada AI with a checklist, highlighting key takeaways."
+            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
           - type: "text"
             content: "Congratulations on completing this module on Generative AI! Here's a quick recap:\n\n1. **Generative AI Basics**: Learned how it creates new, unique content and differs from traditional AI.\n2. **How It Works**: Explored its reliance on large datasets and deep learning to generate novel outputs.\n3. **Applications**: Saw its transformative potential in entertainment, healthcare, and software development.\n4. **LLMs**: Understood the role of Large Language Models in powering Generative AI and their various capabilities.\n5. **Limitations**: Discussed key challenges like bias, context misinterpretation, and hallucinations.\n6. **Future Outlook**: Previewed advancements in creativity, context understanding, and ethical AI.\n\nNow that you have a thorough overview of Generative AI, this program will explore different applications of using Generative AI to augment your workflow and boost your efficiency."
