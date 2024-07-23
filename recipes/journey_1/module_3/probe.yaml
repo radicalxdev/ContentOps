@@ -1,6 +1,12 @@
 tasks:
   - name: "Question #1"
-    context: "Introduction to Prompt Engineering for Developers."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "1"
     nodes:
       - id: START
@@ -69,7 +75,13 @@ tasks:
             - type: "text"
               content: "For example, to generate a detailed code snippet for a feature, instead of a vague prompt like 'Write some code for a feature,' a more effective prompt would be 'Write a Python function that takes a list of integers and returns a list of those integers squared, using a list comprehension.' This specific prompt provides clear guidance and context, leading to a more useful and targeted response."
   - name: "Question #2"
-    context: "Understanding naive prompting."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "2"
     nodes:
       - id: START
@@ -129,7 +141,13 @@ tasks:
             - type: "text"
               content: "For instance, instead of asking 'Write code for a website,' which is too vague and open-ended, a better prompt would be 'Write HTML, CSS, and JavaScript code for a responsive single-page website with a navigation bar, image gallery, and contact form.' This detailed prompt gives the AI clear instructions on what is required, leading to more relevant and useful code generation."
   - name: "Question #3"
-    context: "Elements of well-constructed prompts."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "3"
     nodes:
       - id: START
@@ -189,7 +207,13 @@ tasks:
             - type: "text"
               content: "For example, instead of just saying 'Create a script,' a prompt with clear instructions would be 'Create a Python script that connects to a MySQL database, retrieves all records from the 'users' table, and prints each user's name and email address.' These instructions guide the AI to focus on the specific requirements of the task."
   - name: "Question #4"
-    context: "Importance of context in prompt engineering."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "4"
     nodes:
       - id: START
@@ -249,7 +273,13 @@ tasks:
             - type: "text"
               content: "For instance, a prompt like 'You are a software developer working on a real-time chat application. Write a function in JavaScript that connects to a WebSocket server, sends a message, and logs any incoming messages to the console.' This context helps the model tailor its output to the specific needs of a real-time chat application."
   - name: "Question #5"
-    context: "Identifying context in prompts."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "5"
     nodes:
       - id: START
@@ -309,7 +339,13 @@ tasks:
             - type: "text"
               content: "For instance, the prompt 'You are developing a web application for an online bookstore. Write a Python script using SQLAlchemy that updates the book inventory in a PostgreSQL database based on sales data from a CSV file.' This prompt gives clear context about the application, the technology stack, and the specific task, helping the AI generate a precise and useful script."
   - name: "Question #6"
-    context: "Purpose of output indicators."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "6"
     nodes:
       - id: START
@@ -369,7 +405,13 @@ tasks:
             - type: "text"
               content: "For example, a developer might use an output indicator by specifying, 'Generate a Python script with detailed inline comments explaining each step, in a professional and concise tone.' This directs the AI to not only create functional code but also ensure that the code is well-documented and professionally formatted."
   - name: "Question #7"
-    context: "Effective prompting for code generation."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "7"
     nodes:
       - id: START
@@ -429,7 +471,13 @@ tasks:
             - type: "text"
               content: "For instance, the prompt 'Generate a Python script that reads a CSV file, filters rows based on a condition, and writes the output to a new CSV file' provides clear and actionable instructions, ensuring that the generated script performs the specified data processing tasks accurately."
   - name: "Question #8"
-    context: "Chain-of-Thought approach in prompt engineering."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "8"
     nodes:
       - id: START
@@ -489,7 +537,13 @@ tasks:
             - type: "text"
               content: "For example, instead of asking the model to 'Design a full-stack web application,' a developer could break it down into smaller prompts: '1. Outline the overall architecture of a full-stack web application. 2. Generate the backend API endpoints using Flask. 3. Create the frontend user interface with React.' This step-by-step guidance helps the AI produce a more detailed and accurate overall design."
   - name: "Question #9"
-    context: "Iterative refinement in prompt engineering."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "9"
     nodes:
       - id: START
@@ -549,7 +603,13 @@ tasks:
             - type: "text"
               content: "For instance, a developer might start with a prompt like \"Generate a RESTful API in Python.\" After reviewing the initial output, they might refine the prompt to \"Generate a RESTful API in Python using Flask, including endpoints for CRUD operations on a 'users' resource.\" Further refinements could include specifying authentication mechanisms or error handling, resulting in progressively better and more precise API code."
   - name: "Question #10"
-    context: "Iterative refinement in prompt engineering."
+    context: |
+      This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
+      It covers key concepts such as clear instructions, context, output indicators, and iterative refinement.
+      The goal is to reinforce your learning and identify areas needing further review, ensuring you are well-prepared to use prompt engineering techniques in AI development.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "10"
     nodes:
       - id: START
