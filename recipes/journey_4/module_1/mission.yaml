@@ -10,7 +10,7 @@ tasks:
             - type: "image"
               content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
-              content: "Hello, {username}! Welcome to the 'Introduction to Manual Test Cases' mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? Creating manual test cases helps ensure that every aspect of your feature is tested thoroughly."
+              content: "Hello, {username}! Welcome to the \"Introduction to Manual Test Cases\" mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? Creating manual test cases helps ensure that every aspect of your feature is tested thoroughly."
             - type: "text"
               content: "Manually performing this process in a text editor or spreadsheet can be exhausting and time-consuming. Using AI can significantly accelerate the creation of manual test cases by analyzing requirements and existing codebases. Jira assists us in documenting these requirements and test cases. Let's get an interactive overview of Jira and its role in software testing."
         edges:
@@ -45,6 +45,13 @@ tasks:
           parts:
             - type: "text"
               content: "To enhance your testing process, integrate Jira with Katalon TestOps. Follow these steps:\n1. Go to the top toolbar and select Apps > Explore more apps.\n2. In the Atlassian Marketplace, search for Katalon and click Get app."
+        edges:
+          - text: "Done! What's next?"
+            target_node_id: "screen4a"
+      - id: screen4a
+        type: message
+        body:
+          parts:
             - type: "text"
               content: "This will install Katalon on your Jira site. Next, we'll configure Jira integration with Katalon Studio. Ready to proceed?"
         edges:
@@ -92,14 +99,22 @@ tasks:
               content: "Creating manual test cases is straightforward. Open the new ticket and click on the Katalon Manual Tests (BETA) button to generate manual test cases."
             - type: "text"
               content: "Notice how Katalon creates test cases based on criteria like acceptance criteria and the ticket itself. This allows developers to streamline the process of building the tests for quality assurance of their development."
+        edges:
+          - text: "Okay, got it!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
             - type: "text"
               content: "Review the generated test cases to ensure they align with the ticket requirements. You can add more context to the Jira ticket and regenerate the test cases for improved results."
             - type: "text"
               content: "Finally, click the 'Save to Katalon' button to migrate your manual test cases from your Jira ticket into Katalon Studio. Ready to summarize what you've learned?"
-        edges:
-          - text: "Yes, let's summarize!"
-            target_node_id: "END"
-      - id: END
+  - name: "Summary and Next Steps"
+    context: "In the final task, the learner will review and summarize the key points covered throughout the mission. This task will reinforce their understanding of the importance of manual test cases, how AI can assist in generating them, and the role of Jira and Katalon in managing and automating the testing process. By reflecting on what they've learned, the learner will consolidate their knowledge and be better prepared to apply these concepts in real-world scenarios. This summary will help ensure they are confident in using these tools to enhance their software testing workflows."
+    id: "4"
+    nodes:
+      - id: START
         type: message
         body:
           parts:
@@ -107,7 +122,12 @@ tasks:
               content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Let's recap what you've learned:\n- **Introduction to Manual Test Cases**: The importance of creating thorough and detailed test cases.\n- **Using AI to Create Test Cases**: How AI can accelerate and improve the process of generating manual test cases.\n- **Overview of Jira**: Understanding Jira's role in project management and software testing.\n- **Integrating Katalon with Jira**: Enhancing your testing process by integrating advanced test management tools.\n- **Creating and Managing Test Cases in Jira**: Steps to create, manage, and save manual test cases within Jira and Katalon."
+        edges:
+          - text: "Great, I'm ready to move forward!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
             - type: "text"
               content: "By leveraging AI and powerful tools like Jira and Katalon, you're now equipped to streamline your testing processes, ensuring higher quality and efficiency in your projects. Keep practicing and exploring these tools to master your skills."
-            - type: "text"
-              content: "Would you like to proceed to the next mission?"
