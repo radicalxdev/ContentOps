@@ -1,0 +1,113 @@
+tasks:
+  - name: "Understanding Jira and Its Role"
+    context: "This task focuses on helping the learner understand how Jira can enhance the software testing process. Jira provides a robust platform for creating, tracking, and managing test cases and defects. The learner will learn how to organize test cases, log and track defects, and generate detailed reports. By the end of this task, the learner will also set up a Jira account, preparing them to integrate it with other tools for an optimized testing workflow. This foundational knowledge will be crucial as they move forward in the mission."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Hello, {username}! Welcome to the 'Introduction to Manual Test Cases' mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? Creating manual test cases helps ensure that every aspect of your feature is tested thoroughly."
+            - type: "text"
+              content: "Manually performing this process in a text editor or spreadsheet can be exhausting and time-consuming. Using AI can significantly accelerate the creation of manual test cases by analyzing requirements and existing codebases. Jira assists us in documenting these requirements and test cases. Let's get an interactive overview of Jira and its role in software testing."
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen2"
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Jira helps in software testing by providing a robust platform to create, track, and manage test cases and defects. It allows teams to:\n- **Organize Test Cases**: Create and organize test cases with detailed descriptions, steps, and expected results.\n- **Track Defects**: Log and track defects identified during testing, ensuring they are resolved in a timely manner.\n- **Integrate with Other Tools**: Seamlessly integrate with test automation tools like Katalon TestOps to streamline the testing process.\n- **Generate Reports**: Produce detailed reports on testing progress and defect resolution, helping teams make data-driven decisions."
+            - type: "text"
+              content: "Ready to proceed with creating a Jira account?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To get started with Jira, follow these steps to create an account:\n1. Visit the [Atlassian Cloud sign-up page](https://www.atlassian.com/try/cloud/signup?bundle=jira-software&edition=standard). If you don't have a work email address, we recommend signing up with your Google, Microsoft, or Apple account.\n2. Select a unique and memorable name for your Jira site.\n3. Set up a workspace for your new site by choosing your preferred settings.\n4. Select a name for your first project and create it.\n5. Begin your 30-day free trial of Jira Cloud."
+            - type: "text"
+              content: "Once you've created your Jira account, we'll move on to integrating Katalon with Jira. Ready to proceed?"
+  - name: "Integrating Katalon with Jira"
+    context: "In this task, the learner will learn how to integrate Katalon TestOps with Jira to streamline the testing process. Katalon TestOps is a powerful tool that, when integrated with Jira, allows for efficient test management and automation. The learner will go through the steps to install Katalon on their Jira site, create an API key in Katalon TestOps, and configure Jira to connect with Katalon. By the end of this task, the learner will have a fully integrated setup that enhances their ability to manage and automate test cases effectively."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To enhance your testing process, integrate Jira with Katalon TestOps. Follow these steps:\n1. Go to the top toolbar and select Apps > Explore more apps.\n2. In the Atlassian Marketplace, search for Katalon and click Get app."
+            - type: "text"
+              content: "This will install Katalon on your Jira site. Next, we'll configure Jira integration with Katalon Studio. Ready to proceed?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen5"
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To connect Jira to Katalon TestOps, follow these steps to create a new API Key:\n1. Sign in to Katalon TestOps.\n2. Click on the Avatar icon in the top right corner.\n3. Navigate to User Settings > Katalon API Key.\n4. Click Create API Key in the top right corner.\n5. Enter a name for your key, select the expiration period, and then click Create.\n6. Copy the API key."
+            - type: "text"
+              content: "With your API key created, we're ready to connect Katalon TestOps with Jira. Ready to proceed?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To enable the TestOps - Jira integration in Jira software, follow these steps:\n1. Open your Jira projects. The URL for your Jira page will be in the format: `<sitename>.atlassian.net`.\n2. At the bottom of the left panel, click on Project settings.\n3. Scroll down the left panel, expand the App section, and select Katalon Settings.\n4. Fill in the following information:\n   - **Email**: Enter the email address registered with your Katalon account.\n   - **API Key**: Enter your TestOps API key.\n5. Click Fetch organizations and select your organization from the dropdown list.\n6. Click Save."
+            - type: "text"
+              content: "With everything now set up, let's create a Jira ticket to track and manage a UI component for testing. Ready to create a Jira ticket?"
+  - name: "Creating and Managing Jira Tickets"
+    context: "This task is designed to teach the learner how to create and manage Jira tickets for tracking and testing software components. The learner will learn how to create a detailed Jira ticket for a UI component, assign priorities, and use the Katalon Manual Tests feature to generate test cases. This task emphasizes the practical application of the tools and concepts learned so far, showing how to document and manage test cases directly within Jira, ensuring that all aspects of the project are thoroughly tested."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Follow these steps to create a Jira ticket:\n1. Click the 'Create' button in the top navigation bar of Jira.\n2. Choose the appropriate project from the dropdown menu and select 'Bug' as the issue type.\n3. Fill in the details:\n   - **Summary**: Enter a brief summary of the issue, such as 'Customer Sign-Up Page.'\n   - **Priority**: Set the priority level of the issue.\n4. Assign the issue to yourself for resolution.\n5. Click 'Create' to add the issue to your project backlog."
+            - type: "text"
+              content: "With the ticket created, we'll now generate manual test cases. Ready to proceed?"
+        edges:
+          - text: "Yes, let's continue!"
+            target_node_id: "screen8"
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Creating manual test cases is straightforward. Open the new ticket and click on the Katalon Manual Tests (BETA) button to generate manual test cases."
+            - type: "text"
+              content: "Notice how Katalon creates test cases based on criteria like acceptance criteria and the ticket itself. This allows developers to streamline the process of building the tests for quality assurance of their development."
+            - type: "text"
+              content: "Review the generated test cases to ensure they align with the ticket requirements. You can add more context to the Jira ticket and regenerate the test cases for improved results."
+            - type: "text"
+              content: "Finally, click the 'Save to Katalon' button to migrate your manual test cases from your Jira ticket into Katalon Studio. Ready to summarize what you've learned?"
+        edges:
+          - text: "Yes, let's summarize!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Let's recap what you've learned:\n- **Introduction to Manual Test Cases**: The importance of creating thorough and detailed test cases.\n- **Using AI to Create Test Cases**: How AI can accelerate and improve the process of generating manual test cases.\n- **Overview of Jira**: Understanding Jira's role in project management and software testing.\n- **Integrating Katalon with Jira**: Enhancing your testing process by integrating advanced test management tools.\n- **Creating and Managing Test Cases in Jira**: Steps to create, manage, and save manual test cases within Jira and Katalon."
+            - type: "text"
+              content: "By leveraging AI and powerful tools like Jira and Katalon, you're now equipped to streamline your testing processes, ensuring higher quality and efficiency in your projects. Keep practicing and exploring these tools to master your skills."
+            - type: "text"
+              content: "Would you like to proceed to the next mission?"

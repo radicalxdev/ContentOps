@@ -1,0 +1,215 @@
+tasks:
+  - name: "Mission Introduction and Setup"
+    context: "In this initial task, the learner will be introduced to the \"AI Visual Testing with Katalon AI\" mission. The goal is to emphasize the importance of thorough testing for new features, such as a Gantt chart for tracking project milestones in AI TaskMaster. The learner will set up a sample project in Katalon Studio, providing a foundation for understanding how AI can enhance the software testing process. This setup is crucial for the subsequent tasks, where the learner will create and execute test cases."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Hello, {username}! Welcome to the 'AI Visual Testing with Katalon AI' mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? AI can significantly enhance the software testing process by dynamically implementing and testing cases. We'll use Katalon Studio and AI to streamline this process. Let's begin by setting up a sample project in Katalon Studio."
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Let's begin by creating a sample project in Katalon Studio. This will provide us with an understanding of how AI can enhance the software testing process."
+            - type: "text"
+              content: |
+                1. In the Katalon Studio toolbar, click on the "New Sample Project" option.
+                2. Choose a name for your project and click "OK" to create a sample project from the remote repository.
+                3. Select "Sample Web UI Tests Project (Shopping Cart)."
+  - name: "Creating and Executing Test Cases"
+    context: "This task focuses on teaching the learner how to create and execute test cases for the Web UI elements of their web application. By creating a new test case and adding it to the existing sample project, the learner will understand how to define and manage test cases. Switching to script mode to execute these test cases will help the learner see how the test cases are translated into executable scripts, providing a practical understanding of test automation."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Next, we'll create a new Test Case to test the Web UI elements of your web application."
+            - type: "text"
+              content: |
+                1. Right-click on "Test Cases" and select "Create New Test Case."
+                2. Enter a name for your Test Case and click "OK."
+        edges:
+          - text: "Got it!"
+            target_node_id: "screen4"
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Open the 'Order and Checkout a single product' Test Case under the 'Custom-keyword samples' folder. You can add test cases here by clicking the 'Add' button."
+        edges:
+          - text: "Understood!"
+            target_node_id: "screen5"
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Once the test cases are in place, you can switch to Script mode to execute them. To do this, click the 'Script' option in the bottom toolbar."
+        edges:
+          - text: "Let's continue!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The script mode will open a script that executes all the previously defined test cases. You will notice that the new test cases you added have been automatically incorporated into the script as methods."
+  - name: "Reviewing Test Results and Generating Documentation"
+    context: "In this task, the learner will review the results of the executed test cases and learn how to use StudioAssist to generate detailed code documentation. This documentation helps in understanding what each method is designed to test. Additionally, the learner will use StudioAssist to generate new test cases from the code comments, streamlining the process of test case creation. This task emphasizes the importance of documentation and automation in maintaining a high-quality codebase."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "To explain the code, highlight the entire script or specific methods, then right-click to open the options. From there, navigate to the StudioAssist option and select 'Explain Code'. This will generate comments explaining what each method is designed to test."
+        edges:
+          - text: "Got it!"
+            target_node_id: "screen8"
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "At this point, we can run the script to validate the test cases by clicking the Run button, which will be a play button icon on the upper-most toolbar."
+        edges:
+          - text: "Let's run it!"
+            target_node_id: "screen9"
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "By default, Katalon Studio will launch a Google Chrome window to open the website and begin executing the test actions. You'll observe all actions being performed automatically. Keep the browser window open to avoid issues with the automation process."
+        edges:
+          - text: "Understood!"
+            target_node_id: "screen10"
+      - id: screen10
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Once the testing is complete, you will be able to view the final report, which includes details on all the passed and failed test cases."
+        edges:
+          - text: "Got it!"
+            target_node_id: "screen11"
+      - id: screen11
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "The best feature of StudioAssist is its ability to automatically generate test cases from code comments. Highlight the commented explanation and select StudioAssist > 'Generate Code'."
+        edges:
+          - text: "Let's try it!"
+            target_node_id: "screen12"
+      - id: screen12
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "This will create new test cases that can be executed again. Notice that the newly generated test cases may require some modifications to run correctly."
+        edges:
+          - text: "Understood!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For data-driven tests, you may need to test multiple form inputs. Go to the 'Variables' tab next to the 'Script' tab. Here, you can modify your variables and their values, and then rerun your test cases."
+  - name: "Data-Driven and Compatibility Testing"
+    context: "This task will teach the learner how to modify variables and values for data-driven tests, ensuring that multiple form inputs are tested thoroughly. The learner will also learn how to create test suites to ensure their application is compatible across different browsers and platforms. By running tests in sequential mode, the learner will understand how to validate their application’s performance in diverse environments. This task highlights the importance of comprehensive testing for ensuring robust and versatile software."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Now, let's ensure your application is compatible across different browsers and platforms. Go to 'Test Suites' under the 'Test Explorer' tab. Right-click on 'Test Suites' and select 'Create New Test Suite.'"
+        edges:
+          - text: "Understood!"
+            target_node_id: "screen15"
+      - id: screen15
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Click the 'Add' button next to the 'Delete' button in the 'Execution Information' menu. In the 'Test Case Browser,' select and add all the test cases you want to include."
+        edges:
+          - text: "Let's continue!"
+            target_node_id: "screen16"
+      - id: screen16
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Choose the browsers and platforms you want the tests to run on to ensure compatibility. After selecting the browsers and platforms, execute the tests in Sequential mode to run each test individually."
+        edges:
+          - text: "Got it!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Once the test suite has been executed, you will be able to view the final report after all the tests are completed."
+  - name: "Load Testing Using Parallel Mode"
+    context: "In this task, the learner will learn how to conduct load testing by running tests in parallel mode. This approach helps in speeding up the testing process by running multiple tests simultaneously, thereby evaluating the software application's performance under various levels of concurrent users and transactions. The learner will set parameters for maximum concurrent instances and delay between instances, gaining insights into the application's reliability under different conditions. This task is essential for ensuring that the application performs well under both normal and peak loads."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Load testing evaluates a software application's performance under specific levels of concurrent users and transactions. It ensures the application performs reliably under normal and peak conditions."
+        edges:
+          - text: "Let's continue!"
+            target_node_id: "screen19"
+      - id: screen19
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Go to the 'Test Suites' under the 'Test Explorer' tab. Select the option to run tests in Parallel mode under 'Execution Information'. Set the `Max concurrent instances` and `Delay between instances (in seconds)` parameters."
+        edges:
+          - text: "Got it!"
+            target_node_id: "screen20"
+      - id: screen20
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Running tests in Parallel mode helps speed up testing by running multiple tests simultaneously and managing system load. You will be able to view the final report after the tests are completed."
+        edges:
+          - text: "Understood!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Let's recap what you've learned:\n- **Introduction and Setup**: Setting up a sample project in Katalon Studio.\n- **Functionality Testing**: Creating and executing test cases to test Web UI elements.\n- **Reviewing Test Results and Generating New Test Cases**: Reviewing test results and using StudioAssist to generate new test cases.\n- **Data-Driven Testing**: Modifying variables and values for data-driven tests.\n- **Compatibility Testing**: Ensuring compatibility across different browsers and platforms.\n- **Load Testing Using Parallel Mode**: Conducting load testing to evaluate application performance under specific conditions."
+            - type: "text"
+              content: "By leveraging AI and powerful tools like Katalon Studio, you're now equipped to streamline your testing processes, ensuring higher quality and efficiency in your projects. Keep practicing and exploring these tools to master your skills."
+            - type: "text"
+              content: "Would you like to proceed to the next mission?"
+        edges:
+          - text: "Ready for the next mission!"
+            target_node_id: "END"
