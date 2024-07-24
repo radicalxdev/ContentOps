@@ -1,0 +1,177 @@
+tasks:
+  - name: "Introduction"
+    context: "This module begins by engaging learners with a friendly AI assistant gif, inviting them to recall the earlier example of using Eraser AI for visual documentation. It then transitions to a practical scenario involving the optimization of the AI Task Master automated ticket assignment tool. Learners face the challenge of designing a scalable microservices architecture, decomposing a monolithic system into distinct services like User Authentication, Ticket Management, Notifications, and Analytics. This complex process requires frequent updates to architectural diagrams. Generative AI, such as Eraser AI, can significantly streamline this iterative process, enhancing efficiency and fostering better collaboration. The module will delve into best practices for using Eraser AI to generate architecture and data flow diagrams. Learners will discover how AI can automate and improve the documentation process, making it more efficient and effective, ultimately enhancing their ability to collaborate and iterate on complex system designs."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's recall our earlier example of using Eraser AI to make visual documentation. Now imagine this—while working on the new AI Task Master automated ticket assignment tool, you need to optimize the system architecture, define workflows, and ensure seamless integration with existing systems. A major challenge is designing a scalable microservices architecture, breaking down the monolithic system into services like User Authentication, Ticket Management, Notifications, and Analytics. This process requires multiple iterations and constant updates to architectural diagrams.
+
+                Using Generative AI to streamline the iterative process and facilitate collaboration and discussion would significantly smoothen the workflow.
+
+        edges:
+          - text: "Tell me more"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                This module will discuss the best practices of using Eraser AI to generate architecture design diagrams and data flow diagrams. You'll learn how to leverage AI to automate and enhance the documentation process, making it more efficient and effective.
+
+  - name: "Best Practices"
+    context: "This section provides a comprehensive guide on best practices for utilizing Eraser AI to streamline the documentation process and enhance team communication. The module emphasizes leveraging AI-generated starting points, using a keyboard-first approach for efficiency, providing clear descriptions, refining AI-generated outputs, utilizing streaming results, and balancing detail with clarity. Learners will explore how to quickly generate initial diagrams from descriptions or code snippets using Eraser AI, enabling them to focus on refinement rather than starting from scratch. The keyboard-first design of Eraser AI allows for faster iteration and editing of diagrams, making the process more efficient. By starting with clear and concise descriptions, learners can ensure better initial outputs from the AI, which can then be refined with their expertise to achieve accuracy. The module also highlights the importance of using real-time streaming results to adjust or stop the generation process as needed, and finding the right balance in prompts to avoid overwhelming the AI while producing clear and useful diagrams. By following these best practices, learners can effectively use Eraser AI to enhance their documentation process, making it more efficient and improving team communication. The module provides an in-depth look at these benefits, demonstrating how Eraser AI supports agile development, speeds up the design process, and enables clear and immediate feedback. By using Eraser AI, teams can maintain up-to-date visual documentation, enhance collaboration, and improve overall workflow efficiency, ultimately making the documentation process more agile and responsive."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                While using Eraser AI, it's important to keep the following best practices in mind:
+
+                ### General Best Practices
+
+                **Leverage AI-generated starting points:** Eraser AI quickly generates initial diagrams from descriptions or code, allowing you to focus on refining rather than starting from scratch.
+
+                **Iterate with keyboard-first approach:** Use Eraser’s keyboard-first design to create and edit diagrams efficiently, speeding up the iteration process.
+
+                **Start with clear descriptions:** Provide concise and accurate descriptions to get better initial outputs from Eraser AI.
+
+                **Refine AI-generated outputs:** Review and refine the diagrams using your expertise to ensure accuracy.
+
+                **Utilize streaming results:** Use real-time streaming results to adjust or stop the generation process as needed.
+
+                **Balance detail and clarity:** Find the right balance in your prompts to avoid overwhelming the AI while producing clear, useful diagrams.
+
+                By following these best practices, you can effectively use Eraser AI to streamline your documentation process and improve team communication.
+
+        edges:
+          - text: "Show me more about these best practices"
+            target_node_id: "screen4"
+          - text: "Skip to the benefits of using Eraser AI"
+            target_node_id: "END"
+
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **Leverage AI-Generated Starting Points**
+
+                Eraser AI can quickly generate a starting point for your architectural design diagrams based on natural language descriptions or code snippets. This feature allows you to focus on refining and customizing the diagram rather than starting from scratch.
+
+        edges:
+          - text: "Next best practice"
+            target_node_id: "screen5"
+          - text: "Skip to the benefits of using Eraser AI"
+            target_node_id: "END"
+
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **Iterate with Keyboard-First Approach**
+
+                Eraser is designed to be keyboard-first, allowing you to create and edit entire diagrams without using a mouse. This approach can significantly speed up the iteration process when refining AI-generated diagrams.
+
+        edges:
+          - text: "Next best practice"
+            target_node_id: "screen6"
+          - text: "Skip to the benefits of using Eraser AI"
+            target_node_id: "END"
+
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **Start with Clear Descriptions**
+
+                When prompting Eraser AI to generate diagrams, provide clear and concise descriptions of your system architecture or data flows. The more specific and accurate your input, the better the initial output will be.
+
+        edges:
+          - text: "Next best practice"
+            target_node_id: "screen7"
+          - text: "Skip to the benefits of using Eraser AI"
+            target_node_id: "END"
+
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **Refine AI-Generated Outputs**
+
+                While Eraser AI can provide excellent starting points, it's important to review and refine the generated diagrams. Use your domain expertise to ensure all components are accurately represented and relationships are correctly depicted.
+
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              src: "team_collaborating_visual_documentation.png"
+            - type: "text"
+              content: |
+                Using Eraser AI streamlines the documentation process, enhancing agility and communication within development teams.
+
+                ### Benefits:
+
+                - **Frequent Updates and Iterative Design:** In agile environments, documentation needs frequent updates. Eraser AI allows quick updates to visual documentation, reflecting changes rapidly and supporting iterative design.
+                - **Rapid Prototyping:** Engineers can quickly translate ideas into visual prototypes, speeding up the design and iteration process.
+                - **Quick Feedback:** Visual representations facilitate faster feedback loops during design reviews and discussions, enabling quicker adjustments and improvements.
+
+        edges:
+          - text: "Tell me more about this."
+            target_node_id: "screen9"
+          - text: "Got it, let’s move on."
+            target_node_id: "END"
+
+      - id: screen9
+        type: message
+        body:
+          parts:
+            - type: "image"
+              src: "detailed_benefits_in_action.png"
+            - type: "text"
+              content: |
+                **Frequent Updates and Iterative Design**
+
+                Eraser AI supports agile development by enabling quick updates to visual documentation, ensuring it remains current and reflective of project changes.
+
+                **Rapid Prototyping**
+
+                Quickly translating ideas into visual prototypes accelerates the design process, allowing for more iterations and refinements.
+
+                **Quick Feedback**
+
+                Visual representations provide a clear and immediate way to gather feedback, making it easier to identify and address issues early.
+
+        edges:
+          - text: "Understood, let’s move on."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              src: "eraser_ai_impact_summary.png"
+            - type: "text"
+              content: |
+                Using Eraser AI streamlines the documentation process, enhances team collaboration, and improves overall workflow efficiency. By leveraging AI tools, you can maintain up-to-date visual documentation, support iterative design, and facilitate quicker feedback and adjustments.
+
+                Thank you for exploring how Eraser AI can enhance your visual documentation process!
+
