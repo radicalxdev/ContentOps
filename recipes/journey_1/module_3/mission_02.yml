@@ -87,7 +87,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/11799f51-e0b9-4514-97f3-a1ab071c8b32/Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's start by using the `@workspace` command to get a recommendation for organizing the new webhook function within the codebase. Here's an example prompt:
@@ -117,7 +117,7 @@ tasks:
                 3. Finally, suggest a module to place the webhooks file within the codebase.
                 ```
             - type: "image"
-              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/c8ef05a1-27d3-4f4b-9703-7db0fd18c363/Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Take a minute to examine the responses. Notice the difference in recommendations. Both responses suggest placing the new feature within the `app/api/` module, but the Chain-of-Thought reasoning also recommends creating a new file within the `app/api/` folder, adhering to the single responsibility principle. Let's dive deeper into a few more examples like the difference of the code suggestion when given two prompting techniques.
@@ -135,12 +135,12 @@ tasks:
                 
                 **Zero-shot Prompt Output:**
             - type: "image"
-              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/fe3c79b8-c9c2-4af9-baf4-66ab6dfb43a7/Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 **Chain of Thought Reasoning Output:**
             - type: "image"
-              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/900463cc-7471-46b6-99da-526666a216ee/Untitled.png"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Notice how the Chain-of-Thought reasoning provides a more detailed and step-by-step approach, while the zero-shot prompt is less specific. Ready to proceed to the summary?
