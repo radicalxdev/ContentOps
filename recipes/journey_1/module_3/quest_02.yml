@@ -747,7 +747,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Great work! You have now covered advanced prompt engineering techniques and are ready to apply these to enhance your current workflow. Here's a summary of what we've learned so far: 
