@@ -83,10 +83,10 @@ tasks:
                 ```python
                 @workspace #file:scheduler.py What does the code do?
                 ```
-            - type: "text"
-              content: "Take a minute to review the response from GitHub Copilot."
             - type: "image"
               content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Take a minute to review the response from GitHub Copilot."
         edges:
           - text: "Got it, let's continue!"
             target_node_id: "screen3"
@@ -141,6 +141,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's take a minute to analyze Copilot's output. Notice how Copilot didn't receive instructions on what framework to use and defaulted to the `unittest` library. In this case, we want to use `pytest`. Let's ask Copilot to rewrite the tests using the `pytest` framework by prompting:
@@ -148,8 +150,6 @@ tasks:
                 ```python
                 Make the tests using the pytest framework
                 ```
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
         edges:
           - text: "Understood, let's move on!"
             target_node_id: "END"
@@ -211,8 +211,6 @@ tasks:
             - type: "text"
               content: |
                 Take a minute to review Copilot's output. Notice how it modifies the file and provides a preview of the output. This lets us use natural language to modify the tests if needed. Copilot also includes comments to explain its assertions, which are crucial for understanding test logic.
-            - type: "image"
-              content: "https://prod-files-secure.s3.us-west-2.amazonaws.com/43a92826-71a1-4057-8884-809bc640049f/b4211438-5266-497b-96a4-50ab32937110/Untitled.png"
         edges:
           - text: "Understood, let's proceed!"
             target_node_id: "END"
