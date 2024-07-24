@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "Gif of Ada AI greeting with a welcoming gesture."
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Imagine the Product Manager asks you to create a detailed document explaining the structure of a new feature and its functionalities. Eraser offers an easy-to-use feature for creating detailed documentation to enhance cross-collaboration. Ready to get started?"
         edges:
