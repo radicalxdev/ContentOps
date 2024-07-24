@@ -1,6 +1,6 @@
 tasks:
   - name: "Welcome and Setup"
-    context: "This task introduces the learner to the mission of using Katalon Studio for automated Web UI testing and guides them through setting up Katalon Studio."
+    context: "In this initial task, learners are introduced to the mission of using Katalon Studio for automated Web UI testing. They are welcomed by Ada AI and given a scenario where they need to ensure the functionality and reliability of a new scheduling feature in AI TaskMaster. The task emphasizes the importance of Web UI testing, which includes verifying the functionality, usability, and performance of web application interfaces. Learners are then guided through the process of signing up for a free trial of Katalon Studio Enterprise, downloading, and installing the software. They are provided with a Git repository link to clone a sample project into Katalon Studio, which sets the foundation for the subsequent tasks. The task aims to familiarize learners with the Katalon Studio environment and prepare them for automated testing."
     id: "1"
     nodes:
       - id: START
@@ -57,7 +57,7 @@ tasks:
             - type: "text"
               content: "Katalon Studio offers several key features:\n\n- **Functionality Testing**: Verifies all interactive elements work as intended.\n- **Compatibility Testing**: Ensures the application works across different browsers and devices.\n- **StudioAssist**: AI-powered assistant for intelligent code generation and explanations."
   - name: "Functionality Testing"
-    context: "This task guides the learner through setting up functionality testing in Katalon Studio by creating and executing test cases."
+    context: "This task focuses on guiding learners through the setup of functionality testing in Katalon Studio. Learners will create and execute test cases to verify that all interactive elements on their web application work as intended. The task is broken down into two main steps: creating new test cases and adding them to the project. Learners will navigate to the 'Test Cases' section, create a new test case, and generate automated test cases. The task also introduces StudioAssist, an AI-powered assistant integrated into Katalon Studio, designed to enhance the efficiency of writing automated tests. StudioAssist offers features like intelligent code generation, code explanation, and context-based suggestions. Learners will configure their OpenAI credentials to use StudioAssist, and learn how to use it to generate and explain test scripts. The task aims to equip learners with the skills to automate functionality testing and leverage AI tools to improve their testing processes."
     id: "2" 
     nodes:
       - id: START
@@ -121,7 +121,7 @@ tasks:
             - type: "text"
               content: "The best feature of StudioAssist is its ability to automatically generate test cases from code comments. To do this:\n\n- Highlight the commented explanation.\n- Click on \"Generate Code\" in StudioAssist.\n\nThis will create new test cases that can be executed again.\n\nNotice that the newly generated test cases differ from the predefined ones. These cases might also fail initially since they are templates and may require some modifications to run correctly. Therefore, consider the AI-generated code as a starting point that may need adjustments."
   - name: "Advanced Testing"
-    context: "This task covers data-driven and compatibility testing in Katalon Studio."
+    context: "This task covers advanced testing techniques, including data-driven testing and compatibility testing, in Katalon Studio. Learners will understand how to perform data-driven tests by adjusting variables and their values to test multiple form inputs. They will learn the concept of data-driven testing, which involves running test scripts multiple times with different sets of input data to enhance test coverage, reliability, and efficiency. The task also guides learners through setting up compatibility testing to ensure their web application works across different browsers and devices. Learners will create a new test suite, add test cases, and choose the browsers and platforms to test on. The goal of this task is to provide learners with comprehensive testing skills, ensuring their applications perform well in various environments and under different data scenarios."
     id: "3"
     nodes:
       - id: START
@@ -160,7 +160,7 @@ tasks:
             - type: "text"
               content: "To execute the test suite:\n\n1. Choose Sequential mode to run tests individually.\n2. View the final report after all tests are completed."
   - name: "Load Testing"
-    context: "This task explains how to conduct load testing by running tests in parallel mode in Katalon Studio."
+    context: "In this task, learners will learn how to conduct load testing using Katalon Studio by running tests in parallel mode. Load testing evaluates the application's performance under specific levels of concurrent users and transactions, ensuring it performs reliably under normal and peak conditions. Learners will set parameters for maximum concurrent instances and delay between instances to manage system load and avoid resource conflicts. The task emphasizes the importance of load testing in identifying performance bottlenecks and ensuring the application can handle high user traffic. By the end of this task, learners will understand how to speed up the testing process by running multiple tests simultaneously and gain insights into the application's reliability under different conditions."
     id: "4"
     nodes:
       - id: START
@@ -179,7 +179,7 @@ tasks:
             - type: "text"
               content: "To set parameters:\n\n**Max Concurrent Instances**:\n\n- Specifies the maximum number of test cases running simultaneously.\n- Speeds up testing by running multiple tests at once.\n\n**Delay Between Instances**:\n\n- Defines the pause time between starting each test instance.\n- Manages system load and avoids resource conflicts."
   - name: "Summary and Best Practices"
-    context: "This task summarizes the mission and highlights best practices for using Katalon Studio."
+    context: "This final task summarizes the mission and highlights best practices for using Katalon Studio. Learners will review the key points covered in the mission, including Web UI testing for functionality and compatibility, creating and cloning projects, automating test cases, implementing advanced testing techniques, and conducting load testing. The task encourages learners to keep practicing these steps to enhance their web application testing skills. It also emphasizes the importance of exploring additional features in Katalon Studio and staying updated with new testing techniques to continuously improve the testing process. The task aims to reinforce the knowledge gained throughout the mission and motivate learners to apply best practices in their testing workflows."
     id: "5"
     nodes:
       - id: START
