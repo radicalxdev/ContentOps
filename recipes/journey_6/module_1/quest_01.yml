@@ -32,8 +32,6 @@ tasks:
         edges:
           - text: "What are the other risks of not having a monitoring system?"
             target_node_id: "END"
-          - text: "How can AI-powered monitoring help?"
-            target_node_id: "screen3"
 
       - id: END
         type: message

@@ -1,0 +1,175 @@
+tasks:
+  - name: "Introduction to Visual Testing"
+    context: "This section introduces learners to the concept and importance of visual testing through a scenario involving an e-commerce site with potential UI issues. Visual testing compares the current UI with baseline images to identify and fix visual discrepancies, ensuring a consistent and appealing user interface. Key benefits include enhancing user experience, maintaining brand image, and preventing revenue loss due to visual defects. Challenges in visual testing are also discussed, such as manual effort, dynamic content, and environment variability. The stage is set for exploring how AI can address these challenges in the next section."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Welcome to the Visual Testing Quest! Imagine an e-commerce site undergoing updates. Without visual testing, users might see misaligned buttons or misplaced images, causing frustration and lost sales. For example, a misaligned 'Buy Now' button could prevent purchases, leading to a loss in revenue and customer dissatisfaction."
+        edges:
+          - text: "What is visual testing?"
+            target_node_id: "screen2"
+          - text: "Why is visual testing important?"
+            target_node_id: "screen3"
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Visual testing ensures your application's UI looks as intended by comparing current UI with baseline images. This helps identify and fix visual discrepancies before users encounter them. Ready to dive into why visual testing is crucial?"
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen3"
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Visual testing is vital for:\n- **User Experience**: Ensures a consistent and appealing UI, enhancing user engagement and loyalty.\n- **Brand Image**: Maintains professionalism and customer trust by preventing visual defects.\n- **Preventing Revenue Loss**: Avoids lost sales due to visual issues, like incorrectly displayed forms preventing transactions."
+        edges:
+          - text: "Explain more."
+            target_node_id: "screen4"
+          - text: "Got it, let's move on."
+            target_node_id: "screen5"
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Examples of visual testing benefits:\n- **UI Design**: Ensures seamless interaction between users and digital products.\n- **Visual Bugs**: Prevents issues like misaligned buttons and incorrectly sized images.\n- **Consistency**: Maintains a consistent look across different browsers and devices."
+        edges:
+          - text: "What are the challenges faced in visual testing?"
+            target_node_id: "screen5"
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Visual testing faces challenges such as:\n- **Manual Effort**: Time-consuming and error-prone visual comparisons.\n- **Dynamic Content**: Managing frequently changing UI elements.\n- **Environment Variability**: Ensuring consistency across different browsers and devices."
+        edges:
+          - text: "How can AI help?"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "AI enhances visual testing by:\n- **Faster Test Creation**: Quickly generates and adapts test scripts.\n- **Effortless Maintenance**: Uses self-healing mechanisms to update tests automatically.\n- **Enhanced Accuracy**: Identifies significant visual changes, reducing false positives."
+  - name: "Katalon's Features"
+    context: |
+      This section highlights how AI enhances visual testing and provides an overview of Katalon Studio's features for streamlining this process. AI facilitates faster test creation, effortless maintenance with self-healing mechanisms, and enhanced accuracy by identifying significant visual changes. Katalon's visual testing features include automated visual testing, a self-healing mechanism, SmartWait, baseline management, and integration with Katalon TestOps.
+
+      Automated visual testing uses AI to compare images and detect discrepancies efficiently. The self-healing mechanism adapts to minor UI changes, reducing manual updates. SmartWait ensures elements are fully loaded before interactions, improving test reliability. Baseline management allows modifications to focus on critical UI areas, reducing false positives. Integration with Katalon TestOps centralizes test management and analysis, helping track performance and make data-driven decisions. This comprehensive overview equips learners with the knowledge to leverage Katalon Studio for efficient and reliable visual testing.
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Katalon Studio offers a suite of features to streamline visual testing, making it more efficient and reliable.\n- **Automated Visual Testing**: Uses AI to compare images and spot discrepancies.\n- **Self-Healing Mechanism**: Adapts to minor UI changes, reducing manual updates.\n- **SmartWait**: Ensures elements are fully loaded before interactions.\n- **Baseline Management**: Allows modifications to focus on critical UI areas.\n- **Integration with Katalon TestOps**: Centralizes test management and analysis. Want to explore Katalon's visual testing features in detail?"
+        edges:
+          - text: "Yes, let's explore each feature in detail."
+            target_node_id: "screen8a"
+          - text: "I'm familiar with Katalon's Visual testing, let's skip it."
+            target_node_id: "END"
+      - id: screen8a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "**Automated Visual Testing**: Katalon Studio uses AI to automate the visual testing process. It compares baseline images with test results to efficiently identify visual discrepancies. This automation reduces manual effort and increases accuracy, ensuring that any visual changes are promptly detected and addressed."
+        edges:
+          - text: "Yes, let's explore the next feature."
+            target_node_id: "screen8b"
+          - text: "Let's skip to the next part."
+            target_node_id: "END"
+      - id: screen8b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "**Self-Healing Mechanism**: Katalon's self-healing mechanism automatically adapts to minor UI changes. It dynamically updates locators to ensure that tests continue to run smoothly, even when there are minor changes to the UI. This significantly reduces the maintenance burden on testers and keeps your tests resilient to UI changes."
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen8c"
+          - text: "Let's skip to the next part."
+            target_node_id: "END"
+      - id: screen8c
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "**SmartWait**: Katalon's SmartWait feature ensures that all elements are fully loaded before any interaction takes place. This improves the reliability of your tests by waiting for elements to be ready before proceeding with the next steps, reducing the chances of test failures due to elements not being fully loaded."
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "screen8d"
+          - text: "Let's skip to the next part."
+            target_node_id: "END"
+      - id: screen8d
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "**Baseline Management**: Katalon allows you to modify baseline images and set ignore zones to focus on critical areas of the UI. This helps in managing dynamic content and reduces false positives by ignoring areas that are expected to change, ensuring that your tests are focused on the most important parts of the UI."
+        edges:
+          - text: "Yes, let's continue."
+            target_node_id: "END"
+          - text: "Let's skip to the next part."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "**Integration with Katalon TestOps**: Katalon TestOps provides a centralized platform for managing tests, analyzing results, and generating insights. This integration helps you track test performance, identify areas for improvement, and make data-driven decisions to enhance your visual testing process."
+  - name: "Summary"
+    context: "In this final section, learners explore the future of AI visual testing, which promises advancements such as improved accuracy with minimal false positives through AI and machine learning, increased automation for continuous testing, and consistent cross-browser and cross-device testing. The summary recaps the importance of visual testing for maintaining a flawless user interface and enhancing user experience, highlighting Katalon Studio's features: automated visual testing, self-healing mechanisms, SmartWait, baseline management, and integration with Katalon TestOps. With these tools and ongoing AI advancements, visual testing will become even more efficient and accurate, ensuring consistent UI quality across all platforms."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "AI visual testing is still a relatively new field and is continually evolving. The future holds exciting advancements that will further enhance its capabilities:\n- **AI and Machine Learning**: Improved accuracy with minimal false positives.\n- **Increased Automation**: Less manual intervention, enabling continuous testing.\n- **Cross-Browser and Cross-Device Testing**: Ensuring consistency across various environments."
+        edges:
+          - text: "Let's move on."
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Congratulations on finishing this quest! Here's a quick recap:\n\nVisual testing is crucial for maintaining a flawless user interface and enhancing user experience. Katalon Studio streamlines this process with:\n- **Automated Visual Testing**: Uses AI to identify discrepancies.\n- **Self-Healing Mechanism**: Adapts to minor UI changes automatically.\n- **SmartWait**: Ensures elements are fully loaded before interaction.\n- **Baseline Management**: Focuses on critical UI areas, reducing false positives.\n- **Integration with Katalon TestOps**: Centralized test management and insights.\n\nWith ongoing advancements in AI and automation, visual testing will become even more efficient and accurate, ensuring consistent UI quality across all platforms."
