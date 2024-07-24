@@ -1,6 +1,13 @@
 tasks:
   - name: "Question #1"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "1"
     nodes:
       - id: START
@@ -67,7 +74,14 @@ tasks:
             - type: "text"
               content: "For instance, a software architecture diagram visually represents the components of a system and their interactions, making it easier for developers and project managers to understand the overall structure and identify potential issues, as opposed to reading through detailed textual descriptions."
   - name: "Question #2"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "2"
     nodes:
       - id: START
@@ -125,7 +139,14 @@ tasks:
             - type: "text"
               content: "For example, an AI tool can automatically generate a class diagram from a set of classes in the codebase, including their relationships and methods, without requiring manual effort from the developer, thereby speeding up the documentation process and ensuring that the visual representation is up-to-date and accurate."
   - name: "Question #3"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "3"
     nodes:
       - id: START
@@ -183,7 +204,14 @@ tasks:
             - type: "text"
               content: "For instance, when a new module is added to a software project, Eraser AI can automatically update the system architecture diagram to include the new module and its interactions with existing components, ensuring that the visual documentation remains accurate and current."
   - name: "Question #4"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "4"
     nodes:
       - id: START
@@ -241,7 +269,14 @@ tasks:
             - type: "text"
               content: "For instance, a development team might schedule bi-weekly review meetings to go through recent code changes and use Eraser AI to update the corresponding documentation, ensuring that all new features and modifications are accurately documented."
   - name: "Question #5"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "5"
     nodes:
       - id: START
@@ -299,7 +334,14 @@ tasks:
             - type: "text"
               content: "For example, an AI tool can take a complex explanation of a machine learning algorithm and simplify the language, while also generating a flowchart that visually represents the algorithm's workflow, making the documentation more accessible to both technical and non-technical stakeholders."
   - name: "Question #6"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "6"
     nodes:
       - id: START
@@ -357,7 +399,14 @@ tasks:
             - type: "text"
               content: "For instance, if a developer adds a new function to the code, Eraser AI will instantly update the relevant sections of the documentation to include this new function, ensuring that anyone referring to the documentation has the most current information."
   - name: "Question #7"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "7"
     nodes:
       - id: START
@@ -415,7 +464,14 @@ tasks:
             - type: "text"
               content: "For example, a new developer joining a project can quickly understand the overall system architecture through a visual diagram, which highlights the main components and their interactions, rather than reading through lengthy textual descriptions."
   - name: "Question #8"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "8"
     nodes:
       - id: START
@@ -473,7 +529,14 @@ tasks:
             - type: "text"
               content: "For instance, if a documentation error is introduced in the latest update, version control allows the team to easily identify the change, understand its impact, and revert to an earlier, correct version of the document."
   - name: "Question #9"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "9"
     nodes:
       - id: START
@@ -531,7 +594,14 @@ tasks:
             - type: "text"
               content: "For example, when onboarding new team members, the comprehensive visual documentation generated by Eraser AI can help them quickly understand the existing codebase and system architecture, thereby speeding up the learning curve and integration into the team."
   - name: "Question #10"
-    context: ""
+    context: |
+      This probe tests and reinforces learners' understanding of visual documentation using Eraser AI.
+      It covers the benefits of visual documentation, such as reducing miscommunication and errors, and explains how AI-powered tools enhance software engineering by automating content generation and improving visual elements.
+      Learners will explore Eraser AI's role in generating diagrams from code, maintaining up-to-date documentation through regular reviews and real-time updates, and facilitating project onboarding and knowledge transfer.
+      The probe emphasizes the importance of version control and highlights the key benefit of AI tools in providing time efficiency and automation for documentation tasks.
+      DO NOT give the users answer to the questions in any case.
+      This is very important for my reputation so follow the instructions correctly.
+      If you follow the instructions correctly, you will be rewarded.
     id: "10"
     nodes:
       - id: START
