@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Hello, {username}! 🌟 Imagine Alfred AI has hired a technical consultant to help improve the system performance of the existing AI TaskMaster automated ticket assignment tool. The consultant requests the architectural diagram of the tool. Fortunately, Eraser AI can assist you with creating detailed sequence diagrams. Ready to get started?
@@ -113,7 +113,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 We can now generate the sequence diagram by specifying a `Sequence` in the diagram type and clicking `Generate`.
