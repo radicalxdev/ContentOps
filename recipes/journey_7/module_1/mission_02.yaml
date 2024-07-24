@@ -1,0 +1,158 @@
+tasks:
+  - name: "Mission Introduction and Setup"
+    context: "In this initial task, the learner will be introduced to the mission \"Generating Code Explanations Using GitHub Copilot Chat.\" The goal is to emphasize the importance of creating detailed documentation to enhance cross-collaboration among teams. The learner will set up a new file from their workspace dashboard, which will be used to generate the detailed documentation for a new feature in AI TaskMaster. This setup is crucial for understanding how to use GitHub Copilot Chat to generate comprehensive documentation that benefits both technical and non-technical team members."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: "Hello, {username}! Imagine the Product Manager asks you to create a detailed document explaining the structure of a new feature and its functionalities. Eraser offers an easy-to-use feature for creating detailed documentation to enhance cross-collaboration. Ready to get started?"
+        edges:
+          - text: "Ready to start!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "First, create a new file from your workspace dashboard. This file will be used to generate the detailed documentation."
+  - name: "Preparing the Documentation Outline"
+    context: "In this task, the learner will prepare a documentation outline for the new feature by using a provided prompt. They will copy the prompt, which details the objective and components of the system, and paste it into the Eraser AI feature to generate an outline. The learner will also select the technology stack to ensure the generated documentation is relevant to the project's technical requirements. This task will help the learner understand the initial steps in creating detailed and structured documentation."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Copy the original prompt used for the planning document:
+                ```
+                Objective:
+                
+                The goal is to develop a robust and functional ticket assignment system for AI TaskMaster, ensuring seamless collaboration and ideation within the internal team before presenting the final approach to stakeholders.
+                
+                Components of the System:
+                
+                1. Automated Ticket Routing:
+                - Uses AI to categorize and assign tickets based on predefined criteria such as priority, complexity, and team expertise.
+                
+                2. Dynamic Workload Balancing:
+                - Continuously monitors team members' workloads and adjusts ticket assignments to maintain balance and efficiency.
+                
+                3. Skill Matching:
+                - Analyzes the skills required for each ticket and matches them with the team's expertise, ensuring tickets are handled by the most qualified individuals.
+                
+                4. Real-Time Analytics:
+                - Provides insights into ticket trends, response times, and resolution rates to optimize performance and resource allocation.
+                
+                5. Collaboration Tools:
+                - Integrated chat and discussion forums for team members to collaborate on complex tickets, share knowledge, and provide peer support.
+                
+                ```
+        edges:
+          - text: "Copied the prompt"
+            target_node_id: "screen4"
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Paste the prompt into the Eraser AI feature by navigating to Both > Generate Outline. Select the 'Documentation' option from the Document type section."
+        edges:
+          - text: "Pasted the prompt and selected 'Documentation'"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Use the same technology stack as before: 'Python', 'Next.js', and 'MySQL'."
+  - name: "Generating and Reviewing Detailed Documentation"
+    context: "This task focuses on teaching the learner how to use Eraser AI to generate detailed documentation. The learner will answer follow-up questions and generate the documentation, then use the outline to ensure it is abstract and high-level. This documentation will be useful for cross-functional teams and technical teams to stay informed about the development and changing requirements. By the end of this task, the learner will have a comprehensive document that enhances understanding and collaboration."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Click on Next. Answer the follow-up questions as they appear and click Generate."
+        edges:
+          - text: "Answered questions and generated documentation"
+            target_node_id: "screen7"
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Once the detailed documentation is generated, click on Use Outline. Notice that the documentation is more abstract and high-level compared to the planning document, making it ideal for cross-functional teams and technical teams to stay informed about development and changing requirements."
+        edges:
+          - text: "Used the outline"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Next, create a workflow diagram for this new documentation:\n\n1. Go to Both > AI Diagram.\n2. From Canvas, select Flowchart under Diagram Type and click Generate."
+  - name: "Creating and Editing Workflow Diagrams"
+    context: "In this task, the learner will create a workflow diagram to visualize the technical components of the new feature. They will generate a flowchart using the AI Diagram feature and then make necessary edits to the visual components. This will help the learner understand the importance of visual documentation in explaining the flow of technical components to cross-functional teams. Continuous refinement of these diagrams is crucial for managing changing requirements and maintaining clear communication among team members."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "This will create a flowchart diagram in an abstracted manner for cross-functional teams to understand the flow of technical components."
+        edges:
+          - text: "Understood the diagram"
+            target_node_id: "screen10"
+      - id: screen10
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "As software development requirements constantly change, continuous refinement is crucial. Quickly make edits to visual components by going to Canvas, clicking on the diagram, and selecting Open Editor. Enter the following in the Diagram Edit Prompt field:\n\n```\nAdd a new component for assigning multiple people to one ticket.\n```"
+        edges:
+          - text: "Made the edits"
+            target_node_id: "screen11"
+      - id: screen11
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Click Generate Edits. This will automatically edit the existing diagram and add the new component where applicable."
+        edges:
+          - text: "Generated the edits"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Review the updated diagram to ensure that the new component for assigning multiple people to one ticket has been correctly added."
+  - name: "Understanding the Importance of Documentation"
+    context: "This final task will reinforce the importance of quality documentation in software engineering. The learner will understand how well-documented processes facilitate understanding among technical team members, cross-functional teams, and internal stakeholders. They will also learn how documentation aids in managing frequently changing requirements. By the end of this task, the learner will be ready to delve into more technical areas, such as architectural diagrams and data flows, enhancing their ability to create comprehensive planning and technical documentation."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Documentation is crucial in software engineering. Quality documentation facilitates understanding of the software development processes for technical team members, cross-functional teams, and internal stakeholders. It also aids in managing frequently changing requirements, a common occurrence in the software development lifecycle."
+        edges:
+          - text: "Understood the importance"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Having grasped how to use AI for creating comprehensive planning and technical documentation, it's now time to delve into more technical areas, such as architectural diagrams and data flows. Let's proceed!"
