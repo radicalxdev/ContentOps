@@ -1,0 +1,868 @@
+tasks:
+  - name: "Introduction to Google Cloud Run with GitHub Copilot"
+    context: "This quest guides learners through the process of deploying containerized applications on Google Cloud Run using GitHub Copilot. It covers setting up the environment, understanding Google Cloud Run, enabling necessary APIs, and deploying applications efficiently and securely. Learners will imagine themselves as part of the Alfred AI team, tasked with deploying the Project Management application using GitHub Copilot to streamline the process."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Welcome to your mission at Alfred AI! Today, you'll master deploying containerized applications on Google Cloud Run using GitHub Copilot. Imagine having a personal assistant to guide you through setting up cloud infrastructure, creating and optimizing YAML configurations, and ensuring your applications run efficiently and securely. That's what GitHub Copilot offers you!
+
+                In this mission, you'll learn to leverage GitHub Copilot to streamline the process of setting up and deploying applications on Google Cloud Run. By the end of this mission, you'll understand how to create, configure, and enhance your deployment configurations using GitHub Copilot's powerful AI capabilities.
+
+                Let's get started on this hands-on lab where you'll gain the skills to take your cloud deployments to the next level with GitHub Copilot!
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "END"
+          - text: "Tell me more about the scenario."
+            target_node_id: "screen2a"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Imagine you're part of the Alfred AI team, tasked with deploying the Project Management application on Google Cloud Run. You'll be using GitHub Copilot to guide you through the entire process, from understanding Google Cloud Run to setting up your environment and deploying your application.
+
+                Are you ready to prepare your environment?
+
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                You will be guided step-by-step by GitHub Copilot to set up and deploy the Project Management application. This includes:
+
+                - Preparing your development environment
+                - Learning about Google Cloud Run
+                - Understanding best practices for cloud deployments
+                - Setting up a Google Cloud project
+                - Deploying the application using Google Cloud Run
+
+                Ready to get started with setting up your environment?
+        edges:
+          - text: "Yes, let's prepare the environment and understand the scenario!"
+            target_node_id: "END"
+
+  - name: "Prepare Your Environment"
+    context: "Guides learners through setting up their development environment, including cloning the project repository, opening it in Visual Studio Code, and preparing to use GitHub Copilot for assistance. This task ensures that learners have the necessary tools and setup to proceed with deploying the Project Management application to Google Cloud Run."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Ensure your development environment is set up and ready for deployment. Open the Chat view in Visual Studio Code to start using GitHub Copilot for assistance.
+
+                **Steps to Follow:**
+
+                1. **Prepare Your Environment:**
+                    - **Open the Project Management System Codebase in Visual Studio Code:**
+                        - **Clone the Repository (if not already done):**
+                        If you haven't cloned the repository yet, open your terminal and run the following command:
+                            
+                            ```bash
+                            git clone https://github.com/alfred-ai-co/Project-Management-System.git
+                            ```
+                            
+                        - **Open the Project in Visual Studio Code:**
+                        Navigate to the project directory and open it in Visual Studio Code:
+                            
+                            ```bash
+                            cd Project-Management-System
+                            code .
+                            ```
+                            
+                2. **Open the Chat View in Visual Studio Code:**
+                    - **Select "Chat" from the Activity Bar:**
+                    In Visual Studio Code, look at the Activity Bar on the left side of the window. Click on the "Chat" icon to open the Chat view.
+                    - **Or Use the Keyboard Shortcut:**
+                    Alternatively, you can use the keyboard shortcut `Ctrl + Alt + I` to quickly open the Chat view.
+                    *(Screenshot placeholder: Image showing how to open the Chat view in VS Code)*
+
+                Ready to initiate GitHub Copilot Chat?
+        edges:
+          - text: "Yes, let's initiate GitHub Copilot Chat!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Once the Chat view is open, you'll see a chat interface where you can start interacting with GitHub Copilot.
+
+                By completing these steps, you've prepared your development environment and are ready to leverage GitHub Copilot for assistance in deploying the Alfred AI Project Management System to Google Cloud Run. This foundational setup will enable you to proceed smoothly with the subsequent tasks in this mission.
+
+                Ready to learn about Google Cloud Run?
+
+  - name: "Learn About Google Cloud Run"
+    context: "Provides an understanding of Google Cloud Run, including its benefits and use cases, using GitHub Copilot Chat to gather information. Learners will learn about the managed platform, scalability, cost efficiency, and flexibility of Google Cloud Run, as well as best practices for deploying applications."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Understand what Google Cloud Run is and how it can benefit your deployment strategy. Use GitHub Copilot Chat to gather information.
+
+                **Steps to Follow:**
+
+                1. **Ask GitHub Copilot About Google Cloud Run:**
+                    - **Prompt:** In the Chat view, type the following question to GitHub Copilot:
+                        
+                        ```markdown
+                        What is Google Cloud Run?
+                        ```
+                                                
+                        ```markdown
+                        Google Cloud Run is a managed compute platform that enables you to run stateless containers that are invocable via HTTP requests. It is fully managed by Google Cloud, meaning it handles infrastructure management tasks such as provisioning, configuring, and scaling the underlying infrastructure, allowing developers to focus on writing code. Cloud Run is built on the Knative open-source project, providing portability and consistency across different environments. It automatically scales your application up or down based on demand, even down to zero, ensuring you only pay for the compute resources you actually use. Cloud Run supports any language or library since it uses containers as the deployment unit, making it highly flexible for developers.
+                        ```
+                        
+                Ready to review the response from GitHub Copilot?
+        edges:
+          - text: "Yes, let's review the response!"
+            target_node_id: "screen4a"
+
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Review the response from GitHub Copilot to understand the key points about Google Cloud Run:
+
+                - **Managed Platform:** No need to manage the underlying infrastructure.
+                - **Scalability:** Automatically scales based on demand.
+                - **Cost Efficiency:** Pay only for the compute resources used.
+                - **Flexibility:** Supports any language or library by using containers.
+
+                Ready to understand best practices for deploying applications on Google Cloud Run?
+        edges:
+          - text: "Yes, let's learn best practices!"
+            target_node_id: "screen5"
+
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Learn the best practices for deploying applications on Google Cloud Run to ensure your application is efficient, secure, and scalable. Use GitHub Copilot Chat to gather this information.
+
+                **Steps to Follow:**
+
+                1. **Ask GitHub Copilot About Best Practices:**
+                    - **Prompt:** In the Chat view, type the following question to GitHub Copilot:
+                        
+                        ```markdown
+                        What are the best practices for deploying on Google Cloud Run?
+                        ```
+                                                
+                        ```markdown
+                        Following these best practices can help you leverage Google Cloud Run effectively, ensuring your applications are secure, efficient, and scalable:
+
+                        - **Container Optimization:** Use small, optimized base images to reduce startup time and resource consumption. Consider using distroless images or Alpine Linux for minimal setups.
+                        - **Statelessness:** Design your application to be stateless, with any persistent data stored outside of the container, such as in Google Cloud Storage or Cloud SQL.
+                        - **Graceful Shutdown:** Implement graceful shutdown logic to handle `SIGTERM` signals for smooth scaling down and updates.
+                        - **Concurrency:** Utilize Cloud Run's concurrency model by allowing multiple requests to be served by a single container instance, adjusting the concurrency level based on your application's characteristics.
+                        - **Environment Variables:** Use environment variables for configuration to keep your application flexible and secure.
+                        - **Dependencies Management:** Keep your dependencies up to date and scan them for vulnerabilities to maintain the security of your application.
+                        - **Request and Response Optimization:** Optimize request handling and responses to improve performance. Compress responses and efficiently parse requests.
+                        - **Health Checks and Observability:** Implement custom health checks if needed and utilize Cloud Run's integrated logging and monitoring with Google Cloud's operations suite.
+                        - **Security Practices:** Use Identity and Access Management (IAM) policies to control access to your Cloud Run services. Enable HTTPS and consider using Cloud Armor for additional security.
+                        - **CI/CD Integration:** Automate deployments using CI/CD pipelines with Cloud Build or other CI/CD tools to streamline development and deployment processes.
+                        - **Cost Management:** Monitor your usage and costs, and consider setting up alerts. Use the minimum necessary resources and scale down to zero when possible to optimize costs.
+                        - **Versioning and Rollbacks:** Use traffic splitting to gradually roll out new versions and facilitate rollbacks in case of issues.
+                        - **Domain Mapping:** For production applications, map your service to a custom domain for a professional appearance and to maintain control over your URLs.
+                        - **Cold Start Mitigation:** To reduce cold starts, keep your services warm by sending occasional requests or adjusting the minimum number of instances.
+                        ```
+                        
+                        [path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
+
+                Ready to review the response from GitHub Copilot?
+        edges:
+          - text: "Yes, let's review the response!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Review the best practices for deploying on Google Cloud Run:
+
+                - **Container Optimization:** Use minimal base images for efficiency.
+                - **Statelessness:** Store persistent data outside containers.
+                - **Graceful Shutdown:** Handle `SIGTERM` signals properly.
+                - **Concurrency:** Optimize multiple requests per container.
+                - **Environment Variables:** Use for configuration management.
+                - **Dependencies Management:** Keep dependencies up to date and secure.
+                - **Request and Response Optimization:** Improve performance with efficient handling.
+                - **Health Checks and Observability:** Monitor health and performance.
+                - **Security Practices:** Implement robust security measures.
+                - **CI/CD Integration:** Automate deployments.
+                - **Cost Management:** Monitor and optimize usage and costs.
+                - **Versioning and Rollbacks:** Manage versions and rollbacks effectively.
+                - **Domain Mapping:** Use custom domains for a professional appearance.
+                - **Cold Start Mitigation:** Manage cold starts to maintain performance.
+
+                Ready to set up your Google Cloud project?
+
+  - name: "Setting Up Your Google Cloud Project"
+    context: "Guides learners through creating and configuring a new Google Cloud project to deploy the Alfred AI Project Management System on Google Cloud Run. This includes enabling necessary APIs, verifying the setup, and ensuring that the environment is ready for deployment."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Create and configure a new Google Cloud project to deploy the Alfred AI Project Management System on Google Cloud Run.
+
+                **Steps to Follow:**
+
+                1. **Ask GitHub Copilot About Creating a New Google Cloud Project:**
+                    - **Prompt:** In the Chat view, type the following question to GitHub Copilot:
+                        
+                        ```markdown
+                        How do I create a new Google Cloud project?
+                        ```
+                        
+                    - **Sample Output from Copilot:**
+                        
+                        ```markdown
+                        To create a new Google Cloud project via the Google Cloud Console, follow these steps:
+
+                        1. **Open Google Cloud Console:** Go to the [Google Cloud Console](https://console.cloud.google.com/).
+                        2. **Sign In:** Log in with your Google account if you haven't already.
+                        3. **Project Selector:** At the top of the console, next to "Google Cloud Platform," click on the project dropdown (which might display your current project's name).
+                        4. **New Project:** In the project dropdown panel, click on "New Project" which will take you to the "New Project" creation screen.
+                        5. **Project Details:**
+                           - **Name:** Enter a name for your project. This name is for your reference in the Google Cloud Console and can be different from the project ID.
+                           - **Project ID:** Google Cloud automatically generates a unique project ID based on the project name, but you can choose to customize it. This ID is used in all Google Cloud commands and APIs.
+                           - **Billing account:** Choose a billing account to associate with the project. If you don't have a billing account, you'll need to create one. Note that some resources and services may incur costs.
+                        6. **Organization:** If you're part of a Google Workspace or Cloud Identity organization, you can select it here. Otherwise, you can leave it as "No organization".
+                        7. **Location:** You can optionally set a parent organization or folder for your project for resource hierarchy and billing purposes.
+                        8. **Create:** Click the "Create" button. Google Cloud will then provision your new project, which may take a few moments.
+                        9. **Activate Project:** Once created, you can select your new project from the project dropdown at the top of the console to activate it for use.
+                        ```
+                        
+                        [path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
+
+                Ready to follow these steps and create your Google Cloud project?
+        edges:
+          - text: "Yes, let's follow these steps!"
+            target_node_id: "screen6a"
+          - text: "Skip to enabling necessary APIs."
+            target_node_id: "screen7"
+
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Follow these steps to create a new Google Cloud project:
+
+                1. **Open Google Cloud Console:**
+                    - Navigate to the [Google Cloud Console](https://console.cloud.google.com/).
+                    - Sign in with your Google account if prompted.
+                    - *(Screenshot placeholder: Image of the Google Cloud Console login page)*
+                2. **Project Selector:**
+                    - At the top of the console, click the project dropdown to open the project selector.
+                    - *(Screenshot placeholder: Image showing the project dropdown in Google Cloud Console)*
+                3. **New Project:**
+                    - Click on "New Project" in the project selector panel.
+                    - Fill in the project details such as name, project ID, and billing account.
+                    - *(Screenshot placeholder: Image of the New Project creation screen)*
+                4. **Create and Activate Project:**
+                    - Click the "Create" button.
+                    - Wait for Google Cloud to provision your new project.
+                    - Select your new project from the project dropdown to activate it.
+                    - *(Screenshot placeholder: Image showing the newly created project in the project dropdown)*
+
+                Ready to enable the necessary APIs?
+        edges:
+          - text: "Yes, let's enable the APIs!"
+            target_node_id: "screen7"
+
+      - id: screen7
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Enable the necessary APIs for deploying applications on Google Cloud Run.
+
+                **Steps to Follow:**
+
+                1. **Ask GitHub Copilot About Enabling APIs:**
+                    - **Prompt:** In the Chat view, type the following question:
+                        
+                        ```markdown
+                        Which APIs do I need to enable for Google Cloud Run?
+                        ```
+                        
+                    - **Sample Output from Copilot:**
+                        
+                        ```markdown
+                        To deploy applications on Google Cloud Run, you need to enable the following APIs:
+
+                        1. **Cloud Run API:** Enables Cloud Run services.
+                        2. **Cloud Build API:** Allows for building container images.
+                        3. **Container Registry API:** Stores container images for deployment.
+
+                        You can enable these APIs in the Google Cloud Console under "APIs & Services" > "Library".
+                        ```
+                        
+                Ready to enable these APIs?
+        edges:
+          - text: "Yes, let's enable these APIs!"
+            target_node_id: "screen7a"
+          - text: "Skip to verifying Google Cloud setup."
+            target_node_id: "screen8"
+
+      - id: screen7a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                To enable the necessary APIs for Google Cloud Run:
+
+                1. **Open Google Cloud Console:** Go to the [Google Cloud Console](https://console.cloud.google.com/).
+                2. **Navigate to APIs & Services:** Click on the menu icon and select "APIs & Services" > "Library".
+                3. **Enable Cloud Run API:** Search for "Cloud Run API" and click "Enable".
+                4. **Enable Cloud Build API:** Search for "Cloud Build API" and click "Enable".
+                5. **Enable Container Registry API:** Search for "Container Registry API" and click "Enable".
+
+                Ready to verify the setup?
+        edges:
+          - text: "Yes, let's verify the setup!"
+            target_node_id: "screen8"
+
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Verify your Google Cloud project setup for deploying applications on Google Cloud Run.
+
+                **Steps to Follow:**
+
+                1. **Ask GitHub Copilot to Verify Setup:**
+                    - **Prompt:** In the Chat view, type the following question:
+                        
+                        ```markdown
+                        How do I verify my Google Cloud project setup for Cloud Run?
+                        ```
+                        
+                    - **Sample Output from Copilot:**
+                        
+                        ```markdown
+                        To verify your Google Cloud project setup for Cloud Run, follow these steps:
+
+                        1. Ensure that the Cloud Run API, Cloud Build API, and Container Registry API are enabled.
+                        2. Check your project billing status to ensure it is active.
+                        3. Test your setup by deploying a sample container to Cloud Run.
+                        ```
+                        
+                        [path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
+
+                Ready to follow these steps and verify the setup?
+        edges:
+          - text: "Yes, let's verify the setup!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                To verify your Google Cloud project setup for Cloud Run:
+
+                1. **Enable Necessary APIs:** Confirm that the Cloud Run API, Cloud Build API, and Container Registry API are enabled.
+                2. **Check Billing Status:** Ensure your project billing is active.
+                3. **Deploy a Sample Container:** Test your setup by deploying a sample container to Cloud Run.
+
+                Ready to prepare the Alfred AI Project Management application for deployment?
+
+  - name: "Preparing Alfred AI Project Management Application for Deployment"
+    context: "Ensures that the Alfred AI Project Management System is ready for deployment on Google Cloud Run using GitHub Copilot. This involves reviewing the Dockerfile, building and pushing the Docker image to Google Artifact Registry, and preparing for deployment."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Ensure the Alfred AI Project Management System is ready for deployment on Google Cloud Run using GitHub Copilot.
+
+                **Steps to Follow:**
+
+                1. **Review Existing Dockerfile:**
+                    - **Verify Dockerfile Configuration:** *(Screenshot placeholder: Image showing the Dockerfile content)*[path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
+                        - Open the `Dockerfile` in VS Code to confirm it's correctly configured for the Project Management API.
+                        - Example Dockerfile content:
+                            
+                            ```sql
+                            FROM python:3.9-alpine
+
+                            WORKDIR /app
+
+                            COPY requirements.txt ./
+                            RUN pip install --no-cache-dir -r requirements.txt
+
+                            COPY . .
+
+                            CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+                            ```
+                            
+                2. **Building and Pushing Docker Image to Google Artifact Registry:**
+                    - **Authenticate Docker with Google Cloud:**
+                        - In your terminal, run the following command to authenticate Docker with Google Cloud:
+                            
+                            ```bash
+                            gcloud auth configure-docker
+                            ```
+                            
+                    - **Build the Docker Image:**
+                        - Navigate to your project directory and build the Docker image:
+                            
+                            ```bash
+                            docker build -t gcr.io/[PROJECT_ID]/project-management-app .
+                            ```
+                            
+                        - Replace `[PROJECT_ID]` with your actual Google Cloud project ID.
+
+                Ready to push the Docker image to Google Artifact Registry?
+        edges:
+          - text: "Yes, let's push the Docker image!"
+            target_node_id: "screen9a"
+
+      - id: screen9a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Building and pushing the Docker image to Google Artifact Registry.
+
+                **Steps to Follow:**
+
+                1. **Authenticate Docker with Google Cloud:**
+                    - In your terminal, run the following command to authenticate Docker with Google Cloud:
+                        
+                        ```bash
+                        gcloud auth configure-docker
+                        ```
+                        
+                2. **Build the Docker Image:**
+                    - Navigate to your project directory and build the Docker image:
+                        
+                        ```bash
+                        docker build -t gcr.io/[PROJECT_ID]/project-management-app .
+                        ```
+                        
+                    - Replace `[PROJECT_ID]` with your actual Google Cloud project ID.
+
+                Ready to push the Docker image?
+        edges:
+          - text: "Yes, let's push the Docker image!"
+            target_node_id: "screen9b"
+
+      - id: screen9b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Push the built Docker image to Google Artifact Registry.
+
+                **Steps to Follow:**
+
+                1. **Push the Docker Image:**
+                    - Push the built Docker image:
+                        
+                        ```bash
+                        docker push gcr.io/[PROJECT_ID]/project-management-app
+                        ```
+                        
+                    - *(Screenshot placeholder: Image showing Docker push command in terminal)*
+                2. **Verify the Pushed Image in Google Artifact Registry:**
+                    - **Check Google Artifact Registry:**
+                        - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+                        - Navigate to "Artifact Registry" and verify that your Docker image has been successfully pushed.
+                        - *(Screenshot placeholder: Image showing Docker image in Google Artifact Registry)*
+
+                Ready to deploy the Docker image to Google Cloud Run?
+        edges:
+          - text: "Yes, let's deploy!"
+            target_node_id: "screen10"
+
+      - id: screen10
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Deploy the Docker image of the Alfred AI Project Management System to Google Cloud Run using GitHub Copilot.
+
+                **Steps to Follow:**
+
+                1. **Open GitHub Copilot Chat:**
+                    - **Activate Copilot Chat:**
+                        - In Visual Studio Code, open the Chat view by selecting "Chat" from the Activity Bar or by pressing `Ctrl + Alt + I`.
+                        - *(Screenshot placeholder: Image showing Copilot Chat view in VS Code)*
+                2. **Deploying the Docker Image:**
+                    - **Ask Copilot for Deployment Steps:**
+                        - In the Chat view, ask GitHub Copilot for the steps to deploy a Docker image to Google Cloud Run:
+                            
+                            ```markdown
+                            How do I deploy a Docker image to Google Cloud Run?
+                            ```
+                            
+                        - **Expected Response:**
+                        GitHub Copilot should provide you with detailed instructions on deploying the Docker image. Here's an example of what the response might look like:
+                            
+                            ```markdown
+                            To deploy a Docker image to Google Cloud Run, follow these steps:
+
+                            1. **Deploy the Image:**
+                               Run the following command to deploy your Docker image to Google Cloud Run:
+                               ```bash
+                               gcloud run deploy project-management-app --image gcr.io/[PROJECT_ID]/project-management-app --platform managed --region [REGION]
+                               ```
+
+                               Replace `[PROJECT_ID]` with your Google Cloud project ID and `[REGION]` with your desired region (e.g., `us-central1`).
+
+                            2. **Set Configuration:**
+                               During the deployment, you will be prompted to set the following configurations:
+                               - **Service Name:** Set it to `project-management-app`.
+                               - **Region:** Choose your preferred region.
+                               - **Authentication:** Set it to allow unauthenticated invocations if you want public access.
+
+                            3. **Verify Deployment:**
+                               Once the deployment is complete, Google Cloud Run will provide a URL for your service. You can visit this URL to access your deployed application.
+                            ```
+                      
+                Ready to execute the deployment command?
+        edges:
+          - text: "Yes, let's execute the deployment command!"
+            target_node_id: "screen10a"
+
+      - id: screen10a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Execute the deployment command provided by GitHub Copilot to deploy your Docker image to Google Cloud Run.
+
+                **Steps to Follow:**
+
+                1. **Deploy the Service:**
+                    - Open your terminal in VS Code and run the deployment command provided by GitHub Copilot:
+                        
+                        ```bash
+                        gcloud run deploy project-management-app --image gcr.io/[PROJECT_ID]/project-management-app --platform managed --region [REGION]
+                        ```
+                        
+                    - Replace `[PROJECT_ID]` with your actual Google Cloud project ID and `[REGION]` with your desired region.
+                    - **Expected Output:**
+                    The terminal should display the progress of your deployment. You will be prompted to confirm configurations like service name and region.
+                2. **Verify the Deployment:**
+                    - **Access the Deployed Application:**
+                        - Once the deployment is successful, Google Cloud Run will provide a URL for your deployed service.
+                        - Open a web browser and navigate to the provided URL to verify that your Project Management System is running.
+                        - **Expected Result:**
+                        You should see the Alfred AI Project Management System's interface, confirming that the deployment was successful.
+
+                Ready to review the deployment in Google Cloud Console?
+        edges:
+          - text: "Yes, let's review the deployment in Google Cloud Console!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Review the deployment in the Google Cloud Console to ensure everything is set up correctly.
+
+                **Steps to Follow:**
+
+                1. **Check Cloud Run Service:**
+                    - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+                    - Navigate to the "Cloud Run" section to review the deployed service details.
+                    - **Expected Result:**
+                    Your service `project-management-app` should be listed with details like region, status, and URL.
+
+                Ready to troubleshoot any issues?
+
+  - name: "Troubleshooting and Exploring Google Cloud Run"
+    context: "Guides learners through troubleshooting deployment issues on Google Cloud Run using GitHub Copilot Chat and Google Cloud Console. Provides insights into effective prompting for troubleshooting advice, exploring Google Cloud Run for debugging, and utilizing advanced troubleshooting techniques to handle performance bottlenecks and other issues."
+    id: "6"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Learn to troubleshoot deployment issues on Google Cloud Run using GitHub Copilot Chat and Google Cloud Console. Understand how to effectively prompt for troubleshooting advice and explore Google Cloud Run for insights and debugging.
+
+                **Steps to Follow:**
+
+                1. **Identify and Describe the Issue:**
+                    - **Examine Logs:**
+                        - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+                        - Navigate to Cloud Run and select your deployed service.
+                        - Go to the "Logs" tab to view logs generated by your service. Look for any error messages or unusual logs that might indicate a problem.
+                    - **Document the Error:**
+                        - Note down any error messages, relevant code snippets, and context about the issue you're encountering. This information will be crucial for effective troubleshooting.
+                        - Example:
+                            
+                            ```markdown
+                            Error message: "Failed to start container: Image pull failed"
+                            Context: Occurs during deployment of Project Management API
+                            Tech Stack: Python, FastAPI, Docker, Google Cloud Run
+                            ```
+
+                Ready to use GitHub Copilot for troubleshooting?
+        edges:
+          - text: "Yes, let's use GitHub Copilot for troubleshooting!"
+            target_node_id: "screen11a"
+          - text: "Skip to exploring Google Cloud Run for insights."
+            target_node_id: "screen11c"
+
+      - id: screen11a
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Use GitHub Copilot Chat to troubleshoot deployment issues.
+
+                **Steps to Follow:**
+
+                1. **Open Copilot Chat:**
+                    - In Visual Studio Code, open the Chat view by selecting "Chat" from the Activity Bar or pressing `Ctrl + Alt + I`.
+                    - *(Screenshot placeholder: Image showing Copilot Chat view in VS Code)*
+                2. **Prompt for Help:**
+                    - Provide detailed context when prompting GitHub Copilot for troubleshooting advice.
+                    - Example prompt:
+                        
+                        ```markdown
+                        I'm encountering an error while deploying a FastAPI application on Google Cloud Run. The error message is "Failed to start container: Image pull failed." The application is containerized using Docker. Could you help me troubleshoot this issue?
+                        ```
+                        
+                    - **Expected Response:**
+                    GitHub Copilot should provide suggestions based on the provided context. This might include checking container image paths, verifying authentication with Google Container Registry, and ensuring the Docker image exists and is accessible.
+                        
+                        ```markdown
+                        To troubleshoot the "Failed to start container: Image pull failed" error on Google Cloud Run, follow these steps:
+                        1. **Verify Image Path:** Ensure the Docker image path is correct and includes your Google Cloud project ID.
+                        2. **Authentication:** Run `gcloud auth configure-docker` to authenticate Docker with Google Container Registry.
+                        3. **Image Accessibility:** Ensure the Docker image has been pushed to Google Container Registry and is publicly accessible or that the Cloud Run service account has permissions to pull the image.
+                        4. **Check Logs:** Review Cloud Run logs for additional details on the failure.
+                        ```
+                    
+                Ready to follow these suggestions?
+        edges:
+          - text: "Yes, let's follow these suggestions!"
+            target_node_id: "screen11b"
+          - text: "Skip to exploring Google Cloud Run for insights."
+            target_node_id: "screen11c"
+
+      - id: screen11b
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Follow GitHub Copilot's suggestions to troubleshoot deployment issues.
+
+                **Steps to Follow:**
+
+                1. **Verify Image Path:**
+                    - Ensure that the image path in your deployment command is correct.
+                    - Example:
+                        
+                        ```bash
+                        gcloud run deploy project-management-app --image gcr.io/[PROJECT_ID]/project-management-app --platform managed --region [REGION]
+                        ```
+                        
+                2. **Authenticate Docker with Google Container Registry:**
+                    - Run the following command to configure Docker to use your Google Cloud credentials:
+                        
+                        ```bash
+                        gcloud auth configure-docker
+                        ```
+                        
+                3. **Ensure Image Accessibility:**
+                    - Check that the Docker image exists in Google Container Registry and has the appropriate permissions.
+                    - Use the following command to push your image if not already done:
+                        
+                        ```bash
+                        docker push gcr.io/[PROJECT_ID]/project-management-app
+                        ```
+                        
+                4. **Review Cloud Run Logs:**
+                    - Go back to the Google Cloud Console and review the logs for any additional information or errors that could help identify the root cause.
+
+                Ready to explore Google Cloud Run for insights and debugging?
+        edges:
+          - text: "Yes, let's explore Cloud Run!"
+            target_node_id: "screen11c"
+          - text: "Skip to conclusion and outcome."
+            target_node_id: "END"
+
+      - id: screen11c
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Explore Google Cloud Run for insights and debugging.
+
+                **Steps to Follow:**
+
+                1. **Access Service Details:**
+                    - In the Cloud Run section of the Google Cloud Console, select your service to view its details, configurations, and metrics.
+                    - *(Screenshot placeholder: Image showing Cloud Run service details)*
+                2. **Monitor Performance:**
+                    - Use the Metrics tab to monitor CPU usage, memory usage, and request latencies. This can help identify performance bottlenecks or issues related to resource limits.
+                    - *(Screenshot placeholder: Image showing Cloud Run metrics)*
+                3. **Debugging Tips:**
+                    - **Use Environment Variables:** Define and manage environment variables for different configurations and debugging.
+                    - **Enable Debug Mode:** Run your application in debug mode if applicable, to get more detailed logs and stack traces.
+                4. **Research Further with GitHub Copilot:**
+                    - **Advanced Prompts for In-Depth Help:**
+                        - Example prompt:
+                            
+                            ```markdown
+                            I'm facing high CPU usage on my FastAPI application deployed on Google Cloud Run. The logs indicate frequent spikes in CPU usage. Could you provide some advanced troubleshooting steps to identify and resolve the issue?
+                            ```
+                            
+                        - **Expected Response:**
+                        GitHub Copilot may suggest profiling your application, optimizing resource configurations, and checking for inefficient code or heavy computations that could be optimized.
+                            
+                            ```markdown
+                            To troubleshoot high CPU usage on your FastAPI application in Google Cloud Run:
+                            1. **Profile Your Application:** Use profiling tools to identify functions or endpoints causing high CPU usage.
+                            2. **Optimize Resource Configuration:** Adjust the CPU and memory allocation in your Cloud Run service settings.
+                            3. **Check for Inefficient Code:** Review your application code for inefficient algorithms or heavy computations that can be optimized.
+                            4. **Load Testing:** Conduct load testing to simulate high traffic and observe CPU usage patterns.
+                            ```
+                            
+                        - *(Screenshot placeholder: Image showing Copilot's advanced troubleshooting suggestions)*
+
+                Ready to review and reflect on the process?
+        edges:
+          - text: "Yes, let's review and reflect!"
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "image"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            - type: "text"
+              content: |
+                Wrap up the mission by summarizing the key learning points, reviewing the outcomes, and providing a brief introduction to the next mission. Highlight the advantages of using GitHub Copilot and Google Cloud Run for deploying and managing applications.
+
+                **Summary of Key Learning Points:**
+
+                1. **GitHub Copilot Assistance:**
+                    - Leveraged GitHub Copilot Chat to understand and troubleshoot deployment processes.
+                    - Utilized AI-powered suggestions to streamline the deployment of the Project Management API on Google Cloud Run.
+                2. **Google Cloud Run Deployment:**
+                    - Deployed a containerized FastAPI application using Google Cloud Run.
+                    - Configured necessary Google Cloud APIs and managed Docker images in Google Container Registry.
+                    - Gained insights into optimizing and troubleshooting deployments through Google Cloud Console and logs.
+                3. **Troubleshooting and Debugging:**
+                    - Effectively identified and resolved deployment issues using GitHub Copilot’s troubleshooting capabilities.
+                    - Explored advanced troubleshooting techniques to handle high CPU usage and other performance bottlenecks.
+
+                **Outcomes:**
+
+                - Successfully deployed the Alfred AI Project Management System on Google Cloud Run.
+                - Enhanced understanding of cloud-native deployments and AI-assisted troubleshooting.
+                - Developed skills to efficiently manage, deploy, and debug cloud-based applications.
+
+                **Looking Ahead:**
+
+                In the next mission, you will delve deeper into exploring AI-driven insights with New Relic AI. You will learn how to use advanced AI capabilities to gain insights into application performance, identify root causes of issues, and optimize your cloud-based services. This will further enhance your ability to maintain and improve the Alfred AI Project Management System in a production environment.
+
+                **End of Mission:**
+
+                Congratulations on successfully completing this mission! You have gained valuable hands-on experience in deploying and managing applications on Google Cloud Run using GitHub Copilot. This knowledge will be instrumental as you continue to develop and maintain scalable, efficient, and robust cloud-based applications.
