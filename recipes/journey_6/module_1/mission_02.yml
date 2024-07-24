@@ -151,7 +151,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now that we’re in the dashboard, we can take a minute to explore New Relic’s powerful APM. Understanding how the dashboard works, at least to a minimal extent, would be super useful to utilize its AI as well.
@@ -168,7 +168,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 First, let's access the Entity Explorer:
@@ -188,7 +188,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Sure! Let’s start with the Entity Explorer.
@@ -282,7 +282,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now that we explored entities, we can quickly know where to look for performance metrics on our application. When we sent traffic to our API from earlier, we should have also seen them here.
@@ -350,7 +350,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: ""https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=""
             - type: "text"
               content: |
                 Now, let's interact with the AI:
@@ -372,7 +372,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are some example questions you can ask New Relic AI:
@@ -391,7 +391,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Notice how it provides two types of answers: the actual output logs from the server and the generated query for the `Query Your Data` tab. The logs are incredibly useful for real-time monitoring. The generated query allows you to visit the `Query Your Data` tab and run NRQL scripts to get the same output.
@@ -408,7 +408,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When you ask New Relic AI a question, it provides:
@@ -438,7 +438,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let’s continue to check out New Relic’s ask AI feature. Last time we saw how powerful their assistant can be in transforming natural language into useful queries which are executed and visualized for us. Now let’s take a look at another example but more closely related to maintenance of an app.
@@ -455,7 +455,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 From the top right, like before, we can open the chat window with New Relic’s AI to start asking questions about applications. Notice that the assistant either has or can create context for itself by converting your questions into context. So it can be a breeze to have multiple projects and ask questions.
@@ -472,7 +472,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are some example questions you can ask New Relic AI for maintenance guidance:
@@ -491,7 +491,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When you ask, "How do I monitor anomalous signals?" New Relic AI can provide insights like:
@@ -511,7 +511,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 For example, when you ask, "How many transactions happened today?" New Relic AI can provide:
@@ -529,7 +529,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 It’s important to remember that AI responses are suggestions and may have misinterpretations or incorrect information. In the case of monitoring anomalous signals, the AI might interpret the query as retrieving logs rather than providing documentation.
@@ -548,7 +548,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When analyzing AI responses:
@@ -567,7 +567,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Hopefully this gave you a clearer idea of the great benefits that come with having an AI assistant whose capabilities are closely tied with the application at hand like New Relic. It can give us really useful abilities like converting our common natural language questions into powerful queries over our data. But, with great power comes great responsibility to double check and cross-reference outputs from the AI. Always give it the right context and you should be well on your way to becoming a power user!
