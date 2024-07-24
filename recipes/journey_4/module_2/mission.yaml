@@ -50,15 +50,12 @@ tasks:
         edges:
           - text: "Tell me more about Katalon Studio features."
             target_node_id: "END"
-
       - id: END
         type: message
         body:
           parts:
             - type: "text"
               content: "Katalon Studio offers several key features:\n\n- **Functionality Testing**: Verifies all interactive elements work as intended.\n- **Compatibility Testing**: Ensures the application works across different browsers and devices.\n- **StudioAssist**: AI-powered assistant for intelligent code generation and explanations."
-
-
   - name: "Functionality Testing"
     context: "This task guides the learner through setting up functionality testing in Katalon Studio by creating and executing test cases."
     id: "2" 
@@ -123,8 +120,6 @@ tasks:
           parts:
             - type: "text"
               content: "The best feature of StudioAssist is its ability to automatically generate test cases from code comments. To do this:\n\n- Highlight the commented explanation.\n- Click on \"Generate Code\" in StudioAssist.\n\nThis will create new test cases that can be executed again.\n\nNotice that the newly generated test cases differ from the predefined ones. These cases might also fail initially since they are templates and may require some modifications to run correctly. Therefore, consider the AI-generated code as a starting point that may need adjustments."
-
-
   - name: "Advanced Testing"
     context: "This task covers data-driven and compatibility testing in Katalon Studio."
     id: "3"
@@ -164,8 +159,6 @@ tasks:
           parts:
             - type: "text"
               content: "To execute the test suite:\n\n1. Choose Sequential mode to run tests individually.\n2. View the final report after all tests are completed."
-
-
   - name: "Load Testing"
     context: "This task explains how to conduct load testing by running tests in parallel mode in Katalon Studio."
     id: "4"
@@ -179,15 +172,12 @@ tasks:
         edges:
           - text: "How do I set the parameters?"
             target_node_id: "END"
-
       - id: END
         type: message
         body:
           parts:
             - type: "text"
               content: "To set parameters:\n\n**Max Concurrent Instances**:\n\n- Specifies the maximum number of test cases running simultaneously.\n- Speeds up testing by running multiple tests at once.\n\n**Delay Between Instances**:\n\n- Defines the pause time between starting each test instance.\n- Manages system load and avoids resource conflicts."
-
-
   - name: "Summary and Best Practices"
     context: "This task summarizes the mission and highlights best practices for using Katalon Studio."
     id: "5"
