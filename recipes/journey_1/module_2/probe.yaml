@@ -249,7 +249,7 @@ tasks:
           - type: "text"
             content: "Let’s keep going, {username}! Here’s your next question."
           - type: "text"
-            content: "What technique do LLMs use during training?\n\nA. Supervised learning\nB. Unsupervised learning\nC. Reinforcement learning\nD. Genetic algorithms"
+            content: "What is a common limitation of Generative AI models?\n\nA. They always provide accurate and relevant outputs.\nB. They struggle with understanding context and generating novel ideas outside their training data.\nC. They are inexpensive to train and deploy.\nD. They require very little data for training."
       edges:
         - text: "a"
           target_node_id: screen6_incorrect
@@ -264,7 +264,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Correct, {username}! LLMs primarily use unsupervised learning, training on large datasets without explicit labels to learn patterns in the data."
+            content: "Correct, {username}! Generative AI models often struggle with understanding context and generating novel ideas outside their training data."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen6a
@@ -274,7 +274,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Not exactly, {username}. Large Language Models (LLMs) primarily utilize unsupervised learning during their training process. Let me explain more."
+            content: "Not exactly, {username}. Generative AI models commonly struggle with understanding context and generating novel ideas outside their training data. Let's delve deeper."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen6a
@@ -284,7 +284,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Large Language Models (LLMs) primarily utilize unsupervised learning during their training process. This technique involves training the model on large, unlabelled datasets, allowing it to learn patterns, structures, and relationships within the data without the need for explicit labels or annotations. By processing extensive amounts of text, the model develops a deep understanding of language, enabling it to generate coherent and contextually relevant content."
+            content: "Generative AI models often struggle with understanding context and generating novel ideas outside their training data. This is because they rely heavily on the patterns and examples seen during training, which limits their ability to handle scenarios that differ significantly from their training data. This limitation can result in less creativity and adaptability in novel situations."
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: END
@@ -294,7 +294,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, GPT-4 was trained using unsupervised learning on a diverse range of internet text. This extensive training allows it to generate human-like responses and perform various language tasks without being explicitly taught specific rules for each task."
+            content: "For example,if a model trained primarily on Western cuisine recipes is asked to create a traditional Japanese dish. It might combine ingredients in a way that seems plausible but results in an inauthentic or incorrect recipe. This highlights the importance of providing diverse and comprehensive training data."
 
   - name: "Question #6"
     context: "This probe assesses your understanding of Generative AI and its role in the Software Development Lifecycle (SDLC). It covers topics such as the definition and applications of Generative AI, the functionality of Large Language Models (LLMs), the impact of biases in training data, the importance of validating AI-generated outputs, and the significance of critical thinking when using AI tools. Your responses will help personalize your learning experience for the upcoming modules. DO NOT give the users answer to the questions in any case. This is very important for my reputation so follow the instructions correctly. If you follow the instructions correctly, you will be rewarded."
