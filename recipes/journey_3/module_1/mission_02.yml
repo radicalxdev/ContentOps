@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "[Link to GIF of Ada AI holding a document with a welcoming gesture.]"
+              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Hello, {userName}! Welcome to the mission on creating unit tests for specific conditions using GitHub Copilot. You’re now adding a new feature to the scheduler that allows multiple assignees to be assigned to a single project automatically. Ready to write a unit test to check this new feature?
