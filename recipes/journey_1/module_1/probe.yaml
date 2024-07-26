@@ -28,9 +28,13 @@ tasks:
             content: |
               "Which architecture is fundamental in training Generative Adversarial Networks (GANs)?
 
+
               A. Autoencoder
+
               B. Encoder-Decoder
+
               C. Generator and Discriminator
+
               D. Convolutional Neural Network"
       edges:
         - text: "A"
@@ -65,9 +69,13 @@ tasks:
             content: |
               "In the context of Generative AI, what does the term 'latent space' refer to?
 
+
               A. The input space of the neural network
+
               B. The compressed representation of input data
+
               C. The final output space of the model
+
               D. The space where training data is stored"
       edges:
         - text: "A"
@@ -102,9 +110,13 @@ tasks:
             content: |
               "Which of the following methods is commonly used to stabilize GAN training?
 
+
               A. Increasing learning rate
+
               B. Using dropout layers
+
               C. Adding noise to training data
+
               D. Implementing Wasserstein loss"
       edges:
         - text: "A"
@@ -139,9 +151,13 @@ tasks:
             content: |
               "What is the primary advantage of using Variational Autoencoders (VAEs) over traditional autoencoders?
 
+
               A. Simpler architecture
+
               B. Deterministic outputs
+
               C. Better latent space exploration
+
               D. Higher reconstruction error"
       edges:
         - text: "A"
@@ -176,9 +192,13 @@ tasks:
             content: |
               "Which evaluation metric is often used to assess the performance of Generative AI models in generating realistic data?
 
+
               A. F1 Score
+
               B. Inception Score
+
               C. Accuracy
+
               D. Mean Squared Error"
       edges:
         - text: "A"
@@ -213,9 +233,13 @@ tasks:
             content: |
               "How does GitHub Copilot enhance code development workflows?
 
+
               A. By enforcing code standards
+
               B. By integrating with version control systems
+
               C. By suggesting context-aware code snippets in real-time
+
               D. By managing project dependencies"
       edges:
         - text: "A"
@@ -250,9 +274,13 @@ tasks:
             content: |
               "Which algorithm is typically used by AI-powered tools for code completion and generation?
 
+
               A. Random Forest
+
               B. Long Short-Term Memory (LSTM)
+
               C. Transformer-based models
+
               D. K-Nearest Neighbors (KNN)"
       edges:
         - text: "A"
@@ -287,9 +315,13 @@ tasks:
             content: |
               "Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?
 
+
               A. IntelliJ IDEA
+
               B. Eclipse
+
               C. GitHub Copilot
+
               D. Sublime Text"
       edges:
         - text: "A"
@@ -324,9 +356,13 @@ tasks:
             content: |
               "How does transfer learning benefit the development of AI-powered software tools?
 
+
               A. By training models from scratch
+
               B. By reusing pre-trained models on new tasks, reducing training time and data requirements
+
               C. By ignoring previously trained models
+
               D. By increasing the size of datasets required for training"
       edges:
         - text: "A"
@@ -361,9 +397,13 @@ tasks:
             content: |
               "What is the primary purpose of using AI-based linting tools in software development?
 
+
               A. To compile code
+
               B. To enforce coding standards and detect code smells
+
               C. To optimize runtime performance
+
               D. To handle version control"
       edges:
         - text: "A"
@@ -398,9 +438,13 @@ tasks:
             content: |
               "How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?
 
+
               A. By introducing more manual checks
+
               B. By predicting and mitigating potential deployment failures
+
               C. By eliminating automated tests
+
               D. By slowing down the deployment process"
       edges:
         - text: "A"
@@ -435,9 +479,13 @@ tasks:
             content: |
               "Which AI technique is effective for optimizing resource allocation in scalable system design?
 
+
               A. K-Means Clustering
+
               B. Reinforcement Learning
+
               C. Decision Trees
+
               D. Linear Regression"
       edges:
         - text: "A"
@@ -472,9 +520,13 @@ tasks:
             content: |
               "What is the primary function of AI in static code analysis?
 
+
               A. To execute code
+
               B. To detect runtime errors
+
               C. To identify potential vulnerabilities and code smells
+
               D. To compile code"
       edges:
         - text: "A"
@@ -509,9 +561,13 @@ tasks:
             content: |
               "In AI-driven test automation, what is the role of predictive analytics?
 
+
               A. Writing manual test cases
+
               B. Forecasting potential defects and failures
+
               C. Executing tests
+
               D. Increasing test execution time"
       edges:
         - text: "A"
@@ -546,9 +602,13 @@ tasks:
             content: |
               "How does AI enhance the process of regression testing?
 
+
               A. By reducing the number of test cases
+
               B. By automatically identifying and prioritizing affected areas
+
               C. By eliminating the need for test data
+
               D. By extending the testing cycle"
       edges:
         - text: "A"
@@ -583,9 +643,13 @@ tasks:
             content: |
               "Which AI technique is used to identify flaky tests that pass and fail intermittently?
 
+
               A. Clustering
+
               B. Time Series Analysis
+
               C. Dimensionality Reduction
+
               D. Decision Trees"
       edges:
         - text: "A"
@@ -620,9 +684,13 @@ tasks:
             content: |
               "What AI technique is most effective for anomaly detection during software deployment?
 
+
               A. Supervised Learning
+
               B. Unsupervised Learning
+
               C. Semi-Supervised Learning
+
               D. Reinforcement Learning"
       edges:
         - text: "A"
@@ -657,9 +725,13 @@ tasks:
             content: |
               "Which of the following best describes the role of AI in canary deployments?
 
+
               A. To manage rollback procedures manually
+
               B. To dynamically adjust the rollout percentage based on real-time metrics
+
               C. To deploy software to all users simultaneously
+
               D. To replace all manual QA checks"
       edges:
         - text: "A"
@@ -694,9 +766,13 @@ tasks:
             content: |
               "How can AI-driven tools facilitate more effective sprint planning?
 
+
               A. By eliminating the need for team meetings
+
               B. By providing data-driven insights and workload predictions
+
               C. By increasing the number of tasks
+
               D. By removing task dependencies"
       edges:
         - text: "A"
@@ -731,9 +807,13 @@ tasks:
             content: |
               "Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?
 
+
               A. Natural Language Processing (NLP)
+
               B. Image Recognition
+
               C. Graph Theory
+
               D. Signal Processing"
       edges:
         - text: "A"
