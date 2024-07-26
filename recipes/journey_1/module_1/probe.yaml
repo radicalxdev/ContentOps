@@ -242,8 +242,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's one about AI-based code completion tools."
-          - type: "text"
             content: "Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?\n\nA. IntelliJ IDEA\nB. Eclipse\nC. GitHub Copilot\nD. Sublime Text"
       edges:
         - text: "a"
@@ -306,8 +304,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's a question about AI-based linting tools."
-          - type: "text"
             content: "What is the primary purpose of using AI-based linting tools in software development?\n\nA. To compile code\nB. To enforce coding standards and detect code smells\nC. To optimize runtime performance\nD. To handle version control"
       edges:
         - text: "a"
@@ -338,8 +334,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Let's talk about AI in CI/CD pipelines."
           - type: "text"
             content: "How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?\n\nA. By introducing more manual checks\nB. By predicting and mitigating potential deployment failures\nC. By eliminating automated tests\nD. By slowing down the deployment process"
       edges:
@@ -372,8 +366,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's one about resource allocation in scalable systems."
-          - type: "text"
             content: "Which AI technique is effective for optimizing resource allocation in scalable system design?\n\nA. K-Means Clustering\nB. Reinforcement Learning\nC. Decision Trees\nD. Linear Regression"
       edges:
         - text: "a"
@@ -404,8 +396,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Now, let's talk about static code analysis."
           - type: "text"
             content: "What is the primary function of AI in static code analysis?\n\nA. To execute code\nB. To detect runtime errors\nC. To identify potential vulnerabilities and code smells\nD. To compile code"
       edges:
@@ -531,8 +521,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Now, let's talk about anomaly detection in software deployment."
-          - type: "text"
             content: "What AI technique is most effective for anomaly detection during software deployment?\n\nA. Supervised Learning\nB. Unsupervised Learning\nC. Semi-Supervised Learning\nD. Reinforcement Learning"
       edges:
         - text: "a"
@@ -563,8 +551,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Let's explore AI in canary deployments."
           - type: "text"
             content: "Which of the following best describes the role of AI in canary deployments?\n\nA. To manage rollback procedures manually\nB. To dynamically adjust the rollout percentage based on real-time metrics\nC. To deploy software to all users simultaneously\nD. To replace all manual QA checks"
       edges:
@@ -597,8 +583,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's one about AI-driven sprint planning."
-          - type: "text"
             content: "How can AI-driven tools facilitate more effective sprint planning?\n\nA. By eliminating the need for team meetings\nB. By providing data-driven insights and workload predictions\nC. By increasing the number of tasks\nD. By removing task dependencies"
       edges:
         - text: "a"
@@ -629,8 +613,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Finally, let's talk about requirement gathering."
           - type: "text"
             content: "Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?\n\nA. Natural Language Processing (NLP)\nB. Image Recognition\nC. Graph Theory\nD. Signal Processing"
       edges:
