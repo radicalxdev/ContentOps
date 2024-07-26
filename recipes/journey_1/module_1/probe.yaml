@@ -26,7 +26,7 @@ tasks:
             content: "Let's start with the basics of Generative AI!"
           - type: "text"
             content: |
-              "Which architecture is fundamental in training Generative Adversarial Networks (GANs)?
+              Which architecture is fundamental in training Generative Adversarial Networks (GANs)?
 
 
               A. Autoencoder
@@ -35,7 +35,7 @@ tasks:
 
               C. Generator and Discriminator
 
-              D. Convolutional Neural Network"
+              D. Convolutional Neural Network
       edges:
         - text: "A"
           target_node_id: END
@@ -67,7 +67,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "In the context of Generative AI, what does the term 'latent space' refer to?
+              In the context of Generative AI, what does the term 'latent space' refer to?
 
 
               A. The input space of the neural network
@@ -76,7 +76,7 @@ tasks:
 
               C. The final output space of the model
 
-              D. The space where training data is stored"
+              D. The space where training data is stored
       edges:
         - text: "A"
           target_node_id: END
@@ -108,7 +108,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which of the following methods is commonly used to stabilize GAN training?
+              Which of the following methods is commonly used to stabilize GAN training?
 
 
               A. Increasing learning rate
@@ -117,7 +117,7 @@ tasks:
 
               C. Adding noise to training data
 
-              D. Implementing Wasserstein loss"
+              D. Implementing Wasserstein loss
       edges:
         - text: "A"
           target_node_id: END
@@ -149,7 +149,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "What is the primary advantage of using Variational Autoencoders (VAEs) over traditional autoencoders?
+              What is the primary advantage of using Variational Autoencoders (VAEs) over traditional autoencoders?
 
 
               A. Simpler architecture
@@ -158,7 +158,7 @@ tasks:
 
               C. Better latent space exploration
 
-              D. Higher reconstruction error"
+              D. Higher reconstruction error
       edges:
         - text: "A"
           target_node_id: END
@@ -190,7 +190,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which evaluation metric is often used to assess the performance of Generative AI models in generating realistic data?
+              Which evaluation metric is often used to assess the performance of Generative AI models in generating realistic data?
 
 
               A. F1 Score
@@ -199,7 +199,7 @@ tasks:
 
               C. Accuracy
 
-              D. Mean Squared Error"
+              D. Mean Squared Error
       edges:
         - text: "A"
           target_node_id: END
@@ -231,7 +231,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "How does GitHub Copilot enhance code development workflows?
+              How does GitHub Copilot enhance code development workflows?
 
 
               A. By enforcing code standards
@@ -240,7 +240,7 @@ tasks:
 
               C. By suggesting context-aware code snippets in real-time
 
-              D. By managing project dependencies"
+              D. By managing project dependencies
       edges:
         - text: "A"
           target_node_id: END
@@ -272,7 +272,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which algorithm is typically used by AI-powered tools for code completion and generation?
+              Which algorithm is typically used by AI-powered tools for code completion and generation?
 
 
               A. Random Forest
@@ -281,7 +281,7 @@ tasks:
 
               C. Transformer-based models
 
-              D. K-Nearest Neighbors (KNN)"
+              D. K-Nearest Neighbors (KNN)
       edges:
         - text: "A"
           target_node_id: END
@@ -313,7 +313,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?
+              Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?
 
 
               A. IntelliJ IDEA
@@ -322,7 +322,7 @@ tasks:
 
               C. GitHub Copilot
 
-              D. Sublime Text"
+              D. Sublime Text
       edges:
         - text: "A"
           target_node_id: END
@@ -354,7 +354,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "How does transfer learning benefit the development of AI-powered software tools?
+              How does transfer learning benefit the development of AI-powered software tools?
 
 
               A. By training models from scratch
@@ -363,7 +363,7 @@ tasks:
 
               C. By ignoring previously trained models
 
-              D. By increasing the size of datasets required for training"
+              D. By increasing the size of datasets required for training
       edges:
         - text: "A"
           target_node_id: END
@@ -395,7 +395,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "What is the primary purpose of using AI-based linting tools in software development?
+              What is the primary purpose of using AI-based linting tools in software development?
 
 
               A. To compile code
@@ -404,7 +404,7 @@ tasks:
 
               C. To optimize runtime performance
 
-              D. To handle version control"
+              D. To handle version control
       edges:
         - text: "A"
           target_node_id: END
@@ -436,7 +436,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?
+              How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?
 
 
               A. By introducing more manual checks
@@ -445,7 +445,7 @@ tasks:
 
               C. By eliminating automated tests
 
-              D. By slowing down the deployment process"
+              D. By slowing down the deployment process
       edges:
         - text: "A"
           target_node_id: END
@@ -477,7 +477,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which AI technique is effective for optimizing resource allocation in scalable system design?
+              Which AI technique is effective for optimizing resource allocation in scalable system design?
 
 
               A. K-Means Clustering
@@ -486,7 +486,7 @@ tasks:
 
               C. Decision Trees
 
-              D. Linear Regression"
+              D. Linear Regression
       edges:
         - text: "A"
           target_node_id: END
@@ -518,7 +518,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "What is the primary function of AI in static code analysis?
+              What is the primary function of AI in static code analysis?
 
 
               A. To execute code
@@ -527,7 +527,7 @@ tasks:
 
               C. To identify potential vulnerabilities and code smells
 
-              D. To compile code"
+              D. To compile code
       edges:
         - text: "A"
           target_node_id: END
@@ -559,7 +559,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "In AI-driven test automation, what is the role of predictive analytics?
+              In AI-driven test automation, what is the role of predictive analytics?
 
 
               A. Writing manual test cases
@@ -568,7 +568,7 @@ tasks:
 
               C. Executing tests
 
-              D. Increasing test execution time"
+              D. Increasing test execution time
       edges:
         - text: "A"
           target_node_id: END
@@ -600,7 +600,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "How does AI enhance the process of regression testing?
+              How does AI enhance the process of regression testing?
 
 
               A. By reducing the number of test cases
@@ -609,7 +609,7 @@ tasks:
 
               C. By eliminating the need for test data
 
-              D. By extending the testing cycle"
+              D. By extending the testing cycle
       edges:
         - text: "A"
           target_node_id: END
@@ -641,7 +641,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which AI technique is used to identify flaky tests that pass and fail intermittently?
+              Which AI technique is used to identify flaky tests that pass and fail intermittently?
 
 
               A. Clustering
@@ -650,7 +650,7 @@ tasks:
 
               C. Dimensionality Reduction
 
-              D. Decision Trees"
+              D. Decision Trees
       edges:
         - text: "A"
           target_node_id: END
@@ -682,7 +682,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "What AI technique is most effective for anomaly detection during software deployment?
+              What AI technique is most effective for anomaly detection during software deployment?
 
 
               A. Supervised Learning
@@ -691,7 +691,7 @@ tasks:
 
               C. Semi-Supervised Learning
 
-              D. Reinforcement Learning"
+              D. Reinforcement Learning
       edges:
         - text: "A"
           target_node_id: END
@@ -723,7 +723,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which of the following best describes the role of AI in canary deployments?
+              Which of the following best describes the role of AI in canary deployments?
 
 
               A. To manage rollback procedures manually
@@ -732,7 +732,7 @@ tasks:
 
               C. To deploy software to all users simultaneously
 
-              D. To replace all manual QA checks"
+              D. To replace all manual QA checks
       edges:
         - text: "A"
           target_node_id: END
@@ -764,7 +764,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "How can AI-driven tools facilitate more effective sprint planning?
+              How can AI-driven tools facilitate more effective sprint planning?
 
 
               A. By eliminating the need for team meetings
@@ -773,7 +773,7 @@ tasks:
 
               C. By increasing the number of tasks
 
-              D. By removing task dependencies"
+              D. By removing task dependencies
       edges:
         - text: "A"
           target_node_id: END
@@ -805,7 +805,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              "Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?
+              Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?
 
 
               A. Natural Language Processing (NLP)
@@ -814,7 +814,7 @@ tasks:
 
               C. Graph Theory
 
-              D. Signal Processing"
+              D. Signal Processing
       edges:
         - text: "A"
           target_node_id: END
