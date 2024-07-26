@@ -25,15 +25,21 @@ tasks:
           - type: "text"
             content: "Let's start with the basics of Generative AI!"
           - type: "text"
-            content: "Which architecture is fundamental in training Generative Adversarial Networks (GANs)?\n\nA. Autoencoder\nB. Encoder-Decoder\nC. Generator and Discriminator\nD. Convolutional Neural Network"
+            content: |
+              "Which architecture is fundamental in training Generative Adversarial Networks (GANs)?
+
+              A. Autoencoder
+              B. Encoder-Decoder
+              C. Generator and Discriminator
+              D. Convolutional Neural Network"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -56,15 +62,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "In the context of Generative AI, what does the term 'latent space' refer to?\n\nA. The input space of the neural network\nB. The compressed representation of input data\nC. The final output space of the model\nD. The space where training data is stored"
+            content: |
+              "In the context of Generative AI, what does the term 'latent space' refer to?
+
+              A. The input space of the neural network
+              B. The compressed representation of input data
+              C. The final output space of the model
+              D. The space where training data is stored"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -87,15 +99,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which of the following methods is commonly used to stabilize GAN training?\n\nA. Increasing learning rate\nB. Using dropout layers\nC. Adding noise to training data\nD. Implementing Wasserstein loss"
+            content: |
+              "Which of the following methods is commonly used to stabilize GAN training?
+
+              A. Increasing learning rate
+              B. Using dropout layers
+              C. Adding noise to training data
+              D. Implementing Wasserstein loss"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -118,15 +136,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "What is the primary advantage of using Variational Autoencoders (VAEs) over traditional autoencoders?\n\nA. Simpler architecture\nB. Deterministic outputs\nC. Better latent space exploration\nD. Higher reconstruction error"
+            content: |
+              "What is the primary advantage of using Variational Autoencoders (VAEs) over traditional autoencoders?
+
+              A. Simpler architecture
+              B. Deterministic outputs
+              C. Better latent space exploration
+              D. Higher reconstruction error"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -149,15 +173,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which evaluation metric is often used to assess the performance of Generative AI models in generating realistic data?\n\nA. F1 Score\nB. Inception Score\nC. Accuracy\nD. Mean Squared Error"
+            content: |
+              "Which evaluation metric is often used to assess the performance of Generative AI models in generating realistic data?
+
+              A. F1 Score
+              B. Inception Score
+              C. Accuracy
+              D. Mean Squared Error"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -180,15 +210,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "How does GitHub Copilot enhance code development workflows?\n\nA. By enforcing code standards\nB. By integrating with version control systems\nC. By suggesting context-aware code snippets in real-time\nD. By managing project dependencies"
+            content: |
+              "How does GitHub Copilot enhance code development workflows?
+
+              A. By enforcing code standards
+              B. By integrating with version control systems
+              C. By suggesting context-aware code snippets in real-time
+              D. By managing project dependencies"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -211,15 +247,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which algorithm is typically used by AI-powered tools for code completion and generation?\n\nA. Random Forest\nB. Long Short-Term Memory (LSTM)\nC. Transformer-based models\nD. K-Nearest Neighbors (KNN)"
+            content: |
+              "Which algorithm is typically used by AI-powered tools for code completion and generation?
+
+              A. Random Forest
+              B. Long Short-Term Memory (LSTM)
+              C. Transformer-based models
+              D. K-Nearest Neighbors (KNN)"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -242,15 +284,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?\n\nA. IntelliJ IDEA\nB. Eclipse\nC. GitHub Copilot\nD. Sublime Text"
+            content: |
+              "Which AI-based code completion tool leverages a large-scale language model developed by OpenAI?
+
+              A. IntelliJ IDEA
+              B. Eclipse
+              C. GitHub Copilot
+              D. Sublime Text"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -273,15 +321,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "How does transfer learning benefit the development of AI-powered software tools?\n\nA. By training models from scratch\nB. By reusing pre-trained models on new tasks, reducing training time and data requirements\nC. By ignoring previously trained models\nD. By increasing the size of datasets required for training"
+            content: |
+              "How does transfer learning benefit the development of AI-powered software tools?
+
+              A. By training models from scratch
+              B. By reusing pre-trained models on new tasks, reducing training time and data requirements
+              C. By ignoring previously trained models
+              D. By increasing the size of datasets required for training"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -304,15 +358,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "What is the primary purpose of using AI-based linting tools in software development?\n\nA. To compile code\nB. To enforce coding standards and detect code smells\nC. To optimize runtime performance\nD. To handle version control"
+            content: |
+              "What is the primary purpose of using AI-based linting tools in software development?
+
+              A. To compile code
+              B. To enforce coding standards and detect code smells
+              C. To optimize runtime performance
+              D. To handle version control"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -335,15 +395,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?\n\nA. By introducing more manual checks\nB. By predicting and mitigating potential deployment failures\nC. By eliminating automated tests\nD. By slowing down the deployment process"
+            content: |
+              "How can AI improve continuous integration/continuous deployment (CI/CD) pipelines?
+
+              A. By introducing more manual checks
+              B. By predicting and mitigating potential deployment failures
+              C. By eliminating automated tests
+              D. By slowing down the deployment process"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -366,15 +432,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which AI technique is effective for optimizing resource allocation in scalable system design?\n\nA. K-Means Clustering\nB. Reinforcement Learning\nC. Decision Trees\nD. Linear Regression"
+            content: |
+              "Which AI technique is effective for optimizing resource allocation in scalable system design?
+
+              A. K-Means Clustering
+              B. Reinforcement Learning
+              C. Decision Trees
+              D. Linear Regression"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -397,15 +469,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "What is the primary function of AI in static code analysis?\n\nA. To execute code\nB. To detect runtime errors\nC. To identify potential vulnerabilities and code smells\nD. To compile code"
+            content: |
+              "What is the primary function of AI in static code analysis?
+
+              A. To execute code
+              B. To detect runtime errors
+              C. To identify potential vulnerabilities and code smells
+              D. To compile code"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -428,15 +506,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "In AI-driven test automation, what is the role of predictive analytics?\n\nA. Writing manual test cases\nB. Forecasting potential defects and failures\nC. Executing tests\nD. Increasing test execution time"
+            content: |
+              "In AI-driven test automation, what is the role of predictive analytics?
+
+              A. Writing manual test cases
+              B. Forecasting potential defects and failures
+              C. Executing tests
+              D. Increasing test execution time"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -459,15 +543,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "How does AI enhance the process of regression testing?\n\nA. By reducing the number of test cases\nB. By automatically identifying and prioritizing affected areas\nC. By eliminating the need for test data\nD. By extending the testing cycle"
+            content: |
+              "How does AI enhance the process of regression testing?
+
+              A. By reducing the number of test cases
+              B. By automatically identifying and prioritizing affected areas
+              C. By eliminating the need for test data
+              D. By extending the testing cycle"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -490,15 +580,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which AI technique is used to identify flaky tests that pass and fail intermittently?\n\nA. Clustering\nB. Time Series Analysis\nC. Dimensionality Reduction\nD. Decision Trees"
+            content: |
+              "Which AI technique is used to identify flaky tests that pass and fail intermittently?
+
+              A. Clustering
+              B. Time Series Analysis
+              C. Dimensionality Reduction
+              D. Decision Trees"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -521,15 +617,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "What AI technique is most effective for anomaly detection during software deployment?\n\nA. Supervised Learning\nB. Unsupervised Learning\nC. Semi-Supervised Learning\nD. Reinforcement Learning"
+            content: |
+              "What AI technique is most effective for anomaly detection during software deployment?
+
+              A. Supervised Learning
+              B. Unsupervised Learning
+              C. Semi-Supervised Learning
+              D. Reinforcement Learning"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -552,15 +654,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which of the following best describes the role of AI in canary deployments?\n\nA. To manage rollback procedures manually\nB. To dynamically adjust the rollout percentage based on real-time metrics\nC. To deploy software to all users simultaneously\nD. To replace all manual QA checks"
+            content: |
+              "Which of the following best describes the role of AI in canary deployments?
+
+              A. To manage rollback procedures manually
+              B. To dynamically adjust the rollout percentage based on real-time metrics
+              C. To deploy software to all users simultaneously
+              D. To replace all manual QA checks"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -583,15 +691,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "How can AI-driven tools facilitate more effective sprint planning?\n\nA. By eliminating the need for team meetings\nB. By providing data-driven insights and workload predictions\nC. By increasing the number of tasks\nD. By removing task dependencies"
+            content: |
+              "How can AI-driven tools facilitate more effective sprint planning?
+
+              A. By eliminating the need for team meetings
+              B. By providing data-driven insights and workload predictions
+              C. By increasing the number of tasks
+              D. By removing task dependencies"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
@@ -614,15 +728,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?\n\nA. Natural Language Processing (NLP)\nB. Image Recognition\nC. Graph Theory\nD. Signal Processing"
+            content: |
+              "Which AI-driven methodology enhances requirement gathering by analyzing stakeholder communications and documents?
+
+              A. Natural Language Processing (NLP)
+              B. Image Recognition
+              C. Graph Theory
+              D. Signal Processing"
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: END
-        - text: "b"
+        - text: "B"
           target_node_id: END
-        - text: "c"
+        - text: "C"
           target_node_id: END
-        - text: "d"
+        - text: "D"
           target_node_id: END
     - id: END
       type: message
