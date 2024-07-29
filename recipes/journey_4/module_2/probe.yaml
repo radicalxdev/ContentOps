@@ -88,7 +88,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen2b
+    - id: END
       type: message
       body:
         parts:
@@ -172,7 +172,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen3b
+    - id: END
       type: message
       body:
         parts:
@@ -256,7 +256,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen4b
+    - id: END
       type: message
       body:
         parts:
@@ -340,7 +340,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen5b
+    - id: END
       type: message
       body:
         parts:
@@ -424,7 +424,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen6b
+    - id: END
       type: message
       body:
         parts:
@@ -499,7 +499,7 @@ tasks:
           target_node_id: screen7b
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen7b
+    - id: END
       type: message
       body:
         parts:
@@ -592,7 +592,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen8b
+    - id: END
       type: message
       body:
         parts:
@@ -676,7 +676,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen9b
+    - id: END
       type: message
       body:
         parts:
@@ -760,7 +760,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen10b
+    - id: END
       type: message
       body:
         parts:
