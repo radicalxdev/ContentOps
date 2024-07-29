@@ -75,7 +75,7 @@ tasks:
         edges:
           - text: "Understood, let's proceed!"
             target_node_id: "END"
-          - text: "Need more information on `@workspace`."
+          - text: "Need more information on @workspace."
             target_node_id: "screen3a"
       - id: screen3a
         type: message
