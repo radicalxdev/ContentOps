@@ -370,9 +370,9 @@ tasks:
         - text: "a"
           target_node_id: screen8_incorrect
         - text: "b"
-          target_node_id: screen8_correct
-        - text: "c"
           target_node_id: screen8_incorrect
+        - text: "c"
+          target_node_id: screen8_correct
         - text: "d"
           target_node_id: screen8_incorrect
     - id: screen8_correct
