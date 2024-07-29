@@ -31,7 +31,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_1.png?alt=media&token=72722f73-d943-44bd-a1f7-1b442c1ea152"
             - type: "text"
               content: |
                 Our first task is to implement the tickets feature by creating data models for validation. This allows us to serialize data, add type safety, and control incoming requests and responses. Follow these steps:
@@ -54,7 +54,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_2.png?alt=media&token=088a4cde-ad87-47e6-b02c-b54ecb192ae5"
             - type: "text"
               content: |
                 Now, let's create the TicketResponse model, which extends TicketCreate by adding id: int and created_at: datetime. Use the following prompt in the inline chat:
@@ -75,7 +75,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_3.png?alt=media&token=f76bae9c-105c-42a5-bd18-380462b26fb1"
             - type: "text"
               content: |
                 Next, we'll create the database operations (CRUD functions) to interact with the database. Head to the app/db_models/crud.py file and follow these steps:
@@ -125,7 +125,7 @@ tasks:
             - type: "text"
               content: "Review and accept the code suggestions for each function."
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_4.png?alt=media&token=133a95b0-9578-4ddc-afeb-18cab2d8c8ea"
         edges:
           - text: "Yes, let's proceed!"
             target_node_id: "screen6"
@@ -143,7 +143,7 @@ tasks:
                 Generate the create, read, update, and delete methods for Tickets routes.
                 ```
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_5.png?alt=media&token=0705ca23-5b3a-41db-abae-b417f0bdcaf0"
             - type: "text"
               content: "Review the suggestions to ensure the methods are correctly defined and referenced."
         edges:
@@ -160,9 +160,7 @@ tasks:
               content: |
                 We can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
             - type: "text"
               content: |
                 We can now see Tickets as a new set of routes available within the /docs page!
