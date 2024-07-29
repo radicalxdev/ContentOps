@@ -117,9 +117,6 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Ready for the next one, {username}? Let's talk about communication among team members.
-          - type: "text"
-            content: |
               How do architecture and data flow diagrams facilitate better communication among team members?
 
 
@@ -207,9 +204,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: |
-              Here's another one, {username}! Let's discuss key use cases for architecture diagrams.
           - type: "text"
             content: |
               Which of the following is a key use case for architecture diagrams?
@@ -301,9 +295,6 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Ready for another question, {username}? Let's discuss best practices for designing architecture diagrams.
-          - type: "text"
-            content: |
               What is a best practice for designing clear and effective architecture diagrams?
 
 
@@ -391,9 +382,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: |
-              Here's another one, {username}! Let's talk about how Eraser AI assists in creating architecture diagrams.
           - type: "text"
             content: |
               How does Eraser AI assist in creating architecture diagrams?
@@ -485,9 +473,6 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Ready for another one, {username}? Let's talk about entity-relationship diagrams.
-          - type: "text"
-            content: |
               What are the key components of an entity-relationship diagram?
 
               A. Methods, classes, and variables.
@@ -571,9 +556,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: |
-              Here's another one, {username}! Let's discuss how Eraser AI helps with entity-relationship diagrams.
           - type: "text"
             content: |
               How can Eraser AI help with entity-relationship diagrams?
@@ -665,9 +647,6 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Here's the next one, {username}! Let's talk about data flow diagrams for performance optimization.
-          - type: "text"
-            content: |
               What is a key benefit of using data flow diagrams for performance optimization?
 
 
@@ -757,9 +736,6 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Let's continue, {username}! Here's a question about Eraser AI and visual documentation.
-          - type: "text"
-            content: |
               How does Eraser AI improve the process of generating visual documentation?
 
 
@@ -847,9 +823,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: |
-              Here's the final question, {username}! Let's talk about the primary objective of using Eraser AI for designing diagrams.
           - type: "text"
             content: |
               What is the primary objective of using Eraser AI for designing architecture and data flow diagrams?

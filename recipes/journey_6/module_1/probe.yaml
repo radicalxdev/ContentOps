@@ -110,8 +110,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's move on to the next question, {username}!"
-          - type: "text"
             content: |
               In the TaskMaster scenario, what is the main issue that arises?
 
@@ -195,8 +193,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next question, {username}!"
-          - type: "text"
             content: |
               How do AI-powered monitoring tools help in real-time insights?
 
@@ -279,8 +275,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Let's keep going, {username}! Here's your next question."
           - type: "text"
             content: |
               What benefit does predictive analytics provide in AI-powered monitoring?
@@ -366,8 +360,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next question, {username}? Here we go!"
-          - type: "text"
             content: |
               Which of the following is NOT a feature of New Relic?
 
@@ -451,8 +443,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the next one, {username}! Let's see how you do with this question."
           - type: "text"
             content: |
               How does New Relic improve troubleshooting capabilities?
@@ -538,8 +528,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next one, {username}! Let's see how you do with this question."
-          - type: "text"
             content: |
               Why was New Relic chosen for Alfred AI's TaskMaster application?
 
@@ -623,8 +611,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the next question, {username}!"
           - type: "text"
             content: |
               What does Application Performance Monitoring (APM) provide in New Relic?
@@ -710,8 +696,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's keep the momentum going, {username}! Here's your next question."
-          - type: "text"
             content: |
               What is the primary advantage of using AI-driven insights in monitoring?
 
@@ -795,8 +779,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
             content: |
               Which feature of New Relic helps simulate user interactions to monitor application availability and performance?

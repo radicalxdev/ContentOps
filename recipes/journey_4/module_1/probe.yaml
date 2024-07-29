@@ -274,8 +274,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's another one, {username}! Let's discuss AI-powered features in Katalon Studio."
-          - type: "text"
             content: |
               Which AI-powered feature checks visual elements on a page in Katalon Studio?
 

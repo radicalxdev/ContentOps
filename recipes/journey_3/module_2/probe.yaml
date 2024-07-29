@@ -687,8 +687,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the final question, {username}!"
-          - type: "text"
             content: |
               What is an important step after using GitHub Copilot to generate initial project documentation?
 

@@ -112,8 +112,6 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Let's move on to the next question, {username}!"
-            - type: "text"
               content: |
                 Which tool is highlighted for its comprehensive features and AI-driven insights in troubleshooting?
 
@@ -198,8 +196,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Here's the next question, {username}!"
             - type: "text"
               content: |
                 What is one of the main challenges of manual troubleshooting?
@@ -286,8 +282,6 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's the next question, {username}!"
-            - type: "text"
               content: |
                 Which feature of AI-powered tools helps in identifying performance issues in real-time?
 
@@ -372,8 +366,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Let's keep going, {username}! Here's your next question."
             - type: "text"
               content: |
                 How does predictive analytics benefit troubleshooting?
@@ -460,8 +452,6 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's the next one, {username}! Let's see how you do with this question."
-            - type: "text"
               content: |
                 What does AI-driven root cause analysis do?
 
@@ -546,8 +536,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Here's the next question, {username}!"
             - type: "text"
               content: |
                 Which AI-powered tool provides centralized error tracking and triaging?
@@ -634,8 +622,6 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Let's move on to the next question, {username}!"
-            - type: "text"
               content: |
                 What is the purpose of transaction tracing in New Relic APM?
 
@@ -721,8 +707,6 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's your next question, {username}!"
-            - type: "text"
               content: |
                 Which feature of New Relic helps in visualizing the interactions between different services in an application?
 
@@ -807,8 +791,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Here's the final question, {username}! Let's see how you do."
             - type: "text"
               content: |
                 How does automated log analysis help in troubleshooting?

@@ -116,8 +116,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's move on to the next question, {username}!"
-          - type: "text"
             content: |
               Which of the following is a common challenge developers face with CI/CD processes?
 
@@ -207,8 +205,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the next question, {username}!"
           - type: "text"
             content: |
               How can AI tools enhance code analysis and optimization in CI/CD pipelines?
@@ -300,8 +296,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's keep going, {username}! Here's your next question."
-          - type: "text"
             content: |
               What is one benefit of predictive deployment analytics provided by AI?
 
@@ -392,8 +386,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next question, {username}? Here we go!"
-          - type: "text"
             content: |
               How does AI reduce the error rate in CI/CD processes?
 
@@ -479,8 +471,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the next one, {username}! Let's see how you do with this question."
           - type: "text"
             content: |
               Which of the following is NOT a benefit of integrating AI into CI/CD pipelines?
@@ -573,8 +563,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next question, {username}!"
-          - type: "text"
             content: |
               What is a key practice for implementing AI in CI/CD processes?
 
@@ -666,8 +654,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's move on to the next question, {username}!"
-          - type: "text"
             content: |
               Why is it important to monitor AI performance in CI/CD pipelines?
 
@@ -758,8 +744,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's keep the momentum going, {username}! Here's your next question."
-          - type: "text"
             content: |
               Why is it important to integrate AI tools with existing CI/CD pipelines?
 
@@ -849,8 +833,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
             content: |
               How does AI contribute to continuous monitoring and feedback in CI/CD?

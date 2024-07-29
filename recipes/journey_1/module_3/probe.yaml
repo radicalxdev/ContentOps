@@ -158,9 +158,9 @@ tasks:
               content: "Naive prompting refers to the use of general and unspecific prompts that fail to give the AI model enough information to produce a detailed and relevant output. Such prompts can lead to broad, unfocused, or irrelevant responses because the model lacks the context and direction needed to understand the user's intent fully. In contrast, effective prompts are detailed and precise, guiding the model to generate specific and useful outputs."
         edges:
           - text: "Give me an example, Ada!"
-            target_node_id: END
-          - text: "On to the next, Ada!"
             target_node_id: screen3b
+          - text: "On to the next, Ada!"
+            target_node_id: END
       - id: screen3b
         type: message
         body:
@@ -190,8 +190,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Ready for another question, {username}? Let's talk about well-constructed prompts!"
             - type: "text"
               content: |
                 What element of a well-constructed prompt provides clear and specific guidelines to the model?

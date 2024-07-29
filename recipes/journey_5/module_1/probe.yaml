@@ -110,8 +110,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's move on to the next question, {username}!"
-          - type: "text"
             content: |
               Why is managing configuration files essential in software development?
               
@@ -195,8 +193,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the next question, {username}!"
           - type: "text"
             content: |
               How does GitHub Copilot assist in creating Terraform configuration files?
@@ -282,8 +278,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's keep going, {username}! Here's your next question."
-          - type: "text"
             content: |
               What is a key benefit of using AI to generate Kubernetes deployment files?
               
@@ -367,8 +361,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Ready for the next question, {username}? Here we go!"
           - type: "text"
             content: |
               How does GitHub Copilot help with Jenkins pipeline scripts?
@@ -454,8 +446,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next one, {username}! Let's see how you do with this question."
-          - type: "text"
             content: |
               How can AI tools help in optimizing configuration files for performance?
               
@@ -539,8 +529,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the next question, {username}!"
           - type: "text"
             content: |
               Why is standardization important in configuration file management?
@@ -626,8 +614,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's move on to the next question, {username}!"
-          - type: "text"
             content: |
               What is one way AI can assist with generating test scripts?
               
@@ -712,8 +698,6 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's keep the momentum going, {username}! Here's your next question."
-          - type: "text"
             content: |
               What should developers do to ensure the accuracy of AI-generated configuration scripts?
               
@@ -797,8 +781,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
             content: |
               How can AI tools enforce coding standards and best practices?

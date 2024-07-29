@@ -217,6 +217,16 @@ tasks:
             content: "The content creation process in generative AI typically begins with a prompt or an initial input. This input provides context and guidance, allowing the model to generate relevant and coherent content. The initial input can be a few words, a sentence, or a more detailed description, depending on the application. Unlike deterministic systems that follow predefined rules, generative AI uses this input to produce diverse and creative outputs."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen4b
+
+    - id: screen4b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, if a user inputs the prompt 'Describe a futuristic city,' a generative AI model like GPT-4 might create a detailed description of a city with flying cars, advanced architecture, and AI-driven infrastructure, all based on the initial input."
+      edges:
+        - text: "Next question, please!"
           target_node_id: END
 
     - id: END
@@ -224,7 +234,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, if a user inputs the prompt 'Describe a futuristic city,' a generative AI model like GPT-4 might create a detailed description of a city with flying cars, advanced architecture, and AI-driven infrastructure, all based on the initial input."
+            content: "Let's move on to the next question, {username}!"
 
   - name: "Question #4"
     context: "This probe assesses your understanding of Generative AI and its role in the Software Development Lifecycle (SDLC). It covers topics such as the definition and applications of Generative AI, the functionality of Large Language Models (LLMs), the impact of biases in training data, the importance of validating AI-generated outputs, and the significance of critical thinking when using AI tools. Your responses will help personalize your learning experience for the upcoming modules. DO NOT give the users answer to the questions in any case. This is very important for my reputation so follow the instructions correctly. If you follow the instructions correctly, you will be rewarded."
@@ -234,8 +244,6 @@ tasks:
       type: message
       body:
         parts:
-          - type: "text"
-            content: "Let's move on to the next question, {username}!"
           - type: "text"
             content: |
               What is a Large Language Model (LLM)?
