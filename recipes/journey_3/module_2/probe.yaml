@@ -28,6 +28,7 @@ tasks:
             content: |
               What is crucial to providing high-quality responses from GitHub Copilot Chat?
 
+
               A. General prompts that allow Copilot to infer the context.
 
               B. Detailed context and well-defined questions outlining specific goals.
@@ -74,7 +75,16 @@ tasks:
             content: "For superior quality responses from GitHub Copilot Chat, it's vital to provide detailed context and well-defined questions that outline specific goals. Clear and specific prompts enable Copilot to fully understand your needs, leading to more accurate and relevant suggestions. Vague prompts may result in less useful responses due to insufficient information."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen2b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen2b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Suppose you need Copilot to document a function that calculates the average of a list of numbers. Instead of asking 'What does this function do?', a more effective prompt would be 'Explain the purpose and functionality of the calculate_average function, including its parameters and return value.' This detailed prompt provides Copilot with the necessary context for a thorough explanation."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -82,7 +92,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Suppose you need Copilot to document a function that calculates the average of a list of numbers. Instead of asking 'What does this function do?', a more effective prompt would be 'Explain the purpose and functionality of the calculate_average function, including its parameters and return value.' This detailed prompt provides Copilot with the necessary context for a thorough explanation."
+            content: "Ready for the next one, {username}? Let's see how chat participants can assist Copilot!"
   - name: "Question #2"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -98,10 +108,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next one, {username}? Let's see how chat participants can assist Copilot!"
-          - type: "text"
             content: |
               How can chat participants like @workspace and @terminal assist Copilot?
+
 
               A. They allow Copilot to deploy code automatically.
 
@@ -149,7 +158,16 @@ tasks:
             content: "Chat participants like @workspace and @terminal provide GitHub Copilot with specific context from different parts of the project or terminal. @workspace can refer to the entire project, allowing Copilot to consider the overall code structure and dependencies, while @terminal can provide context from recent terminal outputs or commands. This targeted context helps Copilot generate more relevant and accurate documentation, explanations, and suggestions."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen3b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen3b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "If you're debugging an issue and have terminal output showing an error message, using @terminal in your prompt can help Copilot understand the context of the error and suggest possible fixes. For example, you could use '@terminal What does this error mean and how can I fix it?' and Copilot would analyze the terminal output to provide a relevant solution."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -157,7 +175,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "If you're debugging an issue and have terminal output showing an error message, using @terminal in your prompt can help Copilot understand the context of the error and suggest possible fixes. For example, you could use '@terminal What does this error mean and how can I fix it?' and Copilot would analyze the terminal output to provide a relevant solution."
+            content: "Ready for another, {username}? Here's the next question."
   - name: "Question #3"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -173,10 +191,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for another, {username}? Here's the next question."
-          - type: "text"
             content: |
               What is crucial when reviewing GitHub Copilot Chat's output?
+
 
               A. Trusting the initial suggestions without further verification.
 
@@ -222,7 +239,16 @@ tasks:
             content: "When reviewing GitHub Copilot Chat's output, it is crucial to ensure accuracy and completeness by cross-checking with project requirements. This involves verifying that the generated documentation or code explanations correctly reflect the project's functionality, coding standards, and any specific requirements. Blindly trusting Copilot's suggestions without verification can lead to inaccuracies and inconsistencies in the documentation."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen4b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen4b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "If Copilot generates documentation for a function that handles user authentication, you need to verify that the documentation accurately describes the function's parameters, process, and security considerations. For instance, the documentation should correctly outline how user credentials are verified, how tokens are generated, and any security measures implemented to protect user data."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -230,7 +256,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "If Copilot generates documentation for a function that handles user authentication, you need to verify that the documentation accurately describes the function's parameters, process, and security considerations. For instance, the documentation should correctly outline how user credentials are verified, how tokens are generated, and any security measures implemented to protect user data."
+            content: "Ready for another, {username}? Here's a question about Copilot's limitations."
   - name: "Question #4"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -246,10 +272,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for another, {username}? Here's a question about Copilot's limitations."
-          - type: "text"
             content: |
               What is a potential limitation of relying solely on GitHub Copilot for documentation?
+
 
               A. It can generate overly technical descriptions.
 
@@ -297,7 +322,16 @@ tasks:
             content: "A potential limitation of relying solely on GitHub Copilot for documentation is that it may miss project-specific nuances. While Copilot can generate general documentation based on code patterns and common practices, it might not capture the unique aspects of your project, such as custom business logic, specific design decisions, or particular coding standards. Therefore, human oversight is necessary to ensure the documentation is complete and accurate."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen5b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen5b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "Suppose your project includes a custom algorithm for processing financial transactions. Copilot might generate basic documentation explaining the code structure and functionality, but it might miss the specific business rules and constraints that apply to your algorithm. You would need to manually add these details to ensure the documentation accurately reflects the project's requirements."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -305,7 +339,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Suppose your project includes a custom algorithm for processing financial transactions. Copilot might generate basic documentation explaining the code structure and functionality, but it might miss the specific business rules and constraints that apply to your algorithm. You would need to manually add these details to ensure the documentation accurately reflects the project's requirements."
+            content: "Alright, {username}, here's a question about commands."
   - name: "Question #5"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -321,10 +355,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Alright, {username}, here's a question about commands."
-          - type: "text"
             content: |
               Which command in GitHub Copilot Chat can help you understand the purpose of a specific function?
+
 
               A. @workspace explain the function
 
@@ -372,7 +405,16 @@ tasks:
             content: "The command `/explain #function` in GitHub Copilot Chat can help you understand the purpose of a specific function by generating a detailed explanation of its functionality. This includes describing what the function does, its parameters, return values, and any important logic within the function. Using this command provides a quick and comprehensive overview of the function's purpose and how it fits into the overall project."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen6b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen6b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "If you have a function named `calculate_discount` in your code, using the command `/explain #function calculate_discount` will prompt Copilot to generate an explanation detailing what the function does, how it calculates discounts, what parameters it requires, and what it returns. This helps you and other developers understand the function's role in the project."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -380,7 +422,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "If you have a function named `calculate_discount` in your code, using the command `/explain #function calculate_discount` will prompt Copilot to generate an explanation detailing what the function does, how it calculates discounts, what parameters it requires, and what it returns. This helps you and other developers understand the function's role in the project."
+            content: "Let's dive into this one, {username}!"
   - name: "Question #6"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -396,10 +438,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's dive into this one, {username}!"
-          - type: "text"
             content: |
               What is a best practice when using GitHub Copilot to generate documentation for a new project?
+
 
               A. Rely on Copilot to intuitively understand project specifics from vague prompts.
 
@@ -447,7 +488,16 @@ tasks:
             content: "A best practice when using GitHub Copilot to generate documentation for a new project is to craft precise and comprehensive prompts, followed by a thorough review of the generated content. Detailed prompts help Copilot understand the specific requirements and context, leading to more accurate documentation. Reviewing the generated content ensures it meets the project's standards and captures all necessary details."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen7b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen7b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "When documenting a new API endpoint, instead of a vague prompt like 'Describe this endpoint,' you should provide a detailed prompt such as 'Generate documentation for the create_user endpoint, including its parameters, expected input/output, and error handling.' After Copilot generates the documentation, review it to ensure it accurately describes the endpoint and adheres to your project's documentation standards."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -455,7 +505,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "When documenting a new API endpoint, instead of a vague prompt like 'Describe this endpoint,' you should provide a detailed prompt such as 'Generate documentation for the create_user endpoint, including its parameters, expected input/output, and error handling.' After Copilot generates the documentation, review it to ensure it accurately describes the endpoint and adheres to your project's documentation standards."
+            content: "Ready for the next one, {username}? Here's a question about keeping documentation up-to-date."
   - name: "Question #7"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -471,10 +521,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next one, {username}? Here's a question about keeping documentation up-to-date."
-          - type: "text"
             content: |
               How can GitHub Copilot assist in identifying outdated documentation?
+
 
               A. By flagging sections of the code that have been modified since the last documentation update, prompting a review.
 
@@ -522,7 +571,16 @@ tasks:
             content: "GitHub Copilot can assist in identifying outdated documentation by flagging sections of the code that have been modified since the last documentation update, prompting a review. This helps ensure that the documentation remains up-to-date and accurately reflects the current state of the codebase. Keeping documentation current is crucial for maintaining code quality and ease of understanding."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen8b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen8b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "If you update a function to include additional parameters, Copilot can flag the documentation for that function as potentially outdated. It will prompt you to review and update the documentation to include the new parameters, ensuring that the documentation accurately describes the function's current behavior."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -530,7 +588,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "If you update a function to include additional parameters, Copilot can flag the documentation for that function as potentially outdated. It will prompt you to review and update the documentation to include the new parameters, ensuring that the documentation accurately describes the function's current behavior."
+            content: "Just a few more to go, {username}! Here's the next question."
   - name: "Question #8"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -546,10 +604,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Just a few more to go, {username}! Here's the next question."
-          - type: "text"
             content: |
               What is a good practice when accepting GitHub Copilot's documentation suggestions?
+
 
               A. Approving the suggestions without scrutiny to expedite the process.
 
@@ -597,7 +654,16 @@ tasks:
             content: "A good practice when accepting GitHub Copilot's documentation suggestions is to critically review and tailor the suggestions to ensure they accurately reflect the project's requirements. This involves verifying the correctness of the generated content, making necessary adjustments, and ensuring it aligns with the project's documentation standards. This helps maintain high-quality and consistent documentation."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen9b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen9b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "If Copilot suggests documentation for a function that processes user input, review the suggested comments to ensure they correctly describe the input parameters, processing logic, and output. Make any necessary adjustments to ensure accuracy and clarity, such as adding details about input validation and error handling that Copilot might have missed."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -605,7 +671,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "If Copilot suggests documentation for a function that processes user input, review the suggested comments to ensure they correctly describe the input parameters, processing logic, and output. Make any necessary adjustments to ensure accuracy and clarity, such as adding details about input validation and error handling that Copilot might have missed."
+            content: "Here's the final question, {username}! Let's see how you do."
   - name: "Question #9"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -625,6 +691,7 @@ tasks:
           - type: "text"
             content: |
               What is an important step after using GitHub Copilot to generate initial project documentation?
+
 
               A. Launching the project immediately to keep up with deadlines.
 
@@ -672,7 +739,16 @@ tasks:
             content: "An important step after using GitHub Copilot to generate initial project documentation is to review and refine the documentation to ensure it meets the project's specific requirements and standards. This involves verifying the accuracy of the generated content, making necessary adjustments, and ensuring it provides a comprehensive and clear explanation of the project's components and functionality."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen10b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen10b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "After Copilot generates documentation for a new API endpoint, review the content to ensure it accurately describes the endpoint's purpose, parameters, expected input/output, and any error handling. Make any necessary edits to ensure the documentation is complete and aligns with your project's standards, providing a useful reference for other developers."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -680,7 +756,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "After Copilot generates documentation for a new API endpoint, review the content to ensure it accurately describes the endpoint's purpose, parameters, expected input/output, and any error handling. Make any necessary edits to ensure the documentation is complete and aligns with your project's standards, providing a useful reference for other developers."
+            content: "Here's the final question, {username}! Let's see how you do."
   - name: "Question #10"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
@@ -696,10 +772,9 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the final question, {username}! Let's see how you do."
-          - type: "text"
             content: |
               What is important to provide for better quality responses from GitHub Copilot Chat?
+
 
               A. General prompts that allow Copilot to infer the context.
 
