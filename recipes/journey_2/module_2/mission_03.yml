@@ -93,7 +93,7 @@ tasks:
               content: |
                 Examine Copilot's response regarding the application as a whole. You might see general suggestions for improving security. We'll explore in more detail how to add **rate limiting** to the application.
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%204%2Fmission_3_1.png?alt=media&token=f837fe78-0c9d-41ea-ac6c-a8bff835e21f"
             - type: "text"
               content: "Ready to explore implementing rate limiting?"
 
@@ -125,8 +125,6 @@ tasks:
             - type: "text"
               content: |
                 Review Copilot's response about introducing rate limiting to the application. Pay attention to the suggested library and the example provided.
-            - type: "image"
-              content: "[Link to Screenshot showing Copilot's response about rate limiting.]"
             - type: "text"
               content: "Ready to proceed?"
         edges:
@@ -157,8 +155,6 @@ tasks:
             - type: "text"
               content: |
                 Examine Copilot's response about introducing rate limiting to the application as a whole. This can give us a direction of where to go next. We should pay attention to the suggested library and the example provided about how it would work within our app. This helps us consider the feasibility of the suggestion.
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Ready to review an implemented solution?"
         edges:
@@ -187,8 +183,6 @@ tasks:
             - type: "text"
               content: |
                 Examine Copilot's implementation. In our case, the actual implementation involves several steps such as moving the logic of the limiter to a separate file within the core/ folder. We can instantiate this as an attribute to the app within the main.py folder and then import the app.core.limiter module to create a decorator @limiter.limit('5/minute') on top of the routes.
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Ready to review an implemented solution?"
         edges:
@@ -205,8 +199,6 @@ tasks:
             - type: "text"
               content: |
                 Feel free to also use the `@workspace` command to review the code for adding the rate limits. We can test the solution works by starting the server and then sending a request to the API from the /docs page.
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Let's wrap up!"
         edges:
