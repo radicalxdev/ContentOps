@@ -25,7 +25,12 @@ tasks:
           - type: "text"
             content: "Alright {username}, let's begin with our first question!"
           - type: "text"
-            content: "What is the primary benefit of using Katalon Studio for software testing?\n\nA. Manual test case creation\nB. Automating repetitive tasks and enhancing test accuracy\nC. Increased manual testing effort\nD. Decreased test coverage"
+            content: |
+              What is the primary benefit of using Katalon Studio for software testing?
+              A. Manual test case creation
+              B. Automating repetitive tasks and enhancing test accuracy
+              C. Increased manual testing effort
+              D. Decreased test coverage
       edges:
         - text: "a"
           target_node_id: screen2incorrect
@@ -91,7 +96,12 @@ tasks:
           - type: "text"
             content: "Ready for the next one, {username}? Let's talk about types of testing."
           - type: "text"
-            content: "Which type of testing ensures individual components or functions perform as expected?\n\nA. Integration Testing\nB. System Testing\nC. Unit Testing\nD. Acceptance Testing"
+            content: |
+              Which type of testing ensures individual components or functions perform as expected?
+              A. Integration Testing
+              B. System Testing
+              C. Unit Testing
+              D. Acceptance Testing
       edges:
         - text: "a"
           target_node_id: screen3incorrect
@@ -157,7 +167,12 @@ tasks:
           - type: "text"
             content: "Ready for another question, {username}? Let's talk about AI in Katalon Studio."
           - type: "text"
-            content: "How does AI in Katalon Studio improve test creation?\n\nA. By requiring manual test writing\nB. By generating automation scripts from simple descriptions\nC. By ignoring test data\nD. By increasing the complexity of tests"
+            content: |
+              How does AI in Katalon Studio improve test creation?
+              A. By requiring manual test writing
+              B. By generating automation scripts from simple descriptions
+              C. By ignoring test data
+              D. By increasing the complexity of tests
       edges:
         - text: "a"
           target_node_id: screen4incorrect
@@ -223,7 +238,12 @@ tasks:
           - type: "text"
             content: "Here's another one, {username}! Let's discuss AI-powered features in Katalon Studio."
           - type: "text"
-            content: "Which AI-powered feature checks visual elements on a page in Katalon Studio?\n\nA. Synthetic Data Generation\nB. Visual Accuracy Verification\nC. Automated Test Case Generation\nD. Predictive Analytics"
+            content: |
+              Which AI-powered feature checks visual elements on a page in Katalon Studio?
+              A. Synthetic Data Generation
+              B. Visual Accuracy Verification
+              C. Automated Test Case Generation
+              D. Predictive Analytics
       edges:
         - text: "a"
           target_node_id: screen5incorrect
@@ -289,7 +309,12 @@ tasks:
           - type: "text"
             content: "Ready for another one, {username}? Let's discuss synthetic data generation in testing."
           - type: "text"
-            content: "What is the benefit of using synthetic data generation in testing?\n\nA. Reduces the number of test cases\nB. Creates diverse and comprehensive test datasets\nC. Increases manual data entry\nD. Simplifies the testing process"
+            content: |
+              What is the benefit of using synthetic data generation in testing?
+              A. Reduces the number of test cases
+              B. Creates diverse and comprehensive test datasets
+              C. Increases manual data entry
+              D. Simplifies the testing process
       edges:
         - text: "a"
           target_node_id: screen6incorrect
@@ -355,7 +380,12 @@ tasks:
           - type: "text"
             content: "Let's continue, {username}! Here's a question about Katalon Studio's AI-powered testing assistance."
           - type: "text"
-            content: "What is a key feature of Katalon Studio's AI-powered testing assistance?\n\nA. Manual bug tracking\nB. Real-time suggestions and feedback during test execution\nC. Increased manual effort\nD. Limited test coverage"
+            content: |
+              What is a key feature of Katalon Studio's AI-powered testing assistance?
+              A. Manual bug tracking
+              B. Real-time suggestions and feedback during test execution
+              C. Increased manual effort
+              D. Limited test coverage
       edges:
         - text: "a"
           target_node_id: screen7incorrect
@@ -421,7 +451,12 @@ tasks:
           - type: "text"
             content: "Here's the next one, {username}! Let's talk about continuous testing."
           - type: "text"
-            content: "Why is continuous testing important in software development?\n\nA. It slows down the development process\nB. It ensures continuous feedback and rapid detection of issues\nC. It reduces test coverage\nD. It complicates test management"
+            content: |
+              Why is continuous testing important in software development?
+              A. It slows down the development process
+              B. It ensures continuous feedback and rapid detection of issues
+              C. It reduces test coverage
+              D. It complicates test management
       edges:
         - text: "a"
           target_node_id: screen8incorrect
@@ -487,7 +522,12 @@ tasks:
           - type: "text"
             content: "Let's move on, {username}! Here's a question about the self-healing feature in Katalon Studio."
           - type: "text"
-            content: "What is the role of AI in Katalon Studio's self-healing feature?\n\nA. Fixes broken element locators automatically\nB. Reduces test maintenance effort\nC. Increases manual intervention\nD. Both A and B"
+            content: |
+              What is the role of AI in Katalon Studio's self-healing feature?
+              A. Fixes broken element locators automatically
+              B. Reduces test maintenance effort
+              C. Increases manual intervention
+              D. Both A and B
       edges:
         - text: "a"
           target_node_id: screen9incorrect
@@ -553,7 +593,12 @@ tasks:
           - type: "text"
             content: "Almost there, {username}! Let's talk about regression testing in Katalon Studio."
           - type: "text"
-            content: "How does AI improve regression testing in Katalon Studio?\n\nA. By ignoring existing functionalities\nB. By ensuring new features do not affect existing functionalities\nC. By increasing the number of bugs\nD. By reducing test accuracy"
+            content: |
+              How does AI improve regression testing in Katalon Studio?
+              A. By ignoring existing functionalities
+              B. By ensuring new features do not affect existing functionalities
+              C. By increasing the number of bugs
+              D. By reducing test accuracy
       edges:
         - text: "a"
           target_node_id: screen10incorrect
@@ -619,7 +664,12 @@ tasks:
           - type: "text"
             content: "Let's finish strong, {username}! Here's a question about Katalon Studio's Smart Wait feature."
           - type: "text"
-            content: "What does Katalon Studio's Smart Wait feature improve?\n\nA. Test execution time\nB. Test stability and accuracy\nC. Test coverage\nD. Test data generation"
+            content: |
+              What does Katalon Studio's Smart Wait feature improve?
+              A. Test execution time
+              B. Test stability and accuracy
+              C. Test coverage
+              D. Test data generation
       edges:
         - text: "a"
           target_node_id: screen11incorrect
@@ -676,8 +726,14 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module."
-          - type: "text"
-            content: "**Recap:**\n\n- We explored how Katalon Studio automates repetitive tasks and enhances test accuracy.\n- We discussed the importance of unit testing and its role in ensuring individual components perform as expected.\n- We highlighted how AI in Katalon Studio improves test creation and automates script generation from simple descriptions.\n- We reviewed AI-powered features such as Visual Accuracy Verification and synthetic data generation.\n- We emphasized the benefits of continuous testing and AI-driven self-healing features.\n- We covered how AI enhances regression testing and the Smart Wait feature's role in improving test stability and accuracy."
+            content: |
+              Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.
+              **Recap:**
+              - We explored how Katalon Studio automates repetitive tasks and enhances test accuracy.
+              - We discussed the importance of unit testing and its role in ensuring individual components perform as expected.
+              - We highlighted how AI in Katalon Studio improves test creation and automates script generation from simple descriptions.
+              - We reviewed AI-powered features such as Visual Accuracy Verification and synthetic data generation.
+              - We emphasized the benefits of continuous testing and AI-driven self-healing features.
+              - We covered how AI enhances regression testing and the Smart Wait feature's role in improving test stability and accuracy.
           - type: "text"
             content: "Up next, we'll dive into the next module, where we'll explore advanced techniques for using Katalon Studio to further enhance your software testing workflow."
