@@ -25,15 +25,24 @@ tasks:
           - type: "text"
             content: "Alright {username}, let's begin with our first question!"
           - type: "text"
-            content: "What is the primary benefit of using Katalon Studio for software testing?\n\nA. Manual test case creation\nB. Automating repetitive tasks and enhancing test accuracy\nC. Increased manual testing effort\nD. Decreased test coverage"
+            content: |
+              What is the primary benefit of using Katalon Studio for software testing?
+
+              A. Manual test case creation
+
+              B. Automating repetitive tasks and enhancing test accuracy
+
+              C. Increased manual testing effort
+
+              D. Decreased test coverage
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2incorrect
     - id: screen2correct
       type: message
@@ -91,15 +100,24 @@ tasks:
           - type: "text"
             content: "Ready for the next one, {username}? Let's talk about types of testing."
           - type: "text"
-            content: "Which type of testing ensures individual components or functions perform as expected?\n\nA. Integration Testing\nB. System Testing\nC. Unit Testing\nD. Acceptance Testing"
+            content: |
+              Which type of testing ensures individual components or functions perform as expected?
+
+              A. Integration Testing
+
+              B. System Testing
+
+              C. Unit Testing
+
+              D. Acceptance Testing
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen3correct
-        - text: "d"
+        - text: "D"
           target_node_id: screen3incorrect
     - id: screen3correct
       type: message
@@ -157,15 +175,24 @@ tasks:
           - type: "text"
             content: "Ready for another question, {username}? Let's talk about AI in Katalon Studio."
           - type: "text"
-            content: "How does AI in Katalon Studio improve test creation?\n\nA. By requiring manual test writing\nB. By generating automation scripts from simple descriptions\nC. By ignoring test data\nD. By increasing the complexity of tests"
+            content: |
+              How does AI in Katalon Studio improve test creation?
+
+              A. By requiring manual test writing
+
+              B. By generating automation scripts from simple descriptions
+
+              C. By ignoring test data
+
+              D. By increasing the complexity of tests
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4incorrect
     - id: screen4correct
       type: message
@@ -223,15 +250,24 @@ tasks:
           - type: "text"
             content: "Here's another one, {username}! Let's discuss AI-powered features in Katalon Studio."
           - type: "text"
-            content: "Which AI-powered feature checks visual elements on a page in Katalon Studio?\n\nA. Synthetic Data Generation\nB. Visual Accuracy Verification\nC. Automated Test Case Generation\nD. Predictive Analytics"
+            content: |
+              Which AI-powered feature checks visual elements on a page in Katalon Studio?
+
+              A. Synthetic Data Generation
+
+              B. Visual Accuracy Verification
+
+              C. Automated Test Case Generation
+
+              D. Predictive Analytics
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5incorrect
     - id: screen5correct
       type: message
@@ -289,15 +325,24 @@ tasks:
           - type: "text"
             content: "Ready for another one, {username}? Let's discuss synthetic data generation in testing."
           - type: "text"
-            content: "What is the benefit of using synthetic data generation in testing?\n\nA. Reduces the number of test cases\nB. Creates diverse and comprehensive test datasets\nC. Increases manual data entry\nD. Simplifies the testing process"
+            content: |
+              What is the benefit of using synthetic data generation in testing?
+
+              A. Reduces the number of test cases
+
+              B. Creates diverse and comprehensive test datasets
+
+              C. Increases manual data entry
+
+              D. Simplifies the testing process
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen6incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6incorrect
     - id: screen6correct
       type: message
@@ -355,15 +400,24 @@ tasks:
           - type: "text"
             content: "Let's continue, {username}! Here's a question about Katalon Studio's AI-powered testing assistance."
           - type: "text"
-            content: "What is a key feature of Katalon Studio's AI-powered testing assistance?\n\nA. Manual bug tracking\nB. Real-time suggestions and feedback during test execution\nC. Increased manual effort\nD. Limited test coverage"
+            content: |
+              What is a key feature of Katalon Studio's AI-powered testing assistance?
+
+              A. Manual bug tracking
+
+              B. Real-time suggestions and feedback during test execution
+
+              C. Increased manual effort
+
+              D. Limited test coverage
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7incorrect
     - id: screen7correct
       type: message
@@ -421,15 +475,24 @@ tasks:
           - type: "text"
             content: "Here's the next one, {username}! Let's talk about continuous testing."
           - type: "text"
-            content: "Why is continuous testing important in software development?\n\nA. It slows down the development process\nB. It ensures continuous feedback and rapid detection of issues\nC. It reduces test coverage\nD. It complicates test management"
+            content: |
+              Why is continuous testing important in software development?
+
+              A. It slows down the development process
+
+              B. It ensures continuous feedback and rapid detection of issues
+
+              C. It reduces test coverage
+
+              D. It complicates test management
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8incorrect
     - id: screen8correct
       type: message
@@ -487,15 +550,24 @@ tasks:
           - type: "text"
             content: "Let's move on, {username}! Here's a question about the self-healing feature in Katalon Studio."
           - type: "text"
-            content: "What is the role of AI in Katalon Studio's self-healing feature?\n\nA. Fixes broken element locators automatically\nB. Reduces test maintenance effort\nC. Increases manual intervention\nD. Both A and B"
+            content: |
+              What is the role of AI in Katalon Studio's self-healing feature?
+
+              A. Fixes broken element locators automatically
+
+              B. Reduces test maintenance effort
+
+              C. Increases manual intervention
+
+              D. Both A and B
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen9incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9correct
     - id: screen9correct
       type: message
@@ -553,15 +625,24 @@ tasks:
           - type: "text"
             content: "Almost there, {username}! Let's talk about regression testing in Katalon Studio."
           - type: "text"
-            content: "How does AI improve regression testing in Katalon Studio?\n\nA. By ignoring existing functionalities\nB. By ensuring new features do not affect existing functionalities\nC. By increasing the number of bugs\nD. By reducing test accuracy"
+            content: |
+              How does AI improve regression testing in Katalon Studio?
+
+              A. By ignoring existing functionalities
+
+              B. By ensuring new features do not affect existing functionalities
+
+              C. By increasing the number of bugs
+
+              D. By reducing test accuracy
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10incorrect
     - id: screen10correct
       type: message
@@ -619,15 +700,24 @@ tasks:
           - type: "text"
             content: "Let's finish strong, {username}! Here's a question about Katalon Studio's Smart Wait feature."
           - type: "text"
-            content: "What does Katalon Studio's Smart Wait feature improve?\n\nA. Test execution time\nB. Test stability and accuracy\nC. Test coverage\nD. Test data generation"
+            content: |
+              What does Katalon Studio's Smart Wait feature improve?
+
+              A. Test execution time
+
+              B. Test stability and accuracy
+
+              C. Test coverage
+
+              D. Test data generation
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11incorrect
     - id: screen11correct
       type: message
