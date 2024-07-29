@@ -29,9 +29,13 @@ tasks:
             content: |
               What is the primary objective of AI-powered monitoring?
 
+
               A. To increase the complexity of the system
+
               B. To maintain the health and responsiveness of applications
+
               C. To reduce application performance
+
               D. To eliminate the need for monitoring
       edges:
         - text: "A"
@@ -72,15 +76,24 @@ tasks:
             content: "The primary objective of AI-powered monitoring is to maintain the health and responsiveness of applications. AI-powered tools continuously monitor various performance metrics, detect anomalies, and provide real-time insights to ensure that applications are running optimally. By proactively identifying and addressing potential issues, these tools help prevent downtime and maintain a high level of performance."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen2b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen2b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, AI-powered monitoring can detect a sudden increase in error rates and automatically trigger alerts or remedial actions to prevent potential disruptions in service."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, AI-powered monitoring can detect a sudden increase in error rates and automatically trigger alerts or remedial actions to prevent potential disruptions in service."
+            content: "Great job, {username}! You've completed the first question. Let's move on to the next one."
   - name: "Question #2"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -103,8 +116,11 @@ tasks:
               In the TaskMaster scenario, what is the main issue that arises?
 
               A. Increase in user satisfaction
+
               B. Sudden spike in response times
+
               C. Decrease in application complexity
+
               D. Improved system performance
       edges:
         - text: "A"
@@ -145,15 +161,24 @@ tasks:
             content: "In the TaskMaster scenario, the primary issue that arises is a sudden spike in response times. This indicates that the application is experiencing performance problems, which can negatively impact user experience and satisfaction. Identifying and resolving such issues promptly is crucial for maintaining the application's reliability and performance."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen3b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen3b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, a sudden spike in response times could be caused by a surge in user traffic or a bottleneck in the backend infrastructure, requiring immediate investigation and resolution."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For example, a sudden spike in response times could be caused by a surge in user traffic or a bottleneck in the backend infrastructure, requiring immediate investigation and resolution."
+            content: "Awesome job, {username}! You've completed another question. Let's move on to the next one."
   - name: "Question #3"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -176,8 +201,11 @@ tasks:
               How do AI-powered monitoring tools help in real-time insights?
 
               A. By reducing the number of monitoring metrics
+
               B. By continuously monitoring performance metrics and detecting anomalies in real-time
+
               C. By ignoring real-time data
+
               D. By increasing manual effort
       edges:
         - text: "A"
@@ -218,15 +246,24 @@ tasks:
             content: "AI-powered monitoring tools help in real-time insights by continuously monitoring performance metrics and detecting anomalies as they occur. These tools use advanced algorithms to analyze data in real-time, identify patterns, and highlight deviations from normal behavior. This enables quick detection and resolution of issues, ensuring that applications remain stable and perform optimally."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen4b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen4b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, an AI-powered monitoring tool can detect a sudden drop in transaction success rates and immediately alert the operations team, allowing them to investigate and address the issue before it impacts users."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, an AI-powered monitoring tool can detect a sudden drop in transaction success rates and immediately alert the operations team, allowing them to investigate and address the issue before it impacts users."
+            content: "Perfect! Let's move on to the next one."
   - name: "Question #4"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -248,9 +285,13 @@ tasks:
             content: |
               What benefit does predictive analytics provide in AI-powered monitoring?
 
+
               A. Ignoring potential issues
+
               B. Predicting potential issues before they impact users
+
               C. Reducing system visibility
+
               D. Increasing downtime
       edges:
         - text: "A"
@@ -291,15 +332,24 @@ tasks:
             content: "Predictive analytics in AI-powered monitoring provides the benefit of identifying potential issues before they impact users. By analyzing historical data and current trends, predictive analytics can forecast future problems and alert the operations team in advance. This proactive approach allows for timely interventions, preventing potential downtime or performance degradation."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen5b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen5b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, predictive analytics might identify a trend indicating that a server is likely to reach its capacity limit within the next 24 hours, prompting the team to take preemptive actions to avoid service disruption."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For example, predictive analytics might identify a trend indicating that a server is likely to reach its capacity limit within the next 24 hours, prompting the team to take preemptive actions to avoid service disruption."
+            content: "Let's move on to the next question!"
   - name: "Question #5"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -321,9 +371,13 @@ tasks:
             content: |
               Which of the following is NOT a feature of New Relic?
 
+
               A. Application Performance Monitoring (APM)
+
               B. Log Management
+
               C. Synthetic Monitoring
+
               D. Manual issue resolution
       edges:
         - text: "A"
@@ -364,15 +418,24 @@ tasks:
             content: "New Relic provides several features such as Application Performance Monitoring (APM), Log Management, and Synthetic Monitoring, all aimed at automating the monitoring and analysis of application performance. However, manual issue resolution is not a feature of New Relic; the platform is designed to automate the detection, analysis, and alerting processes to minimize the need for manual intervention."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen6b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen6b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, New Relic's APM feature automatically tracks application performance metrics and alerts the operations team when anomalies are detected, while log management helps in aggregating and analyzing log data for troubleshooting purposes."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, New Relic's APM feature automatically tracks application performance metrics and alerts the operations team when anomalies are detected, while log management helps in aggregating and analyzing log data for troubleshooting purposes."
+            content: "Good job, {username}! You've completed another question. Let's move on to the next one."
   - name: "Question #6"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -394,9 +457,13 @@ tasks:
             content: |
               How does New Relic improve troubleshooting capabilities?
 
+
               A. By ignoring log data
+
               B. By providing comprehensive log management and AI-driven root cause analysis
+
               C. By reducing the number of logs
+
               D. By complicating the troubleshooting process
       edges:
         - text: "A"
@@ -437,15 +504,24 @@ tasks:
             content: "New Relic improves troubleshooting capabilities by providing comprehensive log management and AI-driven root cause analysis. The platform aggregates and analyzes log data from various sources, allowing for efficient identification and resolution of issues. AI-driven root cause analysis helps pinpoint the exact cause of problems, reducing the time and effort required for troubleshooting and ensuring quicker resolution of issues."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen7b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen7b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, if an application experiences a sudden increase in error rates, New Relic's log management and root cause analysis can help identify the specific code changes or infrastructure issues that led to the errors, enabling the development team to address the problem promptly."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, if an application experiences a sudden increase in error rates, New Relic's log management and root cause analysis can help identify the specific code changes or infrastructure issues that led to the errors, enabling the development team to address the problem promptly."
+            content: "Let's move on to the next question!"
   - name: "Question #7"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -467,9 +543,13 @@ tasks:
             content: |
               Why was New Relic chosen for Alfred AI's TaskMaster application?
 
+
               A. For its limited features
+
               B. Due to its comprehensive features and robust AI-driven insights
+
               C. Because it is the only monitoring tool available
+
               D. For its lack of integration capabilities
       edges:
         - text: "A"
@@ -510,15 +590,24 @@ tasks:
             content: "New Relic was chosen for Alfred AI's TaskMaster application due to its comprehensive features and robust AI-driven insights. The platform offers a wide range of monitoring and analysis tools, including application performance monitoring, log management, synthetic monitoring, and AI-driven analytics. These features provide deep visibility into application performance, help detect and resolve issues proactively, and ensure the reliability and efficiency of the TaskMaster application."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen8b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen8b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, New Relic's AI-driven insights can help TaskMaster identify performance bottlenecks and predict potential issues before they impact users, ensuring a smooth and responsive user experience."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For example, New Relic's AI-driven insights can help TaskMaster identify performance bottlenecks and predict potential issues before they impact users, ensuring a smooth and responsive user experience."
+            content: "Aweosome. Let's move on to the next question!"
   - name: "Question #8"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -540,9 +629,13 @@ tasks:
             content: |
               What does Application Performance Monitoring (APM) provide in New Relic?
 
+
               A. Limited visibility into application performance
+
               B. Detailed insights into application performance, including transaction tracing and error analysis
+
               C. No insights into transaction performance
+
               D. Reduced monitoring capabilities
       edges:
         - text: "A"
@@ -583,15 +676,24 @@ tasks:
             content: "Application Performance Monitoring (APM) in New Relic offers detailed insights into application performance, including transaction tracing and error analysis. APM helps monitor various aspects of application performance, such as response times, throughput, and error rates. It also provides in-depth transaction tracing, allowing developers to see how requests flow through the application and identify performance bottlenecks or errors at specific points in the transaction."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen9b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen9b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, New Relic's APM can trace a user transaction from the front-end to the back-end, highlighting any slow queries or services that may be affecting the overall performance, and providing detailed error analysis to pinpoint the cause of any issues."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, New Relic's APM can trace a user transaction from the front-end to the back-end, highlighting any slow queries or services that may be affecting the overall performance, and providing detailed error analysis to pinpoint the cause of any issues."
+            content: "Great job, {username}! You've completed another question. Let's move on to the next one."
   - name: "Question #9"
     context: |
       This probe tests and reinforces learners' understanding of AI-powered monitoring with New Relic.
@@ -613,9 +715,13 @@ tasks:
             content: |
               What is the primary advantage of using AI-driven insights in monitoring?
 
+
               A. Increased manual analysis
+
               B. Enhanced proactive monitoring and actionable insights
+
               C. Reduced visibility into system performance
+
               D. Increased downtime
       edges:
         - text: "A"
@@ -656,8 +762,17 @@ tasks:
             content: "The primary advantage of using AI-driven insights in monitoring is the enhancement of proactive monitoring and the provision of actionable insights. AI tools can continuously analyze performance data, detect anomalies, and predict potential issues before they impact users. This proactive approach allows for timely intervention and resolution, improving the overall reliability and performance of applications."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen10b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen10b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, AI-driven insights might identify a pattern indicating that a certain microservice is likely to fail under high load conditions, allowing the operations team to scale resources or optimize code before any failure occurs."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
@@ -686,9 +801,13 @@ tasks:
             content: |
               Which feature of New Relic helps simulate user interactions to monitor application availability and performance?
 
+
               A. Log Management
+
               B. Synthetic Monitoring
+
               C. Infrastructure Monitoring
+
               D. Manual Monitoring
       edges:
         - text: "A"

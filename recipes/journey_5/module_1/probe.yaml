@@ -28,9 +28,14 @@ tasks:
           - type: "text"
             content: |
               What is the primary benefit of using AI tools like GitHub Copilot for managing configuration files?
+              
+
               A. Increased manual effort
+              
               B. Streamlined generation and management of configuration files
+              
               C. Reduced accuracy and consistency
+              
               D. Increased likelihood of errors
       edges:
         - text: "A"
@@ -71,15 +76,24 @@ tasks:
             content: "The primary benefit of using AI tools like GitHub Copilot for managing configuration files is the streamlined generation and management process. These tools can automate the creation of configuration files, ensuring consistency and accuracy while reducing the manual effort required. This leads to fewer errors, improved efficiency, and more reliable configurations across different environments."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen2b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen2b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, when setting up a new environment, Copilot can generate configuration files that specify environment variables, database connections, and other settings automatically, ensuring that all necessary parameters are included and correctly formatted."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, when setting up a new environment, Copilot can generate configuration files that specify environment variables, database connections, and other settings automatically, ensuring that all necessary parameters are included and correctly formatted."
+            content: "Ready for the next one, {username}? Let's talk about why managing configuration files is essential in software development."
   - name: "Question #2"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -100,9 +114,14 @@ tasks:
           - type: "text"
             content: |
               Why is managing configuration files essential in software development?
+              
+
               A. To increase code complexity
+              
               B. To centralize settings for different environments and ensure security and functionality
+              
               C. To reduce code readability
+              
               D. To increase manual labor
       edges:
         - text: "A"
@@ -143,15 +162,24 @@ tasks:
             content: "Managing configuration files is essential in software development because it centralizes settings that are critical for different environments, such as development, testing, and production. Proper management ensures that these settings are secure and functional, minimizing the risk of misconfigurations that could lead to security vulnerabilities or operational issues. It also allows for easier updates and consistency across all environments."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen3b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen3b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, a configuration file might include database connection strings, API keys, and environment-specific variables that need to be managed securely and consistently across development, staging, and production environments."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For example, a configuration file might include database connection strings, API keys, and environment-specific variables that need to be managed securely and consistently across development, staging, and production environments."
+            content: "Here's the next question, {username}! Let's see how GitHub Copilot assists in creating Terraform configuration files."
   - name: "Question #3"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -172,9 +200,14 @@ tasks:
           - type: "text"
             content: |
               How does GitHub Copilot assist in creating Terraform configuration files?
+              
+
               A. By generating incomplete and inaccurate configurations
+              
               B. By automating the process and ensuring consistent configurations
+              
               C. By increasing the complexity of the configurations
+              
               D. By ignoring best practices
       edges:
         - text: "A"
@@ -215,15 +248,24 @@ tasks:
             content: "GitHub Copilot assists in creating Terraform configuration files by automating the process and ensuring that the configurations are consistent and accurate. This automation reduces the manual effort involved and helps maintain best practices in infrastructure as code (IaC) management. By generating well-structured Terraform files, Copilot ensures that resources are defined consistently, making deployments more reliable and easier to manage."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen4b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen4b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, when defining infrastructure resources like VPCs, subnets, and security groups, Copilot can generate the necessary Terraform code snippets, ensuring that all dependencies and settings are correctly specified and follow best practices."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, when defining infrastructure resources like VPCs, subnets, and security groups, Copilot can generate the necessary Terraform code snippets, ensuring that all dependencies and settings are correctly specified and follow best practices."
+            content: "Let's keep going, {username}! Here's your next question about using AI to generate Kubernetes deployment files."
   - name: "Question #4"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -244,9 +286,14 @@ tasks:
           - type: "text"
             content: |
               What is a key benefit of using AI to generate Kubernetes deployment files?
+              
+
               A. Increasing manual errors
+              
               B. Simplifying the process and making it more efficient and reliable
+              
               C. Reducing deployment efficiency
+              
               D. Increasing deployment time
       edges:
         - text: "A"
@@ -287,15 +334,24 @@ tasks:
             content: "A key benefit of using AI to generate Kubernetes deployment files is the simplification and increased efficiency of the deployment process. AI tools like GitHub Copilot can automate the creation of these files, ensuring that they are correctly formatted and include all necessary configurations. This reduces the likelihood of manual errors, speeds up the deployment process, and enhances the reliability of the deployments."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen5b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen5b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, when deploying a new microservice, Copilot can generate the necessary Kubernetes deployment and service YAML files, specifying container images, resource limits, and networking settings accurately and efficiently."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For example, when deploying a new microservice, Copilot can generate the necessary Kubernetes deployment and service YAML files, specifying container images, resource limits, and networking settings accurately and efficiently."
+            content: "Ready for the next question, {username}? Here we go!"
   - name: "Question #5"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -316,9 +372,14 @@ tasks:
           - type: "text"
             content: |
               How does GitHub Copilot help with Jenkins pipeline scripts?
+              
+
               A. By manually creating the scripts
+              
               B. By generating Jenkins pipeline scripts to automate build, test, and deployment processes
+              
               C. By ignoring the CI/CD pipeline
+              
               D. By reducing the automation level
       edges:
         - text: "A"
@@ -359,15 +420,24 @@ tasks:
             content: "GitHub Copilot assists with Jenkins pipeline scripts by generating code that automates the build, test, and deployment processes. This automation is crucial for continuous integration and continuous deployment (CI/CD) workflows, ensuring that software is consistently built, tested, and deployed in a reliable and efficient manner. By using Copilot to create these scripts, developers can streamline their CI/CD pipelines, reduce manual intervention, and improve overall productivity."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen6b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen6b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, Copilot can generate a Jenkinsfile that defines stages for building a Java application, running unit tests, and deploying the application to a staging environment. This script automates the entire process, ensuring that each stage is executed correctly and efficiently."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, Copilot can generate a Jenkinsfile that defines stages for building a Java application, running unit tests, and deploying the application to a staging environment. This script automates the entire process, ensuring that each stage is executed correctly and efficiently."
+            content: "Here's the next one, {username}! Let's see how AI tools help in optimizing configuration files for performance."
   - name: "Question #6"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -388,9 +458,14 @@ tasks:
           - type: "text"
             content: |
               How can AI tools help in optimizing configuration files for performance?
+              
+
               A. By ignoring performance bottlenecks
+              
               B. By identifying and suggesting optimizations for better performance and resource allocation
+              
               C. By increasing the complexity of the configurations
+              
               D. By reducing the efficiency of the configurations
       edges:
         - text: "A"
@@ -431,15 +506,24 @@ tasks:
             content: "AI tools can analyze configuration files to identify performance bottlenecks and resource allocation issues. They can then suggest optimizations to improve performance and efficiency. This involves analyzing various aspects of the configurations, such as resource limits, load balancing, and network settings, to ensure optimal usage of resources and improved system performance."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen7b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen7b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, an AI tool might analyze a Kubernetes configuration file and suggest adjustments to CPU and memory limits for different pods to avoid resource contention and improve overall cluster performance."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, an AI tool might analyze a Kubernetes configuration file and suggest adjustments to CPU and memory limits for different pods to avoid resource contention and improve overall cluster performance."
+            content: "Here's the next question, {username}! Let's talk about why standardization is important in configuration file management."
   - name: "Question #7"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -460,9 +544,14 @@ tasks:
           - type: "text"
             content: |
               Why is standardization important in configuration file management?
+              
+
               A. To reduce collaboration
+              
               B. To maintain consistent coding standards and practices across a team
+              
               C. To increase script complexity
+              
               D. To ignore best practices
       edges:
         - text: "A"
@@ -503,15 +592,24 @@ tasks:
             content: "Standardization in configuration file management is crucial for maintaining consistent coding standards and practices across a development team. It ensures that all team members follow the same conventions, making the configuration files easier to read, understand, and maintain. Standardization also reduces the likelihood of errors and inconsistencies, improving overall code quality and team collaboration."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen8b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen8b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, enforcing a standardized format for YAML files in a project ensures that all configuration files adhere to the same structure, making it easier for team members to understand and modify them as needed."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For example, enforcing a standardized format for YAML files in a project ensures that all configuration files adhere to the same structure, making it easier for team members to understand and modify them as needed."
+            content: "Let's move on to the next question, {username}! Let's discuss how AI can assist with generating test scripts."
   - name: "Question #8"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -532,9 +630,14 @@ tasks:
           - type: "text"
             content: |
               What is one way AI can assist with generating test scripts?
+              
+
               A. By manually writing all test cases
+              
               B. By generating test scripts for unit tests, integration tests, and end-to-end tests
+              
               C. By ignoring the testing process
+              
               D. By reducing test coverage
       edges:
         - text: "A"
@@ -575,15 +678,24 @@ tasks:
             content: "AI tools can significantly assist in generating test scripts by automating the creation of unit tests, integration tests, and end-to-end tests. This automation helps ensure comprehensive test coverage, improving the reliability and robustness of the software. AI-generated test scripts can quickly cover various scenarios and edge cases, reducing the manual effort required to write these tests and enhancing overall testing efficiency."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen9b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen9b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, Copilot can generate unit tests for a new function, integration tests to verify interactions between modules, and end-to-end tests to simulate user workflows in a web application, ensuring all aspects of the software are thoroughly tested."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, Copilot can generate unit tests for a new function, integration tests to verify interactions between modules, and end-to-end tests to simulate user workflows in a web application, ensuring all aspects of the software are thoroughly tested."
+            content: "Let's keep the momentum going, {username}! Here's your next question about ensuring the accuracy of AI-generated configuration scripts."
   - name: "Question #9"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -604,9 +716,14 @@ tasks:
           - type: "text"
             content: |
               What should developers do to ensure the accuracy of AI-generated configuration scripts?
+              
+
               A. Ignore the generated scripts
+              
               B. Review and correct the output generated by AI tools
+              
               C. Rely entirely on AI tools without verification
+              
               D. Increase the complexity of the scripts
       edges:
         - text: "A"
@@ -647,15 +764,24 @@ tasks:
             content: "To ensure the accuracy of AI-generated configuration scripts, developers must review and correct the outputs provided by AI tools. While AI can automate the creation of configuration files, it might not fully understand the specific context or constraints of a project. By thoroughly reviewing and verifying the AI-generated scripts, developers can ensure they meet the necessary standards, requirements, and best practices, thus maintaining the quality and reliability of the configurations."
       edges:
         - text: "1. Give me an example, Ada!"
-          target_node_id: END
+          target_node_id: screen10b
         - text: "2. On to the next, Ada!"
+          target_node_id: END
+    - id: screen10b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, if Copilot generates a Terraform configuration file, the developer should review it to ensure it includes all necessary resource definitions and settings, making any adjustments needed to align with project-specific requirements and best practices."
+      edges:
+        - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
       type: message
       body:
         parts:
           - type: "text"
-            content: "For instance, if Copilot generates a Terraform configuration file, the developer should review it to ensure it includes all necessary resource definitions and settings, making any adjustments needed to align with project-specific requirements and best practices."
+            content: "Here's the final question, {username}! Let's discuss how AI tools can enforce coding standards and best practices."
   - name: "Question #10"
     context: |
       This probe tests and reinforces learners' understanding of Advanced Deployment Automation with AI-Generated Scripts.
@@ -676,9 +802,14 @@ tasks:
           - type: "text"
             content: |
               How can AI tools enforce coding standards and best practices?
+              
+
               A. By ignoring existing scripts
+              
               B. By suggesting and implementing standardized ways of writing and formatting configuration files
+              
               C. By increasing inconsistencies
+              
               D. By making collaboration more difficult
       edges:
         - text: "A"
