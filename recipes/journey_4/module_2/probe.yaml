@@ -30,6 +30,7 @@ tasks:
               What is the primary purpose of visual testing in software quality assurance?
               
 
+
               A. To increase the development time
               
               B. To ensure the UI appears correctly to users by comparing screenshots from different test runs
@@ -88,7 +89,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen2b
       type: message
       body:
         parts:
@@ -112,6 +113,8 @@ tasks:
           - type: "text"
             content: |
               What does visual testing involve?
+              
+
               
 
               A. Verifying code functionality
@@ -172,7 +175,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen3b
       type: message
       body:
         parts:
@@ -196,6 +199,8 @@ tasks:
           - type: "text"
             content: |
               How does visual testing improve user experience?
+              
+
               
 
               A. By complicating the UI
@@ -256,7 +261,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen4b
       type: message
       body:
         parts:
@@ -280,6 +285,8 @@ tasks:
           - type: "text"
             content: |
               Why is visual testing important for maintaining a positive brand image?
+              
+
               
 
               A. It increases the development cost
@@ -340,7 +347,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen5b
       type: message
       body:
         parts:
@@ -364,6 +371,8 @@ tasks:
           - type: "text"
             content: |
               What is a major challenge of manual visual testing?
+              
+
               
 
               A. It is highly efficient
@@ -424,7 +433,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen6b
       type: message
       body:
         parts:
@@ -448,6 +457,8 @@ tasks:
           - type: "text"
             content: |
               How does AI contribute to faster test creation?
+              
+
               
 
               A. By requiring extensive coding
@@ -508,7 +519,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen7b
       type: message
       body:
         parts:
@@ -532,6 +543,8 @@ tasks:
           - type: "text"
             content: |
               How do AI-powered tools enhance visual testing accuracy?
+              
+
               
 
               A. By identifying significant and insignificant changes equally
@@ -592,7 +605,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen8b
       type: message
       body:
         parts:
@@ -676,7 +689,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen9b
       type: message
       body:
         parts:
@@ -700,6 +713,8 @@ tasks:
           - type: "text"
             content: |
               What is the purpose of Katalon's self-healing mechanism?
+              
+
               
 
               A. To make manual updates
@@ -760,7 +775,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen10b
       type: message
       body:
         parts:
