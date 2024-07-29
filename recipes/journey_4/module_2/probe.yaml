@@ -28,9 +28,13 @@ tasks:
           - type: "text"
             content: |
               What is the primary purpose of visual testing in software quality assurance?
+              
               A. To increase the development time
+              
               B. To ensure the UI appears correctly to users by comparing screenshots from different test runs
+              
               C. To replace manual testing entirely
+              
               D. To eliminate the need for any testing
       edges:
         - text: "A"
@@ -100,9 +104,13 @@ tasks:
           - type: "text"
             content: |
               What does visual testing involve?
+              
               A. Verifying code functionality
+              
               B. Verifying that the UI of an application appears as intended by comparing the current UI with baseline images
+              
               C. Manual code reviews
+              
               D. Performance testing of the backend
       edges:
         - text: "A"
@@ -172,9 +180,13 @@ tasks:
           - type: "text"
             content: |
               How does visual testing improve user experience?
+              
               A. By complicating the UI
+              
               B. By ensuring a consistent and appealing UI
+              
               C. By reducing the frequency of updates
+              
               D. By focusing solely on backend performance
       edges:
         - text: "A"
@@ -244,9 +256,13 @@ tasks:
           - type: "text"
             content: |
               Why is visual testing important for maintaining a positive brand image?
+              
               A. It increases the development cost
+              
               B. It reflects professionalism and bolsters customer trust
+              
               C. It complicates the testing process
+              
               D. It reduces the need for customer support
       edges:
         - text: "A"
@@ -316,9 +332,13 @@ tasks:
           - type: "text"
             content: |
               What is a major challenge of manual visual testing?
+              
               A. It is highly efficient
+              
               B. It is time-consuming and prone to human error
+              
               C. It requires no expertise
+              
               D. It is fully automated
       edges:
         - text: "A"
@@ -388,9 +408,13 @@ tasks:
           - type: "text"
             content: |
               How does AI contribute to faster test creation?
+              
               A. By requiring extensive coding
+              
               B. By quickly generating test scripts based on plain language prompts
+              
               C. By ignoring user behavior
+              
               D. By complicating the test creation process
       edges:
         - text: "A"
@@ -460,9 +484,13 @@ tasks:
           - type: "text"
             content: |
               How do AI-powered tools enhance visual testing accuracy?
+              
               A. By identifying significant and insignificant changes equally
+              
               B. By accurately identifying visual changes and reducing false positives
+              
               C. By increasing the number of false positives
+              
               D. By ignoring user impact
       edges:
         - text: "A"
@@ -532,9 +560,13 @@ tasks:
           - type: "text"
             content: |
               What does Katalon Studio's automated visual testing feature do?
+              
               A. Manually compares images
+              
               B. Uses AI to compare baseline images with test results
+              
               C. Increases the manual effort needed
+              
               D. Ignores visual discrepancies
       edges:
         - text: "A"
@@ -604,9 +636,13 @@ tasks:
           - type: "text"
             content: |
               What is the purpose of Katalon's self-healing mechanism?
+              
               A. To make manual updates
+              
               B. To automatically adapt to minor UI changes and update locators
+              
               C. To ignore changes in the UI
+              
               D. To complicate the testing process
       edges:
         - text: "A"
@@ -676,9 +712,13 @@ tasks:
           - type: "text"
             content: |
               What is the benefit of integrating Katalon TestOps with Katalon Studio?
+              
               A. It decentralizes test management
+              
               B. It provides a centralized platform for managing tests, analyzing results, and generating insights
+              
               C. It increases the complexity of test management
+              
               D. It reduces the ability to track test performance
       edges:
         - text: "A"

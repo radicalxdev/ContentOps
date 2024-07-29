@@ -25,15 +25,24 @@ tasks:
           - type: "text"
             content: "Alright {username}, let's get started with our first question!"
           - type: "text"
-            content: "What is crucial to providing high-quality responses from GitHub Copilot Chat?\n\nA. General prompts that allow Copilot to infer the context.\nB. Detailed context and well-defined questions outlining specific goals.\nC. Randomly selected code snippets without additional explanation.\nD. Broad queries touching on various unrelated aspects of the project."
+            content: |
+              What is crucial to providing high-quality responses from GitHub Copilot Chat?
+
+              A. General prompts that allow Copilot to infer the context.
+
+              B. Detailed context and well-defined questions outlining specific goals.
+
+              C. Randomly selected code snippets without additional explanation.
+
+              D. Broad queries touching on various unrelated aspects of the project.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2_incorrect
     - id: screen2_correct
       type: message
@@ -91,15 +100,24 @@ tasks:
           - type: "text"
             content: "Ready for the next one, {username}? Let's see how chat participants can assist Copilot!"
           - type: "text"
-            content: "How can chat participants like @workspace and @terminal assist Copilot?\n\nA. They allow Copilot to deploy code automatically.\nB. They provide context from specific parts of the project or terminal.\nC. They enable Copilot to delete project files.\nD. They restrict Copilot's access to certain files."
+            content: |
+              How can chat participants like @workspace and @terminal assist Copilot?
+
+              A. They allow Copilot to deploy code automatically.
+
+              B. They provide context from specific parts of the project or terminal.
+
+              C. They enable Copilot to delete project files.
+
+              D. They restrict Copilot's access to certain files.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen3_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3_incorrect
     - id: screen3_correct
       type: message
@@ -157,15 +175,24 @@ tasks:
           - type: "text"
             content: "Ready for another, {username}? Here's the next question."
           - type: "text"
-            content: "What is crucial when reviewing GitHub Copilot Chat's output?\n\nA. Trusting the initial suggestions without further verification.\nB. Ensuring accuracy and completeness by cross-checking with project requirements.\nC. Prioritizing speed over thoroughness in the review process.\nD. Relying on Copilot's recommendations for merging code changes."
+            content: |
+              What is crucial when reviewing GitHub Copilot Chat's output?
+
+              A. Trusting the initial suggestions without further verification.
+
+              B. Ensuring accuracy and completeness by cross-checking with project requirements.
+
+              C. Prioritizing speed over thoroughness in the review process.
+
+              D. Relying on Copilot's recommendations for merging code changes.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4_incorrect
     - id: screen4_correct
       type: message
@@ -221,15 +248,24 @@ tasks:
           - type: "text"
             content: "Ready for another, {username}? Here's a question about Copilot's limitations."
           - type: "text"
-            content: "What is a potential limitation of relying solely on GitHub Copilot for documentation?\n\nA. It can generate overly technical descriptions.\nB. It may miss project-specific nuances.\nC. It replaces the need for any manual documentation.\nD. It performs security audits on the code."
+            content: |
+              What is a potential limitation of relying solely on GitHub Copilot for documentation?
+
+              A. It can generate overly technical descriptions.
+
+              B. It may miss project-specific nuances.
+
+              C. It replaces the need for any manual documentation.
+
+              D. It performs security audits on the code.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5_incorrect
     - id: screen5_correct
       type: message
@@ -287,15 +323,24 @@ tasks:
           - type: "text"
             content: "Alright, {username}, here's a question about commands."
           - type: "text"
-            content: "Which command in GitHub Copilot Chat can help you understand the purpose of a specific function?\n\nA. @workspace explain the function\nB. @editor describe the function\nC. /explain #function\nD. @workspace document the project"
+            content: |
+              Which command in GitHub Copilot Chat can help you understand the purpose of a specific function?
+
+              A. @workspace explain the function
+
+              B. @editor describe the function
+
+              C. /explain #function
+
+              D. @workspace document the project
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen6_correct
-        - text: "d"
+        - text: "D"
           target_node_id: screen6_incorrect
     - id: screen6_correct
       type: message
@@ -353,15 +398,24 @@ tasks:
           - type: "text"
             content: "Let's dive into this one, {username}!"
           - type: "text"
-            content: "What is a best practice when using GitHub Copilot to generate documentation for a new project?\n\nA. Rely on Copilot to intuitively understand project specifics from vague prompts.\nB. Craft precise and comprehensive prompts, followed by a thorough review of the generated content.\nC. Permit Copilot to autonomously generate the project documentation without any manual intervention.\nD. Depend exclusively on standardized templates for all documentation needs."
+            content: |
+              What is a best practice when using GitHub Copilot to generate documentation for a new project?
+
+              A. Rely on Copilot to intuitively understand project specifics from vague prompts.
+
+              B. Craft precise and comprehensive prompts, followed by a thorough review of the generated content.
+
+              C. Permit Copilot to autonomously generate the project documentation without any manual intervention.
+
+              D. Depend exclusively on standardized templates for all documentation needs.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7_incorrect
     - id: screen7_correct
       type: message
@@ -419,15 +473,24 @@ tasks:
           - type: "text"
             content: "Ready for the next one, {username}? Here's a question about keeping documentation up-to-date."
           - type: "text"
-            content: "How can GitHub Copilot assist in identifying outdated documentation?\n\nA. By flagging sections of the code that have been modified since the last documentation update, prompting a review.\nB. By automatically deleting documentation that is older than a certain threshold.\nC. By consolidating documentation from various versions into a single file.\nD. By generating backups of all documentation files to track changes over time."
+            content: |
+              How can GitHub Copilot assist in identifying outdated documentation?
+
+              A. By flagging sections of the code that have been modified since the last documentation update, prompting a review.
+
+              B. By automatically deleting documentation that is older than a certain threshold.
+
+              C. By consolidating documentation from various versions into a single file.
+
+              D. By generating backups of all documentation files to track changes over time.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8_correct
-        - text: "b"
+        - text: "B"
           target_node_id: screen8_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen8_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8_incorrect
     - id: screen8_correct
       type: message
@@ -485,15 +548,24 @@ tasks:
           - type: "text"
             content: "Just a few more to go, {username}! Here's the next question."
           - type: "text"
-            content: "What is a good practice when accepting GitHub Copilot's documentation suggestions?\n\nA. Approving the suggestions without scrutiny to expedite the process.\nB. Critically reviewing and tailoring the suggestions to ensure they accurately reflect the project's requirements.\nC. Disregarding the suggestions in favor of manually crafted documentation.\nD. Allowing Copilot to autonomously integrate the suggestions into the codebase."
+            content: |
+              What is a good practice when accepting GitHub Copilot's documentation suggestions?
+
+              A. Approving the suggestions without scrutiny to expedite the process.
+
+              B. Critically reviewing and tailoring the suggestions to ensure they accurately reflect the project's requirements.
+
+              C. Disregarding the suggestions in favor of manually crafted documentation.
+
+              D. Allowing Copilot to autonomously integrate the suggestions into the codebase.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9_incorrect
     - id: screen9_correct
       type: message
@@ -551,15 +623,24 @@ tasks:
           - type: "text"
             content: "Here's the final question, {username}!"
           - type: "text"
-            content: "What is an important step after using GitHub Copilot to generate initial project documentation?\n\nA. Launching the project immediately to keep up with deadlines.\nB. Reviewing and refining the documentation to ensure it meets the project's specific requirements and standards.\nC. Replacing the generated documentation with manually written content.\nD. Filing the documentation for future reference without immediate use."
+            content: |
+              What is an important step after using GitHub Copilot to generate initial project documentation?
+
+              A. Launching the project immediately to keep up with deadlines.
+
+              B. Reviewing and refining the documentation to ensure it meets the project's specific requirements and standards.
+
+              C. Replacing the generated documentation with manually written content.
+
+              D. Filing the documentation for future reference without immediate use.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10_incorrect
     - id: screen10_correct
       type: message
@@ -617,15 +698,24 @@ tasks:
           - type: "text"
             content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
-            content: "What is important to provide for better quality responses from GitHub Copilot Chat?\n\nA. General prompts that allow Copilot to infer the context.\nB. Detailed context and well-defined questions that outline specific goals.\nC. Randomly selected code snippets without additional explanation.\nD. Broad queries that touch on various unrelated aspects of the project."
+            content: |
+              What is important to provide for better quality responses from GitHub Copilot Chat?
+
+              A. General prompts that allow Copilot to infer the context.
+
+              B. Detailed context and well-defined questions that outline specific goals.
+
+              C. Randomly selected code snippets without additional explanation.
+
+              D. Broad queries that touch on various unrelated aspects of the project.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11_incorrect
     - id: screen11_correct
       type: message
@@ -676,6 +766,13 @@ tasks:
           - type: "text"
             content: "Excellent work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module."
           - type: "text"
-            content: "Recap:\n\n- We explored the advantages of using GitHub Copilot Chat for generating inline code documentation.\n- We learned how to create comprehensive project documentation and detailed code explanations.\n- We emphasized the importance of reviewing and verifying the generated documentation for accuracy and completeness."
+            content: |
+              Recap:
+
+              - We explored the advantages of using GitHub Copilot Chat for generating inline code documentation.
+
+              - We learned how to create comprehensive project documentation and detailed code explanations.
+
+              - We emphasized the importance of reviewing and verifying the generated documentation for accuracy and completeness.
           - type: "text"
             content: "Up next, we'll dive into the next module, where we'll explore how to use Katalon's AI features for to automate test generation."

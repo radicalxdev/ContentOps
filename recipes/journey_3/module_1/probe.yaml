@@ -25,15 +25,24 @@ tasks:
             - type: "text"
               content: "Alright {username}, let's begin with our first question!"
             - type: "text"
-              content: "What is the primary function of GitHub Copilot in generating unit tests?\n\nA. Manually writing all the test cases for the user\nB. Suggesting possible input parameters and expected output values\nC. Generating code snippets for test cases based on the code specified by the user\nD. Compiling and running the tests automatically"
+              content: |
+                What is the primary function of GitHub Copilot in generating unit tests?
+
+                A. Manually writing all the test cases for the user
+
+                B. Suggesting possible input parameters and expected output values
+
+                C. Generating code snippets for test cases based on the code specified by the user
+
+                D. Compiling and running the tests automatically
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen2_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen2_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen2_correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen2_incorrect
       - id: screen2_correct
         type: message
@@ -91,15 +100,24 @@ tasks:
             - type: "text"
               content: "Ready for the next one, {username}? Let's see how the Test Explorer in Visual Studio Code aids in unit testing!"
             - type: "text"
-              content: "What role does the Test Explorer in Visual Studio Code play in unit testing?\n\nA. Writing new code snippets for unit tests\nB. Running and debugging unit tests, viewing the results, and managing test cases\nC. Generating test cases based on the code context\nD. Compiling the main application code"
+              content: |
+                What role does the Test Explorer in Visual Studio Code play in unit testing?
+
+                A. Writing new code snippets for unit tests
+
+                B. Running and debugging unit tests, viewing the results, and managing test cases
+
+                C. Generating test cases based on the code context
+
+                D. Compiling the main application code
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen3_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen3_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen3_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen3_incorrect
       - id: screen3_correct
         type: message
@@ -157,15 +175,24 @@ tasks:
             - type: "text"
               content: "Ready for another question, {username}? Let's talk about the Arrange, Act, Assert pattern!"
             - type: "text"
-              content: "How does the Arrange, Act, Assert pattern benefit unit test structure?\n\nA. Organizes code in the main application\nB. Structures unit tests into setup, execution, and verification phases\nC. Compiles and runs the unit tests\nD. Enhances the performance of the main function"
+              content: |
+                How does the Arrange, Act, Assert pattern benefit unit test structure?
+
+                A. Organizes code in the main application
+
+                B. Structures unit tests into setup, execution, and verification phases
+
+                C. Compiles and runs the unit tests
+
+                D. Enhances the performance of the main function
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen4_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen4_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen4_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen4_incorrect
       - id: screen4_correct
         type: message
@@ -223,15 +250,24 @@ tasks:
             - type: "text"
               content: "Let's continue, {username}! Here's a question about assertions in unit tests."
             - type: "text"
-              content: "Why are assertions generated in unit tests?\n\nA. To enhance the performance of the function\nB. To prevent invalid data from being processed by the function\nC. To check if the function returns the expected output\nD. To compile the unit tests"
+              content: |
+                Why are assertions generated in unit tests?
+
+                A. To enhance the performance of the function
+
+                B. To prevent invalid data from being processed by the function
+
+                C. To check if the function returns the expected output
+
+                D. To compile the unit tests
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen5_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen5_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen5_correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen5_incorrect
       - id: screen5_correct
         type: message
@@ -289,15 +325,24 @@ tasks:
             - type: "text"
               content: "Ready for another one, {username}? Let's talk about GitHub Copilot's role in creating unit tests!"
             - type: "text"
-              content: "What does GitHub Copilot provide when creating unit tests for specific conditions?\n\nA. A user interface for manually writing tests\nB. Automatically runs the tests and provides the results\nC. Suggests completions and generates tests based on the code context\nD. Compiles the test cases"
+              content: |
+                What does GitHub Copilot provide when creating unit tests for specific conditions?
+
+                A. A user interface for manually writing tests
+
+                B. Automatically runs the tests and provides the results
+
+                C. Suggests completions and generates tests based on the code context
+
+                D. Compiles the test cases
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen6_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen6_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen6_correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen6_incorrect
       - id: screen6_correct
         type: message
@@ -355,15 +400,24 @@ tasks:
             - type: "text"
               content: "Let's move on, {username}! Here's a question about the benefits of using GitHub Copilot for generating unit tests."
             - type: "text"
-              content: "What is a key benefit of using GitHub Copilot for generating unit tests?\n\nA. Reduces the need for manual testing\nB. Suggests a range of unit tests based on the code context, saving development time\nC. Automatically fixes bugs in the code\nD. Compiles the main application code"
+              content: |
+                What is a key benefit of using GitHub Copilot for generating unit tests?
+
+                A. Reduces the need for manual testing
+
+                B. Suggests a range of unit tests based on the code context, saving development time
+
+                C. Automatically fixes bugs in the code
+
+                D. Compiles the main application code
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen7_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen7_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen7_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen7_incorrect
       - id: screen7_correct
         type: message
@@ -421,15 +475,24 @@ tasks:
             - type: "text"
               content: "Here's another one, {username}! Let's discuss how GitHub Copilot enhances code line completions when writing unit tests."
             - type: "text"
-              content: "How does GitHub Copilot enhance code line completions when writing unit tests?\n\nA. By integrating with version control systems\nB. By suggesting code completions as you type, including test function signatures and assertions\nC. By managing project dependencies\nD. By debugging the code"
+              content: |
+                How does GitHub Copilot enhance code line completions when writing unit tests?
+
+                A. By integrating with version control systems
+
+                B. By suggesting code completions as you type, including test function signatures and assertions
+
+                C. By managing project dependencies
+
+                D. By debugging the code
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen8_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen8_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen8_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen8_incorrect
       - id: screen8_correct
         type: message
@@ -487,15 +550,24 @@ tasks:
             - type: "text"
               content: "Ready for the next one, {username}? Let's talk about edge cases and boundary conditions in unit tests."
             - type: "text"
-              content: "How can edge cases and boundary conditions improve unit tests?\n\nA. By reducing the number of tests\nB. By ensuring the code handles all possible input scenarios, including extremes\nC. By focusing only on common use cases\nD. By ignoring invalid inputs"
+              content: |
+                How can edge cases and boundary conditions improve unit tests?
+
+                A. By reducing the number of tests
+
+                B. By ensuring the code handles all possible input scenarios, including extremes
+
+                C. By focusing only on common use cases
+
+                D. By ignoring invalid inputs
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen9_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen9_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen9_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen9_incorrect
       - id: screen9_correct
         type: message
@@ -553,15 +625,24 @@ tasks:
             - type: "text"
               content: "Here's the next one, {username}! Let's discuss how GitHub Copilot helps identify edge cases for testing."
             - type: "text"
-              content: "How can GitHub Copilot help identify edge cases for testing?\n\nA. By ignoring uncommon scenarios\nB. By suggesting tests that cover a range of inputs, including boundary conditions\nC. By focusing only on typical use cases\nD. By writing all tests manually"
+              content: |
+                How can GitHub Copilot help identify edge cases for testing?
+
+                A. By ignoring uncommon scenarios
+
+                B. By suggesting tests that cover a range of inputs, including boundary conditions
+
+                C. By focusing only on typical use cases
+
+                D. By writing all tests manually
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen10_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen10_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen10_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen10_incorrect
       - id: screen10_correct
         type: message
@@ -619,15 +700,24 @@ tasks:
             - type: "text"
               content: "Almost there, {username}! Here's a question about the primary purpose of assertions in unit tests."
             - type: "text"
-              content: "What is the primary purpose of assertions in unit tests?\n\nA. To compile the main application code\nB. To verify that the function behaves as expected under specific conditions\nC. To reduce the number of test cases\nD. To generate test data"
+              content: |
+                What is the primary purpose of assertions in unit tests?
+
+                A. To compile the main application code
+
+                B. To verify that the function behaves as expected under specific conditions
+
+                C. To reduce the number of test cases
+
+                D. To generate test data
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen11_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen11_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen11_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen11_incorrect
       - id: screen11_correct
         type: message

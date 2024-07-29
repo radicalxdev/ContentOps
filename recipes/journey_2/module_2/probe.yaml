@@ -26,15 +26,24 @@ tasks:
             - type: "text"
               content: "Alright {username}, let's begin with our first question!"
             - type: "text"
-              content: "How can GitHub Copilot Chat assist in improving the modularity of a class?\n\nA. By suggesting potential refactoring updates based on the context of your codebase.\nB. By providing a detailed analysis of the class's dependencies.\nC. By automatically rewriting the entire class.\nD. By removing all comments from the class."
+              content: |
+                How can GitHub Copilot Chat assist in improving the modularity of a class?
+
+                A. By suggesting potential refactoring updates based on the context of your codebase.
+
+                B. By providing a detailed analysis of the class's dependencies.
+
+                C. By automatically rewriting the entire class.
+
+                D. By removing all comments from the class.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen2_correct
-          - text: "b"
+          - text: "B"
             target_node_id: screen2_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen2_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen2_incorrect
       - id: screen2_correct
         type: message
@@ -93,15 +102,24 @@ tasks:
             - type: "text"
               content: "Ready for the next one, {username}? Let's see how GitHub Copilot Chat helps with bug fixes!"
             - type: "text"
-              content: "How does GitHub Copilot Chat propose fixes for bugs in your code?\n\nA. By running automated tests and identifying the root cause.\nB. By suggesting code snippets and solutions based on the context of the error or issue.\nC. By comparing your code with a database of known bug patterns.\nD. By ignoring the context of the error."
+              content: |
+                How does GitHub Copilot Chat propose fixes for bugs in your code?
+
+                A. By running automated tests and identifying the root cause.
+
+                B. By suggesting code snippets and solutions based on the context of the error or issue.
+
+                C. By comparing your code with a database of known bug patterns.
+
+                D. By ignoring the context of the error.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen3_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen3_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen3_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen3_incorrect
       - id: screen3_correct
         type: message
@@ -160,15 +178,24 @@ tasks:
             - type: "text"
               content: "Ready for another question, {username}? Let's discuss code refactoring!"
             - type: "text"
-              content: "What is the purpose of code refactoring?\n\nA. To alter the external behavior or functionality of the code.\nB. To improve the internal structure of the code without altering its external behavior or functionality.\nC. To add new features or enhancements to the code.\nD. To decrease code readability and maintainability."
+              content: |
+                What is the purpose of code refactoring?
+
+                A. To alter the external behavior or functionality of the code.
+
+                B. To improve the internal structure of the code without altering its external behavior or functionality.
+
+                C. To add new features or enhancements to the code.
+
+                D. To decrease code readability and maintainability.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen4_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen4_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen4_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen4_incorrect
       - id: screen4_correct
         type: message
@@ -227,15 +254,24 @@ tasks:
             - type: "text"
               content: "Ready for the next one, {username}? Let's explore factors for improving code quality!"
             - type: "text"
-              content: "What factors can be considered when working on code quality improvements?\n\nA. The number of lines of code in the program.\nB. The time required to write code.\nC. Readability, complexity, modularity, reusability, testability, extensibility, reliability, performance, security, scalability, usability, and portability.\nD. The color of the text editor theme."
+              content: |
+                What factors can be considered when working on code quality improvements?
+
+                A. The number of lines of code in the program.
+
+                B. The time required to write code.
+
+                C. Readability, complexity, modularity, reusability, testability, extensibility, reliability, performance, security, scalability, usability, and portability.
+
+                D. The color of the text editor theme.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen5_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen5_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen5_correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen5_incorrect
       - id: screen5_correct
         type: message
@@ -294,15 +330,24 @@ tasks:
             - type: "text"
               content: "Here's the next question, {username}! Let's talk about context and intent in developing prompts."
             - type: "text"
-              content: "What is the importance of context and intent when developing prompts for GitHub Copilot Chat?\n\nA. They determine the color scheme used by GitHub Copilot Chat.\nB. They control the volume of the audio output from GitHub Copilot Chat.\nC. They specify the scope that GitHub Copilot should examine and the goal to be achieved.\nD. They improve the internet speed."
+              content: |
+                What is the importance of context and intent when developing prompts for GitHub Copilot Chat?
+
+                A. They determine the color scheme used by GitHub Copilot Chat.
+
+                B. They control the volume of the audio output from GitHub Copilot Chat.
+
+                C. They specify the scope that GitHub Copilot should examine and the goal to be achieved.
+
+                D. They improve the internet speed.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen6_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen6_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen6_correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen6_incorrect
       - id: screen6_correct
         type: message
@@ -361,15 +406,24 @@ tasks:
             - type: "text"
               content: "Let's move on, {username}! Here's a question about improving code reliability."
             - type: "text"
-              content: "What is one way to improve code reliability?\n\nA. By optimizing algorithms and data structures for the task at hand.\nB. By identifying potential issues in the code to prevent bugs and errors from occurring.\nC. By minimizing disk and network I/O operations or performing them asynchronously.\nD. By using only the latest programming languages."
+              content: |
+                What is one way to improve code reliability?
+
+                A. By optimizing algorithms and data structures for the task at hand.
+
+                B. By identifying potential issues in the code to prevent bugs and errors from occurring.
+
+                C. By minimizing disk and network I/O operations or performing them asynchronously.
+
+                D. By using only the latest programming languages.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen7_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen7_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen7_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen7_incorrect
       - id: screen7_correct
         type: message
@@ -428,15 +482,24 @@ tasks:
             - type: "text"
               content: "Ready for another one, {username}? Let's discuss how Copilot Chat helps with code quality improvements."
             - type: "text"
-              content: "How can GitHub Copilot Chat help with code quality improvements?\n\nA. By generating automated tests.\nB. By suggesting refactoring updates, design pattern suggestions, or code style enhancements.\nC. By deleting unnecessary code automatically.\nD. By ignoring existing code quality issues."
+              content: |
+                How can GitHub Copilot Chat help with code quality improvements?
+
+                A. By generating automated tests.
+
+                B. By suggesting refactoring updates, design pattern suggestions, or code style enhancements.
+
+                C. By deleting unnecessary code automatically.
+
+                D. By ignoring existing code quality issues.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen8_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen8_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen8_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen8_incorrect
       - id: screen8_correct
         type: message
@@ -495,15 +558,24 @@ tasks:
             - type: "text"
               content: "Ready for the next one, {username}? Let's talk about learning new coding techniques with GitHub Copilot Chat."
             - type: "text"
-              content: "How can GitHub Copilot Chat assist with learning new coding techniques?\n\nA. By automatically writing all the code for you.\nB. By providing code examples and suggestions that demonstrate new techniques and best practices.\nC. By removing all existing code.\nD. By preventing access to online coding resources."
+              content: |
+                How can GitHub Copilot Chat assist with learning new coding techniques?
+
+                A. By automatically writing all the code for you.
+
+                B. By providing code examples and suggestions that demonstrate new techniques and best practices.
+
+                C. By removing all existing code.
+
+                D. By preventing access to online coding resources.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen9_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen9_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen9_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen9_incorrect
       - id: screen9_correct
         type: message
@@ -562,15 +634,24 @@ tasks:
             - type: "text"
               content: "Here's the next one, {username}! Let's discuss the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat."
             - type: "text"
-              content: "What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?\n\nA. To slow down the response time.\nB. To provide additional context and intent, making the responses more relevant.\nC. To limit the functionality of Copilot Chat.\nD. To enhance code obfuscation."
+              content: |
+                What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?
+
+                A. To slow down the response time.
+
+                B. To provide additional context and intent, making the responses more relevant.
+
+                C. To limit the functionality of Copilot Chat.
+
+                D. To enhance code obfuscation.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen10_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen10_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen10_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen10_incorrect
       - id: screen10_correct
         type: message
@@ -629,15 +710,24 @@ tasks:
             - type: "text"
               content: "Almost there, {username}! Let's discuss the importance of reviewing GitHub Copilot's suggestions."
             - type: "text"
-              content: "Why is it important to review and evaluate the suggestions provided by GitHub Copilot?\n\nA. Because Copilot automatically implements the best solution.\nB. To ensure that the suggestions align with your coding standards and project requirements.\nC. To ignore the suggestions and continue coding manually.\nD. To increase the line count of the code."
+              content: |
+                Why is it important to review and evaluate the suggestions provided by GitHub Copilot?
+
+                A. Because Copilot automatically implements the best solution.
+
+                B. To ensure that the suggestions align with your coding standards and project requirements.
+
+                C. To ignore the suggestions and continue coding manually.
+
+                D. To increase the line count of the code.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen11_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen11_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen11_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen11_incorrect
       - id: screen11_correct
         type: message
@@ -688,6 +778,15 @@ tasks:
             - type: "text"
               content: "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module."
             - type: "text"
-              content: "**Recap:**\n\n- We explored how GitHub Copilot Chat can assist in improving code modularity and fixing bugs.\n- We discussed the importance of code refactoring and the factors that contribute to code quality improvements.\n- We emphasized the significance of context and intent in developing prompts for GitHub Copilot Chat.\n- We highlighted the need to review and evaluate Copilot's suggestions to ensure they meet project requirements and standards."
+              content: |
+                **Recap:**
+
+                - We explored how GitHub Copilot Chat can assist in improving code modularity and fixing bugs.
+
+                - We discussed the importance of code refactoring and the factors that contribute to code quality improvements.
+
+                - We emphasized the significance of context and intent in developing prompts for GitHub Copilot Chat.
+
+                - We highlighted the need to review and evaluate Copilot's suggestions to ensure they meet project requirements and standards.
             - type: "text"
               content: "Up next, we'll dive into the next module, where we'll explore advanced techniques for using GitHub Copilot to enhance your coding workflow."

@@ -102,7 +102,7 @@ tasks:
         edges:
           - text: "Let's dive into each technique."
             target_node_id: "screen6"
-          - text: "Tell me more about each of these."
+          - text: "Skip to the benefits."
             target_node_id: "screen6"
 
       - id: screen6

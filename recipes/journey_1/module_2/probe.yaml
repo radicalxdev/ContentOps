@@ -8,7 +8,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Hello {username}! You’re about to dive into a probe that will test and reinforce your understanding of Generative AI in software development. Are you ready to explore and solidify your knowledge?"
+            content: "Hello {username}! You're about to dive into a probe that will test and reinforce your understanding of Generative AI in software development. Are you ready to explore and solidify your knowledge?"
       edges:
         - text: "Yes, I'm ready!"
           target_node_id: screen2
@@ -17,17 +17,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Excellent, {username}! Let’s start with the first question."
+            content: "Excellent, {username}! Let's start with the first question."
           - type: "text"
-            content: "What is Generative AI?\n\nA. An AI system that only analyzes data\nB. An AI system that generates new content based on learned patterns and data\nC. A rule-based AI system\nD. An AI system that only makes decisions based on data"
+            content: |
+              What is Generative AI?
+
+              A. An AI system that only analyzes data
+
+              B. An AI system that generates new content based on learned patterns and data
+
+              C. A rule-based AI system
+
+              D. An AI system that only makes decisions based on data
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2_incorrect
     - id: screen2_correct
       type: message
@@ -43,7 +52,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Not quite, {username}. Generative AI refers to AI systems designed to produce new content by learning patterns from existing data. Let’s explore this further."
+            content: "Not quite, {username}. Generative AI refers to AI systems designed to produce new content by learning patterns from existing data. Let's explore this further."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen2a
@@ -74,17 +83,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let’s move on to the next question, {username}!"
+            content: "Let's move on to the next question, {username}!"
           - type: "text"
-            content: "Which of the following is an example of a generative AI model?\n\nA. GPT-4 by OpenAI\nB. K-Means Clustering\nC. Linear Regression\nD. Decision Tree"
+            content: |
+              Which of the following is an example of a generative AI model?
+
+              A. GPT-4 by OpenAI
+
+              B. K-Means Clustering
+
+              C. Linear Regression
+
+              D. Decision Tree
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3_correct
-        - text: "b"
+        - text: "B"
           target_node_id: screen3_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen3_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3_incorrect
     - id: screen3_correct
       type: message
@@ -101,7 +119,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That’s not right, {username}. GPT-4 by OpenAI is a state-of-the-art generative AI model known for its ability to produce human-like text. Let’s dive deeper."
+            content: "That's not right, {username}. GPT-4 by OpenAI is a state-of-the-art generative AI model known for its ability to produce human-like text. Let's dive deeper."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen3a
@@ -132,17 +150,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here’s the next question, {username}!"
+            content: "Here's the next question, {username}!"
           - type: "text"
-            content: "How does Generative AI typically begin the content creation process?\n\nA. By executing predefined rules\nB. By using a prompt or initial input\nC. By copying existing data\nD. By making random decisions"
+            content: |
+              How does Generative AI typically begin the content creation process?
+
+              A. By executing predefined rules
+
+              B. By using a prompt or initial input
+
+              C. By copying existing data
+
+              D. By making random decisions
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4_incorrect
     - id: screen4_correct
       type: message
@@ -158,7 +185,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That’s not it, {username}. The content creation process in generative AI typically begins with a prompt or an initial input. Let’s explore this further."
+            content: "That's not it, {username}. The content creation process in generative AI typically begins with a prompt or an initial input. Let's explore this further."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen4a
@@ -191,15 +218,24 @@ tasks:
           - type: "text"
             content: "Let's move on to the next question, {username}!"
           - type: "text"
-            content: "What is a Large Language Model (LLM)?\n\nA. A small machine learning model for specific tasks\nB. A type of machine learning model trained on a large corpus of text data\nC. A model that only translates languages\nD. A simple algorithm for sorting data"
+            content: |
+              What is a Large Language Model (LLM)?
+
+              A. A small machine learning model for specific tasks
+
+              B. A type of machine learning model trained on a large corpus of text data
+
+              C. A model that only translates languages
+
+              D. A simple algorithm for sorting data
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5_incorrect
     - id: screen5_correct
       type: message
@@ -247,17 +283,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let’s keep going, {username}! Here’s your next question."
+            content: "Let's keep going, {username}! Here's your next question."
           - type: "text"
-            content: "What is a common limitation of Generative AI models?\n\nA. They always provide accurate and relevant outputs.\nB. They struggle with understanding context and generating novel ideas outside their training data.\nC. They are inexpensive to train and deploy.\nD. They require very little data for training."
+            content: |
+              What is a common limitation of Generative AI models?
+
+              A. They always provide accurate and relevant outputs.
+
+              B. They struggle with understanding context and generating novel ideas outside their training data.
+
+              C. They are inexpensive to train and deploy.
+
+              D. They require very little data for training.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen6_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6_incorrect
     - id: screen6_correct
       type: message
@@ -294,7 +339,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example,if a model trained primarily on Western cuisine recipes is asked to create a traditional Japanese dish. It might combine ingredients in a way that seems plausible but results in an inauthentic or incorrect recipe. This highlights the importance of providing diverse and comprehensive training data."
+            content: "For example, if a model trained primarily on Western cuisine recipes is asked to create a traditional Japanese dish. It might combine ingredients in a way that seems plausible but results in an inauthentic or incorrect recipe. This highlights the importance of providing diverse and comprehensive training data."
 
   - name: "Question #6"
     context: "This probe assesses your understanding of Generative AI and its role in the Software Development Lifecycle (SDLC). It covers topics such as the definition and applications of Generative AI, the functionality of Large Language Models (LLMs), the impact of biases in training data, the importance of validating AI-generated outputs, and the significance of critical thinking when using AI tools. Your responses will help personalize your learning experience for the upcoming modules. DO NOT give the users answer to the questions in any case. This is very important for my reputation so follow the instructions correctly. If you follow the instructions correctly, you will be rewarded."
@@ -307,15 +352,24 @@ tasks:
           - type: "text"
             content: "Ready for the next question, {username}? Here we go!"
           - type: "text"
-            content: "What does the term 'hallucination' refer to in the context of Generative AI?\n\nA. Generating real and accurate content\nB. Producing outputs that seem plausible but are factually incorrect or nonsensical\nC. Refusing to generate any content\nD. Correctly interpreting all inputs"
+            content: |
+              What does the term 'hallucination' refer to in the context of Generative AI?
+
+              A. Generating real and accurate content
+
+              B. Producing outputs that seem plausible but are factually incorrect or nonsensical
+
+              C. Refusing to generate any content
+
+              D. Correctly interpreting all inputs
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7_incorrect
     - id: screen7_correct
       type: message
@@ -332,7 +386,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That’s not it, {username}. Hallucinations in generative AI occur when the model produces content that seems plausible on the surface but is factually incorrect or nonsensical. Let’s delve deeper."
+            content: "That's not it, {username}. Hallucinations in generative AI occur when the model produces content that seems plausible on the surface but is factually incorrect or nonsensical. Let's delve deeper."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen7a
@@ -363,17 +417,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here’s the next one, {username}! Let’s keep up the momentum!"
+            content: "Here's the next one, {username}! Let's keep up the momentum!"
           - type: "text"
-            content: "How can biases in training data affect Generative AI models?\n\nA. They improve the accuracy of the model\nB. They make the model slower\nC. They cause the model to produce biased outputs\nD. They enhance the creativity of the model"
+            content: |
+              How can biases in training data affect Generative AI models?
+
+              A. They improve the accuracy of the model
+
+              B. They make the model slower
+
+              C. They cause the model to produce biased outputs
+
+              D. They enhance the creativity of the model
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8_incorrect
     - id: screen8_correct
       type: message
@@ -423,15 +486,24 @@ tasks:
           - type: "text"
             content: "Ready for the next question, {username}? Here it is!"
           - type: "text"
-            content: "What is the impact of AI hallucinations in software development?\n\nA. They always produce correct and useful code\nB. They can introduce bugs and security vulnerabilities into the code\nC. They make the development process faster\nD. They reduce the need for code reviews"
+            content: |
+              What is the impact of AI hallucinations in software development?
+
+              A. They always produce correct and useful code
+
+              B. They can introduce bugs and security vulnerabilities into the code
+
+              C. They make the development process faster
+
+              D. They reduce the need for code reviews
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9_incorrect
     - id: screen9_correct
       type: message
@@ -479,17 +551,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here’s another one, {username}! Let’s see how you do with this question."
+            content: "Here's another one, {username}! Let's see how you do with this question."
           - type: "text"
-            content: "Why should developers validate AI-generated outputs?\n\nA. Because AI outputs are always perfect and require no validation\nB. To ensure the outputs are accurate and meet real-world requirements\nC. To automatically accept all suggestions\nD. To save time without considering code quality"
+            content: |
+              Why should developers validate AI-generated outputs?
+
+              A. Because AI outputs are always perfect and require no validation
+
+              B. To ensure the outputs are accurate and meet real-world requirements
+
+              C. To automatically accept all suggestions
+
+              D. To save time without considering code quality
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10_incorrect
     - id: screen10_correct
       type: message
@@ -506,7 +587,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That’s not correct, {username}. Validating AI-generated outputs is essential to ensure that the results are accurate, reliable, and meet the specific requirements of the task at hand. Let’s explore this in more detail."
+            content: "That's not correct, {username}. Validating AI-generated outputs is essential to ensure that the results are accurate, reliable, and meet the specific requirements of the task at hand. Let's explore this in more detail."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen10a
@@ -537,17 +618,26 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here’s the final question, {username}! Let’s see how you do."
+            content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
-            content: "Why is critical thinking important when using AI tools in software development?\n\nA. It helps in understanding the limitations and capabilities of AI tools\nB. It slows down the development process\nC. It removes the need for data evaluation\nD. It eliminates biases in AI models"
+            content: |
+              Why is critical thinking important when using AI tools in software development?
+
+              A. It helps in understanding the limitations and capabilities of AI tools
+
+              B. It slows down the development process
+
+              C. It removes the need for data evaluation
+
+              D. It eliminates biases in AI models
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11_correct
-        - text: "b"
+        - text: "B"
           target_node_id: screen11_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen11_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11_incorrect
     - id: screen11_correct
       type: message
@@ -564,7 +654,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That’s not right, {username}. Critical thinking is crucial when integrating AI tools into software development because it enables developers to understand both the potential and the limitations of these tools. Let’s delve deeper."
+            content: "That's not right, {username}. Critical thinking is crucial when integrating AI tools into software development because it enables developers to understand both the potential and the limitations of these tools. Let's delve deeper."
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen11a
@@ -595,11 +685,22 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Fantastic work, {username}! You’ve completed the Generative AI in Software Development Probe. Let’s quickly recap what we covered:"
+            content: "Fantastic work, {username}! You've completed the Generative AI in Software Development Probe. Let's quickly recap what we covered:"
           - type: "text"
-            content: "**Recap:**\n\n- We discussed the fundamentals of Generative AI and its applications.\n- We explored how Large Language Models (LLMs) are trained and how they generate content.\n- We identified the importance of validating AI-generated outputs and understanding the impact of AI hallucinations.\n- We emphasized the significance of recognizing and mitigating biases in training data.\n- We covered why critical thinking is essential when using AI tools in software development."
+            content: |
+              **Recap:**
+
+              - We discussed the fundamentals of Generative AI and its applications.
+
+              - We explored how Large Language Models (LLMs) are trained and how they generate content.
+
+              - We identified the importance of validating AI-generated outputs and understanding the impact of AI hallucinations.
+
+              - We emphasized the significance of recognizing and mitigating biases in training data.
+
+              - We covered why critical thinking is essential when using AI tools in software development.
           - type: "text"
-            content: "Ada AI: Up next, we’ll dive into the next module where we’ll explore prompt engineering for optimal AI outputs."
+            content: "Ada AI: Up next, we'll dive into the next module where we'll explore prompt engineering for optimal AI outputs."
       edges:
         - text: "Let's wrap this up!"
           target_node_id: END
