@@ -55,7 +55,7 @@ tasks:
               content: "Ready to continue?"
   - name: "Understanding and Explaining the Code"
     context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
-    id: "3"
+    id: "2"
     nodes:
       - id: START
         type: message
@@ -144,7 +144,7 @@ tasks:
               content: "Ready to proceed?"
   - name: "File-Specific and Selected Code Explanations"
     context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
-    id: "4"
+    id: "3"
     nodes:
       - id: START
         type: message
@@ -250,7 +250,7 @@ tasks:
               content: "Ready to proceed?"
   - name: "Error Explanations and Fixes"
     context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
-    id: "5"
+    id: "4"
     nodes:
       - id: START
         type: message
@@ -413,7 +413,7 @@ tasks:
               content: "Ready to proceed?"
   - name: "Implementing and Explaining New Features"
     context: "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat."
-    id: 6"
+    id: 5"
     nodes:
       - id: START
         type: message
