@@ -30,7 +30,6 @@ tasks:
               What is the primary purpose of visual testing in software quality assurance?
               
 
-
               A. To increase the development time
               
               B. To ensure the UI appears correctly to users by comparing screenshots from different test runs
@@ -113,8 +112,6 @@ tasks:
           - type: "text"
             content: |
               What does visual testing involve?
-              
-
               
 
               A. Verifying code functionality
@@ -201,8 +198,6 @@ tasks:
               How does visual testing improve user experience?
               
 
-              
-
               A. By complicating the UI
               
               B. By ensuring a consistent and appealing UI
@@ -285,8 +280,6 @@ tasks:
           - type: "text"
             content: |
               Why is visual testing important for maintaining a positive brand image?
-              
-
               
 
               A. It increases the development cost
@@ -373,8 +366,6 @@ tasks:
               What is a major challenge of manual visual testing?
               
 
-              
-
               A. It is highly efficient
               
               B. It is time-consuming and prone to human error
@@ -459,8 +450,6 @@ tasks:
               How does AI contribute to faster test creation?
               
 
-              
-
               A. By requiring extensive coding
               
               B. By quickly generating test scripts based on plain language prompts
@@ -543,8 +532,6 @@ tasks:
           - type: "text"
             content: |
               How do AI-powered tools enhance visual testing accuracy?
-              
-
               
 
               A. By identifying significant and insignificant changes equally
@@ -713,8 +700,6 @@ tasks:
           - type: "text"
             content: |
               What is the purpose of Katalon's self-healing mechanism?
-              
-
               
 
               A. To make manual updates
