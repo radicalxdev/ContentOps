@@ -26,15 +26,21 @@ tasks:
           - type: "text"
             content: "Excellent, {username}! Let's start with the first question."
           - type: "text"
-            content: "What is the primary objective of AI-powered monitoring?\n\nA. To increase the complexity of the system\nB. To maintain the health and responsiveness of applications\nC. To reduce application performance\nD. To eliminate the need for monitoring"
+            content: |
+              What is the primary objective of AI-powered monitoring?
+
+              A. To increase the complexity of the system
+              B. To maintain the health and responsiveness of applications
+              C. To reduce application performance
+              D. To eliminate the need for monitoring
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2incorrect
     - id: screen2correct
       type: message
@@ -93,15 +99,21 @@ tasks:
           - type: "text"
             content: "Let's move on to the next question, {username}!"
           - type: "text"
-            content: "In the TaskMaster scenario, what is the main issue that arises?\n\nA. Increase in user satisfaction\nB. Sudden spike in response times\nC. Decrease in application complexity\nD. Improved system performance"
+            content: |
+              In the TaskMaster scenario, what is the main issue that arises?
+
+              A. Increase in user satisfaction
+              B. Sudden spike in response times
+              C. Decrease in application complexity
+              D. Improved system performance
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen3incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3incorrect
     - id: screen3correct
       type: message
@@ -160,15 +172,21 @@ tasks:
           - type: "text"
             content: "Here's the next question, {username}!"
           - type: "text"
-            content: "How do AI-powered monitoring tools help in real-time insights?\n\nA. By reducing the number of monitoring metrics\nB. By continuously monitoring performance metrics and detecting anomalies in real-time\nC. By ignoring real-time data\nD. By increasing manual effort"
+            content: |
+              How do AI-powered monitoring tools help in real-time insights?
+
+              A. By reducing the number of monitoring metrics
+              B. By continuously monitoring performance metrics and detecting anomalies in real-time
+              C. By ignoring real-time data
+              D. By increasing manual effort
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4incorrect
     - id: screen4correct
       type: message
@@ -227,15 +245,21 @@ tasks:
           - type: "text"
             content: "Let's keep going, {username}! Here's your next question."
           - type: "text"
-            content: "What benefit does predictive analytics provide in AI-powered monitoring?\n\nA. Ignoring potential issues\nB. Predicting potential issues before they impact users\nC. Reducing system visibility\nD. Increasing downtime"
+            content: |
+              What benefit does predictive analytics provide in AI-powered monitoring?
+
+              A. Ignoring potential issues
+              B. Predicting potential issues before they impact users
+              C. Reducing system visibility
+              D. Increasing downtime
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5incorrect
     - id: screen5correct
       type: message
@@ -294,15 +318,21 @@ tasks:
           - type: "text"
             content: "Ready for the next question, {username}? Here we go!"
           - type: "text"
-            content: "Which of the following is NOT a feature of New Relic?\n\nA. Application Performance Monitoring (APM)\nB. Log Management\nC. Synthetic Monitoring\nD. Manual issue resolution"
+            content: |
+              Which of the following is NOT a feature of New Relic?
+
+              A. Application Performance Monitoring (APM)
+              B. Log Management
+              C. Synthetic Monitoring
+              D. Manual issue resolution
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen6incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6correct
     - id: screen6correct
       type: message
@@ -361,15 +391,21 @@ tasks:
           - type: "text"
             content: "Here's the next one, {username}! Let's see how you do with this question."
           - type: "text"
-            content: "How does New Relic improve troubleshooting capabilities?\n\nA. By ignoring log data\nB. By providing comprehensive log management and AI-driven root cause analysis\nC. By reducing the number of logs\nD. By complicating the troubleshooting process"
+            content: |
+              How does New Relic improve troubleshooting capabilities?
+
+              A. By ignoring log data
+              B. By providing comprehensive log management and AI-driven root cause analysis
+              C. By reducing the number of logs
+              D. By complicating the troubleshooting process
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7incorrect
     - id: screen7correct
       type: message
@@ -428,15 +464,21 @@ tasks:
           - type: "text"
             content: "Here's the next one, {username}! Let's see how you do with this question."
           - type: "text"
-            content: "Why was New Relic chosen for Alfred AI's TaskMaster application?\n\nA. For its limited features\nB. Due to its comprehensive features and robust AI-driven insights\nC. Because it is the only monitoring tool available\nD. For its lack of integration capabilities"
+            content: |
+              Why was New Relic chosen for Alfred AI's TaskMaster application?
+
+              A. For its limited features
+              B. Due to its comprehensive features and robust AI-driven insights
+              C. Because it is the only monitoring tool available
+              D. For its lack of integration capabilities
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8incorrect
     - id: screen8correct
       type: message
@@ -495,15 +537,21 @@ tasks:
           - type: "text"
             content: "Here's the next question, {username}!"
           - type: "text"
-            content: "What does Application Performance Monitoring (APM) provide in New Relic?\n\nA. Limited visibility into application performance\nB. Detailed insights into application performance, including transaction tracing and error analysis\nC. No insights into transaction performance\nD. Reduced monitoring capabilities"
+            content: |
+              What does Application Performance Monitoring (APM) provide in New Relic?
+
+              A. Limited visibility into application performance
+              B. Detailed insights into application performance, including transaction tracing and error analysis
+              C. No insights into transaction performance
+              D. Reduced monitoring capabilities
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9incorrect
     - id: screen9correct
       type: message
@@ -562,15 +610,21 @@ tasks:
           - type: "text"
             content: "Let's keep the momentum going, {username}! Here's your next question."
           - type: "text"
-            content: "What is the primary advantage of using AI-driven insights in monitoring?\n\nA. Increased manual analysis\nB. Enhanced proactive monitoring and actionable insights\nC. Reduced visibility into system performance\nD. Increased downtime"
+            content: |
+              What is the primary advantage of using AI-driven insights in monitoring?
+
+              A. Increased manual analysis
+              B. Enhanced proactive monitoring and actionable insights
+              C. Reduced visibility into system performance
+              D. Increased downtime
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10incorrect
     - id: screen10correct
       type: message
@@ -629,15 +683,21 @@ tasks:
           - type: "text"
             content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
-            content: "Which feature of New Relic helps simulate user interactions to monitor application availability and performance?\n\nA. Log Management\nB. Synthetic Monitoring\nC. Infrastructure Monitoring\nD. Manual Monitoring"
+            content: |
+              Which feature of New Relic helps simulate user interactions to monitor application availability and performance?
+
+              A. Log Management
+              B. Synthetic Monitoring
+              C. Infrastructure Monitoring
+              D. Manual Monitoring
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11incorrect
     - id: screen11correct
       type: message

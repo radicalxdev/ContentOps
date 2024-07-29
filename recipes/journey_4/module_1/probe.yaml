@@ -32,13 +32,13 @@ tasks:
               C. Increased manual testing effort
               D. Decreased test coverage
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2incorrect
     - id: screen2correct
       type: message
@@ -103,13 +103,13 @@ tasks:
               C. Unit Testing
               D. Acceptance Testing
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen3correct
-        - text: "d"
+        - text: "D"
           target_node_id: screen3incorrect
     - id: screen3correct
       type: message
@@ -174,13 +174,13 @@ tasks:
               C. By ignoring test data
               D. By increasing the complexity of tests
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4incorrect
     - id: screen4correct
       type: message
@@ -245,13 +245,13 @@ tasks:
               C. Automated Test Case Generation
               D. Predictive Analytics
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5incorrect
     - id: screen5correct
       type: message
@@ -316,13 +316,13 @@ tasks:
               C. Increases manual data entry
               D. Simplifies the testing process
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen6incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6incorrect
     - id: screen6correct
       type: message
@@ -387,13 +387,13 @@ tasks:
               C. Increased manual effort
               D. Limited test coverage
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7incorrect
     - id: screen7correct
       type: message
@@ -458,13 +458,13 @@ tasks:
               C. It reduces test coverage
               D. It complicates test management
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8incorrect
     - id: screen8correct
       type: message
@@ -529,13 +529,13 @@ tasks:
               C. Increases manual intervention
               D. Both A and B
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen9incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9correct
     - id: screen9correct
       type: message
@@ -600,13 +600,13 @@ tasks:
               C. By increasing the number of bugs
               D. By reducing test accuracy
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10incorrect
     - id: screen10correct
       type: message
@@ -671,13 +671,13 @@ tasks:
               C. Test coverage
               D. Test data generation
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11incorrect
     - id: screen11correct
       type: message

@@ -24,15 +24,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Alright {username}, let's begin with our first question!\n\n**Question:** What is one key benefit of visual documentation over traditional text-based documentation?\n\nA. It is more expensive to create.\nB. It is harder to understand.\nC. It reduces miscommunication and errors.\nD. It requires more time to interpret."
+              content: |
+                Alright {username}, let's begin with our first question!
+
+                **Question:** What is one key benefit of visual documentation over traditional text-based documentation?
+
+                A. It is more expensive to create.
+                B. It is harder to understand.
+                C. It reduces miscommunication and errors.
+                D. It requires more time to interpret.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen2incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen2incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen2correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen2incorrect
       - id: screen2correct
         type: message
@@ -89,15 +97,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for the next one, {username}? Let's talk about AI-powered documentation.\n\n**Question:** How does AI-powered documentation enhance software engineering?\n\nA. By increasing the manual effort required.\nB. By automating content generation and improving visual elements.\nC. By making the documentation process more complex.\nD. By decreasing the accuracy of documentation."
+              content: |
+                Ready for the next one, {username}? Let's talk about AI-powered documentation.
+
+                **Question:** How does AI-powered documentation enhance software engineering?
+
+                A. By increasing the manual effort required.
+                B. By automating content generation and improving visual elements.
+                C. By making the documentation process more complex.
+                D. By decreasing the accuracy of documentation.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen3incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen3correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen3incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen3incorrect
       - id: screen3correct
         type: message
@@ -154,15 +170,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's another one, {username}! Let's discuss Eraser AI and visual documentation.\n\n**Question:** How does Eraser AI help in generating visual documentation?\n\nA. By only creating text-based documents.\nB. By automatically generating diagrams and visual aids from code.\nC. By requiring manual drawing of diagrams.\nD. By ignoring code changes."
+              content: |
+                Here's another one, {username}! Let's discuss Eraser AI and visual documentation.
+
+                **Question:** How does Eraser AI help in generating visual documentation?
+
+                A. By only creating text-based documents.
+                B. By automatically generating diagrams and visual aids from code.
+                C. By requiring manual drawing of diagrams.
+                D. By ignoring code changes.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen4incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen4correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen4incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen4incorrect
       - id: screen4correct
         type: message
@@ -219,15 +243,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for another question, {username}? Let's discuss best practices for using Eraser AI.\n\n**Question:** What is a best practice for using Eraser AI to ensure up-to-date documentation?\n\nA. Updating documentation annually.\nB. Scheduling regular reviews and updates.\nC. Ignoring changes in the codebase.\nD. Creating documentation at the end of the project."
+              content: |
+                Ready for another question, {username}? Let's discuss best practices for using Eraser AI.
+
+                **Question:** What is a best practice for using Eraser AI to ensure up-to-date documentation?
+
+                A. Updating documentation annually.
+                B. Scheduling regular reviews and updates.
+                C. Ignoring changes in the codebase.
+                D. Creating documentation at the end of the project.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen5incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen5correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen5incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen5incorrect
       - id: screen5correct
         type: message
@@ -284,15 +316,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's the next one, {username}! Let's talk about the clarity and readability of technical documents.\n\n**Question:** How does AI enhance the clarity and readability of technical documents?\n\nA. By adding more technical jargon.\nB. By simplifying language and using visual aids.\nC. By removing visual elements.\nD. By reducing the detail level."
+              content: |
+                Here's the next one, {username}! Let's talk about the clarity and readability of technical documents.
+
+                **Question:** How does AI enhance the clarity and readability of technical documents?
+
+                A. By adding more technical jargon.
+                B. By simplifying language and using visual aids.
+                C. By removing visual elements.
+                D. By reducing the detail level.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen6incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen6correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen6incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen6incorrect
       - id: screen6correct
         type: message
@@ -326,7 +366,7 @@ tasks:
           - text: "1. Give me an example, Ada!"
             target_node_id: END
           - text: "2. On to the next, Ada!"
-            target_node_id: END 
+            target_node_id: END
       - id: END
         type: message
         body:
@@ -349,15 +389,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for another one, {username}? Let's talk about real-time updates in Eraser AI.\n\n**Question:** Which feature of Eraser AI ensures that documentation is synchronized with the latest project changes?\n\nA. Real-time updates and synchronization.\nB. Manual input and updates.\nC. Static documentation templates.\nD. Weekly manual checks."
+              content: |
+                Ready for another one, {username}? Let's talk about real-time updates in Eraser AI.
+
+                **Question:** Which feature of Eraser AI ensures that documentation is synchronized with the latest project changes?
+
+                A. Real-time updates and synchronization.
+                B. Manual input and updates.
+                C. Static documentation templates.
+                D. Weekly manual checks.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen7correct
-          - text: "b"
+          - text: "B"
             target_node_id: screen7incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen7incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen7incorrect
       - id: screen7correct
         type: message
@@ -414,15 +462,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's another one, {username}! Let's discuss the role of visual documentation in project onboarding.\n\n**Question:** How can visual documentation aid in project onboarding?\n\nA. By making the onboarding process longer.\nB. By creating complex, text-heavy documents.\nC. By providing clear visual representations of project architecture and workflows.\nD. By avoiding the use of diagrams."
+              content: |
+                Here's another one, {username}! Let's discuss the role of visual documentation in project onboarding.
+
+                **Question:** How can visual documentation aid in project onboarding?
+
+                A. By making the onboarding process longer.
+                B. By creating complex, text-heavy documents.
+                C. By providing clear visual representations of project architecture and workflows.
+                D. By avoiding the use of diagrams.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen8incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen8incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen8correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen8incorrect
       - id: screen8correct
         type: message
@@ -479,15 +535,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for the next one, {username}? Let's talk about version control in managing documentation.\n\n**Question:** Why is using version control important in managing documentation?\n\nA. It complicates the documentation process.\nB. It prevents documentation updates.\nC. It tracks changes and maintains a history of updates.\nD. It makes documentation static."
+              content: |
+                Ready for the next one, {username}? Let's talk about version control in managing documentation.
+
+                **Question:** Why is using version control important in managing documentation?
+
+                A. It complicates the documentation process.
+                B. It prevents documentation updates.
+                C. It tracks changes and maintains a history of updates.
+                D. It makes documentation static.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen9incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen9incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen9correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen9incorrect
       - id: screen9correct
         type: message
@@ -544,15 +608,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's the next one, {username}! Let's talk about knowledge transfer within a team.\n\n**Question:** How does Eraser AI facilitate knowledge transfer within a team?\n\nA. By creating isolated, text-based documents.\nB. By generating comprehensive visual documentation.\nC. By reducing the detail in documentation.\nD. By avoiding collaboration tools."
+              content: |
+                Here's the next one, {username}! Let's talk about knowledge transfer within a team.
+
+                **Question:** How does Eraser AI facilitate knowledge transfer within a team?
+
+                A. By creating isolated, text-based documents.
+                B. By generating comprehensive visual documentation.
+                C. By reducing the detail in documentation.
+                D. By avoiding collaboration tools.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen10incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen10correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen10incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen10incorrect
       - id: screen10correct
         type: message
@@ -609,15 +681,23 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Almost there, {username}! Let's talk about the benefits of using AI tools like Eraser AI for documentation.\n\n**Question:** What is one key benefit of using AI tools like Eraser AI for documentation?\n\nA. Increased manual effort.\nB. Reduced accuracy and consistency.\nC. Time efficiency and automation of tasks.\nD. Decreased collaboration."
+              content: |
+                Almost there, {username}! Let's talk about the benefits of using AI tools like Eraser AI for documentation.
+
+                **Question:** What is one key benefit of using AI tools like Eraser AI for documentation?
+
+                A. Increased manual effort.
+                B. Reduced accuracy and consistency.
+                C. Time efficiency and automation of tasks.
+                D. Decreased collaboration.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen11incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen11incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen11correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen11incorrect
       - id: screen11correct
         type: message
@@ -666,4 +746,20 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.\n\n**Recap:**\n\n- We explored the benefits of visual documentation in reducing miscommunication and errors.\n- We discussed how AI-powered documentation enhances software engineering by automating content generation and improving visual elements.\n- We highlighted Eraser AI's role in automatically generating diagrams and visual aids from code.\n- We covered best practices for maintaining up-to-date documentation with regular reviews and updates.\n- We emphasized how AI simplifies language and uses visual aids to enhance the clarity and readability of technical documents.\n- We reviewed Eraser AI's real-time updates and synchronization to keep documentation current.\n- We discussed how visual documentation aids in project onboarding with clear representations of project architecture and workflows.\n- We explained the importance of using version control to track changes and maintain a history of documentation updates.\n- We talked about how Eraser AI facilitates knowledge transfer by generating comprehensive visual documentation.\n- We covered the key benefit of using AI tools like Eraser AI for time efficiency and automation of documentation tasks.\n\nAda AI: Up next, we'll dive into the next module, where we'll explore advanced techniques for using Eraser AI to streamline designing architecture and data flow diagrams."
+              content: |
+                Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.
+
+                **Recap:**
+
+                - We explored the benefits of visual documentation in reducing miscommunication and errors.
+                - We discussed how AI-powered documentation enhances software engineering by automating content generation and improving visual elements.
+                - We highlighted Eraser AI's role in automatically generating diagrams and visual aids from code.
+                - We covered best practices for maintaining up-to-date documentation with regular reviews and updates.
+                - We emphasized how AI simplifies language and uses visual aids to enhance the clarity and readability of technical documents.
+                - We reviewed Eraser AI's real-time updates and synchronization to keep documentation current.
+                - We discussed how visual documentation aids in project onboarding with clear representations of project architecture and workflows.
+                - We explained the importance of using version control to track changes and maintain a history of documentation updates.
+                - We talked about how Eraser AI facilitates knowledge transfer by generating comprehensive visual documentation.
+                - We covered the key benefit of using AI tools like Eraser AI for time efficiency and automation of documentation tasks.
+
+                 Up next, we'll dive into the next module, where we'll explore advanced techniques for using Eraser AI to streamline designing architecture and data flow diagrams."

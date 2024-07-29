@@ -26,15 +26,20 @@ tasks:
           - type: "text"
             content: "Excellent, {username}! Let's start with the first question."
           - type: "text"
-            content: "What is the primary benefit of using AI tools like GitHub Copilot for managing configuration files?\n\nA. Increased manual effort\nB. Streamlined generation and management of configuration files\nC. Reduced accuracy and consistency\nD. Increased likelihood of errors"
+            content: |
+              What is the primary benefit of using AI tools like GitHub Copilot for managing configuration files?
+              A. Increased manual effort
+              B. Streamlined generation and management of configuration files
+              C. Reduced accuracy and consistency
+              D. Increased likelihood of errors
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2incorrect
     - id: screen2correct
       type: message
@@ -93,15 +98,20 @@ tasks:
           - type: "text"
             content: "Let's move on to the next question, {username}!"
           - type: "text"
-            content: "Why is managing configuration files essential in software development?\n\nA. To increase code complexity\nB. To centralize settings for different environments and ensure security and functionality\nC. To reduce code readability\nD. To increase manual labor"
+            content: |
+              Why is managing configuration files essential in software development?
+              A. To increase code complexity
+              B. To centralize settings for different environments and ensure security and functionality
+              C. To reduce code readability
+              D. To increase manual labor
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen3incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3incorrect
     - id: screen3correct
       type: message
@@ -160,15 +170,20 @@ tasks:
           - type: "text"
             content: "Here's the next question, {username}!"
           - type: "text"
-            content: "How does GitHub Copilot assist in creating Terraform configuration files?\n\nA. By generating incomplete and inaccurate configurations\nB. By automating the process and ensuring consistent configurations\nC. By increasing the complexity of the configurations\nD. By ignoring best practices"
+            content: |
+              How does GitHub Copilot assist in creating Terraform configuration files?
+              A. By generating incomplete and inaccurate configurations
+              B. By automating the process and ensuring consistent configurations
+              C. By increasing the complexity of the configurations
+              D. By ignoring best practices
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4incorrect
     - id: screen4correct
       type: message
@@ -227,15 +242,20 @@ tasks:
           - type: "text"
             content: "Let's keep going, {username}! Here's your next question."
           - type: "text"
-            content: "What is a key benefit of using AI to generate Kubernetes deployment files?\n\nA. Increasing manual errors\nB. Simplifying the process and making it more efficient and reliable\nC. Reducing deployment efficiency\nD. Increasing deployment time"
+            content: |
+              What is a key benefit of using AI to generate Kubernetes deployment files?
+              A. Increasing manual errors
+              B. Simplifying the process and making it more efficient and reliable
+              C. Reducing deployment efficiency
+              D. Increasing deployment time
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5incorrect
     - id: screen5correct
       type: message
@@ -294,15 +314,20 @@ tasks:
           - type: "text"
             content: "Ready for the next question, {username}? Here we go!"
           - type: "text"
-            content: "How does GitHub Copilot help with Jenkins pipeline scripts?\n\nA. By manually creating the scripts\nB. By generating Jenkins pipeline scripts to automate build, test, and deployment processes\nC. By ignoring the CI/CD pipeline\nD. By reducing the automation level"
+            content: |
+              How does GitHub Copilot help with Jenkins pipeline scripts?
+              A. By manually creating the scripts
+              B. By generating Jenkins pipeline scripts to automate build, test, and deployment processes
+              C. By ignoring the CI/CD pipeline
+              D. By reducing the automation level
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen6incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6incorrect
     - id: screen6correct
       type: message
@@ -361,15 +386,20 @@ tasks:
           - type: "text"
             content: "Here's the next one, {username}! Let's see how you do with this question."
           - type: "text"
-            content: "How can AI tools help in optimizing configuration files for performance?\n\nA. By ignoring performance bottlenecks\nB. By identifying and suggesting optimizations for better performance and resource allocation\nC. By increasing the complexity of the configurations\nD. By reducing the efficiency of the configurations"
+            content: |
+              How can AI tools help in optimizing configuration files for performance?
+              A. By ignoring performance bottlenecks
+              B. By identifying and suggesting optimizations for better performance and resource allocation
+              C. By increasing the complexity of the configurations
+              D. By reducing the efficiency of the configurations
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7incorrect
     - id: screen7correct
       type: message
@@ -428,15 +458,20 @@ tasks:
           - type: "text"
             content: "Here's the next question, {username}!"
           - type: "text"
-            content: "Why is standardization important in configuration file management?\n\nA. To reduce collaboration\nB. To maintain consistent coding standards and practices across a team\nC. To increase script complexity\nD. To ignore best practices"
+            content: |
+              Why is standardization important in configuration file management?
+              A. To reduce collaboration
+              B. To maintain consistent coding standards and practices across a team
+              C. To increase script complexity
+              D. To ignore best practices
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8incorrect
     - id: screen8correct
       type: message
@@ -495,15 +530,20 @@ tasks:
           - type: "text"
             content: "Let's move on to the next question, {username}!"
           - type: "text"
-            content: "What is one way AI can assist with generating test scripts?\n\nA. By manually writing all test cases\nB. By generating test scripts for unit tests, integration tests, and end-to-end tests\nC. By ignoring the testing process\nD. By reducing test coverage"
+            content: |
+              What is one way AI can assist with generating test scripts?
+              A. By manually writing all test cases
+              B. By generating test scripts for unit tests, integration tests, and end-to-end tests
+              C. By ignoring the testing process
+              D. By reducing test coverage
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9incorrect
     - id: screen9correct
       type: message
@@ -562,15 +602,20 @@ tasks:
           - type: "text"
             content: "Let's keep the momentum going, {username}! Here's your next question."
           - type: "text"
-            content: "What should developers do to ensure the accuracy of AI-generated configuration scripts?\n\nA. Ignore the generated scripts\nB. Review and correct the output generated by AI tools\nC. Rely entirely on AI tools without verification\nD. Increase the complexity of the scripts"
+            content: |
+              What should developers do to ensure the accuracy of AI-generated configuration scripts?
+              A. Ignore the generated scripts
+              B. Review and correct the output generated by AI tools
+              C. Rely entirely on AI tools without verification
+              D. Increase the complexity of the scripts
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10incorrect
     - id: screen10correct
       type: message
@@ -629,15 +674,20 @@ tasks:
           - type: "text"
             content: "Here's the final question, {username}! Let's see how you do."
           - type: "text"
-            content: "How can AI tools enforce coding standards and best practices?\n\nA. By ignoring existing scripts\nB. By suggesting and implementing standardized ways of writing and formatting configuration files\nC. By increasing inconsistencies\nD. By making collaboration more difficult"
+            content: |
+              How can AI tools enforce coding standards and best practices?
+              A. By ignoring existing scripts
+              B. By suggesting and implementing standardized ways of writing and formatting configuration files
+              C. By increasing inconsistencies
+              D. By making collaboration more difficult
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11incorrect
     - id: screen11correct
       type: message
@@ -688,6 +738,13 @@ tasks:
           - type: "text"
             content: "Fantastic work, {username}! You've completed the Advanced Deployment Automation with AI-Generated Scripts Probe. Let's quickly recap what we covered:"
           - type: "text"
-            content: "**Recap:**\n\n- We discussed the benefits of using AI tools like GitHub Copilot for managing configuration files.\n- We explored why managing configuration files is essential in software development.\n- We examined how AI tools assist in creating and optimizing Terraform and Kubernetes configuration files.\n- We looked at the role of AI in generating Jenkins pipeline scripts and ensuring standardization.\n- We identified the importance of reviewing AI-generated configuration scripts and how AI can enforce coding standards and best practices."
+            content: |
+              **Recap:**
+              
+              - We discussed the benefits of using AI tools like GitHub Copilot for managing configuration files.
+              - We explored why managing configuration files is essential in software development.
+              - We examined how AI tools assist in creating and optimizing Terraform and Kubernetes configuration files.
+              - We looked at the role of AI in generating Jenkins pipeline scripts and ensuring standardization.
+              - We identified the importance of reviewing AI-generated configuration scripts and how AI can enforce coding standards and best practices.
           - type: "text"
             content: "Up next, we'll dive into the next module where we'll explore advanced techniques for optimizing AI-generated scripts for performance and reliability."

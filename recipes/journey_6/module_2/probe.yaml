@@ -27,15 +27,21 @@ tasks:
             - type: "text"
               content: "Excellent, {username}! Let's start with the first question."
             - type: "text"
-              content: "What is the primary advantage of using AI in troubleshooting over manual methods?\n\nA. It increases the complexity of the process.\nB. It automates repetitive tasks and provides deeper insights.\nC. It reduces the accuracy of the results.\nD. It makes the process more time-consuming."
+              content: |
+                What is the primary advantage of using AI in troubleshooting over manual methods?
+
+                A. It increases the complexity of the process.
+                B. It automates repetitive tasks and provides deeper insights.
+                C. It reduces the accuracy of the results.
+                D. It makes the process more time-consuming.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen2incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen2correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen2incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen2incorrect
       - id: screen2correct
         type: message
@@ -95,15 +101,21 @@ tasks:
             - type: "text"
               content: "Let's move on to the next question, {username}!"
             - type: "text"
-              content: "Which tool is highlighted for its comprehensive features and AI-driven insights in troubleshooting?\n\nA. Datadog\nB. Splunk\nC. Sentry\nD. New Relic"
+              content: |
+                Which tool is highlighted for its comprehensive features and AI-driven insights in troubleshooting?
+
+                A. Datadog
+                B. Splunk
+                C. Sentry
+                D. New Relic
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen3incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen3incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen3incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen3correct
       - id: screen3correct
         type: message
@@ -163,15 +175,21 @@ tasks:
             - type: "text"
               content: "Here's the next question, {username}!"
             - type: "text"
-              content: "What is one of the main challenges of manual troubleshooting?\n\nA. It is highly accurate.\nB. It is quick and efficient.\nC. It is labor-intensive and error-prone.\nD. It automates the process."
+              content: |
+                What is one of the main challenges of manual troubleshooting?
+
+                A. It is highly accurate.
+                B. It is quick and efficient.
+                C. It is labor-intensive and error-prone.
+                D. It automates the process.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen4incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen4incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen4correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen4incorrect
       - id: screen4correct
         type: message
@@ -231,15 +249,21 @@ tasks:
             - type: "text"
               content: "Here's the next question, {username}!"
             - type: "text"
-              content: "Which feature of AI-powered tools helps in identifying performance issues in real-time?\n\nA. Historical Analysis\nB. Manual Debugging\nC. Real-Time Monitoring\nD. Delayed Alerts"
+              content: |
+                Which feature of AI-powered tools helps in identifying performance issues in real-time?
+
+                A. Historical Analysis
+                B. Manual Debugging
+                C. Real-Time Monitoring
+                D. Delayed Alerts
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen5incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen5incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen5correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen5incorrect
       - id: screen5correct
         type: message
@@ -299,15 +323,21 @@ tasks:
             - type: "text"
               content: "Let's keep going, {username}! Here's your next question."
             - type: "text"
-              content: "How does predictive analytics benefit troubleshooting?\n\nA. By providing inaccurate predictions.\nB. By ignoring historical data.\nC. By predicting potential issues before they occur.\nD. By delaying the resolution process."
+              content: |
+                How does predictive analytics benefit troubleshooting?
+
+                A. By providing inaccurate predictions.
+                B. By ignoring historical data.
+                C. By predicting potential issues before they occur.
+                D. By delaying the resolution process.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen6incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen6incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen6correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen6incorrect
       - id: screen6correct
         type: message
@@ -367,15 +397,21 @@ tasks:
             - type: "text"
               content: "Here's the next one, {username}! Let's see how you do with this question."
             - type: "text"
-              content: "What does AI-driven root cause analysis do?\n\nA. It increases the number of errors.\nB. It traces issues back to their root cause efficiently.\nC. It complicates the troubleshooting process.\nD. It ignores the data."
+              content: |
+                What does AI-driven root cause analysis do?
+
+                A. It increases the number of errors.
+                B. It traces issues back to their root cause efficiently.
+                C. It complicates the troubleshooting process.
+                D. It ignores the data.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen7incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen7correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen7incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen7incorrect
       - id: screen7correct
         type: message
@@ -435,15 +471,21 @@ tasks:
             - type: "text"
               content: "Here's the next question, {username}!"
             - type: "text"
-              content: "Which AI-powered tool provides centralized error tracking and triaging?\n\nA. GitHub Copilot\nB. Jenkins\nC. New Relic's Errors Inbox\nD. Ansible"
+              content: |
+                Which AI-powered tool provides centralized error tracking and triaging?
+
+                A. GitHub Copilot
+                B. Jenkins
+                C. New Relic's Errors Inbox
+                D. Ansible
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen8incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen8incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen8correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen8incorrect
       - id: screen8correct
         type: message
@@ -503,15 +545,21 @@ tasks:
             - type: "text"
               content: "Let's move on to the next question, {username}!"
             - type: "text"
-              content: "What is the purpose of transaction tracing in New Relic APM?\n\nA. To ignore user interactions.\nB. To follow the path of a request through the application.\nC. To increase response times.\nD. To reduce error detection."
+              content: |
+                What is the purpose of transaction tracing in New Relic APM?
+
+                A. To ignore user interactions.
+                B. To follow the path of a request through the application.
+                C. To increase response times.
+                D. To reduce error detection.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen9incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen9correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen9incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen9incorrect
       - id: screen9correct
         type: message
@@ -571,15 +619,21 @@ tasks:
             - type: "text"
               content: "Here's your next question, {username}!"
             - type: "text"
-              content: "Which feature of New Relic helps in visualizing the interactions between different services in an application?\n\nA. Error Analysis\nB. Service Maps\nC. Custom Dashboards\nD. Real-Time Metrics"
+              content: |
+                Which feature of New Relic helps in visualizing the interactions between different services in an application?
+
+                A. Error Analysis
+                B. Service Maps
+                C. Custom Dashboards
+                D. Real-Time Metrics
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen10incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen10correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen10incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen10incorrect
       - id: screen10correct
         type: message
@@ -639,15 +693,21 @@ tasks:
             - type: "text"
               content: "Here's the final question, {username}! Let's see how you do."
             - type: "text"
-              content: "How does automated log analysis help in troubleshooting?\n\nA. By manually reviewing logs.\nB. By quickly identifying patterns and anomalies.\nC. By ignoring the logs.\nD. By complicating the analysis."
+              content: |
+                How does automated log analysis help in troubleshooting?
+
+                A. By manually reviewing logs.
+                B. By quickly identifying patterns and anomalies.
+                C. By ignoring the logs.
+                D. By complicating the analysis.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen11incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen11correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen11incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen11incorrect
       - id: screen11correct
         type: message
