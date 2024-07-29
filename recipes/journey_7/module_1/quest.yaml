@@ -324,7 +324,7 @@ tasks:
 
   - name: "Conclusion and Takeaways"
     context: "This section concludes the expedition on using Eraser AI for visual documentation and outlines the key takeaways and next steps. **Key Takeaways**: 1. **Use Cases**: Eraser AI excels in system design, API documentation, and technical report creation. 2. **Benefits**: The tool improves accuracy, boosts productivity, enhances collaboration, and adapts to project changes. 3. **Best Practices**: Effective use involves being specific, providing context, using correct terminology, breaking down tasks, and iterating and refining outputs. Following these guidelines will help streamline your documentation process using Eraser AI. **Next Steps**: The upcoming Mission focuses on generating technical documents for planning with Eraser AI, offering deeper practical applications to enhance your documentation skills. Users are encouraged to continue their learning journey to create detailed, accurate, and efficient project documentation."
-    id: "6"
+    id: "5"
     nodes:
       - id: START
         type: message
