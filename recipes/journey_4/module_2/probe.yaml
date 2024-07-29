@@ -27,23 +27,23 @@ tasks:
             content: "Alright {username}, let's begin with our first question!"
           - type: "text"
             content: |
-            What is the primary purpose of visual testing in software quality assurance?
-            
-            A. To increase the development time
-            
-            B. To ensure the UI appears correctly to users by comparing screenshots from different test runs
-            
-            C. To replace manual testing entirely
-            
-            D. To eliminate the need for any testing
+              What is the primary purpose of visual testing in software quality assurance?
+              
+              A. To increase the development time
+              
+              B. To ensure the UI appears correctly to users by comparing screenshots from different test runs
+              
+              C. To replace manual testing entirely
+              
+              D. To eliminate the need for any testing
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2incorrect
     - id: screen2correct
       type: message
@@ -103,23 +103,23 @@ tasks:
             content: "Ready for the next one, {username}? Let's talk about what visual testing involves."
           - type: "text"
             content: |
-            What does visual testing involve?
-            
-            A. Verifying code functionality
-            
-            B. Verifying that the UI of an application appears as intended by comparing the current UI with baseline images
-            
-            C. Manual code reviews
-            
-            D. Performance testing of the backend
+              What does visual testing involve?
+              
+              A. Verifying code functionality
+              
+              B. Verifying that the UI of an application appears as intended by comparing the current UI with baseline images
+              
+              C. Manual code reviews
+              
+              D. Performance testing of the backend
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen3incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3incorrect
     - id: screen3correct
       type: message
@@ -179,23 +179,23 @@ tasks:
             content: "Here's another one, {username}! Let's discuss how visual testing improves user experience."
           - type: "text"
             content: |
-            How does visual testing improve user experience?
-            
-            A. By complicating the UI
-            
-            B. By ensuring a consistent and appealing UI
-            
-            C. By reducing the frequency of updates
-            
-            D. By focusing solely on backend performance
+              How does visual testing improve user experience?
+              
+              A. By complicating the UI
+              
+              B. By ensuring a consistent and appealing UI
+              
+              C. By reducing the frequency of updates
+              
+              D. By focusing solely on backend performance
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4incorrect
     - id: screen4correct
       type: message
@@ -255,23 +255,23 @@ tasks:
             content: "Ready for another question, {username}? Let's talk about visual testing and brand image."
           - type: "text"
             content: |
-            Why is visual testing important for maintaining a positive brand image?
-            
-            A. It increases the development cost
-            
-            B. It reflects professionalism and bolsters customer trust
-            
-            C. It complicates the testing process
-            
-            D. It reduces the need for customer support
+              Why is visual testing important for maintaining a positive brand image?
+              
+              A. It increases the development cost
+              
+              B. It reflects professionalism and bolsters customer trust
+              
+              C. It complicates the testing process
+              
+              D. It reduces the need for customer support
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5incorrect
     - id: screen5correct
       type: message
@@ -331,23 +331,23 @@ tasks:
             content: "Here's the next one, {username}! Let's discuss the challenges of manual visual testing."
           - type: "text"
             content: |
-            What is a major challenge of manual visual testing?
-            
-            A. It is highly efficient
-            
-            B. It is time-consuming and prone to human error
-            
-            C. It requires no expertise
-            
-            D. It is fully automated
+              What is a major challenge of manual visual testing?
+              
+              A. It is highly efficient
+              
+              B. It is time-consuming and prone to human error
+              
+              C. It requires no expertise
+              
+              D. It is fully automated
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen6incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6incorrect
     - id: screen6correct
       type: message
@@ -407,23 +407,23 @@ tasks:
             content: "Ready for another one, {username}? Let's talk about AI and test creation."
           - type: "text"
             content: |
-            How does AI contribute to faster test creation?
-            
-            A. By requiring extensive coding
-            
-            B. By quickly generating test scripts based on plain language prompts
-            
-            C. By ignoring user behavior
-            
-            D. By complicating the test creation process
+              How does AI contribute to faster test creation?
+              
+              A. By requiring extensive coding
+              
+              B. By quickly generating test scripts based on plain language prompts
+              
+              C. By ignoring user behavior
+              
+              D. By complicating the test creation process
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7incorrect
     - id: screen7correct
       type: message
@@ -483,23 +483,23 @@ tasks:
             content: "Here's another one, {username}! Let's discuss AI-powered tools and visual testing accuracy."
           - type: "text"
             content: |
-            How do AI-powered tools enhance visual testing accuracy?
-            
-            A. By identifying significant and insignificant changes equally
-            
-            B. By accurately identifying visual changes and reducing false positives
-            
-            C. By increasing the number of false positives
-            
-            D. By ignoring user impact
+              How do AI-powered tools enhance visual testing accuracy?
+              
+              A. By identifying significant and insignificant changes equally
+              
+              B. By accurately identifying visual changes and reducing false positives
+              
+              C. By increasing the number of false positives
+              
+              D. By ignoring user impact
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8incorrect
     - id: screen8correct
       type: message
@@ -559,23 +559,23 @@ tasks:
             content: "Let's continue, {username}! Here's a question about Katalon Studio's automated visual testing feature."
           - type: "text"
             content: |
-            What does Katalon Studio's automated visual testing feature do?
-            
-            A. Manually compares images
-            
-            B. Uses AI to compare baseline images with test results
-            
-            C. Increases the manual effort needed
-            
-            D. Ignores visual discrepancies
+              What does Katalon Studio's automated visual testing feature do?
+              
+              A. Manually compares images
+              
+              B. Uses AI to compare baseline images with test results
+              
+              C. Increases the manual effort needed
+              
+              D. Ignores visual discrepancies
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9incorrect
     - id: screen9correct
       type: message
@@ -635,23 +635,23 @@ tasks:
             content: "Here's the next one, {username}! Let's talk about Katalon's self-healing mechanism."
           - type: "text"
             content: |
-            What is the purpose of Katalon's self-healing mechanism?
-            
-            A. To make manual updates
-            
-            B. To automatically adapt to minor UI changes and update locators
-            
-            C. To ignore changes in the UI
-            
-            D. To complicate the testing process
+              What is the purpose of Katalon's self-healing mechanism?
+              
+              A. To make manual updates
+              
+              B. To automatically adapt to minor UI changes and update locators
+              
+              C. To ignore changes in the UI
+              
+              D. To complicate the testing process
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10incorrect
     - id: screen10correct
       type: message
@@ -711,23 +711,23 @@ tasks:
             content: "Here's the final question, {username}! Let's talk about integrating Katalon TestOps with Katalon Studio."
           - type: "text"
             content: |
-            What is the benefit of integrating Katalon TestOps with Katalon Studio?
-            
-            A. It decentralizes test management
-            
-            B. It provides a centralized platform for managing tests, analyzing results, and generating insights
-            
-            C. It increases the complexity of test management
-            
-            D. It reduces the ability to track test performance
+              What is the benefit of integrating Katalon TestOps with Katalon Studio?
+              
+              A. It decentralizes test management
+              
+              B. It provides a centralized platform for managing tests, analyzing results, and generating insights
+              
+              C. It increases the complexity of test management
+              
+              D. It reduces the ability to track test performance
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11incorrect
     - id: screen11correct
       type: message
