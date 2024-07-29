@@ -56,12 +56,14 @@ Let's give it a try! Type a question or ask me to show an example to see how thi
       parts: 
       - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
         type: "image"
-      - content: "Here's an example of how you can interact with me:
-You: "Ada, can you explain what AI TaskMaster is?"
+      - content: |
+          Here's an example of how you can interact with me:
 
-**Ada AI**: "Of course! AI TaskMaster is an AI-driven project management tool that revolutionizes how teams operate. It automates routine tasks, provides predictive analytics for better decision-making, and enhances collaboration to boost overall productivity."
+          You: Ada, can you explain what AI TaskMaster is?
 
-Try it out yourself. Feel free to ask me anything about the program or the tools we'll be using. Your journey to mastering AI-powered software development starts with a single question."
+          Ada AI: Of course! AI TaskMaster is an AI-driven project management tool that revolutionizes how teams operate. It automates routine tasks, provides predictive analytics for better decision-making, and enhances collaboration to boost overall productivity.
+
+          Try it out yourself. Feel free to ask me anything about the program or the tools we'll be using. Your journey to mastering AI-powered software development starts with a single question.
         type: "text"
     id: "END"
     type: "message"
