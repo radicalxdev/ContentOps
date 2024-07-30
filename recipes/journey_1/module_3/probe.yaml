@@ -26,7 +26,7 @@ tasks:
               content: "Alright {username}, let's begin with our first question!"
             - type: "text"
               content: |
-                What is prompt engineering in the context of generative AI models?
+                **Q1. What is prompt engineering in the context of generative AI models?**
 
 
                 A. Designing user interfaces for AI models
@@ -109,7 +109,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which of the following is an example of naive prompting?
+                **Q2. Which of the following is an example of naive prompting?**
 
 
                 A. 'Write an HTML and CSS code snippet for a responsive navbar with dropdown menus.'
@@ -192,7 +192,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What element of a well-constructed prompt provides clear and specific guidelines to the model?
+                **Q3. What element of a well-constructed prompt provides clear and specific guidelines to the model?**
 
 
                 A. Context
@@ -275,7 +275,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Why is context important in prompt engineering?
+                **Q4. Why is context important in prompt engineering?**
 
 
                 A. It increases the length of the prompt.
@@ -358,7 +358,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which of the following is an example of providing context in a prompt?
+                **Q5. Which of the following is an example of providing context in a prompt?**
 
 
                 A. 'Write a script to update a database.'
@@ -441,7 +441,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the purpose of an output indicator in a prompt?
+                **Q6. What is the purpose of an output indicator in a prompt?**
 
 
                 A. To provide the model with input data
@@ -524,7 +524,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which of the following is an example of an effective prompt for generating code?
+                **Q7. Which of the following is an example of an effective prompt for generating code?**
 
 
                 A. 'Write a Python script.'
@@ -607,7 +607,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What does the Chain-of-Thought approach involve in prompt engineering?
+                **Q8. What does the Chain-of-Thought approach involve in prompt engineering?**
 
 
                 A. Providing a single complex prompt
@@ -690,7 +690,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the purpose of iterative refinement in prompt engineering?
+                **Q9. What is the purpose of iterative refinement in prompt engineering?**
 
 
                 A. To limit the model's output
@@ -773,7 +773,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Why is clarity important in prompt engineering?
+                **Q10. Why is clarity important in prompt engineering?**
 
 
                 A. It makes the prompt longer

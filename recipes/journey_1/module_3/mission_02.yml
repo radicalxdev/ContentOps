@@ -86,8 +86,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+      #      - type: "image"
+      #        content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's start by using the `@workspace` command to get a recommendation for organizing the new webhook function within the codebase. Here's an example prompt:
@@ -116,8 +116,8 @@ tasks:
                 2. Next, think about how this function would be used throughout the codebase. Consider constraints like where the file is located and separation of concerns.
                 3. Finally, suggest a module to place the webhooks file within the codebase.
                 ```
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+        #    - type: "image"
+        #      content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Take a minute to examine the responses. Notice the difference in recommendations. Both responses suggest placing the new feature within the `app/api/` module, but the Chain-of-Thought reasoning also recommends creating a new file within the `app/api/` folder, adhering to the single responsibility principle. Let's dive deeper into a few more examples like the difference of the code suggestion when given two prompting techniques.
@@ -134,13 +134,13 @@ tasks:
                 Now, let's compare the code generation outputs of Copilot using Chain of Thought and zero-shot prompts for creating the same output. We will introduce specific requirements for the function to see how each technique handles the task.
                 
                 **Zero-shot Prompt Output:**
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+           # - type: "image"
+           #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 **Chain of Thought Reasoning Output:**
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+           # - type: "image"
+           #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Notice how the Chain-of-Thought reasoning provides a more detailed and step-by-step approach, while the zero-shot prompt is less specific. Ready to proceed to the summary?

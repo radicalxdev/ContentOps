@@ -20,7 +20,7 @@ tasks:
             content: "Excellent, {username}! Let's start with the first question."
           - type: "text"
             content: |
-              What is Generative AI?
+              **Q1. What is Generative AI?**
 
 
               A. An AI system that only analyzes data
@@ -99,7 +99,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Which of the following is an example of a generative AI model?
+              **Q2. Which of the following is an example of a generative AI model?**
 
 
               A. GPT-4 by OpenAI
@@ -180,7 +180,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              How does Generative AI typically begin the content creation process?
+              **Q3. How does Generative AI typically begin the content creation process?**
 
 
               A. By executing predefined rules
@@ -261,7 +261,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a Large Language Model (LLM)?
+              **Q4. What is a Large Language Model (LLM)?**
 
 
               A. A small machine learning model for specific tasks
@@ -341,7 +341,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a common limitation of Generative AI models?
+              **Q5. What is a common limitation of Generative AI models?**
 
 
               A. They always provide accurate and relevant outputs.
@@ -423,7 +423,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What does the term 'hallucination' refer to in the context of Generative AI?
+              **Q6. What does the term 'hallucination' refer to in the context of Generative AI?**
 
 
               A. Generating real and accurate content
@@ -505,7 +505,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              How can biases in training data affect Generative AI models?
+              **Q7. How can biases in training data affect Generative AI models?**
 
 
               A. They improve the accuracy of the model
@@ -587,7 +587,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is the impact of AI hallucinations in software development?
+              **Q8. What is the impact of AI hallucinations in software development?**
 
 
               A. They always produce correct and useful code
@@ -669,7 +669,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Why should developers validate AI-generated outputs?
+              **Q9. Why should developers validate AI-generated outputs?**
 
 
               A. Because AI outputs are always perfect and require no validation
@@ -751,7 +751,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Why is critical thinking important when using AI tools in software development?
+              **Q10. Why is critical thinking important when using AI tools in software development?**
 
 
               A. It helps in understanding the limitations and capabilities of AI tools
