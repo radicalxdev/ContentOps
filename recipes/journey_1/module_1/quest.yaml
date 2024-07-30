@@ -6,11 +6,8 @@ tasks:
   nodes: 
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          Welcome to the Generative AI for Software Developers Program at App Academy, {username}! I'm Ada AI, your AI Coach. My role is to be your mentor, guide, and support system throughout this enriching journey. Together, we'll explore the many ways you can leverage Generative AI to elevate your development skills to new heights. Imagine the possibilities: automating tedious tasks, enhancing code quality with smart tools, and accelerating your development process like never before. Whether you're debugging, testing, or deploying, I'll be here to assist you every step of the way.
+      parts:
+      - content: "Welcome to the AI-Powered Software Development Program at App Academy, {username}! I'm Ada AI, your AI Coach. My role is to be your mentor, guide, and support system throughout this enriching journey. Together, we'll explore the many ways you can leverage Generative AI to elevate your development skills to new heights. Imagine the possibilities: automating tedious tasks, enhancing code quality with smart tools, and accelerating your development process like never before. Whether you're debugging, testing, or deploying, I'll be here to assist you every step of the way."
         type: "text"
     edges: 
     - target_node_id: "screen1a"
@@ -20,8 +17,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           I'm here to support you in various ways:
           - **Guidance**: I'll provide step-by-step instructions and detailed explanations to help you grasp even the most complex concepts with ease. Think of me as your tutor, here to help you navigate every step of the way.
@@ -39,8 +34,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           Interacting with me is simple and intuitive. Here's how:
           - **Ask Questions**: Just type your questions directly, and I'll provide the precise answers you need, tailored to your current topic or challenge.
@@ -57,9 +50,7 @@ tasks:
     type: "message"
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
+      parts:
       - content: |
           Now that you know how to interact with me throughout this program, are you ready to continue your personalized learning journey?
         type: "text"
@@ -72,11 +63,8 @@ tasks:
   nodes: 
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          But enough about me, {username}. I'd love to learn more about you so we can effectively work together and personalize this program to fit your needs. Could you share a bit about your background in AI-powered software development and what you aim to achieve through this program?
+      parts:
+      - content: "But enough about me, {username}. I'd love to learn more about you so we can effectively work together and personalize this program to fit your needs. Could you share a bit about your background in AI-powered software development and what you aim to achieve through this program?"
         type: "text"
     edges: 
     - target_node_id: "screen2a"
@@ -91,11 +79,8 @@ tasks:
     type: "message"
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          It's wonderful to have you here, {username}! Since you're new to AI-powered software development, I'd like to get a sense of your familiarity with AI tools. Have you ever heard about or used GitHub Copilot, or observed anyone using generative AI tools for development work?
+      parts:
+      - content: "It's wonderful to have you here, {username}! Since you're new to AI-powered software development, I'd like to get a sense of your familiarity with AI tools. Have you ever heard about or used GitHub Copilot, or observed anyone using generative AI tools for development work?"
         type: "text"
     edges: 
     - target_node_id: "screen2e"
@@ -106,11 +91,8 @@ tasks:
     type: "message"
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          Fantastic, {username}! Since you have some experience with AI tools, I'd love to know more about the specific tools you've worked with. This will help me tailor the content to build on your current knowledge. Please select from the options below or type your answer.
+      parts:
+      - content: "Fantastic, {username}! Since you have some experience with AI tools, I'd love to know more about the specific tools you've worked with. This will help me tailor the content to build on your current knowledge. Please select from the options below or type your answer."
         type: "text"
     edges: 
     - target_node_id: "END"
@@ -125,11 +107,8 @@ tasks:
     type: "message"
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          That's amazing, {username}! I'd like to understand which AI tools you're familiar with. This will enable me to tailor the program to your advanced skill level. Please select from the options below or type your answer.
+      parts:
+      - content: "That's amazing, {username}! I'd like to understand which AI tools you're familiar with. This will enable me to tailor the program to your advanced skill level. Please select from the options below or type your answer."
         type: "text"
     edges: 
     - target_node_id: "END"
@@ -144,11 +123,8 @@ tasks:
     type: "message"
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          Great to hear, {username}! To assist you in integrating AI tools into your current projects, I'd like to know which tools you've previously used. This will help me provide the most relevant guidance. Please select from the options below or type your answer.
+      parts:
+      - content: "Great to hear, {username}! To assist you in integrating AI tools into your current projects, I'd like to know which tools you've previously used. This will help me provide the most relevant guidance. Please select from the options below or type your answer."
         type: "text"
     edges: 
     - target_node_id: "END"
@@ -164,8 +140,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           Thank you, {username}! Based on your experience, we'll start with foundational concepts in AI-powered software development. I'll cover the essentials and gradually introduce you to more advanced tools and techniques, ensuring you build a strong understanding from the ground up. This approach will provide you with a solid base, enabling you to confidently tackle more complex topics as you progress through the program.
           Next, I'll provide an overview of the program structure to help you understand how I'll guide you through each stage of learning.
@@ -178,8 +152,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           In this program we'll delve into advanced AI techniques, cutting-edge tools, and sophisticated methodologies. This will help you deepen your expertise and seamlessly integrate AI capabilities into your current and future software projects. My goal is to provide you with the knowledge and skills to push the boundaries of what's possible in AI-powered software development.
           Next, I'll provide an overview of the program structure so you can see how each stage is designed to build on your existing knowledge and experience.
@@ -194,8 +166,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           In 2024, AI technologies are transforming software development, enabling smaller teams to deliver higher-quality software more efficiently. Developers must now:
           - Integrate AI tools into daily workflows.
@@ -211,8 +181,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           The AI-Powered Software Development Program at App Academy is designed to equip you with the knowledge and tools to seamlessly integrate AI into software development. By the end of this program, you will:
           - Understand the benefits and applications of AI in software development.
@@ -228,8 +196,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           In this program, you will develop key skills and competencies:
           - **AI Integration in Development**: Grasp AI fundamentals and use generative AI tools like LLMs.
@@ -245,8 +211,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           These are the expected program outcomes:
           - **Advanced AI Proficiency**: Master the use of AI tools across diverse applications.
@@ -264,8 +228,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           This program is structured into eight distinct journeys, each focusing on a key aspect of AI-powered software development. As you progress, you'll gain both theoretical knowledge and practical skills essential for mastering AI in software development.
 
@@ -295,8 +257,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 1: Mastering the AI-Powered Software Development Lifecycle**
 
@@ -315,8 +275,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 2: Accelerating Software Development with AI**
 
@@ -335,8 +293,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 3: Advanced AI-Powered Software Development**
 
@@ -355,8 +311,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 4: AI-Driven Excellence in Software Testing**
 
@@ -375,8 +329,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 5: Streamlining Software Deployment with AI**
 
@@ -395,8 +347,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 6: Optimizing Software Maintenance with AI**
 
@@ -415,8 +365,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 7: Collaborative Planning & Design with AI**
 
@@ -435,8 +383,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Journey 8: Integrating AI Across Development Workflows**
 
@@ -454,8 +400,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           Next, we venture into how we will practically apply these concepts throughout the program.
         type: "text"
@@ -469,8 +413,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           In this program, you will be working at a fictional company called Alfred AI, navigating various scenarios of integrating Generative AI into the development lifecycle. Alfred AI is a pioneering company in the SaaS industry, founded in 2023 and headquartered in San Francisco, CA. Our mission is to revolutionize small-to-medium businesses by providing state-of-the-art AI-powered project management and collaboration tools that boost productivity and streamline workflows.
         type: "text"
@@ -482,8 +424,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           **Founding Story**: Alfred AI was founded by three ex-Google engineers who saw a gap in the market for AI-driven project management tools tailored for SMBs (small-to-medium businesses). Bootstrapping the company with their savings, they developed the MVP (minimum viable product) in a garage, aiming to revolutionize project management for small teams.
 
@@ -502,8 +442,7 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
+
       - content: |
           Alfred AI's development team consists of five dedicated professionals, each bringing expertise in key areas to drive innovation and efficiency:
           - **Lead Developer**: Alice Kim, an expert in AI and machine learning, spearheads the technical direction.
@@ -522,8 +461,6 @@ tasks:
   -
     body: 
       parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
       - content: |
           Alfred AI faces several challenges and goals that drive its innovative approach to project management:
 
@@ -543,13 +480,10 @@ tasks:
     type: "message"
   -
     body: 
-      parts: 
-     # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-     #   type: "image"
-      - content: |
-          Alright, {username}, that wraps up our introductory quest! Next up, you'll take a short 20-question MCQ pre-assessment quiz. This will help me understand your current knowledge of generative AI and AI development tools so I can further personalize this program to suit your needs.
-          You are now ready to dive into the first journey and start enhancing your skills with AI-powered tools and techniques. This path will take you from understanding the basics to mastering advanced AI-driven software development.
-          Let's get started on this exciting journey to becoming an expert in AI-driven software development. Remember, I'm just one message away whenever you need me, and I'm rooting for you to become an exceptional AI-augmented software developer. You've got this!
+      parts:
+      - content: "Alright, {username}, that wraps up our introductory quest! Next up, you'll take a short 20-question MCQ pre-assessment quiz. This will help me understand your current knowledge of generative AI and AI development tools so I can further personalize this program to suit your needs.
+You are now ready to dive into the first journey and start enhancing your skills with AI-powered tools and techniques. This path will take you from understanding the basics to mastering advanced AI-driven software development.
+Let's get started on this exciting journey to becoming an expert in AI-driven software development. Remember, I'm just one message away whenever you need me, and I'm rooting for you to become an exceptional AI-augmented software developer. You've got this!"
         type: "text"
     id: "END"
     type: "message"
