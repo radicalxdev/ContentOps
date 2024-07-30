@@ -158,7 +158,20 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Understanding the limitations of Generative AI is crucial for effectively using and improving AI models. Here are the key areas we'll explore:\n\n**Scope and Quality**: Poor or biased training data leads to inaccurate or biased outputs.\n\n**Cutoff Dates**: AI models are trained up to a specific date and lack awareness of more recent events.\n\n**Context Understanding**: AI models often struggle with context, leading to misinterpretations and inflexible responses.\n\n**Limited Creativity**: AI creativity is limited by its training data, often resulting in repetitive or unoriginal outputs.\n\n**Hallucinations**: AI sometimes produces incorrect or nonsensical information, known as 'hallucinations.'\n\nDo you want to explore these in more detail?"
+            content: |
+              Understanding the limitations of Generative AI is crucial for effectively using and improving AI models. Here are the key areas we'll explore:
+
+              - **Scope and Quality**: Poor or biased training data leads to inaccurate or biased outputs.
+
+              - **Cutoff Dates**: AI models are trained up to a specific date and lack awareness of more recent events.
+
+              - **Context Understanding**: AI models often struggle with context, leading to misinterpretations and inflexible responses.
+
+              - **Limited Creativity**: AI creativity is limited by its training data, often resulting in repetitive or unoriginal outputs.
+
+              - **Hallucinations**: AI sometimes produces incorrect or nonsensical information, known as 'hallucinations.
+              
+              Do you want to explore these in more detail?
       edges:
         - text: "Yes, let's dive in."
           target_node_id: screen15
