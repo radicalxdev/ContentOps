@@ -72,6 +72,8 @@ tasks:
           parts:
             - type: "text"
               content: "Let's dive into the codebase to get a clear understanding of its structure. Here's what you need to do:\n1. Use the `@workspace` command in your terminal to get a broad overview of the codebase.\n2. Take a moment to review Copilot's response. This will give you a good sense of the overall structure and key components.\nWe'll start with trying the command `@workspace` to get a general idea of the current codebase. The commands help us create context for Copilot so its suggestions are more specific. In this case, we won't use the `/explain` command since we want a general overview of the codebase itself rather than selected line of code.\nOnce you're familiar with the layout, we'll move on to the next step. Ready to continue?"
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%203%2Fmission_1_1.png?alt=media&token=7e6c94c7-9c34-4afc-95f0-0e3c983628cd"
         edges:
           - text: "Understood, let's proceed!"
             target_node_id: "END"
@@ -90,6 +92,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%203%2Fmission_1_2.png?alt=media&token=4bbb0a6b-4720-479a-bfe6-10db501f56b2"
             - type: "text"
               content: "Take a minute to review Copilot's response. Notice how we have a very general prompt about “how does the codebase work,” but using the `@workspace` command helps provide the context."
             - type: "text"
@@ -102,6 +106,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%203%2Fmission_1_3.png?alt=media&token=9791292c-c6fc-4d3b-989e-bf7ef92dbd66"
             - type: "text"
               content: "Now let's answer Copilot's questions to define the main functionality of the AI-powered task prioritization feature. Here is a sample prompt you can use:\n\n```\nThe feature is intended to receive a set of tasks or tickets and analyze them. It can then suggest reorganizing their priorities based on inputs such as project status updates or sprint planning notes.\n```\n\nThe interview pattern approach is great for brainstorming and answering questions about the application. Now, when we apply Copilot's contextual awareness of our existing codebase, we can drill down to much more specific answers as developers to move in a well-reasoned direction. Let me know when you're ready to move forward."
         edges:
@@ -122,6 +128,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%203%2Fmission_1_4.png?alt=media&token=971014ce-22f0-4fee-a611-39bcaaa3fab8"
             - type: "text"
               content: |
                 During experimentation, have you noticed anything? Not in every case since Copilot is non-deterministic, but there is a possibility that Copilot can have mistakes. In the case below where we have answered several questions from Copilot, it requires human intervention.
