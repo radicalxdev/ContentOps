@@ -61,13 +61,7 @@ tasks:
      # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
      #   type: "image"
       - content: |
-          Here's an example of how you can interact with me:
-
-          You: Ada, can you explain what AI TaskMaster is?
-
-          Ada AI: Of course! AI TaskMaster is an AI-driven project management tool that revolutionizes how teams operate. It automates routine tasks, provides predictive analytics for better decision-making, and enhances collaboration to boost overall productivity.
-
-          Try it out yourself. Feel free to ask me anything about the program or the tools we'll be using. Your journey to mastering AI-powered software development starts with a single question.
+          Now that you know how to interact with me throughout this program, are you ready to continue your personalized learning journey?
         type: "text"
     id: "END"
     type: "message"
@@ -178,7 +172,7 @@ tasks:
         type: "text"
     edges: 
     - target_node_id: "END"
-      text: "Tell me more about the program structure."
+      text: "Continue"
     id: "screen2e"
     type: "message"
   -
@@ -246,8 +240,6 @@ tasks:
     edges: 
     - target_node_id: "END"
       text: "What are the expected program outcomes?"
-    - target_node_id: "END"
-      text: "Tell me more about the program structure."
     id: "screen3b"
     type: "message"
   -
@@ -277,14 +269,14 @@ tasks:
       - content: |
           This program is structured into eight distinct journeys, each focusing on a key aspect of AI-powered software development. As you progress, you'll gain both theoretical knowledge and practical skills essential for mastering AI in software development.
           Here's a brief overview:
-          1. **Journey 1**: We'll explore how AI can integrate into the software development lifecycle.
-          2. **Journey 2**: You'll learn to speed up coding and automate tasks using AI.
-          3. **Journey 3**: We'll unlock advanced AI techniques for tackling complex tasks.
-          4. **Journey 4**: We'll transform and optimize testing processes with AI.
-          5. **Journey 5**: You'll automate and streamline deployment processes.
-          6. **Journey 6**: We'll focus on monitoring and resolving software issues efficiently with AI.
-          7. **Journey 7**: You'll improve planning and design with AI insights.
-          8. **Journey 8**: We'll seamlessly integrate AI tools across all workflows.
+          **Journey 1**: We'll explore how AI can integrate into the software development lifecycle.
+          **Journey 2**: You'll learn to speed up coding and automate tasks using AI.
+          **Journey 3**: We'll unlock advanced AI techniques for tackling complex tasks.
+          **Journey 4**: We'll transform and optimize testing processes with AI.
+          **Journey 5**: You'll automate and streamline deployment processes.
+          **Journey 6**: We'll focus on monitoring and resolving software issues efficiently with AI.
+          **Journey 7**: You'll improve planning and design with AI insights.
+          **Journey 8**: We'll seamlessly integrate AI tools across all workflows.
         type: "text"
     edges: 
     - target_node_id: "screen4a"
@@ -298,6 +290,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 1: Mastering the AI-Powered Software Development Lifecycle**
+
           In this journey, you'll master the integration of AI tools to elevate every stage of the software development lifecycle. We will delve into:
           - **Foundations of Generative AI for Developers**: Gain a comprehensive understanding of generative AI principles and applications.
           - **Leveraging Generative AI Across the Software Development Lifecycle**: Discover how to harness AI to enhance efficiency in development tasks, streamline debugging processes, and automate testing.
@@ -317,6 +310,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 2: Accelerating Software Development with AI**
+
           Delve into the innovative realm of AI-augmented coding, where you'll explore how AI tools can significantly expedite the software development process. Key learning areas include:
           - **Enhancing Quality, Security, and Reliability**: Utilize generative AI to improve the robustness and dependability of your applications.
           - **Efficient Collaboration with GitHub Copilot**: Master the Chat & Completion features of GitHub Copilot to streamline your coding workflow and boost productivity.
@@ -336,6 +330,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 3: Advanced AI-Powered Software Development**
+
           Embark on a deep dive into the advanced techniques of AI-powered software development. In this journey, you will:
           - **Ensure Code Quality with Generated Unit Tests**: Leverage AI to automatically create comprehensive unit tests, ensuring robust and reliable code.
           - **Automate Documentation with GitHub Copilot**: Utilize AI to generate and maintain accurate, up-to-date documentation seamlessly.
@@ -355,6 +350,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 4: AI-Driven Excellence in Software Testing**
+
           Elevate your software testing processes by harnessing the power of AI. In this journey, you will:
           - **Leverage Katalon's GPT-Powered AI for Automated Testing**: Utilize advanced AI capabilities to generate comprehensive and efficient automated tests.
           - **Implement AI-Driven Visual Testing**: Integrate AI to perform sophisticated visual testing, ensuring the UI meets the highest standards.
@@ -374,6 +370,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 5: Streamlining Software Deployment with AI**
+
           Master the art of efficient and secure software deployment by leveraging AI-driven strategies. In this journey, you will:
           - **Generate Docker Files with Natural Language**: Utilize AI to create Docker files seamlessly through natural language instructions.
           - **Secure AI-Generated Code with Snyk in CI/CD Pipelines**: Integrate Snyk's advanced security features to ensure that your AI-generated code is secure throughout the CI/CD process.
@@ -393,6 +390,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 6: Optimizing Software Maintenance with AI**
+
           Harness the power of AI to elevate your software maintenance and performance monitoring. In this journey, you will:
           - **Analyze Outages, Latency, and High CPU Usage with New Relic AI**: Utilize AI-driven insights to diagnose and resolve critical performance issues efficiently.
           - **Diagnose API Application Errors with New Relic AI**: Implement AI techniques to swiftly identify and fix errors in API applications, ensuring seamless operation.
@@ -412,15 +410,16 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 7: Collaborative Planning & Design with AI**
+
           Elevate your planning and design processes by leveraging AI-driven insights and tools. In this journey, you will:
           - **Enhance Technical Communication with Eraser AI**: Utilize AI to improve clarity and precision in technical communication.
           - **Transform Documentation into Diagrams with Eraser AI**: Seamlessly convert technical documentation into comprehensive diagrams.
           - **Develop and Iterate Technical Documents with Natural Language**: Employ AI to create, refine, and perfect technical documents efficiently.
         type: "text"
     edges: 
-    - target_node_id: "END"
-      text: "Tell me about the next journey."
     - target_node_id: "screen4h"
+      text: "Tell me about the next journey."
+    - target_node_id: "END"
       text: "Got it, what's next?"
     id: "screen4g"
     type: "message"
@@ -431,6 +430,7 @@ tasks:
      #   type: "image"
       - content: |
           **Journey 8: Integrating AI Across Development Workflows**
+
           In this final journey, you'll master the seamless integration of AI tools across all development workflows, ensuring your projects achieve peak efficiency and innovation. Key focus areas include:
           - **Boosting Productivity**: Implement AI solutions to automate repetitive tasks and optimize workflow efficiency.
           - **Enhancing Collaboration**: Utilize AI to facilitate better communication and collaboration within your team.
@@ -477,6 +477,7 @@ tasks:
      #   type: "image"
       - content: |
           **Founding Story**: Alfred AI was founded by three ex-Google engineers who saw a gap in the market for AI-driven project management tools tailored for SMBs (small-to-medium businesses). Bootstrapping the company with their savings, they developed the MVP (minimum viable product) in a garage, aiming to revolutionize project management for small teams.
+
           **Core Product**:
           - **AI TaskMaster**: Our flagship product, AI TaskMaster, is an AI-driven project management and collaboration tool designed to help small teams operate like large ones. Key features include:
             - **AI-Powered Task Automation**: Automates repetitive tasks and optimizes workflows.
@@ -504,7 +505,7 @@ tasks:
         type: "text"
     edges: 
     - target_node_id: "screen5c"
-      text: "Tell me about the business scenario."
+      text: "Tell me about the challenges that Alfred AI faces."
     - target_node_id: "END"
       text: "What's next?"
     id: "screen5b"
@@ -516,6 +517,7 @@ tasks:
      #   type: "image"
       - content: |
           Alfred AI faces several challenges and goals that drive its innovative approach to project management:
+
           **Challenges**:
           - **Rapid Scaling**: With a rapidly growing customer base, the small development team must manage an increasing number of tasks and features.
           - **Tight Deadlines**: As a bootstrapped startup, Alfred AI relies heavily on its current team to meet aggressive deadlines without the luxury of hiring additional developers.
