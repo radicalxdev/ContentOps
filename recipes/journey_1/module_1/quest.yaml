@@ -268,14 +268,23 @@ tasks:
      #   type: "image"
       - content: |
           This program is structured into eight distinct journeys, each focusing on a key aspect of AI-powered software development. As you progress, you'll gain both theoretical knowledge and practical skills essential for mastering AI in software development.
+
           Here's a brief overview:
+
           **Journey 1**: We'll explore how AI can integrate into the software development lifecycle.
+
           **Journey 2**: You'll learn to speed up coding and automate tasks using AI.
+
           **Journey 3**: We'll unlock advanced AI techniques for tackling complex tasks.
+
           **Journey 4**: We'll transform and optimize testing processes with AI.
+
           **Journey 5**: You'll automate and streamline deployment processes.
+
           **Journey 6**: We'll focus on monitoring and resolving software issues efficiently with AI.
+
           **Journey 7**: You'll improve planning and design with AI insights.
+
           **Journey 8**: We'll seamlessly integrate AI tools across all workflows.
         type: "text"
     edges: 
