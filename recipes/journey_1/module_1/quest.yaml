@@ -181,7 +181,7 @@ tasks:
      # - content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
      #   type: "image"
       - content: |
-          Thank you, {username}! Based on your experience and the tools you've used, I'll tailor the program to enhance your existing skills. We'll delve into advanced AI techniques, cutting-edge tools, and sophisticated methodologies. This will help you deepen your expertise and seamlessly integrate AI capabilities into your current and future software projects. My goal is to provide you with the knowledge and skills to push the boundaries of what's possible in AI-powered software development.
+          In this program we'll delve into advanced AI techniques, cutting-edge tools, and sophisticated methodologies. This will help you deepen your expertise and seamlessly integrate AI capabilities into your current and future software projects. My goal is to provide you with the knowledge and skills to push the boundaries of what's possible in AI-powered software development.
           Next, I'll provide an overview of the program structure so you can see how each stage is designed to build on your existing knowledge and experience.
         type: "text"
     id: "END"
