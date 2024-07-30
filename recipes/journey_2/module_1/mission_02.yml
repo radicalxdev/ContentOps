@@ -124,8 +124,6 @@ tasks:
                 ```
             - type: "text"
               content: "Review and accept the code suggestions for each function."
-            - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_4.png?alt=media&token=133a95b0-9578-4ddc-afeb-18cab2d8c8ea"
         edges:
           - text: "Yes, let's proceed!"
             target_node_id: "screen6"
@@ -143,7 +141,7 @@ tasks:
                 Generate the create, read, update, and delete methods for Tickets routes.
                 ```
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_5.png?alt=media&token=0705ca23-5b3a-41db-abae-b417f0bdcaf0"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_4.png?alt=media&token=133a95b0-9578-4ddc-afeb-18cab2d8c8ea"
             - type: "text"
               content: "Review the suggestions to ensure the methods are correctly defined and referenced."
         edges:
@@ -160,8 +158,10 @@ tasks:
               content: |
                 We can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_5.png?alt=media&token=0705ca23-5b3a-41db-abae-b417f0bdcaf0"
             - type: "text"
               content: |
                 We can now see Tickets as a new set of routes available within the /docs page!
-                Congratulations, {username}! 🎉 You've successfully used GitHub Copilot Inline Chat to create code. Excellent work!
+                Congratulations, {username}! You've successfully used GitHub Copilot Inline Chat to create code. Excellent work!
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"

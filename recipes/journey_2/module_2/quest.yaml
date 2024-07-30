@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "In this quest, we'll explore how GitHub Copilot can assist you in improving your codebase. GitHub Copilot Chat provides suggestions for enhancing code quality, reliability, performance, and security based on the context of your code. This quest will guide you through leveraging GitHub Copilot Chat to implement various code improvements."
         edges:
@@ -18,8 +16,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Implementing code improvements typically requires extensive experience and time. Understanding software development principles, coding concepts, programming languages, and best practices is crucial. Practical experience with codebases and development tools is also essential for effectively implementing code improvements."
         edges:
@@ -31,8 +27,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Implementing code improvements can be a time-consuming process. Analyzing your codebase, identifying areas for improvement, and implementing necessary changes can take hundreds or even thousands of hours. Large codebases and projects with tight deadlines add complexity to this process, making it difficult to manage."
         edges:
@@ -42,8 +36,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot doesn't eliminate the need for foundational coding skills, but it provides significant assistance. It helps identify issues, accelerates the implementation process, and suggests improvements to your codebase. GitHub Copilot Chat provides guidance on best practices and helps you write cleaner, more efficient code, saving you time and effort."
   - name: "Types of Code Improvements"
@@ -54,8 +46,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot Chat assists developers in making code improvements by providing relevant suggestions based on the context of their codebase. This process involves two key elements; building effective prompts and evaluating and implementing the suggested updates."
         edges:
@@ -83,8 +73,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot Chat provides guidance and suggestions that help you improve your code and accelerate your development process. The following categories of code improvements are covered in this module:\n- **Code Quality**: Enhance the readability, maintainability, and efficiency of your code.\n- **Code Reliability**: Improve the robustness, error handling, and stability of your code.\n- **Code Performance**: Optimize the speed, memory usage, and efficiency of your code.\n- **Code Security**: Enhance the security, privacy, and protection of your code and data."
         edges:
@@ -94,8 +82,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest improvements to code quality, such as refactoring updates, design pattern suggestions, or code style enhancements. These suggestions can help you write cleaner, more maintainable code that follows best practices and coding standards.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code quality:\n- **Prompt**: 'Suggest refactoring updates to enhance the modularity of the `User` class.'\n- **Prompt**: 'Provide design pattern suggestions to improve the internal structure of the `OrderService` class.'\n- **Prompt**: 'Recommend code style enhancements to make the `ProductController` class more readable.'"
         edges:
@@ -107,8 +93,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest improvements to code reliability, such as better error handling, more robust input validation, or enhanced exception handling. These suggestions can help you write more reliable code that handles edge cases and unexpected conditions more effectively.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code reliability:\n- **Prompt**: 'Suggest better error handling strategies for the `PaymentService` class.'\n- **Prompt**: 'Improve input validation in the `LoginForm` class to prevent invalid user input.'\n- **Prompt**: 'Enhance exception handling in the `DatabaseConnection` class to handle connection errors more gracefully.'"
         edges:
@@ -118,8 +102,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest improvements to code performance, such as optimizing algorithms, reducing memory usage, or improving the efficiency of code execution. These suggestions can help you write more efficient code that runs faster and consumes fewer resources.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code performance:\n- **Prompt**: 'Optimize the sorting algorithm used in the `ProductList` class to improve performance.'\n- **Prompt**: 'Reduce memory usage in the `ImageProcessing` class to make it more efficient.'\n- **Prompt**: 'Improve the efficiency of the `SearchService` class to speed up search queries.'"
         edges:
@@ -129,8 +111,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest improvements to code security, such as enhancing data encryption, implementing secure authentication mechanisms, or preventing common security vulnerabilities. These suggestions can help you write more secure code that protects sensitive data and prevents unauthorized access.\nFor example, you could submit the following prompts to GitHub Copilot Chat to improve code security:\n- **Prompt**: 'Enhance data encryption in the `UserCredentials` class to protect user passwords.'\n- **Prompt**: 'Implement secure authentication mechanisms in the `LoginService` class to prevent unauthorized access.'\n- **Prompt**: 'Implement secure exception handling in the `SecurityService` class to prevent common security vulnerabilities.'"
   - name: "Code Quality Improvements"
@@ -141,8 +121,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Improving code quality is essential for writing cleaner, more maintainable code that follows best practices and coding standards. GitHub Copilot can suggest various improvements to help you achieve this. These improvements can include refactoring updates, design pattern suggestions, and code style enhancements."
         edges:
@@ -152,8 +130,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest refactoring updates to enhance the modularity of your classes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Suggest refactoring updates to enhance the modularity of the `User` class.'"
         edges:
@@ -163,8 +139,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can provide design pattern suggestions to improve the internal structure of your classes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Provide design pattern suggestions to improve the internal structure of the `OrderService` class.'"
         edges:
@@ -174,8 +148,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can recommend code style enhancements to make your classes more readable. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Recommend code style enhancements to make the `ProductController` class more readable.'"
   - name: "Code Reliability Improvements"
@@ -186,8 +158,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Improving code reliability is crucial for creating robust applications that handle edge cases and unexpected conditions effectively. GitHub Copilot can suggest various improvements to help you achieve this, such as better error handling, more robust input validation, and enhanced exception handling."
         edges:
@@ -197,8 +167,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest better error handling strategies for your classes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Suggest better error handling strategies for the `PaymentService` class.'"
         edges:
@@ -208,8 +176,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can improve input validation in your classes to prevent invalid user input. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Improve input validation in the `LoginForm` class to prevent invalid user input.'"
         edges:
@@ -219,8 +185,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can enhance exception handling in your classes to handle connection errors more gracefully. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Enhance exception handling in the `DatabaseConnection` class to handle connection errors more gracefully.'"
   - name: "Code Performance Improvements"
@@ -231,8 +195,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Enhancing code performance is essential for creating applications that run efficiently and use fewer resources. GitHub Copilot can suggest various improvements, such as optimizing algorithms, reducing memory usage, and improving the efficiency of code execution."
         edges:
@@ -242,8 +204,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can optimize algorithms to enhance performance. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Optimize the sorting algorithm used in the `ProductList` class to improve performance.'"
         edges:
@@ -253,8 +213,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest ways to reduce memory usage in your classes to make them more efficient. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Reduce memory usage in the `ImageProcessing` class to make it more efficient.'"
         edges:
@@ -264,8 +222,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can improve the efficiency of code execution to speed up processes. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Improve the efficiency of the `SearchService` class to speed up search queries.'"
   - name: "Code Security Improvements"
@@ -276,8 +232,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Enhancing code security is critical to protect sensitive data and prevent unauthorized access. GitHub Copilot can suggest improvements, such as enhancing data encryption, implementing secure authentication mechanisms, and preventing common security vulnerabilities."
         edges:
@@ -289,8 +243,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can enhance data encryption to protect user information. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Enhance data encryption in the `UserCredentials` class to protect user passwords.'"
         edges:
@@ -302,8 +254,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can suggest secure authentication mechanisms to prevent unauthorized access. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Implement secure authentication mechanisms in the `LoginService` class to prevent unauthorized access.'"
         edges:
@@ -313,8 +263,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot can improve secure exception handling to prevent common security vulnerabilities. For example, you can submit the following prompt to GitHub Copilot Chat:\n**Prompt**: 'Implement secure exception handling in the `SecurityService` class to prevent common security vulnerabilities.'"
   - name: "Summary"
@@ -325,8 +273,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "To utilize GitHub Copilot Chat effectively, it's essential to understand how to access its tools in Visual Studio Code. The GitHub Copilot extensions provide easy access to several powerful features designed to enhance your coding experience and streamline the process of implementing code improvements, as discussed extensively in the previous module of this journey."
         edges:
