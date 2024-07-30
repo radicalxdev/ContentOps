@@ -20,7 +20,7 @@ tasks:
             content: "Excellent, {username}! Let's start with the first question."
           - type: "text"
             content: |
-              What is Generative AI?
+              **Q1. What is Generative AI?**
 
 
               A. An AI system that only analyzes data
@@ -48,6 +48,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen2a
+        - text: "On to the next!"
+          target_node_id: END
     - id: screen2_incorrect
       type: message
       body:
@@ -57,7 +59,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen2a
-
+        - text: "On to the next!"
+          target_node_id: END
     - id: screen2a
       type: message
       body:
@@ -67,7 +70,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen2b
-
+        - text: "On to the next!"
+          target_node_id: END
     - id: screen2b
       type: message
       body:
@@ -95,7 +99,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Which of the following is an example of a generative AI model?
+              **Q2. Which of the following is an example of a generative AI model?**
 
 
               A. GPT-4 by OpenAI
@@ -123,7 +127,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen3a
-
+        - text: "On to the next!"
+          target_node_id: END
     - id: screen3_incorrect
       type: message
       body:
@@ -133,6 +138,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen3a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen3a
       type: message
@@ -143,6 +150,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen3b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen3b
       type: message
@@ -171,7 +180,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              How does Generative AI typically begin the content creation process?
+              **Q3. How does Generative AI typically begin the content creation process?**
 
 
               A. By executing predefined rules
@@ -199,6 +208,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen4a
+        - text: "On to the next!"
+          target_node_id: END
     - id: screen4_incorrect
       type: message
       body:
@@ -208,6 +219,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen4a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen4a
       type: message
@@ -218,6 +231,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen4b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen4b
       type: message
@@ -246,7 +261,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a Large Language Model (LLM)?
+              **Q4. What is a Large Language Model (LLM)?**
 
 
               A. A small machine learning model for specific tasks
@@ -284,6 +299,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen5a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen5a
       type: message
@@ -294,6 +311,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen5b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen5b
       type: message
@@ -322,7 +341,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a common limitation of Generative AI models?
+              **Q5. What is a common limitation of Generative AI models?**
 
 
               A. They always provide accurate and relevant outputs.
@@ -350,6 +369,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen6a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen6_incorrect
       type: message
@@ -360,6 +381,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen6a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen6a
       type: message
@@ -370,6 +393,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen6b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen6b
       type: message
@@ -398,7 +423,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What does the term 'hallucination' refer to in the context of Generative AI?
+              **Q6. What does the term 'hallucination' refer to in the context of Generative AI?**
 
 
               A. Generating real and accurate content
@@ -426,6 +451,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen7a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen7_incorrect
       type: message
@@ -436,6 +463,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen7a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen7a
       type: message
@@ -446,6 +475,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen7b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen7b
       type: message
@@ -474,7 +505,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              How can biases in training data affect Generative AI models?
+              **Q7. How can biases in training data affect Generative AI models?**
 
 
               A. They improve the accuracy of the model
@@ -502,6 +533,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen8a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen8_incorrect
       type: message
@@ -512,6 +545,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen8a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen8a
       type: message
@@ -522,6 +557,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen8b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen8b
       type: message
@@ -550,7 +587,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is the impact of AI hallucinations in software development?
+              **Q8. What is the impact of AI hallucinations in software development?**
 
 
               A. They always produce correct and useful code
@@ -578,6 +615,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen9a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen9_incorrect
       type: message
@@ -588,6 +627,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen9a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen9a
       type: message
@@ -598,6 +639,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen9b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen9b
       type: message
@@ -626,7 +669,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Why should developers validate AI-generated outputs?
+              **Q9. Why should developers validate AI-generated outputs?**
 
 
               A. Because AI outputs are always perfect and require no validation
@@ -654,6 +697,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen10a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen10_incorrect
       type: message
@@ -664,6 +709,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen10a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen10a
       type: message
@@ -674,6 +721,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen10b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen10b
       type: message
@@ -702,7 +751,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Why is critical thinking important when using AI tools in software development?
+              **Q10. Why is critical thinking important when using AI tools in software development?**
 
 
               A. It helps in understanding the limitations and capabilities of AI tools
@@ -730,6 +779,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen11a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen11_incorrect
       type: message
@@ -740,6 +791,8 @@ tasks:
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen11a
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen11a
       type: message
@@ -750,6 +803,8 @@ tasks:
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen11b
+        - text: "On to the next!"
+          target_node_id: END
 
     - id: screen11b
       type: message

@@ -1,5 +1,6 @@
 tasks: 
-- context: "In this mission, the learner will meet Ada AI, their AI Coach, who will guide and support them throughout the program. They will discover how AI can elevate their development skills, automate tasks, enhance code quality, and accelerate their workflow. Ada AI will be their mentor, providing instructions, assistance, and feedback to ensure a productive learning journey."
+- context: |
+    In this mission, the learner will meet Ada AI, their AI Coach, who will guide and support them throughout the program. They will discover how AI can elevate their development skills, automate tasks, enhance code quality, and accelerate their workflow. Ada AI will be their mentor, providing instructions, assistance, and feedback to ensure a productive learning journey.
   id: "1"
   name: "Welcome and Introduction"
   nodes: 
@@ -15,12 +16,13 @@ tasks:
     type: "message"
   -
     body: 
-      parts:
-      - content: "I'm here to support you in various ways:
-- **Guidance**: I'll provide step-by-step instructions and detailed explanations to help you grasp even the most complex concepts with ease. Think of me as your tutor, here to help you navigate every step of the way.
-- **Assistance**: Whenever you have questions or encounter challenges, don't hesitate to reach out. Whether it's a simple query or a complex problem, I'm here to help you find the best solution.
-- **Feedback**: Constructive feedback is crucial for growth. I'll review your progress, highlight your strengths, and suggest areas for improvement. This way, you'll continuously advance and refine your skills.
-Together, we'll make this learning journey engaging and productive. Remember, I'm just a click away whenever you need support. Let's make the most of this exciting journey together!"
+      parts: 
+      - content: |
+          I'm here to support you in various ways:
+          - **Guidance**: I'll provide step-by-step instructions and detailed explanations to help you grasp even the most complex concepts with ease. Think of me as your tutor, here to help you navigate every step of the way.
+          - **Assistance**: Whenever you have questions or encounter challenges, don't hesitate to reach out. Whether it's a simple query or a complex problem, I'm here to help you find the best solution.
+          - **Feedback**: Constructive feedback is crucial for growth. I'll review your progress, highlight your strengths, and suggest areas for improvement. This way, you'll continuously advance and refine your skills.
+          Together, we'll make this learning journey engaging and productive. Remember, I'm just a click away whenever you need support. Let's make the most of this exciting journey together!
         type: "text"
     edges: 
     - target_node_id: "screen1b"
@@ -31,12 +33,13 @@ Together, we'll make this learning journey engaging and productive. Remember, I'
     type: "message"
   -
     body: 
-      parts:
-      - content: "Interacting with me is simple and intuitive. Here's how:
-- **Ask Questions**: Just type your questions directly, and I'll provide the precise answers you need, tailored to your current topic or challenge.
-- **Request Examples**: If a concept is unclear, ask me for examples. I can provide real-world scenarios and practical demonstrations to help clarify complex topics.
-- **Seek Feedback**: After completing tasks, you can ask for feedback. I'll offer detailed insights to enhance your understanding and skills, ensuring you're always on the right track.
-Let's give it a try! Type a question or ask me to show an example to see how this works in practice."
+      parts: 
+      - content: |
+          Interacting with me is simple and intuitive. Here's how:
+          - **Ask Questions**: Just type your questions directly, and I'll provide the precise answers you need, tailored to your current topic or challenge.
+          - **Request Examples**: If a concept is unclear, ask me for examples. I can provide real-world scenarios and practical demonstrations to help clarify complex topics.
+          - **Seek Feedback**: After completing tasks, you can ask for feedback. I'll offer detailed insights to enhance your understanding and skills, ensuring you're always on the right track.
+          Let's give it a try! Type a question or ask me to show an example to see how this works in practice.
         type: "text"
     edges: 
     - target_node_id: "END"
@@ -49,16 +52,12 @@ Let's give it a try! Type a question or ask me to show an example to see how thi
     body: 
       parts:
       - content: |
-          Here's an example of how you can interact with me:
-          You: Ada, can you explain what AI TaskMaster is?
-
-          **Ada AI**: Of course! AI TaskMaster is an AI-driven project management tool that revolutionizes how teams operate. It automates routine tasks, provides predictive analytics for better decision-making, and enhances collaboration to boost overall productivity.
-
-          Try it out yourself. Feel free to ask me anything about the program or the tools we'll be using. Your journey to mastering AI-powered software development starts with a single question.
+          Now that you know how to interact with me throughout this program, are you ready to continue your personalized learning journey?
         type: "text"
     id: "END"
     type: "message"
-- context: "In this mission, the learner will share their background and goals with Ada AI to personalize their learning experience. Whether they are new to AI-powered software development or looking to deepen their knowledge, Ada AI will tailor the program to fit their needs. Their experience with AI tools will help customize the content and support they receive."
+- context: |
+    In this mission, the learner will share their background and goals with Ada AI to personalize their learning experience. Whether they are new to AI-powered software development or looking to deepen their knowledge, Ada AI will tailor the program to fit their needs. Their experience with AI tools will help customize the content and support they receive.
   id: "2"
   name: "Personalized Onboarding"
   nodes: 
@@ -140,35 +139,39 @@ Let's give it a try! Type a question or ask me to show an example to see how thi
     type: "message"
   -
     body: 
-      parts:
-      - content: "Thank you, {username}! Based on your experience, we'll start with foundational concepts in AI-powered software development. I'll cover the essentials and gradually introduce you to more advanced tools and techniques, ensuring you build a strong understanding from the ground up. This approach will provide you with a solid base, enabling you to confidently tackle more complex topics as you progress through the program.
-Next, I'll provide an overview of the program structure to help you understand how I'll guide you through each stage of learning."
+      parts: 
+      - content: |
+          Thank you, {username}! Based on your experience, we'll start with foundational concepts in AI-powered software development. I'll cover the essentials and gradually introduce you to more advanced tools and techniques, ensuring you build a strong understanding from the ground up. This approach will provide you with a solid base, enabling you to confidently tackle more complex topics as you progress through the program.
+          Next, I'll provide an overview of the program structure to help you understand how I'll guide you through each stage of learning.
         type: "text"
     edges: 
     - target_node_id: "END"
-      text: "Tell me more about the program structure."
+      text: "Continue"
     id: "screen2e"
     type: "message"
   -
     body: 
-      parts:
-      - content: "Thank you, {username}! Based on your experience and the tools you've used, I'll tailor the program to enhance your existing skills. We'll delve into advanced AI techniques, cutting-edge tools, and sophisticated methodologies. This will help you deepen your expertise and seamlessly integrate AI capabilities into your current and future software projects. My goal is to provide you with the knowledge and skills to push the boundaries of what's possible in AI-powered software development.
-Next, I'll provide an overview of the program structure so you can see how each stage is designed to build on your existing knowledge and experience."
+      parts: 
+      - content: |
+          In this program we'll delve into advanced AI techniques, cutting-edge tools, and sophisticated methodologies. This will help you deepen your expertise and seamlessly integrate AI capabilities into your current and future software projects. My goal is to provide you with the knowledge and skills to push the boundaries of what's possible in AI-powered software development.
+          Next, I'll provide an overview of the program structure so you can see how each stage is designed to build on your existing knowledge and experience.
         type: "text"
     id: "END"
     type: "message"
-- context: "In this mission, the learner will learn about the objectives and structure of the AI-Powered Software Development Program. They will discover how AI technologies are transforming the industry and what skills they will develop. The program aims to enhance productivity, improve code quality, and integrate AI into their development workflows, preparing them for the demands of the tech industry."
+- context: |
+    In this mission, the learner will learn about the objectives and structure of the AI-Powered Software Development Program. They will discover how AI technologies are transforming the industry and what skills they will develop. The program aims to enhance productivity, improve code quality, and integrate AI into their development workflows, preparing them for the demands of the tech industry.
   id: "3"
   name: "Program Overview"
   nodes: 
   -
     body: 
-      parts:
-      - content: "In 2024, AI technologies are transforming software development, enabling smaller teams to deliver higher-quality software more efficiently. Developers must now:
-- Integrate AI tools into daily workflows.
-- Adapt quickly to AI-driven processes.
-- Collaborate with AI virtual agents and generative AI tools.
-This program addresses these needs by providing a structured learning experience that prepares you for the demands of today's tech industry. You'll acquire the cutting-edge skills to harness AI in software development, inspiring innovation and making your workflow more efficient than ever."
+      parts: 
+      - content: |
+          In 2024, AI technologies are transforming software development, enabling smaller teams to deliver higher-quality software more efficiently. Developers must now:
+          - Integrate AI tools into daily workflows.
+          - Adapt quickly to AI-driven processes.
+          - Collaborate with AI virtual agents and generative AI tools.
+          This program addresses these needs by providing a structured learning experience that prepares you for the demands of today's tech industry. You'll acquire the cutting-edge skills to harness AI in software development, inspiring innovation and making your workflow more efficient than ever.
         type: "text"
     edges: 
     - target_node_id: "screen3a"
@@ -177,12 +180,13 @@ This program addresses these needs by providing a structured learning experience
     type: "message"
   -
     body: 
-      parts:
-      - content: "The AI-Powered Software Development Program at App Academy is designed to equip you with the knowledge and tools to seamlessly integrate AI into software development. By the end of this program, you will:
-- Understand the benefits and applications of AI in software development.
-- Use AI tools to enhance productivity, improve code quality, and automate tasks.
-- Gain expertise in AI-driven testing, deployment, and maintenance.
-- Innovate and drive AI-powered solutions in your projects."
+      parts: 
+      - content: |
+          The AI-Powered Software Development Program at App Academy is designed to equip you with the knowledge and tools to seamlessly integrate AI into software development. By the end of this program, you will:
+          - Understand the benefits and applications of AI in software development.
+          - Use AI tools to enhance productivity, improve code quality, and automate tasks.
+          - Gain expertise in AI-driven testing, deployment, and maintenance.
+          - Innovate and drive AI-powered solutions in your projects.
         type: "text"
     edges: 
     - target_node_id: "screen3b"
@@ -191,48 +195,59 @@ This program addresses these needs by providing a structured learning experience
     type: "message"
   -
     body: 
-      parts:
-      - content: "In this program, you will develop key skills and competencies:
-- **AI Integration in Development**: Grasp AI fundamentals and use generative AI tools like LLMs.
-- **Automated Testing and Quality Assurance**: Implement AI-driven testing and enhance bug detection.
-- **Problem-Solving and Critical Thinking**: Analyze data and solve complex problems with AI.
-- **Efficiency and Workflow Optimization**: Automate tasks and improve code quality."
+      parts: 
+      - content: |
+          In this program, you will develop key skills and competencies:
+          - **AI Integration in Development**: Grasp AI fundamentals and use generative AI tools like LLMs.
+          - **Automated Testing and Quality Assurance**: Implement AI-driven testing and enhance bug detection.
+          - **Problem-Solving and Critical Thinking**: Analyze data and solve complex problems with AI.
+          - **Efficiency and Workflow Optimization**: Automate tasks and improve code quality.
         type: "text"
     edges: 
     - target_node_id: "END"
       text: "What are the expected program outcomes?"
-    - target_node_id: "END"
-      text: "Tell me more about the program structure."
     id: "screen3b"
     type: "message"
   -
     body: 
-      parts:
-      - content: "These are the expected program outcomes:
-- **Advanced AI Proficiency**: Master the use of AI tools across diverse applications.
-- **Increased Productivity**: Automate tasks and manage complex projects with ease.
-- **Improved Problem-Solving**: Utilize AI to make more informed and effective decisions.
-- **Adaptability to Future Trends**: Stay ahead of technological advancements."
+      parts: 
+      - content: |
+          These are the expected program outcomes:
+          - **Advanced AI Proficiency**: Master the use of AI tools across diverse applications.
+          - **Increased Productivity**: Automate tasks and manage complex projects with ease.
+          - **Improved Problem-Solving**: Utilize AI to make more informed and effective decisions.
+          - **Adaptability to Future Trends**: Stay ahead of technological advancements.
         type: "text"
     id: "END"
     type: "message"
-- context: "In this mission, the learner will explore the eight distinct journeys of the program, each focusing on a key aspect of AI-powered software development. They will gain theoretical knowledge and practical skills essential for mastering AI in software development. From integrating AI into the development lifecycle to optimizing workflows, each journey builds on their existing knowledge and experience."
+- context: |
+    In this mission, the learner will explore the eight distinct journeys of the program, each focusing on a key aspect of AI-powered software development. They will gain theoretical knowledge and practical skills essential for mastering AI in software development. From integrating AI into the development lifecycle to optimizing workflows, each journey builds on their existing knowledge and experience.
   id: "4"
   name: "Program Structure"
   nodes: 
   -
     body: 
-      parts:
-      - content: "This program is structured into eight distinct journeys, each focusing on a key aspect of AI-powered software development. As you progress, you'll gain both theoretical knowledge and practical skills essential for mastering AI in software development.
-Here's a brief overview:
-1. **Journey 1**: We'll explore how AI can integrate into the software development lifecycle.
-2. **Journey 2**: You'll learn to speed up coding and automate tasks using AI.
-3. **Journey 3**: We'll unlock advanced AI techniques for tackling complex tasks.
-4. **Journey 4**: We'll transform and optimize testing processes with AI.
-5. **Journey 5**: You'll automate and streamline deployment processes.
-6. **Journey 6**: We'll focus on monitoring and resolving software issues efficiently with AI.
-7. **Journey 7**: You'll improve planning and design with AI insights.
-8. **Journey 8**: We'll seamlessly integrate AI tools across all workflows."
+      parts: 
+      - content: |
+          This program is structured into eight distinct journeys, each focusing on a key aspect of AI-powered software development. As you progress, you'll gain both theoretical knowledge and practical skills essential for mastering AI in software development.
+
+          Here's a brief overview:
+
+          **Journey 1**: We'll explore how AI can integrate into the software development lifecycle.
+
+          **Journey 2**: You'll learn to speed up coding and automate tasks using AI.
+
+          **Journey 3**: We'll unlock advanced AI techniques for tackling complex tasks.
+
+          **Journey 4**: We'll transform and optimize testing processes with AI.
+
+          **Journey 5**: You'll automate and streamline deployment processes.
+
+          **Journey 6**: We'll focus on monitoring and resolving software issues efficiently with AI.
+
+          **Journey 7**: You'll improve planning and design with AI insights.
+
+          **Journey 8**: We'll seamlessly integrate AI tools across all workflows.
         type: "text"
     edges: 
     - target_node_id: "screen4a"
@@ -241,12 +256,14 @@ Here's a brief overview:
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 1: Mastering the AI-Powered Software Development Lifecycle**
-In this journey, you'll master the integration of AI tools to elevate every stage of the software development lifecycle. We will delve into:
-- **Foundations of Generative AI for Developers**: Gain a comprehensive understanding of generative AI principles and applications.
-- **Leveraging Generative AI Across the Software Development Lifecycle**: Discover how to harness AI to enhance efficiency in development tasks, streamline debugging processes, and automate testing.
-- **Effective Prompt Engineering for Software Developers**: Learn the art and science of crafting precise prompts to optimize AI-driven system design and functionality."
+      parts: 
+      - content: |
+          **Journey 1: Mastering the AI-Powered Software Development Lifecycle**
+
+          In this journey, you'll master the integration of AI tools to elevate every stage of the software development lifecycle. We will delve into:
+          - **Foundations of Generative AI for Developers**: Gain a comprehensive understanding of generative AI principles and applications.
+          - **Leveraging Generative AI Across the Software Development Lifecycle**: Discover how to harness AI to enhance efficiency in development tasks, streamline debugging processes, and automate testing.
+          - **Effective Prompt Engineering for Software Developers**: Learn the art and science of crafting precise prompts to optimize AI-driven system design and functionality.
         type: "text"
     edges: 
     - target_node_id: "screen4b"
@@ -257,12 +274,14 @@ In this journey, you'll master the integration of AI tools to elevate every stag
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 2: Accelerating Software Development with AI**
-Delve into the innovative realm of AI-augmented coding, where you'll explore how AI tools can significantly expedite the software development process. Key learning areas include:
-- **Enhancing Quality, Security, and Reliability**: Utilize generative AI to improve the robustness and dependability of your applications.
-- **Efficient Collaboration with GitHub Copilot**: Master the Chat & Completion features of GitHub Copilot to streamline your coding workflow and boost productivity.
-- **Analyzing and Optimizing AI-Generated Code**: Develop best practices for reviewing AI-generated code, ensuring it meets high standards of quality and performance."
+      parts: 
+      - content: |
+          **Journey 2: Accelerating Software Development with AI**
+
+          Delve into the innovative realm of AI-augmented coding, where you'll explore how AI tools can significantly expedite the software development process. Key learning areas include:
+          - **Enhancing Quality, Security, and Reliability**: Utilize generative AI to improve the robustness and dependability of your applications.
+          - **Efficient Collaboration with GitHub Copilot**: Master the Chat & Completion features of GitHub Copilot to streamline your coding workflow and boost productivity.
+          - **Analyzing and Optimizing AI-Generated Code**: Develop best practices for reviewing AI-generated code, ensuring it meets high standards of quality and performance.
         type: "text"
     edges: 
     - target_node_id: "screen4c"
@@ -273,12 +292,14 @@ Delve into the innovative realm of AI-augmented coding, where you'll explore how
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 3: Advanced AI-Powered Software Development**
-Embark on a deep dive into the advanced techniques of AI-powered software development. In this journey, you will:
-- **Ensure Code Quality with Generated Unit Tests**: Leverage AI to automatically create comprehensive unit tests, ensuring robust and reliable code.
-- **Automate Documentation with GitHub Copilot**: Utilize AI to generate and maintain accurate, up-to-date documentation seamlessly.
-- **Rapid Comprehension of Code and Systems**: Develop the skills to quickly understand complex codebases and entire systems, enhancing your ability to troubleshoot and innovate."
+      parts: 
+      - content: |
+          **Journey 3: Advanced AI-Powered Software Development**
+
+          Embark on a deep dive into the advanced techniques of AI-powered software development. In this journey, you will:
+          - **Ensure Code Quality with Generated Unit Tests**: Leverage AI to automatically create comprehensive unit tests, ensuring robust and reliable code.
+          - **Automate Documentation with GitHub Copilot**: Utilize AI to generate and maintain accurate, up-to-date documentation seamlessly.
+          - **Rapid Comprehension of Code and Systems**: Develop the skills to quickly understand complex codebases and entire systems, enhancing your ability to troubleshoot and innovate.
         type: "text"
     edges: 
     - target_node_id: "screen4d"
@@ -289,12 +310,14 @@ Embark on a deep dive into the advanced techniques of AI-powered software develo
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 4: AI-Driven Excellence in Software Testing**
-Elevate your software testing processes by harnessing the power of AI. In this journey, you will:
-- **Leverage Katalon's GPT-Powered AI for Automated Testing**: Utilize advanced AI capabilities to generate comprehensive and efficient automated tests.
-- **Implement AI-Driven Visual Testing**: Integrate AI to perform sophisticated visual testing, ensuring the UI meets the highest standards.
-- **Enhance Quality Assurance with AI Testing Suites**: Deploy AI-enhanced testing suites to significantly improve the quality and reliability of your applications."
+      parts: 
+      - content: |
+          **Journey 4: AI-Driven Excellence in Software Testing**
+
+          Elevate your software testing processes by harnessing the power of AI. In this journey, you will:
+          - **Leverage Katalon's GPT-Powered AI for Automated Testing**: Utilize advanced AI capabilities to generate comprehensive and efficient automated tests.
+          - **Implement AI-Driven Visual Testing**: Integrate AI to perform sophisticated visual testing, ensuring the UI meets the highest standards.
+          - **Enhance Quality Assurance with AI Testing Suites**: Deploy AI-enhanced testing suites to significantly improve the quality and reliability of your applications.
         type: "text"
     edges: 
     - target_node_id: "screen4e"
@@ -305,12 +328,14 @@ Elevate your software testing processes by harnessing the power of AI. In this j
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 5: Streamlining Software Deployment with AI**
-Master the art of efficient and secure software deployment by leveraging AI-driven strategies. In this journey, you will:
-- **Generate Docker Files with Natural Language**: Utilize AI to create Docker files seamlessly through natural language instructions.
-- **Secure AI-Generated Code with Snyk in CI/CD Pipelines**: Integrate Snyk's advanced security features to ensure that your AI-generated code is secure throughout the CI/CD process.
-- **Optimize CI/CD Pipelines with GitHub Copilot**: Streamline your CI/CD workflows using GitHub Copilot to deploy applications efficiently to Google Cloud."
+      parts: 
+      - content: |
+          **Journey 5: Streamlining Software Deployment with AI**
+
+          Master the art of efficient and secure software deployment by leveraging AI-driven strategies. In this journey, you will:
+          - **Generate Docker Files with Natural Language**: Utilize AI to create Docker files seamlessly through natural language instructions.
+          - **Secure AI-Generated Code with Snyk in CI/CD Pipelines**: Integrate Snyk's advanced security features to ensure that your AI-generated code is secure throughout the CI/CD process.
+          - **Optimize CI/CD Pipelines with GitHub Copilot**: Streamline your CI/CD workflows using GitHub Copilot to deploy applications efficiently to Google Cloud.
         type: "text"
     edges: 
     - target_node_id: "screen4f"
@@ -321,12 +346,14 @@ Master the art of efficient and secure software deployment by leveraging AI-driv
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 6: Optimizing Software Maintenance with AI**
-Harness the power of AI to elevate your software maintenance and performance monitoring. In this journey, you will:
-- **Analyze Outages, Latency, and High CPU Usage with New Relic AI**: Utilize AI-driven insights to diagnose and resolve critical performance issues efficiently.
-- **Diagnose API Application Errors with New Relic AI**: Implement AI techniques to swiftly identify and fix errors in API applications, ensuring seamless operation.
-- **Streamline Application Monitoring with New Relic AI**: Optimize your application monitoring processes, leveraging AI to maintain peak performance and reliability."
+      parts: 
+      - content: |
+          **Journey 6: Optimizing Software Maintenance with AI**
+
+          Harness the power of AI to elevate your software maintenance and performance monitoring. In this journey, you will:
+          - **Analyze Outages, Latency, and High CPU Usage with New Relic AI**: Utilize AI-driven insights to diagnose and resolve critical performance issues efficiently.
+          - **Diagnose API Application Errors with New Relic AI**: Implement AI techniques to swiftly identify and fix errors in API applications, ensuring seamless operation.
+          - **Streamline Application Monitoring with New Relic AI**: Optimize your application monitoring processes, leveraging AI to maintain peak performance and reliability.
         type: "text"
     edges: 
     - target_node_id: "screen4g"
@@ -337,15 +364,17 @@ Harness the power of AI to elevate your software maintenance and performance mon
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 7: Collaborative Planning & Design with AI**
-Elevate your planning and design processes by leveraging AI-driven insights and tools. In this journey, you will:
-- **Enhance Technical Communication with Eraser AI**: Utilize AI to improve clarity and precision in technical communication.
-- **Transform Documentation into Diagrams with Eraser AI**: Seamlessly convert technical documentation into comprehensive diagrams.
-- **Develop and Iterate Technical Documents with Natural Language**: Employ AI to create, refine, and perfect technical documents efficiently."
+      parts: 
+      - content: |
+          **Journey 7: Collaborative Planning & Design with AI**
+
+          Elevate your planning and design processes by leveraging AI-driven insights and tools. In this journey, you will:
+          - **Enhance Technical Communication with Eraser AI**: Utilize AI to improve clarity and precision in technical communication.
+          - **Transform Documentation into Diagrams with Eraser AI**: Seamlessly convert technical documentation into comprehensive diagrams.
+          - **Develop and Iterate Technical Documents with Natural Language**: Employ AI to create, refine, and perfect technical documents efficiently.
         type: "text"
     edges: 
-    - target_node_id: "END"
+    - target_node_id: "screen4h"
       text: "Tell me about the next journey."
     - target_node_id: "END"
       text: "Got it, what's next?"
@@ -353,24 +382,39 @@ Elevate your planning and design processes by leveraging AI-driven insights and 
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Journey 8: Integrating AI Across Development Workflows**
-In this final journey, you'll master the seamless integration of AI tools across all development workflows, ensuring your projects achieve peak efficiency and innovation. Key focus areas include:
-- **Boosting Productivity**: Implement AI solutions to automate repetitive tasks and optimize workflow efficiency.
-- **Enhancing Collaboration**: Utilize AI to facilitate better communication and collaboration within your team.
-- **Driving Continuous Improvement**: Apply AI-driven insights to continually refine and improve your development processes.
-This journey culminates in a capstone project, where you will apply everything you've learned. You'll take a new feature from initial planning and design, through development, testing, and deployment, leveraging generative AI tools at each stage."
+      parts: 
+      - content: |
+          **Journey 8: Integrating AI Across Development Workflows**
+
+          In this final journey, you'll master the seamless integration of AI tools across all development workflows, ensuring your projects achieve peak efficiency and innovation. Key focus areas include:
+          - **Boosting Productivity**: Implement AI solutions to automate repetitive tasks and optimize workflow efficiency.
+          - **Enhancing Collaboration**: Utilize AI to facilitate better communication and collaboration within your team.
+          - **Driving Continuous Improvement**: Apply AI-driven insights to continually refine and improve your development processes.
+          This journey culminates in a capstone project, where you will apply everything you've learned. You'll take a new feature from initial planning and design, through development, testing, and deployment, leveraging generative AI tools at each stage.
+        type: "text"
+    id: "screen4h"
+    type: "message"
+    edges: 
+    - target_node_id: "END"
+      text: "Tell me about the next journey."
+  -
+    body: 
+      parts: 
+      - content: |
+          Next, we venture into how we will practically apply these concepts throughout the program.
         type: "text"
     id: "END"
     type: "message"
-- context: "In this mission, the learner will meet Alfred AI, a fictional company where they will navigate various scenarios of integrating Generative AI into the development lifecycle. They will learn about the company's background, core product, and development team. They will understand the challenges and goals driving Alfred AI's innovative approach to project management, preparing them for real-world applications of AI in software development."
+- context: |
+    In this mission, the learner will meet Alfred AI, a fictional company where they will navigate various scenarios of integrating Generative AI into the development lifecycle. They will learn about the company's background, core product, and development team. They will understand the challenges and goals driving Alfred AI's innovative approach to project management, preparing them for real-world applications of AI in software development.
   id: "5"
   name: "Introduction to Alfred AI"
   nodes: 
   -
     body: 
-      parts:
-      - content: "In this program, you will be working at a fictional company called Alfred AI, navigating various scenarios of integrating Generative AI into the development lifecycle. Alfred AI is a pioneering company in the SaaS industry, founded in 2023 and headquartered in San Francisco, CA. Our mission is to revolutionize small-to-medium businesses by providing state-of-the-art AI-powered project management and collaboration tools that boost productivity and streamline workflows."
+      parts: 
+      - content: |
+          In this program, you will be working at a fictional company called Alfred AI, navigating various scenarios of integrating Generative AI into the development lifecycle. Alfred AI is a pioneering company in the SaaS industry, founded in 2023 and headquartered in San Francisco, CA. Our mission is to revolutionize small-to-medium businesses by providing state-of-the-art AI-powered project management and collaboration tools that boost productivity and streamline workflows.
         type: "text"
     edges: 
     - target_node_id: "screen5a"
@@ -379,14 +423,16 @@ This journey culminates in a capstone project, where you will apply everything y
     type: "message"
   -
     body: 
-      parts:
-      - content: "**Founding Story**: Alfred AI was founded by three ex-Google engineers who saw a gap in the market for AI-driven project management tools tailored for SMBs (small-to-medium businesses). Bootstrapping the company with their savings, they developed the MVP (minimum viable product) in a garage, aiming to revolutionize project management for small teams.
-**Core Product**:
-- **AI TaskMaster**: Our flagship product, AI TaskMaster, is an AI-driven project management and collaboration tool designed to help small teams operate like large ones. Key features include:
-  - **AI-Powered Task Automation**: Automates repetitive tasks and optimizes workflows.
-  - **Predictive Analytics**: Uses AI to forecast project outcomes and suggest improvements.
-  - **Intelligent Resource Allocation**: Ensures optimal use of team resources and skills.
-  - **Collaboration Tools**: Real-time collaboration features including chat, video conferencing, and shared workspaces."
+      parts: 
+      - content: |
+          **Founding Story**: Alfred AI was founded by three ex-Google engineers who saw a gap in the market for AI-driven project management tools tailored for SMBs (small-to-medium businesses). Bootstrapping the company with their savings, they developed the MVP (minimum viable product) in a garage, aiming to revolutionize project management for small teams.
+
+          **Core Product**:
+          - **AI TaskMaster**: Our flagship product, AI TaskMaster, is an AI-driven project management and collaboration tool designed to help small teams operate like large ones. Key features include:
+            - **AI-Powered Task Automation**: Automates repetitive tasks and optimizes workflows.
+            - **Predictive Analytics**: Uses AI to forecast project outcomes and suggest improvements.
+            - **Intelligent Resource Allocation**: Ensures optimal use of team resources and skills.
+            - **Collaboration Tools**: Real-time collaboration features including chat, video conferencing, and shared workspaces.
         type: "text"
     edges: 
     - target_node_id: "screen5b"
@@ -395,33 +441,37 @@ This journey culminates in a capstone project, where you will apply everything y
     type: "message"
   -
     body: 
-      parts:
-      - content: "Alfred AI's development team consists of five dedicated professionals, each bringing expertise in key areas to drive innovation and efficiency:
-- **Lead Developer**: Alice Kim, an expert in AI and machine learning, spearheads the technical direction.
-- **Backend Developer**: John Smith, specializing in cloud computing and databases, ensures robust and scalable server-side infrastructure.
-- **Frontend Developer**: Emily Davis, focused on user interfaces and user experience, designs intuitive and engaging applications.
-- **DevOps Engineer**: Michael Johnson, handling CI/CD pipelines and infrastructure, guarantees smooth deployments and operational reliability.
-- **AI Specialist**: Sarah Brown, developing and integrating AI models, brings cutting-edge AI capabilities to our products."
+      parts: 
+
+      - content: |
+          Alfred AI's development team consists of five dedicated professionals, each bringing expertise in key areas to drive innovation and efficiency:
+          - **Lead Developer**: Alice Kim, an expert in AI and machine learning, spearheads the technical direction.
+          - **Backend Developer**: John Smith, specializing in cloud computing and databases, ensures robust and scalable server-side infrastructure.
+          - **Frontend Developer**: Emily Davis, focused on user interfaces and user experience, designs intuitive and engaging applications.
+          - **DevOps Engineer**: Michael Johnson, handling CI/CD pipelines and infrastructure, guarantees smooth deployments and operational reliability.
+          - **AI Specialist**: Sarah Brown, developing and integrating AI models, brings cutting-edge AI capabilities to our products.
         type: "text"
     edges: 
     - target_node_id: "screen5c"
-      text: "Tell me about the business scenario."
+      text: "Tell me about the challenges that Alfred AI faces."
     - target_node_id: "END"
       text: "What's next?"
     id: "screen5b"
     type: "message"
   -
     body: 
-      parts:
-      - content: "Alfred AI faces several challenges and goals that drive its innovative approach to project management:
-**Challenges**:
-- **Rapid Scaling**: With a rapidly growing customer base, the small development team must manage an increasing number of tasks and features.
-- **Tight Deadlines**: As a bootstrapped startup, Alfred AI relies heavily on its current team to meet aggressive deadlines without the luxury of hiring additional developers.
-- **High Customer Expectations**: New customers bring high expectations for quality and quick releases, pushing the team to maintain high standards.
-**Goals**:
-- **Efficiency**: Leverage generative AI tools to automate as many tasks as possible, making the small team highly efficient.
-- **Quality**: Maintain high-quality code and product reliability, even with rapid releases.
-- **Innovation**: Continuously integrate new AI features into the product to stay ahead of competitors."
+      parts: 
+      - content: |
+          Alfred AI faces several challenges and goals that drive its innovative approach to project management:
+
+          **Challenges**:
+          - **Rapid Scaling**: With a rapidly growing customer base, the small development team must manage an increasing number of tasks and features.
+          - **Tight Deadlines**: As a bootstrapped startup, Alfred AI relies heavily on its current team to meet aggressive deadlines without the luxury of hiring additional developers.
+          - **High Customer Expectations**: New customers bring high expectations for quality and quick releases, pushing the team to maintain high standards.
+          **Goals**:
+          - **Efficiency**: Leverage generative AI tools to automate as many tasks as possible, making the small team highly efficient.
+          - **Quality**: Maintain high-quality code and product reliability, even with rapid releases.
+          - **Innovation**: Continuously integrate new AI features into the product to stay ahead of competitors.
         type: "text"
     edges: 
     - target_node_id: "END"

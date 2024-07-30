@@ -442,8 +442,6 @@ tasks:
         edges:
           - text: "Yes, let's continue."
             target_node_id: "screen18"
-          - text: "Can you explain more about the example?"
-            target_node_id: "screen18"
 
       - id: screen18
         type: message
@@ -536,8 +534,6 @@ tasks:
         edges:
           - text: "Yes, let's continue."
             target_node_id: "screen23"
-          - text: "Can you explain more about the example?"
-            target_node_id: "screen23"
 
       - id: screen23
         type: message
@@ -627,8 +623,6 @@ tasks:
                 Ready to explore the benefits of this approach?
         edges:
           - text: "Yes, let's continue."
-            target_node_id: "screen28"
-          - text: "Can you explain more about the example?"
             target_node_id: "screen28"
 
       - id: screen28

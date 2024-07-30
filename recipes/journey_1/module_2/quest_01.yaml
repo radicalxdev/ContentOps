@@ -167,7 +167,13 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "### Scope and Quality\n\nGenerative AI models rely heavily on the quality and scope of their training data. If the data is limited, biased, or of poor quality, the generated outputs will reflect these shortcomings.\n\n**Examples**:\n\n- **Bias**: Biased training data results in biased outputs.\n- **Inaccuracy**: Limited data leads to incomplete understanding and inaccurate responses.\n\nLet's move on to the next one!"
+            content: |
+              "## **Scope and Quality**"
+              "Generative AI models rely heavily on the quality and scope of their training data. If the data is limited, biased, or of poor quality, the generated outputs will reflect these shortcomings."
+              "**Examples**:"
+              "- **Bias**: Biased training data results in biased outputs."
+              "- **Inaccuracy**: Limited data leads to incomplete understanding and inaccurate responses."
+              "Let's move on to the next one!"
       edges:
         - text: "Tell me about the next limitation."
           target_node_id: screen16
