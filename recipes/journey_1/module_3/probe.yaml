@@ -274,8 +274,6 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here comes the next one, {username}! Let's explore the importance of context in prompt engineering."
-            - type: "text"
               content: |
                 Why is context important in prompt engineering?
 
