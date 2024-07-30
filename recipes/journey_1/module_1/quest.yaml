@@ -7,7 +7,7 @@ tasks:
   -
     body: 
       parts:
-      - content: "Welcome to the AI-Powered Software Development Program at App Academy, {username}! I'm Ada AI, your AI Coach. My role is to be your mentor, guide, and support system throughout this enriching journey. Together, we'll explore the many ways you can leverage Generative AI to elevate your development skills to new heights. Imagine the possibilities: automating tedious tasks, enhancing code quality with smart tools, and accelerating your development process like never before. Whether you're debugging, testing, or deploying, I'll be here to assist you every step of the way."
+      - content: "Welcome to the Generative AI for Software Developers Program at App Academy, {username}! I'm Ada AI, your AI Coach. My role is to be your mentor, guide, and support system throughout this enriching journey. Together, we'll explore the many ways you can leverage Generative AI to elevate your development skills to new heights. Imagine the possibilities: automating tedious tasks, enhancing code quality with smart tools, and accelerating your development process like never before. Whether you're debugging, testing, or deploying, I'll be here to assist you every step of the way."
         type: "text"
     edges: 
     - target_node_id: "screen1a"
