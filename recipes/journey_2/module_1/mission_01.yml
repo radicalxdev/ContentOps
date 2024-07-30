@@ -235,24 +235,6 @@ tasks:
               content: "Ready to summarize the mission?"
         edges:
           - text: "Yes, let's summarize!"
-            target_node_id: "screen10"
-      - id: screen10
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: |
-                2. To review the report output, run the app.
-                
-                Open a Terminal window in Visual Studio Code, and then enter the following command:
-                ```
-                fastapi dev app/main.py
-                ```
-                You can visit the `/docs` of the localhost:8000 to view the API documentation and test the API endpoints.
-            - type: "text"
-              content: "Ready to summarize the mission?"
-        edges:
-          - text: "Yes, let's summarize!"
             target_node_id: "END"
       - id: END
         type: message
