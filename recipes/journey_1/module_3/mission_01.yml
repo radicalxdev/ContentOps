@@ -70,10 +70,10 @@ tasks:
         type: message
         body:
           parts:
-            - type: "text"
-              content: "Let's dive into the codebase to get a clear understanding of its structure. Here's what you need to do:\n1. Use the `@workspace` command in your terminal to get a broad overview of the codebase.\n2. Take a moment to review Copilot's response. This will give you a good sense of the overall structure and key components.\nWe'll start with trying the command `@workspace` to get a general idea of the current codebase. The commands help us create context for Copilot so its suggestions are more specific. In this case, we won't use the `/explain` command since we want a general overview of the codebase itself rather than selected line of code.\nOnce you're familiar with the layout, we'll move on to the next step. Ready to continue?"
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%203%2Fmission_1_1.png?alt=media&token=7e6c94c7-9c34-4afc-95f0-0e3c983628cd"
+            - type: "text"
+              content: "Let's dive into the codebase to get a clear understanding of its structure. Here's what you need to do:\n1. Use the `@workspace` command in your terminal to get a broad overview of the codebase.\n2. Take a moment to review Copilot's response. This will give you a good sense of the overall structure and key components.\nWe'll start with trying the command `@workspace` to get a general idea of the current codebase. The commands help us create context for Copilot so its suggestions are more specific. In this case, we won't use the `/explain` command since we want a general overview of the codebase itself rather than selected line of code.\nOnce you're familiar with the layout, we'll move on to the next step. Ready to continue?"
         edges:
           - text: "Understood, let's proceed!"
             target_node_id: "END"

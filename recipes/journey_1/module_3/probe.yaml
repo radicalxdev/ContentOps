@@ -75,9 +75,9 @@ tasks:
               content: "Prompt engineering is the practice of designing and refining prompts to ensure that generative AI models produce outputs that are relevant, accurate, and aligned with the user's intent. This involves understanding the model's capabilities and constraints and crafting prompts that provide clear instructions and sufficient context to guide the model in generating the desired responses. Effective prompt engineering can significantly enhance the quality and utility of AI-generated content."
         edges:
           - text: "Give me an example, Ada!"
-            target_node_id: END
-          - text: "On to the next, Ada!"
             target_node_id: screen2b
+          - text: "On to the next, Ada!"
+            target_node_id: END
       - id: screen2b
         type: message
         body:
