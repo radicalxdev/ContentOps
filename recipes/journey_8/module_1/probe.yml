@@ -32,22 +32,22 @@ tasks:
 
                 **Question:** What does the term "hallucination" refer to in the context of Generative AI?
 
-                a) Generating real and accurate content
+                A. Generating real and accurate content
 
-                b) Producing outputs that seem plausible but are factually incorrect or nonsensical
+                B. Producing outputs that seem plausible but are factually incorrect or nonsensical
 
-                c) Refusing to generate any content
+                C. Refusing to generate any content
 
-                d) Correctly interpreting all inputs
+                D. Correctly interpreting all inputs
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen2_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen2_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen2_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen2_incorrect"
 
       - id: screen2_correct
@@ -130,22 +130,22 @@ tasks:
               content: |
                 **Question:** Why is it important to validate AI-generated outputs?
 
-                a) AI outputs are always perfect and require no validation
+                A. AI outputs are always perfect and require no validation
 
-                b) Validation ensures the outputs are accurate and meet real-world requirements
+                B. Validation ensures the outputs are accurate and meet real-world requirements
 
-                c) Validation increases the time taken to complete the project
+                C. Validation increases the time taken to complete the project
 
-                d) Validation decreases the reliability of the outputs
+                D. Validation decreases the reliability of the outputs
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen3_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen3_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen3_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen3_incorrect"
 
       - id: screen3_correct
@@ -228,22 +228,22 @@ tasks:
               content: |
                 **Question:** Why is context important in prompt engineering?
 
-                a) It increases the length of the prompt.
+                A. It increases the length of the prompt.
 
-                b) It helps the model generate relevant content by establishing the setting and background.
+                B. It helps the model generate relevant content by establishing the setting and background.
 
-                c) It makes the prompt more complex.
+                C. It makes the prompt more complex.
 
-                d) It limits the model's output.
+                D. It limits the model's output.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen4_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen4_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen4_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen4_incorrect"
 
       - id: screen4_correct
@@ -326,22 +326,22 @@ tasks:
               content: |
                 **Question:** What is the purpose of iterative refinement in prompt engineering?
 
-                a) To limit the model's output
+                A. To limit the model's output
 
-                b) To continuously improve the quality of the model's responses
+                B. To continuously improve the quality of the model's responses
 
-                c) To reduce the length of the prompt
+                C. To reduce the length of the prompt
 
-                d) To make the prompt more complex
+                D. To make the prompt more complex
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen5_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen5_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen5_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen5_incorrect"
 
       - id: screen5_correct
@@ -424,22 +424,22 @@ tasks:
               content: |
                 **Question:** How can a developer optimize their experience when interacting with GitHub Copilot via chat?
 
-                a) By being vague about the inputs, outputs, APIs, or frameworks they want to use.
+                A. By being vague about the inputs, outputs, APIs, or frameworks they want to use.
 
-                b) By using chat participants, slash commands, chat variables, and being specific in your prompts.
+                B. By using chat participants, slash commands, chat variables, and being specific in your prompts.
 
-                c) By asking Copilot to perform large tasks at once.
+                C. By asking Copilot to perform large tasks at once.
 
-                d) By using only keyboard shortcuts without any descriptive prompts.
+                D. By using only keyboard shortcuts without any descriptive prompts.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen6_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen6_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen6_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen6_incorrect"
 
       - id: screen6_correct
@@ -523,22 +523,22 @@ tasks:
               content: |
                 **Question:** Why should developers review the code generated by GitHub Copilot?
 
-                a) Because Copilot never makes mistakes.
+                A. Because Copilot never makes mistakes.
 
-                b) To ensure the generated code meets their requirements and follows best practices.
+                B. To ensure the generated code meets their requirements and follows best practices.
 
-                c) To automatically accept all suggestions.
+                C. To automatically accept all suggestions.
 
-                d) To save time without considering code quality.
+                D. To save time without considering code quality.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen7_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen7_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen7_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen7_incorrect"
 
       - id: screen7_correct
@@ -622,22 +622,22 @@ tasks:
               content: |
                 **Question:** What is the primary function of GitHub Copilot in generating unit tests?
 
-                a) Manually writing all the test cases for the user
+                A. Manually writing all the test cases for the user
 
-                b) Suggesting possible input parameters and expected output values
+                B. Suggesting possible input parameters and expected output values
 
-                c) Generating code snippets for test cases based on the code specified by the user
+                C. Generating code snippets for test cases based on the code specified by the user
 
-                d) Compiling and running the tests automatically
+                D. Compiling and running the tests automatically
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen8_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen8_incorrect"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen8_correct"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen8_incorrect"
 
       - id: screen8_correct
@@ -721,22 +721,22 @@ tasks:
               content: |
                 **Question:** How can edge cases and boundary conditions improve unit tests?
 
-                a) By reducing the number of tests
+                A. By reducing the number of tests
 
-                b) By ensuring the code handles all possible input scenarios, including extremes
+                B. By ensuring the code handles all possible input scenarios, including extremes
 
-                c) By focusing only on common use cases
+                C. By focusing only on common use cases
 
-                d) By ignoring invalid inputs
+                D. By ignoring invalid inputs
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen9_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen9_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen9_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen9_incorrect"
 
       - id: screen9_correct
@@ -820,22 +820,22 @@ tasks:
               content: |
                 **Question:** What is a potential limitation of relying solely on GitHub Copilot for documentation?
 
-                a) It can generate overly technical descriptions.
+                A. It can generate overly technical descriptions.
 
-                b) It may miss project-specific nuances.
+                B. It may miss project-specific nuances.
 
-                c) It replaces the need for any manual documentation.
+                C. It replaces the need for any manual documentation.
 
-                d) It performs security audits on the code.
+                D. It performs security audits on the code.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen10_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen10_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen10_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen10_incorrect"
 
       - id: screen10_correct
@@ -919,22 +919,22 @@ tasks:
               content: |
                 **Question:** What is a key consideration when using GitHub Copilot to document complex algorithms?
 
-                a) Keeping the comments concise and general, avoiding detailed explanations.
+                A. Keeping the comments concise and general, avoiding detailed explanations.
 
-                b) Ensuring that the generated documentation precisely and accurately reflects the logic and functionality of the algorithm.
+                B. Ensuring that the generated documentation precisely and accurately reflects the logic and functionality of the algorithm.
 
-                c) Relying solely on Copilot to produce all documentation for algorithms without further review.
+                C. Relying solely on Copilot to produce all documentation for algorithms without further review.
 
-                d) Utilizing Copilot to rewrite the entire algorithm for improved clarity.
+                D. Utilizing Copilot to rewrite the entire algorithm for improved clarity.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen11_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen11_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen11_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen11_incorrect"
 
       - id: screen11_correct
@@ -1018,22 +1018,22 @@ tasks:
               content: |
                 **Question:** What is the benefit of using synthetic data generation in testing?
 
-                a) Reduces the number of test cases
+                A. Reduces the number of test cases
 
-                b) Creates diverse and comprehensive test datasets
+                B. Creates diverse and comprehensive test datasets
 
-                c) Increases manual data entry
+                C. Increases manual data entry
 
-                d) Simplifies the testing process
+                D. Simplifies the testing process
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen12_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen12_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen12_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen12_incorrect"
 
       - id: screen12_correct
@@ -1119,22 +1119,22 @@ tasks:
               content: |
                 **Question:** How does AI improve regression testing in Katalon Studio?
 
-                a) By ignoring existing functionalities
+                A. By ignoring existing functionalities
 
-                b) By ensuring new features do not affect existing functionalities
+                B. By ensuring new features do not affect existing functionalities
 
-                c) By increasing the number of bugs
+                C. By increasing the number of bugs
 
-                d) By reducing test accuracy
+                D. By reducing test accuracy
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen13_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen13_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen13_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen13_incorrect"
 
       - id: screen13_correct
@@ -1218,22 +1218,22 @@ tasks:
               content: |
                 **Question:** What is the benefit of integrating Katalon TestOps with Katalon Studio?
 
-                a) It decentralizes test management
+                A. It decentralizes test management
 
-                b) It provides a centralized platform for managing tests, analyzing results, and generating insights
+                B. It provides a centralized platform for managing tests, analyzing results, and generating insights
 
-                c) It increases the complexity of test management
+                C. It increases the complexity of test management
 
-                d) It reduces the ability to track test performance
+                D. It reduces the ability to track test performance
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen14_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen14_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen14_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen14_incorrect"
 
       - id: screen14_correct
@@ -1319,22 +1319,22 @@ tasks:
                 
                 **Question:** How does GitHub Copilot help with Jenkins pipeline scripts?
 
-                a) By manually creating the scripts
+                A. By manually creating the scripts
 
-                b) By generating Jenkins pipeline scripts to automate build, test, and deployment processes
+                B. By generating Jenkins pipeline scripts to automate build, test, and deployment processes
 
-                c) By ignoring the CI/CD pipeline
+                C. By ignoring the CI/CD pipeline
 
-                d) By reducing the automation level
+                D. By reducing the automation level
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen15_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen15_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen15_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen15_incorrect"
 
       - id: screen15_correct
@@ -1419,22 +1419,22 @@ tasks:
               content: |
                 **Question:** How can AI tools enforce coding standards and best practices?
 
-                a) By ignoring existing scripts
+                A. By ignoring existing scripts
 
-                b) By suggesting and implementing standardized ways of writing and formatting configuration files
+                B. By suggesting and implementing standardized ways of writing and formatting configuration files
 
-                c) By increasing inconsistencies
+                C. By increasing inconsistencies
 
-                d) By making collaboration more difficult
+                D. By making collaboration more difficult
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen16_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen16_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen16_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen16_incorrect"
 
       - id: screen16_correct
@@ -1519,22 +1519,22 @@ tasks:
               content: |
                 **Question:** What is one benefit of predictive deployment analytics provided by AI?
 
-                a) Increased deployment failures
+                A. Increased deployment failures
 
-                b) Proactive issue resolution
+                B. Proactive issue resolution
 
-                c) Reduced code quality
+                C. Reduced code quality
 
-                d) Manual risk management
+                D. Manual risk management
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen17_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen17_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen17_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen17_incorrect"
 
       - id: screen17_correct
@@ -1619,22 +1619,22 @@ tasks:
               content: |
                 **Question:** What is the primary advantage of using AI-driven insights in monitoring?
 
-                a) Increased manual analysis
+                A. Increased manual analysis
 
-                b) Enhanced proactive monitoring and actionable insights
+                B. Enhanced proactive monitoring and actionable insights
 
-                c) Reduced visibility into system performance
+                C. Reduced visibility into system performance
 
-                d) Increased downtime
+                D. Increased downtime
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen18_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen18_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen18_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen18_incorrect"
 
       - id: screen18_correct
@@ -1720,22 +1720,22 @@ tasks:
               content: |
                 **Question:** What is the primary advantage of using AI in troubleshooting over manual methods?
 
-                a) It increases the complexity of the process.
+                A. It increases the complexity of the process.
 
-                b) It automates repetitive tasks and provides deeper insights.
+                B. It automates repetitive tasks and provides deeper insights.
 
-                c) It reduces the accuracy of the results.
+                C. It reduces the accuracy of the results.
 
-                d) It makes the process more time-consuming.
+                D. It makes the process more time-consuming.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen19_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen19_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen19_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen19_incorrect"
 
       - id: screen19_correct
@@ -1821,22 +1821,22 @@ tasks:
 
                 **Question:** What does AI-driven root cause analysis do?
 
-                a) It increases the number of errors.
+                A. It increases the number of errors.
 
-                b) It traces issues back to their root cause efficiently.
+                B. It traces issues back to their root cause efficiently.
 
-                c) It complicates the troubleshooting process.
+                C. It complicates the troubleshooting process.
 
-                d) It ignores the data.
+                D. It ignores the data.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen20_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen20_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen20_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen20_incorrect"
 
       - id: screen20_correct
@@ -1923,22 +1923,22 @@ tasks:
 
                 **Question:** How does Eraser AI improve the process of generating visual documentation?
 
-                a) By requiring manual input for each diagram.
+                A. By requiring manual input for each diagram.
 
-                b) By automating the generation of diagrams from code.
+                B. By automating the generation of diagrams from code.
 
-                c) By ignoring code changes.
+                C. By ignoring code changes.
 
-                d) By avoiding visual aids.
+                D. By avoiding visual aids.
 
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: "screen21_incorrect"
-          - text: "b"
+          - text: "B"
             target_node_id: "screen21_correct"
-          - text: "c"
+          - text: "C"
             target_node_id: "screen21_incorrect"
-          - text: "d"
+          - text: "D"
             target_node_id: "screen21_incorrect"
 
       - id: screen21_correct

@@ -15,7 +15,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Hello {username}! Congratulations on completing the module on architecture and data flow diagrams using Eraser AI. You've learned about the importance and benefits of visual documentation in software design and how Eraser AI assists in creating and maintaining these diagrams. This quiz will help reinforce your understanding and highlight any areas that may need further review. Ready to get started?"
+            content: |
+              Hello {username}! Congratulations on completing the module on architecture and data flow diagrams using Eraser AI. You've learned about the importance and benefits of visual documentation in software design and how Eraser AI assists in creating and maintaining these diagrams. This quiz will help reinforce your understanding and highlight any areas that may need further review. Ready to get started?
       edges:
         - text: "Yes, I'm ready!"
           target_node_id: screen2
@@ -24,24 +25,35 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Alright {username}, let's begin with our first question!"
+            content: |
+              Alright {username}, let's begin with our first question!
           - type: "text"
-            content: "What is the primary role of architecture and data flow diagrams in software design?\n\nA. To simplify coding.\nB. To visualize system structure and data interactions.\nC. To replace documentation.\nD. To improve code readability."
+            content: |
+              What is the primary role of architecture and data flow diagrams in software design?
+
+              A. To simplify coding.
+
+              B. To visualize system structure and data interactions.
+
+              C. To replace documentation.
+
+              D. To improve code readability.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen2_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen2_incorrect
     - id: screen2_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "Excellent, {username}! Architecture and data flow diagrams visualize system structure and data interactions."
+            content: |
+              Excellent, {username}! Architecture and data flow diagrams visualize system structure and data interactions.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen2a
@@ -52,7 +64,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Not quite, {username}. Architecture and data flow diagrams visualize system structure and data interactions."
+            content: |
+              Not quite, {username}. Architecture and data flow diagrams visualize system structure and data interactions.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen2a
@@ -63,10 +76,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "The primary role of architecture and data flow diagrams in software design is to provide a visual representation of the system's structure and how data flows within it. These diagrams help developers and stakeholders understand the relationships between different components, the data exchange processes, and overall system architecture. This visualization aids in planning, communication, and identifying potential design flaws early in the development process."
+            content: |
+              The primary role of architecture and data flow diagrams in software design is to provide a visual representation of the system's structure and how data flows within it. These diagrams help developers and stakeholders understand the relationships between different components, the data exchange processes, and overall system architecture. This visualization aids in planning, communication, and identifying potential design flaws early in the development process.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen2b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen2b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For instance, an architecture diagram can illustrate the relationship between a web server, application server, and database server, showing how data flows between these components and how they interact to process user requests.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -74,7 +98,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, an architecture diagram can illustrate the relationship between a web server, application server, and database server, showing how data flows between these components and how they interact to process user requests."
+            content: |
+              Great job, {username}! You've completed the first question on architecture and data flow diagrams. Keep up the good work!
   - name: "Question #2"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -91,24 +116,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next one, {username}? Let's talk about communication among team members."
-          - type: "text"
-            content: "How do architecture and data flow diagrams facilitate better communication among team members?\n\nA. By using complex symbols.\nB. By simplifying complex concepts.\nC. By avoiding visual aids.\nD. By using only text-based explanations."
+            content: |
+              How do architecture and data flow diagrams facilitate better communication among team members?
+
+
+              A. By using complex symbols.
+
+              B. By simplifying complex concepts.
+
+              C. By avoiding visual aids.
+
+              D. By using only text-based explanations.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen3_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3_incorrect
     - id: screen3_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "Exactly, {username}! These diagrams simplify complex concepts, facilitating better communication."
+            content: |
+              Exactly, {username}! These diagrams simplify complex concepts, facilitating better communication.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen3a
@@ -119,7 +153,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not it, {username}. These diagrams simplify complex concepts, facilitating better communication."
+            content: |
+              That's not it, {username}. These diagrams simplify complex concepts, facilitating better communication.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen3a
@@ -130,10 +165,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Architecture and data flow diagrams facilitate better communication among team members by simplifying complex concepts into clear and understandable visual representations. These diagrams break down intricate systems and processes into manageable parts, making it easier for team members to grasp the overall design, identify their roles, and understand how different components interact. This clarity enhances collaboration and ensures everyone is on the same page."
+            content: |
+              Architecture and data flow diagrams facilitate better communication among team members by simplifying complex concepts into clear and understandable visual representations. These diagrams break down intricate systems and processes into manageable parts, making it easier for team members to grasp the overall design, identify their roles, and understand how different components interact. This clarity enhances collaboration and ensures everyone is on the same page.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen3b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen3b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For example, during a team meeting, a data flow diagram can be used to explain how user input is processed, validated, and stored in the system, making it easier for both technical and non-technical team members to follow the discussion and contribute effectively.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -141,7 +187,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, during a team meeting, a data flow diagram can be used to explain how user input is processed, validated, and stored in the system, making it easier for both technical and non-technical team members to follow the discussion and contribute effectively."
+            content: |
+              Well done, {username}! You've completed the second question on architecture and data flow diagrams. Keep up the good work!
   - name: "Question #3"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -158,24 +205,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's another one, {username}! Let's discuss key use cases for architecture diagrams."
-          - type: "text"
-            content: "Which of the following is a key use case for architecture diagrams?\n\nA. Writing code.\nB. System design and planning.\nC. Debugging code.\nD. Testing performance."
+            content: |
+              Which of the following is a key use case for architecture diagrams?
+
+
+              A. Writing code.
+
+              B. System design and planning.
+
+              C. Debugging code.
+
+              D. Testing performance.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen4_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen4_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4_incorrect
     - id: screen4_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "Spot on, {username}! Architecture diagrams are used for system design and planning."
+            content: |
+              Spot on, {username}! Architecture diagrams are used for system design and planning.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen4a
@@ -186,7 +242,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not right, {username}. Architecture diagrams are used for system design and planning."
+            content: |
+              That's not right, {username}. Architecture diagrams are used for system design and planning.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen4a
@@ -197,10 +254,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "A key use case for architecture diagrams is in system design and planning. These diagrams serve as blueprints for the system, helping architects and developers plan the structure, components, and interactions before any code is written. They provide a high-level overview that guides the development process, ensuring that all parts of the system are well-integrated and aligned with the project's goals and requirements."
+            content: |
+              A key use case for architecture diagrams is in system design and planning. These diagrams serve as blueprints for the system, helping architects and developers plan the structure, components, and interactions before any code is written. They provide a high-level overview that guides the development process, ensuring that all parts of the system are well-integrated and aligned with the project's goals and requirements.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen4b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen4b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For instance, before starting development on a new e-commerce platform, architects can create an architecture diagram outlining the main modules such as the user interface, payment gateway, inventory management, and database interactions, ensuring that all components are planned and integrated effectively.\
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -208,7 +276,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, before starting development on a new e-commerce platform, architects can create an architecture diagram outlining the main modules such as the user interface, payment gateway, inventory management, and database interactions, ensuring that all components are planned and integrated effectively."
+            content: |
+              Well done, {username}! You've completed the third question on architecture and data flow diagrams. Keep up the good work!
   - name: "Question #4"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -225,24 +294,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for another question, {username}? Let's discuss best practices for designing architecture diagrams."
-          - type: "text"
-            content: "What is a best practice for designing clear and effective architecture diagrams?\n\nA. Use inconsistent symbols.\nB. Keep diagrams simple and focused.\nC. Avoid using visual aids.\nD. Include as much detail as possible."
+            content: |
+              What is a best practice for designing clear and effective architecture diagrams?
+
+
+              A. Use inconsistent symbols.
+
+              B. Keep diagrams simple and focused.
+
+              C. Avoid using visual aids.
+
+              D. Include as much detail as possible.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen5_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen5_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5_incorrect
     - id: screen5_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "That's correct, {username}! Keep diagrams simple and focused for clarity and effectiveness."
+            content: |
+              That's correct, {username}! Keep diagrams simple and focused for clarity and effectiveness.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen5a
@@ -253,7 +331,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not quite right, {username}. Keep diagrams simple and focused for clarity and effectiveness."
+            content: |
+              That's not quite right, {username}. Keep diagrams simple and focused for clarity and effectiveness.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen5a
@@ -264,10 +343,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "A best practice for designing clear and effective architecture diagrams is to keep them simple and focused. Overly complex diagrams can be difficult to understand and may overwhelm the viewer. By focusing on the essential components and interactions, and using consistent symbols and notations, the diagrams can convey the necessary information clearly and concisely. This approach ensures that the diagrams serve as effective communication tools."
+            content: |
+              A best practice for designing clear and effective architecture diagrams is to keep them simple and focused. Overly complex diagrams can be difficult to understand and may overwhelm the viewer. By focusing on the essential components and interactions, and using consistent symbols and notations, the diagrams can convey the necessary information clearly and concisely. This approach ensures that the diagrams serve as effective communication tools.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen5b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen5b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For example, an architecture diagram for a microservices application should highlight the key services and their interactions without delving into unnecessary detail about each service's internal workings, keeping the focus on the overall system architecture.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -275,7 +365,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, an architecture diagram for a microservices application should highlight the key services and their interactions without delving into unnecessary detail about each service's internal workings, keeping the focus on the overall system architecture."
+            content: |
+              Awesome work! Let's move on to the next question. You're doing great, {username}!
   - name: "Question #5"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -292,24 +383,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's another one, {username}! Let's talk about how Eraser AI assists in creating architecture diagrams."
-          - type: "text"
-            content: "How does Eraser AI assist in creating architecture diagrams?\n\nA. By manually drawing diagrams.\nB. By analyzing code and generating diagrams automatically.\nC. By avoiding the use of code.\nD. By creating text-based diagrams only."
+            content: |
+              How does Eraser AI assist in creating architecture diagrams?
+
+
+              A. By manually drawing diagrams.
+
+              B. By analyzing code and generating diagrams automatically.
+
+              C. By avoiding the use of code.
+
+              D. By creating text-based diagrams only.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen6_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen6_incorrect
     - id: screen6_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "That's right, {username}! Eraser AI analyzes code and automatically generates architecture diagrams."
+            content: |
+              That's right, {username}! Eraser AI analyzes code and automatically generates architecture diagrams.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen6a
@@ -320,7 +420,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not it, {username}. Eraser AI analyzes code and automatically generates architecture diagrams."
+            content: |
+              That's not it, {username}. Eraser AI analyzes code and automatically generates architecture diagrams.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen6a
@@ -331,10 +432,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Eraser AI assists in creating architecture diagrams by analyzing the codebase and automatically generating visual representations of the system's architecture. This automation saves time and ensures accuracy, as the diagrams are directly derived from the code. Eraser AI can quickly update diagrams to reflect any changes in the code, maintaining up-to-date and accurate documentation that developers can rely on for planning and communication."
+            content: |
+              Eraser AI assists in creating architecture diagrams by analyzing the codebase and automatically generating visual representations of the system's architecture. This automation saves time and ensures accuracy, as the diagrams are directly derived from the code. Eraser AI can quickly update diagrams to reflect any changes in the code, maintaining up-to-date and accurate documentation that developers can rely on for planning and communication.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen6b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen6b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For instance, when a new microservice is added to an application, Eraser AI can automatically update the architecture diagram to include the new service and show its interactions with existing services, ensuring the diagram remains current and accurate without requiring manual updates.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -342,7 +454,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, when a new microservice is added to an application, Eraser AI can automatically update the architecture diagram to include the new service and show its interactions with existing services, ensuring the diagram remains current and accurate without requiring manual updates."
+            content: |
+              That's perfect, {username}! You've completed the fifth question on architecture and data flow diagrams. Keep up the good work!
   - name: "Question #6"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -359,24 +472,29 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for another one, {username}? Let's talk about entity-relationship diagrams."
-          - type: "text"
-            content: "What are the key components of an entity-relationship diagram?\n\nA. Methods, classes, and variables.\nB. Entities, attributes, and relationships.\nC. Functions, loops, and conditions.\nD. Inputs, outputs, and processes."
+            content: |
+              What are the key components of an entity-relationship diagram?
+
+              A. Methods, classes, and variables.
+              B. Entities, attributes, and relationships.
+              C. Functions, loops, and conditions.
+              D. Inputs, outputs, and processes.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen7_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen7_incorrect
     - id: screen7_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "Exactly, {username}! Key components of an entity-relationship diagram are entities, attributes, and relationships."
+            content: |
+              Exactly, {username}! Key components of an entity-relationship diagram are entities, attributes, and relationships.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen7a
@@ -387,7 +505,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not correct, {username}. Key components of an entity-relationship diagram are entities, attributes, and relationships."
+            content: |
+              That's not correct, {username}. Key components of an entity-relationship diagram are entities, attributes, and relationships.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen7a
@@ -398,10 +517,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "An entity-relationship diagram (ERD) consists of three key components: entities, attributes, and relationships. Entities represent the objects or concepts in the system, attributes describe the properties of these entities, and relationships illustrate how the entities interact with each other. These components together provide a detailed visual representation of the data structure, facilitating better understanding and communication of the system's data model."
+            content: |
+              An entity-relationship diagram (ERD) consists of three key components: entities, attributes, and relationships. Entities represent the objects or concepts in the system, attributes describe the properties of these entities, and relationships illustrate how the entities interact with each other. These components together provide a detailed visual representation of the data structure, facilitating better understanding and communication of the system's data model.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen7b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen7b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For example, in an ERD for a university database, entities could include 'Student,' 'Course,' and 'Instructor,' attributes for 'Student' might include 'Student ID' and 'Name,' and relationships might show that 'Student' enrolls in 'Course' and 'Instructor' teaches 'Course.'
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -409,7 +539,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, in an ERD for a university database, entities could include 'Student,' 'Course,' and 'Instructor,' attributes for 'Student' might include 'Student ID' and 'Name,' and relationships might show that 'Student' enrolls in 'Course' and 'Instructor' teaches 'Course.'"
+            content: |
+              Keep up the good work! Let's move on to the next question. You're doing great, {username}!
   - name: "Question #7"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -426,24 +557,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's another one, {username}! Let's discuss how Eraser AI helps with entity-relationship diagrams."
-          - type: "text"
-            content: "How can Eraser AI help with entity-relationship diagrams?\n\nA. By manually creating each relationship.\nB. By identifying entities and relationships from the schema.\nC. By avoiding visual aids.\nD. By generating only text descriptions."
+            content: |
+              How can Eraser AI help with entity-relationship diagrams?
+
+
+              A. By manually creating each relationship.
+
+              B. By identifying entities and relationships from the schema.
+
+              C. By avoiding visual aids.
+
+              D. By generating only text descriptions.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8_incorrect
     - id: screen8_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "That's right, {username}! Eraser AI identifies entities and relationships from the schema to help with ERDs."
+            content: |
+              That's right, {username}! Eraser AI identifies entities and relationships from the schema to help with ERDs.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen8a
@@ -454,7 +594,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not it, {username}. Eraser AI identifies entities and relationships from the schema to help with ERDs."
+            content: |
+              That's not it, {username}. Eraser AI identifies entities and relationships from the schema to help with ERDs.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen8a
@@ -465,10 +606,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Eraser AI assists in creating entity-relationship diagrams by automatically identifying entities and relationships from the database schema. This automation streamlines the process of diagram creation, ensuring accuracy and saving time. By analyzing the schema, Eraser AI can generate detailed ERDs that reflect the actual structure of the database, facilitating better understanding and communication of the data model."
+            content: |
+              Eraser AI assists in creating entity-relationship diagrams by automatically identifying entities and relationships from the database schema. This automation streamlines the process of diagram creation, ensuring accuracy and saving time. By analyzing the schema, Eraser AI can generate detailed ERDs that reflect the actual structure of the database, facilitating better understanding and communication of the data model.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen8b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen8b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For instance, when given access to a database schema, Eraser AI can automatically generate an ERD that shows all tables (entities), their columns (attributes), and the foreign key relationships between tables, providing a clear visual representation of the database structure.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -476,7 +628,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, when given access to a database schema, Eraser AI can automatically generate an ERD that shows all tables (entities), their columns (attributes), and the foreign key relationships between tables, providing a clear visual representation of the database structure."
+            content: |
+              Let's go! Good job, let's move on the next question. 
   - name: "Question #8"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -493,24 +646,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next one, {username}! Let's talk about data flow diagrams for performance optimization."
-          - type: "text"
-            content: "What is a key benefit of using data flow diagrams for performance optimization?\n\nA. They provide detailed code instructions.\nB. They identify bottlenecks and optimize system architecture.\nC. They replace the need for performance testing.\nD. They are rarely used for optimization."
+            content: |
+              What is a key benefit of using data flow diagrams for performance optimization?
+
+
+              A. They provide detailed code instructions.
+
+              B. They identify bottlenecks and optimize system architecture.
+
+              C. They replace the need for performance testing.
+
+              D. They are rarely used for optimization.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9_incorrect
     - id: screen9_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "Exactly, {username}! Data flow diagrams identify bottlenecks and optimize system architecture."
+            content: |
+              Exactly, {username}! Data flow diagrams identify bottlenecks and optimize system architecture.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen9a
@@ -521,7 +683,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not correct, {username}. Data flow diagrams identify bottlenecks and optimize system architecture."
+            content: |
+              That's not correct, {username}. Data flow diagrams identify bottlenecks and optimize system architecture.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen9a
@@ -532,10 +695,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "A key benefit of using data flow diagrams (DFDs) for performance optimization is their ability to identify bottlenecks and improve system architecture. DFDs visually represent the flow of data within a system, highlighting where delays or inefficiencies may occur. By analyzing these diagrams, developers can pinpoint performance issues and redesign the system to optimize data flow, enhancing overall system efficiency and performance."
+            content: |
+              A key benefit of using data flow diagrams (DFDs) for performance optimization is their ability to identify bottlenecks and improve system architecture. DFDs visually represent the flow of data within a system, highlighting where delays or inefficiencies may occur. By analyzing these diagrams, developers can pinpoint performance issues and redesign the system to optimize data flow, enhancing overall system efficiency and performance.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen9b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen9b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For example, a DFD for an e-commerce application might reveal that data flow between the payment processing module and the order management system is causing delays, prompting developers to optimize this interaction for faster transaction processing.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -543,7 +717,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, a DFD for an e-commerce application might reveal that data flow between the payment processing module and the order management system is causing delays, prompting developers to optimize this interaction for faster transaction processing."
+            content: |
+              Awesome work, {username}! You've completed the eighth question on architecture and data flow diagrams. Keep up the good work!
   - name: "Question #9"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -560,24 +735,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's continue, {username}! Here's a question about Eraser AI and visual documentation."
-          - type: "text"
-            content: "How does Eraser AI improve the process of generating visual documentation?\n\nA. By requiring manual input for each diagram.\nB. By automating the generation of diagrams from code.\nC. By ignoring code changes.\nD. By avoiding visual aids."
+            content: |
+              How does Eraser AI improve the process of generating visual documentation?
+
+
+              A. By requiring manual input for each diagram.
+
+              B. By automating the generation of diagrams from code.
+
+              C. By ignoring code changes.
+
+              D. By avoiding visual aids.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10_incorrect
     - id: screen10_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "That's right, {username}! Eraser AI automates the generation of diagrams from code."
+            content: |
+              That's right, {username}! Eraser AI automates the generation of diagrams from code.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen10a
@@ -588,7 +772,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not it, {username}. Eraser AI automates the generation of diagrams from code."
+            content: |
+              That's not it, {username}. Eraser AI automates the generation of diagrams from code.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen10a
@@ -599,10 +784,21 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Eraser AI improves the process of generating visual documentation by automating the creation of diagrams directly from the codebase. This automation ensures that the visual documentation is accurate and up-to-date, reflecting the current state of the code. It eliminates the need for manual diagram creation, saving time and reducing the likelihood of errors, thereby enhancing the efficiency and reliability of the documentation process."
+            content: |
+              Eraser AI improves the process of generating visual documentation by automating the creation of diagrams directly from the codebase. This automation ensures that the visual documentation is accurate and up-to-date, reflecting the current state of the code. It eliminates the need for manual diagram creation, saving time and reducing the likelihood of errors, thereby enhancing the efficiency and reliability of the documentation process.
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen10b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen10b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: |
+              For instance, when new features are added to a software project, Eraser AI can automatically update the relevant architecture and data flow diagrams to include these new components, ensuring that the documentation remains consistent with the actual code.
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -610,7 +806,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, when new features are added to a software project, Eraser AI can automatically update the relevant architecture and data flow diagrams to include these new components, ensuring that the documentation remains consistent with the actual code."
+            content: |
+              Great job, {username}! You've completed the ninth question on architecture and data flow diagrams. Keep up the good work!
   - name: "Question #10"
     context: |
       This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.
@@ -627,24 +824,33 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the final question, {username}! Let's talk about the primary objective of using Eraser AI for designing diagrams."
-          - type: "text"
-            content: "What is the primary objective of using Eraser AI for designing architecture and data flow diagrams?\n\nA. To simplify the creation and maintenance of visual documentation.\nB. To replace all visual documentation with text.\nC. To increase the manual effort in documentation.\nD. To ignore codebase changes."
+            content: |
+              What is the primary objective of using Eraser AI for designing architecture and data flow diagrams?
+
+
+              A. To simplify the creation and maintenance of visual documentation.
+
+              B. To replace all visual documentation with text.
+
+              C. To increase the manual effort in documentation.
+
+              D. To ignore codebase changes.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11_correct
-        - text: "b"
+        - text: "B"
           target_node_id: screen11_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen11_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11_incorrect
     - id: screen11_correct
       type: message
       body:
         parts:
           - type: "text"
-            content: "That's correct, {username}! Eraser AI simplifies the creation and maintenance of visual documentation."
+            content: |
+              That's correct, {username}! Eraser AI simplifies the creation and maintenance of visual documentation.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen11a
@@ -655,7 +861,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "That's not it, {username}. Eraser AI simplifies the creation and maintenance of visual documentation."
+            content: |
+              That's not it, {username}. Eraser AI simplifies the creation and maintenance of visual documentation.
       edges:
         - text: "Explain more, Ada!"
           target_node_id: screen11a
@@ -666,7 +873,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "The primary objective of using Eraser AI for designing architecture and data flow diagrams is to simplify the creation and maintenance of visual documentation. By automating the generation of these diagrams from the codebase, Eraser AI reduces the manual effort required and ensures that the documentation is always current and accurate. This simplification helps developers and stakeholders easily understand and keep track of the system architecture and data flows, improving overall project efficiency and communication."
+            content: |
+              The primary objective of using Eraser AI for designing architecture and data flow diagrams is to simplify the creation and maintenance of visual documentation. By automating the generation of these diagrams from the codebase, Eraser AI reduces the manual effort required and ensures that the documentation is always current and accurate. This simplification helps developers and stakeholders easily understand and keep track of the system architecture and data flows, improving overall project efficiency and communication.
       edges:
         - text: "Give me an example, Ada!"
           target_node_id: screen11b
@@ -677,7 +885,8 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, instead of manually updating architecture diagrams whenever there are changes in the system, developers can rely on Eraser AI to automatically reflect these changes in the diagrams, ensuring that the visual documentation is always up-to-date with minimal effort."
+            content: |
+              For example, instead of manually updating architecture diagrams whenever there are changes in the system, developers can rely on Eraser AI to automatically reflect these changes in the diagrams, ensuring that the visual documentation is always up-to-date with minimal effort.
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
@@ -686,8 +895,22 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module."
+            content: |
+              Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.
           - type: "text"
-            content: "**Recap:**\n\n- We explored the primary role of architecture and data flow diagrams in visualizing system structure and data interactions.\n- We discussed how these diagrams facilitate better communication by simplifying complex concepts.\n- We highlighted the key use case of architecture diagrams in system design and planning.\n- We covered best practices for designing clear and effective architecture diagrams.\n- We reviewed how Eraser AI assists in creating architecture diagrams by analyzing code and generating diagrams automatically.\n- We discussed the key components of an entity-relationship diagram.\n- We explained how Eraser AI helps with entity-relationship diagrams by identifying entities and relationships from the schema.\n- We emphasized the benefit of using data flow diagrams for performance optimization by identifying bottlenecks.\n- We talked about how Eraser AI automates the generation of diagrams from code, improving the process of generating visual documentation.\n- We covered the primary objective of using Eraser AI for designing architecture and data flow diagrams to simplify the creation and maintenance of visual documentation."
+            content: |
+              **Recap:**
+
+              - We explored the primary role of architecture and data flow diagrams in visualizing system structure and data interactions.
+              - We discussed how these diagrams facilitate better communication by simplifying complex concepts.
+              - We highlighted the key use case of architecture diagrams in system design and planning.
+              - We covered best practices for designing clear and effective architecture diagrams.
+              - We reviewed how Eraser AI assists in creating architecture diagrams by analyzing code and generating diagrams automatically.
+              - We discussed the key components of an entity-relationship diagram.
+              - We explained how Eraser AI helps with entity-relationship diagrams by identifying entities and relationships from the schema.
+              - We emphasized the benefit of using data flow diagrams for performance optimization by identifying bottlenecks.
+              - We talked about how Eraser AI automates the generation of diagrams from code, improving the process of generating visual documentation.
+              - We covered the primary objective of using Eraser AI for designing architecture and data flow diagrams to simplify the creation and maintenance of visual documentation.
           - type: "text"
-            content: "Ada AI: Coming up next, we'll embark on an exciting journey in our next module, where we'll put all the knowledge and skills we've gained throughout the program into practice."
+            content: |
+              Ada AI: Coming up next, we'll embark on an exciting journey in our next module, where we'll put all the knowledge and skills we've gained throughout the program into practice.

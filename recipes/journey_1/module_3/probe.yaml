@@ -25,15 +25,25 @@ tasks:
             - type: "text"
               content: "Alright {username}, let's begin with our first question!"
             - type: "text"
-              content: "What is prompt engineering in the context of generative AI models?\n\nA. Designing user interfaces for AI models\nB. Crafting effective prompts to guide AI models in producing relevant and desired responses\nC. Developing new AI models from scratch\nD. Debugging AI model errors"
+              content: |
+                What is prompt engineering in the context of generative AI models?
+
+
+                A. Designing user interfaces for AI models
+
+                B. Crafting effective prompts to guide AI models in producing relevant and desired responses
+
+                C. Developing new AI models from scratch
+
+                D. Debugging AI model errors
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen2_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen2_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen2_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen2_incorrect
       - id: screen2_correct
         type: message
@@ -67,13 +77,22 @@ tasks:
           - text: "Give me an example, Ada!"
             target_node_id: END
           - text: "On to the next, Ada!"
+            target_node_id: screen2b
+      - id: screen2b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, to generate a detailed code snippet for a feature, instead of a vague prompt like 'Write some code for a feature,' a more effective prompt would be 'Write a Python function that takes a list of integers and returns a list of those integers squared, using a list comprehension.' This specific prompt provides clear guidance and context, leading to a more useful and targeted response."
+        edges:
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
         type: message
         body:
           parts:
             - type: "text"
-              content: "For example, to generate a detailed code snippet for a feature, instead of a vague prompt like 'Write some code for a feature,' a more effective prompt would be 'Write a Python function that takes a list of integers and returns a list of those integers squared, using a list comprehension.' This specific prompt provides clear guidance and context, leading to a more useful and targeted response."
+              content: "Ready for the next one, {username}? Let's see how well you understand naive prompting!"
   - name: "Question #2"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -89,17 +108,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for the next one, {username}? Let's see how well you understand naive prompting!"
-            - type: "text"
-              content: "Which of the following is an example of naive prompting?\n\nA. 'Write an HTML and CSS code snippet for a responsive navbar with dropdown menus.'\nB. 'Create a UML class diagram for a microservices-based e-commerce platform.'\nC. 'Write code for a website.'\nD. 'Generate design documentation for a RESTful API service.'"
+              content: |
+                Which of the following is an example of naive prompting?
+
+
+                A. 'Write an HTML and CSS code snippet for a responsive navbar with dropdown menus.'
+
+                B. 'Create a UML class diagram for a microservices-based e-commerce platform.'
+
+                C. 'Write code for a website.'
+
+                D. 'Generate design documentation for a RESTful API service.'
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen3_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen3_incorrect
-          - text: "c"
+          - text: "C"
             target_node_id: screen3_correct
-          - text: "d"
+          - text: "D"
             target_node_id: screen3_incorrect
       - id: screen3_correct
         type: message
@@ -131,7 +158,16 @@ tasks:
               content: "Naive prompting refers to the use of general and unspecific prompts that fail to give the AI model enough information to produce a detailed and relevant output. Such prompts can lead to broad, unfocused, or irrelevant responses because the model lacks the context and direction needed to understand the user's intent fully. In contrast, effective prompts are detailed and precise, guiding the model to generate specific and useful outputs."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen3b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen3b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, instead of asking 'Write code for a website,' which is too vague and open-ended, a better prompt would be 'Write HTML, CSS, and JavaScript code for a responsive single-page website with a navigation bar, image gallery, and contact form.' This detailed prompt gives the AI clear instructions on what is required, leading to more relevant and useful code generation."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -139,7 +175,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For instance, instead of asking 'Write code for a website,' which is too vague and open-ended, a better prompt would be 'Write HTML, CSS, and JavaScript code for a responsive single-page website with a navigation bar, image gallery, and contact form.' This detailed prompt gives the AI clear instructions on what is required, leading to more relevant and useful code generation."
+              content: "Ready for another question, {username}? Let's talk about well-constructed prompts!"
   - name: "Question #3"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -155,17 +191,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for another question, {username}? Let's talk about well-constructed prompts!"
-            - type: "text"
-              content: "What element of a well-constructed prompt provides clear and specific guidelines to the model?\n\nA. Context\nB. Instructions\nC. Input Data\nD. Output Indicator"
+              content: |
+                What element of a well-constructed prompt provides clear and specific guidelines to the model?
+
+
+                A. Context
+
+                B. Instructions
+
+                C. Input Data
+
+                D. Output Indicator
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen4_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen4_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen4_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen4_incorrect
       - id: screen4_correct
         type: message
@@ -197,7 +241,16 @@ tasks:
               content: "Instructions are a critical component of a well-constructed prompt as they provide explicit directions to the AI model on what actions to take or what kind of output is required. Clear and detailed instructions help the model understand the user's expectations and generate more accurate and relevant responses. Without specific instructions, the model might produce outputs that do not align with the user's needs."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen4b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen4b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, instead of just saying 'Create a script,' a prompt with clear instructions would be 'Create a Python script that connects to a MySQL database, retrieves all records from the 'users' table, and prints each user's name and email address.' These instructions guide the AI to focus on the specific requirements of the task."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -205,7 +258,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For example, instead of just saying 'Create a script,' a prompt with clear instructions would be 'Create a Python script that connects to a MySQL database, retrieves all records from the 'users' table, and prints each user's name and email address.' These instructions guide the AI to focus on the specific requirements of the task."
+              content: "Here comes the next one, {username}! Let's explore the importance of context in prompt engineering."
   - name: "Question #4"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -221,17 +274,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here comes the next one, {username}! Let's explore the importance of context in prompt engineering."
-            - type: "text"
-              content: "Why is context important in prompt engineering?\n\nA. It increases the length of the prompt.\nB. It helps the model generate relevant content by establishing the setting and background.\nC. It makes the prompt more complex.\nD. It limits the model's output."
+              content: |
+                Why is context important in prompt engineering?
+
+
+                A. It increases the length of the prompt.
+
+                B. It helps the model generate relevant content by establishing the setting and background.
+
+                C. It makes the prompt more complex.
+
+                D. It limits the model's output.
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen5_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen5_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen5_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen5_incorrect
       - id: screen5_correct
         type: message
@@ -263,7 +324,16 @@ tasks:
               content: "Context in prompt engineering involves providing background information and setting the scene for the AI model. This helps the model understand the environment and circumstances under which it is expected to generate content. By establishing the context, the prompt gives the model a framework to produce outputs that are coherent, relevant, and aligned with the user's objectives. Contextual information can include details about the task, the intended audience, and specific requirements."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen5b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen5b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, a prompt like 'You are a software developer working on a real-time chat application. Write a function in JavaScript that connects to a WebSocket server, sends a message, and logs any incoming messages to the console.' This context helps the model tailor its output to the specific needs of a real-time chat application."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -271,7 +341,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For instance, a prompt like 'You are a software developer working on a real-time chat application. Write a function in JavaScript that connects to a WebSocket server, sends a message, and logs any incoming messages to the console.' This context helps the model tailor its output to the specific needs of a real-time chat application."
+              content: "Ready for the next challenge, {username}? Let's see how well you can identify context in prompts!"
   - name: "Question #5"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -287,17 +357,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for the next challenge, {username}? Let's see how well you can identify context in prompts!"
-            - type: "text"
-              content: "Which of the following is an example of providing context in a prompt?\n\nA. 'Write a script to update a database.'\nB. 'You are developing a web application for an online bookstore. Write a Python script using SQLAlchemy that updates the book inventory in a PostgreSQL database based on sales data from a CSV file.'\nC. 'Create a new file.'\nD. 'Describe a database schema.'"
+              content: |
+                Which of the following is an example of providing context in a prompt?
+
+
+                A. 'Write a script to update a database.'
+
+                B. 'You are developing a web application for an online bookstore. Write a Python script using SQLAlchemy that updates the book inventory in a PostgreSQL database based on sales data from a CSV file.'
+
+                C. 'Create a new file.'
+
+                D. 'Describe a database schema.'
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen6_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen6_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen6_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen6_incorrect
       - id: screen6_correct
         type: message
@@ -329,7 +407,16 @@ tasks:
               content: "Providing context in a prompt means giving detailed background information and specifying the requirements and conditions under which the AI is expected to generate its output. This helps the model understand the broader scenario and produce responses that are tailored to the given situation. Contextual prompts enable the model to generate more relevant, accurate, and useful outputs by setting clear expectations and providing necessary details."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen6b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen6b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, the prompt 'You are developing a web application for an online bookstore. Write a Python script using SQLAlchemy that updates the book inventory in a PostgreSQL database based on sales data from a CSV file.' This prompt gives clear context about the application, the technology stack, and the specific task, helping the AI generate a precise and useful script."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -337,7 +424,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For instance, the prompt 'You are developing a web application for an online bookstore. Write a Python script using SQLAlchemy that updates the book inventory in a PostgreSQL database based on sales data from a CSV file.' This prompt gives clear context about the application, the technology stack, and the specific task, helping the AI generate a precise and useful script."
+              content: "Let's move forward, {username}! Here's a question about output indicators."
   - name: "Question #6"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -353,17 +440,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Let's move forward, {username}! Here's a question about output indicators."
-            - type: "text"
-              content: "What is the purpose of an output indicator in a prompt?\n\nA. To provide the model with input data\nB. To set benchmarks for evaluating the output, such as tone, style, length, and other desired qualities\nC. To limit the model's capabilities\nD. To make the prompt shorter"
+              content: |
+                What is the purpose of an output indicator in a prompt?
+
+
+                A. To provide the model with input data
+
+                B. To set benchmarks for evaluating the output, such as tone, style, length, and other desired qualities
+
+                C. To limit the model's capabilities
+
+                D. To make the prompt shorter
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen7_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen7_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen7_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen7_incorrect
       - id: screen7_correct
         type: message
@@ -395,7 +490,16 @@ tasks:
               content: "Output indicators in a prompt provide specific benchmarks that help guide the AI model in generating responses that meet certain criteria. These indicators can specify the tone, style, length, format, and other qualities desired in the output. By setting these benchmarks, the prompt helps ensure that the generated content aligns with the user's expectations and requirements, improving the relevance and quality of the AI's responses."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen7b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen7b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, a developer might use an output indicator by specifying, 'Generate a Python script with detailed inline comments explaining each step, in a professional and concise tone.' This directs the AI to not only create functional code but also ensure that the code is well-documented and professionally formatted."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -403,7 +507,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For example, a developer might use an output indicator by specifying, 'Generate a Python script with detailed inline comments explaining each step, in a professional and concise tone.' This directs the AI to not only create functional code but also ensure that the code is well-documented and professionally formatted."
+              content: "Ready for the next one, {username}? Let's talk about effective prompting!"
   - name: "Question #7"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -419,17 +523,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Ready for the next one, {username}? Let's talk about effective prompting!"
-            - type: "text"
-              content: "Which of the following is an example of an effective prompt for generating code?\n\nA. 'Write a Python script.'\nB. 'Generate a Python script that reads a CSV file, filters rows based on a condition, and writes the output to a new CSV file.'\nC. 'Create a new function.'\nD. 'Generate some code.'"
+              content: |
+                Which of the following is an example of an effective prompt for generating code?
+
+
+                A. 'Write a Python script.'
+
+                B. 'Generate a Python script that reads a CSV file, filters rows based on a condition, and writes the output to a new CSV file.'
+
+                C. 'Create a new function.'
+
+                D. 'Generate some code.'
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen8_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen8_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen8_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen8_incorrect
       - id: screen8_correct
         type: message
@@ -461,7 +573,16 @@ tasks:
               content: "An effective prompt for generating code includes detailed and specific instructions that clearly outline the task and expected output. This helps the AI model understand precisely what is required, leading to more accurate and useful code generation. Specificity in the prompt reduces ambiguity and guides the model to focus on the necessary steps and components to achieve the desired result."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen8b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen8b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, the prompt 'Generate a Python script that reads a CSV file, filters rows based on a condition, and writes the output to a new CSV file' provides clear and actionable instructions, ensuring that the generated script performs the specified data processing tasks accurately."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -469,7 +590,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For instance, the prompt 'Generate a Python script that reads a CSV file, filters rows based on a condition, and writes the output to a new CSV file' provides clear and actionable instructions, ensuring that the generated script performs the specified data processing tasks accurately."
+              content: "Let's keep going, {username}! Here's a question about the Chain-of-Thought approach."
   - name: "Question #8"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -485,17 +606,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Let's keep going, {username}! Here's a question about the Chain-of-Thought approach."
-            - type: "text"
-              content: "What does the Chain-of-Thought approach involve in prompt engineering?\n\nA. Providing a single complex prompt\nB. Breaking down complex tasks into smaller, manageable prompts through a series of related questions\nC. Asking the model to generate multiple outputs simultaneously\nD. Using only one example to guide the model"
+              content: |
+                What does the Chain-of-Thought approach involve in prompt engineering?
+
+
+                A. Providing a single complex prompt
+
+                B. Breaking down complex tasks into smaller, manageable prompts through a series of related questions
+
+                C. Asking the model to generate multiple outputs simultaneously
+
+                D. Using only one example to guide the model
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen9_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen9_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen9_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen9_incorrect
       - id: screen9_correct
         type: message
@@ -527,7 +656,16 @@ tasks:
               content: "The Chain-of-Thought approach in prompt engineering involves breaking down a complex task into a series of smaller, manageable prompts. This method allows the AI model to tackle each component of the task step-by-step, leading to more accurate and coherent outputs. By guiding the model through a sequence of related questions or prompts, the Chain-of-Thought approach helps ensure that the final output is comprehensive and well-structured."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen9b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen9b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For example, instead of asking the model to 'Design a full-stack web application,' a developer could break it down into smaller prompts: '1. Outline the overall architecture of a full-stack web application. 2. Generate the backend API endpoints using Flask. 3. Create the frontend user interface with React.' This step-by-step guidance helps the AI produce a more detailed and accurate overall design."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -535,7 +673,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For example, instead of asking the model to 'Design a full-stack web application,' a developer could break it down into smaller prompts: '1. Outline the overall architecture of a full-stack web application. 2. Generate the backend API endpoints using Flask. 3. Create the frontend user interface with React.' This step-by-step guidance helps the AI produce a more detailed and accurate overall design."
+              content: "Ready for the next one, {username}? Let's discuss iterative refinement in prompt engineering."
   - name: "Question #9"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -551,17 +689,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Next question, {username}! Let's discuss iterative refinement in prompt engineering."
-            - type: "text"
-              content: "What is the purpose of iterative refinement in prompt engineering?\n\nA. To limit the model's output\nB. To continuously improve the quality of the model's responses\nC. To reduce the length of the prompt\nD. To make the prompt more complex"
+              content: |
+                What is the purpose of iterative refinement in prompt engineering?
+
+
+                A. To limit the model's output
+
+                B. To continuously improve the quality of the model's responses
+
+                C. To reduce the length of the prompt
+
+                D. To make the prompt more complex
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen10_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen10_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen10_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen10_incorrect
       - id: screen10_correct
         type: message
@@ -593,7 +739,16 @@ tasks:
               content: "Iterative refinement in prompt engineering refers to the process of continuously improving the prompts based on the AI's outputs. By reviewing and tweaking the prompts, users can enhance the clarity, relevance, and accuracy of the generated responses. This approach helps in identifying and correcting any shortcomings in the prompts, leading to better-aligned and higher-quality outputs over multiple iterations."
         edges:
           - text: "Give me an example, Ada!"
+            target_node_id: screen10b
+          - text: "On to the next, Ada!"
             target_node_id: END
+      - id: screen10b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "For instance, a developer might start with a prompt like 'Generate a RESTful API in Python.' After reviewing the initial output, they might refine the prompt to 'Generate a RESTful API in Python using Flask, including endpoints for CRUD operations on a 'users' resource.' Further refinements could include specifying authentication mechanisms or error handling, resulting in progressively better and more precise API code."
+        edges:
           - text: "On to the next, Ada!"
             target_node_id: END
       - id: END
@@ -601,7 +756,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For instance, a developer might start with a prompt like \"Generate a RESTful API in Python.\" After reviewing the initial output, they might refine the prompt to \"Generate a RESTful API in Python using Flask, including endpoints for CRUD operations on a 'users' resource.\" Further refinements could include specifying authentication mechanisms or error handling, resulting in progressively better and more precise API code."
+              content: "Ready for the next one, {username}? Let's see how well you understand prompt engineering!"
   - name: "Question #10"
     context: |
       This probe evaluates your understanding of prompt engineering for developers, focusing on creating effective prompts to guide AI models.
@@ -617,17 +772,25 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here's the next one, {username}! Why is clarity crucial in prompt engineering?"
-            - type: "text"
-              content: "Why is clarity important in prompt engineering?\n\nA. It makes the prompt longer\nB. It ensures the AI model understands the task correctly and produces accurate responses\nC. It confuses the model\nD. It limits the model's capabilities"
+              content: |
+                Why is clarity important in prompt engineering?
+
+
+                A. It makes the prompt longer
+
+                B. It ensures the AI model understands the task correctly and produces accurate responses
+
+                C. It confuses the model
+
+                D. It limits the model's capabilities
         edges:
-          - text: "a"
+          - text: "A"
             target_node_id: screen11_incorrect
-          - text: "b"
+          - text: "B"
             target_node_id: screen11_correct
-          - text: "c"
+          - text: "C"
             target_node_id: screen11_incorrect
-          - text: "d"
+          - text: "D"
             target_node_id: screen11_incorrect
       - id: screen11_correct
         type: message
@@ -667,7 +830,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "For example, a clear prompt like \"Write a Python function named 'calculate_average' that takes a list of numbers as input and returns the average value, handling possible empty list scenarios by returning None\" provides specific instructions that help the AI generate accurate and useful code. In contrast, a vague prompt like \"Write a function to calculate averages\" might lead to unclear or incomplete implementations."
+              content: "For example, a clear prompt like 'Write a Python function named 'calculate_average' that takes a list of numbers as input and returns the average value, handling possible empty list scenarios by returning None' provides specific instructions that help the AI generate accurate and useful code. In contrast, a vague prompt like 'Write a function to calculate averages' might lead to unclear or incomplete implementations."
         edges:
           - text: "On to the next, Ada!"
             target_node_id: END

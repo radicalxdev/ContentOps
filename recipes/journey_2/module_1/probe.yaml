@@ -25,15 +25,25 @@ tasks:
           - type: "text"
             content: "Alright {username}, let's begin with our first question!"
           - type: "text"
-            content: "What is the best way to provide context to GitHub Copilot for better code suggestions?\n\nA. By keeping all files closed in the editor.\nB. By using complex function names.\nC. By providing meaningful function names, specific function comments, and having related files open in the editor.\nD. By frequently switching between different coding languages."
+            content: |
+              What is the best way to provide context to GitHub Copilot for better code suggestions?
+
+
+              A. By keeping all files closed in the editor.
+
+              B. By using complex function names.
+
+              C. By providing meaningful function names, specific function comments, and having related files open in the editor.
+
+              D. By frequently switching between different coding languages.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen2_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen2_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen2_correct
-        - text: "d"
+        - text: "D"
           target_node_id: screen2_incorrect
     - id: screen2_correct
       type: message
@@ -65,7 +75,16 @@ tasks:
             content: "To maximize the effectiveness of GitHub Copilot, developers should provide meaningful context through clear and descriptive function names, specific comments within the code, and ensuring that related files are open in the editor. This context allows Copilot to better understand the structure and purpose of the code, leading to more relevant and accurate code suggestions. Without this context, Copilot might struggle to generate useful completions or suggestions."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen2b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen2b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, when writing a function to calculate the area of a rectangle, naming the function `calculateRectangleArea` and adding a comment like `// Function to calculate the area of a rectangle given width and height` provides Copilot with enough context to generate precise code for this function. Additionally, having related modules, such as geometry utilities, open in the editor can further improve suggestion accuracy."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -73,7 +92,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, when writing a function to calculate the area of a rectangle, naming the function `calculateRectangleArea` and adding a comment like `// Function to calculate the area of a rectangle given width and height` provides Copilot with enough context to generate precise code for this function. Additionally, having related modules, such as geometry utilities, open in the editor can further improve suggestion accuracy."
+            content: "Ready for the next one, {username}? Let's see how you can optimize your experience with GitHub Copilot Chat!"
   - name: "Question #2"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -89,17 +108,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next one, {username}? Let's see how you can optimize your experience with GitHub Copilot Chat!"
-          - type: "text"
-            content: "How can a developer optimize their experience when interacting with GitHub Copilot via chat?\n\nA. By being vague about the inputs, outputs, APIs, or frameworks they want to use.\nB. By using chat participants, slash commands, chat variables, and being specific in your prompts.\nC. By asking Copilot to perform large tasks at once.\nD. By using only keyboard shortcuts without any descriptive prompts."
+            content: |
+              How can a developer optimize their experience when interacting with GitHub Copilot via chat?
+
+
+              A. By being vague about the inputs, outputs, APIs, or frameworks they want to use.
+
+              B. By using chat participants, slash commands, chat variables, and being specific in your prompts.
+
+              C. By asking Copilot to perform large tasks at once.
+
+              D. By using only keyboard shortcuts without any descriptive prompts.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen3_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen3_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen3_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen3_incorrect
     - id: screen3_correct
       type: message
@@ -131,7 +158,16 @@ tasks:
             content: "To optimize the interaction with GitHub Copilot via chat, developers should be specific in their prompts, clearly defining the inputs, outputs, APIs, or frameworks they are using. Utilizing chat participants, slash commands, and chat variables can also help structure the conversation and guide Copilot towards more accurate and helpful responses. Vague or broad requests can lead to less relevant or generic suggestions, whereas specificity enhances the relevance and usefulness of Copilot's outputs."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen3b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen3b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, instead of asking 'How do I use an API?' a more effective prompt would be 'Show me how to use the Fetch API in JavaScript to retrieve data from a public API endpoint and display it on a webpage.' This specific request helps Copilot provide a detailed and contextually relevant response."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -139,7 +175,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, instead of asking 'How do I use an API?' a more effective prompt would be 'Show me how to use the Fetch API in JavaScript to retrieve data from a public API endpoint and display it on a webpage.' This specific request helps Copilot provide a detailed and contextually relevant response."
+            content: "Ready for the next one, {username}? Let's discuss maintaining high code quality!"
   - name: "Question #3"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -155,17 +191,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for another question, {username}? Let's discuss maintaining high code quality!"
-          - type: "text"
-            content: "What is the effect of maintaining a high quality bar in your code when using GitHub Copilot?\n\nA. Copilot latches on to your code to generate suggestions that follow the existing pattern.\nB. It confuses Copilot and leads to irrelevant suggestions.\nC. It slows down the suggestion process.\nD. It has no impact on Copilot's suggestions."
+            content: |
+              What is the effect of maintaining a high quality bar in your code when using GitHub Copilot?
+
+
+              A. Copilot latches on to your code to generate suggestions that follow the existing pattern.
+
+              B. It confuses Copilot and leads to irrelevant suggestions.
+
+              C. It slows down the suggestion process.
+
+              D. It has no impact on Copilot's suggestions.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen4_correct
-        - text: "b"
+        - text: "B"
           target_node_id: screen4_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen4_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen4_incorrect
     - id: screen4_correct
       type: message
@@ -197,7 +241,16 @@ tasks:
             content: "Keeping a high quality bar in your code encourages GitHub Copilot to generate suggestions that are consistent with the existing codebase's standards and patterns. This means that well-structured, clean, and documented code will guide Copilot to produce similarly high-quality suggestions. Conversely, poorly written code can result in less effective and potentially error-prone suggestions from Copilot."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen4b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen4b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, if a developer maintains clean and well-documented code when implementing a new feature, Copilot will be more likely to generate suggestions that include proper documentation, adhere to coding standards, and integrate seamlessly with the existing codebase. This helps maintain overall code quality and consistency."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -205,7 +258,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, if a developer maintains clean and well-documented code when implementing a new feature, Copilot will be more likely to generate suggestions that include proper documentation, adhere to coding standards, and integrate seamlessly with the existing codebase. This helps maintain overall code quality and consistency."
+            content: "Ready for the next one, {username}? Let's see how GitHub Copilot determines code suggestions!"
   - name: "Question #4"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -221,17 +274,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for the next one, {username}? Let's see how GitHub Copilot determines code suggestions!"
-          - type: "text"
-            content: "How does GitHub Copilot determine the code completion suggestions it provides?\n\nA. Based on the context of code in the editor.\nB. Based on the programming language used.\nC. Based on the length of the code written.\nD. Based on the frequency of code commits."
+            content: |
+              How does GitHub Copilot determine the code completion suggestions it provides?
+
+
+              A. Based on the context of code in the editor.
+
+              B. Based on the programming language used.
+
+              C. Based on the length of the code written.
+
+              D. Based on the frequency of code commits.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen5_correct
-        - text: "b"
+        - text: "B"
           target_node_id: screen5_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen5_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen5_incorrect
     - id: screen5_correct
       type: message
@@ -263,7 +324,16 @@ tasks:
             content: "GitHub Copilot analyzes the context of the code currently open and being edited to generate code completion suggestions. This includes understanding the surrounding code, function definitions, comments, and any other relevant files in the project. By considering this context, Copilot can offer more precise and contextually appropriate suggestions that integrate smoothly with the existing code."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen5b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen5b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, if a developer is writing a function to handle user authentication in a file where other authentication-related functions are defined, Copilot will use this context to suggest code that aligns with the existing authentication logic and conventions in the file."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -271,7 +341,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, if a developer is writing a function to handle user authentication in a file where other authentication-related functions are defined, Copilot will use this context to suggest code that aligns with the existing authentication logic and conventions in the file."
+            content: "Ready for the next one, {username}? Let's explore code completion suggestions!"
   - name: "Question #5"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -287,17 +357,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Ready for another question, {username}? Let's talk about code completion suggestions!"
-          - type: "text"
-            content: "What happens when GitHub Copilot generates more than one code completion suggestion?\n\nA. It adds all of the suggestions to your code.\nB. It selects the most relevant suggestion automatically.\nC. It enables developers to review each suggestion by selecting the left or right arrows.\nD. It ignores all suggestions and prompts the developer to re-enter the code."
+            content: |
+              What happens when GitHub Copilot generates more than one code completion suggestion?
+
+
+              A. It adds all of the suggestions to your code.
+
+              B. It selects the most relevant suggestion automatically.
+
+              C. It enables developers to review each suggestion by selecting the left or right arrows.
+
+              D. It ignores all suggestions and prompts the developer to re-enter the code.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen6_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen6_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen6_correct
-        - text: "d"
+        - text: "D"
           target_node_id: screen6_incorrect
     - id: screen6_correct
       type: message
@@ -329,7 +407,16 @@ tasks:
             content: "When GitHub Copilot generates more than one code completion suggestion, it provides an interface that allows developers to review each suggestion by navigating through them using left or right arrows. This feature helps developers evaluate the different options and select the most relevant or accurate one for their specific use case. It ensures that developers can consider multiple possible solutions and choose the best fit for their code."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen6b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen6b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, if Copilot generates several different ways to implement a sorting algorithm, the developer can use the arrows to review each implementation and choose the one that best fits their requirements or coding style."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -337,7 +424,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, if Copilot generates several different ways to implement a sorting algorithm, the developer can use the arrows to review each implementation and choose the one that best fits their requirements or coding style."
+            content: "Ready for the next one, {username}? Let's dive into the inline chat feature in GitHub Copilot!"
   - name: "Question #6"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -353,17 +440,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next question, {username}! Let's talk about the inline chat feature in GitHub Copilot."
-          - type: "text"
-            content: "What is the purpose of the inline chat feature in GitHub Copilot?\n\nA. To run and debug unit tests.\nB. To write new code snippets for unit tests.\nC. To ask questions and get help while coding, without leaving the code editor.\nD. To format code according to style guidelines."
+            content: |
+              What is the purpose of the inline chat feature in GitHub Copilot?
+
+
+              A. To run and debug unit tests.
+
+              B. To write new code snippets for unit tests.
+
+              C. To ask questions and get help while coding, without leaving the code editor.
+
+              D. To format code according to style guidelines.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen7_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen7_incorrect
-        - text: "c"
+        - text: "C"
           target_node_id: screen7_correct
-        - text: "d"
+        - text: "D"
           target_node_id: screen7_incorrect
     - id: screen7_correct
       type: message
@@ -395,7 +490,16 @@ tasks:
             content: "The inline chat feature in GitHub Copilot is designed to provide a seamless way for developers to ask questions and receive help without having to leave the code editor. This feature enhances productivity by allowing developers to get real-time assistance, clarify doubts, and find relevant code examples or explanations, all within the context of their current coding environment."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen7b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen7b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, if a developer is unsure about how to use a specific method in a library, they can use the inline chat to ask, 'How do I use the `find` method in the lodash library?' Copilot can then provide a detailed explanation and example directly in the editor, saving time and keeping the workflow uninterrupted."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -403,7 +507,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, if a developer is unsure about how to use a specific method in a library, they can use the inline chat to ask, 'How do I use the `find` method in the lodash library?' Copilot can then provide a detailed explanation and example directly in the editor, saving time and keeping the workflow uninterrupted."
+            content: "Ready for the next one, {username}? Let's explore how Copilot helps with unfamiliar libraries or frameworks!"
   - name: "Question #7"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -419,17 +523,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's another one, {username}! Let's discuss how Copilot helps with unfamiliar libraries or frameworks."
-          - type: "text"
-            content: "What benefit does GitHub Copilot provide when dealing with unfamiliar libraries or frameworks?\n\nA. It ignores the unfamiliar libraries or frameworks.\nB. It provides suggestions and code examples that demonstrate how to use the new resources.\nC. It automatically installs the libraries or frameworks.\nD. It removes the unfamiliar libraries or frameworks from the code."
+            content: |
+              What benefit does GitHub Copilot provide when dealing with unfamiliar libraries or frameworks?
+
+
+              A. It ignores the unfamiliar libraries or frameworks.
+
+              B. It provides suggestions and code examples that demonstrate how to use the new resources.
+
+              C. It automatically installs the libraries or frameworks.
+
+              D. It removes the unfamiliar libraries or frameworks from the code.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen8_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen8_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen8_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen8_incorrect
     - id: screen8_correct
       type: message
@@ -461,7 +573,16 @@ tasks:
             content: "When developers encounter unfamiliar libraries or frameworks, GitHub Copilot can provide valuable assistance by generating suggestions and code examples that demonstrate how to use these new resources effectively. This helps developers quickly learn and integrate new tools into their projects, enhancing their productivity and reducing the learning curve associated with adopting new technologies."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen8b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen8b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, if a developer is using a new framework like Next.js for the first time, they can ask Copilot for help by typing 'How do I set up routing in Next.js?' Copilot can then generate sample code and explanations, guiding the developer through the process of setting up routes in their project."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -469,7 +590,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, if a developer is using a new framework like Next.js for the first time, they can ask Copilot for help by typing 'How do I set up routing in Next.js?' Copilot can then generate sample code and explanations, guiding the developer through the process of setting up routes in their project."
+            content: "Let's keep going, {username}! Here's a question about Copilot's assistance with initial code structures."
   - name: "Question #8"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -485,17 +606,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Let's keep going, {username}! Here's a question about Copilot's assistance with initial code structures."
-          - type: "text"
-            content: "How does GitHub Copilot enhance the development of initial code structures?\n\nA. By writing the entire codebase automatically.\nB. By generating code completion suggestions as you type, based on the existing code and comments.\nC. By removing all comments from the code.\nD. By creating project documentation automatically."
+            content: |
+              How does GitHub Copilot enhance the development of initial code structures?
+
+
+              A. By writing the entire codebase automatically.
+
+              B. By generating code completion suggestions as you type, based on the existing code and comments.
+
+              C. By removing all comments from the code.
+
+              D. By creating project documentation automatically.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen9_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen9_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen9_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen9_incorrect
     - id: screen9_correct
       type: message
@@ -527,7 +656,16 @@ tasks:
             content: "GitHub Copilot enhances the development of initial code structures by providing real-time code completion suggestions as developers type. These suggestions are based on the existing code, comments, and context within the editor, helping developers quickly build out their codebase with relevant and accurate snippets. This accelerates the coding process and ensures that the initial code structure is well-aligned with the intended functionality."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen9b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen9b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For instance, if a developer is creating a new function to handle user authentication and has written the initial comments, Copilot can suggest the necessary code to implement the function based on those comments, streamlining the development process and ensuring that the code matches the described functionality."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -535,7 +673,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For instance, if a developer is creating a new function to handle user authentication and has written the initial comments, Copilot can suggest the necessary code to implement the function based on those comments, streamlining the development process and ensuring that the code matches the described functionality."
+            content: "Here's the next question, {username}! Let's explore the role of chat participants, slash commands, and chat variables in GitHub Copilot Chat."
   - name: "Question #9"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -551,17 +689,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Here's the next question, {username}! Let's explore the role of chat participants, slash commands, and chat variables in GitHub Copilot Chat."
-          - type: "text"
-            content: "What role do chat participants, slash commands, and chat variables play in GitHub Copilot Chat?\n\nA. They slow down the chat responses.\nB. They help Copilot Chat understand the context and intent of your questions, leading to more relevant responses.\nC. They confuse Copilot Chat.\nD. They limit the functionality of Copilot Chat."
+            content: |
+              What role do chat participants, slash commands, and chat variables play in GitHub Copilot Chat?
+
+
+              A. They slow down the chat responses.
+
+              B. They help Copilot Chat understand the context and intent of your questions, leading to more relevant responses.
+
+              C. They confuse Copilot Chat.
+
+              D. They limit the functionality of Copilot Chat.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen10_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen10_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen10_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen10_incorrect
     - id: screen10_correct
       type: message
@@ -593,7 +739,16 @@ tasks:
             content: "Chat participants, slash commands, and chat variables play a crucial role in enhancing the functionality and accuracy of GitHub Copilot Chat. They help the chat interface understand the specific context and intent behind a developer's questions or commands, enabling Copilot to provide more accurate and relevant responses. By clearly defining the roles and context within the conversation, these features ensure that Copilot's assistance is better tailored to the developer's needs."
       edges:
         - text: "Give me an example, Ada!"
+          target_node_id: screen10b
+        - text: "On to the next, Ada!"
           target_node_id: END
+    - id: screen10b
+      type: message
+      body:
+        parts:
+          - type: "text"
+            content: "For example, a developer might use a slash command like `/explain` followed by a specific function name to get a detailed explanation of what the function does. This clear context helps Copilot provide a precise and relevant response."
+      edges:
         - text: "On to the next, Ada!"
           target_node_id: END
     - id: END
@@ -601,7 +756,7 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "For example, a developer might use a slash command like `/explain` followed by a specific function name to get a detailed explanation of what the function does. This clear context helps Copilot provide a precise and relevant response."
+            content: "Almost there, {username}! Let's discuss the importance of reviewing code generated by GitHub Copilot."
   - name: "Question #10"
     context: |
       This probe reinforces your understanding of using GitHub Copilot for developing code features.
@@ -617,17 +772,25 @@ tasks:
       body:
         parts:
           - type: "text"
-            content: "Almost there, {username}! Let's discuss the importance of reviewing code generated by GitHub Copilot."
-          - type: "text"
-            content: "Why should developers review the code generated by GitHub Copilot?\n\nA. Because Copilot never makes mistakes.\nB. To ensure the generated code meets their requirements and follows best practices.\nC. To automatically accept all suggestions.\nD. To save time without considering code quality."
+            content: |
+              Why should developers review the code generated by GitHub Copilot?
+
+
+              A. Because Copilot never makes mistakes.
+
+              B. To ensure the generated code meets their requirements and follows best practices.
+
+              C. To automatically accept all suggestions.
+
+              D. To save time without considering code quality.
       edges:
-        - text: "a"
+        - text: "A"
           target_node_id: screen11_incorrect
-        - text: "b"
+        - text: "B"
           target_node_id: screen11_correct
-        - text: "c"
+        - text: "C"
           target_node_id: screen11_incorrect
-        - text: "d"
+        - text: "D"
           target_node_id: screen11_incorrect
     - id: screen11_correct
       type: message
