@@ -85,6 +85,8 @@ tasks:
                 ```
             - type: "text"
               content: "Review the suggestions provided by GitHub Copilot."
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_1.png?alt=media&token=7261c36d-470e-4ad4-87b0-300aa26b7113"
         edges:
           - text: "Yes, let's review!"
             target_node_id: "screen3"
@@ -127,6 +129,8 @@ tasks:
                 ```
             - type: "text"
               content: "Review the code suggestions provided by GitHub Copilot."
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_2.png?alt=media&token=98a8e694-01e4-4951-8fb1-63614dd42223"
         edges:
           - text: "Yes, let's review!"
             target_node_id: "END"
@@ -163,6 +167,8 @@ tasks:
                 ```
             - type: "text"
               content: "Review the code suggestions provided by GitHub Copilot."
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_3.png?alt=media&token=387fba0c-0e12-4a64-bc2a-f6235a2b4519"
         edges:
           - text: "Yes, let's review!"
             target_node_id: "END"
@@ -205,6 +211,8 @@ tasks:
                 ```
             - type: "text"
               content: "Review the code suggestions provided by GitHub Copilot."
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_4.png?alt=media&token=5398c6fc-e87a-49a5-8fb3-3baaa7f14b21"
         edges:
           - text: "Yes, let's review!"
             target_node_id: "screen9"

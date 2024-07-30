@@ -95,7 +95,7 @@ tasks:
               content: |
                 Examine Copilot's response. It may suggest strategies such as `error handling` with exceptions, `type checking` or annotations, unit and integration testing, and logging among others.
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmission_2_1.png?alt=media&token=8253f590-8465-4721-98be-27f8ebdabd35"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_1.png?alt=media&token=5d9fc893-b946-45de-926f-cb1065733579"
             - type: "text"
               content: "Ready to focus on handling database errors with SQLAlchemy?"
         edges:
@@ -127,7 +127,7 @@ tasks:
               content: |
                 Review Copilot's suggestions for advanced methods such as transaction management and connection pooling.
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmission_2_2.png?alt=media&token=ac1deab7-a7fa-41b6-acce-021bb284b981"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_2.png?alt=media&token=51e25ac0-2af0-4d07-9052-6eede9052bc9"
             - type: "text"
               content: "Ready to implement a strategy for handling SQLAlchemy exceptions?"
         edges:
@@ -159,7 +159,7 @@ tasks:
               content: |
                 Observe how Copilot suggests new files, modifies files, and demonstrates highly specific suggestions based on your project's configuration.
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmission_2_3.png?alt=media&token=d14f2c9d-8146-48f3-8915-ea90472aecfb"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_3.png?alt=media&token=bb08eda0-b5ea-42bd-91d5-e484a37812a9"
             - type: "text"
               content: "Ready to proceed to improving code performance?"
 
@@ -172,7 +172,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmission_2_4.png?alt=media&token=7543c500-ddac-46a8-bfbf-4c9b19be8650"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_4.png?alt=media&token=91a6d853-1b91-447e-9931-df705a430dbf"
             - type: "text"
               content: |
                 Similar to code reliability, we can have conversations with Copilot to improve the performance of our code. To the experienced eye, the routes defined in the current API implementation are synchronous events within the FastAPI server, meaning concurrent requests will be done one-by-one and expensive requests will require the rest of the line to wait.
@@ -196,7 +196,7 @@ tasks:
               content: |
                 Examine Copilot's response. It may suggest using asynchronous handlers, background tasks, and other methods. We will focus on asynchronous handlers for routes.
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmission_2_5.png?alt=media&token=a533a6da-a6d5-4ebb-92b4-1ee106fce177"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_5.png?alt=media&token=9eca98f1-3f5e-49d5-8732-edf93932b2cd"
             - type: "text"
               content: "Ready to implement asynchronous handlers?"
         edges:
