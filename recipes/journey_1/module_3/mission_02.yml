@@ -87,7 +87,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%204%2Fmission_2_1.png?alt=media&token=97885e63-9c5f-409b-8fec-86d93e0f9267"
             - type: "text"
               content: |
                 Let's start by using the `@workspace` command to get a recommendation for organizing the new webhook function within the codebase. Here's an example prompt:
@@ -117,7 +117,7 @@ tasks:
                 3. Finally, suggest a module to place the webhooks file within the codebase.
                 ```
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%204%2Fmission_2_2.png?alt=media&token=cd17be7a-c71c-42ac-be0d-436c1d7231e0"
             - type: "text"
               content: |
                 Take a minute to examine the responses. Notice the difference in recommendations. Both responses suggest placing the new feature within the `app/api/` module, but the Chain-of-Thought reasoning also recommends creating a new file within the `app/api/` folder, adhering to the single responsibility principle. Let's dive deeper into a few more examples like the difference of the code suggestion when given two prompting techniques.
@@ -135,12 +135,12 @@ tasks:
                 
                 **Zero-shot Prompt Output:**
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%204%2Fmission_2_3.png?alt=media&token=cb086f80-98d4-42dc-a888-84872f0aa127"
             - type: "text"
               content: |
                 **Chain of Thought Reasoning Output:**
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%201%2FModule%203%2FUnit%204%2Fmission_2_4.png?alt=media&token=3e1cf41c-dbb8-4b0c-86fc-a511a7510991"
             - type: "text"
               content: |
                 Notice how the Chain-of-Thought reasoning provides a more detailed and step-by-step approach, while the zero-shot prompt is less specific. Ready to proceed to the summary?

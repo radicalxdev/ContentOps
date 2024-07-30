@@ -7,8 +7,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Welcome to "Advanced Prompt Engineering Techniques." In this quest, you will explore advanced techniques for crafting effective prompts to optimize the performance of generative AI models. This lesson is specifically designed for developers and engineers, focusing on methods to improve the reliability, specificity, and quality of AI-generated responses.
@@ -24,8 +24,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Overview of the Quest
@@ -49,8 +49,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now we will explore the Text-to-Text Approach to prompt engineering. This approach focuses on crafting effective text prompts to guide LLMs (Large Language Models) to produce relevant and accurate outputs.
@@ -66,8 +66,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 The text-to-text approach in the context of large language models (LLMs) refers to a method of interacting with these models where both the input (prompt) and output (response) are in text form. This approach relies on crafting specific prompts that guide the model to generate text-based outputs aligned with the user's intentions.
@@ -83,8 +83,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are the key techniques for effective text prompts:
@@ -109,8 +109,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Explicitly specifying the objective to the LLM increases the accuracy of responses.
@@ -130,8 +130,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When using the task specification technique, striking the right balance between specificity and flexibility may be challenging. Overly specific prompts may limit the AI's creativity, while too flexible prompts can lead to vague or irrelevant responses.
@@ -147,8 +147,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Providing specific instructions and context ensures the model generates relevant output.
@@ -168,8 +168,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When using contextual guidance, providing the right amount of context is crucial. Including too much context can overwhelm the AI and lead to unnecessary details, whereas insufficient context may result in incomplete or inaccurate responses.
@@ -185,8 +185,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Using domain-specific terminology enhances the accuracy of content in specialized fields.
@@ -206,8 +206,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When using domain expertise, ensuring accurate use of technical jargon is important. Incorrect or overly complex terminology can confuse the AI, leading to errors. Ensuring accuracy and appropriateness of the terminology requires deep subject matter expertise.
@@ -223,8 +223,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Crafting prompts to generate neutral responses helps reduce bias.
@@ -244,8 +244,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When using bias mitigation, eliminating all biases is challenging due to the inherent biases present in training data. Crafting neutral prompts can be difficult and may not fully address all biases.
@@ -261,8 +261,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Guiding the model to generate responses within specific boundaries.
@@ -282,8 +282,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When using framing, setting appropriate boundaries is crucial. Boundaries that are too narrow can result in overly concise responses, while broad boundaries may lead to off-topic or excessive information. Finding the right scope is essential.
@@ -299,8 +299,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Generative AI models can perform tasks without prior training on specific prompts.
@@ -320,8 +320,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When using zero-shot prompting, handling unfamiliar tasks can be challenging. The AI may struggle with tasks it has no prior training for, leading to less accurate or relevant outputs. Zero-shot prompting relies heavily on the model's generalization capabilities.
@@ -337,8 +337,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+            # - type: "image"
+            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Providing demonstrations within prompts to guide the model to better performance.
@@ -358,8 +358,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 When using few-shot prompting, balancing the number of examples is important. Providing too few examples may not give the AI enough context to perform well, while too many examples can lead to overfitting or excessive reliance on the provided examples.
@@ -375,8 +375,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Iteratively refining prompts based on user feedback to improve the model's output quality.
@@ -396,8 +396,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 When using the user feedback loop, iteratively refining prompts can be time-consuming. This process can be slow and resource-intensive, requiring continuous monitoring and adjustment to achieve optimal results.
@@ -413,8 +413,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Using text prompts with LLMs offers several advantages:
@@ -433,8 +433,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 The next prompt-engineering approach we will discuss is the Interview Pattern Approach. This involves designing prompts that simulate a conversation with the model to enhance specificity and relevance. You will get the chance to experiment with this approach in your upcoming mission.
@@ -450,8 +450,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### How the Interview Pattern Approach Works
@@ -470,8 +470,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Example: Project Planning
@@ -499,8 +499,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Benefits of the Interview Pattern Approach
@@ -520,8 +520,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Challenges
@@ -541,8 +541,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Great! Now we will explore the Chain of Thought Approach. This approach involves constructing a sequence of prompts to guide AI models toward coherent and contextually accurate responses.
@@ -558,8 +558,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### How the Chain-of-Thought Approach Works
@@ -578,8 +578,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Example: Debugging Code
@@ -603,8 +603,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Benefits of the Chain-of-Thought Approach
@@ -624,8 +624,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Challenges
@@ -645,8 +645,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 The last approach we will discuss is the Tree of Thought Approach. This approach involves using hierarchical structuring of prompts to enable advanced reasoning capabilities in AI models.
@@ -662,8 +662,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### How the Tree-of-Thought Approach Works
@@ -682,8 +682,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Example: System Architecture Design
@@ -705,8 +705,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Benefits of the Tree-of-Thought Approach
@@ -726,8 +726,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 ### Challenges
@@ -746,8 +746,8 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
+            # - type: "image"
+            #   content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Great work! You have now covered advanced prompt engineering techniques and are ready to apply these to enhance your current workflow. Here's a summary of what we've learned so far: 
