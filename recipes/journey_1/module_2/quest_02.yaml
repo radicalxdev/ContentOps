@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Welcome to the Quest of Leveraging Generative AI in the Software Development Lifecycle (SDLC)! In this lesson, we will explore how AI can transform various phases of the SDLC, enhancing efficiency, accuracy, and overall effectiveness.
@@ -24,8 +22,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 In this lesson, we will cover:
@@ -48,8 +44,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 The Software Development Lifecycle (SDLC) consists of several phases:
@@ -72,8 +66,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 AI plays a transformative role in the SDLC by:
@@ -93,8 +85,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 AI optimizes each SDLC phase as follows:
@@ -116,8 +106,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's explore how AI can transform requirements gathering and analysis by automating processes and identifying patterns in large datasets. AI tools can significantly enhance the accuracy and efficiency of this critical phase in the SDLC.
@@ -133,8 +121,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Role of AI
@@ -150,8 +136,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Different techniques can be used to leverage AI for this stage, such as: 
@@ -170,8 +154,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Example: IBM Watson
@@ -187,8 +169,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Financial Services
@@ -204,8 +184,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Pattern Recognition
@@ -221,8 +199,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Healthcare Startup
@@ -238,8 +214,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's dive into how AI can enhance the design and architecture phase of the SDLC.
@@ -258,8 +232,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Generative AI can identify and suggest design patterns that optimize software architecture. For example, OpenAI’s Codex suggests design patterns that improve the structure and efficiency of the code.
@@ -275,8 +247,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: E-commerce Platform
@@ -292,8 +262,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 AI tools can also recommend scalable design solutions to enhance performance and reduce costs.
@@ -309,8 +277,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Logistics Company
@@ -326,8 +292,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's explore how AI automates coding tasks and assists in code review, enhancing the overall quality and efficiency of software development. AI automates coding tasks and assists in code review, significantly enhancing code quality and developer productivity. By leveraging AI tools, developers can focus on more complex and creative aspects of coding.
@@ -341,8 +305,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Code Generation
@@ -360,8 +322,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: SaaS Provider
@@ -379,8 +339,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 AI tools can also perform static analysis to identify potential vulnerabilities and code issues early in the development process. Synk’s DeepCode, for example, can analyze code for vulnerabilities, suggesting fixes and improvements to enhance code security and quality.
@@ -394,8 +352,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Cybersecurity Firm
@@ -411,8 +367,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 The next phase of the Software Development Lifecycle is Testing and Quality Assurance. AI can significantly improve the accuracy and speed of the testing phase in the SDLC by automating test case generation and execution, therefore enhancing test coverage and efficiency.
@@ -428,8 +382,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 AI tools can generate diverse synthetic test cases to ensure comprehensive testing coverage. Testim, for example, uses AI to generate a wide range of test cases, covering various scenarios and edge cases.
@@ -445,8 +397,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Mobile App Developer
@@ -462,8 +412,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 AI tools, such as those developed by Applitools, can predict high-risk areas in the code that are more likely to contain defects. This allows developers to focus their testing efforts effectively, identifying and addressing potential issues before they become critical.
@@ -477,8 +425,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Enterprise Software Company
@@ -494,8 +440,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 The next phase of the Lifecycle is Deployment and Maintenance. AI can automate deployment processes and monitor software performance post-deployment. This ensures consistent, error-free deployments and proactive maintenance, enhancing the overall reliability of the software.
@@ -509,8 +453,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Consistent Deployments
@@ -526,8 +468,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Cloud Service Provider
@@ -543,8 +483,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Proactive Maintenance
@@ -560,8 +498,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: IoT Company
@@ -577,8 +513,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now let's explore how AI can enhance DevOps by automating decision-making, boosting real-time monitoring, and optimizing release management.
@@ -592,8 +526,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### CI/CD Automation
@@ -611,8 +543,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Fintech Company
@@ -628,8 +558,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Anomaly Detection
@@ -645,8 +573,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Case Study: Telecom Company
@@ -662,8 +588,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Having explored the various ways AI can streamline different stages of the Software Development Lifecycle, let's delve into a key skill that can enhance your productivity across all these applications: critical thinking.
@@ -678,8 +602,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Software developers should use AI as a tool to augment, not replace, their own skills. It's essential to maintain a critical eye when evaluating AI-generated outputs. By striking a balance between AI's power and human intelligence, you can unlock the full potential of AI while managing any risks. Use your own judgement to identify potential errors, evaluate the appropriateness of the suggested solutions, and make informed decisions about using AI-generated outputs in your work.
@@ -694,8 +616,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are a few ways developers can maintain critical thinking skills while working with AI:
@@ -760,8 +680,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's recap what we have learned about leveraging AI in the Software Development Lifecycle (SDLC):
@@ -781,8 +699,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 ### Key Takeaways:
@@ -802,8 +718,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 As we conclude this quest, remember that AI is a powerful tool that can transform your software development processes. By understanding AI's role in the SDLC and applying it thoughtfully, you can enhance your projects' efficiency, quality, and success.

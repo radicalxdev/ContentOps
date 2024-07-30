@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Welcome to the Quest on Prompt Engineering for Developers! This quest aims to equip you with the skills to design effective prompts for generative AI models, enhancing your capabilities in various development tasks.
@@ -22,8 +20,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 A prompt, in the context of generative AI, is the input that you provide to the AI system to generate an output. The prompt can be as simple as a single word or as complex as a paragraph of text or an image.
@@ -38,8 +34,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Suppose you're writing a program in Python and need to implement a function that calculates the square root of a number. You could start by typing a comment describing what the function should do:
@@ -64,8 +58,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Prompt engineering is a crucial skill for developers and engineers working with generative AI models. It involves designing effective prompts to guide these models in producing relevant and desired responses. Mastering prompt engineering ensures accurate and creative outputs that closely resemble human-produced content.
@@ -78,8 +70,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Prompt engineering is essential because it allows you to fine-tune the input to a generative AI model, ensuring the output aligns with your goals and requirements. Without effective prompt engineering, the results may be generic, irrelevant, or even harmful.
@@ -92,8 +82,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are a few reasons why prompt engineering is so crucial:
@@ -112,8 +100,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Let's take an example of these two prompts:
@@ -132,8 +118,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Not quite, this prompt is too vague and usually produces generic outputs. This is a naive prompt, lacking detail and context, leading to suboptimal results.
@@ -147,8 +131,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Yes, this prompt provides more context and structure, resulting in a more detailed and relevant output. "Write code for a web application." would be considered a naive prompt, lacking detail and context, leading to suboptimal results.
@@ -163,8 +145,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Effective prompts include several key components:
@@ -185,8 +165,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Clear instructions ensure the AI understands what it needs to do, reducing ambiguity. Here are some guidelines you should follow: 
@@ -208,8 +186,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Providing context helps the AI model understand the background and specifics of the task, leading to more relevant and accurate responses. Here are some guidelines:
@@ -230,8 +206,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Providing specific data or information guides the model's responses, producing more accurate results. Here are some guidelines:
@@ -252,8 +226,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Setting benchmarks for the output ensures that the AI's responses meet specific criteria and quality standards. Here are some guidelines:
@@ -273,8 +245,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Steps in prompt engineering:
@@ -297,8 +267,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Establish a clear objective for what you want the AI model to generate.
@@ -318,8 +286,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Create an initial prompt based on the defined goal.
@@ -339,8 +305,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Evaluate the AI's response to the initial prompt for relevance and completeness.
@@ -360,8 +324,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Review the AI's output to identify areas where it falls short of the goal.
@@ -381,8 +343,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Modify the prompt to include additional context and specificity.
@@ -402,8 +362,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Repeat testing and refinement until the desired response is achieved.
@@ -422,8 +380,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Great job so far! We've covered what prompt engineering is, why it's important, the difference between naive and effective prompting, the elements of a well-constructed prompt, and the steps in effective prompt engineering.
@@ -435,8 +391,6 @@ tasks:
         type: message
         body:
           parts:
-            # - type: "image"
-            #   content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Up next, we'll dive into advanced prompt engineering techniques. Get ready to enhance your skills further and tackle more complex challenges with generative AI.
