@@ -42,11 +42,25 @@ tasks:
           Let's give it a try! Type a question or ask me to show an example to see how this works in practice.
         type: "text"
     edges: 
-    - target_node_id: "END"
+    - target_node_id: "screen1c"
       text: "Show me an example of how to ask a question."
-    - target_node_id: "END"
+    - target_node_id: "END" 
       text: "Got it, what's next?"
     id: "screen1b"
+    type: "message"
+  -
+    body: 
+      parts: 
+      - content: |
+                Here’s an example of how you can interact with me:
+                You: "Ada, can you explain what AI TaskMaster is?"
+                Ada AI: "Of course! AI TaskMaster is an AI-driven project management tool that revolutionizes how teams operate. It automates routine tasks, provides predictive analytics for better decision-making, and enhances collaboration to boost overall productivity."
+                Try it out yourself. Feel free to ask me anything about the program or the tools we’ll be using. Your journey to mastering AI-powered software development starts with a single question
+        type: "text"
+    edges: 
+    - target_node_id: "END" 
+      text: "Got it, what's next?"
+    id: "screen1c"
     type: "message"
   -
     body: 
@@ -235,7 +249,7 @@ tasks:
 
           **Journey 1**: We'll explore how AI can integrate into the software development lifecycle.
 
-          **Journey 2**: You'll learn to speed up coding and automate tasks using AI.
+          **Journey 2**: Optimizing Software Development with AI Integration
 
           **Journey 3**: We'll unlock advanced AI techniques for tackling complex tasks.
 
@@ -396,7 +410,7 @@ tasks:
     type: "message"
     edges: 
     - target_node_id: "END"
-      text: "Tell me about the next journey."
+      text: "Got it, whats next!"
   -
     body: 
       parts: 
