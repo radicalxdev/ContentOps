@@ -1,0 +1,799 @@
+tasks:
+  - name: "Introduction & Brief"
+    context: "In this project expedition, learners will develop a Status Update API Service for a Project Management System. The project involves planning and designing a comprehensive history trail feature, implementing it within the existing codebase, conducting thorough testing, and deploying the application to Google Cloud Run. The Status Updates feature will include a new history table in the SQLAlchemy database, capturing all modifications with timestamps and user details. Learners will produce design documents, conduct various tests, and containerize the application for deployment. The final module emphasizes integrating AI-powered tools and best practices to enhance software development processes."
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Welcome to your final project expedition! You will develop a Status Update API Service for the existing Project Management System. This project will guide you through integrating AI-powered tools and best practices into your software development process.
+
+                Imagine having a feature that provides a comprehensive history trail for each project and ticket. This will track status changes, comments, and other updates, giving users a clear and detailed record of all modifications.
+
+                Are you ready to explore how we can achieve this?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen3"
+          - text: "Tell me more about the project."
+            target_node_id: "screen2"
+
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                In this final project, you will develop a Status Update API Service. This involves planning and designing the feature, implementing it within the existing codebase, conducting thorough testing, and deploying the application to Google Cloud Run.
+
+                The new Status Updates feature aims to enhance our project management software by introducing a comprehensive history trail for each project and ticket, ensuring users have a clear and detailed record of all modifications.
+        edges:
+          - text: "Got it!"
+            target_node_id: "screen3"
+          - text: "I want more details."
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The Status Updates feature will be implemented by creating a new history table in the SQLAlchemy (SQLite) database and updating the existing project management API to support CRUD operations that interact with this history table.
+
+                We will introduce a new table to store history information, capturing everything from status changes to comments, complete with timestamps and user details. The goal is to ensure that all CRUD operations on projects and tickets interact with this new history table, and when retrieving information about a project or ticket, the complete history will also be included in the output.
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen4"
+          - text: "Explain more about the design phase."
+            target_node_id: "screen4"
+
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                During the planning and architectural design phase, we will produce several important documents and diagrams. We'll start with a requirements specification document to outline the functionalities of this feature. A database schema diagram will help us visualize the integration of the new history table with our existing tables. Additionally, an API design document will detail the endpoints needed for CRUD operations on the history records, along with any modifications to existing endpoints. Sequence diagrams and flowcharts will illustrate the data flow and system interactions, providing a clear blueprint for our development process.
+        edges:
+          - text: "Got it, let's move on!"
+            target_node_id: "screen5"
+          - text: "I need more details on the design documents."
+            target_node_id: "screen5"
+
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                A thorough testing approach is crucial. We will conduct unit tests to cover all CRUD operations on the history table, ensuring each function works correctly on its own. Integration tests will verify that our new table interacts properly with the existing database schema, recording and retrieving updates as expected. API tests will ensure our endpoints function correctly and return the necessary history data. End-to-end tests will simulate real-world usage, ensuring the entire workflow from making changes to viewing history is seamless. Finally, performance tests will check that the new feature doesn't negatively impact system performance. All our test cases, data, and results will be documented for future reference and maintenance.
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen6"
+          - text: "Explain more about the testing process."
+            target_node_id: "screen6"
+
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                For deployment, we'll be using Cloud Run. We'll containerize the application using Docker and push the image to a container registry like Google Container Registry (GCR). From there, we'll deploy it to Cloud Run, configuring it for optimal performance and cost-efficiency. While setting up a CI/CD pipeline isn't required right now, it's something to consider for smoother future deployments. After deployment, it's important to stop the Cloud Run service to avoid unexpected costs, which can be done easily through the Cloud Run console or using the gcloud CLI.
+        edges:
+          - text: "Ready to deploy!"
+            target_node_id: "END"
+          - text: "I have questions about deployment."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                That’s the overview of the Status Update API Service project. If you have any questions or need further clarification, feel free to ask. Let's make this a seamless addition to our project management tool!
+
+  - name: "Software Planning and Architectural Design"
+    context: "In this module, learners explore the software planning and architectural design phase for implementing a Status Updates feature in a Project Management System. They will produce comprehensive documentation and detailed diagrams, such as requirements specifications, database schema diagrams, and API design documents, to guide the implementation. User stories are introduced to capture the needs of various users, ensuring the feature meets their expectations. Learners will also utilize AI tools like Eraser AI to streamline the documentation process, ensuring accuracy and efficiency. The module emphasizes the importance of thorough planning and documentation for successful software development."
+    id: "2"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                In this phase, we will produce comprehensive documentation and detailed diagrams to guide the implementation of the Status Updates feature. This includes creating a requirements specification document, generating a database schema diagram, and preparing an API design document. Sequence diagrams and flowcharts will help visualize the data flow and system interactions.
+
+                We can use a tool like **Eraser AI** to help us generate both the requirements documents, technical specifications, and diagrams!
+        edges:
+          - text: "Got it! What's next?"
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's explore the user stories that will guide the development of the Status Updates feature. These stories capture the needs of various users, ensuring the feature meets their expectations.
+        edges:
+          - text: "Show me the user stories."
+            target_node_id: "screen3a"
+
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **User Story 1: Viewing Project History**
+
+                **As a** project manager, **I want to** view the history of all changes made to a project **so that** I can track the progress and understand the modifications over time.
+
+                *Acceptance Criteria:*
+
+                1. When a project is opened, a detailed history of all status changes and comments is visible.
+                2. The history includes timestamps, user details, and the nature of the change (status update, comment, etc.).
+                3. The history is displayed in chronological order, with the most recent updates at the top.
+        edges:
+          - text: "Next story."
+            target_node_id: "screen3b"
+
+      - id: screen3b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **User Story 2: Viewing Ticket History**
+
+                **As a** team member, **I want to** view the history of changes made to a ticket **so that** I can understand the context and background of the work item.
+
+                *Acceptance Criteria:*
+
+                1. When a ticket is opened, a detailed history of all status changes and comments is visible.
+                2. The history includes timestamps, user details, and the nature of the change (status update, comment, etc.).
+                3. The history is displayed in chronological order, with the most recent updates at the top.
+        edges:
+          - text: "Next story."
+            target_node_id: "screen3c"
+
+      - id: screen3c
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **User Story 3: Recording Status Changes and Comments**
+
+                **As a** project manager or team member, **I want to** record status changes and comments on projects and tickets **so that** the changes and discussions are documented for future reference.
+
+                *Acceptance Criteria:*
+
+                1. Status changes and comments on projects or tickets are automatically recorded in the history table.
+                2. The recorded history includes the user who made the change or comment, the timestamp, and the details of the change or comment.
+        edges:
+          - text: "Next story."
+            target_node_id: "screen3d"
+
+      - id: screen3d
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **User Story 4: API Support for History Retrieval**
+
+                **As a** developer, **I want to** retrieve the history of a project or ticket through the API **so that** I can integrate this information into custom reports or external tools.
+
+                *Acceptance Criteria:*
+
+                1. The API endpoints for retrieving project and ticket information return the complete history along with the main entity data.
+                2. The history data in the API response includes timestamps, user information, and details of changes and comments.
+                3. The API provides endpoints for CRUD operations on history records.
+        edges:
+          - text: "Next story."
+            target_node_id: "screen3e"
+
+      - id: screen3e
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                **User Story 5: Database Schema Update**
+
+                **As a** database administrator, **I want to** have a new table to store the history of changes **so that** all modifications to projects and tickets are documented in the database.
+
+                *Acceptance Criteria:*
+
+                1. A new `history` table is created in the SQLAlchemy (SQLite) database.
+                2. The `history` table includes fields such as `id`, `entity_type`, `entity_id`, `change_type`, `timestamp`, `user_id`, and `details`.
+                3. The `history` table is correctly linked to the existing project and ticket tables.
+        edges:
+          - text: "What's next?"
+            target_node_id: "screen4"
+
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                During the software planning and architectural design phase, developers should produce comprehensive documentation and detailed diagrams to guide the implementation of the new Status Updates feature. This includes creating a requirements specification document outlining the functional and non-functional requirements of the feature. Developers should also generate a database schema diagram illustrating the new history table and its relationships with existing tables.
+            - type: "text"
+              content: |
+                Additionally, an API design document should be prepared, detailing the endpoints for CRUD operations on the history records and modifications to existing endpoints. Sequence diagrams and flowcharts should be created to visualize the flow of data and interactions between different system components, ensuring clarity in the implementation process. These documents and diagrams will serve as essential references throughout development, ensuring all team members are aligned and understand the feature's architecture and integration points.
+        edges:
+          - text: "Got it! What's next?"
+            target_node_id: "screen5"
+          - text: "More about the tools."
+            target_node_id: "screen5"
+
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                It is highly recommended to utilize tools like Eraser AI to help create a Document Outline, Planning and related Diagrams. These AI tools can automate and streamline the documentation process, ensuring accuracy and saving valuable time.
+        edges:
+          - text: "Understood, let's proceed."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                That’s the overview of the Software Planning and Architectural Design for the Status Updates feature. If you have any questions or need further clarification, feel free to ask. Let's make this a seamless addition to our project management tool!
+
+  - name: "Feature Development & Implementation"
+    context: "In this module, learners will implement the Status Updates feature for a Project Management System by forking the provided repository and making necessary changes. They will update the database by introducing a new history table in SQLAlchemy (SQLite) to store records of status changes, comments, and other updates. The API will be updated to support CRUD operations on the history table and to include history data in project and ticket retrieval endpoints. The module provides detailed guidance on database schema modifications and API endpoint updates, ensuring comprehensive tracking and easy retrieval of historical data through the API."
+    id: "3"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                In this task, I'll provide the repository for you and you'll make necessary changes to implement the Status Updates feature. This involves updating the database and the API to support our new functionality.
+
+                Are you ready to dive into the details?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "github_setup"
+
+      - id: github_setup
+        type: github_setup
+        body:
+          parts:
+            - type: "text"
+              content: "Setting up GitHub repository..."
+            - type: conditional
+              condition:
+                func: "handle_action"
+                args:
+                  ["github_onboard", "Improve-Code-Quality-with-Copilot"]
+              status:
+                - type: "success"
+                  content: "GitHub setup completed successfully."
+                - type: "failure"
+                  content: "GitHub setup failed. Please try again later."
+                  extra_edges:
+                    - text: "Retry"
+                      target_node_id: "github_setup"
+                    - text: "Finish"
+                      target_node_id: "screen3"
+        edges:
+          - text: "Finish"
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Now that you have the repository, let's start with the database changes. Go ahead and also make a branch for your changes. You'll need to make a virtual environment and install the dependencies as well. I recommend reviewing the `README.md` file for more details and creating a new `.env` file based on the `.env.example` file."
+            - type: "text"
+              content: |
+                First is to introduce a new table in SQLAlchemy (SQLite) named `history`. This table will store records of status changes, comments, and other updates for projects and tickets. The fields in the `history` table will include `id`, `entity_type` (project or ticket), `entity_id`, `change_type` (status change, comment, etc.), `timestamp`, `user_id`, and `details`. You can add this in the `app/db_models/base.py` file.
+            - type: "text"
+              content: "Once everything is set up, you can make a pull request to the main branch from your branch. I'll share with you when to submit."
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen4"
+          - text: "More details, please."
+            target_node_id: "screen3a"
+
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The `history` table is a crucial addition to your database. It will capture all necessary details to track changes and comments on projects and tickets. Make sure the table includes fields like `id`, `entity_type`, `entity_id`, `change_type`, `timestamp`, `user_id`, and `details`.
+
+                This will allow for comprehensive tracking and easy retrieval of historical data.
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "screen4"
+
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Next, we'll update the API to support our new `history` table.
+
+                1. **Update existing API endpoints** for projects and tickets to include operations for creating, reading, updating, and deleting history records. These can be found in the `app/api/routes/` folder and must be added to the `api.py` file by importing and adding the method, `.include_router`
+                2. **Modify the project and ticket retrieval endpoints** to include the history data in their responses.
+
+                This ensures that whenever you retrieve project or ticket information, the complete history will also be included.
+        edges:
+          - text: "Understood, show me how."
+            target_node_id: "screen4a"
+          - text: "I need more details on API updates."
+            target_node_id: "screen4a"
+
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To integrate the new `history` table with the API, you'll update the existing endpoints for projects and tickets. This includes adding operations for creating, reading, updating, and deleting history records. Additionally, you'll modify the project and ticket retrieval endpoints to return history data alongside the main entity data.
+
+                These updates will ensure comprehensive and accurate tracking of all changes and comments.
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "END"
+          - text: "More about the endpoint modifications."
+            target_node_id: "screen4b"
+
+      - id: screen4b
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                The detailed API modifications include:
+
+                1. Enhancing the existing API endpoints to handle history records.
+                2. Ensuring that every change or comment on projects and tickets is recorded and retrievable.
+                3. Modifying the response structure to include historical data for better context and tracking.
+
+                These changes will make the history data seamlessly available through the API.
+            - type: "text"
+              content: "Now we can work on the feature and review your PR (pull request). Pleaase make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR. This helps me find and review your PR."
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "pr_review"
+
+      - id: pr_review
+        type: pr_feedback
+        body:
+          parts:
+            - type: "text"
+              content: "Cool! Give me a minute to read your PR..."
+            - type: conditional
+              condition: 
+                func: "handle_action"
+                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results?']
+              status: 
+                - type: "success"
+                  content: "PR Reviewed successfully!"
+                - type: "no_matches"
+                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR."
+                  extra_edges:
+                    - text: "Retry PR"
+                      target_node_id: "pr_review"
+                - type: "error"
+                  content: "Seems to be an error. Please try again later."
+                  extra_edges:
+                    - text: "Retry PR"
+                      target_node_id: "pr_review"
+            - type: "text"
+              content: "Ready to go? Let's move on"
+        edges:
+          - text: "I am good to go, let's move on"
+            target_node_id: "END"
+          - text: "Resubmitted PR, please check again"
+            target_node_id: "pr_review"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                That’s the overview of the Feature Development & Implementation phase. If you have any questions or need further clarification, feel free to ask. Let's make this a seamless addition to our project management tool!
+
+  - name: "Testing & Documentation"
+    context: "In this module, learners will focus on the Testing & Documentation phase for the Status Updates feature. They will conduct unit tests for CRUD operations on the history table, integration tests to verify interactions between the history table and existing project and ticket tables, and API tests to ensure endpoints function correctly. Performance testing will be carried out to identify potential bottlenecks, ensuring the system remains efficient. Comprehensive documentation of all test cases, test data, and test results will be maintained to facilitate future maintenance and troubleshooting. This thorough testing process ensures the robustness and reliability of the new feature."
+    id: "4"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Welcome to the Testing & Documentation phase! In this task, you will conduct and meticulously document a comprehensive suite of tests to ensure the robust functionality and integration of the new Status Updates feature.
+
+                Are you ready to dive into the details?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen2"
+          - text: "Tell me more about the testing process."
+            target_node_id: "screen2a"
+
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Let's begin with unit tests. These tests should be written for all CRUD operations on the history table, ensuring each function behaves as expected in isolation.
+
+                Unit tests will validate the core functionality of the `history` table, making sure that each operation—Create, Read, Update, Delete—works correctly on its own.
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen3"
+          - text: "More details, please."
+            target_node_id: "screen2a"
+
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Unit tests are crucial because they focus on individual components in isolation. By writing unit tests for all CRUD operations on the history table, you'll ensure that each function performs correctly without interference from other parts of the system.
+
+                This helps in identifying and fixing issues early in the development process.
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Next, we'll conduct integration tests. These tests verify that the new history table interacts correctly with existing project and ticket tables, confirming that status changes and comments are accurately recorded and retrieved.
+
+                Integration tests will ensure that the history tracking seamlessly integrates with your project management system.
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen4"
+          - text: "More details, please."
+            target_node_id: "screen3a"
+
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Integration tests are essential for verifying that different components of the system work together correctly. By conducting integration tests, you'll ensure that the new history table properly interacts with existing project and ticket tables, and that all changes and comments are accurately recorded and retrievable.
+
+                This ensures the overall system functionality remains intact.
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "screen4"
+
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                API tests are next. These tests validate the correctness of endpoints, ensuring that history data is correctly included in project and ticket retrievals and that CRUD operations on history records work seamlessly.
+
+                API tests will confirm that your endpoints return accurate and complete data, maintaining the integrity of your application.
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen5"
+          - text: "More details, please."
+            target_node_id: "screen4a"
+
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                API tests are vital for ensuring that the endpoints of your application function correctly. By validating that history data is included in project and ticket retrievals and that CRUD operations on history records are seamless, you'll maintain the reliability and accuracy of your application.
+
+                This step is crucial for providing a consistent user experience.
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "screen5"
+
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Performance testing should be carried out to ensure that the addition of history tracking does not degrade the system’s performance.
+
+                These tests will help identify any potential bottlenecks or slowdowns introduced by the new feature, ensuring that your system remains efficient and responsive.
+        edges:
+          - text: "Understood, what's next?"
+            target_node_id: "screen6"
+          - text: "More details, please."
+            target_node_id: "screen5a"
+
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Performance testing is critical for maintaining the efficiency of your application. By ensuring that the history tracking feature does not introduce performance bottlenecks, you can maintain a smooth and responsive user experience. These tests help identify areas where the system may slow down and allow you to make necessary optimizations.
+        edges:
+          - text: "Got it, what's next?"
+            target_node_id: "screen6"
+
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Finally, comprehensive documentation of all test cases, test data, and test results should be maintained. This documentation provides a clear record of testing efforts and outcomes, facilitating future maintenance and troubleshooting.
+
+                Detailed documentation will help ensure that all aspects of the new feature have been thoroughly tested and that any issues can be quickly addressed in the future.
+        edges:
+          - text: "Understood, let's proceed."
+            target_node_id: "END"
+          - text: "More about documentation."
+            target_node_id: "screen6a"
+
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Maintaining comprehensive documentation of your tests is crucial. It provides a clear record of what has been tested, the data used, and the results obtained. This facilitates future maintenance, helps in troubleshooting issues, and ensures that all team members are aligned and informed about the testing process and outcomes.
+        edges:
+          - text: "Got it, let's proceed."
+            target_node_id: "pr_review"
+
+      - id: pr_review
+        type: pr_feedback
+        body:
+          parts:
+            - type: "text"
+              content: "Cool! Give me a minute to read your PR..."
+            - type: conditional
+              condition: 
+                func: "handle_action"
+                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results?']
+              status: 
+                - type: "success"
+                  content: "PR Reviewed successfully!"
+                - type: "no_matches"
+                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR."
+                  extra_edges:
+                    - text: "Retry PR"
+                      target_node_id: "pr_review"
+                - type: "error"
+                  content: "Seems to be an error. Please try again later."
+                  extra_edges:
+                    - text: "Retry PR"
+                      target_node_id: "pr_review"
+            - type: "text"
+              content: "Ready to go? Let's move on"
+        edges:
+          - text: "I am good to go, let's move on"
+            target_node_id: "END"
+          - text: "Resubmitted PR, please check again"
+            target_node_id: "pr_review"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                That’s the overview of the Testing & Documentation phase. If you have any questions or need further clarification, feel free to ask. Let's ensure our Status Updates feature is robust and well-documented!
+
+  - name: "Google Cloud Run Deployment"
+    context: "In this module, learners will deploy the updated project management software with the new Status Updates feature onto Google Cloud Run. They will containerize the application using Docker, push the Docker image to Google Container Registry (GCR), and deploy the image to Cloud Run using the gcloud CLI. After verifying the deployment, they will stop the Cloud Run service to prevent unexpected costs. Optionally, learners can implement a CI/CD pipeline to automate future deployments. Comprehensive guidance is provided for each step to ensure a smooth and efficient deployment process."
+    id: "5"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                In this task, you will deploy the updated project management software with the new Status Updates feature onto Cloud Run.
+
+                Are you ready to get started?
+        edges:
+          - text: "Yes, let's get started!"
+            target_node_id: "screen2"
+          - text: "Tell me more about Cloud Run."
+            target_node_id: "screen2a"
+
+      - id: screen2
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                First, ensure that your application is containerized using Docker. This involves creating a Dockerfile that defines your application's environment and dependencies. Once you've built the Docker image, test it locally to confirm that everything works as expected.
+        edges:
+          - text: "I've containerized and tested my app. What's next?"
+            target_node_id: "screen3"
+          - text: "How do I containerize my app?"
+            target_node_id: "screen2a"
+
+      - id: screen2a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To containerize your application:
+
+                1. Create a Dockerfile in the root of your project directory.
+                2. Define the base image and add instructions to install dependencies and copy your application code.
+                3. Build the Docker image using the command `docker build -t gcr.io/GCP-PROJECT-ID/your-image-name:TAG .`
+                4. Test the Docker image locally using the command `docker run -p 8080:8080 your-image-name`.
+
+                Ensure everything works as expected before moving to the next step.
+        edges:
+          - text: "I've containerized and tested my app. What's next?"
+            target_node_id: "screen3"
+
+      - id: screen3
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                After building and testing your Docker image locally, the next step is to push the image to a container registry like Google Container Registry (GCR).
+        edges:
+          - text: "I've pushed my image to GCR. What's next?"
+            target_node_id: "screen4"
+          - text: "How do I push an image to GCR?"
+            target_node_id: "screen3a"
+
+      - id: screen3a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To push your Docker image to GCR:
+
+                1. Authenticate with GCR using the command:
+                `gcloud auth configure-docker`.
+                2. Push the image to GCR:
+                `docker push gcr.io/your-project-id/your-image-name`.
+
+                Once the image is in the registry, you're ready to deploy it to Cloud Run.
+        edges:
+          - text: "I've pushed my image to GCR. What's next?"
+            target_node_id: "screen4"
+
+      - id: screen4
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                With your Docker image in GCR, you can now deploy it to Cloud Run using the gcloud CLI. Ensure that you configure the appropriate settings for memory, CPU, and scaling to optimize performance and cost.
+        edges:
+          - text: "I've deployed my app to Cloud Run. What's next?"
+            target_node_id: "screen5"
+          - text: "How do I deploy to Cloud Run?"
+            target_node_id: "screen4a"
+
+      - id: screen4a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To deploy your Docker image to Cloud Run:
+
+                1. Use the gcloud CLI to deploy your service:
+                `gcloud run deploy your-service-name --image gcr.io/your-project-id/your-image-name --platform managed`.
+                2. Configure settings for memory, CPU, and scaling during the deployment process to optimize for performance and cost.
+
+                After deployment, verify that the service is running correctly in the cloud environment.
+
+                Alternatively, we can also deploy the Docker image on Google Cloud console. The steps involve:
+
+                1. Click on `Cloud Run` in the console.
+                2. Click on `New Service`
+                3. Select the newly uploaded docker image in the `Artifact Registry` and it should say “latest” or whichever TAG was specified.
+                4. Fill out the necessary resources, environment variables (GCP secrets is NOT required), and service account key. You should specify a service account key with access to fully deploy.
+        edges:
+          - text: "I've deployed my app to Cloud Run. What's next?"
+            target_node_id: "screen5"
+
+      - id: screen5
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                After verifying that the deployment is successful and the feature functions correctly in the cloud environment, you should stop the Cloud Run service to prevent any unexpected costs. This can be done easily via the Cloud Run console or by using the gcloud CLI to manage the service's lifecycle.
+        edges:
+          - text: "I've verified and stopped the service. What's next?"
+            target_node_id: "screen6"
+          - text: "How do I stop the Cloud Run service?"
+            target_node_id: "screen5a"
+
+      - id: screen5a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To stop the Cloud Run service:
+
+                1. Go to the Cloud Run console.
+                2. Select your service and click on "Stop" to halt the service.
+                3. Alternatively, use the gcloud CLI:
+                `gcloud run services delete your-service-name`.
+
+                This prevents any unexpected costs and allows you to manage the service's lifecycle efficiently. Alternatively, you can also stop the service in the Google Cloud Console.
+        edges:
+          - text: "I've verified and stopped the service. What's next?"
+            target_node_id: "screen6"
+
+      - id: screen6
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Although a CI/CD pipeline is not mandatory, it's a good practice to implement automated deployment steps for future updates. This ensures that any changes to your codebase are automatically tested and deployed, reducing the manual effort required for each update.
+        edges:
+          - text: "Understood, let's proceed."
+            target_node_id: "END"
+          - text: "How do I set up a CI/CD pipeline?"
+            target_node_id: "screen6a"
+
+      - id: screen6a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                To set up a CI/CD pipeline:
+
+                1. Choose a CI/CD tool (e.g., GitHub Actions, GitLab CI, Jenkins).
+                2. Define your pipeline configuration to include steps for building, testing, and deploying your application.
+                3. Integrate the pipeline with your repository and cloud environment to automate the process.
+
+                This ensures smooth and automated deployments for future updates.
+        edges:
+          - text: "Understood, let's proceed."
+            target_node_id: "END"
+
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                That’s the overview of the Google Cloud Run Deployment phase. If you have any questions or need further clarification, feel free to ask. Let's ensure our Status Updates feature is deployed smoothly and efficiently!

@@ -1,0 +1,44 @@
+tasks:
+  - name: "GitHub Setup Test"
+    context: "User is undergoing a test"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Welcome to the GitHub setup test."
+        edges:
+          - text: "Begin Setup"
+            target_node_id: "github_setup"
+      - id: github_setup
+        type: github_setup
+        body:
+          parts:
+            - type: "text"
+              content: "Setting up GitHub repository..."
+            - type: conditional
+              condition:
+                func: "handle_action"
+                args:
+                  ["github_onboard", "Improve-Code-Quality-with-Copilot"]
+              status:
+                - type: "success"
+                  content: "GitHub setup completed successfully."
+                - type: "failure"
+                  content: "GitHub setup failed. Please try again later."
+                  extra_edges:
+                    - text: "Retry"
+                      target_node_id: "github_setup"
+                    - text: "Finish"
+                      target_node_id: "END"
+        edges:
+          - text: "Finish"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Test completed."

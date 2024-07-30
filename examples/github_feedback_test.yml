@@ -1,0 +1,50 @@
+tasks:
+  - name: "Test out Eval Nodes"
+    context: "Testing out the PR Feedback feature"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Please make a Pull Request first"
+        edges:
+          - text: "Submitted Pull Request!"
+            target_node_id: "pr_review"
+      - id: pr_review
+        type: pr_feedback
+        body:
+          parts:
+            - type: "text"
+              content: "Cool! Give me a minute to read your PR..."
+            - type: conditional
+              condition: 
+                func: "handle_action"
+                args: ['pr_feedback', 'What is this PR about and is there any error handling?', 'Improve-Code-Quality-with-Copilot']
+              status: 
+                - type: "success"
+                  content: "PR Reviewed successfully!"
+                - type: "no_matches"
+                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR."
+                  extra_edges:
+                    - text: "Resubmitted PR"
+                      target_node_id: "pr_review"
+                - type: "error"
+                  content: "Seems to be an error. Please try again later."
+                  extra_edges:
+                    - text: "Resubmitted PR"
+                      target_node_id: "pr_review"
+            - type: "text"
+              content: "Ready to go? Let's move on"
+        edges:
+          - text: "I am good to go, let's move on"
+            target_node_id: "END"
+          - text: "Resubmitted PR"
+            target_node_id: "pr_review"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Perfect! All done! So far we did ..."

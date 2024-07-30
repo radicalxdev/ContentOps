@@ -1,0 +1,33 @@
+tasks:
+  - name: "Test out Eval Nodes"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "THIS IS A TEST MESSAGE"
+        edges:
+          - text: "__UPLOAD_IMAGE__"
+            target_node_id: "evaluation"
+      - id: evaluation
+        type: screenshot_eval
+        body:
+          parts:
+            - type: screenshot_feedback
+              reference_image: "https://imgs.search.brave.com/M2eEKMrtfzv8lt5wyLMF41qNLeyDsqlC-5uB6lIGFpQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdXBw/b3J0LmNvbnRlbnQu/b2ZmaWNlLm5ldC9l/bi11cy9tZWRpYS84/MjJkY2Y1My02NDBk/LTQyNWMtOTgyOS0x/OGFlNzYxYTA4OGIu/cG5n"
+              task_description: "Design a relational database schema for a university's student management system to capture and organize data about students, classes, semesters, and grades. The schema should include tables for students (`tbl_Students` with attributes like Student ID, name, DOB, etc.), classes (`tbl_Classes` with Class Number and Name), semesters (`tbl_Semesters` with Semester ID, name, and start date), and grades (`tbl_Grades` connecting students, classes, and semesters with a grade). Ensure the schema is normalized to at least the third normal form (3NF), define primary and foreign keys to enforce referential integrity, and provide SQL scripts to create the schema along with a visual ERD similar to the provided screenshot."
+          metadata:
+            model: "gpt-4o"
+            temperature: 0
+            provider: "openai"
+        edges:
+          - text: "I am good to go, let's move on"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Perfect! All done! So far we did ..."

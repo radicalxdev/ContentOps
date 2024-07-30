@@ -1,0 +1,42 @@
+tasks:
+  - name: "Test out Eval Nodes"
+    id: "1"
+    nodes:
+      - id: START
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Here we are testing the Eval Nodes"
+            - type: "text"
+              content: "Choose Next"
+        edges:
+          - text: "Next"
+            target_node_id: "EVAL"
+      - id: EVAL
+        type: knowledge_eval
+        body:
+          parts:
+            - type: "question"
+              question: "What is 2+2?"
+              choice_values:  ["2", "4", "6", "7"]
+              answers:  ["a"]
+              hint: "Here is a hint!"
+            - type: "question"
+              question: "Tell me what is 5 x 2?"
+              choice_values:  ["2", "4", "6", "10"]
+              answers:  ["d"]
+              hint: "Here is a hint!"
+            - type: "text"
+              content: "Good work!"
+          metadata:
+            choice_keys: ["a", "b", "c", "d"]
+        edges:
+            - text: "Ready to move on"
+              target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Perfect! All done! So far we did ..."
