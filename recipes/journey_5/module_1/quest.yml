@@ -58,9 +58,10 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Configuration files are crucial for customizing application behavior across different environments. They centralize settings like database credentials, environment variables, and API keys, making it easier to adapt your application without changing the code manually. Proper management of these files ensures both security and functionality.
+              content: |
+              Configuration files are crucial for customizing application behavior across different environments. They centralize settings like database credentials, environment variables, and API keys, making it easier to adapt your application without changing the code manually. Proper management of these files ensures both security and functionality.
 
-              AI can streamline this process by automating the generation of configuration files, saving time and reducing errors. This is where GitHub Copilot comes in. Powered by AI, GitHub Copilot can quickly generate accurate configuration files based on predefined templates for various environments. This speeds up your workflow and ensures your application runs smoothly in all settings."
+              AI can streamline this process by automating the generation of configuration files, saving time and reducing errors. This is where GitHub Copilot comes in. Powered by AI, GitHub Copilot can quickly generate accurate configuration files based on predefined templates for various environments. This speeds up your workflow and ensures your application runs smoothly in all settings.
         edges:
           - text: "Got it, what's next?"
             target_node_id: "screen4"
@@ -74,11 +75,14 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Sure, here are a few examples of common challenges in managing configuration files:
+              content: |
+              Sure, here are a few examples of common challenges in managing configuration files:
 
               1. **Human Error**: Manually editing configuration files can lead to mistakes such as incorrect values or missing keys, causing the application to malfunction.
+
               2. **Inconsistency**: Keeping configurations consistent across multiple environments can be difficult, leading to unexpected behaviors.
-              3. **Security Risks**: Improper handling of sensitive data like API keys and database credentials can expose your application to security vulnerabilities."
+
+              3. **Security Risks**: Improper handling of sensitive data like API keys and database credentials can expose your application to security vulnerabilities.
         edges:
           - text: "Understood, what’s next?"
             target_node_id: "screen4"
@@ -90,12 +94,16 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Configuration files are vital for several reasons:
+              content: |
+              Configuration files are vital for several reasons:
 
               1. **Centralization**: They centralize crucial settings, making it easier to manage and update without altering the actual code.
+
               2. **Security**: Proper management of configuration files helps in safeguarding sensitive information like API keys and database credentials.
+
               3. **Consistency**: They ensure that your application behaves consistently across different environments (development, testing, production).
-              4. **Flexibility**: Configuration files allow you to adapt your application quickly to different environments by changing settings without modifying the code."
+
+              4. **Flexibility**: Configuration files allow you to adapt your application quickly to different environments by changing settings without modifying the code.
         edges:
           - text: "Understood, what’s next?"
             target_node_id: "screen4"
@@ -105,14 +113,18 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "In this module, we’ll explore how GitHub Copilot can streamline your configuration management workflow using AI. Here’s what we'll cover:
+              content: | 
+              In this module, we’ll explore how GitHub Copilot can streamline your configuration management workflow using AI. Here’s what we'll cover:
 
               1. **Introduction to GitHub Copilot’s Configuration Features**: Discover how Copilot can assist you in generating configuration files effortlessly.
+
               2. **Benefits of Using GitHub Copilot**: Learn how Copilot can save you time, enhance your workflow, and improve the accuracy of your configurations.
+
               3. **Best Practices for Effective Configuration Management with GitHub Copilot**: Get tips and tricks to maximize the effectiveness of your configurations.
+
               4. **Use Cases for GitHub Copilot**: Explore practical scenarios where Copilot can make a significant impact.
 
-              Before we dive in, I'd love to know a bit about your experience. Have you ever used GitHub Copilot for configuration management before?"
+              Before we dive in, I'd love to know a bit about your experience. Have you ever used GitHub Copilot for configuration management before?
         edges:
           - text: "Yes, I have some experience."
             target_node_id: "screen5a"
@@ -166,11 +178,14 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Here are some examples of how GitHub Copilot can enhance your configuration management:
+              content: | 
+              Here are some examples of how GitHub Copilot can enhance your configuration management:
 
               1. **Template Generation**: It can generate configuration templates for different environments, ensuring consistency and reducing manual effort.
+
               2. **Environment-Specific Settings**: It helps create environment-specific settings that can be easily switched based on the deployment target.
-              3. **Error Prevention**: It suggests correct values and flags potential errors, reducing the likelihood of misconfigurations."
+
+              3. **Error Prevention**: It suggests correct values and flags potential errors, reducing the likelihood of misconfigurations.
 
       - id: END
         type: message
@@ -189,10 +204,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "GitHub Copilot can assist in generating accurate and efficient deployment scripts. Here’s what it can do:
+              content: |
+              GitHub Copilot can assist in generating accurate and efficient deployment scripts. Here’s what it can do:
 
               1. **Automated Script Generation**: Reduces manual effort.
-              2. **Error Reduction**: Minimizes human errors in scripts."
+
+              2. **Error Reduction**: Minimizes human errors in scripts.
         edges:
           - text: "Sounds great, how do I get started?"
             target_node_id: "screen8"
@@ -206,10 +223,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Examples of GitHub Copilot enhancing script generation:
+              content: |
+              Examples of GitHub Copilot enhancing script generation:
 
               1. **Generate Terraform Configuration Files**: Automates the creation of consistent and error-free Terraform files.
-              2. **Automate Kubernetes Deployment Files**: Simplifies the generation of YAML files for Kubernetes clusters."
+
+              2. **Automate Kubernetes Deployment Files**: Simplifies the generation of YAML files for Kubernetes clusters.
         edges:
           - text: "Got it, how do I get started?"
             target_node_id: "END"
@@ -221,10 +240,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Key benefits of using GitHub Copilot:
+              content: |
+              Key benefits of using GitHub Copilot:
 
               1. **Time Savings**: Reduces time spent on repetitive tasks.
-              2. **Improved Accuracy**: Ensures scripts are error-free and consistent."
+
+              2. **Improved Accuracy**: Ensures scripts are error-free and consistent.
         edges:
           - text: "I’m ready to start!"
             target_node_id: "screen8"
@@ -234,10 +255,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "To get started with GitHub Copilot:
+              content: | 
+              To get started with GitHub Copilot:
 
               1. **Install GitHub Copilot**: Ensure it’s installed in your IDE.
-              2. **Setup Configuration Templates**: Use predefined templates."
+
+              2. **Setup Configuration Templates**: Use predefined templates.
         edges:
           - text: "Sounds good, let's go!"
             target_node_id: "END"
@@ -249,10 +272,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Quick setup guide for GitHub Copilot:
+              content: |
+              Quick setup guide for GitHub Copilot:
 
               1. **Installation**: Follow official documentation to install in your IDE.
-              2. **Configuration**: Adjust settings to fit your project needs."
+
+              2. **Configuration**: Adjust settings to fit your project needs.
         edges:
           - text: "Got it, what’s next?"
             target_node_id: "END"
@@ -262,10 +287,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Prerequisites for getting started:
+              content: |
+              Prerequisites for getting started:
 
               1. **GitHub Account**: Required for using GitHub Copilot.
-              2. **IDE**: Install a compatible IDE like Visual Studio Code."
+
+              2. **IDE**: Install a compatible IDE like Visual Studio Code.
 
   - name: "Best Practices and Conclusion"
     context: "In this final section, learners are provided with best practices for using GitHub Copilot effectively. Key recommendations include regularly reviewing scripts to ensure they meet standards and establishing team coding standards for collaboration. The next step guides learners through setting up a GitHub repository for their project, including creating a new repository and initializing the project structure and configurations. The conclusion congratulates learners on their progress, emphasizing the importance of regular script reviews and effective collaboration. It encourages continued practice and exploration with GitHub Copilot, highlighting that the tool improves with use, providing better suggestions over time."
@@ -276,10 +303,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Best practices for using GitHub Copilot:
+              content: |
+              Best practices for using GitHub Copilot:
 
               1. **Regular Reviews**: Ensure scripts meet your standards.
-              2. **Collaboration**: Establish team coding standards."
+
+              2. **Collaboration**: Establish team coding standards.
         edges:
           - text: "Great, what’s next?"
             target_node_id: "screen10"
@@ -289,10 +318,12 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Let’s set up a GitHub repository for your project. Follow these steps:
+              content: |
+              Let’s set up a GitHub repository for your project. Follow these steps:
 
               1. **Create Repository**: Start a new repository on GitHub.
-              2. **Initialize Project**: Set up your project structure and configurations."
+
+              2. **Initialize Project**: Set up your project structure and configurations.
         edges:
           - text: "Sounds good, let’s set it up!"
             target_node_id: "END"
@@ -302,9 +333,11 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Great job, {username}! You've successfully learned how to generate deployment scripts with GitHub Copilot. Remember to:
+              content: |
+              Great job, {username}! You've successfully learned how to generate deployment scripts with GitHub Copilot. Remember to:
 
               1. **Review Regularly**: Keep your scripts up-to-date and accurate.
+
               2. **Collaborate Effectively**: Use team standards for consistency.
 
-              Keep practicing and exploring new ways to optimize your deployment scripts. Remember, the more you use GitHub Copilot, the more it learns and improves its suggestions!"
+              Keep practicing and exploring new ways to optimize your deployment scripts. Remember, the more you use GitHub Copilot, the more it learns and improves its suggestions!

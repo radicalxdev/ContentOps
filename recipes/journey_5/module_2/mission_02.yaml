@@ -9,7 +9,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Welcome to Alfred AI's Project Management application security lab! In this hands-on lab, you'll learn to leverage Snyk and GitHub Actions to automate advanced security checks. Each step will guide you in understanding and implementing security measures in your CI/CD processes.
+                Welcome to the second mission in streamlining CI/CD with AI! In this hands-on lab, you'll learn to leverage Snyk and GitHub Actions to automate advanced security checks within the context of the Alfred AI Project Management application. Each step will guide you in understanding and implementing security measures in your CI/CD processes.
 
                 Are you ready to embark on this journey to enhance the security of your application?
         edges:
