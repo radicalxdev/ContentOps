@@ -26,7 +26,7 @@ tasks:
               content: "Alright {username}, let's begin with our first question!"
             - type: "text"
               content: |
-                What is the primary function of GitHub Copilot in generating unit tests?
+                **Q1. What is the primary function of GitHub Copilot in generating unit tests?**
 
 
                 A. Manually writing all the test cases for the user
@@ -109,7 +109,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What role does the Test Explorer in Visual Studio Code play in unit testing?
+                **Q2. What role does the Test Explorer in Visual Studio Code play in unit testing?**
 
 
                 A. Writing new code snippets for unit tests
@@ -192,7 +192,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How does the Arrange, Act, Assert pattern benefit unit test structure?
+                **Q3. How does the Arrange, Act, Assert pattern benefit unit test structure?** 
 
 
                 A. Organizes code in the main application
@@ -275,7 +275,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Why are assertions generated in unit tests?
+                **Q4. Why are assertions generated in unit tests?**
 
 
                 A. To enhance the performance of the function
@@ -358,7 +358,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What does GitHub Copilot provide when creating unit tests for specific conditions?
+                **Q5. What does GitHub Copilot provide when creating unit tests for specific conditions?**
 
 
                 A. A user interface for manually writing tests
@@ -441,7 +441,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is a key benefit of using GitHub Copilot for generating unit tests?
+                **Q6. What is a key benefit of using GitHub Copilot for generating unit tests?**
 
 
                 A. Reduces the need for manual testing
@@ -524,7 +524,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How does GitHub Copilot enhance code line completions when writing unit tests?
+                **Q7. How does GitHub Copilot enhance code line completions when writing unit tests?**
 
 
                 A. By integrating with version control systems
@@ -607,7 +607,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How can edge cases and boundary conditions improve unit tests?
+                **Q8. How can edge cases and boundary conditions improve unit tests?**
 
 
                 A. By reducing the number of tests
@@ -690,7 +690,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How can GitHub Copilot help identify edge cases for testing?
+                **Q9. How can GitHub Copilot help identify edge cases for testing?**
 
 
                 A. By ignoring uncommon scenarios
@@ -773,7 +773,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the primary purpose of assertions in unit tests?
+                **Q10. What is the primary purpose of assertions in unit tests?**
 
 
                 A. To compile the main application code

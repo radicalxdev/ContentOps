@@ -26,7 +26,7 @@ tasks:
             content: "Alright {username}, let's get started with our first question!"
           - type: "text"
             content: |
-              What is crucial to providing high-quality responses from GitHub Copilot Chat?
+              **Q1. What is crucial to providing high-quality responses from GitHub Copilot Chat?**
 
 
               A. General prompts that allow Copilot to infer the context.
@@ -109,7 +109,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              How can chat participants like @workspace and @terminal assist Copilot?
+              **Q2. How can chat participants like @workspace and @terminal assist Copilot?**
 
 
               A. They allow Copilot to deploy code automatically.
@@ -192,7 +192,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is crucial when reviewing GitHub Copilot Chat's output?
+              **Q3. What is crucial when reviewing GitHub Copilot Chat's output?**
 
 
               A. Trusting the initial suggestions without further verification.
@@ -273,7 +273,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a potential limitation of relying solely on GitHub Copilot for documentation?
+              **Q4. What is a potential limitation of relying solely on GitHub Copilot for documentation?**
 
 
               A. It can generate overly technical descriptions.
@@ -356,7 +356,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              Which command in GitHub Copilot Chat can help you understand the purpose of a specific function?
+              **Q5. Which command in GitHub Copilot Chat can help you understand the purpose of a specific function?**
 
 
               A. @workspace explain the function
@@ -439,7 +439,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a best practice when using GitHub Copilot to generate documentation for a new project?
+              **Q6. What is a best practice when using GitHub Copilot to generate documentation for a new project?**
 
 
               A. Rely on Copilot to intuitively understand project specifics from vague prompts.
@@ -522,7 +522,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              How can GitHub Copilot assist in identifying outdated documentation?
+              **Q7. How can GitHub Copilot assist in identifying outdated documentation?**
 
 
               A. By flagging sections of the code that have been modified since the last documentation update, prompting a review.
@@ -605,7 +605,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is a good practice when accepting GitHub Copilot's documentation suggestions?
+              **Q8. What is a good practice when accepting GitHub Copilot's documentation suggestions?**
 
 
               A. Approving the suggestions without scrutiny to expedite the process.
@@ -688,7 +688,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is an important step after using GitHub Copilot to generate initial project documentation?
+              **Q9. What is an important step after using GitHub Copilot to generate initial project documentation?**
 
 
               A. Launching the project immediately to keep up with deadlines.
@@ -771,7 +771,7 @@ tasks:
         parts:
           - type: "text"
             content: |
-              What is important to provide for better quality responses from GitHub Copilot Chat?
+              **Q10. What is important to provide for better quality responses from GitHub Copilot Chat?**
 
 
               A. General prompts that allow Copilot to infer the context.

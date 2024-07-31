@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Welcome to the 'Generate Inline Code Documentation using GitHub Copilot Chat' mission. Documenting your code is an important aspect of the software development process. Code comments help developers understand the codebase, its purpose, and how to use it."
             - type: "text"
@@ -89,7 +87,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the suggested code documentation."
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%204%2Fmodule_2_mission_3_1.png?alt=media&token=ad65e4ef-834d-4381-8a04-5130b1e4297e"
             - type: "text"
               content: "The response includes suggested code comments that you can manually move into the actual code file."
             - type: "text"
@@ -147,7 +145,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the code documentation generated."
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%204%2Fmodule_2_mission_3_2.png?alt=media&token=0349b8f7-e81c-485d-8e2f-0a4d57857c4b"
             - type: "text"
               content: "Notice that the suggested documentation for the `create_project` method includes a summary and descriptions of the parameters."
             - type: "text"
@@ -196,7 +194,7 @@ tasks:
             - type: "text"
               content: "Take a minute to review the suggested code comments."
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%204%2Fmodule_2_mission_3_3.png?alt=media&token=0f474d65-7c0d-423b-b2d6-ba9c7f2f3e0a"
             - type: "text"
               content: "Notice that the Generate Docs smart action and inline chat produce similar results. If necessary, edit the suggested update."
             - type: "text"
@@ -249,7 +247,7 @@ tasks:
             - type: "text"
               content: "Review the suggested changes."
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%204%2Fmodule_2_mission_3_4.png?alt=media&token=8dbdb435-f76a-46c0-bd6d-fecc5df774db"
             - type: "text"
               content: "Notice that the generated documentation includes comments for each of the methods. If you find issues in the generated documentation, modify the suggested changes before continuing."
             - type: "text"
@@ -261,8 +259,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Congratulations, {username}! 🎉 You've successfully used GitHub Copilot Chat to generate inline code documentation for the Alfred AI project. By using the Chat view, inline chat, and the Generate Docs smart action, you generated code comments that create a more readable and maintainable codebase."
             - type: "text"

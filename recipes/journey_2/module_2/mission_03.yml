@@ -9,7 +9,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Hello, {userName}! Welcome to the 'Improve Code Security with GitHub Copilot Chat' mission. This training focuses on using GitHub Copilot Chat to generate suggestions for improving code security in a sample application. Remember, the suggestions from Copilot do not represent best practices or comprehensive solutions. Use your judgment and expertise to evaluate and implement these suggestions. Ready to start?
+                Hello, {username}! Welcome to the 'Improve Code Security with GitHub Copilot Chat' mission. This training focuses on using GitHub Copilot Chat to generate suggestions for improving code security in a sample application. Remember, the suggestions from Copilot do not represent best practices or comprehensive solutions. Use your judgment and expertise to evaluate and implement these suggestions. Ready to start?
         edges:
           - text: "Yes, let's get started!"
             target_node_id: "END"

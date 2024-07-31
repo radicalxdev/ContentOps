@@ -19,7 +19,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                For this mission, we'll refer to an existing project management API with Alfred AI. The focus is on demonstrating GitHub Copilot's inline chat feature for building ticket routes and their data operations. You can find the project at this [GitHub Repository](https://github.com/alfred-ai-co/Code_by_using_Copilot_code_line_completions). Ready to proceed?
+                For this mission, we'll refer to an existing project management API with Alfred AI. The focus is on demonstrating GitHub Copilot's inline chat feature for building ticket routes and their data operations. You can find the project at this [GitHub Repository](https://github.com/alfred-ai-co/Code_by_using_Copilot_code_line_completions).
 
 
   - name: "Creating Pydantic Models with Github Copilot Inline Chat"
@@ -145,7 +145,7 @@ tasks:
             - type: "text"
               content: "Review the suggestions to ensure the methods are correctly defined and referenced."
         edges:
-          - text: "Yes, let's summarize!"
+          - text: "I have reviewed the suggestions."
             target_node_id: "END"
       - id: END
         type: message
@@ -153,15 +153,19 @@ tasks:
           parts:
             - type: "text"
               content: |
+                Awesome! With that, we've completed this mission.
+
+                In this mission, we completed the implementation of ticket routes and their respective data operations using GitHub Copilot's inline chat feature. We created data validation models, wrote the database operations, and built the API routes.
+
                 We've completed the implementation of ticket routes and their respective data operations using GitHub Copilot's inline chat feature. We created data validation models, wrote the database operations, and built the API routes.
             - type: "text"
               content: |
                 We can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_5.png?alt=media&token=0705ca23-5b3a-41db-abae-b417f0bdcaf0"
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
             - type: "text"
               content: |
                 We can now see Tickets as a new set of routes available within the /docs page!
                 Congratulations, {username}! You've successfully used GitHub Copilot Inline Chat to create code. Excellent work!
-            - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
