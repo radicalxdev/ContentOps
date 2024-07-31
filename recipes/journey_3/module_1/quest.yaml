@@ -23,7 +23,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Great choice, [username]! Understanding the existing codebase is a crucial first step. Unit testing isolates each part of the code, verifying that every component functions correctly. This helps identify issues at the smallest unit level, making debugging more manageable and ensuring each part performs as intended.
+                Great choice, {username}! Understanding the existing codebase is a crucial first step. Unit testing isolates each part of the code, verifying that every component functions correctly. This helps identify issues at the smallest unit level, making debugging more manageable and ensuring each part performs as intended.
 
                 However, this approach can be time-consuming. Let’s see how we can make this process more efficient.
         edges:
@@ -216,7 +216,7 @@ tasks:
                 **Example**:
                 Ask Copilot, "Generate unit tests for edge cases for the add function," and receive a complete set of test cases, including those for edge scenarios.
   - name: "Advanced Unit Test Generation"
-    context: "The Advanced Unit Test Generation section delves into creating unit tests for edge cases and boundary conditions using GitHub Copilot Chat. It explains the importance of testing null inputs, invalid parameters, and boundary values to ensure code robustness. An example demonstrates generating unit tests for a divide function, including handling a zero denominator, large numbers, and zero numerator. The process involves opening the function in Visual Studio Code, asking Copilot for edge case tests, and reviewing and refining the generated tests. This ensures comprehensive coverage and reliability in your code."
+    context: "The Advanced Unit Test Generation section delves into creating unit tests for edge cases and boundary conditions using GitHub Copilot Chat. It explains the importance of testing null inputs, invalid parameters, and boundary values to ensure code robustness. An example demonstrates generating unit tests for a `divide` function, including handling a zero denominator, large numbers, and zero numerator. The process involves opening the function in Visual Studio Code, asking Copilot for edge case tests, and reviewing and refining the generated tests. This ensures comprehensive coverage and reliability in your code."
     id: "3"
     nodes:
       - id: START
@@ -265,7 +265,7 @@ tasks:
                     return numerator / denominator
                 ```
                 **Prompt**:
-                "Generate unit tests for edge cases for the divide function, including cases for zero denominator and large numbers."
+                "Generate unit tests for edge cases for the `divide` function, including cases for zero denominator and large numbers."
 
                 **Generated Tests**:
                 ```python
@@ -284,7 +284,7 @@ tasks:
 
                 **Explanation**:
                 
-                - **First Test**: Verifies the function raises a ValueError when the denominator is zero, ensuring error handling.
+                - **First Test**: Verifies the function raises a `ValueError` when the denominator is zero, ensuring error handling.
                 - **Second Test**: Tests the function with large numbers to ensure it handles boundary values.
                 - **Third Test**: Checks that the function returns zero when the numerator is zero.
         edges:
@@ -300,7 +300,7 @@ tasks:
                 Using GitHub Copilot Chat to generate unit tests is simple and efficient. Here’s how you can do it:
 
                 1. **Open the Function in Visual Studio Code**: Ensure the function you want to test is open in the editor.
-                2. **Ask for Edge Case Tests**: Use the inline chat or chat view to ask Copilot to generate tests. For example, highlight the divide function and prompt, "Generate unit tests for edge cases for the divide function, including cases for zero denominator and large numbers."
+                2. **Ask for Edge Case Tests**: Use the inline chat or chat view to ask Copilot to generate tests. For example, highlight the `divide` function and prompt, "Generate unit tests for edge cases for the `divide` function, including cases for zero denominator and large numbers."
                 3. **Review and Refine**: Review the generated tests for accuracy and completeness. Refine them as needed to ensure they cover all relevant scenarios.
   - name: "Managing Unit Tests"
     context: "The Managing Unit Tests section guides you on running and managing unit tests using Visual Studio Code and the Python extension. It explains how to run and debug test cases, highlighting features like the green play button for running tests and the bug icon for starting debugging sessions. The section introduces Test Explorer, a tool for managing test cases, viewing test results, and identifying issues efficiently. An example demonstrates setting breakpoints and using debugging tools to inspect variables and fix issues. These features ensure your code remains reliable and any problems are identified early in the development process."
@@ -404,7 +404,7 @@ tasks:
                     - This makes it easier to pinpoint issues when a test fails.
                 2. **Descriptive Naming**:
                     - Name your test functions descriptively to reflect what they are testing.
-                    - **Example**: Use test_add_with_positive_numbers instead of just test_add.
+                    - **Example**: Use `test_add_with_positive_numbers` instead of just `test_add`.
 
                 Following these guidelines helps make your tests more readable and easier to manage.
         edges:
@@ -464,11 +464,11 @@ tasks:
                 Using tools like coverage.py helps you measure and improve your test coverage:
 
                 1. **Install Coverage.py**:
-                    - Install the tool using pip: pip install coverage.
+                    - Install the tool using pip: `pip install coverage`.
                 2. **Run Coverage**:
-                    - Run your tests with coverage enabled: coverage run -m pytest.
+                    - Run your tests with coverage enabled: `coverage run -m pytest`.
                 3. **Generate Reports**:
-                    - Generate a coverage report to see which parts of your code are covered: coverage report -m.
+                    - Generate a coverage report to see which parts of your code are covered: `coverage report -m`.
                 4. **Review and Improve**:
                     - Review the report to identify untested parts of your code and add tests as needed.
 

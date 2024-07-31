@@ -145,7 +145,7 @@ tasks:
             - type: "text"
               content: "Review the suggestions to ensure the methods are correctly defined and referenced."
         edges:
-          - text: "Yes, let's summarize!"
+          - text: "I have reviewed the suggestions."
             target_node_id: "END"
       - id: END
         type: message
@@ -153,6 +153,10 @@ tasks:
           parts:
             - type: "text"
               content: |
+                Awesome! With that, we've completed this mission.
+
+                In this mission, we completed the implementation of ticket routes and their respective data operations using GitHub Copilot's inline chat feature. We created data validation models, wrote the database operations, and built the API routes.
+
                 We've completed the implementation of ticket routes and their respective data operations using GitHub Copilot's inline chat feature. We created data validation models, wrote the database operations, and built the API routes.
             - type: "text"
               content: |

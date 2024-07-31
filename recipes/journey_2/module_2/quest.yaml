@@ -87,8 +87,6 @@ tasks:
         edges:
           - text: "How can GitHub Copilot help with code reliability improvements?"
             target_node_id: "screen8"
-          - text: "I need more details and examples."
-            target_node_id: "screen9b"
       - id: screen8
         type: message
         body:

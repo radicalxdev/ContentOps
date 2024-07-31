@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Welcome to the 'Generate Project Docs Using GitHub Copilot Chat' mission. Creating documentation is an important part of software development. Inline documentation helps developers understand the codebase, its purpose, and how to use it. Project documentation provides essential information about the project's scope and purpose."
             - type: "text"
@@ -77,8 +75,6 @@ tasks:
               content: "Follow these steps to generate documentation for the project requirements:\n1. **Generate Requirements Documentation**: In the Chat view, enter the following prompt:\n```python\n@workspace document the project requirements\n```"
             - type: "text"
               content: "Take a minute to review the project requirements documentation."
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "GitHub Copilot Chat provides detailed information about the project's functional and non-functional requirements."
             - type: "text"
@@ -109,8 +105,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Congratulations, {username}! 🎉 You've successfully used GitHub Copilot Chat to generate project documentation for the Alfred AI project. By using the Chat view and the @workspace participant, you were able to generate documentation for the project overview, requirements, constraints, dependencies, and summary. You also generated a README file for the Alfred AI project."
             - type: "text"

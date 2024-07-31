@@ -43,7 +43,6 @@ tasks:
             - type: "text"
               content: |
                 Code reliability refers to the likelihood that software functions correctly under specific conditions and for a certain period of time. Improving code reliability helps to ensure that your software performs as expected and meets user requirements. In this exercise, you use Github Copilot Chat to generate suggestions that help you improve code reliability and performance in a sample application.
-                
             - type: "text"
               content: "Ready to proceed?"
         edges:
@@ -231,9 +230,9 @@ tasks:
               content: |
                 Notice how Copilot recommends the asynchronous handlers for all of the routes such as projects.py where it can handle multiple requests at the same time without waiting for other requests to complete. In our case, because we are using SQLAlchemy which does not natively support asynchronous operations, this would not be a major change for the app's performance. But this would allow the API to handle multiple requests by returning a coroutine per route and allow the API to accept requests while processing them at the same time.
             - type: "text"
-              content: "Ready to summarize the mission?"
+              content: "Ready to move on?"
         edges:
-          - text: "Yes, let's summarize!"
+          - text: "Yes!"
             target_node_id: "END"
 
       - id: END
