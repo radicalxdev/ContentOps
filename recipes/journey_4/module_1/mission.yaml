@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Welcome to the \"Introduction to Manual Test Cases\" mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? Creating manual test cases helps ensure that every aspect of your feature is tested thoroughly."
             - type: "text"
@@ -118,8 +116,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Let's recap what you've learned:\n- **Introduction to Manual Test Cases**: The importance of creating thorough and detailed test cases.\n- **Using AI to Create Test Cases**: How AI can accelerate and improve the process of generating manual test cases.\n- **Overview of Jira**: Understanding Jira's role in project management and software testing.\n- **Integrating Katalon with Jira**: Enhancing your testing process by integrating advanced test management tools.\n- **Creating and Managing Test Cases in Jira**: Steps to create, manage, and save manual test cases within Jira and Katalon."
         edges:

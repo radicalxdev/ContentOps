@@ -7,11 +7,9 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
-                "Imagine this: You’re part of a team developing a critical software application. Ensuring its quality is paramount, but the traditional testing methods seem too slow and cumbersome. What steps would you take to ensure the software meets high-quality standards efficiently?"
+                "Imagine this: You're part of a team developing a critical software application. Ensuring its quality is paramount, but the traditional testing methods seem too slow and cumbersome. What steps would you take to ensure the software meets high-quality standards efficiently?"
         edges:
           - text: "I would manually test every component."
             target_node_id: "screen2a"
@@ -24,8 +22,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Manual testing is thorough, but it can be time-consuming and prone to human error, {username}. Here are some challenges with manual testing:"
@@ -40,8 +36,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Automated testing tools are a great start, {username}. They save time and reduce errors, but integrating AI can take your testing to the next level. Here are some limitations of traditional automated testing tools:"
@@ -56,8 +50,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Exploring AI-powered testing solutions is a smart choice, {username}. AI can significantly enhance testing efficiency and effectiveness. Here are some benefits of using AI in software testing:"
@@ -86,8 +78,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "AI-powered tools are revolutionizing software testing. Here are some key players:
@@ -128,7 +118,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                "That’s great! Since you're already familiar with AI in software testing, let's take your skills to the next level. How would you like to proceed? A quick refresher to warm up or dive straight into the advanced tips?"
+                "That's great! Since you're already familiar with AI in software testing, let's take your skills to the next level. How would you like to proceed? A quick refresher to warm up or dive straight into the advanced tips?"
         edges:
           - text: "Quick refresher, please!"
             target_node_id: "screen6"
@@ -183,8 +173,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "To fully grasp the impact of AI in software testing, it's important to understand the different types of testing involved. Here are the key types:"
@@ -229,8 +217,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "AI can significantly enhance each type of testing:"
@@ -256,8 +242,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "AI has a significant impact on software testing, especially within continuous delivery and DevOps infrastructures. Here's an overview of how AI enhances software testing:"
@@ -270,7 +254,7 @@ tasks:
                   - **Manual Testing Effort:** Time-consuming and labor-intensive.
                   - **Complexity of Software:** Requires different types of tests.
                   - **Narrow Testing Windows:** Reduced time for thorough testing.
-                  - **Regression Testing Needs:** Ensuring new features don’t affect existing functionality."
+                  - **Regression Testing Needs:** Ensuring new features don't affect existing functionality."
         edges:
           - text: "Can you give me examples of these bottlenecks?"
             target_node_id: "screen11"
@@ -294,7 +278,7 @@ tasks:
                 - **Narrow Testing Windows:**
                   - Continuous delivery often reduces the time available for thorough testing.
                 - **Regression Testing Needs:**
-                  - Ensuring that new features don’t negatively affect existing functionality requires ongoing regression testing."
+                  - Ensuring that new features don't negatively affect existing functionality requires ongoing regression testing."
         edges:
           - text: "Got it, what's next?"
             target_node_id: "END"
@@ -303,8 +287,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "AI can significantly address these bottlenecks in software testing by:"
@@ -328,8 +310,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Katalon integrates various AI capabilities to enhance your software testing process, offering features that improve efficiency, accuracy, and scalability:"
@@ -356,7 +336,7 @@ tasks:
                 - **Error Detection and Solutions:** Identifies potential issues and suggests fixes during test execution.
                 - **Learning and Adaptation:** Continuously learns from test execution data to improve assistance over time."
         edges:
-          - text: "Show me Katalon’s AI-powered features in detail."
+          - text: "Show me Katalon's AI-powered features in detail."
             target_node_id: "screen14"
           - text: "How does Katalon support integrations?"
             target_node_id: "screen16"
@@ -371,7 +351,7 @@ tasks:
 
                 - **Combine Multiple Application Types:** Create tests for a web application, API, mobile app, and desktop application all within one project, streamlining test management.
                 - **Recorder and Spy:** Use the recorder to capture user interactions with the application, automatically generating test scripts that can be edited and reused.
-                - **Self-Healing:** If an element locator changes due to a UI update, Katalon’s self-healing feature will automatically find the new locator and update the test script, ensuring continuous test execution.
+                - **Self-Healing:** If an element locator changes due to a UI update, Katalon's self-healing feature will automatically find the new locator and update the test script, ensuring continuous test execution.
                 - **Smart Wait:** Smart Wait ensures that the test steps wait for the necessary elements to be fully loaded and interactive before proceeding, reducing false negatives and improving test reliability."
         edges:
           - text: "What about comprehensive test coverage?"
@@ -430,8 +410,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "To get the most out of Katalon Studio, here are some best practices to follow:"
@@ -449,8 +427,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Here are some real-world examples of how Katalon Studio is used to enhance software testing in development projects:"
@@ -465,15 +441,13 @@ tasks:
                     - **Challenge:** Ensuring the reliability and performance of critical healthcare software.
                     - **Solution:** Leveraging Katalon Studio for performance and load testing, automating these tests to run regularly, identifying bottlenecks, and ensuring the system can scale and perform under high user load conditions."
         edges:
-          - text: "Got it, what’s next?"
+          - text: "Got it, what's next?"
             target_node_id: "END"
 
       - id: END
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Great job completing the AI in Software Testing Quest! Here's a quick recap:"
