@@ -247,7 +247,6 @@ tasks:
               
               ```
               Add a new component for assigning multiple people to one ticket.
-              
               ```
       edges:
         - text: "Made the edits"
