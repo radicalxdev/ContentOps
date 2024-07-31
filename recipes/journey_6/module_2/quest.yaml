@@ -190,7 +190,7 @@ tasks:
                 - Error Analysis: New Relic APM captures and analyzes errors in real-time, providing detailed error messages, stack traces, and the context in which the error occurred. It also includes deployment markers to correlate errors with new code releases.
         edges:
           - text: "Tell me more features."
-            target_node_id: "END"
+            target_node_id: "screen7a"
 
       - id: screen7a
         type: message
@@ -223,7 +223,7 @@ tasks:
 
                 - Agent Not Running: Verify system compatibility and resource availability. The infrastructure agent may not start if there are compatibility issues or insufficient resources.
         edges:
-          - text: "Tell me more features."
+          - text: "Tell me about more issues."
             target_node_id: "END"
 
       - id: END
