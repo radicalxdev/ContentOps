@@ -27,7 +27,7 @@ tasks:
               content: "Alright {username}, let's begin with our first question!"
             - type: "text"
               content: |
-                How can GitHub Copilot Chat assist in improving the modularity of a class?
+                **Q1. How can GitHub Copilot Chat assist in improving the modularity of a class?**
 
 
                 A. By suggesting potential refactoring updates based on the context of your codebase.
@@ -111,7 +111,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How does GitHub Copilot Chat propose fixes for bugs in your code?
+                **Q2. How does GitHub Copilot Chat propose fixes for bugs in your code?**
 
 
                 A. By running automated tests and identifying the root cause.
@@ -195,7 +195,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the purpose of code refactoring?
+                **Q3. What is the purpose of code refactoring?**
 
 
                 A. To alter the external behavior or functionality of the code.
@@ -279,7 +279,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What factors can be considered when working on code quality improvements?
+                **Q4. What factors can be considered when working on code quality improvements?**
 
 
                 A. The number of lines of code in the program.
@@ -325,7 +325,32 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Improving code quality involves considering various factors that contribute to the overall effectiveness and maintainability of the code. These factors include readability (how easily the code can be understood), complexity (how simple the code logic is), modularity (how well the code is divided into independent modules), reusability (how easily code components can be reused), testability (how easily the code can be tested), extensibility (how easily new features can be added), reliability (how consistently the code performs), performance (how efficiently the code runs), security (how well the code is protected from vulnerabilities), scalability (how well the code can handle growth), usability (how user-friendly the code is), and portability (how easily the code can be adapted to different environments)."
+              content: |
+                    Improving code quality involves considering various factors that contribute to the overall effectiveness and maintainability of the code. These include:
+
+                    - **Readability**: how easily the code can be understood
+
+                    - **Complexity**: how simple the code logic is
+
+                    - **Modularity**: how well the code is divided into independent modules
+
+                    - **Reusability**: how easily code components can be reused
+
+                    - **Testability**: how easily the code can be tested
+
+                    - **Extensibility**: how easily new features can be added
+
+                    - **Reliability**: how consistently the code performs
+
+                    - **Performance**: how efficiently the code runs
+
+                    - **Security**: how well the code is protected from vulnerabilities
+
+                    - **Scalability**: how well the code can handle growth)
+
+                    - **Usability**: how user-friendly the code is
+
+                    - **Portability**: how easily the code can be adapted to different environments
         edges:
           - text: "Give me an example, Ada!"
             target_node_id: screen5b
@@ -363,7 +388,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the importance of context and intent when developing prompts for GitHub Copilot Chat?
+                **Q5. What is the importance of context and intent when developing prompts for GitHub Copilot Chat?**
 
 
                 A. They determine the color scheme used by GitHub Copilot Chat.
@@ -447,7 +472,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is one way to improve code reliability?
+                **Q6. What is one way to improve code reliability?**
 
 
                 A. By optimizing algorithms and data structures for the task at hand.
@@ -531,7 +556,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How can GitHub Copilot Chat help with code quality improvements?
+                **Q7. How can GitHub Copilot Chat help with code quality improvements?**
 
 
                 A. By generating automated tests.
@@ -615,7 +640,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How can GitHub Copilot Chat assist with learning new coding techniques?
+                **Q8. How can GitHub Copilot Chat assist with learning new coding techniques?**
 
 
                 A. By automatically writing all the code for you.
@@ -699,7 +724,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?
+                **Q9. What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?**
 
 
                 A. To slow down the response time.
@@ -783,7 +808,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Why is it important to review and evaluate the suggestions provided by GitHub Copilot?
+                **Q10. Why is it important to review and evaluate the suggestions provided by GitHub Copilot?**
 
 
                 A. Because Copilot automatically implements the best solution.

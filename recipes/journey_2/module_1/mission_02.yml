@@ -19,7 +19,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                For this mission, we'll refer to an existing project management API with Alfred AI. The focus is on demonstrating GitHub Copilot's inline chat feature for building ticket routes and their data operations. You can find the project at this [GitHub Repository](https://github.com/alfred-ai-co/Code_by_using_Copilot_code_line_completions). Ready to proceed?
+                For this mission, we'll refer to an existing project management API with Alfred AI. The focus is on demonstrating GitHub Copilot's inline chat feature for building ticket routes and their data operations. You can find the project at this [GitHub Repository](https://github.com/alfred-ai-co/Code_by_using_Copilot_code_line_completions).
 
 
   - name: "Creating Pydantic Models with Github Copilot Inline Chat"

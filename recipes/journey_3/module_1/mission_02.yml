@@ -7,11 +7,9 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
-                Hello, {userName}! Welcome to the mission on creating unit tests for specific conditions using GitHub Copilot. You’re now adding a new feature to the scheduler that allows multiple assignees to be assigned to a single project automatically. Ready to write a unit test to check this new feature?
+                Hello, {username}! Welcome to the mission on creating unit tests for specific conditions using GitHub Copilot. You're now adding a new feature to the scheduler that allows multiple assignees to be assigned to a single project automatically. Ready to write a unit test to check this new feature?
         edges:
           - text: "Yes, let's get started!"
             target_node_id: "END"
@@ -74,10 +72,10 @@ tasks:
             - type: "text"
               content: "Take a minute to review the response from GitHub Copilot."
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_1.png?alt=media&token=211b367a-4563-4fde-a0a0-5d4952f96e8a"
             - type: "text"
               content: |
-                Let’s start asking follow-up questions to get a better understanding before writing unit tests. We should start with understanding inputs and outputs. Then we can narrow down the number of cases we need to create. Use the following prompt:
+                Let's start asking follow-up questions to get a better understanding before writing unit tests. We should start with understanding inputs and outputs. Then we can narrow down the number of cases we need to create. Use the following prompt:
                 
                 ```python
                 #file:scheduler_feature.py Come up with what is needed to properly unit test the file. Let's think about this step-by-step. What are the inputs and outputs of this file? What are the function's expected behaviors? What are the function's expected outputs?
@@ -107,9 +105,9 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Let’s take a sneak peek at Copilot's analysis on how to properly unit test the `scheduler_feature.py` file. We’ll write the tests using the `pytest` framework.
+                Let's take a sneak peek at Copilot's analysis on how to properly unit test the `scheduler_feature.py` file. We'll write the tests using the `pytest` framework.
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_2.png?alt=media&token=82375b69-121e-4c92-bc59-06a63b5e2d7b"
             - type: "text"
               content: |
                 Take a minute to analyze the response. Notice how Copilot specifies what is covered in the testing scenarios. This gives us an opportunity to ask more questions for specific scenarios beyond what is mentioned.
@@ -133,9 +131,9 @@ tasks:
                 @workspace #selection are there any edge cases that should also be tested
                 ```
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_3.png?alt=media&token=b5e213ae-696a-4db9-9bf3-35daa109c004"
             - type: "text"
-              content: "Take a minute to review Copilot’s suggested edge cases to cover within the `test_scheduler_feature.py` file:"
+              content: "Take a minute to review Copilot's suggested edge cases to cover within the `test_scheduler_feature.py` file."
         edges:
           - text: "Got it, let's proceed!"
             target_node_id: "screen6"
@@ -145,10 +143,10 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_4.png?alt=media&token=69a7be7b-49b1-4b19-bdaa-cbec38580496"
             - type: "text"
               content: |
-                Head to the `tests/test_scheduler_feature.py` file. Let’s have Copilot generate tests for the newly suggested edge cases and then insert them into the file. Once generated, select a blank line with your cursor in the file and press `Ctrl + Enter` or select the `Insert at Cursor` option within the chat in the top right of the generated code.
+                Head to the `tests/test_scheduler_feature.py` file. Let's have Copilot generate tests for the newly suggested edge cases and then insert them into the file. Once generated, select a blank line with your cursor in the file and press `Ctrl + Enter` or select the `Insert at Cursor` option within the chat in the top right of the generated code.
         edges:
           - text: "Tests inserted, let's run them!"
             target_node_id: "END"
@@ -172,10 +170,10 @@ tasks:
                 pytest tests/test_scheduler_feature.py -vv -s
                 ```
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_5.png?alt=media&token=c14b3c9f-cb28-4471-b857-0cc42df2af9f"
             - type: "text"
               content: |
-                It is expected that some tests might fail. Here’s an example of a test failure. Let's resolve them!
+                It is expected that some tests might fail. Here's an example of a test failure. Let's resolve them!
 
   - name: "Resolve Unit Testing Bug with Copilot"
     context: "In the final part of the mission, learners resolve unit testing bugs with the help of GitHub Copilot. They start by highlighting the contents of the test output and using a command to ask Copilot for assistance in fixing the identified bugs. After reviewing Copilot's suggested fixes and inserting them into the code, learners re-run the tests using pytest to ensure the issues are resolved. The mission concludes with a summary that highlights the benefits of using Copilot to write and analyze unit tests for specific conditions, improving code quality, increasing test coverage, and enhancing development velocity."
@@ -193,14 +191,14 @@ tasks:
                 @workspace /fix #file:scheduler_feature.py #terminalSelection
                 ```
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_6.png?alt=media&token=c8ff2467-6316-4c5f-996a-ff9492be9f98"
             - type: "text"
               content: |
                 Take a minute to review the output. Notice how it provides a method for fixing the problem. If you need more help as to where to insert the fix, you can highlight the function and ask for insertion guidance with the `#selection` context command.
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_7.png?alt=media&token=fa511c5a-131a-4ff7-aeca-954a9697c3f2"
             - type: "text"
-              content: "In case you need help with insertion:"
+              content: "In case you need help with insertion!"
         edges:
           - text: "Fix applied, let's re-run the tests!"
             target_node_id: "screen9"
@@ -217,10 +215,10 @@ tasks:
                 pytest tests/test_scheduler_feature.py
                 ```
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_8.png?alt=media&token=5a811a84-6875-4d6d-96ba-76e7b4ca083a"
             - type: "text"
               content: |
-                You should see an output like this:
+                You should see an output like this!
         edges:
           - text: "Tests passed, let's continue!"
             target_node_id: "END"

@@ -133,8 +133,8 @@ tasks:
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_2.png?alt=media&token=98a8e694-01e4-4951-8fb1-63614dd42223"
         edges:
           - text: "Yes, let's review!"
-            target_node_id: "END"
-      - id: END
+            target_node_id: "screen4b"
+      - id: screen4b
         type: message
         body:
           parts:
@@ -148,6 +148,15 @@ tasks:
                 ```
             - type: "text"
               content: "Ready to move on to the next task?"
+        edges:
+          - text: "Yes!"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: "Perfect! Let's move on to the next task."
   - name: "Interview Pattern Q&A in Action"
     context: "In this task, learners focus on generating an update operation for the Project Management API using GitHub Copilot. They are guided to create a function update_project that updates a project's name and description in the database. Following the provided comment, they review the code suggestions from Copilot, ensuring the function retrieves the project by its ID, updates the necessary fields, commits the transaction, and returns the updated project. This step-by-step process helps learners understand how to effectively use Copilot to implement CRUD operations, reinforcing their coding skills and improving development efficiency."
     id: "3"
@@ -232,9 +241,9 @@ tasks:
                         db.commit()
                 ```
             - type: "text"
-              content: "Ready to summarize the mission?"
+              content: "Ready to move on?"
         edges:
-          - text: "Yes, let's summarize!"
+          - text: "Yep! Let's move on."
             target_node_id: "END"
       - id: END
         type: message
