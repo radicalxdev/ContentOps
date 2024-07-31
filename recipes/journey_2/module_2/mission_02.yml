@@ -72,7 +72,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Code reliability refers to the likelihood that the software functions correctly under specific conditions and for a certain period of time. Improving reliability helps ensure that the software performs as expected and meets user requirements. Let's work WITH Copilot, consider some of its suggestions, and see how we can use generative AI tools to help us reason over how to best refactor the code for reliability.
+                To get started, enter the following prompt with a variety of chat participants or commands to help describe the context to Copilot:
             - type: "text"
               content: |
                 Enter the following prompt with a variety of chat participants or commands to help describe the context to Copilot:
