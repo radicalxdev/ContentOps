@@ -186,6 +186,9 @@ tasks:
                 2. **Environment-Specific Settings**: It helps create environment-specific settings that can be easily switched based on the deployment target.
 
                 3. **Error Prevention**: It suggests correct values and flags potential errors, reducing the likelihood of misconfigurations.
+        edges:
+          - text: "Let's move forward!"
+            target_node_id: "END"
 
       - id: END
         type: message

@@ -209,4 +209,4 @@ tasks:
           parts:
             - type: "text"
               content: |
-                "Congratulations! You have successfully completed the quest. In this lesson, you explored the significance of AI in CI/CD and how it addresses common challenges developers face. AI-driven tools like GitHub Copilot enhance efficiency, improve code quality, enable proactive issue resolution, and optimize deployment strategies."
+                Congratulations! You have successfully completed the quest. In this lesson, you explored the significance of AI in CI/CD and how it addresses common challenges developers face. AI-driven tools like GitHub Copilot enhance efficiency, improve code quality, enable proactive issue resolution, and optimize deployment strategies.
