@@ -236,6 +236,22 @@ tasks:
     type: "message"
 - context: |
     In this mission, the learner will explore the eight distinct journeys of the program, each focusing on a key aspect of AI-powered software development. They will gain theoretical knowledge and practical skills essential for mastering AI in software development. From integrating AI into the development lifecycle to optimizing workflows, each journey builds on their existing knowledge and experience.
+    Journey 1: Mastering the AI-Powered Software Development Lifecycle
+    Journey Description: Start with an overview of the program, then delve into understanding Generative AI and its integration at every stage of software development. Gain expertise in advanced prompt engineering to achieve superior AI outputs.
+    Journey 2: Optimizing Software Development with AI Integration
+    Journey Description: Discover how to leverage GitHub Copilot for software development. This journey covers feature development, code improvements, and enhanced performance using AI-driven tools to streamline and optimize your coding workflow.
+    Journey 3: Advanced AI-Powered Software Development
+    Journey Description: Explore advanced AI-driven techniques for software documentation and unit testing. This journey covers generating detailed code explanations, comprehensive project documentation, and effective unit tests using AI tools, enhancing your coding accuracy, understanding, and collaboration.
+    Journey 4: AI-Driven Excellence in Software Testing
+    Journey Description: Achieve excellence in software testing by harnessing the power of AI. This journey covers automated test generation, the integration of AI tools with manual testing processes, and best practices to enhance the accuracy, efficiency, and reliability of your software testing efforts.
+    Journey 5: Streamlining Software Deployment with AI
+    Journey Description: Learn to optimize and automate your software deployment processes using AI. This journey covers advanced techniques for deployment automation and pipeline management, ensuring efficient, secure, and reliable deployments with AI-driven tools.
+    Journey 6: Optimizing Software Maintenance with AI
+    Journey Description: Explore advanced AI-powered techniques to enhance software maintenance. This journey covers real-time monitoring, troubleshooting, and performance optimization using AI tools, ensuring robust and efficient software systems.
+    Journey 7: Collaborative Planning & Design with AI
+    Journey Description: Explore the use of generative AI tools to enhance collaborative planning and design processes. This journey covers the creation of visual documentation, architectural diagrams, and data flow diagrams, emphasizing best practices for using AI to streamline communication and planning.
+    Journey 8: Integrating AI Across Development Workflows
+    Journey Description: Master the integration of AI throughout your development workflows. This journey focuses on adopting the mindset of an AI-augmented software engineer, understanding ethical considerations, and applying AI techniques effectively across various stages of the software development lifecycle.
   id: "4"
   name: "Program Structure"
   nodes: 
