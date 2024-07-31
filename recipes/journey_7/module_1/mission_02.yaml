@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Imagine the Product Manager asks you to create a detailed document explaining the structure of a new feature and its functionalities. Eraser offers an easy-to-use feature for creating detailed documentation to enhance cross-collaboration. Ready to get started?"
         edges:
@@ -18,6 +16,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_1.png?alt=media&token=08776ddc-ad39-4268-8c9e-412712c7a955"
             - type: "text"
               content: "First, create a new file from your workspace dashboard. This file will be used to generate the detailed documentation."
   - name: "Preparing the Documentation Outline"
@@ -80,6 +80,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_2.png?alt=media&token=f83bf82f-46ea-4019-9004-502290e81c97"
             - type: "text"
               content: "Click on Next. Answer the follow-up questions as they appear and click Generate."
         edges:
@@ -89,6 +91,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_3.png?alt=media&token=36d2f582-2d44-4db0-8d96-bd9064ec7ee2"
             - type: "text"
               content: "Once the detailed documentation is generated, click on Use Outline. Notice that the documentation is more abstract and high-level compared to the planning document, making it ideal for cross-functional teams and technical teams to stay informed about development and changing requirements."
         edges:
@@ -108,6 +112,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_4.png?alt=media&token=cdc8cc47-fc55-4b77-ad6f-b4b47e8bbc5b"
             - type: "text"
               content: "This will create a flowchart diagram in an abstracted manner for cross-functional teams to understand the flow of technical components."
         edges:

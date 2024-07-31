@@ -121,8 +121,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              src: "team_collaborating_visual_documentation.png"
             - type: "text"
               content: |
                 Using Eraser AI streamlines the documentation process, enhancing agility and communication within development teams.
@@ -143,8 +141,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              src: "detailed_benefits_in_action.png"
             - type: "text"
               content: |
                 **Frequent Updates and Iterative Design**
@@ -167,8 +163,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              src: "eraser_ai_impact_summary.png"
             - type: "text"
               content: |
                 Using Eraser AI streamlines the documentation process, enhances team collaboration, and improves overall workflow efficiency. By leveraging AI tools, you can maintain up-to-date visual documentation, support iterative design, and facilitate quicker feedback and adjustments.
