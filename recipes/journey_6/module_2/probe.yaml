@@ -28,7 +28,7 @@ tasks:
               content: "Excellent, {username}! Let's start with the first question."
             - type: "text"
               content: |
-                What is the primary advantage of using AI in troubleshooting over manual methods?
+                1. What is the primary advantage of using AI in troubleshooting over manual methods?
 
 
                 A. It increases the complexity of the process.
@@ -54,9 +54,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! AI automates repetitive tasks and offers deeper insights, making troubleshooting more efficient and effective."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen2a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen2incorrect
         type: message
@@ -65,9 +65,9 @@ tasks:
             - type: "text"
               content: "Not quite, {username}. The primary advantage of using AI in troubleshooting over manual methods is that AI can automate repetitive tasks and provide deeper insights into system performance and issues. Let's explore this further."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen2a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen2a
         type: message
@@ -76,9 +76,9 @@ tasks:
             - type: "text"
               content: "The primary advantage of using AI in troubleshooting over manual methods is that AI can automate repetitive tasks and provide deeper insights into system performance and issues. AI tools can quickly analyze vast amounts of data, identify patterns, and detect anomalies that might be missed through manual analysis. This results in faster issue resolution and a more comprehensive understanding of underlying problems."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen2b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen2b
         type: message
@@ -113,7 +113,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which tool is highlighted for its comprehensive features and AI-driven insights in troubleshooting?
+                2. Which tool is highlighted for its comprehensive features and AI-driven insights in troubleshooting?
 
 
                 A. Datadog
@@ -139,9 +139,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! New Relic is highlighted for its comprehensive features and AI-driven insights in troubleshooting."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen3a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen3incorrect
         type: message
@@ -150,9 +150,9 @@ tasks:
             - type: "text"
               content: "That's not correct, {username}. New Relic is highlighted for its comprehensive features and AI-driven insights in troubleshooting. Let's explore this further."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen3a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen3a
         type: message
@@ -161,9 +161,9 @@ tasks:
             - type: "text"
               content: "New Relic is highlighted for its comprehensive features and AI-driven insights in troubleshooting. The platform offers a wide range of monitoring and analysis tools, including application performance monitoring, log management, synthetic monitoring, and AI-driven analytics. These features provide deep visibility into application performance, help detect and resolve issues proactively, and ensure the reliability and efficiency of applications."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen3b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen3b
         type: message
@@ -198,7 +198,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is one of the main challenges of manual troubleshooting?
+                3. What is one of the main challenges of manual troubleshooting?
 
 
                 A. It is highly accurate.
@@ -224,9 +224,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! Manual troubleshooting is labor-intensive and prone to errors, making it less efficient than AI-driven methods."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen4a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen4incorrect
         type: message
@@ -235,9 +235,9 @@ tasks:
             - type: "text"
               content: "That's not right, {username}. One of the main challenges of manual troubleshooting is that it is labor-intensive and error-prone. Let's dive deeper."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen4a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen4a
         type: message
@@ -246,9 +246,9 @@ tasks:
             - type: "text"
               content: "One of the main challenges of manual troubleshooting is that it is labor-intensive and error-prone. Manual methods require significant time and effort to analyze data, identify issues, and implement fixes. This process can lead to inconsistencies and human errors, reducing the overall effectiveness and reliability of troubleshooting efforts."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen4b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen4b
         type: message
@@ -283,7 +283,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which feature of AI-powered tools helps in identifying performance issues in real-time?
+                4. Which feature of AI-powered tools helps in identifying performance issues in real-time?
 
 
                 A. Historical Analysis
@@ -309,9 +309,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! Real-time monitoring in AI-powered tools helps identify performance issues as they occur."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen5a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen5incorrect
         type: message
@@ -320,9 +320,9 @@ tasks:
             - type: "text"
               content: "That's not quite right, {username}. Real-time monitoring is a feature of AI-powered tools that helps identify performance issues as they occur. Let's explore this further."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen5a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen5a
         type: message
@@ -331,9 +331,9 @@ tasks:
             - type: "text"
               content: "Real-time monitoring is a feature of AI-powered tools that helps identify performance issues as they occur. This capability allows for continuous observation of system performance metrics, immediate detection of anomalies, and rapid response to potential problems. By monitoring performance in real-time, AI tools ensure that issues are addressed promptly, minimizing the impact on users and maintaining optimal system performance."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen5b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen5b
         type: message
@@ -368,7 +368,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How does predictive analytics benefit troubleshooting?
+                5. How does predictive analytics benefit troubleshooting?
 
 
                 A. By providing inaccurate predictions.
@@ -394,9 +394,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! Predictive analytics benefits troubleshooting by forecasting potential issues before they arise."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen6a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen6incorrect
         type: message
@@ -405,9 +405,9 @@ tasks:
             - type: "text"
               content: "That's not right, {username}. Predictive analytics benefits troubleshooting by predicting potential issues before they occur. Let's delve deeper."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen6a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen6a
         type: message
@@ -416,9 +416,9 @@ tasks:
             - type: "text"
               content: "Predictive analytics benefits troubleshooting by predicting potential issues before they occur. By analyzing historical data and current performance metrics, predictive analytics can identify patterns and trends that indicate potential problems. This proactive approach allows for timely interventions, preventing issues from escalating and minimizing downtime and performance degradation."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen6b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen6b
         type: message
@@ -453,7 +453,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What does AI-driven root cause analysis do?
+                6. What does AI-driven root cause analysis do?
 
 
                 A. It increases the number of errors.
@@ -479,9 +479,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! AI-driven root cause analysis efficiently identifies the underlying cause of issues."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen7a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen7incorrect
         type: message
@@ -490,9 +490,9 @@ tasks:
             - type: "text"
               content: "That's not it, {username}. AI-driven root cause analysis helps efficiently trace issues back to their origin. Let me explain more."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen7a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen7a
         type: message
@@ -501,9 +501,9 @@ tasks:
             - type: "text"
               content: "AI-driven root cause analysis helps efficiently trace issues back to their origin. By analyzing data from various sources, AI can quickly identify the root cause of a problem, significantly reducing the time and effort required for manual troubleshooting. This leads to faster resolution times and more effective problem-solving."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen7b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen7b
         type: message
@@ -538,7 +538,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which AI-powered tool provides centralized error tracking and triaging?
+                7. Which AI-powered tool provides centralized error tracking and triaging?
 
 
                 A. GitHub Copilot
@@ -564,9 +564,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! New Relic's Errors Inbox offers centralized error tracking and triaging."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen8a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen8incorrect
         type: message
@@ -575,9 +575,9 @@ tasks:
             - type: "text"
               content: "That's not correct, {username}. New Relic's Errors Inbox is an AI-powered tool that provides centralized error tracking and triaging. Let's explore this further."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen8a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen8a
         type: message
@@ -586,9 +586,9 @@ tasks:
             - type: "text"
               content: "New Relic's Errors Inbox is an AI-powered tool that provides centralized error tracking and triaging. It aggregates errors from various sources into a single view, allowing development teams to quickly identify, prioritize, and address issues. This centralized approach improves efficiency and ensures that critical errors are handled promptly."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen8b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen8b
         type: message
@@ -623,7 +623,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                What is the purpose of transaction tracing in New Relic APM?
+                8. What is the purpose of transaction tracing in New Relic APM?
 
 
                 A. To ignore user interactions.
@@ -649,9 +649,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! Transaction tracing in New Relic APM follows the path of a request through the application."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen9a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen9incorrect
         type: message
@@ -660,9 +660,9 @@ tasks:
             - type: "text"
               content: "That's not right, {username}. The purpose of transaction tracing in New Relic APM is to follow the path of a request as it moves through the application. Let's dive deeper."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen9a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen9a
         type: message
@@ -671,9 +671,9 @@ tasks:
             - type: "text"
               content: "The purpose of transaction tracing in New Relic APM is to follow the path of a request as it moves through the application. This feature allows developers to see how a request is processed, identify bottlenecks, and detect where errors or slowdowns occur. By providing detailed insights into each step of a transaction, transaction tracing helps optimize application performance and troubleshoot issues effectively."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen9b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen9b
         type: message
@@ -708,7 +708,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Which feature of New Relic helps in visualizing the interactions between different services in an application?
+                9. Which feature of New Relic helps in visualizing the interactions between different services in an application?
 
 
                 A. Error Analysis
@@ -734,9 +734,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! Service Maps in New Relic visualize the interactions between different services in an application."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen10a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen10incorrect
         type: message
@@ -745,9 +745,9 @@ tasks:
             - type: "text"
               content: "That's not correct, {username}. The Service Maps feature in New Relic helps visualize the interactions between different services within an application. Let's explore this further."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen10a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen10a
         type: message
@@ -756,9 +756,9 @@ tasks:
             - type: "text"
               content: "The Service Maps feature in New Relic helps visualize the interactions between different services within an application. It provides a graphical representation of how various services communicate and depend on each other, making it easier to understand the application's architecture, identify potential bottlenecks, and monitor the performance of interconnected services."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen10b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen10b
         type: message
@@ -793,7 +793,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                How does automated log analysis help in troubleshooting?
+                10. How does automated log analysis help in troubleshooting?
 
 
                 A. By manually reviewing logs.
@@ -819,9 +819,9 @@ tasks:
             - type: "text"
               content: "Correct, {username}! Automated log analysis quickly identifies patterns and anomalies, aiding in troubleshooting."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen11a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen11incorrect
         type: message
@@ -830,9 +830,9 @@ tasks:
             - type: "text"
               content: "That's not right, {username}. Automated log analysis helps in troubleshooting by quickly identifying patterns and anomalies in log data. Let's dive deeper."
         edges:
-          - text: "1. Explain more, Ada!"
+          - text: "Explain more, Ada!"
             target_node_id: screen11a
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen11a
         type: message
@@ -841,9 +841,9 @@ tasks:
             - type: "text"
               content: "Automated log analysis helps in troubleshooting by quickly identifying patterns and anomalies in log data. AI-powered tools can analyze large volumes of logs in real-time, detecting unusual patterns, errors, and other indicators of potential issues. This enables faster diagnosis and resolution of problems, reducing the time and effort required for manual log analysis."
         edges:
-          - text: "1. Give me an example, Ada!"
+          - text: "Give me an example, Ada!"
             target_node_id: screen11b
-          - text: "2. On to the next, Ada!"
+          - text: "On to the next, Ada!"
             target_node_id: END
       - id: screen11b
         type: message

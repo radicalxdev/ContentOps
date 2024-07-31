@@ -1,6 +1,6 @@
 tasks:
   - name: "Intro & Challenges with Software Monitoring"
-    context: "This introduction module welcomes learners to Alfred AI's monitoring quest, where they will explore implementing AI-powered monitoring using New Relic to maintain system health and responsiveness. It presents a scenario involving Alfred AI’s TaskMaster application experiencing performance issues, highlighting the importance of robust monitoring. The challenges of not having a monitoring system are outlined, including downtime, lost revenue, decreased user satisfaction, and increased technical debt. The module sets the stage for learning how AI-powered monitoring can address these issues and enhance overall system performance and reliability."
+    context: "This introduction module welcomes learners to Alfred AI's monitoring quest, where they will explore implementing AI-powered monitoring using New Relic to maintain system health and responsiveness. It presents a scenario involving Alfred AI's TaskMaster application experiencing performance issues, highlighting the importance of robust monitoring. The challenges of not having a monitoring system are outlined, including downtime, lost revenue, decreased user satisfaction, and increased technical debt. The module sets the stage for learning how AI-powered monitoring can address these issues and enhance overall system performance and reliability."
     id: "1"
     nodes:
       - id: START
@@ -9,8 +9,8 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Welcome to Alfred AI’s monitoring quest! In this quest, we will explore how to implement AI-powered monitoring using New Relic to ensure your system remains healthy and responsive.
-                Imagine you’re working on Alfred AI’s TaskMaster application. Everything seems to be running smoothly until one day, you notice a sudden spike in response times. Users start complaining about slow performance, and you realize there’s a critical issue that needs immediate attention. Without a robust monitoring system, identifying the cause could take hours, impacting user satisfaction and business operations.
+                Welcome to Alfred AI's monitoring quest! In this quest, we will explore how to implement AI-powered monitoring using New Relic to ensure your system remains healthy and responsive.
+                Imagine you're working on Alfred AI's TaskMaster application. Everything seems to be running smoothly until one day, you notice a sudden spike in response times. Users start complaining about slow performance, and you realize there's a critical issue that needs immediate attention. Without a robust monitoring system, identifying the cause could take hours, impacting user satisfaction and business operations.
         edges:
           - text: "Explore the challenges of not having a monitoring system."
             target_node_id: "screen2"
@@ -89,7 +89,7 @@ tasks:
         edges:
           - text: "Tell me more about the benefits of AI-powered maintenance."
             target_node_id: "screen4a"
-          - text: "Got it, let’s move on."
+          - text: "Got it, let's move on."
             target_node_id: "screen5"
 
       - id: screen4a
@@ -103,7 +103,7 @@ tasks:
                 - **Reduced Downtime:** Predictive analytics forecast potential failures, allowing for proactive maintenance.
                 - **Cost Efficiency:** Automating maintenance tasks saves time and resources.
         edges:
-          - text: "Got it, let’s move on."
+          - text: "Got it, let's move on."
             target_node_id: "screen5"
 
       - id: screen5
@@ -112,7 +112,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Several AI-powered monitoring tools are available, each offering unique features and capabilities. Here’s a brief overview of two popular options:
+                Several AI-powered monitoring tools are available, each offering unique features and capabilities. Here's a brief overview of two popular options:
 
                 **New Relic:**
 
@@ -149,7 +149,7 @@ tasks:
                 - **Use Case:** Ideal for organizations focused on security, IT operations, and data analytics.
 
   - name: "Intro to New Relic"
-    context: "In this section, learners are introduced to New Relic and its selection for Alfred AI's TaskMaster application due to its comprehensive features, easy integration, and robust AI-driven insights. New Relic provides end-to-end observability, predictive analytics, and real-time anomaly detection, ensuring reliability and performance. Key features include Application Performance Monitoring (APM), Infrastructure Monitoring, Log Management, Synthetic Monitoring, and AI-Driven Insights, each offering detailed insights and proactive maintenance capabilities. Through real-life examples, learners understand how these features benefit TaskMaster by improving performance and reliability, detecting issues proactively, and enhancing troubleshooting. The section concludes by emphasizing New Relic’s role in ensuring TaskMaster runs smoothly and efficiently."
+    context: "In this section, learners are introduced to New Relic and its selection for Alfred AI's TaskMaster application due to its comprehensive features, easy integration, and robust AI-driven insights. New Relic provides end-to-end observability, predictive analytics, and real-time anomaly detection, ensuring reliability and performance. Key features include Application Performance Monitoring (APM), Infrastructure Monitoring, Log Management, Synthetic Monitoring, and AI-Driven Insights, each offering detailed insights and proactive maintenance capabilities. Through real-life examples, learners understand how these features benefit TaskMaster by improving performance and reliability, detecting issues proactively, and enhancing troubleshooting. The section concludes by emphasizing New Relic's role in ensuring TaskMaster runs smoothly and efficiently."
     id: "3"
     nodes:
       - id: START
@@ -177,9 +177,9 @@ tasks:
                 - **Synthetic Monitoring**: Simulates user interactions with applications to monitor availability and performance from different geographic locations.
                 - **AI-Driven Insights**: Utilizes AI to provide anomaly detection, predictive analytics, and automated recommendations for improving system performance and reliability.
         edges:
-          - text: "Can you explain Relic’s features with examples?"
+          - text: "Can you explain Relic's features with examples?"
             target_node_id: "screen6b"
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "screen7"
 
       - id: screen6b
@@ -196,7 +196,7 @@ tasks:
         edges:
           - text: "Learn about Infrastructure Monitoring."
             target_node_id: "screen6c"
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "screen7"
 
       - id: screen6c
@@ -213,7 +213,7 @@ tasks:
         edges:
           - text: "Learn about Log Management."
             target_node_id: "screen6d"
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "screen7"
 
       - id: screen6d
@@ -230,7 +230,7 @@ tasks:
         edges:
           - text: "Learn about Synthetic Monitoring."
             target_node_id: "screen6e"
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "screen7"
 
       - id: screen6e
@@ -247,7 +247,7 @@ tasks:
         edges:
           - text: "Learn about AI-Driven Insights."
             target_node_id: "screen6f"
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "screen7"
 
       - id: screen6f
@@ -262,7 +262,7 @@ tasks:
                 - **Benefits:** Enhances proactive monitoring, reduces manual analysis, and provides actionable insights to prevent and resolve issues.
                 - **Real-Life Example:** Anomaly detection identified unusual traffic patterns indicating a potential DDoS attack, allowing the team to mitigate the threat before it impacted users.
         edges:
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "screen7"
 
       - id: screen7
@@ -271,7 +271,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                New Relic enhances TaskMaster’s performance and reliability through:
+                New Relic enhances TaskMaster's performance and reliability through:
 
                 - **Improved Performance and Reliability:** Deep insights into application performance and infrastructure health help identify and resolve bottlenecks.
                 - **Proactive Issue Detection:** AI-driven insights detect anomalies and potential issues before they impact users.
@@ -279,7 +279,7 @@ tasks:
 
                 Alright, now we can wrap things up. 
         edges:
-          - text: "Got it, let’s move on!"
+          - text: "Got it, let's move on!"
             target_node_id: "END"
 
       - id: END
@@ -288,9 +288,9 @@ tasks:
           parts:
             - type: "text"
               content: |
-                In this quest, we explored the critical need for AI-powered monitoring in modern software development. We discussed the potential consequences of unmonitored systems and highlighted the significant benefits that AI-powered monitoring tools like New Relic bring to the table. We provided an overview of New Relic’s comprehensive features and its suitability for Alfred AI’s TaskMaster application.
+                In this quest, we explored the critical need for AI-powered monitoring in modern software development. We discussed the potential consequences of unmonitored systems and highlighted the significant benefits that AI-powered monitoring tools like New Relic bring to the table. We provided an overview of New Relic's comprehensive features and its suitability for Alfred AI's TaskMaster application.
 
                 **Benefits of AI-Powered Monitoring for TaskMaster:**
-                New Relic will significantly enhance TaskMaster’s performance and reliability by providing real-time insights, proactive issue detection, and advanced troubleshooting capabilities. Its AI-driven features will help ensure the application runs smoothly, minimizing downtime and improving user satisfaction.
+                New Relic will significantly enhance TaskMaster's performance and reliability by providing real-time insights, proactive issue detection, and advanced troubleshooting capabilities. Its AI-driven features will help ensure the application runs smoothly, minimizing downtime and improving user satisfaction.
 
                 Thank you for joining this quest on AI-powered monitoring. By leveraging the power of New Relic, you can ensure that your applications remain healthy, responsive, and ready to meet user needs.

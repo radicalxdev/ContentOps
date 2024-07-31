@@ -196,6 +196,8 @@ tasks:
                       license_key = YOUR_NEW_RELIC_LICENSE_KEY
                       app_name = Project Management API
                       ```
+            - type: "text"
+              content: "By following these steps, you will have successfully installed and configured the New Relic APM agent for your Project Management API. The next step involves integrating this setup within your Docker environment and ensuring it runs smoothly."
 
   - name: "Build and Test Application Container"
     context: "In this module, learners configure their Docker environment to include the New Relic agent for monitoring the Project Management API. They update the Dockerfile to install the New Relic agent and set it as the entry point. Next, they build the base Docker container and update the main Dockerfile to incorporate the New Relic agent, ensuring the application runs with monitoring capabilities enabled. This setup provides real-time insights and performance monitoring for the Python web application running in Docker containers."
