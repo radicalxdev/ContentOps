@@ -235,6 +235,18 @@ tasks:
 
         edges:
           - text: "Denormalized the database"
+            target_node_id: "screen15"
+
+      - id: screen15
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Review the denormalized database schema. Ensure it meets your needs for practical application and performance.
+
+        edges:
+          - text: "Reviewed the denormalized schema"
             target_node_id: "END"
 
       - id: END
@@ -243,7 +255,4 @@ tasks:
           parts:
             - type: "text"
               content: |
-                We’ve come across another scenario where Eraser AI’s context awareness is incredibly useful for generating documentation and planning. In this case, when dealing with data models, Eraser AI is capable of understanding the difference of normalization levels and applying them accordingly.
-            - type: "text"
-              content: |
-                When an engineer needs to make design decisions, especially regarding data models, spending time to visually understand changes and its impact could mean saving a meeting or two with seniors by being able to connect dots and reason. The interactivity of compiling natural language into visual elements or technical docs is instrumental for increasing a team’s velocity.
+                Now that you've learned how to design entity-relationship diagrams using Eraser Al, take the time to practice further to create more detailed and refined diagrams. Remember, the effectiveness of Al tools depends on the quality of the prompts you provide. Ready to proceed to more technical areas, such as architectural diagrams and data flows?

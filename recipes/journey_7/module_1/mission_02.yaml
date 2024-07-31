@@ -1,6 +1,6 @@
 tasks:
   - name: "Mission Introduction and Setup"
-    context: "In this initial task, the learner will be introduced to the mission \"Generating Code Explanations Using GitHub Copilot Chat.\" The goal is to emphasize the importance of creating detailed documentation to enhance cross-collaboration among teams. The learner will set up a new file from their workspace dashboard, which will be used to generate the detailed documentation for a new feature in AI TaskMaster. This setup is crucial for understanding how to use GitHub Copilot Chat to generate comprehensive documentation that benefits both technical and non-technical team members."
+    context: "In this task, the learner will be introduced to the process of creating detailed documentation for a new feature in a software project. They will be guided through setting up the necessary workspace and understand the importance of comprehensive documentation for cross-functional collaboration. The task involves using Eraser, an AI-powered tool, to facilitate the creation of a detailed document that outlines the structure and functionalities of the new feature. This documentation will serve as a valuable resource for ensuring clear communication among team members and stakeholders. The learner will begin by receiving an introductory message that sets the context and prepares them for the subsequent steps."
     id: "1"
     nodes:
       - id: START
