@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Welcome to the Visual Testing Quest! Imagine an e-commerce site undergoing updates. Without visual testing, users might see misaligned buttons or misplaced images, causing frustration and lost sales. For example, a misaligned 'Buy Now' button could prevent purchases, leading to a loss in revenue and customer dissatisfaction."
+              content: "Welcome to the Introduction to Visual Testing with AI! \n\n Imagine an e-commerce site undergoing updates. Without visual testing, users might see misaligned buttons or misplaced images, causing frustration and lost sales. For example, a misaligned 'Buy Now' button could prevent purchases, leading to a loss in revenue and customer dissatisfaction."
         edges:
           - text: "What is visual testing?"
             target_node_id: "screen2"
@@ -21,7 +21,7 @@ tasks:
             - type: "text"
               content: "Visual testing ensures your application's UI looks as intended by comparing current UI with baseline images. This helps identify and fix visual discrepancies before users encounter them. Ready to dive into why visual testing is crucial?"
         edges:
-          - text: "Yes, let's continue."
+          - text: "Let's continue."
             target_node_id: "screen3"
       - id: screen3
         type: message
@@ -72,7 +72,7 @@ tasks:
             - type: "text"
               content: "Katalon Studio offers a suite of features to streamline visual testing, making it more efficient and reliable.\n- **Automated Visual Testing**: Uses AI to compare images and spot discrepancies.\n- **Self-Healing Mechanism**: Adapts to minor UI changes, reducing manual updates.\n- **SmartWait**: Ensures elements are fully loaded before interactions.\n- **Baseline Management**: Allows modifications to focus on critical UI areas.\n- **Integration with Katalon TestOps**: Centralizes test management and analysis. Want to explore Katalon's visual testing features in detail?"
         edges:
-          - text: "Yes, let's explore each feature in detail."
+          - text: "Let's explore each feature in detail."
             target_node_id: "screen8a"
           - text: "I'm familiar with Katalon's Visual testing, let's skip it."
             target_node_id: "END"
@@ -83,7 +83,7 @@ tasks:
             - type: "text"
               content: "**Automated Visual Testing**: Katalon Studio uses AI to automate the visual testing process. It compares baseline images with test results to efficiently identify visual discrepancies. This automation reduces manual effort and increases accuracy, ensuring that any visual changes are promptly detected and addressed."
         edges:
-          - text: "Yes, let's explore the next feature."
+          - text: "Let's explore the next feature."
             target_node_id: "screen8b"
           - text: "Let's skip to the next part."
             target_node_id: "END"
@@ -94,7 +94,7 @@ tasks:
             - type: "text"
               content: "**Self-Healing Mechanism**: Katalon's self-healing mechanism automatically adapts to minor UI changes. It dynamically updates locators to ensure that tests continue to run smoothly, even when there are minor changes to the UI. This significantly reduces the maintenance burden on testers and keeps your tests resilient to UI changes."
         edges:
-          - text: "Yes, let's continue."
+          - text: "Let's continue."
             target_node_id: "screen8c"
           - text: "Let's skip to the next part."
             target_node_id: "END"
@@ -105,7 +105,7 @@ tasks:
             - type: "text"
               content: "**SmartWait**: Katalon's SmartWait feature ensures that all elements are fully loaded before any interaction takes place. This improves the reliability of your tests by waiting for elements to be ready before proceeding with the next steps, reducing the chances of test failures due to elements not being fully loaded."
         edges:
-          - text: "Yes, let's continue."
+          - text: "Let's continue."
             target_node_id: "screen8d"
           - text: "Let's skip to the next part."
             target_node_id: "END"
@@ -116,7 +116,7 @@ tasks:
             - type: "text"
               content: "**Baseline Management**: Katalon allows you to modify baseline images and set ignore zones to focus on critical areas of the UI. This helps in managing dynamic content and reduces false positives by ignoring areas that are expected to change, ensuring that your tests are focused on the most important parts of the UI."
         edges:
-          - text: "Yes, let's continue."
+          - text: "Let's continue."
             target_node_id: "END"
           - text: "Let's skip to the next part."
             target_node_id: "END"
