@@ -63,7 +63,7 @@ tasks:
               content: |
                 **Task 1: Generate Traffic and Monitor Performance**
 
-                We’ll be simulating real-world usage by generating traffic to the API and then monitor its performance in New Relic. To do this, we can use either Postman or `/docs` in the localhost to send traffic to any of our API endpoints. New Relic will automatically pick up these logs for us!
+                We'll be simulating real-world usage by generating traffic to the API and then monitor its performance in New Relic. To do this, we can use either Postman or `/docs` in the localhost to send traffic to any of our API endpoints. New Relic will automatically pick up these logs for us!
 
                 **Steps:**
 
@@ -150,11 +150,9 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
-                Now that we’re in the dashboard, we can take a minute to explore New Relic’s powerful APM. Understanding how the dashboard works, at least to a minimal extent, would be super useful to utilize its AI as well.
+                Now that we're in the dashboard, we can take a minute to explore New Relic's powerful APM. Understanding how the dashboard works, at least to a minimal extent, would be super useful to utilize its AI as well.
 
                 Are you ready to explore the dashboard?
         edges:
@@ -167,8 +165,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 First, let's access the Entity Explorer:
@@ -187,11 +183,9 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
-                Sure! Let’s start with the Entity Explorer.
+                Sure! Let's start with the Entity Explorer.
 
                 Entities in New Relic are categorized into services, hosts, mobile applications, and more. Each category represents a different aspect of your application and infrastructure. For example:
 
@@ -281,13 +275,11 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Now that we explored entities, we can quickly know where to look for performance metrics on our application. When we sent traffic to our API from earlier, we should have also seen them here.
 
-                Feel free to also check out the `Lookout` view in the `All Entities` page as well as the `New Relic Navigator`. Both are used to get us high-level views of the system’s performance.
+                Feel free to also check out the `Lookout` view in the `All Entities` page as well as the `New Relic Navigator`. Both are used to get us high-level views of the system's performance.
 
   - name: "AI Insights with New Relic AI"
     context: "In this section, learners are introduced to enabling and using New Relic's AI assistant to query and analyze data. They start by enabling New Relic AI, then interact with it to ask questions about their application's performance. The AI provides both real-time logs and generated queries, helping learners monitor and troubleshoot effectively. This module emphasizes the dual approach of immediate insights and customizable data exploration, showcasing the power of AI-driven monitoring and troubleshooting."
@@ -299,7 +291,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Now that we’ve spent some time looking through New Relic’s APM and how it has tools for us to view our application’s performance from many angles, we can leverage their AI assistant whose capabilities are closely tied with the platform itself.
+                Now that we've spent some time looking through New Relic's APM and how it has tools for us to view our application's performance from many angles, we can leverage their AI assistant whose capabilities are closely tied with the platform itself.
         edges:
           - text: "Yes, let's get started!"
             target_node_id: "screen2"
@@ -329,11 +321,13 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_1.png?alt=media&token=7f85d417-f2c1-4beb-9518-7d05d3f2a086"
             - type: "text"
               content: |
-                New Relic’s AI is an assistant who can transform natural language queries into their NRQL query and subsequently visualizations that we can utilize. It also comes with capabilities to make inferences on the data retrieved. It’s incredibly useful to get high-level overviews and isolate problems quickly!
+                New Relic's AI is an assistant who can transform natural language queries into their NRQL query and subsequently visualizations that we can utilize. It also comes with capabilities to make inferences on the data retrieved. It's incredibly useful to get high-level overviews and isolate problems quickly!
 
-                We’ll need to enable their AI, to enable New Relic AI:
+                We'll need to enable their AI, to enable New Relic AI:
 
                 1. Locate the Ask AI button in the top right corner of the New Relic dashboard.
                 2. Click on the “Get Started” button for the New Relic AI Preview.
@@ -349,14 +343,12 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: ""https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=""
             - type: "text"
               content: |
                 Now, let's interact with the AI:
 
                 1. Use the chat feature to ask questions about your application's performance.
-                2. New Relic’s “Ask AI” feature lets you onboard, query data, identify anomalous signals, interpret dashboards, resolve errors, and more.
+                2. New Relic's “Ask AI” feature lets you onboard, query data, identify anomalous signals, interpret dashboards, resolve errors, and more.
 
                 Try asking questions like:
 
@@ -371,8 +363,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are some example questions you can ask New Relic AI:
@@ -390,8 +380,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Notice how it provides two types of answers: the actual output logs from the server and the generated query for the `Query Your Data` tab. The logs are incredibly useful for real-time monitoring. The generated query allows you to visit the `Query Your Data` tab and run NRQL scripts to get the same output.
@@ -407,8 +395,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When you ask New Relic AI a question, it provides:
@@ -427,7 +413,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Let’s try one more example! I hope you’re starting to see how powerful New Relic’s assistant is when it comes to asking questions about our data and application.
+                Let's try one more example! I hope you're starting to see how powerful New Relic's assistant is when it comes to asking questions about our data and application.
 
   - name: "AI Insights on App Maintenance"
     context: "In this final section, learners explore how New Relic AI can assist with maintenance tasks by converting natural language queries into actionable insights. They learn to interact with AI for maintenance guidance, such as monitoring anomalous signals and analyzing transaction data. The module emphasizes the importance of cross-referencing AI-generated responses with official documentation to ensure accuracy. This reinforces the AI's role as a powerful tool for troubleshooting and maintaining application health while encouraging responsible use and verification of AI outputs."
@@ -437,11 +423,9 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
-                Let’s continue to check out New Relic’s ask AI feature. Last time we saw how powerful their assistant can be in transforming natural language into useful queries which are executed and visualized for us. Now let’s take a look at another example but more closely related to maintenance of an app.
+                Let's continue to check out New Relic's ask AI feature. Last time we saw how powerful their assistant can be in transforming natural language into useful queries which are executed and visualized for us. Now let's take a look at another example but more closely related to maintenance of an app.
 
                 Are you ready to explore how AI can help with maintenance?
         edges:
@@ -455,12 +439,12 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_2.png?alt=media&token=77cae5fa-3395-4fb0-82ec-2bceb1414e10"
             - type: "text"
               content: |
-                From the top right, like before, we can open the chat window with New Relic’s AI to start asking questions about applications. Notice that the assistant either has or can create context for itself by converting your questions into context. So it can be a breeze to have multiple projects and ask questions.
+                From the top right, like before, we can open the chat window with New Relic's AI to start asking questions about applications. Notice that the assistant either has or can create context for itself by converting your questions into context. So it can be a breeze to have multiple projects and ask questions.
 
-                Let’s try asking a question like, "How do I monitor anomalous signals?"
+                Let's try asking a question like, "How do I monitor anomalous signals?"
         edges:
           - text: "I've asked a question. What's next?"
             target_node_id: "screen3"
@@ -471,8 +455,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Here are some example questions you can ask New Relic AI for maintenance guidance:
@@ -490,8 +472,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When you ask, "How do I monitor anomalous signals?" New Relic AI can provide insights like:
@@ -499,7 +479,7 @@ tasks:
                 1. Interpretation of recent logs to identify deviating signals.
                 2. NRQL queries that you can run in the `Query Your Data` tab for detailed analysis.
 
-                AI responses help narrow down potential errors, run faster analysis on app health, and find performance bottlenecks. In this case, it’s likely that the assistant won’t find any information since there isn’t much data in the logs, so there are no patterns existing for a “regular” signal to begin with.
+                AI responses help narrow down potential errors, run faster analysis on app health, and find performance bottlenecks. In this case, it's likely that the assistant won't find any information since there isn't much data in the logs, so there are no patterns existing for a “regular” signal to begin with.
         edges:
           - text: "Understood, what's next?"
             target_node_id: "screen3a"
@@ -511,7 +491,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_3.png?alt=media&token=12d91fc6-70a8-47ff-aee9-7f457e93c9ed"
             - type: "text"
               content: |
                 For example, when you ask, "How many transactions happened today?" New Relic AI can provide:
@@ -528,11 +508,9 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
-                It’s important to remember that AI responses are suggestions and may have misinterpretations or incorrect information. In the case of monitoring anomalous signals, the AI might interpret the query as retrieving logs rather than providing documentation.
+                It's important to remember that AI responses are suggestions and may have misinterpretations or incorrect information. In the case of monitoring anomalous signals, the AI might interpret the query as retrieving logs rather than providing documentation.
 
                 In the case of asking New Relic AI, “How many transactions happened today,” the AI assistant interpreted the query as the last set of logs and find any deviating signals among the first 1,000 entities. In the case of asking, “how do I monitor anomalous signals,” it will actually misinterpret it as a command to perform a query rather than realizing I wanted information from the documentation—maybe it was my fault for not being specific enough!
 
@@ -547,8 +525,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 When analyzing AI responses:
@@ -566,8 +542,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Hopefully this gave you a clearer idea of the great benefits that come with having an AI assistant whose capabilities are closely tied with the application at hand like New Relic. It can give us really useful abilities like converting our common natural language questions into powerful queries over our data. But, with great power comes great responsibility to double check and cross-reference outputs from the AI. Always give it the right context and you should be well on your way to becoming a power user!

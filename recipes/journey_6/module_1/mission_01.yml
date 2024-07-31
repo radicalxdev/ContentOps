@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: ""https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=""
             - type: "text"
               content: |
                 Hello, {username}! Welcome to the 'AI-Driven Monitoring with New Relic' mission. Imagine a scenario where every millisecond of downtime affects your bottom line and user satisfaction. In today’s fast-paced digital world, understanding the inner workings of your application isn’t just a benefit—it’s a necessity. This is where Application Performance Monitoring (APM) tools like New Relic become indispensable.

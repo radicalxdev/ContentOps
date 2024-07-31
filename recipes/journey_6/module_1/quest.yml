@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Welcome to Alfred AI’s monitoring quest! In this quest, we will explore how to implement AI-powered monitoring using New Relic to ensure your system remains healthy and responsive.
@@ -21,8 +19,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Unmonitored systems are prone to various risks, for instance:
@@ -37,8 +33,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Here are more risks associated with unmonitored systems:
@@ -54,8 +48,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 AI-powered monitoring tools offer significant advantages:
@@ -73,8 +65,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Here are more benefits of AI-powered monitoring tools:
@@ -89,8 +79,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 AI-powered monitoring enhances software maintenance through:
@@ -108,8 +96,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Additional benefits of AI-powered software maintenance include:
@@ -124,8 +110,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Several AI-powered monitoring tools are available, each offering unique features and capabilities. Here’s a brief overview of two popular options:
@@ -148,8 +132,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 Here are two more popular AI-powered monitoring tools:
@@ -174,8 +156,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 For Alfred AI's TaskMaster application, New Relic was selected due to its comprehensive features, ease of integration with our tech stack (Google Cloud Run, Docker, and Python), and robust AI-driven insights. New Relic's ability to provide end-to-end observability, combined with its predictive analytics and real-time anomaly detection, makes it an ideal choice to ensure TaskMaster's reliability and performance.
@@ -187,8 +167,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 **Key Features of New Relic:**
@@ -208,8 +186,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 **Application Performance Monitoring (APM):**
@@ -227,8 +203,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 **Infrastructure Monitoring:**
@@ -246,8 +220,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 **Log Management:**
@@ -265,8 +237,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 **Synthetic Monitoring:**
@@ -284,8 +254,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 **AI-Driven Insights:**
@@ -301,8 +269,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 New Relic enhances TaskMaster’s performance and reliability through:
@@ -320,8 +286,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 In this quest, we explored the critical need for AI-powered monitoring in modern software development. We discussed the potential consequences of unmonitored systems and highlighted the significant benefits that AI-powered monitoring tools like New Relic bring to the table. We provided an overview of New Relic’s comprehensive features and its suitability for Alfred AI’s TaskMaster application.
