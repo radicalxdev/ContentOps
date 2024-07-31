@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Hello, {username}! Welcome to the \"Generate Code Explanations using GitHub Copilot Chat\" mission. GitHub Copilot Chat leverages conversational AI and smart commands to assist you with various coding tasks. One powerful feature is its ability to generate detailed explanations for unfamiliar and complex code. Ready to start?"
         edges:
@@ -277,7 +275,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=0d46abf8-b1c2-4400-b6a6-f6614ac41417"
             - type: "text"
               content: "Start the server using the following command from the root directory:"
             - type: "text"
@@ -292,7 +290,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=72bd5969-23b5-4bc9-8cc9-6f546cc61c69"
             - type: "text"
               content: "Send a request to the running server instance at `http://127.0.0.1:8000/docs`. Open the `POST` endpoint and click `Try It Out` to send a request. Use the following request data:"
             - type: "text"
@@ -311,7 +309,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=61802e4e-6d33-4ed8-a5d6-5b9a2f5d06da"
             - type: "text"
               content: "It is expected that this request will return a `500 internal server error`. Review the error output in the terminal."
             - type: "text"
@@ -324,7 +322,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=9e61f995-b5d7-4cb7-8886-fff10105db19"
             - type: "text"
               content: "Highlight the error message in the terminal and use GitHub Copilot Chat to diagnose the error by entering:"
             - type: "text"
@@ -339,7 +337,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_5.png?alt=media&token=01435940-3675-4069-b9d8-f6379823496c"
             - type: "text"
               content: "Review the response from GitHub Copilot Chat, which will include information about the error and suggestions for fixing it."
             - type: "text"
@@ -365,7 +363,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_6.png?alt=media&token=e78d154a-7998-4ea5-807f-88f41f8b2add"
             - type: "text"
               content: "Review GitHub Copilot's recommendation to resolve the issue."
             - type: "text"
@@ -404,9 +402,9 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_7.png?alt=media&token=f6447f19-33ec-443f-9ffe-82ada7b1268f"
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_8.png?alt=media&token=72293a3b-c758-4bbb-b47e-b504accad9fa"
             - type: "text"
               content: "Send a valid request to the server to confirm the fix. Replace `12345` in the sample request with a valid string and verify the successful `200` response."
             - type: "text"
@@ -469,7 +467,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_9.png?alt=media&token=bd43a4b3-8477-484b-8666-ed14ed6faf6b"
             - type: "text"
               content: "Review the response in the Chat view, which includes detailed explanations and code snippets for handling exceptions."
             - type: "text"
@@ -495,7 +493,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_10.png?alt=media&token=bba48e2e-059f-4c04-a79e-c349f3d024e8"
             - type: "text"
               content: "Review the inline response and accept the proposed code to implement the exception handling."
             - type: "text"
@@ -508,7 +506,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_11.png?alt=media&token=f012b51a-e9f8-45f6-89b9-bd3c10d4e1bd"
             - type: "text"
               content: "Save the changes to `app/api/routes/projects.py` to ensure the exception handling code is properly integrated. You can click on the `Accept` to accept the generated suggestions."
             - type: "text"
@@ -520,7 +518,5 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: "Congratulations, {username}! You've successfully used GitHub Copilot Chat to generate code explanations for various purposes, including understanding new projects, deciphering complex code, diagnosing errors, and implementing new features. This mission has enhanced your ability to work with unfamiliar codebases and improve your overall productivity as a developer."

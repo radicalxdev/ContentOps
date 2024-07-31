@@ -76,6 +76,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_1.png?alt=media&token=1925749a-f81e-4528-8f3c-6086f801090e"
             - type: "text"
               content: |
                 Great! Let's head to the `scheduler.py` file and use the `@workspace` command to understand the program better. Type the following command:
@@ -83,8 +85,6 @@ tasks:
                 ```python
                 @workspace #file:scheduler.py What does the code do?
                 ```
-            - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmission_1_1.png?alt=media&token=e59fbb31-24eb-4487-89c7-36028e4e1b9f"
             - type: "text"
               content: "Take a minute to review the response from GitHub Copilot."
         edges:
@@ -114,7 +114,7 @@ tasks:
               content: |
                 Finally, let's take a sneak peek at Copilot's analysis on how to properly unit test the `scheduler.py` file. We'll write the tests using the `pytest` framework.
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmission_1_2.png?alt=media&token=23da692d-25f6-41cb-a1b0-af0dd58b5250"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_2.png?alt=media&token=98c0bfb1-5f68-4184-b2bd-30f338da550f"
             - type: "text"
               content: "Take a minute to review the response from Github Copilot and then let's get into unit testing!"
 
@@ -142,7 +142,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmission_1_6.png?alt=media&token=36c743eb-663d-43d9-8a37-88f6d0d04499"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_3.png?alt=media&token=923b783b-f03a-4465-9d0d-421f1dd5a078"
             - type: "text"
               content: |
                 Let's take a minute to analyze Copilot's output. Notice how Copilot didn't receive instructions on what framework to use and defaulted to the `unittest` library. In this case, we want to use `pytest`. Let's ask Copilot to rewrite the tests using the `pytest` framework by prompting:
@@ -169,9 +169,9 @@ tasks:
               content: |
                 Optionally, you may set flags like `vv` or `s` to see debug outputs and logs respectively.
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmission_1_4.png?alt=media&token=1faa7b0a-3966-4be9-b170-6373302be34f"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_4.png?alt=media&token=4fd38402-da57-4cb7-953b-97b0d88b4588"
             - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmission_1_3.png?alt=media&token=cb8ec359-3033-4241-94ca-5ba7ea6277d6"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_5.png?alt=media&token=d5f302d8-2e5d-4d86-bb6e-1e357c856b75"
             - type: "text"
               content: |
                 After reviewing, let me know if you are ready to move on!
@@ -208,6 +208,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_6.png?alt=media&token=2b2932b9-01ee-4043-95ab-6e3569659480"
             - type: "text"
               content: |
                 Take a minute to review Copilot's output. Notice how it modifies the file and provides a preview of the output. This lets us use natural language to modify the tests if needed. Copilot also includes comments to explain its assertions, which are crucial for understanding test logic.
