@@ -125,7 +125,7 @@ tasks:
                 - **Reducing Algorithmic Bias**: Use diverse training data, seek user feedback, and ensure transparency.
                 - **Preventing Violations**: Obtain permissions, protect data, and disclose sources.
                 - **Ethical AI Implementation**: Establish governance, ensure accountability, and build user trust.
-  - name: "Outro"
+  - name: "Conclusion"
     context: "The final task of the program wraps up the journey by congratulating the learner on completing the course and preparing them for the final expedition. It highlights the broad spectrum of AI applications explored, from requirements gathering to deployment and maintenance. The learner is reminded of the importance of using AI responsibly and ethically while maintaining a growth mindset. This task also introduces the final hands-on project, where the learner will apply what they have learned in a practical setting. The goal is to solidify their skills in integrating AI-powered tools into their workflow, ensuring they are well-equipped to contribute to complex projects in real-world environments."
     id: "5"
     nodes:
