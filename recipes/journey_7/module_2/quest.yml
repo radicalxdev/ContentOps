@@ -116,8 +116,23 @@ tasks:
                 **Refine AI-Generated Outputs**
 
                 While Eraser AI can provide excellent starting points, it's important to review and refine the generated diagrams. Use your domain expertise to ensure all components are accurately represented and relationships are correctly depicted.
+        edges:
+          - text: "Let's explore the benefits of using Eraser AI"
+            target_node_id: "END"
+      - id: END
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                By following these best practices, you can effectively use Eraser AI to streamline your documentation process and improve team communication.
 
-      - id: screen8
+                Now, let's explore the benefits of using Eraser AI to enhance your visual documentation process.
+  - name: "Advantages of Eraser AI"
+    context: "This task focuses on the advantages of Eraser AI. The advantages include supporting agile development by enabling quick updates to visual documentation, facilitating rapid prototyping by translating ideas into visual prototypes, and providing quick feedback through visual representations. The module highlights how Eraser AI supports agile development by allowing quick updates to visual documentation, ensuring it remains current and reflective of project changes. It also emphasizes how Eraser AI accelerates the design process by quickly translating ideas into visual prototypes, enabling more iterations and refinements. Additionally, the module discusses how visual representations provided by Eraser AI facilitate faster feedback loops during design reviews and discussions, enabling quicker adjustments and improvements. By leveraging Eraser AI, teams can streamline the documentation process, enhance team collaboration, and improve overall workflow efficiency. The module concludes by thanking learners for exploring how Eraser AI can enhance their visual documentation process."
+    id: "3"
+    nodes:
+      - id: START
         type: message
         body:
           parts:

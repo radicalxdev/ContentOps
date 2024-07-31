@@ -9,7 +9,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Hello, {username}! 🌟 With the visual mapping of the automated ticket assignment system complete, it's time to move forward with development. Imagine you're developing the database for this new system. The first step is creating the database schema. Normally this would involve a lot of work in creating the data model for a database schema and then ensuring it adheres to normalization standards. But with generative AI tools like Eraser, we can simplify that process!
+                Hello, {username}! With the visual mapping of the automated ticket assignment system complete, it's time to move forward with development. Imagine you're developing the database for this new system. The first step is creating the database schema. Normally this would involve a lot of work in creating the data model for a database schema and then ensuring it adheres to normalization standards. But with generative AI tools like Eraser, we can simplify that process!
         edges:
           - text: "Ready to start!"
             target_node_id: "END"
