@@ -546,13 +546,13 @@ tasks:
                 **Response**:
 
                 ```
-                This function, named `add`, takes two parameters `a` and `b` and returns their sum.
+                This function, named add, takes two parameters a and b and returns their sum.
                 ```
 
                 This feature helps you understand and document your code more effectively.
         edges:
           - text: "Show me an example of modifying or replacing code."
-            target_node_id: "screen13"
+            target_node_id: "screen12D"
 
       - id: screen12D
         type: message
