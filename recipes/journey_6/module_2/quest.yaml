@@ -147,15 +147,10 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Using New Relic's AI-powered tools can significantly streamline troubleshooting:
-
-                - **Example 1**: Using distributed tracing, a team quickly identified a slow microservice impacting API response times. The Errors Inbox highlighted an error pattern related to a recent deployment, and CodeStream allowed them to discuss and fix the issue directly in their IDE. Within hours, optimal performance was restored.
-                - **Example 2**: By implementing continuous monitoring, a team could proactively manage system performance. Automated alerts and predictive analytics flagged potential issues, enabling them to resolve them before they affected users, significantly reducing downtime and improving overall system reliability.
+                New Relic APM provides comprehensive insights into the performance of your applications. It offers transaction tracing, error analysis, and real-time metrics, giving you a detailed view of how your applications are performing. APM helps you understand how your application's code, dependencies, and infrastructure affect its performance and user experience.
         edges:
-          - text: "What tools and features does New Relic offer for troubleshooting?"
+          - text: "Let's move on"
             target_node_id: "screen7"
-          - text: "How do I start using these tools?"
-            target_node_id: "END"
 
       - id: screen7
         type: message
@@ -163,20 +158,39 @@ tasks:
           parts:
             - type: "text"
               content: |
-                New Relic provides several tools and features for effective troubleshooting:
-
-                - **New Relic Infrastructure Agent**: Command-line tool (`newrelic-infra-ctl`) for troubleshooting the infrastructure agent with verbose logging and health checks.
-                - **Real-Time Monitoring**: User-friendly interface to analyze application performance metrics like throughput and error rates.
-                - **Diagnostics Utility**: Automatically detects common problems with agent connectivity and data reporting.
-                - **Common Issues**:
-                    - **Configuration Errors**: Ensure correct New Relic license key in `newrelic-infra.yml`.
-                    - **Data Not Appearing**: Check agent logs and network connectivity.
-                    - **Agent Not Running**: Verify system compatibility and resource availability.
-                    - **Integration Failures**: Use `newrelic-infra-ctl` for health checks on integrations.
-                    - **Verbose Logging Issues**: Enable verbose logging for detailed troubleshooting.
-                    - **Resource Utilization Problems**: Monitor and mitigate high resource usage.
+                Some key features of the APM include:
+                • Transaction tracing: It allows you to follow the path of a request through your application, from the initial user interaction to the database and back. It provides a complete map of how the transaction is processed, including each service and method it touches.
+                • Error Analysis: New Relic APM captures and analyzes errors in real-time, providing detailed error messages, stack traces, and the context in which the error occurred. It also includes deployment markers to correlate errors with new code releases.
         edges:
-          - text: "How do I troubleshoot specific issues using these tools?"
+          - text: "Tell me more features."
+            target_node_id: "END"
+
+      - id: screen7a
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Some other important features are:
+                • Service Maps: These visualize the interactions between different services in your application. They show how services communicate, their dependencies, and the performance metrics for each service.
+                • Custom Dashboards: Create custom dashboards to display metrics and KPIs that are important to your business. You can combine various data points from different parts of your application into a single, cohesive view.
+                • Real-Time Metrics: Monitor critical application metrics such as response times, throughput, error rates, CPU usage, memory usage, and more. These metrics are updated in real-time, providing a live view of your application's health.
+        edges:
+          - text: "Got it. Let’s move to the next part."
+            target_node_id: "screen8"
+
+      - id: screen8
+        type: message
+        body:
+          parts:
+            - type: "text"
+              content: |
+                Here are some common configuration and data issues you might encounter when troubleshooting with New Relic and how to address them:
+                • Configuration Errors: Ensure the correct New Relic license key is set in the newrelic-infra.ymlfile. Incorrect configuration can prevent data from being sent to New Relic.
+                • Data Not Appearing: Check the agent logs and network connectivity. Issues with these can result in metrics not being visible on the New Relic dashboard.
+                • Agent Not Running: Verify system compatibility and resource availability. The infrastructure agent may not start if there are compatibility issues or insufficient resources.
+        edges:
+          - text: "Tell me more features."
             target_node_id: "END"
 
       - id: END
@@ -185,14 +199,10 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Here are some steps to troubleshoot issues using New Relic:
-
-                - **Use NRDiag**: Automatically detect common problems with New Relic agents.
-                - **Check Logs**: Generate and review agent logs for error messages or warnings.
-                - **Run Health Checks**: Use `newrelic-infra-ctl` to perform health checks and log configuration options.
-
-                **Practical Example**:
-                "By implementing continuous monitoring with New Relic, your team could proactively manage system performance. Automated alerts and predictive analytics would flag potential issues, enabling you to resolve them before they affect users. This approach significantly reduces downtime and improves overall system reliability."
+                Here are some more issues and how to solve them:
+                • Integration Failures: Use the newrelic-infra-ctl command to perform health checks on integrations. This can help identify what might be going wrong.
+                • Verbose Logging Issues: Enable verbose logging for detailed troubleshooting. Ensure you have the necessary permissions to execute logging commands and that the logging level is set appropriately.
+                • Resource Utilization Problems: Monitor and mitigate high resource usage (CPU, memory, or disk) on the host, as this can affect the agent's performance and data reporting capabilities.
 
   - name: "Summary and Next Steps"
     context: "In this summary, learners recap the key points covered: manual troubleshooting is laborious, error-prone, and reactive, while New Relic offers AI-driven tools to automate and enhance error detection, performance monitoring, and debugging. Learners are encouraged to apply these concepts in practical missions to gain hands-on experience with AI-powered troubleshooting using New Relic. The final call to action invites them to end the quest and move forward with their newfound knowledge."
@@ -204,16 +214,9 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Great job! Here's a recap of what we covered:
-
-                - Manual troubleshooting is laborious, error-prone, and reactive.
-                - New Relic offers AI-driven tools to automate and enhance error detection, performance monitoring, and debugging.
-                - Best practices include continuous monitoring, leveraging AI tools, effective collaboration, and adopting a proactive approach.
-
-                **Next Steps**:
-                Apply these concepts in hands-on missions to gain practical experience with AI-powered troubleshooting using New Relic. Let's get started!
+                Great job! Ready to recap what we've covered?
         edges:
-          - text: "Begin your first hands-on mission!"
+          - text: "Yes, let's recap!"
             target_node_id: "END"
 
       - id: END
@@ -222,4 +225,10 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Congratulations! You've completed the Troubleshooting with AI and AI-Powered Tools quest. Keep exploring and enhancing your troubleshooting skills with AI-powered tools. Happy debugging!
+                **Summary**:
+                - Manual troubleshooting is laborious, error-prone, and reactive.
+                - New Relic offers AI-driven tools to automate and enhance error detection, performance monitoring, and debugging.
+                - Best practices include continuous monitoring, leveraging AI tools, effective collaboration, and adopting a proactive approach.
+
+                **Next Steps**:
+                Apply these concepts in hands-on missions to gain practical experience with AI-powered troubleshooting using New Relic. Let's get started!
