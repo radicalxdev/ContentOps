@@ -83,10 +83,10 @@ tasks:
                 ```python
                 '''Define a function called create_project that creates a new record in the database. The function should take a database session and two parameters: 'name' and 'description'. The function should create a new instance of the 'Project' model with the provided 'name' and 'description', add it to the database session, commit the transaction, refresh the instance, and return the newly created project.'''
                 ```
-            - type: "text"
-              content: "Review the suggestions provided by GitHub Copilot."
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_1.png?alt=media&token=7261c36d-470e-4ad4-87b0-300aa26b7113"
+            - type: "text"
+              content: "Review the suggestions provided by GitHub Copilot."
         edges:
           - text: "Yes, let's review!"
             target_node_id: "screen3"
@@ -127,10 +127,10 @@ tasks:
                 ```python
                 '''Define a function called get_project, which retrieves a project record from the database by its ID. The function should take a database session and a project ID as parameters. The function should query the database for a project record with the provided ID and return the first result.'''
                 ```
-            - type: "text"
-              content: "Review the code suggestions provided by GitHub Copilot."
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_2.png?alt=media&token=98a8e694-01e4-4951-8fb1-63614dd42223"
+            - type: "text"
+              content: "Review the code suggestions provided by GitHub Copilot."
         edges:
           - text: "Yes, let's review!"
             target_node_id: "screen4b"
@@ -174,10 +174,10 @@ tasks:
                 ```python
                 '''Define a function called update_project, which updates a project record in the database. The function should take a database session, a project ID, and two parameters: 'name' and 'description'. The function should retrieve the project by its ID, update its 'name' and 'description', commit the transaction, and return the updated project.'''
                 ```
-            - type: "text"
-              content: "Review the code suggestions provided by GitHub Copilot."
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_3.png?alt=media&token=387fba0c-0e12-4a64-bc2a-f6235a2b4519"
+            - type: "text"
+              content: "Review the code suggestions provided by GitHub Copilot."
         edges:
           - text: "Yes, let's review!"
             target_node_id: "END"
@@ -218,10 +218,10 @@ tasks:
                 ```python
                 '''Define a function called delete_project, which deletes a project record from the database by its ID. The function should take a database session and a project ID as parameters. The function should query the database for a project record with the provided ID, delete the record, and commit the transaction.'''
                 ```
-            - type: "text"
-              content: "Review the code suggestions provided by GitHub Copilot."
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_4.png?alt=media&token=5398c6fc-e87a-49a5-8fb3-3baaa7f14b21"
+            - type: "text"
+              content: "Review the code suggestions provided by GitHub Copilot."
         edges:
           - text: "Yes, let's review!"
             target_node_id: "screen9"

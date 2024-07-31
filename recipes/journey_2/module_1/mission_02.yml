@@ -159,9 +159,9 @@ tasks:
                 We can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:
             - type: "image"
               content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_5.png?alt=media&token=0705ca23-5b3a-41db-abae-b417f0bdcaf0"
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
             - type: "text"
               content: |
                 We can now see Tickets as a new set of routes available within the /docs page!
                 Congratulations, {username}! You've successfully used GitHub Copilot Inline Chat to create code. Excellent work!
-            - type: "image"
-              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
