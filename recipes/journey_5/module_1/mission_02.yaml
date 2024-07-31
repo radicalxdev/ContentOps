@@ -85,7 +85,6 @@ tasks:
                     In Visual Studio Code, look at the Activity Bar on the left side of the window. Click on the "Chat" icon to open the Chat view.
                     - **Or Use the Keyboard Shortcut:**
                     Alternatively, you can use the keyboard shortcut `Ctrl + Alt + I` to quickly open the Chat view.
-                    *(Screenshot placeholder: Image showing how to open the Chat view in VS Code)*
 
                 Ready to initiate GitHub Copilot Chat?
         edges:
@@ -187,8 +186,6 @@ tasks:
                         - **Domain Mapping:** For production applications, map your service to a custom domain for a professional appearance and to maintain control over your URLs.
                         - **Cold Start Mitigation:** To reduce cold starts, keep your services warm by sending occasional requests or adjusting the minimum number of instances.
                         ```
-                        
-                        [path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
 
                 Ready to review the response from GitHub Copilot?
         edges:
@@ -259,8 +256,6 @@ tasks:
                         8. **Create:** Click the "Create" button. Google Cloud will then provision your new project, which may take a few moments.
                         9. **Activate Project:** Once created, you can select your new project from the project dropdown at the top of the console to activate it for use.
                         ```
-                        
-                        [path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
 
                 Ready to follow these steps and create your Google Cloud project?
         edges:
@@ -280,19 +275,15 @@ tasks:
                 1. **Open Google Cloud Console:**
                     - Navigate to the [Google Cloud Console](https://console.cloud.google.com/).
                     - Sign in with your Google account if prompted.
-                    - *(Screenshot placeholder: Image of the Google Cloud Console login page)*
                 2. **Project Selector:**
                     - At the top of the console, click the project dropdown to open the project selector.
-                    - *(Screenshot placeholder: Image showing the project dropdown in Google Cloud Console)*
                 3. **New Project:**
                     - Click on "New Project" in the project selector panel.
                     - Fill in the project details such as name, project ID, and billing account.
-                    - *(Screenshot placeholder: Image of the New Project creation screen)*
                 4. **Create and Activate Project:**
                     - Click the "Create" button.
                     - Wait for Google Cloud to provision your new project.
                     - Select your new project from the project dropdown to activate it.
-                    - *(Screenshot placeholder: Image showing the newly created project in the project dropdown)*
 
                 Ready to enable the necessary APIs?
         edges:
@@ -380,8 +371,6 @@ tasks:
                         2. Check your project billing status to ensure it is active.
                         3. Test your setup by deploying a sample container to Cloud Run.
                         ```
-                        
-                        [path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
 
                 Ready to follow these steps and verify the setup?
         edges:
@@ -417,7 +406,7 @@ tasks:
                 **Steps to Follow:**
 
                 1. **Review Existing Dockerfile:**
-                    - **Verify Dockerfile Configuration:** *(Screenshot placeholder: Image showing the Dockerfile content)*[path-to-screenshot](https://www.notion.so/radicalxco/path-to-screenshot)
+                    - **Verify Dockerfile Configuration:**
                         - Open the `Dockerfile` in VS Code to confirm it's correctly configured for the Project Management API.
                         - Example Dockerfile content:
                             
@@ -503,13 +492,11 @@ tasks:
                         ```bash
                         docker push gcr.io/[PROJECT_ID]/project-management-app
                         ```
-                        
-                    - *(Screenshot placeholder: Image showing Docker push command in terminal)*
+
                 2. **Verify the Pushed Image in Google Artifact Registry:**
                     - **Check Google Artifact Registry:**
                         - Go to the [Google Cloud Console](https://console.cloud.google.com/).
                         - Navigate to "Artifact Registry" and verify that your Docker image has been successfully pushed.
-                        - *(Screenshot placeholder: Image showing Docker image in Google Artifact Registry)*
 
                 Ready to deploy the Docker image to Google Cloud Run?
         edges:
@@ -529,7 +516,6 @@ tasks:
                 1. **Open GitHub Copilot Chat:**
                     - **Activate Copilot Chat:**
                         - In Visual Studio Code, open the Chat view by selecting "Chat" from the Activity Bar or by pressing `Ctrl + Alt + I`.
-                        - *(Screenshot placeholder: Image showing Copilot Chat view in VS Code)*
                 2. **Deploying the Docker Image:**
                     - **Ask Copilot for Deployment Steps:**
                         - In the Chat view, ask GitHub Copilot for the steps to deploy a Docker image to Google Cloud Run:
@@ -665,7 +651,6 @@ tasks:
 
                 1. **Open Copilot Chat:**
                     - In Visual Studio Code, open the Chat view by selecting "Chat" from the Activity Bar or pressing `Ctrl + Alt + I`.
-                    - *(Screenshot placeholder: Image showing Copilot Chat view in VS Code)*
                 2. **Prompt for Help:**
                     - Provide detailed context when prompting GitHub Copilot for troubleshooting advice.
                     - Example prompt:
@@ -747,10 +732,8 @@ tasks:
 
                 1. **Access Service Details:**
                     - In the Cloud Run section of the Google Cloud Console, select your service to view its details, configurations, and metrics.
-                    - *(Screenshot placeholder: Image showing Cloud Run service details)*
                 2. **Monitor Performance:**
                     - Use the Metrics tab to monitor CPU usage, memory usage, and request latencies. This can help identify performance bottlenecks or issues related to resource limits.
-                    - *(Screenshot placeholder: Image showing Cloud Run metrics)*
                 3. **Debugging Tips:**
                     - **Use Environment Variables:** Define and manage environment variables for different configurations and debugging.
                     - **Enable Debug Mode:** Run your application in debug mode if applicable, to get more detailed logs and stack traces.
@@ -772,8 +755,6 @@ tasks:
                             3. **Check for Inefficient Code:** Review your application code for inefficient algorithms or heavy computations that can be optimized.
                             4. **Load Testing:** Conduct load testing to simulate high traffic and observe CPU usage patterns.
                             ```
-                            
-                        - *(Screenshot placeholder: Image showing Copilot's advanced troubleshooting suggestions)*
 
                 Ready to review and reflect on the process?
         edges:
