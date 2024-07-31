@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: "Hello, {username}! Welcome to 'Advanced Deployment Pipeline Automation with AI.' Imagine a software development team incorporating AI-driven testing tools into their CI/CD workflow. As they make code changes, these AI tools autonomously identify the most crucial test cases, significantly reducing testing time and manual effort while maintaining high software quality. This integration not only speeds up the development process but also enhances overall productivity and efficiency in delivering reliable software."
         edges:
@@ -79,8 +77,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "Here are some benefits of integrating AI into your CI/CD pipeline:
@@ -179,8 +175,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=
             - type: "text"
               content: |
                 "GitHub Copilot is an AI pair programmer that helps you write code faster with less work. It assists with:
