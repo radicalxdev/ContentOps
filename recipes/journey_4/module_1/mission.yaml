@@ -8,7 +8,7 @@ tasks:
         body:
           parts:
             - type: "text"
-              content: "Hello, {username}! Welcome to the \"Introduction to Manual Test Cases\" mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? Creating manual test cases helps ensure that every aspect of your feature is tested thoroughly."
+              content: "Hello, {username}! Welcome to the \"Streamlining Manual Testing with AI\" mission. Imagine you're developing a new feature in AI TaskMaster that allows users to track project milestones visually on a Gantt chart. How will you ensure this feature is thoroughly tested and functions as expected? Creating manual test cases helps ensure that every aspect of your feature is tested thoroughly."
             - type: "text"
               content: "Manually performing this process in a text editor or spreadsheet can be exhausting and time-consuming. Using AI can significantly accelerate the creation of manual test cases by analyzing requirements and existing codebases. Jira assists us in documenting these requirements and test cases. Let's get an interactive overview of Jira and its role in software testing."
         edges:
