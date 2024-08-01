@@ -107,7 +107,7 @@ tasks:
             - type: "text"
               content: "Before we dive in, I'd love to know a bit about your experience with AI in software testing."
         edges:
-          - text: "I'm have some experience."
+          - text: "I have some experience."
             target_node_id: "screen5a"
           - text: "I am new to this."
             target_node_id: "screen5b"
@@ -450,7 +450,7 @@ tasks:
           parts:
             - type: "text"
               content: |
-                Great job completing the AI in Software Testing Quest! Here's a quick recap:
+                Great job, (username)! Here's a quick recap:
 
                 **Importance of Software Testing:**
 
