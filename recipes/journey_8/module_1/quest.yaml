@@ -133,8 +133,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "Steps of the final project outlined."
             - type: "text"
               content: "Congratulations on completing the final quest! You've explored the vast potential of AI in the Software Development Lifecycle, from requirements gathering to deployment and maintenance. By integrating AI tools into your workflow, you are equipped to enhance efficiency, accuracy, and innovation in your projects."
             - type: "text"
