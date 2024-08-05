@@ -387,26 +387,26 @@ tasks:
             - type: conditional
               condition: 
                 func: "handle_action"
-                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results?', 'Improve-Code-Quality-with-Copilot']
+                args: ['pr_feedback', 'Does this PR implement the Status Updates feature which includes a new history table in the SQLAlchemy database and updates to the API to support CRUD operations on the history table? Respond with only your answer as a paragraph and give advice on how to improve the PR.', 'Improve-Code-Quality-with-Copilot']
               status: 
                 - type: "success"
                   content: "PR Reviewed successfully!"
                 - type: "no_matches"
                   content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR."
                   extra_edges:
-                    - text: "Retry PR"
+                    - text: "Retry PR submission"
                       target_node_id: "pr_review"
                 - type: "error"
                   content: "Seems to be an error. Please try again later."
                   extra_edges:
-                    - text: "Retry PR"
+                    - text: "Retry PR submission"
                       target_node_id: "pr_review"
             - type: "text"
               content: "Ready to go? Let's move on"
         edges:
           - text: "I am good to go, let's move on"
             target_node_id: "END"
-          - text: "Resubmitted PR, please check again"
+          - text: "Retry PR submission"
             target_node_id: "pr_review"
 
       - id: END
@@ -581,26 +581,26 @@ tasks:
             - type: conditional
               condition: 
                 func: "handle_action"
-                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results?']
+                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results? Respond with only your answer as a single paragraph. Give advice on how to improve the PR.', 'Improve-Code-Quality-with-Copilot']
               status: 
                 - type: "success"
                   content: "PR Reviewed successfully!"
                 - type: "no_matches"
                   content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR."
                   extra_edges:
-                    - text: "Retry PR"
+                    - text: "Retry PR submission"
                       target_node_id: "pr_review"
                 - type: "error"
                   content: "Seems to be an error. Please try again later."
                   extra_edges:
-                    - text: "Retry PR"
+                    - text: "Retry PR submission"
                       target_node_id: "pr_review"
             - type: "text"
               content: "Ready to go? Let's move on"
         edges:
           - text: "I am good to go, let's move on"
             target_node_id: "END"
-          - text: "Resubmitted PR, please check again"
+          - text: "Retry PR submission"
             target_node_id: "pr_review"
 
       - id: END
