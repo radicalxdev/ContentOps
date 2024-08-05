@@ -387,12 +387,12 @@ tasks:
             - type: conditional
               condition: 
                 func: "handle_action"
-                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results?']
+                args: ['pr_feedback', 'Does this PR have comprehensive documentation of all test cases, test data, and test results?', 'Improve-Code-Quality-with-Copilot']
               status: 
                 - type: "success"
                   content: "PR Reviewed successfully!"
                 - type: "no_matches"
-                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR."
+                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR."
                   extra_edges:
                     - text: "Retry PR"
                       target_node_id: "pr_review"
@@ -586,7 +586,7 @@ tasks:
                 - type: "success"
                   content: "PR Reviewed successfully!"
                 - type: "no_matches"
-                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR."
+                  content: "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR."
                   extra_edges:
                     - text: "Retry PR"
                       target_node_id: "pr_review"
