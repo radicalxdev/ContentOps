@@ -373,9 +373,10 @@ tasks:
 
                 These changes will make the history data seamlessly available through the API.
             - type: "text"
-              content: "Now we can work on the feature and review your PR (pull request). Pleaase make sure you name your PR as 'Task - #' where # is the task number followed by the name of your PR. This helps me find and review your PR."
+              content: |
+                Please name your PR in the format `Task # - <name of your PR>` where # is the current task number displayed on the progress bar on the right. For this task, it would be 3. You can add any text after the # for your own reference and the task number is so that I can find your PR.
         edges:
-          - text: "Got it, what's next?"
+          - text: "Opened PR and ready to review"
             target_node_id: "pr_review"
 
       - id: pr_review
@@ -387,7 +388,7 @@ tasks:
             - type: conditional
               condition: 
                 func: "handle_action"
-                args: ['pr_feedback', 'Does this PR implement the Status Updates feature which includes a new history table in the SQLAlchemy database and updates to the API to support CRUD operations on the history table? Respond with only your answer as a paragraph and give advice on how to improve the PR.', 'Improve-Code-Quality-with-Copilot']
+                args: ['pr_feedback', 'Does this PR implement the Status Updates feature by introducing a new `history` table in the SQLAlchemy (SQLite) database with fields including `id`, `entity_type` (project or ticket), `entity_id`, `change_type` (status change, comment, etc.), `timestamp`, `user_id`, and `details`? Additionally, does it update the API to support CRUD operations on the `history` table, ensuring that every change or comment on projects and tickets is recorded and retrievable? Does the PR modify the project and ticket retrieval endpoints to include history data in their responses, and does it ensure the response structure is adjusted to provide comprehensive tracking and easy retrieval of historical data? Verify that the required changes are made in the `app/db_models/base.py` and `app/api/routes/api.py` files. Respond with only your answer as a paragraph and give advice on how to improve the PR.', 'Improve-Code-Quality-with-Copilot']
               status: 
                 - type: "success"
                   content: "PR Reviewed successfully!"
@@ -568,6 +569,9 @@ tasks:
             - type: "text"
               content: |
                 Maintaining comprehensive documentation of your tests is crucial. It provides a clear record of what has been tested, the data used, and the results obtained. This facilitates future maintenance, helps in troubleshooting issues, and ensures that all team members are aligned and informed about the testing process and outcomes.
+            - type: "text"
+              content: |
+                When you've implemented the tests and wrote documentation, I can review your PR (pull request) to ensure everything is in order. Pleaase make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR. In this case, it would be `Task 4 - <name of your PR>`. This helps me find and review your PR.
         edges:
           - text: "Got it, let's proceed."
             target_node_id: "pr_review"
