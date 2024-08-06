@@ -403,7 +403,7 @@
           },
           "edges": [
             {
-              "target_node_id": "END",
+              "target_node_id": "screen21",
               "text": "Got it, let's move forward!"
             },
             {
@@ -425,7 +425,7 @@
           },
           "edges": [
             {
-              "target_node_id": "END",
+              "target_node_id": "screen21",
               "text": "Understood, let's move forward!"
             }
           ],
@@ -437,6 +437,24 @@
             "parts": [
               {
                 "content": "Hallucinations can lead to serious implications, including:\n\n- **Incorrect and Unsafe Code**: Hallucinations can introduce bugs or vulnerabilities, posing significant security risks.\n- **Legal and Ethical Concerns**: Errors in critical applications, like medical devices, can result in liability and responsibility issues.\n- **Perpetuation of Biases**: Biased training data can cause discriminatory practices, such as unfairly rejecting resumes from certain demographics.\n\nDespite these limitations, the advancements in Generative AI hold immense potential for future applications.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Okay, got it."
+            }
+          ],
+          "id": "screen21",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, we will explore the future outlook of Generative AI.",
                 "type": "text"
               }
             ]
