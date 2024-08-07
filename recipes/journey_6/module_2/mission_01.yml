@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Welcome to Mission 1: Analyze Errors, Outages, and Latency with New Relic AI! As a part of the Alfred AI team managing the Project Management API, you've received reports of performance issues, specifically high CPU usage and long-running processes. Your task is to use New Relic’s AI-powered tools to identify and understand these performance issues.
@@ -24,8 +22,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To begin troubleshooting, let's first set up your environment. Switch to the `test/outage` branch and build the Docker image within the root directory using `docker build -t my_python_api .`. Once the image is built, run the container with `docker run -p 8000:8000 my_python_api` to start up the FastAPI server.
@@ -41,8 +37,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Here’s a quick guide to help you set up Docker:
@@ -60,8 +54,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Now that your server is running, let's navigate to the New Relic dashboard. On the New Relic website, go to the Application Performance Monitoring (APM) section. This is where we can start analyzing the performance of your Project Management API.
@@ -75,8 +67,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To navigate to APM on the New Relic website:
@@ -93,8 +83,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 In the APM section, locate and select the Project Management API from the list of monitored applications. This will take you to the detailed performance monitoring page for your API.
@@ -110,8 +98,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To select the Project Management API:
@@ -128,8 +114,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 That’s the initial setup for Mission 1: Analyze Errors, Outages, and Latency with New Relic AI. If you have any questions or need further clarification, feel free to ask. Let's ensure we effectively troubleshoot the performance issues with the Project Management API!
@@ -157,8 +141,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 First, let's review the `simulate_outage` route. You can find this route on the `/docs` page of your API. This route allows us to simulate a variety of long processes and CPU loads, as well as an “outage” which returns a 500 error.
@@ -172,8 +154,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To navigate to the `/docs` page:
@@ -191,8 +171,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Now, let's invoke the `GET` requests under the `simulate_outage` tab. This allows us to simulate long processes and CPU loads, as well as trigger an outage by returning a 500 error.
@@ -208,8 +186,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To send requests on the `/docs` page:
@@ -228,8 +204,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 You can also automate this process by using a Python script to send requests to these endpoints, simulating heavy traffic, poor performance, or outages. This can help you see how your API handles various load conditions over time. Or, you can do the old-fashioned way, with a bunch of clicking.
@@ -243,8 +217,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Here’s a basic example of how you can write a Python script to simulate traffic:
@@ -272,8 +244,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Send a few of these requests either manually or have a python script send a request to these endpoints to simulate heavy traffic, poor performance, or outages to an endpoint. This should populate on New Relic and will appear as part of the error logs on the APM as well as latency spikes.
@@ -301,8 +271,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 First, let's open New Relic Lookout. On the New Relic website, switch to Lookout to see recent changes in performance. This tool helps identify any entities with significant deviations from their normal behavior, providing a clear view of what might be causing issues.
@@ -316,8 +284,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To access Lookout in New Relic:
@@ -335,8 +301,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 In Lookout, you can see a list of entities with recent performance changes. Look for entities with significant deviations from their normal behavior. These anomalies could indicate potential performance issues that need your attention.
@@ -352,8 +316,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 In Lookout, entities with significant deviations are often highlighted in red or orange. These colors indicate issues such as increased response times, higher error rates, or unusual CPU usage.
@@ -367,8 +329,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Next, let's use New Relic Navigator. Access Navigator for a high-density view of all entities. This tool provides a visual representation of your entire system, with entities marked with traffic light colors indicating performance issues.
@@ -382,8 +342,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To access Navigator in New Relic:
@@ -400,8 +358,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 In Navigator, look for entities marked with traffic light colors. Green indicates healthy performance, yellow indicates warnings, and red indicates critical issues. By focusing on entities marked with yellow and red, you can identify areas that require immediate attention.
@@ -415,8 +371,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 In Navigator, entities with performance issues are clearly marked with traffic light indicators. Red marks critical issues that need urgent attention, while yellow indicates warnings that could develop into more serious problems if not addressed.
@@ -430,8 +384,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Now that you've identified entities with performance issues in Lookout and Navigator, it's time to analyze these issues further. Look into the metrics and logs provided by New Relic for these entities to understand the root causes of the problems.
@@ -445,8 +397,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To analyze the identified issues:
@@ -464,8 +414,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Let's leverage these tools to gain valuable insights and optimize our Project Management API's performance! When you’re ready, let’s start using New Relic AI to draw insights.
@@ -478,8 +426,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 As before, we can utilize New Relic’s AI to not only look through the data we have on our application, but also use natural language to get a better understanding of the issue at hand. In this case, we sent some traffic to problematic endpoints and we want to analyze some of these. It’s like finding where the performance issue is.
@@ -495,8 +441,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To start, click on the Ask AI button on the New Relic dashboard. This will open up a chat interface where you can ask questions and get detailed insights from New Relic AI.
@@ -510,8 +454,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To find the Ask AI button:
@@ -529,8 +471,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Here are some sample prompts you can use to engage with New Relic AI:
@@ -550,8 +490,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Here are some more sample prompts you can use with New Relic AI:
@@ -569,8 +507,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Once you’ve asked your questions, New Relic AI will provide detailed responses. Analyze these responses to understand the insights and suggestions offered by the AI. Look for patterns, unusual activities, or specific transactions that might be causing issues.
@@ -584,8 +520,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 An example response from New Relic AI might look like this:
@@ -602,8 +536,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Lastly, let’s take a deeper look into some of its responses and see what insights we can draw. This can give us an idea of how to work with the AI like a copilot to keep the application up and running smoothly.
@@ -616,8 +548,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Our objective is to examine logs and errors to understand the root cause of performance issues, and analyze latency to identify its variance. We'll use New Relic AI to make this process efficient and insightful.
@@ -634,7 +564,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=9b7f0ddd-dcdf-46d9-bd45-0313869cc336"
             - type: "text"
               content: |
                 Let's start by asking New Relic AI about recent errors. Use the prompt, `What are some recent errors?` This will provide a detailed table of the latest errors in your application.
@@ -648,8 +578,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To ask about recent errors:
@@ -668,7 +596,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=0dab1c65-2d32-46e8-a468-7115f8e40800"
             - type: "text"
               content: |
                 Next, click on the `Summarize the Results` button in the AI interface. New Relic AI will not only convert your question into a valid query but also summarize and analyze the issue for you. This includes insights such as error types, messages, status codes, transaction names, durations, and user agents.
@@ -682,8 +610,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Here’s an example of how New Relic AI summarizes recent errors:
@@ -705,7 +631,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=151613b4-9bce-44e8-8ca4-09d159923db6"
             - type: "text"
               content: |
                 Now let's examine the variance in latency. Use the prompt, `What is the cause of higher response times lately?` This will help us identify the transactions causing increased latency.
@@ -718,7 +644,7 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "PLACEHOLDER"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=1494d520-2a57-4263-8990-46153dc497f4"
             - type: "text"
               content: |
                 Next, click on the `Summarize the Results` button in the AI interface. New Relic AI will analyze the statistics behind the latency, presenting metrics like the 95th percentile response time for transactions.
@@ -734,8 +660,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Here’s an example of how New Relic AI summarizes latency issues:
@@ -753,8 +677,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 With all the information gathered, let's summarize our findings and outline the next steps. Note down the key insights from New Relic’s tools and AI responses. Plan steps to address the identified issues, such as optimizing specific transactions or scaling resources.
@@ -770,8 +692,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 To document findings:
@@ -789,8 +709,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "PLACEHOLDER"
             - type: "text"
               content: |
                 Let’s recap the key points. Using New Relic’s AI-powered tools, you can effectively troubleshoot performance issues by analyzing logs, errors, and latency. Proactive monitoring and quick issue resolution are crucial for maintaining a healthy application.
