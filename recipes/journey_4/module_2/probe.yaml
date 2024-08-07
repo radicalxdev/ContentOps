@@ -499,7 +499,7 @@ tasks:
           target_node_id: screen7b
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: END
+    - id: screen7b
       type: message
       body:
         parts:
@@ -508,7 +508,7 @@ tasks:
       edges:
         - text: "On to the next, Ada!"
           target_node_id: END
-    - id: screen7b
+    - id: END
       type: message
       body:
         parts:
@@ -851,15 +851,24 @@ tasks:
           - type: "text"
             content: |
               Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.
-              **Recap:**
+
               - We explored the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots from different test runs.
+
               - We discussed what visual testing involves and how it improves user experience by ensuring a consistent and appealing UI.
+
               - We highlighted the importance of visual testing in maintaining a positive brand image by reflecting professionalism and bolstering customer trust.
+
               - We covered the challenges of manual visual testing, such as being time-consuming and prone to human error.
+
               - We reviewed how AI contributes to faster test creation by quickly generating test scripts based on plain language prompts.
+
               - We explained how AI-powered tools enhance visual testing accuracy by accurately identifying visual changes and reducing false positives.
+
               - We talked about Katalon Studio's automated visual testing feature using AI to compare baseline images with test results.
+
               - We discussed the purpose of Katalon's self-healing mechanism in automatically adapting to minor UI changes and updating locators.
+
               - We emphasized the benefit of integrating Katalon TestOps with Katalon Studio to provide a centralized platform for managing tests, analyzing results, and generating insights.
+
           - type: "text"
             content: "Up next, we'll dive into the next module, where we'll explore advanced techniques for using GitHub Copilot to streamline deployment."

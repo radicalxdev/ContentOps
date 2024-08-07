@@ -841,12 +841,17 @@ tasks:
           - type: "text"
             content: |
               Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.
-              **Recap:**
+
               - We explored how Katalon Studio automates repetitive tasks and enhances test accuracy.
+
               - We discussed the importance of unit testing and its role in ensuring individual components perform as expected.
+
               - We highlighted how AI in Katalon Studio improves test creation and automates script generation from simple descriptions.
+
               - We reviewed AI-powered features such as Visual Accuracy Verification and synthetic data generation.
+
               - We emphasized the benefits of continuous testing and AI-driven self-healing features.
+
               - We covered how AI enhances regression testing and the Smart Wait feature's role in improving test stability and accuracy.
           - type: "text"
             content: "Up next, we'll dive into the next module, where we'll explore advanced techniques for using Katalon Studio to further enhance your software testing workflow."
