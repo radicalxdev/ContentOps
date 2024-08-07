@@ -476,8 +476,11 @@ tasks:
               What are the key components of an entity-relationship diagram?
 
               A. Methods, classes, and variables.
+
               B. Entities, attributes, and relationships.
+
               C. Functions, loops, and conditions.
+
               D. Inputs, outputs, and processes.
       edges:
         - text: "A"
@@ -913,4 +916,4 @@ tasks:
               - We covered the primary objective of using Eraser AI for designing architecture and data flow diagrams to simplify the creation and maintenance of visual documentation.
           - type: "text"
             content: |
-              Ada AI: Coming up next, we'll embark on an exciting journey in our next module, where we'll put all the knowledge and skills we've gained throughout the program into practice.
+              Coming up next, we'll embark on an exciting journey in our next module, where we'll put all the knowledge and skills we've gained throughout the program into practice.

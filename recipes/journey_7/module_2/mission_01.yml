@@ -7,8 +7,6 @@ tasks:
         type: message
         body:
           parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
             - type: "text"
               content: |
                 Hello, {username}! 🌟 Imagine Alfred AI has hired a technical consultant to help improve the system performance of the existing AI TaskMaster automated ticket assignment tool. The consultant requests the architectural diagram of the tool. Fortunately, Eraser AI can assist you with creating detailed sequence diagrams. Ready to get started?
@@ -20,6 +18,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=494640de-70e4-4be2-ae29-a081ba2bcd30"
             - type: "text"
               content: |
                 First head to https://app.eraser.io/ and then create a new file. After creating the new file, head over to `Document` and then we should be all set!
@@ -113,10 +113,12 @@ tasks:
         body:
           parts:
             - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=37638c75-cf6e-401a-9659-da22e95f1a3b"
             - type: "text"
               content: |
                 We can now generate the sequence diagram by specifying a `Sequence` in the diagram type and clicking `Generate`.
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=92da36f4-75a8-40b3-9363-dd1afef02f6d"
             - type: "text"
               content: "Take a minute to review the generated sequence diagram to ensure it accurately reflects the technical design document. If there are edits to be made, you can pass prompts to regenerate the diagram."
         edges:
@@ -142,6 +144,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=a3176b6f-d250-4f14-b40f-74509322a9ec"
             - type: "text"
               content: |
                 To implement this new feature, a team member writes a function using a heap data structure. Since you didn't write the code, you find it challenging to understand how this new feature will interact with the other components in the automated ticket assignment tool. Fortunately, Eraser AI excels at creating architectural diagrams from code snippets. Enter the following prompt and the new feature's code in the Diagram Edit Prompt:
@@ -190,6 +194,8 @@ tasks:
         type: message
         body:
           parts:
+            - type: "image"
+              content: "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_5.png?alt=media&token=933cb15b-729d-414a-89e1-c3414cc65652"
             - type: "text"
               content: |
                 Review the updated diagram to ensure that the new component for assigning multiple people to one ticket has been correctly added. Make any necessary revisions to ensure accuracy.
