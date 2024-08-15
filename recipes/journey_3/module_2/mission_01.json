@@ -1,0 +1,943 @@
+{
+  "tasks": [
+    {
+      "context": "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat.",
+      "id": "1",
+      "name": "Welcome and Introduction",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello, {username}! One powerful use case for generative AI in development is to generate detailed explanations for unfamiliar and complex code.\n\nIn this mission, you will be exploring how to use GitHub Copilot Chat's conversational AI and smart commands to generate code explanations.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen1a",
+              "text": "Yes, let's get started!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In this mission, you'll use GitHub Copilot to generate explanations for various purposes:",
+                "type": "text"
+              },
+              {
+                "content": "- **Understanding New Projects:** Get a comprehensive overview of an entire workspace or specific project files when joining a new project.\n- **Deciphering Complex Code:** Receive explanations for specific lines or sections of code that are difficult to understand.\n- **Diagnosing Errors:** Obtain insights into why certain lines of code are causing errors and how to fix them.\n- **Implementing Features:** Learn how to add new features to your project with provided code snippets and detailed implementation guidance.\n",
+                "type": "text"
+              },
+              {
+                "content": "Prepare your environment by ensuring you have:",
+                "type": "text"
+              },
+              {
+                "content": "- Visual Studio Code\n- The C# Dev Kit extension for Visual Studio Code\n- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code\n- Sample code projects created using C#\n- A GitHub account with an active subscription for GitHub Copilot\n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's move on!"
+            }
+          ],
+          "id": "screen1a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To complete the exercises in this module, ensure you have Python installed. Then follow these steps at the root directory of the project:",
+                "type": "text"
+              },
+              {
+                "content": "1. Install dependencies: `pip install -r requirements.txt`\n2. Run the application: `fastapi dev app/main.py` (use `dev` or `run` as the `fastapi` argument)\n3. Navigate to `http://localhost:8000` to view the application\n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to continue?",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat.",
+      "id": "2",
+      "name": "Understanding and Explaining the Code",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In this section, you'll use GitHub Copilot Chat to understand a new project or specific project files. This feature helps you quickly get up to speed with unfamiliar codebases by providing detailed explanations.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "First, open the Chat view in Visual Studio Code by selecting \"Chat\" from the Activity Bar, or by pressing `Ctrl + Alt + I`.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to continue?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Chat view open!"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In the Chat view, ask GitHub Copilot Chat to explain the project by entering the following command:",
+                "type": "text"
+              },
+              {
+                "content": "`@workspace Explain this project`\n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3c",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Take a minute to review the response generated by GitHub Copilot Chat in the Chat view.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3d",
+              "text": "Reviewed!"
+            }
+          ],
+          "id": "screen3c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Follow-up questions help build a history of your conversation, allowing the AI to understand your context better and provide more relevant responses.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3e",
+              "text": "Yes, let's continue!"
+            }
+          ],
+          "id": "screen3d",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Open the `app/core/settings/app.py` file in the editor. This file contains the code configuring FastAPI by setting `BaseAppSettings` with default values and initializing its keyword arguments within the `main.py`.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3f",
+              "text": "File open!"
+            }
+          ],
+          "id": "screen3e",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Request a file explanation by entering:",
+                "type": "text"
+              },
+              {
+                "content": "`@workspace /explain #file:app.py`\n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen3f",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Review the detailed explanation generated by GitHub Copilot Chat. This explanation includes information about the file's purpose, structure, and key components.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat.",
+      "id": "3",
+      "name": "File-Specific and Selected Code Explanations",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In this section, you will use GitHub Copilot Chat to generate explanations for specific files within your project. This helps you understand the purpose, structure, and key components of individual files, making it easier to work with unfamiliar codebases.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Open the `app/api/routes/projects.py` file in the editor.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4b",
+              "text": "File open!"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In the Chat view, ask GitHub Copilot Chat to explain the file by entering:",
+                "type": "text"
+              },
+              {
+                "content": "`@workspace /explain #file:projects.py`",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4c",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen4b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Review the detailed explanation generated by GitHub Copilot Chat in the Chat view.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4d",
+              "text": "Yes, let's continue!"
+            }
+          ],
+          "id": "screen4c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Notice that GitHub Copilot Chat suggests a follow-up question at the bottom of the Chat view. Review this to gain further insights into the file or to ask additional questions about specific sections.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5",
+              "text": "Yes, let's continue!"
+            }
+          ],
+          "id": "screen4d",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Even experienced developers encounter code that's difficult to understand. Rather than spending time trying to decipher complex code, you can ask GitHub Copilot Chat to provide an explanation.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "screen5",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ensure that you have `app/api/routes/projects.py` open in the editor. Select the lines for the `update_project` method:",
+                "type": "text"
+              },
+              {
+                "content": "```python\n@router.put('{project_id}', response_model=ProjectResponse)\nasync def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):\n    db_project = crud.update_project(db, project_id, project.name, project.description)\n    if db_project is None:\n        raise HTTPException(status_code=404, detail=f\"Project with id {project_id} not found\")\n    return db_project\n```         \n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5b",
+              "text": "Code selected!"
+            }
+          ],
+          "id": "screen5a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Request a method explanation by right-clicking the selected code, selecting `Copilot`, and then selecting `Explain This` from the context menu. Optionally, you may also use the Chat view to explain specific code lines by typing `#selection Explain this`.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen5b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Review the detailed explanation generated by GitHub Copilot Chat in the Chat view.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat.",
+      "id": "4",
+      "name": "Error Explanations and Fixes",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Managing errors is an essential aspect of software development. When you encounter an error in your code that's difficult to understand, you can ask GitHub Copilot Chat to provide an explanation.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Open a new Terminal using `Ctrl + Shift +` or open an existing terminal using `Ctrl +`.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6b",
+              "text": "Terminal open!"
+            }
+          ],
+          "id": "screen6a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=0d46abf8-b1c2-4400-b6a6-f6614ac41417",
+                "type": "image"
+              },
+              {
+                "content": "Start the server using the following command from the root directory:",
+                "type": "text"
+              },
+              {
+                "content": "`fastapi dev app/main.py`",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6c",
+              "text": "Server started!"
+            }
+          ],
+          "id": "screen6b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=72bd5969-23b5-4bc9-8cc9-6f546cc61c69",
+                "type": "image"
+              },
+              {
+                "content": "Send a request to the running server instance at `http://127.0.0.1:8000/docs`. Open the `POST` endpoint and click `Try It Out` to send a request. Use the following request data:",
+                "type": "text"
+              },
+              {
+                "content": "```\n{\n  \"name\": 12345,\n  \"description\": \"string\"\n}\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6d",
+              "text": "Request sent!"
+            }
+          ],
+          "id": "screen6c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=61802e4e-6d33-4ed8-a5d6-5b9a2f5d06da",
+                "type": "image"
+              },
+              {
+                "content": "It is expected that this request will return a `500 internal server error`. Review the error output in the terminal.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6e",
+              "text": "Reviewed!"
+            }
+          ],
+          "id": "screen6d",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=9e61f995-b5d7-4cb7-8886-fff10105db19",
+                "type": "image"
+              },
+              {
+                "content": "Highlight the error message in the terminal and use GitHub Copilot Chat to diagnose the error by entering:",
+                "type": "text"
+              },
+              {
+                "content": "` @workspace /explain #terminalSelection` ",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6f",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen6e",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_5.png?alt=media&token=01435940-3675-4069-b9d8-f6379823496c",
+                "type": "image"
+              },
+              {
+                "content": "Review the response from GitHub Copilot Chat, which will include information about the error and suggestions for fixing it.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to fix the error?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7",
+              "text": "Yes, let's continue!"
+            }
+          ],
+          "id": "screen6f",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Use GitHub Copilot Chat to fix the JSONResponse class TypeError. Highlight the error message in the terminal and use the following command:",
+                "type": "text"
+              },
+              {
+                "content": "` @workspace #terminalSelection Where do I fix the error?` ",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen7",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_6.png?alt=media&token=e78d154a-7998-4ea5-807f-88f41f8b2add",
+                "type": "image"
+              },
+              {
+                "content": "Review GitHub Copilot's recommendation to resolve the issue.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7b",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "screen7a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Follow the recommendation to head to the `app/api/errors/validation_error.py` file and replace the `message` property of the `JSONResponse` class to `content`:",
+                "type": "text"
+              },
+              {
+                "content": "```python\nasync def http422_error_handler(_: Request, exc: RequestValidationError):\n    errors = []\n    for error in exc.errors():\n        field = \" -> \".join(str(loc) for loc in error['loc'])\n        message = error['msg']\n        error_detail = f\"Error in field '{field}': {message}\"\n        errors.append(error_detail)\n\n    error_response = ErrorResponse(status=422, message=errors)\n    return JSONResponse(\n        status_code=422,\n        content=error_response.model_dump()\n    )\n```       \n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Fix applied!"
+            }
+          ],
+          "id": "screen7b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_7.png?alt=media&token=f6447f19-33ec-443f-9ffe-82ada7b1268f",
+                "type": "image"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_8.png?alt=media&token=72293a3b-c758-4bbb-b47e-b504accad9fa",
+                "type": "image"
+              },
+              {
+                "content": "Send a valid request to the server to confirm the fix. Replace `12345` in the sample request with a valid string and verify the successful `200` response.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this mission, learners will use GitHub Copilot Chat to understand new projects, decipher complex code, diagnose errors, and implement new features. They will prepare their development environment, request and review explanations, handle error messages, and apply fixes suggested by Copilot. By the end of the mission, learners will enhance their productivity and ability to work with unfamiliar codebases using GitHub Copilot Chat.",
+      "id": "5",
+      "name": "Implementing and Explaining New Features",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In this section, you will use GitHub Copilot Chat to explain how to manage exceptions during the `GET`, `PUT`, and `DELETE` operations. This will enhance the reliability and robustness of your application.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Select the code lines for the `GET`, `PUT`, and `DELETE` operations:",
+                "type": "text"
+              },
+              {
+                "content": "```python\n@router.get('/{project_id}', response_model=ProjectResponse)\nasync def read_project(project_id: int, db: Session = Depends(get_db)):\n  db_project = crud.get_project(db, project_id)\n  return db_project\n\n@router.put('/{project_id}', response_model=ProjectResponse)\nasync def update_project(project_id: int, project: ProjectCreate, db: Session = Depends(get_db)):\n  db_project = crud.update_project(db, project_id, project.name, project.description)\n  return db_project\n\n@router.delete('/{project_id}')\nasync def delete_project(project_id: int, db: Session = Depends(get_db)):\n  crud.delete_project(db, project_id)\n  return {'message': f'Project with id {project_id} deleted'}\n```   \n",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8b",
+              "text": "Code selected!"
+            }
+          ],
+          "id": "screen8a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ask GitHub Copilot Chat to explain how to handle exceptions during these operations by entering:",
+                "type": "text"
+              },
+              {
+                "content": "@workspace #file:projects.py #selection How can I handle exceptions during the processing of the GET, PUT, and DELETE operations?",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8c",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen8b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_9.png?alt=media&token=bd43a4b3-8477-484b-8666-ed14ed6faf6b",
+                "type": "image"
+              },
+              {
+                "content": "Review the response in the Chat view, which includes detailed explanations and code snippets for handling exceptions.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8d",
+              "text": "Got it, let's continue!"
+            }
+          ],
+          "id": "screen8c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Use inline chat for detailed instructions by selecting the routes and pressing `Ctrl + I`. Enter the following prompt:",
+                "type": "text"
+              },
+              {
+                "content": "How can I handle exceptions thrown during the download process?",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8e",
+              "text": "Command entered!"
+            }
+          ],
+          "id": "screen8d",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_10.png?alt=media&token=bba48e2e-059f-4c04-a79e-c349f3d024e8",
+                "type": "image"
+              },
+              {
+                "content": "Review the inline response and accept the proposed code to implement the exception handling.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8f",
+              "text": "Code applied!"
+            }
+          ],
+          "id": "screen8e",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_11.png?alt=media&token=f012b51a-e9f8-45f6-89b9-bd3c10d4e1bd",
+                "type": "image"
+              },
+              {
+                "content": "Save the changes to `app/api/routes/projects.py` to ensure the exception handling code is properly integrated. You can click on the `Accept` to accept the generated suggestions.",
+                "type": "text"
+              },
+              {
+                "content": "Ready to summarize the mission?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Code applied!"
+            }
+          ],
+          "id": "screen8f",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Congratulations, {username}! You've successfully used GitHub Copilot Chat to generate code explanations for various purposes, including understanding new projects, deciphering complex code, diagnosing errors, and implementing new features. This mission has enhanced your ability to work with unfamiliar codebases and improve your overall productivity as a developer.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
