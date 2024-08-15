@@ -1,0 +1,1360 @@
+{
+  "tasks": [
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "1",
+      "name": "Question #1",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello {username}! Congratulations on completing the module on visual testing and Katalon Studio. You've learned about the importance of visual testing, how AI enhances this process, and the benefits of integrating Katalon Studio with Katalon TestOps. This quiz will help reinforce your understanding and highlight any areas that may need further review. Ready to get started?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, I'm ready!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Alright {username}, let's begin with our first question!",
+                "type": "text"
+              },
+              {
+                "content": "Q1. What is the primary purpose of visual testing in software quality assurance?\n\n\nA. To increase the development time\n\nB. To ensure the UI appears correctly to users by comparing screenshots from different test runs\n\nC. To replace manual testing entirely\n\nD. To eliminate the need for any testing\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen2correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen2incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen2incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Excellent, {username}! Visual testing ensures the UI appears correctly to users by comparing screenshots from different test runs.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Not quite, {username}. Visual testing ensures the UI appears correctly to users by comparing screenshots from different test runs.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The primary purpose of visual testing in software quality assurance is to ensure that the user interface (UI) appears correctly to users by comparing screenshots from different test runs. This process involves capturing screenshots of the application's UI and comparing them with baseline images to identify any visual discrepancies. This helps in detecting unintended changes or visual bugs that could affect the user experience.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, during a new release, visual testing can detect if a button has moved out of place or if a color scheme has changed unintentionally, ensuring that the UI remains consistent and user-friendly.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for the next one, {username}? Let's talk about what visual testing involves.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "2",
+      "name": "Question #2",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q2. What does visual testing involve?\n\n\nA. Verifying code functionality\n\nB. Verifying that the UI of an application appears as intended by comparing the current UI with baseline images\n\nC. Manual code reviews\n\nD. Performance testing of the backend\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen3correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen3incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen3incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Visual testing involves verifying that the UI appears as intended by comparing it with baseline images.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. Visual testing involves verifying that the UI appears as intended by comparing it with baseline images.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Visual testing involves verifying that the user interface (UI) of an application appears as intended by comparing the current UI with baseline images. This process captures the current state of the UI and compares it to pre-defined baseline images to check for any visual discrepancies. This ensures that any changes or updates to the application do not negatively impact the visual presentation, maintaining a consistent and reliable user experience.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a new feature is added to a webpage, visual testing can compare the updated page with the baseline to ensure that the new feature does not disrupt the existing layout or design.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's another one, {username}! Let's discuss how visual testing improves user experience.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "3",
+      "name": "Question #3",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q3. How does visual testing improve user experience?\n\n\nA. By complicating the UI\n\nB. By ensuring a consistent and appealing UI\n\nC. By reducing the frequency of updates\n\nD. By focusing solely on backend performance\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen4correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen4incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen4incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's correct, {username}! Visual testing ensures a consistent and appealing UI, improving user experience.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. Visual testing ensures a consistent and appealing UI, improving user experience.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Visual testing improves user experience by ensuring that the user interface (UI) remains consistent, appealing, and free of visual defects. By regularly comparing the current UI with baseline images, visual testing helps identify and fix visual inconsistencies, ensuring that users have a smooth and enjoyable experience. This consistency is crucial for maintaining user satisfaction and engagement.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, an e-commerce website can use visual testing to ensure that product images, buttons, and navigation menus remain correctly aligned and visually appealing across different browsers and devices, providing a seamless shopping experience for users.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another question, {username}? Let's talk about visual testing and brand image.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "4",
+      "name": "Question #4",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q4. Why is visual testing important for maintaining a positive brand image?\n\n\nA. It increases the development cost\n\nB. It reflects professionalism and bolsters customer trust\n\nC. It complicates the testing process\n\nD. It reduces the need for customer support\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen5correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen5incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen5incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's right, {username}! Visual testing reflects professionalism and bolsters customer trust, maintaining a positive brand image.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. Visual testing reflects professionalism and bolsters customer trust, maintaining a positive brand image.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Visual testing is important for maintaining a positive brand image because it ensures that the application's user interface (UI) consistently meets high visual standards. This reflects professionalism and bolsters customer trust. When users encounter a visually appealing and well-maintained UI, they are more likely to perceive the brand as reliable and trustworthy, which enhances the overall reputation and credibility of the company.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, a banking app that consistently maintains a clean and professional UI through visual testing will be perceived as more trustworthy by its users, compared to an app with frequent visual glitches and inconsistencies.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's the next one, {username}! Let's discuss the challenges of manual visual testing.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "5",
+      "name": "Question #5",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q5. What is a major challenge of manual visual testing?\n\n\nA. It is highly efficient\n\nB. It is time-consuming and prone to human error\n\nC. It requires no expertise\n\nD. It is fully automated\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen6correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen6incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen6incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Manual visual testing is time-consuming and prone to human error.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. Manual visual testing is time-consuming and prone to human error.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "A major challenge of manual visual testing is that it is time-consuming and prone to human error. Manually inspecting the user interface (UI) for visual inconsistencies can be tedious and inefficient, and human testers may overlook subtle visual defects. This can lead to incomplete testing and missed issues, affecting the overall quality of the application. Automation tools can help mitigate these challenges by providing more efficient and reliable visual testing.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, a manual tester might miss a slight misalignment of a button on a webpage during a routine check, whereas an automated visual testing tool would reliably detect such inconsistencies, ensuring that all visual aspects of the UI are thoroughly tested.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another one, {username}? Let's talk about AI and test creation.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "6",
+      "name": "Question #6",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q6. How does AI contribute to faster test creation?\n\n\nA. By requiring extensive coding\n\nB. By quickly generating test scripts based on plain language prompts\n\nC. By ignoring user behavior\n\nD. By complicating the test creation process\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen7correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen7incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen7incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's correct, {username}! AI contributes to faster test creation by quickly generating test scripts based on plain language prompts.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. AI contributes to faster test creation by quickly generating test scripts based on plain language prompts.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI enhances test creation speed by quickly generating test scripts from plain language prompts. This reduces the need for extensive coding, allowing testers to describe the desired tests in natural language. The AI interprets these descriptions and generates the corresponding test scripts automatically. This process accelerates test creation, making it more accessible and efficient, especially for testers with limited coding skills.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, a tester can input a plain language prompt like 'Verify the login functionality with valid credentials,' and the AI will generate a complete test script to automate this test, saving significant time compared to writing the script manually.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's another one, {username}! Let's discuss AI-powered tools and visual testing accuracy.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "7",
+      "name": "Question #7",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q7. How do AI-powered tools enhance visual testing accuracy?\n\n\nA. By identifying significant and insignificant changes equally\n\nB. By accurately identifying visual changes and reducing false positives\n\nC. By increasing the number of false positives\n\nD. By ignoring user impact\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen8correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen8incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen8incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! AI-powered tools enhance visual testing accuracy by accurately identifying visual changes and reducing false positives.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. AI-powered tools enhance visual testing accuracy by accurately identifying visual changes and reducing false positives.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI-powered tools improve visual testing accuracy by precisely identifying visual changes and minimizing false positives. These tools use advanced image recognition algorithms to compare screenshots, detecting only meaningful differences that could impact the user experience. This accuracy ensures that visual tests are reliable and that testers are not overwhelmed with irrelevant or insignificant changes, allowing them to focus on real issues.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, an AI-powered visual testing tool can differentiate between a minor, acceptable change in font style and a significant misalignment of UI elements, reducing false alarms and ensuring that only critical visual discrepancies are flagged for review.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's continue, {username}! Here's a question about Katalon Studio's automated visual testing feature.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "8",
+      "name": "Question #8",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q8. What does Katalon Studio's automated visual testing feature do?\n\n\nA. Manually compares images\n\nB. Uses AI to compare baseline images with test results\n\nC. Increases the manual effort needed\n\nD. Ignores visual discrepancies\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen9correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen9incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen9incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's right, {username}! Katalon Studio's automated visual testing feature uses AI to compare baseline images with test results.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. Katalon Studio's automated visual testing feature uses AI to compare baseline images with test results.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Katalon Studio's automated visual testing feature leverages AI to compare baseline images with test results, identifying any visual discrepancies. This AI-driven approach ensures that visual tests are accurate and efficient, automatically detecting changes that may affect the user interface. By automating this process, Katalon Studio reduces the manual effort required for visual testing and enhances the reliability of test results.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, when a new version of an application is released, Katalon Studio can automatically compare screenshots of the new UI with baseline images from the previous version, identifying any unexpected visual changes that need to be addressed.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's the next one, {username}! Let's talk about Katalon's self-healing mechanism.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "9",
+      "name": "Question #9",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q9. What is the purpose of Katalon's self-healing mechanism?\n\n\nA. To make manual updates\n\nB. To automatically adapt to minor UI changes and update locators\n\nC. To ignore changes in the UI\n\nD. To complicate the testing process\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen10correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen10incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen10incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's right, {username}! Katalon's self-healing mechanism automatically adapts to minor UI changes and updates locators.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. Katalon's self-healing mechanism automatically adapts to minor UI changes and updates locators.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The purpose of Katalon's self-healing mechanism is to automatically adapt to minor UI changes and update locators accordingly. This feature ensures that automated tests remain robust and reliable even when there are small changes in the user interface. By dynamically adjusting to these changes, the self-healing mechanism reduces the need for manual intervention and maintenance, enhancing the efficiency and effectiveness of the testing process.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a button's identifier changes slightly due to a minor UI update, Katalon's self-healing mechanism will automatically detect this change and update the test script's locator, preventing test failures and ensuring continuity in automated testing.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's the final question, {username}! Let's talk about integrating Katalon TestOps with Katalon Studio.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of visual testing and the integration of Katalon Studio with Katalon TestOps.\nIt covers the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots, the process and benefits of visual testing for user experience and brand image, and the challenges of manual visual testing.\nLearners will explore how AI contributes to faster test creation and enhances visual testing accuracy.\nAdditionally, the probe highlights Katalon Studio's automated visual testing feature, the self-healing mechanism for adapting to UI changes, and the benefits of integrating Katalon TestOps for centralized test management, result analysis, and insight generation.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "10",
+      "name": "Question #10",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q10. What is the benefit of integrating Katalon TestOps with Katalon Studio?\n\n\nA. It decentralizes test management\n\nB. It provides a centralized platform for managing tests, analyzing results, and generating insights\n\nC. It increases the complexity of test management\n\nD. It reduces the ability to track test performance\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen11correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen11incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen11incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's correct, {username}! Integrating Katalon TestOps with Katalon Studio provides a centralized platform for managing tests, analyzing results, and generating insights.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not right, {username}. Integrating Katalon TestOps with Katalon Studio provides a centralized platform for managing tests, analyzing results, and generating insights.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Integrating Katalon TestOps with Katalon Studio offers the benefit of a centralized platform for managing tests, analyzing results, and generating insights. This integration streamlines the entire testing workflow, providing a single interface to organize test cases, monitor test execution, and analyze test outcomes. By consolidating these activities, teams can improve collaboration, make data-driven decisions, and enhance the overall quality and efficiency of their testing processes.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, using Katalon TestOps, a testing team can schedule automated test runs, view detailed test reports, and track the progress of test executions all within one platform, simplifying test management and enhancing productivity.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.\n\n- We explored the primary purpose of visual testing in ensuring the UI appears correctly by comparing screenshots from different test runs.\n\n- We discussed what visual testing involves and how it improves user experience by ensuring a consistent and appealing UI.\n\n- We highlighted the importance of visual testing in maintaining a positive brand image by reflecting professionalism and bolstering customer trust.\n\n- We covered the challenges of manual visual testing, such as being time-consuming and prone to human error.\n\n- We reviewed how AI contributes to faster test creation by quickly generating test scripts based on plain language prompts.\n\n- We explained how AI-powered tools enhance visual testing accuracy by accurately identifying visual changes and reducing false positives.\n\n- We talked about Katalon Studio's automated visual testing feature using AI to compare baseline images with test results.\n\n- We discussed the purpose of Katalon's self-healing mechanism in automatically adapting to minor UI changes and updating locators.\n\n- We emphasized the benefit of integrating Katalon TestOps with Katalon Studio to provide a centralized platform for managing tests, analyzing results, and generating insights.\n",
+                "type": "text"
+              },
+              {
+                "content": "Up next, we'll dive into the next module, where we'll explore advanced techniques for using GitHub Copilot to streamline deployment.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
