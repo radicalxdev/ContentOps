@@ -1,0 +1,239 @@
+{
+  "tasks": [
+    {
+      "context": "This task serves as the introduction to the final quest of the program, where learners will consolidate their understanding of AI's role in the Software Development Lifecycle (SDLC). The learner is welcomed and informed that they will recap their learnings and prepare for a hands-on project that integrates AI into software development. This introduction sets the stage for reflecting on the key concepts covered and applying them practically, ensuring that the learner is ready for the upcoming challenges and applications of AI in real-world scenarios.",
+      "id": "1",
+      "name": "Introduction",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Welcome to the last quest of our program! This final section will bring together everything we've learned about AI in the Software Development Lifecycle (SDLC) and set you up for a hands-on project. Are you ready to summarize your learnings and prepare for the expedition?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's get started!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's quickly recap the main concepts and applications of AI in the SDLC.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this task, the learner will revisit the main concepts and applications of AI across the different stages of the SDLC. The recap covers the key takeaways from each journey, including requirements gathering, design, development, testing, deployment, maintenance, and project management. This task helps reinforce the knowledge gained throughout the program, ensuring that the learner has a comprehensive understanding of how AI tools can be leveraged at each stage to enhance software development processes. By summarizing these learnings, the learner is better prepared to apply AI in their future projects.",
+      "id": "2",
+      "name": "Recap",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "- **Journey 1: Requirements Gathering**\n  - In this journey, we covered the basics of generative AI and what all software developers should know. We also explored how to leverage generative AI in the SDLC and delved into prompt engineering techniques to get the best output from AI.\n- **Journey 2: Design**\n  - We focused on developing code features and implementing code improvements using GitHub Copilot tools, highlighting how AI can assist in creating efficient and innovative software designs.\n- **Journey 3: Development**\n  - This journey covered unit testing and generating documentation using GitHub Copilot, emphasizing AI's role in enhancing code quality and development efficiency.\n- **Journey 4: Testing**\n  - We explored automated test generation and AI visual testing with Katalon AI, demonstrating how AI can ensure software reliability and performance.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it! Let's continue."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "- **Journey 5: Deployment**\n  - This journey included advanced deployment automation with AI-generated scripts and Google Cloud Run setup and deployment using Copilot, showing how AI can streamline software delivery.\n- **Journey 6: Maintenance**\n  - We learned about AI-powered monitoring with New Relic and troubleshooting with AI, focusing on ongoing software maintenance and proactive issue prevention.\n- **Journey 7: Project Management**\n  - We covered creating highly consumable visual documentation and designing architecture & data flow diagrams with Eraser AI, showcasing AI's role in planning and managing software projects.\n",
+                "type": "text"
+              },
+              {
+                "content": "Are you ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This task focuses on how learners can effectively integrate AI tools into their workflow. It emphasizes the importance of adopting a growth mindset and viewing AI as an enhancement rather than a replacement. The learner will explore strategies for gradually incorporating AI into their daily tasks, such as starting small, expanding usage as confidence grows, using AI for data-driven insights, and automating repetitive tasks. This task aims to equip the learner with practical approaches to seamlessly integrate AI, thereby enhancing productivity and allowing more focus on creative and strategic aspects of their work.",
+      "id": "3",
+      "name": "Integrating AI in Your Workflow",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To effectively use AI, adopting the right mindset is crucial:",
+                "type": "text"
+              },
+              {
+                "content": "- **Growth Mindset**: Embrace learning and see challenges as opportunities to grow.\n- **Viewing AI as an Enhancement**: AI is a tool to enhance your skills, not replace them. It automates repetitive tasks, allowing you to focus on more creative and strategic work.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here are some strategies to integrate AI tools into your workflow:",
+                "type": "text"
+              },
+              {
+                "content": "- **Starting Small**: Experiment with AI tools in specific tasks for immediate value.\n- **Gradual Integration**: Expand AI use as your confidence grows.\n- **Augmenting Decision-Making**: Use AI for data-driven insights.\n- **Automating Repetitive Tasks**: Free up time for strategic activities.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this task, the learner will explore the ethical considerations and limitations associated with using AI in software development. The discussion includes potential issues such as data privacy, bias in AI outputs, lack of explainability, and the importance of transparency and accountability. The learner will understand the need for responsible AI use and how to address ethical concerns. This task is crucial in fostering an ethical mindset, ensuring that the learner can implement AI solutions that are fair, transparent, and respectful of user privacy and rights.",
+      "id": "4",
+      "name": "Ethical Considerations",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Despite the numerous ways Generative AI makes your workflow better, there are several limitations and ethical concerns:",
+                "type": "text"
+              },
+              {
+                "content": "- **Limitations**: Training data quality, computational resources, lack of explainability.\n- **Ethical Issues**: Bias in outputs, data privacy, copyright infringement, and the need for transparency and accountability.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6",
+              "text": "How do we use AI responsibly?"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Responsible AI use is crucial:",
+                "type": "text"
+              },
+              {
+                "content": "- **Data Privacy and Security**: Ensure compliance with regulations and protect sensitive data.\n- **Transparency and Accountability**: Maintain clear AI processes and establish human oversight.\n- **Ethical Considerations**: Avoid bias, ensure fairness, and safeguard privacy.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Understood, let's move on."
+            }
+          ],
+          "id": "screen6",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Implementing responsible AI involves:",
+                "type": "text"
+              },
+              {
+                "content": "- **Identifying Concerns**: Address data bias, copyright issues, and data privacy.\n- **Reducing Algorithmic Bias**: Use diverse training data, seek user feedback, and ensure transparency.\n- **Preventing Violations**: Obtain permissions, protect data, and disclose sources.\n- **Ethical AI Implementation**: Establish governance, ensure accountability, and build user trust.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "The final task of the program wraps up the journey by congratulating the learner on completing the course and preparing them for the final expedition. It highlights the broad spectrum of AI applications explored, from requirements gathering to deployment and maintenance. The learner is reminded of the importance of using AI responsibly and ethically while maintaining a growth mindset. This task also introduces the final hands-on project, where the learner will apply what they have learned in a practical setting. The goal is to solidify their skills in integrating AI-powered tools into their workflow, ensuring they are well-equipped to contribute to complex projects in real-world environments.",
+      "id": "5",
+      "name": "Outro",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Congratulations on completing the final quest! You've explored the vast potential of AI in the Software Development Lifecycle, from requirements gathering to deployment and maintenance. By integrating AI tools into your workflow, you are equipped to enhance efficiency, accuracy, and innovation in your projects.",
+                "type": "text"
+              },
+              {
+                "content": "To assess what you've learnt in this program, the next and final stage focuses on our final expedition which will provide a hands-on experience with integrating AI-powered tools, enhancing your software development skills, and ensuring that you can effectively contribute to complex projects in a real-world environment.",
+                "type": "text"
+              },
+              {
+                "content": "Remember, AI is a powerful ally that, when used responsibly and thoughtfully, can significantly elevate your capabilities as a developer. Keep a growth mindset, continue experimenting, and stay committed to ethical practices.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Let's move on!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Are you ready for the final expedition?",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}

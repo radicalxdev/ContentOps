@@ -1,0 +1,2682 @@
+{
+  "tasks": [
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "1",
+      "name": "Question 1",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello {username}! Congratulations on successfully completing the expedition! You've expertly mastered the integration of various AI tools into your development workflow, enhancing each stage of the Software Development Lifecycle. This newfound expertise is sure to boost your efficiency and significantly improve the quality of your projects.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, I'm ready!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Alright {username}, let’s begin with our first question!\n\n**Question:** What does the term \"hallucination\" refer to in the context of Generative AI?\n\nA. Generating real and accurate content\n\nB. Producing outputs that seem plausible but are factually incorrect or nonsensical\n\nC. Refusing to generate any content\n\nD. Correctly interpreting all inputs\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen2_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen2_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen2_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Excellent, {username}! Hallucination in Generative AI refers to producing outputs that seem plausible but are factually incorrect or nonsensical.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen2_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Not quite, {username}. Hallucination in Generative AI refers to producing outputs that seem plausible but are factually incorrect or nonsensical.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen2_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "In the context of Generative AI, hallucination refers to the phenomenon where the AI model generates content that appears to be valid and coherent but is actually incorrect, misleading, or nonsensical. These outputs can be problematic as they may be difficult to distinguish from accurate information, leading to potential misinformation or confusion. Hallucination typically occurs due to limitations in the model's training data or inherent biases.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a Generative AI is asked to provide historical facts about a fictional event, it might create a detailed yet entirely fabricated account that seems realistic but has no basis in reality.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen2b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for the next one? Let's talk about validating AI-generated outputs.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "2",
+      "name": "Question 2",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** Why is it important to validate AI-generated outputs?\n\nA. AI outputs are always perfect and require no validation\n\nB. Validation ensures the outputs are accurate and meet real-world requirements\n\nC. Validation increases the time taken to complete the project\n\nD. Validation decreases the reliability of the outputs\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen3_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen3_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen3_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Validating AI-generated outputs ensures their accuracy and relevance to real-world requirements.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen3_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not it, {username}. Validating AI-generated outputs ensures their accuracy and relevance to real-world requirements.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen3_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Validating AI-generated outputs is crucial to ensure that the information or content produced by the AI is accurate, reliable, and suitable for the intended purpose. Since AI models can produce erroneous or biased outputs, validation helps identify and correct these issues before the content is used in critical applications. This step is essential to maintain the quality, credibility, and usefulness of AI-generated results.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, in a medical application, validating AI-generated diagnostic recommendations against established medical guidelines ensures that the suggestions are safe and appropriate for patient care.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another question, {username}? Let’s discuss iterative refinement in prompt engineering.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "3",
+      "name": "Question 3",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** Why is context important in prompt engineering?\n\nA. It increases the length of the prompt.\n\nB. It helps the model generate relevant content by establishing the setting and background.\n\nC. It makes the prompt more complex.\n\nD. It limits the model's output.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen4_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen4_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen4_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s correct, {username}! Context helps the model generate relevant content by establishing the setting and background.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen4_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not quite right, {username}. Context helps the model generate relevant content by establishing the setting and background.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen4_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Context is important in prompt engineering because it provides the AI model with essential information about the setting, background, and specific details needed to generate accurate and relevant content. By establishing the context, the model can better understand the nuances of the prompt, resulting in outputs that are more aligned with the user's intentions and the specific requirements of the task.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, when asking an AI to generate a story about a historical event, including context such as the time period, location, and key figures involved will help the AI produce a more accurate and coherent narrative.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen4b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another question, {username}? Let’s discuss iterative refinement in prompt engineering.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "4",
+      "name": "Question 4",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is the purpose of iterative refinement in prompt engineering?\n\nA. To limit the model's output\n\nB. To continuously improve the quality of the model's responses\n\nC. To reduce the length of the prompt\n\nD. To make the prompt more complex\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen5_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen5_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen5_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! Iterative refinement improves the quality of the model's responses continuously.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen5_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. Iterative refinement improves the quality of the model's responses continuously.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen5_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The purpose of iterative refinement in prompt engineering is to enhance the quality of the AI model's responses by continuously adjusting and fine-tuning the prompts based on the outputs received. This process involves evaluating the generated responses, identifying areas for improvement, and modifying the prompts to better guide the model towards producing the desired results. Iterative refinement helps in achieving more accurate, relevant, and useful outputs over time.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen5a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if an AI is used to generate customer service responses, iterative refinement can involve adjusting the prompts to address common issues more effectively, thereby improving the overall quality of customer interactions.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen5b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let’s continue, {username}! Here’s a question about interacting with GitHub Copilot.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "5",
+      "name": "Question 5",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** How can a developer optimize their experience when interacting with GitHub Copilot via chat?\n\nA. By being vague about the inputs, outputs, APIs, or frameworks they want to use.\n\nB. By using chat participants, slash commands, chat variables, and being specific in your prompts.\n\nC. By asking Copilot to perform large tasks at once.\n\nD. By using only keyboard shortcuts without any descriptive prompts.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen6_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen6_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen6_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Spot on, {username}! Developers can optimize their experience by using chat participants, slash commands, chat variables, and providing specific prompts.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen6_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not right, {username}. Developers can optimize their experience by using chat participants, slash commands, chat variables, and providing specific prompts.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen6_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Developers can optimize their experience with GitHub Copilot by being specific and clear in their prompts, using chat participants to collaborate effectively, utilizing slash commands for efficiency, and employing chat variables to manage and control the conversation context. Being precise about the inputs, desired outputs, APIs, and frameworks helps Copilot generate more accurate and useful code suggestions, enhancing the overall development process.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen6a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, when asking Copilot to generate a function, providing detailed information about the function's purpose, input parameters, and expected output will result in more relevant and precise code suggestions.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen6b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s another one, {username}! Let’s talk about reviewing code generated by GitHub Copilot.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "6",
+      "name": "Question 6",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** Why should developers review the code generated by GitHub Copilot?\n\nA. Because Copilot never makes mistakes.\n\nB. To ensure the generated code meets their requirements and follows best practices.\n\nC. To automatically accept all suggestions.\n\nD. To save time without considering code quality.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen7_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen7_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen7_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! Reviewing the code ensures it meets requirements and follows best practices.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen7_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not it, {username}. Reviewing the code ensures it meets requirements and follows best practices.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen7_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Developers should review the code generated by GitHub Copilot to ensure that it meets their specific requirements, adheres to best practices, and is free from errors or security vulnerabilities. While Copilot can provide helpful suggestions and automate parts of the coding process, it is not infallible and may produce code that is suboptimal or incorrect. Thoroughly reviewing the generated code helps maintain code quality and reliability.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen7a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if Copilot generates a piece of code for handling user authentication, the developer should review it to ensure it follows secure coding practices and properly handles edge cases to prevent potential security breaches.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen7b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s talk about the primary function of GitHub Copilot in generating unit tests.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "7",
+      "name": "Question 7",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is the primary function of GitHub Copilot in generating unit tests?\n\nA. Manually writing all the test cases for the user\n\nB. Suggesting possible input parameters and expected output values\n\nC. Generating code snippets for test cases based on the code specified by the user\n\nD. Compiling and running the tests automatically\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen8_incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen8_correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen8_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! GitHub Copilot generates code snippets for test cases based on user-specified code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen8_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. GitHub Copilot generates code snippets for test cases based on user-specified code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen8_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The primary function of GitHub Copilot in generating unit tests is to create code snippets for test cases based on the code provided by the user. Copilot assists developers by suggesting and generating test cases that validate the functionality of their code, ensuring that it behaves as expected. This helps streamline the testing process and improves the reliability of the software by catching potential issues early.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen8a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a developer has written a function to calculate the sum of two numbers, Copilot can generate unit test cases to verify that the function returns the correct sum for various input values, including edge cases.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen8b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s another one, {username}! Let’s discuss edge cases and boundary conditions in unit tests.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "8",
+      "name": "Question 8",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** How can edge cases and boundary conditions improve unit tests?\n\nA. By reducing the number of tests\n\nB. By ensuring the code handles all possible input scenarios, including extremes\n\nC. By focusing only on common use cases\n\nD. By ignoring invalid inputs\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen9_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen9_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen9_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! Edge cases and boundary conditions ensure the code handles all possible input scenarios, including extremes.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen9_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not it, {username}. Edge cases and boundary conditions ensure the code handles all possible input scenarios, including extremes.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen9_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Testing edge cases and boundary conditions is crucial in unit testing as it ensures the code can handle all possible input scenarios, including the extreme or unusual ones that may occur. This type of testing helps identify potential bugs or weaknesses in the code that might not be apparent when only common use cases are considered. By thoroughly testing these scenarios, developers can improve the robustness and reliability of their software.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen9a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if a function is designed to sort an array of integers, unit tests should include edge cases such as an empty array, an array with a single element, and arrays with duplicate or negative values to ensure the function handles these scenarios correctly.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen9b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another one, {username}? Let’s talk about a potential limitation of relying solely on GitHub Copilot for documentation.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "9",
+      "name": "Question 9",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is a potential limitation of relying solely on GitHub Copilot for documentation?\n\nA. It can generate overly technical descriptions.\n\nB. It may miss project-specific nuances.\n\nC. It replaces the need for any manual documentation.\n\nD. It performs security audits on the code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen10_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen10_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen10_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! It may miss project-specific nuances.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen10_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. It may miss project-specific nuances.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen10_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "While GitHub Copilot can assist in generating documentation, it may miss the specific nuances and unique requirements of a project. Project-specific details, such as particular configurations, business logic, and domain-specific knowledge, might not be fully captured by Copilot. As a result, relying solely on Copilot for documentation can lead to incomplete or inaccurate documentation that fails to fully address the unique aspects of the project.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen10a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if a project involves proprietary algorithms or custom workflows, Copilot might generate general documentation that does not adequately explain these unique elements, necessitating manual adjustments or additions by developers familiar with the project.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen10b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s talk about a key consideration when using GitHub Copilot to document complex algorithms.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "10",
+      "name": "Question 10",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is a key consideration when using GitHub Copilot to document complex algorithms?\n\nA. Keeping the comments concise and general, avoiding detailed explanations.\n\nB. Ensuring that the generated documentation precisely and accurately reflects the logic and functionality of the algorithm.\n\nC. Relying solely on Copilot to produce all documentation for algorithms without further review.\n\nD. Utilizing Copilot to rewrite the entire algorithm for improved clarity.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen11_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen11_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen11_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! Ensure the documentation precisely and accurately reflects the algorithm's logic and functionality.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen11_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. Ensure the documentation precisely and accurately reflects the algorithm's logic and functionality.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen11_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When using GitHub Copilot to document complex algorithms, it is crucial to ensure that the generated documentation precisely and accurately reflects the algorithm's logic and functionality. Copilot can provide useful initial documentation, but it may require careful review and refinement to ensure that all the intricate details and specific workings of the algorithm are correctly captured and explained.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen11a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if an algorithm involves multiple steps of data processing and intricate calculations, the documentation generated by Copilot should be reviewed and supplemented with detailed explanations to ensure that anyone reading it can fully understand how the algorithm operates and why certain steps are taken.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen11b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s discuss the benefit of using synthetic data generation in testing.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "11",
+      "name": "Question 11",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is the benefit of using synthetic data generation in testing?\n\nA. Reduces the number of test cases\n\nB. Creates diverse and comprehensive test datasets\n\nC. Increases manual data entry\n\nD. Simplifies the testing process\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen12_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen12_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen12_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen12_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Synthetic data generation creates diverse and comprehensive test datasets.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen12a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen12_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. Synthetic data generation creates diverse and comprehensive test datasets.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen12a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen12_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Using synthetic data generation in testing allows for the creation of diverse and comprehensive test datasets that can cover a wide range of scenarios and edge cases. This approach helps ensure that the software is thoroughly tested against various inputs and conditions, improving its robustness and reliability. Synthetic data can simulate real-world data without compromising sensitive information, making it valuable for testing purposes.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen12b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen12a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, in testing a financial application, synthetic data can be generated to include various transaction types, user behaviors, and potential anomalies, allowing testers to evaluate the application's performance and stability under different conditions.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen12b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another one, {username}? Let’s talk about how AI improves regression testing in Katalon Studio.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "12",
+      "name": "Question 12",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** How does AI improve regression testing in Katalon Studio?\n\nA. By ignoring existing functionalities\n\nB. By ensuring new features do not affect existing functionalities\n\nC. By increasing the number of bugs\n\nD. By reducing test accuracy\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen13_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen13_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen13_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen13_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! AI ensures new features do not affect existing functionalities.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen13a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen13_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. AI ensures new features do not affect existing functionalities.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen13a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen13_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI improves regression testing in Katalon Studio by ensuring that new features or changes introduced in the software do not negatively impact existing functionalities. AI can automatically detect and highlight areas of the application affected by recent changes, making it easier to identify and address potential issues before they cause problems in production. This helps maintain the stability and reliability of the software over time.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen13b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen13a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a new feature is added to an e-commerce application, AI-driven regression testing can check whether the new feature interferes with the existing checkout process, ensuring that customers can still complete their purchases without issues.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen13b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s discuss the benefit of integrating Katalon TestOps with Katalon Studio.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "13",
+      "name": "Question 13",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is the benefit of integrating Katalon TestOps with Katalon Studio?\n\nA. It decentralizes test management\n\nB. It provides a centralized platform for managing tests, analyzing results, and generating insights\n\nC. It increases the complexity of test management\n\nD. It reduces the ability to track test performance\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen14_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen14_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen14_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen14_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! It provides a centralized platform for managing tests, analyzing results, and generating insights.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen14a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen14_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. It provides a centralized platform for managing tests, analyzing results, and generating insights.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen14a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen14_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Integrating Katalon TestOps with Katalon Studio offers the benefit of a centralized platform where tests can be managed, results can be analyzed, and valuable insights can be generated. This integration streamlines the testing process by providing a cohesive environment for planning, executing, and monitoring tests. It enhances collaboration among team members and helps identify trends, bottlenecks, and areas for improvement, leading to more efficient and effective testing practices.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen14b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen14a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, a development team can use Katalon TestOps to track the execution of test cases, analyze failure patterns, and generate reports that highlight areas needing attention, thereby improving the overall quality of the software.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen14b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another one, {username}? Let’s talk about how GitHub Copilot helps with Jenkins pipeline scripts.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "14",
+      "name": "Question 14",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "\n**Question:** How does GitHub Copilot help with Jenkins pipeline scripts?\n\nA. By manually creating the scripts\n\nB. By generating Jenkins pipeline scripts to automate build, test, and deployment processes\n\nC. By ignoring the CI/CD pipeline\n\nD. By reducing the automation level\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen15_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen15_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen15_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen15_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Spot on, {username}! Copilot generates Jenkins pipeline scripts to automate build, test, and deployment processes.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen15a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen15_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not right, {username}. Copilot generates Jenkins pipeline scripts to automate build, test, and deployment processes.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen15a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen15_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "GitHub Copilot assists with Jenkins pipeline scripts by generating the necessary code to automate various stages of the CI/CD pipeline, including build, test, and deployment processes. By automating these tasks, Copilot helps streamline the development workflow, reduce manual effort, and ensure consistency and reliability in the software delivery process. This capability is particularly useful for setting up and maintaining complex CI/CD pipelines efficiently.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen15b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen15a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, a developer can use Copilot to generate a Jenkins pipeline script that automatically compiles the code, runs unit tests, and deploys the application to a staging environment whenever changes are pushed to the repository.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen15b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s talk about how AI tools enforce coding standards and best practices.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "15",
+      "name": "Question 15",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** How can AI tools enforce coding standards and best practices?\n\nA. By ignoring existing scripts\n\nB. By suggesting and implementing standardized ways of writing and formatting configuration files\n\nC. By increasing inconsistencies\n\nD. By making collaboration more difficult\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen16_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen16_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen16_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen16_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! AI tools suggest and implement standardized ways of writing and formatting configuration files.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen16a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen16_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. AI tools suggest and implement standardized ways of writing and formatting configuration files.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen16a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen16_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI tools can enforce coding standards and best practices by suggesting and implementing standardized methods for writing and formatting code. These tools analyze the codebase, identify deviations from established standards, and provide recommendations or automatic corrections to align the code with best practices. This ensures consistency, readability, and maintainability of the code, making it easier for teams to collaborate and for new developers to understand and contribute to the project.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen16b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen16a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, an AI tool integrated into a code editor can automatically format code according to the project's style guide, highlight potential issues such as code smells or security vulnerabilities, and suggest improvements based on best practices. This helps maintain high code quality and adherence to standards across the development team.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen16b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another one, {username}? Let’s talk about predictive deployment analytics provided by AI.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "16",
+      "name": "Question 16",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is one benefit of predictive deployment analytics provided by AI?\n\nA. Increased deployment failures\n\nB. Proactive issue resolution\n\nC. Reduced code quality\n\nD. Manual risk management\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen17_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen17_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen17_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen17_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! Predictive deployment analytics enable proactive issue resolution.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen17a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen17_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not it, {username}. Predictive deployment analytics enable proactive issue resolution.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen17a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen17_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Predictive deployment analytics provided by AI analyze data from past deployments to forecast potential issues and risks before they occur. This proactive approach allows teams to address and resolve issues before they impact the deployment process. By anticipating problems and implementing preventive measures, AI-driven analytics help ensure smoother and more reliable deployments, reducing downtime and enhancing overall system stability.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen17b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen17a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if AI predicts that a particular code change is likely to cause performance issues based on historical data, the development team can take corrective actions or conduct additional testing to mitigate the risk, ensuring a successful deployment.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen17b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s talk about the primary advantage of using AI-driven insights in monitoring.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "17",
+      "name": "Question 17",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is the primary advantage of using AI-driven insights in monitoring?\n\nA. Increased manual analysis\n\nB. Enhanced proactive monitoring and actionable insights\n\nC. Reduced visibility into system performance\n\nD. Increased downtime\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen18_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen18_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen18_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen18_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! AI-driven insights enhance proactive monitoring and provide actionable insights.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen18a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen18_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. AI-driven insights enhance proactive monitoring and provide actionable insights.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen18a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen18_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The primary advantage of using AI-driven insights in monitoring is the ability to enhance proactive monitoring and obtain actionable insights. AI can continuously analyze vast amounts of data in real-time, identifying patterns, anomalies, and potential issues before they escalate. This proactive approach allows teams to respond to problems swiftly, optimize system performance, and maintain high availability and reliability. Actionable insights derived from AI analysis can guide strategic decisions and improvements.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen18b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen18a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, AI-driven monitoring can detect unusual spikes in CPU usage that may indicate a potential server overload. The system can then alert administrators, who can take preemptive measures to balance the load and prevent downtime.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen18b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s talk about the primary advantage of using AI in troubleshooting over manual methods.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "18",
+      "name": "Question 18",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Question:** What is the primary advantage of using AI in troubleshooting over manual methods?\n\nA. It increases the complexity of the process.\n\nB. It automates repetitive tasks and provides deeper insights.\n\nC. It reduces the accuracy of the results.\n\nD. It makes the process more time-consuming.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen19_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen19_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen19_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen19_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! AI automates repetitive tasks and provides deeper insights in troubleshooting.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen19a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen19_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not it, {username}. AI automates repetitive tasks and provides deeper insights in troubleshooting.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen19a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen19_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The primary advantage of using AI in troubleshooting over manual methods is that AI can automate repetitive tasks and provide deeper, more comprehensive insights into system issues. AI algorithms can quickly analyze large volumes of data, identify patterns, and pinpoint root causes of problems, significantly speeding up the troubleshooting process. This efficiency reduces the time and effort required from human operators, allowing them to focus on more complex and strategic tasks.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen19b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen19a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a web application experiences intermittent performance issues, AI can analyze logs, performance metrics, and user behavior to identify the root cause, such as a specific API call or database query, much faster than a manual investigation.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen19b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the next one, {username}! Let’s talk about AI-driven root cause analysis.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "19",
+      "name": "Question 19",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "\n\n**Question:** What does AI-driven root cause analysis do?\n\nA. It increases the number of errors.\n\nB. It traces issues back to their root cause efficiently.\n\nC. It complicates the troubleshooting process.\n\nD. It ignores the data.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen20_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen20_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen20_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen20_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s right, {username}! AI-driven root cause analysis efficiently traces issues to their root cause.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen20a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen20_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not correct, {username}. AI-driven root cause analysis efficiently traces issues to their root cause.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen20a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen20_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI-driven root cause analysis helps in efficiently identifying the underlying cause of a problem by analyzing data and identifying patterns and correlations. This approach reduces the time and effort required to diagnose issues, allowing teams to implement effective solutions more quickly. By accurately pinpointing the root cause, AI-driven analysis helps prevent recurring problems and enhances the stability and performance of systems.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen20b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen20a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if a network experiences frequent outages, AI-driven root cause analysis can analyze network logs and performance data to determine that the issue is due to a faulty router, enabling a swift resolution.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen20b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here’s the final question, {username}! Let’s talk about how Eraser AI improves the process of generating visual documentation.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of architecture and data flow diagrams using Eraser AI.\nIt covers the importance and benefits of visual documentation in software design, such as visualizing system structure and data interactions, and how Eraser AI assists in creating and maintaining these diagrams.\nLearners will explore how these diagrams facilitate better communication, the key use cases in system design and planning, and best practices for designing clear and effective diagrams.\nAdditionally, the probe highlights Eraser AI's role in automating the generation of accurate and up-to-date visual documentation, simplifying the documentation process, and improving project efficiency and communication.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "20",
+      "name": "Question 20",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "\n\n**Question:** How does Eraser AI improve the process of generating visual documentation?\n\nA. By requiring manual input for each diagram.\n\nB. By automating the generation of diagrams from code.\n\nC. By ignoring code changes.\n\nD. By avoiding visual aids.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen21_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen21_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen21_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen21_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s correct, {username}! Eraser AI automates the generation of diagrams from code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen21a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen21_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That’s not it, {username}. Eraser AI automates the generation of diagrams from code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen21a",
+              "text": "Explain more!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen21_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Eraser AI improves the process of generating visual documentation by automating the creation of diagrams directly from code. This automation ensures that visual documentation is always up-to-date with the latest code changes, reducing the manual effort required to produce and maintain diagrams. Accurate and current visual documentation helps developers and stakeholders understand the system architecture, data flow, and relationships between components, enhancing communication and collaboration.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen21b",
+              "text": "Give me an example!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen21a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, when a developer updates a class in the codebase, Eraser AI can automatically update the corresponding UML diagram to reflect the changes, ensuring that the documentation remains accurate and consistent with the actual code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next!"
+            }
+          ],
+          "id": "screen21b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Fantastic work, {username}! Thank you for your dedication and hard work throughout this learning journey. As you continue to apply and expand upon your new skills, remember that the integration of AI into your projects is just the beginning. We're excited to see how you'll innovate and lead in your future endeavors. Keep pushing boundaries and exploring new possibilities!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
