@@ -1,0 +1,1364 @@
+{
+  "tasks": [
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "1",
+      "name": "Question #1",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello {username}! Congratulations on completing the module on implementing code improvements using GitHub Copilot. You've learned how to leverage Copilot for enhancing your code's quality and functionality. This probe will help reinforce your understanding and highlight any areas that may need further review. Ready to get started?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, I'm ready!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Alright {username}, let's begin with our first question!",
+                "type": "text"
+              },
+              {
+                "content": "**Q1. How can GitHub Copilot Chat assist in improving the modularity of a class?**\n\n\nA. By suggesting potential refactoring updates based on the context of your codebase.\n\nB. By providing a detailed analysis of the class's dependencies.\n\nC. By automatically rewriting the entire class.\n\nD. By removing all comments from the class.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2_correct",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen2_incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen2_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen2_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Excellent, {username}! GitHub Copilot Chat can suggest refactoring updates to enhance the modularity of a class based on the current code context.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Not quite, {username}. GitHub Copilot Chat can suggest refactoring updates to enhance the modularity of a class based on the current code context.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "GitHub Copilot Chat helps improve the modularity of a class by analyzing the existing codebase and suggesting potential refactoring updates. These suggestions are based on the context and structure of the code, aiming to break down large classes into smaller, more manageable, and reusable components. This modular approach enhances code maintainability and scalability.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a class handling multiple responsibilities is identified, Copilot might suggest splitting it into separate classes, each handling a single responsibility. A class managing both user authentication and database operations could be refactored into an `AuthenticationService` and a `DatabaseService` class.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for the next one, {username}? Let's see how GitHub Copilot Chat helps with bug fixes!",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "2",
+      "name": "Question #2",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q2. How does GitHub Copilot Chat propose fixes for bugs in your code?**\n\n\nA. By running automated tests and identifying the root cause.\n\nB. By suggesting code snippets and solutions based on the context of the error or issue.\n\nC. By comparing your code with a database of known bug patterns.\n\nD. By ignoring the context of the error.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen3_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen3_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen3_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's correct, {username}! GitHub Copilot Chat provides bug fixes by suggesting context-specific code snippets and solutions.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Not quite, {username}. GitHub Copilot Chat provides bug fixes by suggesting context-specific code snippets and solutions.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "GitHub Copilot Chat assists in debugging by analyzing the context of the code and the specific errors or issues encountered. It then suggests relevant code snippets and solutions to address the problem. This approach leverages the model's understanding of common coding patterns and potential error resolutions to offer targeted fixes.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if a `NullPointerException` is detected in a Java method, Copilot might suggest adding a null check before accessing the object or initializing the object properly, thus preventing the exception from occurring.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another question, {username}? Let's discuss code refactoring!",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "3",
+      "name": "Question #3",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q3. What is the purpose of code refactoring?**\n\n\nA. To alter the external behavior or functionality of the code.\n\nB. To improve the internal structure of the code without altering its external behavior or functionality.\n\nC. To add new features or enhancements to the code.\n\nD. To decrease code readability and maintainability.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen4_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen4_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen4_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Code refactoring improves the internal structure of code while maintaining its external behavior.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not quite right, {username}. Code refactoring improves the internal structure of code while maintaining its external behavior.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The primary goal of code refactoring is to enhance the internal structure and organization of the code without changing its external behavior or functionality. This process makes the code more readable, maintainable, and efficient, allowing developers to manage and extend it more easily. Refactoring can involve renaming variables, breaking down large functions, and optimizing code logic.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, refactoring a long and complex function into several smaller, well-named functions improves readability and makes the code easier to test and maintain. A function called `processData` that handles data validation, transformation, and saving could be split into `validateData`, `transformData`, and `saveData` functions.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for the next one, {username}? Let's explore factors for improving code quality!",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "4",
+      "name": "Question #4",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q4. What factors can be considered when working on code quality improvements?**\n\n\nA. The number of lines of code in the program.\n\nB. The time required to write code.\n\nC. Readability, complexity, modularity, reusability, testability, extensibility, reliability, performance, security, scalability, usability, and portability.\n\nD. The color of the text editor theme.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen5_incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen5_correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen5_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Multiple factors, including readability, modularity, and performance, are important for code quality improvements.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. Multiple factors, including readability, modularity, and performance, are important for code quality improvements.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Improving code quality involves considering various factors that contribute to the overall effectiveness and maintainability of the code. These include:\n\n- **Readability**: how easily the code can be understood\n\n- **Complexity**: how simple the code logic is\n\n- **Modularity**: how well the code is divided into independent modules\n\n- **Reusability**: how easily code components can be reused\n\n- **Testability**: how easily the code can be tested\n\n- **Extensibility**: how easily new features can be added\n\n- **Reliability**: how consistently the code performs\n\n- **Performance**: how efficiently the code runs\n\n- **Security**: how well the code is protected from vulnerabilities\n\n- **Scalability**: how well the code can handle growth)\n\n- **Usability**: how user-friendly the code is\n\n- **Portability**: how easily the code can be adapted to different environments\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, improving the readability and modularity of a codebase might involve breaking down a monolithic application into smaller microservices, each responsible for a specific functionality. This makes the code easier to manage, test, and scale.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's the next question, {username}! Let's talk about context and intent in developing prompts.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "5",
+      "name": "Question #5",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q5. What is the importance of context and intent when developing prompts for GitHub Copilot Chat?**\n\n\nA. They determine the color scheme used by GitHub Copilot Chat.\n\nB. They control the volume of the audio output from GitHub Copilot Chat.\n\nC. They specify the scope that GitHub Copilot should examine and the goal to be achieved.\n\nD. They improve the internet speed.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen6_incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen6_correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen6_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's correct, {username}! Context and intent define the scope and goals for GitHub Copilot to provide accurate and relevant responses.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. Context and intent define the scope and goals for GitHub Copilot to provide accurate and relevant responses.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When developing prompts for GitHub Copilot Chat, providing clear context and intent is crucial. Context helps the model understand the current state and structure of the code, while intent specifies what the developer aims to achieve. This clarity ensures that Copilot can generate responses that are relevant and useful, tailored to the specific needs and goals of the developer. Without proper context and intent, the model's suggestions might be generic or misaligned with the desired outcomes.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a developer wants to add error handling to a function, a well-formed prompt would be 'Add error handling to the `fetchData` function to manage network timeouts and API errors,' rather than a vague prompt like 'Improve the function.' This specific context and intent guide Copilot to generate targeted and useful code suggestions.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's move on, {username}! Here's a question about improving code reliability.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "6",
+      "name": "Question #6",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q6. What is one way to improve code reliability?**\n\n\nA. By optimizing algorithms and data structures for the task at hand.\n\nB. By identifying potential issues in the code to prevent bugs and errors from occurring.\n\nC. By minimizing disk and network I/O operations or performing them asynchronously.\n\nD. By using only the latest programming languages.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen7_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen7_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen7_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! Identifying and addressing potential issues in the code helps prevent bugs and errors, improving reliability.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not quite right, {username}. Identifying and addressing potential issues in the code helps prevent bugs and errors, improving reliability.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Improving code reliability involves identifying and addressing potential issues before they cause bugs or errors. This proactive approach includes practices such as thorough code reviews, static code analysis, and implementing robust error handling. By catching issues early, developers can ensure that the code behaves as expected in different scenarios, reducing the likelihood of unexpected failures and enhancing overall reliability.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, adding comprehensive error handling in a function that processes user input can prevent crashes due to invalid inputs. This could involve using try-catch blocks in languages like JavaScript to gracefully handle exceptions and provide meaningful error messages to users.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for another one, {username}? Let's discuss how Copilot Chat helps with code quality improvements.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "7",
+      "name": "Question #7",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q7. How can GitHub Copilot Chat help with code quality improvements?**\n\n\nA. By generating automated tests.\n\nB. By suggesting refactoring updates, design pattern suggestions, or code style enhancements.\n\nC. By deleting unnecessary code automatically.\n\nD. By ignoring existing code quality issues.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen8_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen8_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen8_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's right, {username}! GitHub Copilot Chat can suggest refactoring, design patterns, and code style improvements to enhance code quality.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. GitHub Copilot Chat can suggest refactoring, design patterns, and code style improvements to enhance code quality.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "GitHub Copilot Chat aids in code quality improvements by analyzing the existing code and providing suggestions for refactoring, adopting design patterns, and enhancing code style. These suggestions help developers optimize their code for better readability, maintainability, and performance. Copilot can recommend breaking down large functions, applying appropriate design patterns, or adhering to coding standards that align with best practices.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, if a function is too long and complex, Copilot might suggest refactoring it into smaller, single-responsibility functions. It could also recommend using design patterns like the Singleton or Observer patterns where applicable, and suggest code style adjustments to align with established coding guidelines.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Ready for the next one, {username}? Let's talk about learning new coding techniques with GitHub Copilot Chat.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "8",
+      "name": "Question #8",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q8. How can GitHub Copilot Chat assist with learning new coding techniques?**\n\n\nA. By automatically writing all the code for you.\n\nB. By providing code examples and suggestions that demonstrate new techniques and best practices.\n\nC. By removing all existing code.\n\nD. By preventing access to online coding resources.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen9_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen9_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen9_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's right, {username}! GitHub Copilot Chat helps learn new coding techniques by providing relevant code examples and best practice suggestions.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. GitHub Copilot Chat helps learn new coding techniques by providing relevant code examples and best practice suggestions.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "GitHub Copilot Chat can facilitate learning new coding techniques by offering relevant code examples and suggestions that illustrate best practices and modern development methodologies. By observing and experimenting with these examples, developers can enhance their skills and knowledge, adopting new approaches and improving their overall coding proficiency.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if a developer wants to learn about asynchronous programming in JavaScript, they can ask Copilot Chat to provide examples of using `async` and `await` for handling asynchronous operations. Copilot can then generate code snippets that demonstrate these techniques, helping the developer understand and apply them in their projects.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here's the next one, {username}! Let's discuss the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "9",
+      "name": "Question #9",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q9. What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?**\n\n\nA. To slow down the response time.\n\nB. To provide additional context and intent, making the responses more relevant.\n\nC. To limit the functionality of Copilot Chat.\n\nD. To enhance code obfuscation.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen10_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen10_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen10_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Exactly, {username}! These features add context and intent to make GitHub Copilot Chat responses more accurate and relevant.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not quite right, {username}. These features add context and intent to make GitHub Copilot Chat responses more accurate and relevant.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Using chat participants, slash commands, and chat variables in GitHub Copilot Chat helps provide additional context and clarify the intent behind a developer's questions or commands. This added information ensures that Copilot's responses are more accurate, relevant, and tailored to the specific needs of the developer. By clearly defining the roles, context, and desired outcomes, these features enhance the overall effectiveness of Copilot Chat.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, a developer might use a slash command like `/refactor` to indicate they need refactoring suggestions for a particular function. By providing this context, Copilot can focus its suggestions on improving the structure and readability of that specific function.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Almost there, {username}! Let's discuss the importance of reviewing GitHub Copilot's suggestions.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe reinforces your understanding of using GitHub Copilot for code improvements.\nIt covers enhancing modularity, fixing bugs, refactoring, and improving code quality.\nIt also emphasizes providing context in prompts, ensuring code reliability, and learning new techniques.\nLearners will solidify their knowledge, identify improvement areas, and enhance their coding skills with GitHub Copilot.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "10",
+      "name": "Question #10",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Q10. Why is it important to review and evaluate the suggestions provided by GitHub Copilot?**\n\n\nA. Because Copilot automatically implements the best solution.\n\nB. To ensure that the suggestions align with your coding standards and project requirements.\n\nC. To ignore the suggestions and continue coding manually.\n\nD. To increase the line count of the code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11_incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen11_correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen11_incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen11_incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's correct, {username}! Reviewing Copilot's suggestions ensures they meet your coding standards and project requirements.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11_correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. Reviewing Copilot's suggestions ensures they meet your coding standards and project requirements.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11_incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "It is crucial to review and evaluate the suggestions provided by GitHub Copilot to ensure they align with your project's coding standards, requirements, and best practices. While Copilot can generate useful code snippets and solutions, it may not always fully understand the specific context or constraints of your project. By carefully reviewing its suggestions, developers can verify their accuracy, relevance, and compatibility with the existing codebase, thereby maintaining high code quality and consistency.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if Copilot suggests a method for handling user authentication, the developer should review the suggestion to ensure it adheres to the project's security standards and integrates properly with the existing authentication system. This step helps prevent potential issues and ensures the code meets the necessary requirements.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Fantastic work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module.",
+                "type": "text"
+              },
+              {
+                "content": "**Recap:**\n\n- We explored how GitHub Copilot Chat can assist in improving code modularity and fixing bugs.\n\n- We discussed the importance of code refactoring and the factors that contribute to code quality improvements.\n\n- We emphasized the significance of context and intent in developing prompts for GitHub Copilot Chat.\n\n- We highlighted the need to review and evaluate Copilot's suggestions to ensure they meet project requirements and standards.\n",
+                "type": "text"
+              },
+              {
+                "content": "Up next, we'll dive into the next module, where we'll explore advanced techniques for using GitHub Copilot to enhance your coding workflow.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
