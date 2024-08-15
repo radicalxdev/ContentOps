@@ -1,0 +1,277 @@
+{
+  "tasks": [
+    {
+      "context": "In this task, the learner will be introduced to the process of creating detailed documentation for a new feature in a software project. They will be guided through setting up the necessary workspace and understand the importance of comprehensive documentation for cross-functional collaboration. The task involves using Eraser, an AI-powered tool, to facilitate the creation of a detailed document that outlines the structure and functionalities of the new feature. This documentation will serve as a valuable resource for ensuring clear communication among team members and stakeholders. The learner will begin by receiving an introductory message that sets the context and prepares them for the subsequent steps.",
+      "id": "1",
+      "name": "Mission Introduction and Setup",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello, {username}! Imagine the Product Manager asks you to create a detailed document explaining the structure of a new feature and its functionalities. Eraser offers an easy-to-use feature for creating detailed documentation to enhance cross-collaboration. Ready to get started?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Ready to start!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_1.png?alt=media&token=08776ddc-ad39-4268-8c9e-412712c7a955",
+                "type": "image"
+              },
+              {
+                "content": "First, create a new file from your workspace dashboard. This file will be used to generate the detailed documentation.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this task, the learner will prepare a documentation outline for the new feature by using a provided prompt. They will copy the prompt, which details the objective and components of the system, and paste it into the Eraser AI feature to generate an outline. The learner will also select the technology stack to ensure the generated documentation is relevant to the project's technical requirements. This task will help the learner understand the initial steps in creating detailed and structured documentation.",
+      "id": "2",
+      "name": "Preparing the Documentation Outline",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Copy the original prompt used for the planning document:\n```\nObjective:\n\nThe goal is to develop a robust and functional ticket assignment system for AI TaskMaster, ensuring seamless collaboration and ideation within the internal team before presenting the final approach to stakeholders.\n\nComponents of the System:\n\n1. Automated Ticket Routing:\n- Uses AI to categorize and assign tickets based on predefined criteria such as priority, complexity, and team expertise.\n\n2. Dynamic Workload Balancing:\n- Continuously monitors team members' workloads and adjusts ticket assignments to maintain balance and efficiency.\n\n3. Skill Matching:\n- Analyzes the skills required for each ticket and matches them with the team's expertise, ensuring tickets are handled by the most qualified individuals.\n\n4. Real-Time Analytics:\n- Provides insights into ticket trends, response times, and resolution rates to optimize performance and resource allocation.\n\n5. Collaboration Tools:\n- Integrated chat and discussion forums for team members to collaborate on complex tickets, share knowledge, and provide peer support.\n\n```\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4",
+              "text": "Copied the prompt"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Paste the prompt into the Eraser AI feature by navigating to Both > Generate Outline. Select the 'Documentation' option from the Document type section.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Pasted the prompt and selected 'Documentation'"
+            }
+          ],
+          "id": "screen4",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Use the same technology stack as before: 'Python', 'Next.js', and 'MySQL'.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This task focuses on teaching the learner how to use Eraser AI to generate detailed documentation. The learner will answer follow-up questions and generate the documentation, then use the outline to ensure it is abstract and high-level. This documentation will be useful for cross-functional teams and technical teams to stay informed about the development and changing requirements. By the end of this task, the learner will have a comprehensive document that enhances understanding and collaboration.",
+      "id": "3",
+      "name": "Generating and Reviewing Detailed Documentation",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_2.png?alt=media&token=f83bf82f-46ea-4019-9004-502290e81c97",
+                "type": "image"
+              },
+              {
+                "content": "Click on Next. Answer the follow-up questions as they appear and click Generate.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7",
+              "text": "Answered questions and generated documentation"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_3.png?alt=media&token=36d2f582-2d44-4db0-8d96-bd9064ec7ee2",
+                "type": "image"
+              },
+              {
+                "content": "Once the detailed documentation is generated, click on Use Outline. Notice that the documentation is more abstract and high-level compared to the planning document, making it ideal for cross-functional teams and technical teams to stay informed about development and changing requirements.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Used the outline"
+            }
+          ],
+          "id": "screen7",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, create a workflow diagram for this new documentation:\n\n1. Go to Both > AI Diagram.\n2. From Canvas, select Flowchart under Diagram Type and click Generate.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this task, the learner will create a workflow diagram to visualize the technical components of the new feature. They will generate a flowchart using the AI Diagram feature and then make necessary edits to the visual components. This will help the learner understand the importance of visual documentation in explaining the flow of technical components to cross-functional teams. Continuous refinement of these diagrams is crucial for managing changing requirements and maintaining clear communication among team members.",
+      "id": "4",
+      "name": "Creating and Editing Workflow Diagrams",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_4.png?alt=media&token=cdc8cc47-fc55-4b77-ad6f-b4b47e8bbc5b",
+                "type": "image"
+              },
+              {
+                "content": "This will create a flowchart diagram in an abstracted manner for cross-functional teams to understand the flow of technical components.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10",
+              "text": "Understood the diagram"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "As software development requirements constantly change, continuous refinement is crucial. Quickly make edits to visual components by going to Canvas, clicking on the diagram, and selecting Open Editor. Enter the following in the Diagram Edit Prompt field:\n\n```\nAdd a new component for assigning multiple people to one ticket.\n```",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11",
+              "text": "Made the edits"
+            }
+          ],
+          "id": "screen10",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Click Generate Edits. This will automatically edit the existing diagram and add the new component where applicable.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Generated the edits"
+            }
+          ],
+          "id": "screen11",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Review the updated diagram to ensure that the new component for assigning multiple people to one ticket has been correctly added.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This final task will reinforce the importance of quality documentation in software engineering. The learner will understand how well-documented processes facilitate understanding among technical team members, cross-functional teams, and internal stakeholders. They will also learn how documentation aids in managing frequently changing requirements. By the end of this task, the learner will be ready to delve into more technical areas, such as architectural diagrams and data flows, enhancing their ability to create comprehensive planning and technical documentation.",
+      "id": "5",
+      "name": "Understanding the Importance of Documentation",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Documentation is crucial in software engineering. Quality documentation facilitates understanding of the software development processes for technical team members, cross-functional teams, and internal stakeholders. It also aids in managing frequently changing requirements, a common occurrence in the software development lifecycle.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Understood the importance"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Having grasped how to use AI for creating comprehensive planning and technical documentation, it's now time to delve into more technical areas, such as architectural diagrams and data flows. Let's proceed!",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}

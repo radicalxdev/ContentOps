@@ -1,0 +1,203 @@
+{
+  "tasks": [
+    {
+      "context": "In this set, learners are introduced to the task of creating architectural diagrams for the AI TaskMaster tool using Eraser AI. They will create a new file in their workspace and access the AI Diagram tool to begin the process. The sequence of steps ensures that they are guided through each part of the setup to effectively utilize the AI capabilities for diagram creation.",
+      "id": "1",
+      "name": "Introduction and Setup",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello, {username}! 🌟 Imagine Alfred AI has hired a technical consultant to help improve the system performance of the existing AI TaskMaster automated ticket assignment tool. The consultant requests the architectural diagram of the tool. Fortunately, Eraser AI can assist you with creating detailed sequence diagrams. Ready to get started?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Ready to start!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=494640de-70e4-4be2-ae29-a081ba2bcd30",
+                "type": "image"
+              },
+              {
+                "content": "First head to https://app.eraser.io/ and then create a new file. After creating the new file, head over to `Document` and then we should be all set!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this set, learners will generate technical design documents using Generative AI. They will create a new file, access the AI Diagram tool, and input a detailed technical design document to generate sequence diagrams. The step-by-step guidance ensures that learners can effectively utilize AI to create comprehensive and detailed diagrams for their tool's architecture.",
+      "id": "2",
+      "name": "Generating Technical Design Documents with Generative AI",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's create a technical design document for the AI TaskMaster tool. Paste the following text into the text box:\n",
+                "type": "text"
+              },
+              {
+                "content": "```\n# Technical Design Document\n## 1. Introduction\n- **Purpose**: Describe the purpose of the document.\n- **Scope**: Define the scope of the ticket assignment system.\n- **Definitions, Acronyms, and Abbreviations**: List and define any terms used in the document.\n## 2. System Overview\n- **Objective**: The goal is to develop a robust and functional ticket assignment system for AI TaskMaster, ensuring seamless collaboration and ideation within the internal team before presenting the final approach to stakeholders.\n- **Components of the System**:\n    - Automated Ticket Routing\n    - Dynamic Workload Balancing\n    - Skill Matching\n    - Real-Time Analytics\n    - Collaboration Tools\n## 3. System Architecture\n- **High-Level Architecture Diagram**: Include a diagram showing the overall system architecture.\n- **Technology Stack**:\n    - Python\n    - Next.js\n    - MySQL\n    - TensorFlow\n    - Third-party analytics service (e.g., Google Analytics, Mixpanel)\n    - Open-source analytics tools (e.g., Grafana, Kibana)\n    - OAuth\n    - Integration with existing tools (e.g., Slack, Microsoft Teams)\n## 4. Component Design\n### 4.1 Automated Ticket Routing\n- **Description**: Explain how AI will categorize and assign tickets.\n- **Criteria**: Priority, complexity, team expertise.\n- **AI/ML Framework**: TensorFlow.\n### 4.2 Dynamic Workload Balancing\n- **Description**: Explain how the system will monitor and adjust workloads.\n- **Mechanism**: Describe the algorithm or method used for balancing.\n### 4.3 Skill Matching\n- **Description**: Explain how the system will match skills to tickets.\n- **Mechanism**: Describe the skill analysis and matching process.\n### 4.4 Real-Time Analytics\n- **Description**: Explain the real-time analytics features.\n- **Platform**: Third-party analytics service (e.g., Google Analytics, Mixpanel), Open-source analytics tools (e.g., Grafana, Kibana).\n### 4.5 Collaboration Tools\n- **Description**: Explain the integrated chat and discussion forums.\n- **Tools**: Integration with existing tools (e.g., Slack, Microsoft Teams).\n## 5. Data Design\n- **Database Schema**: Provide the schema for MySQL.\n- **Data Flow**: Describe how data will flow through the system.\n## 6. Security Considerations\n- **User Authentication and Authorization**: OAuth.\n- **Data Security**: Data encryption, regular security audits.\n- **Compliance**: GDPR/CCPA, role-based access control.\n## 7. Performance Metrics\n- **Response Times**: Define acceptable response times.\n- **Resolution Rates**: Define acceptable resolution rates.\n## 8. Testing Strategy\n- **Unit Testing**: Describe the approach for unit testing.\n- **Integration Testing**: Describe the approach for integration testing.\n- **End-to-End Testing**: Describe the approach for end-to-end testing.\n- **Load Testing**: Describe the approach for load testing.\n## 9. Deployment Plan\n- **Environment**: Cloud-based.\n- **Steps**: Outline the steps for deploying the system.\n## 10. Maintenance and Support\n- **Maintenance Plan**: Describe the plan for maintaining the system.\n- **Support Resources**: List resources available for support.\n## 11. Appendices\n- **Glossary**: Define any additional terms used in the document.\n- **References**: List any references or external documents used.\n```\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it! What's next?"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=37638c75-cf6e-401a-9659-da22e95f1a3b",
+                "type": "image"
+              },
+              {
+                "content": "We can now generate the sequence diagram by specifying a `Sequence` in the diagram type and clicking `Generate`.\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=92da36f4-75a8-40b3-9363-dd1afef02f6d",
+                "type": "image"
+              },
+              {
+                "content": "Take a minute to review the generated sequence diagram to ensure it accurately reflects the technical design document. If there are edits to be made, you can pass prompts to regenerate the diagram.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Ready to start!"
+            }
+          ],
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this set, learners are guided through adding a new feature to the architectural diagram using Eraser AI. They will input a code snippet to understand the new feature's interaction with the existing system and generate an updated diagram. This ensures that learners can effectively visualize and integrate new functionalities into their software architecture.",
+      "id": "3",
+      "name": "Architectural Diagrams with Code Snippets",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Imagine you've shared the architectural diagram with the technical consultant. They determine that the existing tool lacks a crucial feature: the ability to automatically assign multiple people to a single ticket simultaneously based on priority and deadline.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8",
+              "text": "Understand the need for the new feature"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=a3176b6f-d250-4f14-b40f-74509322a9ec",
+                "type": "image"
+              },
+              {
+                "content": "To implement this new feature, a team member writes a function using a heap data structure. Since you didn't write the code, you find it challenging to understand how this new feature will interact with the other components in the automated ticket assignment tool. Fortunately, Eraser AI excels at creating architectural diagrams from code snippets. Enter the following prompt and the new feature's code in the Diagram Edit Prompt:\n\n```python\nAdd a feature to assign multiple people to a single ticket into the diagram.\nUse the following code to understand how the new feature works:\n\nimport heapq\nfrom datetime import datetime\n\ndef schedule_projects(projects, assignees):\n    projects.sort(key=lambda x: (x[\"priority\"], x[\"deadline\"]), reverse=True)\n    assignee_heap = [(0, assignee[\"name\"], assignee) for assignee in assignees]\n    heapq.heapify(assignee_heap)\n    assignments = []\n    for project in projects:\n        project_assignees = []\n        assignees_per_project = (len(assignees) + 1) // 2\n        for _ in range(assignees_per_project):\n            if assignee_heap:\n                workload, assignee_name, assignee = heapq.heappop(assignee_heap)\n                project_assignees.append(assignee)\n                workload += 1\n                heapq.heappush(assignee_heap, (workload, assignee_name, assignee))\n        assignments.append({\"project\": project, \"assignees\": project_assignees})\n    return assignments\n```\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9",
+              "text": "Entered the code and prompt"
+            }
+          ],
+          "id": "screen8",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Click on Generate Edits. This will automatically edit the existing diagram and add the new component where applicable.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10",
+              "text": "Generated the edits"
+            }
+          ],
+          "id": "screen9",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_5.png?alt=media&token=933cb15b-729d-414a-89e1-c3414cc65652",
+                "type": "image"
+              },
+              {
+                "content": "Review the updated diagram to ensure that the new component for assigning multiple people to one ticket has been correctly added. Make any necessary revisions to ensure accuracy.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Reviewed the updated diagram"
+            }
+          ],
+          "id": "screen10",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now that you've learned how to use Eraser AI to generate detailed architectural diagrams from text and code, the next step is to document the process for internal stakeholders and cross-functional teams. This documentation helps keep everyone updated with changing requirements and components. Ready to proceed to more technical areas, such as architectural diagrams and data flows?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
