@@ -1,0 +1,294 @@
+{
+  "tasks": [
+    {
+      "context": "This introduction module welcomes learners with a scenario involving severe performance issues in the Project Management API of Alfred AI. As the troubleshooting lead, they must resolve these problems and prevent future occurrences. The initial choice is between manual troubleshooting and implementing an AI solution. Manual troubleshooting steps include identifying bottlenecks, reproducing issues, and analyzing code, but it is time-consuming, complex, error-prone, and reactive. Conversely, using AI-powered tools can automate tasks and provide deeper insights, significantly enhancing the troubleshooting process. This sets the stage for exploring how AI can help overcome these challenges.",
+      "id": "1",
+      "name": "Intro to Troubleshooting with AI",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Welcome to the quest! Imagine this scenario: The Project Management API, a critical component of Alfred AI, is experiencing severe performance issues. Users are reporting slow response times and the system shows signs of high CPU usage and long-running processes. As the troubleshooting lead, your task is to debug and trace these performance issues to their root cause. The challenge is not only to resolve the current problems but also to implement a solution that prevents similar issues in the future.\n\nGiven the urgency and complexity of the situation, how would you start tackling these performance problems?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "I would start troubleshooting manually."
+            },
+            {
+              "target_node_id": "END",
+              "text": "I will implement an AI solution to save time."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "I understand, here are some initial manual troubleshooting steps that you might follow:\n\n- **Identify Bottlenecks**: Manually inspect logs and use performance monitoring tools to identify high CPU usage and long-running processes.\n\n- **Reproduce Issues**: Attempt to recreate the performance issues in a controlled environment.\n\n- **Analyze Code**: Conduct code reviews and use traditional debugging tools to isolate problematic code segments.\n\nHowever, manual troubleshooting comes with a multitude of challenges.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2b",
+              "text": "Tell me the challenges."
+            },
+            {
+              "target_node_id": "END",
+              "text": "How can AI assist in troubleshooting?"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Manual troubleshooting has several challenges, for example:\n\n- **Time-Consuming**: Reviewing logs and performance data manually is labor-intensive.\n\n- **Complexity**: Difficult to navigate large codebases and distributed systems.\n\n- **Error-Prone**: Higher risk of missing subtle issues due to human error.\n\n- **Reactive Approach**: Often addresses symptoms rather than root causes.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "How can AI help overcome these challenges?"
+            }
+          ],
+          "id": "screen2b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Using AI-powered tools can significantly enhance the troubleshooting process by automating repetitive tasks and providing deeper insights.\n\nReady to learn more?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this section, learners explore how AI can significantly enhance troubleshooting processes. AI-powered tools automate log analysis, predict potential issues, and offer real-time monitoring, improving efficiency and accuracy. Additionally, AI aids in intelligent root cause analysis, enhances team collaboration, and manages automated alerts. The module also reviews various AI tools like Datadog, Splunk, Sentry, and PagerDuty, highlighting New Relic for its comprehensive features and seamless integration with the tech stack. This sets the foundation for focusing on New Relic's capabilities in the upcoming lessons.",
+      "id": "2",
+      "name": "AI for Troubleshooting",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI-powered tools can significantly enhance the troubleshooting process by automating repetitive tasks and providing deeper insights:\n\n1. **Automated Log Analysis**: AI can quickly analyze logs to identify patterns and anomalies that may not be obvious to human eyes.\n\n    - **Use Case**: During a server outage, AI analyzed logs from multiple sources in minutes, identifying a configuration error that was previously missed.\n\n2. **Predictive Analytics**: AI uses historical data to predict potential issues before they occur, allowing for proactive resolution.\n\n    - **Use Case**: An e-commerce site used AI to analyze past traffic patterns and predict high load periods, allowing the team to optimize server resources in advance.\n\n3. **Real-Time Monitoring**: AI continuously monitors system performance, identifying issues as they happen and suggesting immediate fixes.\n\n    - **Use Case**: A financial services company used AI to monitor transactions in real-time, detecting and alerting the team to suspicious activity before it escalated.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Explore more AI uses."
+            },
+            {
+              "target_node_id": "END",
+              "text": "Let's move forward."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here are more ways AI can assist in troubleshooting:\n\n1. **Intelligent Root Cause Analysis**: AI can trace issues back to their root cause more efficiently by analyzing vast amounts of data across the system.\n\n    - **Use Case**: A tech company reduced the time to identify the root cause of a critical bug from days to hours using AI-driven root cause analysis.\n\n2. **Enhanced Collaboration**: AI tools can facilitate team collaboration by providing a shared platform for discussing and resolving issues.\n\n    - **Use Case**: An international team used AI tools to collaborate on resolving a system outage, with real-time insights and suggestions from the AI.\n\n3. **Automated Alerts**: AI can set up and manage alerts based on performance metrics and unusual patterns, ensuring teams are notified of issues promptly.\n\n    - **Use Case**: A healthcare provider used AI to monitor their network, automatically alerting the team to potential issues before they affected patient care.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Let's move forward."
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "We have explored multiple tools in the previous module, here's a quick refresher:\n\n- **Datadog**: Provides real-time performance monitoring and log management, using AI to detect anomalies and pinpoint issues.\n\n- **Splunk**: Utilizes AI for log analysis, alerting, and generating insights from machine data.\n\n- **Sentry**: Offers error tracking and performance monitoring with AI-driven issue resolution.\n\n- **PagerDuty**: Uses AI for incident management, alerting, and response automation.\n\n- **IBM Watson AIOps**: Leverages AI to automate IT operations, detecting and resolving incidents before they impact users.\n\nWe will be focusing on New Relic due to its comprehensive features, ease of integration with our tech stack (Google Cloud Run, Docker, and Python), and robust AI-driven insights.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this section, learners are introduced to New Relic's AI-powered troubleshooting capabilities. New Relic offers features such as automated error detection, comprehensive performance monitoring, collaborative debugging, and proactive issue resolution. The Application Performance Monitoring (APM) tool provides transaction tracing, error analysis, and real-time metrics, helping identify performance bottlenecks and errors efficiently. Key APM features include service maps, custom dashboards, and real-time metrics. Additionally, common configuration and data issues, such as configuration errors, data visibility problems, and agent running issues, are addressed along with solutions for integration failures, verbose logging, and resource utilization problems. This comprehensive overview equips learners with the knowledge to effectively use New Relic for troubleshooting and optimizing their applications.",
+      "id": "3",
+      "name": "New Relic's features",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "New Relic offers AI-powered tools that can automate and enhance the troubleshooting process:\n\n- **Automated Error Detection**: Centralized Errors Inbox for tracking, triaging, and resolving errors efficiently.\n\n- **Comprehensive Performance Monitoring**: Distributed tracing to identify latency and bottlenecks.\n\n- **Collaborative Debugging**: CodeStream links error data directly to code within your IDE.\n\n- **Proactive Issue Resolution**: Predictive analytics and automated alerts.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6",
+              "text": "How does New Relic APM help?"
+            },
+            {
+              "target_node_id": "screen7",
+              "text": "What tools and features does New Relic offer?"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "New Relic APM provides comprehensive insights into the performance of your applications. It offers transaction tracing, error analysis, and real-time metrics, giving you a detailed view of how your applications are performing. APM helps you understand how your application's code, dependencies, and infrastructure affect its performance and user experience.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7",
+              "text": "Let's move on"
+            }
+          ],
+          "id": "screen6",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Some key features of the APM include:\n\n- Transaction tracing: It allows you to follow the path of a request through your application, from the initial user interaction to the database and back. It provides a complete map of how the transaction is processed, including each service and method it touches.\n\n- Error Analysis: New Relic APM captures and analyzes errors in real-time, providing detailed error messages, stack traces, and the context in which the error occurred. It also includes deployment markers to correlate errors with new code releases.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Tell me more features."
+            }
+          ],
+          "id": "screen7",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Some other important features are:\n\n- Service Maps: These visualize the interactions between different services in your application. They show how services communicate, their dependencies, and the performance metrics for each service.\n\n- Custom Dashboards: Create custom dashboards to display metrics and KPIs that are important to your business. You can combine various data points from different parts of your application into a single, cohesive view.\n\n- Real-Time Metrics: Monitor critical application metrics such as response times, throughput, error rates, CPU usage, memory usage, and more. These metrics are updated in real-time, providing a live view of your application's health.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8",
+              "text": "Got it. Let's move to the next part."
+            }
+          ],
+          "id": "screen7a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here are some common configuration and data issues you might encounter when troubleshooting with New Relic and how to address them:\n\n- Configuration Errors: Ensure the correct New Relic license key is set in the `newrelic-infra.yml` file. Incorrect configuration can prevent data from being sent to New Relic.\n\n- Data Not Appearing: Check the agent logs and network connectivity. Issues with these can result in metrics not being visible on the New Relic dashboard.\n\n- Agent Not Running: Verify system compatibility and resource availability. The infrastructure agent may not start if there are compatibility issues or insufficient resources.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Tell me about more issues."
+            }
+          ],
+          "id": "screen8",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here are some more issues and how to solve them:\n\n- Integration Failures: Use the `newrelic-infra-ctl` command to perform health checks on integrations. This can help identify what might be going wrong.\n\n- Verbose Logging Issues: Enable verbose logging for detailed troubleshooting. Ensure you have the necessary permissions to execute logging commands and that the logging level is set appropriately.\n\n- Resource Utilization Problems: Monitor and mitigate high resource usage (CPU, memory, or disk) on the host, as this can affect the agent's performance and data reporting capabilities.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this summary, learners recap the key points covered: manual troubleshooting is laborious, error-prone, and reactive, while New Relic offers AI-driven tools to automate and enhance error detection, performance monitoring, and debugging. Learners are encouraged to apply these concepts in practical missions to gain hands-on experience with AI-powered troubleshooting using New Relic. The final call to action invites them to end the quest and move forward with their newfound knowledge.",
+      "id": "4",
+      "name": "Summary and Next Steps",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Great job! Ready to recap what we've covered?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's recap!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Summary**:\n\n- Manual troubleshooting is laborious, error-prone, and reactive.\n\n- New Relic offers AI-driven tools to automate and enhance error detection, performance monitoring, and debugging.\n\n- Best practices include continuous monitoring, leveraging AI tools, effective collaboration, and adopting a proactive approach.\n\n**Next Steps**:\nApply these concepts in hands-on missions to gain practical experience with AI-powered troubleshooting using New Relic. Let's get started!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}

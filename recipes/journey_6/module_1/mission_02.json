@@ -1,0 +1,664 @@
+{
+  "tasks": [
+    {
+      "context": "In this section, learners are introduced to leveraging New Relic AI to gain insights into their Project Management API. They start by ensuring they have all necessary pre-requisites, then generate traffic to their API using tools like Postman. Monitoring and analyzing performance metrics in New Relic follows, including understanding how to find and interpret these metrics. The final steps involve summarizing insights and addressing any questions, preparing learners to utilize New Relic AI for ongoing performance optimization.",
+      "id": "1",
+      "name": "Introduction & Setup",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Welcome to the mission! Our goal is to gain insights into the Project Management API using New Relic AI. In the previous mission, we integrated New Relic APM into the Project Management API. Now, we will leverage AI-driven insights for modern application monitoring and troubleshooting.\n\nNew Relic provides various insights such as performance metrics, error analysis, and system health. One key feature we'll explore is New Relic's Ask AI.\n\nAre you ready to get started?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, let's get started!"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Tell me more about New Relic's insights."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Before we begin, please ensure you have the following pre-requisites:\n\n1. Access to a New Relic account with the Project Management API set up for monitoring.\n2. Repository: [GitHub Repository Link](https://github.com/alfred-ai-co/Improve-Code-Quality-with-Copilot)\n\nThese steps will ensure you are prepared for the tasks ahead.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "I have all the pre-requisites. What's next?"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "How do I get access to New Relic?"
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "New Relic provides various insights to help you monitor and troubleshoot your applications. Some of the key insights include:\n\n- **Performance Metrics**: Real-time data on response times, throughput, and error rates.\n- **Error Analysis**: Detailed information about errors, including stack traces and affected transactions.\n- **System Health**: Overall health indicators of your application and infrastructure.\n\nWith New Relic's Ask AI, you can query these insights directly and get AI-driven answers to your questions. Think of it like a natural language compiler that can convert your questions into queries that retrieve relevant data.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "Got it, let's proceed!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "**Task 1: Generate Traffic and Monitor Performance**\n\nWe'll be simulating real-world usage by generating traffic to the API and then monitor its performance in New Relic. To do this, we can use either Postman or `/docs` in the localhost to send traffic to any of our API endpoints. New Relic will automatically pick up these logs for us!\n\n**Steps:**\n\n1. **Generate Traffic:**\n    - Use Postman to send various API requests (CRUD operations on projects and tickets).\n    - Ensure a variety of requests to simulate different user interactions.\n2. **Monitor Performance:**\n    - Navigate to the New Relic dashboard and locate the Project Management API application.\n    - Observe real-time performance metrics such as response time, throughput, and error rates.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "I understand, let's begin generating traffic."
+            },
+            {
+              "target_node_id": "screen3a",
+              "text": "Show me more details on generating traffic."
+            }
+          ],
+          "id": "screen3",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To generate traffic:\n\n1. Open Postman or your preferred API testing tool.\n2. Send a variety of requests to the Project Management API endpoints for projects and tickets.\n3. Perform CRUD operations to simulate different user interactions.\n4. Ensure a mix of read and write operations to reflect real-world usage.\n\nOnce you've generated sufficient traffic, proceed to monitor the performance in New Relic.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Traffic generated, what's next?"
+            },
+            {
+              "target_node_id": "screen3b",
+              "text": "I need more help with Postman."
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now, let's monitor the performance of your API:\n\n1. Navigate to the New Relic dashboard.\n2. Locate the Project Management API application.\n3. Observe real-time performance metrics such as response time, throughput, and error rates.\n\nTake a screenshot of the performance metrics for reference.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Done, what's next?"
+            },
+            {
+              "target_node_id": "screen3c",
+              "text": "I need help finding the metrics."
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To find the performance metrics:\n\n1. In the New Relic dashboard, go to the \"Applications\" section.\n2. Select the Project Management API application.\n3. Look for tabs or sections labeled \"Metrics\", \"Response Time\", \"Throughput\", and \"Error Rates\".\n4. Review the displayed data to understand your API's performance.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it, what's next?"
+            }
+          ],
+          "id": "screen3c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "If you have any questions or need further clarification, feel free to ask. Let's ensure our Project Management API is performing optimally with the help of New Relic!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this section, learners navigate the New Relic dashboard to explore its powerful APM features. They start by accessing the Entity Explorer, understanding entity categorization, and using filters to locate specific entities related to the Project Management API. Detailed insights into individual entities are explored, including performance metrics, alert statuses, and historical data. The final overview emphasizes the importance of these insights for proactive monitoring and troubleshooting, preparing learners for effective application performance management using New Relic.",
+      "id": "2",
+      "name": "Navigate the New Relic Dashboard",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now that we're in the dashboard, we can take a minute to explore New Relic's powerful APM. Understanding how the dashboard works, at least to a minimal extent, would be super useful to utilize its AI as well.\n\nAre you ready to explore the dashboard?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, let's get started!"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Tell me more about the New Relic dashboard."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "First, let's access the Entity Explorer:\n\n1. Navigate to the All Entities page in New Relic.\n2. Here, you'll find a categorization of entities such as services, hosts, and mobile applications.\n\nUnderstanding this categorization will help you locate and monitor different parts of your application efficiently.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "Got it, what's next?"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Show me more about entities."
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Sure! Let's start with the Entity Explorer.\n\nEntities in New Relic are categorized into services, hosts, mobile applications, and more. Each category represents a different aspect of your application and infrastructure. For example:\n\n- **Services**: Your application services or microservices.\n- **Hosts**: The physical or virtual machines running your services.\n- **Mobile Applications**: Your client-side mobile apps.\n\nCategorizing entities helps in organized monitoring and troubleshooting.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "Got it, let's proceed!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, we'll use the filter bar to locate specific entities related to the Project Management API:\n\n1. Use the filter bar at the top of the All Entities page to search for entities related to your API.\n2. You can filter by name, type, or other attributes.\n3. Save your filtered views for easy access in the future.\n\nThis will help you quickly find and monitor the relevant parts of your application.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4",
+              "text": "I've filtered my entities. What's next?"
+            },
+            {
+              "target_node_id": "screen3a",
+              "text": "How do I use filters in New Relic?"
+            }
+          ],
+          "id": "screen3",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To use the filter bar in New Relic:\n\n1. Go to the All Entities page.\n2. Type in keywords related to your Project Management API in the filter bar.\n3. Apply filters based on entity type, health status, or tags.\n4. Save the filtered view by clicking on the \"Save View\" option.\n\nThis makes it easier to manage and monitor specific parts of your application.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4",
+              "text": "Got it, what's next?"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now, let's explore the details of individual entities:\n\n1. Click on an entity related to your Project Management API.\n2. View detailed performance metrics, such as response time, throughput, and error rates.\n3. Check the alert statuses and understand any active alerts or incidents.\n\nThese details provide in-depth insights into the performance and health of your application components.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Understood, what's next?"
+            },
+            {
+              "target_node_id": "screen4a",
+              "text": "Show me more about entity details."
+            }
+          ],
+          "id": "screen4",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When you explore an entity, you'll find several important sections:\n\n- **Performance Metrics**: Real-time data on response times, throughput, and error rates.\n- **Alert Statuses**: Information about any active alerts or incidents, helping you quickly identify and address issues.\n- **Historical Data**: Trends and historical performance data to understand long-term behavior.\n\nThese insights help in proactive monitoring and troubleshooting.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it, what's next?"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now that we explored entities, we can quickly know where to look for performance metrics on our application. When we sent traffic to our API from earlier, we should have also seen them here.\n\nFeel free to also check out the `Lookout` view in the `All Entities` page as well as the `New Relic Navigator`. Both are used to get us high-level views of the system's performance.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this section, learners are introduced to enabling and using New Relic's AI assistant to query and analyze data. They start by enabling New Relic AI, then interact with it to ask questions about their application's performance. The AI provides both real-time logs and generated queries, helping learners monitor and troubleshoot effectively. This module emphasizes the dual approach of immediate insights and customizable data exploration, showcasing the power of AI-driven monitoring and troubleshooting.",
+      "id": "3",
+      "name": "AI Insights with New Relic AI",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now that we've spent some time looking through New Relic's APM and how it has tools for us to view our application's performance from many angles, we can leverage their AI assistant whose capabilities are closely tied with the platform itself.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, let's get started!"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Tell me more about New Relic AI."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "First, let's enable New Relic AI:\n\n1. Click on the Ask AI button in the top right corner of the New Relic dashboard.\n2. Click on the “Get Started” button for the New Relic AI Preview and accept the Pre-release software terms.\n3. Review and accept the Generative AI Specific Terms if prompted.\n\nEnabling New Relic AI allows you to interact with the AI for querying data and troubleshooting.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "I've enabled New Relic AI. What's next?"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Show me how to enable it."
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_1.png?alt=media&token=7f85d417-f2c1-4beb-9518-7d05d3f2a086",
+                "type": "image"
+              },
+              {
+                "content": "New Relic's AI is an assistant who can transform natural language queries into their NRQL query and subsequently visualizations that we can utilize. It also comes with capabilities to make inferences on the data retrieved. It's incredibly useful to get high-level overviews and isolate problems quickly!\n\nWe'll need to enable their AI, to enable New Relic AI:\n\n1. Locate the Ask AI button in the top right corner of the New Relic dashboard.\n2. Click on the “Get Started” button for the New Relic AI Preview.\n3. Accept the Pre-release software terms.\n4. If prompted, review and accept the Generative AI Specific Terms.\n\nOnce enabled, you can start using AI to query data and get insights.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "I've enabled New Relic AI. What's next?"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now, let's interact with the AI:\n\n1. Use the chat feature to ask questions about your application's performance.\n2. New Relic's “Ask AI” feature lets you onboard, query data, identify anomalous signals, interpret dashboards, resolve errors, and more.\n\nTry asking questions like:\n\n- \"Generate a query for me to see logs from the project Alfred AI API.\"\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4",
+              "text": "I've asked a question. What's next?"
+            },
+            {
+              "target_node_id": "screen3a",
+              "text": "Show me more examples."
+            }
+          ],
+          "id": "screen3",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here are some example questions you can ask New Relic AI:\n\n- \"Generate a query for me to see logs from the project Alfred AI API.\"\n- \"What are the most common errors in the last 24 hours?\"\n- \"Show me the performance metrics for the Project Management API.\"\n\nThese questions can help you get detailed insights and troubleshoot issues efficiently.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4",
+              "text": "I've asked a question. What's next?"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Notice how it provides two types of answers: the actual output logs from the server and the generated query for the `Query Your Data` tab. The logs are incredibly useful for real-time monitoring. The generated query allows you to visit the `Query Your Data` tab and run NRQL scripts to get the same output.\n\nOf course, we can also ask questions from an APM perspective like how many transactions happened today. Using these insights, you can monitor and troubleshoot your application more effectively.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Understood, what's next?"
+            },
+            {
+              "target_node_id": "screen4a",
+              "text": "Show me more about analyzing responses."
+            }
+          ],
+          "id": "screen4",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When you ask New Relic AI a question, it provides:\n\n1. **Actual Output Logs**: These logs give you real-time data from your server, helping you monitor live performance and issues.\n2. **Generated Queries**: These queries can be run in the `Query Your Data` tab using NRQL scripts, giving you the flexibility to customize and explore the data further.\n\nThis dual approach ensures you have both immediate insights and the tools to dive deeper into your application's performance.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it, what's next?"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's try one more example! I hope you're starting to see how powerful New Relic's assistant is when it comes to asking questions about our data and application.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this final section, learners explore how New Relic AI can assist with maintenance tasks by converting natural language queries into actionable insights. They learn to interact with AI for maintenance guidance, such as monitoring anomalous signals and analyzing transaction data. The module emphasizes the importance of cross-referencing AI-generated responses with official documentation to ensure accuracy. This reinforces the AI's role as a powerful tool for troubleshooting and maintaining application health while encouraging responsible use and verification of AI outputs.",
+      "id": "4",
+      "name": "AI Insights on App Maintenance",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's continue to check out New Relic's ask AI feature. Last time we saw how powerful their assistant can be in transforming natural language into useful queries which are executed and visualized for us. Now let's take a look at another example but more closely related to maintenance of an app.\n\nAre you ready to explore how AI can help with maintenance?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, let's get started!"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Tell me more about using AI for maintenance."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_2.png?alt=media&token=77cae5fa-3395-4fb0-82ec-2bceb1414e10",
+                "type": "image"
+              },
+              {
+                "content": "From the top right, like before, we can open the chat window with New Relic's AI to start asking questions about applications. Notice that the assistant either has or can create context for itself by converting your questions into context. So it can be a breeze to have multiple projects and ask questions.\n\nLet's try asking a question like, \"How do I monitor anomalous signals?\"\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "I've asked a question. What's next?"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Show me more example questions."
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Here are some example questions you can ask New Relic AI for maintenance guidance:\n\n- \"How do I monitor anomalous signals?\"\n- \"How many transactions happened today?\"\n- \"What are the most common performance bottlenecks?\"\n\nThese questions can help you get detailed insights and troubleshoot maintenance issues efficiently.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "I've asked a question. What's next?"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When you ask, \"How do I monitor anomalous signals?\" New Relic AI can provide insights like:\n\n1. Interpretation of recent logs to identify deviating signals.\n2. NRQL queries that you can run in the `Query Your Data` tab for detailed analysis.\n\nAI responses help narrow down potential errors, run faster analysis on app health, and find performance bottlenecks. In this case, it's likely that the assistant won't find any information since there isn't much data in the logs, so there are no patterns existing for a “regular” signal to begin with.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Understood, what's next?"
+            },
+            {
+              "target_node_id": "screen3a",
+              "text": "Show me another example."
+            }
+          ],
+          "id": "screen3",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_3.png?alt=media&token=12d91fc6-70a8-47ff-aee9-7f457e93c9ed",
+                "type": "image"
+              },
+              {
+                "content": "For example, when you ask, \"How many transactions happened today?\" New Relic AI can provide:\n\n1. A summary of transaction counts from your application logs.\n2. A generated NRQL query to view detailed transaction data.\n\nThese insights can help you understand application usage patterns and identify any unusual activity.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4",
+              "text": "Got it, what's next?"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "It's important to remember that AI responses are suggestions and may have misinterpretations or incorrect information. In the case of monitoring anomalous signals, the AI might interpret the query as retrieving logs rather than providing documentation.\n\nIn the case of asking New Relic AI, “How many transactions happened today,” the AI assistant interpreted the query as the last set of logs and find any deviating signals among the first 1,000 entities. In the case of asking, “how do I monitor anomalous signals,” it will actually misinterpret it as a command to perform a query rather than realizing I wanted information from the documentation—maybe it was my fault for not being specific enough!\n\nAlways cross-reference AI responses with New Relic documentation and your own analysis.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Understood, what's next?"
+            },
+            {
+              "target_node_id": "screen4a",
+              "text": "More about analyzing AI responses."
+            }
+          ],
+          "id": "screen4",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When analyzing AI responses:\n\n1. Compare the AI-generated insights with the official New Relic documentation.\n2. Treat AI responses as suggestions and validate them with additional sources.\n3. Use the AI-generated NRQL queries to further explore and verify the data.\n\nThis approach ensures accuracy and helps you make informed decisions.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Got it, what's next?"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hopefully this gave you a clearer idea of the great benefits that come with having an AI assistant whose capabilities are closely tied with the application at hand like New Relic. It can give us really useful abilities like converting our common natural language questions into powerful queries over our data. But, with great power comes great responsibility to double check and cross-reference outputs from the AI. Always give it the right context and you should be well on your way to becoming a power user!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
