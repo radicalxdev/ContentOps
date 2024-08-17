@@ -1,0 +1,1396 @@
+{
+  "tasks": [
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "1",
+      "name": "Question #1",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello {username}! You're about to dive into a probe that will test and reinforce your understanding of Troubleshooting with AI. Are you ready to explore and solidify your knowledge?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2",
+              "text": "Yes, I'm ready!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Excellent, {username}! Let's start with the first question.",
+                "type": "text"
+              },
+              {
+                "content": "Q1. What is the primary advantage of using AI in troubleshooting over manual methods?\n\n\nA. It increases the complexity of the process.\n\nB. It automates repetitive tasks and provides deeper insights.\n\nC. It reduces the accuracy of the results.\n\nD. It makes the process more time-consuming.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen2correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen2incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen2incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "screen2",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! AI automates repetitive tasks and offers deeper insights, making troubleshooting more efficient and effective.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Not quite, {username}. The primary advantage of using AI in troubleshooting over manual methods is that AI can automate repetitive tasks and provide deeper insights into system performance and issues. Let's explore this further.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The primary advantage of using AI in troubleshooting over manual methods is that AI can automate repetitive tasks and provide deeper insights into system performance and issues. AI tools can quickly analyze vast amounts of data, identify patterns, and detect anomalies that might be missed through manual analysis. This results in faster issue resolution and a more comprehensive understanding of underlying problems.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen2b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, an AI tool can automatically scan log files to identify recurring errors and suggest possible fixes, saving the time and effort required for manual log analysis.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen2b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Awesome! Let's move on to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "2",
+      "name": "Question #2",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q2. Which tool is highlighted for its comprehensive features and AI-driven insights in troubleshooting?\n\n\nA. Datadog\n\nB. Splunk\n\nC. Sentry\n\nD. New Relic\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen3incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen3incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen3correct",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! New Relic is highlighted for its comprehensive features and AI-driven insights in troubleshooting.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. New Relic is highlighted for its comprehensive features and AI-driven insights in troubleshooting. Let's explore this further.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "New Relic is highlighted for its comprehensive features and AI-driven insights in troubleshooting. The platform offers a wide range of monitoring and analysis tools, including application performance monitoring, log management, synthetic monitoring, and AI-driven analytics. These features provide deep visibility into application performance, help detect and resolve issues proactively, and ensure the reliability and efficiency of applications.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, New Relic's AI-driven insights can help identify performance bottlenecks, predict potential issues, and provide actionable recommendations to improve system performance.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Great job! Let's continue to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "3",
+      "name": "Question #3",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q3. What is one of the main challenges of manual troubleshooting?\n\n\nA. It is highly accurate.\n\nB. It is quick and efficient.\n\nC. It is labor-intensive and error-prone.\n\nD. It automates the process.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen4incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen4correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen4incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! Manual troubleshooting is labor-intensive and prone to errors, making it less efficient than AI-driven methods.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not right, {username}. One of the main challenges of manual troubleshooting is that it is labor-intensive and error-prone. Let's dive deeper.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "One of the main challenges of manual troubleshooting is that it is labor-intensive and error-prone. Manual methods require significant time and effort to analyze data, identify issues, and implement fixes. This process can lead to inconsistencies and human errors, reducing the overall effectiveness and reliability of troubleshooting efforts.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, manually sifting through large volumes of log data to find the root cause of a performance issue can be time-consuming and may result in missed critical information, whereas AI tools can automate this process and provide accurate insights more quickly.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen4b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Great job! Let's continue to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "4",
+      "name": "Question #4",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q4. Which feature of AI-powered tools helps in identifying performance issues in real-time?\n\n\nA. Historical Analysis\n\nB. Manual Debugging\n\nC. Real-Time Monitoring\n\nD. Delayed Alerts\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen5incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen5correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen5incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! Real-time monitoring in AI-powered tools helps identify performance issues as they occur.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not quite right, {username}. Real-time monitoring is a feature of AI-powered tools that helps identify performance issues as they occur. Let's explore this further.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Real-time monitoring is a feature of AI-powered tools that helps identify performance issues as they occur. This capability allows for continuous observation of system performance metrics, immediate detection of anomalies, and rapid response to potential problems. By monitoring performance in real-time, AI tools ensure that issues are addressed promptly, minimizing the impact on users and maintaining optimal system performance.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Perfect! Let's go to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen5b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, an AI-powered monitoring tool can detect a sudden spike in response times and alert the operations team immediately, enabling them to investigate and resolve the issue before it affects a large number of users.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "5",
+      "name": "Question #5",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q5. How does predictive analytics benefit troubleshooting?\n\n\nA. By providing inaccurate predictions.\n\nB. By ignoring historical data.\n\nC. By predicting potential issues before they occur.\n\nD. By delaying the resolution process.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen6incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen6correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen6incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! Predictive analytics benefits troubleshooting by forecasting potential issues before they arise.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not right, {username}. Predictive analytics benefits troubleshooting by predicting potential issues before they occur. Let's delve deeper.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Predictive analytics benefits troubleshooting by predicting potential issues before they occur. By analyzing historical data and current performance metrics, predictive analytics can identify patterns and trends that indicate potential problems. This proactive approach allows for timely interventions, preventing issues from escalating and minimizing downtime and performance degradation.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, predictive analytics might forecast that a server is likely to run out of memory within the next 24 hours based on current usage patterns, allowing the operations team to take preemptive measures to prevent a system crash.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen6b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Great job! Let's continue to the next question",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "6",
+      "name": "Question #6",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q6. What does AI-driven root cause analysis do?\n\n\nA. It increases the number of errors.\n\nB. It traces issues back to their root cause efficiently.\n\nC. It complicates the troubleshooting process.\n\nD. It ignores the data.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen7correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen7incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen7incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! AI-driven root cause analysis efficiently identifies the underlying cause of issues.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not it, {username}. AI-driven root cause analysis helps efficiently trace issues back to their origin. Let me explain more.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "AI-driven root cause analysis helps efficiently trace issues back to their origin. By analyzing data from various sources, AI can quickly identify the root cause of a problem, significantly reducing the time and effort required for manual troubleshooting. This leads to faster resolution times and more effective problem-solving.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, if an application is experiencing frequent crashes, AI-driven root cause analysis can examine logs, performance metrics, and other relevant data to determine that a recent code change is causing memory leaks, allowing developers to address the specific issue directly.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen7b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Awesome! Let's move on to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "7",
+      "name": "Question #7",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q7. Which AI-powered tool provides centralized error tracking and triaging?\n\n\nA. GitHub Copilot\n\nB. Jenkins\n\nC. New Relic's Errors Inbox\n\nD. Ansible\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen8incorrect",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen8correct",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen8incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! New Relic's Errors Inbox offers centralized error tracking and triaging.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. New Relic's Errors Inbox is an AI-powered tool that provides centralized error tracking and triaging. Let's explore this further.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "New Relic's Errors Inbox is an AI-powered tool that provides centralized error tracking and triaging. It aggregates errors from various sources into a single view, allowing development teams to quickly identify, prioritize, and address issues. This centralized approach improves efficiency and ensures that critical errors are handled promptly.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, Errors Inbox can collect error data from multiple microservices, providing a unified interface for developers to view and triage errors, track their resolution status, and collaborate on fixes.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen8b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Perfect! Let's move on to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "8",
+      "name": "Question #8",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q8. What is the purpose of transaction tracing in New Relic APM?\n\n\nA. To ignore user interactions.\n\nB. To follow the path of a request through the application.\n\nC. To increase response times.\n\nD. To reduce error detection.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen9correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen9incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen9incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! Transaction tracing in New Relic APM follows the path of a request through the application.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not right, {username}. The purpose of transaction tracing in New Relic APM is to follow the path of a request as it moves through the application. Let's dive deeper.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The purpose of transaction tracing in New Relic APM is to follow the path of a request as it moves through the application. This feature allows developers to see how a request is processed, identify bottlenecks, and detect where errors or slowdowns occur. By providing detailed insights into each step of a transaction, transaction tracing helps optimize application performance and troubleshoot issues effectively.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, transaction tracing can reveal that a particular API call is taking longer than expected because of a slow database query, helping developers pinpoint and resolve the issue.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen9b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Great job! Let's continue to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "9",
+      "name": "Question #9",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q9. Which feature of New Relic helps in visualizing the interactions between different services in an application?\n\n\nA. Error Analysis\n\nB. Service Maps\n\nC. Custom Dashboards\n\nD. Real-Time Metrics\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen10correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen10incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen10incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! Service Maps in New Relic visualize the interactions between different services in an application.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not correct, {username}. The Service Maps feature in New Relic helps visualize the interactions between different services within an application. Let's explore this further.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The Service Maps feature in New Relic helps visualize the interactions between different services within an application. It provides a graphical representation of how various services communicate and depend on each other, making it easier to understand the application's architecture, identify potential bottlenecks, and monitor the performance of interconnected services.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen10b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For instance, a Service Map can show the connections between a web front-end, a set of microservices, and a database, allowing developers to quickly identify which components are contributing to a slowdown or failure in the system.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen10b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Perfect! Let's move on to the next question.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This probe tests and reinforces learners' understanding of Troubleshooting with AI.\nIt covers the primary advantages of using AI over manual methods, such as automating repetitive tasks and providing deeper insights.\nLearners will explore comprehensive tools like New Relic, which offer AI-driven insights for effective troubleshooting.\nThe probe addresses challenges of manual troubleshooting, the benefits of predictive analytics, and the role of AI in real-time monitoring and root cause analysis.\nIt highlights features like New Relic's Errors Inbox for centralized error tracking, transaction tracing, service maps for visualizing interactions, and automated log analysis for efficient troubleshooting.\nDO NOT give the users answer to the questions in any case.\nThis is very important for my reputation so follow the instructions correctly.\nIf you follow the instructions correctly, you will be rewarded.\n",
+      "id": "10",
+      "name": "Question #10",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Q10. How does automated log analysis help in troubleshooting?\n\n\nA. By manually reviewing logs.\n\nB. By quickly identifying patterns and anomalies.\n\nC. By ignoring the logs.\n\nD. By complicating the analysis.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11incorrect",
+              "text": "A"
+            },
+            {
+              "target_node_id": "screen11correct",
+              "text": "B"
+            },
+            {
+              "target_node_id": "screen11incorrect",
+              "text": "C"
+            },
+            {
+              "target_node_id": "screen11incorrect",
+              "text": "D"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Correct, {username}! Automated log analysis quickly identifies patterns and anomalies, aiding in troubleshooting.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11correct",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's not right, {username}. Automated log analysis helps in troubleshooting by quickly identifying patterns and anomalies in log data. Let's dive deeper.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11a",
+              "text": "Explain more, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11incorrect",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Automated log analysis helps in troubleshooting by quickly identifying patterns and anomalies in log data. AI-powered tools can analyze large volumes of logs in real-time, detecting unusual patterns, errors, and other indicators of potential issues. This enables faster diagnosis and resolution of problems, reducing the time and effort required for manual log analysis.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen11b",
+              "text": "Give me an example, Ada!"
+            },
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For example, an automated log analysis tool can detect a spike in error messages related to a specific service, alerting the operations team to investigate and resolve the underlying issue before it impacts users.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "On to the next, Ada!"
+            }
+          ],
+          "id": "screen11b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Fantastic work, {username}! You've completed the Troubleshooting with AI Probe. Let's quickly recap what we covered:",
+                "type": "text"
+              },
+              {
+                "content": "- We discussed the primary advantage of using AI in troubleshooting over manual methods.",
+                "type": "text"
+              },
+              {
+                "content": "- We explored which tools are highlighted for their comprehensive features and AI-driven insights.",
+                "type": "text"
+              },
+              {
+                "content": "- We examined the main challenges of manual troubleshooting.",
+                "type": "text"
+              },
+              {
+                "content": "- We looked at how AI-powered tools help in identifying performance issues in real-time.",
+                "type": "text"
+              },
+              {
+                "content": "- We identified the benefits of predictive analytics in troubleshooting.",
+                "type": "text"
+              },
+              {
+                "content": "- We covered what AI-driven root cause analysis does and which tools provide centralized error tracking and triaging.",
+                "type": "text"
+              },
+              {
+                "content": "- We explored the purpose of transaction tracing in New Relic APM.",
+                "type": "text"
+              },
+              {
+                "content": "- We looked at the feature of New Relic that helps visualize interactions between different services.",
+                "type": "text"
+              },
+              {
+                "content": "- We discussed how automated log analysis helps in troubleshooting.",
+                "type": "text"
+              },
+              {
+                "content": "Up next, we'll dive into the next module where we'll explore advanced techniques for optimizing troubleshooting workflows with AI.",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}

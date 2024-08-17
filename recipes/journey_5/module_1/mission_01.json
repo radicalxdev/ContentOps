@@ -1,0 +1,348 @@
+{
+  "tasks": [
+    {
+      "context": "This introduction module welcomes learners with a scenario involving deploying a Python application using Docker and GitHub Copilot. It sets the stage for understanding Dockerfiles and leveraging AI-driven tools for efficient and automated deployment.",
+      "id": "1",
+      "name": "Introduction to Deploying with AI Tools",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Welcome to the Alfred AI team! By the end of this journey, you will be equipped to deploy your applications using AI-driven tools. Our specific goal is to leverage GitHub Copilot to gain a thorough understanding of Dockerfiles, including their components and how to generate them effectively and automatically.\n\nAre you ready to embark on this learning adventure?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Tell me more about the scenario."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "We are on a tight deadline to deploy a new feature, and you have been tasked with creating a Docker image for our Python application. Although you have never worked with Docker before, you will leverage GitHub Copilot to understand, generate, and optimize a Dockerfile efficiently. By using AI-driven tools, you will quickly gain the skills needed to containerize our application and ensure it is ready for deployment in record time.\n\nReady to set up your project?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This module guides learners through the initial setup required for the mission, including cloning the project repository, opening it in VS Code, and preparing to use GitHub Copilot.",
+      "id": "2",
+      "name": "Setting Up the Project",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Before we dive into this mission, let's set up your project.\n\n1. Clone the Alfred AI Project Management tool using the command: `git clone https://github.com/alfred-ai-co/w2-python-code-generation-and-completion`\n2. Open this code in VS Code.\n3. Open the GitHub Copilot chat.\n\nShall we move on to understanding Dockerfiles?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's understand Dockerfiles!"
+            },
+            {
+              "target_node_id": "screen3a",
+              "text": "I need help with setup."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "If you encounter any issues during setup, ensure you have Git installed and the necessary permissions to clone the repository. If problems persist, check your internet connection and try again.\n\nReady to move on to understanding Dockerfiles?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's continue!"
+            },
+            {
+              "target_node_id": "screen3b",
+              "text": "Still need help."
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For further assistance, you can explore community forums or the project's issue tracker on GitHub. Additionally, ensure your VS Code has the necessary extensions installed, such as the GitHub Copilot extension and that you're signed in.\n\nShall we move on to understanding Dockerfiles?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's continue!"
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%205%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_1.png?alt=media&token=d99c485e-160a-467b-984b-33168b1b88fd",
+                "type": "image"
+              },
+              {
+                "content": "Let's utilize GitHub Copilot to understand what a Dockerfile is. Write the query “`What is a Dockerfile?`” in the GitHub Copilot chat.\n\n\nThrough this, we understand that a Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. But what is its purpose? Let's try the prompt “`What's the purpose of a Dockerfile?`”\n\n\nNotice how GitHub Copilot breaks down the explanation into clear, understandable points. The purpose of a Dockerfile is to automate the process of creating a Docker image. Each instruction in a Dockerfile creates a new layer in the image, making it easy to reproduce and share environments.\n\nRemember, while Copilot is a powerful tool, always validate its responses since it can sometimes make mistakes.\n\nReady for the hands-on lab?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This module guides learners through a hands-on lab where they create and explore a Dockerfile using GitHub Copilot. It includes detailed steps for understanding each line of the Dockerfile.",
+      "id": "3",
+      "name": "Hands-on Lab: Creating a Dockerfile",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Alright, let's get started with our hands-on mission to get you familiar with automating Dockerfile creation. Assuming you have the repository cloned on your local machine and open in VS Code, you will notice there is a Dockerfile already in the directory. You can also generate your very own Dockerfile by navigating to the GitHub Copilot chat and writing the command “`@workspace Write me a sample dockerfile for python application`”.\n\nReady to dig into your Dockerfile?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6",
+              "text": "Yes, let's dive in!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%205%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_3.png?alt=media&token=4a37360c-a97d-4469-bd4b-11c6d0570b76",
+                "type": "image"
+              },
+              {
+                "content": "Now it's time to dig into your Dockerfile, and GitHub Copilot is here to assist you in understanding each command and its purpose. Navigate to GitHub chat again, and type the prompt “`#selection`”. Select the 2nd line of code “`FROM python:3.8-slim`” and press enter.\n\nNotice how we used the `#selection` command to highlight the specific line of code we wanted explained. GitHub Copilot provides a detailed explanation of this line, breaking down that it specifies the base image from which our Docker image will be built. The `python:3.8-slim` image is a minimal image containing the Python runtime and standard libraries, making it a good starting point for our application.\n\nAlways validate Copilot's suggestions to ensure they meet your project requirements.\n\nReady to move on to the next line?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen7",
+              "text": "Yes, let's continue."
+            },
+            {
+              "target_node_id": "END",
+              "text": "Let's wrap this up!"
+            }
+          ],
+          "id": "screen6",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%205%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_4.png?alt=media&token=ca4a1cf3-c3a0-4b7a-8489-d8ce5b7a1004",
+                "type": "image"
+              },
+              {
+                "content": "As you can see, even short and simple commands have a lot of meaning when it comes to Dockerfiles. Let's try to use the GitHub Copilot chat to understand the next line of code in the Dockerfile. Follow the same format to explain the fifth line of code “`WORKDIR /app`”.\n\nNotice how effective GitHub Copilot is in explaining specific lines of code in your working directory. The `WORKDIR /app` command sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it in the Dockerfile. This is essential for organizing files and commands within the Docker container.\n\nAlways double-check the explanations and adapt them to your specific use case if necessary.\n\nShall we move on to the next step?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8",
+              "text": "Yes, let's continue."
+            },
+            {
+              "target_node_id": "END",
+              "text": "Let's wrap this up!"
+            }
+          ],
+          "id": "screen7",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%205%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_5.png?alt=media&token=d59dc850-84fa-41cd-aaf0-c41d750abd00",
+                "type": "image"
+              },
+              {
+                "content": "The next line of code in the Dockerfile is crucial. Let's try understanding it using GitHub Copilot's inline feature. Select the next line of code “`COPY ./app`”. For Linux and Windows users, press `CTRL + I,` and for Mac users, press `Command + I.` Now, write /explain and press enter!\n\nNotice how GitHub Copilot provides an explanation directly inline, making it easy to understand without leaving the file. The `COPY ./app` command copies the files from your local machine's `app` directory to the container's `app` directory, ensuring your application's code is included in the Docker image.\n\nAlways validate Copilot's output to ensure it aligns with your project's structure and requirements.\n\nReady to move on to the next step?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen8a",
+              "text": "Yes, let's continue."
+            },
+            {
+              "target_node_id": "END",
+              "text": "Let's wrap this up!"
+            }
+          ],
+          "id": "screen8",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now that you have a grasp on using GitHub Copilot to explain specific lines of code, let's move on to the next line: “`RUN pip install --no-cache-dir -r requirements.txt`”. Use the GitHub Copilot's inline feature to understand this line. Comment directly below the code line “`RUN pip install --no-cache-dir -r requirements.txt`” with “`#explain the code above.`”\n\nThis will generate an autofill right below the comment, offering a clear explanation. The `RUN pip install --no-cache-dir -r requirements.txt` command installs the Python dependencies listed in the `requirements.txt` file. The `--no-cache-dir` flag ensures that the installation does not use any cached package versions, making the Docker image smaller.\n\nEnsure you validate the generated explanation and the dependencies being installed.\n\nReady to analyze the remaining lines?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's continue."
+            }
+          ],
+          "id": "screen8a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now that you're familiar with using GitHub Copilot's features to understand code, apply these techniques to analyze the remaining three lines of code in your Dockerfile. For each line, use the `#selection` and inline features to get detailed explanations.\n\nRemember, always validate the responses and adapt them to your project needs. Once you've completed this, let's move on to optimization.\n\nReady to optimize your Dockerfile?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This module teaches learners how to optimize their Dockerfile using GitHub Copilot, ensuring efficiency and best practices in their Docker image creation.",
+      "id": "4",
+      "name": "Optimizing the Dockerfile",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%205%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_6.png?alt=media&token=73c89752-d2a5-410f-bac0-b803ed66ddd5",
+                "type": "image"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%205%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_7.png?alt=media&token=312b9d95-a3c7-415e-85f3-3f629f250619",
+                "type": "image"
+              },
+              {
+                "content": "Another significant advantage AI offers is its ability to optimize your existing scripts. Navigate to GitHub Copilot's chat and write the command “`@workspace Please optimize my current Dockerfile according to best practices and generate the necessary scripts to run the Dockerfile.`”\n\nNotice how GitHub Copilot's response includes optimizations like reducing image size, leveraging multi-stage builds, and improving caching strategies. These optimizations ensure your Docker image is efficient, secure, and ready for production.\n\nAlways review and validate the optimizations suggested by Copilot to ensure they meet your project's requirements.\n\nUse the bash scripts to build your application and run it on your local machine!\n\nReady to wrap up?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's finish."
+            },
+            {
+              "target_node_id": "screen9a",
+              "text": "I need more help with the bash scripts."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To run the bash scripts, ensure you have the necessary permissions and dependencies installed. Use the command `chmod +x script.sh` to make the script executable. Then run it using `./script.sh`. If you encounter any issues, check the script for any missing dependencies or incorrect paths.\n\nReady to wrap up?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's finish."
+            },
+            {
+              "target_node_id": "screen9b",
+              "text": "Still need help."
+            }
+          ],
+          "id": "screen9a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "For advanced assistance, consider debugging the script by adding `echo` statements to print variable values and execution points. Additionally, you can use `set -x` at the beginning of the script to enable a mode of the shell where all executed commands are printed to the terminal.\n\nReady to wrap up?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's finish."
+            }
+          ],
+          "id": "screen9b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "That's the overview of deploying your applications using AI-driven tools and GitHub Copilot. You've learned how to create, understand, and optimize Dockerfiles efficiently. Well done!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}

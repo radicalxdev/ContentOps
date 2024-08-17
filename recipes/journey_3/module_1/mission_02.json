@@ -1,0 +1,334 @@
+{
+  "tasks": [
+    {
+      "context": "In this mission, learners focus on creating unit tests for specific conditions using GitHub Copilot. They start by understanding the importance of testing specific conditions to ensure the code handles edge cases and uncommon scenarios correctly. This step is crucial for maintaining robust and reliable software. The mission also highlights the benefits of unit testing specific conditions, such as increased robustness, reliability, and documentation of expected behavior. Learners are then prepared to write unit tests for a new feature that allows multiple assignees to be assigned to a single project automatically. This mission emphasizes the importance of comprehensive testing to ensure the new feature works as expected across various scenarios.",
+      "id": "1",
+      "name": "Introduction and Setup",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Hello, {username}! Welcome to the mission on creating unit tests for specific conditions using GitHub Copilot. You're now adding a new feature to the scheduler that allows multiple assignees to be assigned to a single project automatically. Ready to write a unit test to check this new feature?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's get started!"
+            },
+            {
+              "target_node_id": "screen1a",
+              "text": "Tell me more about unit testing specific conditions."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Testing specific conditions ensures that your code handles edge cases and uncommon scenarios correctly. This is crucial for maintaining robust and reliable software. GitHub Copilot can help streamline this process by generating targeted unit tests. Ready to proceed?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's move on!"
+            },
+            {
+              "target_node_id": "screen1b",
+              "text": "I'd like to know more about the benefits."
+            }
+          ],
+          "id": "screen1a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "The benefits of unit testing specific conditions include:\n- **Robustness**: Ensures your code can handle unusual or extreme inputs.\n- **Reliability**: Increases confidence in your code's behavior across different scenarios.\n- **Documentation**: Provides clear examples of how your code should handle various situations.\n",
+                "type": "text"
+              },
+              {
+                "content": "Understanding these benefits can help you appreciate the importance of unit testing for specific conditions. Ready to proceed?",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, let's proceed!"
+            }
+          ],
+          "id": "screen1b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's clone the repostitory and start the mission with this link: https://github.com/alfred-ai-co/python-unit-tests-using-github-copilot-tools\nOnce cloned and ready to go, let me know! If you cloned it in the previous mission, you can skip this step.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this part of the mission, learners set up their environment to understand and test the scheduler_feature.py file using GitHub Copilot. They start by using the @workspace command to understand the program better. After reviewing the response from Copilot, they ask follow-up questions to clarify the inputs, outputs, and expected behaviors of the functions. Learners then create a new test file in the tests/ folder to store the unit tests. They take a sneak peek at Copilot's analysis on how to properly unit test the scheduler_feature.py file using the pytest framework, noting the covered testing scenarios and identifying opportunities to ask more questions for specific scenarios. This process ensures a comprehensive understanding and preparation for writing effective unit tests.",
+      "id": "2",
+      "name": "Code Explanations with Copilot Chat",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Great! Let's get started by setting up your environment. Head to the `scheduler_feature.py` file and use the chat commands to understand the program better. Type the following command:\n\n```python\n@workspace /explain #file:scheduler_feature.py\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "Take a minute to review the response from GitHub Copilot.",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_1.png?alt=media&token=211b367a-4563-4fde-a0a0-5d4952f96e8a",
+                "type": "image"
+              },
+              {
+                "content": "Let's start asking follow-up questions to get a better understanding before writing unit tests. We should start with understanding inputs and outputs. Then we can narrow down the number of cases we need to create. Use the following prompt:\n\n```python\n#file:scheduler_feature.py Come up with what is needed to properly unit test the file. Let's think about this step-by-step. What are the inputs and outputs of this file? What are the function's expected behaviors? What are the function's expected outputs?\n```\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "Got it, let's proceed!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Open a new file within the `tests/` folder as `tests/test_scheduler_feature.py` since Copilot needs a location to send the tests. Use the following command to create the test file:\n\n```python\n@workspace /tests #file:scheduler_feature.py\n```\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "File created, let's proceed!"
+            }
+          ],
+          "id": "screen3",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's take a sneak peek at Copilot's analysis on how to properly unit test the `scheduler_feature.py` file. We'll write the tests using the `pytest` framework.\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_2.png?alt=media&token=82375b69-121e-4c92-bc59-06a63b5e2d7b",
+                "type": "image"
+              },
+              {
+                "content": "Take a minute to analyze the response. Notice how Copilot specifies what is covered in the testing scenarios. This gives us an opportunity to ask more questions for specific scenarios beyond what is mentioned.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In this part of the mission, learners focus on generating and running unit tests for specific conditions using GitHub Copilot. They start by selecting the contents of the scheduler_feature.py file and prompting Copilot to identify any edge cases that should be tested. After reviewing Copilot's suggested edge cases, they proceed to insert the generated tests into the tests/test_scheduler_feature.py file using the inline chat feature. Once the tests are inserted, learners run them using pytest, with optional verbosity flags for detailed output. They review any test failures and prepare to resolve them, ensuring the code handles all specific conditions and edge cases effectively.",
+      "id": "3",
+      "name": "Create unit tests for specific conditions using Github Copilot",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "GitHub Copilot can help you create unit tests for specific conditions in your code. For example, you can use Copilot to test the behavior of a method when it receives specific input.\n",
+                "type": "text"
+              },
+              {
+                "content": "Select the contents of the `scheduler_feature.py` file and send the following command:\n\n```python\n@workspace #selection are there any edge cases that should also be tested\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_3.png?alt=media&token=b5e213ae-696a-4db9-9bf3-35daa109c004",
+                "type": "image"
+              },
+              {
+                "content": "Take a minute to review Copilot's suggested edge cases to cover within the `test_scheduler_feature.py` file.",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6",
+              "text": "Got it, let's proceed!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_4.png?alt=media&token=69a7be7b-49b1-4b19-bdaa-cbec38580496",
+                "type": "image"
+              },
+              {
+                "content": "Head to the `tests/test_scheduler_feature.py` file. Let's have Copilot generate tests for the newly suggested edge cases and then insert them into the file. Once generated, select a blank line with your cursor in the file and press `Ctrl + Enter` or select the `Insert at Cursor` option within the chat in the top right of the generated code.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Tests inserted, let's run them!"
+            }
+          ],
+          "id": "screen6",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Run the tests as before using:\n\n```python\npytest tests/test_scheduler_feature.py\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "You can also use verbosity flags to see debug outputs:\n\n```python\npytest tests/test_scheduler_feature.py -vv -s\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_5.png?alt=media&token=c14b3c9f-cb28-4471-b857-0cc42df2af9f",
+                "type": "image"
+              },
+              {
+                "content": "It is expected that some tests might fail. Here's an example of a test failure. Let's resolve them!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "In the final part of the mission, learners resolve unit testing bugs with the help of GitHub Copilot. They start by highlighting the contents of the test output and using a command to ask Copilot for assistance in fixing the identified bugs. After reviewing Copilot's suggested fixes and inserting them into the code, learners re-run the tests using pytest to ensure the issues are resolved. The mission concludes with a summary that highlights the benefits of using Copilot to write and analyze unit tests for specific conditions, improving code quality, increasing test coverage, and enhancing development velocity.",
+      "id": "4",
+      "name": "Resolve Unit Testing Bug with Copilot",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "When we encounter a bug, we can analyze the failing test case and ask Copilot for assistance. Highlight the contents of the test output and use the following command:\n\n```python\n@workspace /fix #file:scheduler_feature.py #terminalSelection\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_6.png?alt=media&token=c8ff2467-6316-4c5f-996a-ff9492be9f98",
+                "type": "image"
+              },
+              {
+                "content": "Take a minute to review the output. Notice how it provides a method for fixing the problem. If you need more help as to where to insert the fix, you can highlight the function and ask for insertion guidance with the `#selection` context command.\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_7.png?alt=media&token=fa511c5a-131a-4ff7-aeca-954a9697c3f2",
+                "type": "image"
+              },
+              {
+                "content": "In case you need help with insertion!",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen9",
+              "text": "Fix applied, let's re-run the tests!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Finally, let's check the tests and make sure they work! Run the same `pytest` command again:\n\n```python\npytest tests/test_scheduler_feature.py\n```\n",
+                "type": "text"
+              },
+              {
+                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%203%2Fmodule_1_mission_2_8.png?alt=media&token=5a811a84-6875-4d6d-96ba-76e7b4ca083a",
+                "type": "image"
+              },
+              {
+                "content": "You should see an output like this!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Tests passed, let's continue!"
+            }
+          ],
+          "id": "screen9",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "So far we came up with more scenarios for Github Copilot to write unit tests with the scheduler_feature.py file. We considered more edge cases, found a failing test, and used Copilot to generate a fix for us. Finally, we were able to have passing tests with the pytest framework.",
+                "type": "text"
+              },
+              {
+                "content": "Utilizing Copilot in this way helps developers speed up their development velocity because it ensures that the quality of the code is improved as well as increasing code coverage per project. You can also check out the solution in the branch, `git checkout solution/tests_scheduler_feature`!\n",
+                "type": "text"
+              },
+              {
+                "content": "Great work with this mission, {username}! Next, we'll explore how to create unit tests for specific conditions using GitHub Copilot.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}

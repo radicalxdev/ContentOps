@@ -1,0 +1,460 @@
+{
+  "tasks": [
+    {
+      "context": "This task introduces the user to the mission at Alfred AI. The objective is to set up a streamlined CI/CD pipeline for the Project Management application to ensure efficient and reliable deployment. The introduction explains the importance of automating the deployment process to Google Cloud Run using GitHub Actions and leveraging GitHub Copilot to assist in this setup. It emphasizes the goal of the mission, which is to automate and streamline the deployment process.",
+      "id": "1",
+      "name": "Introduction",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Welcome to your mission at Alfred AI! Today, you'll be setting up a streamlined CI/CD pipeline for the Project Management application to ensure efficient and reliable deployment. As the team at Alfred AI is preparing the Project Management application for production, it's crucial to automate the deployment process to Google Cloud Run using GitHub Actions. This mission will guide you through leveraging GitHub Copilot to assist with setting up this pipeline.\n\nAre you ready to embark on this journey to automate and streamline your deployment process?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Tell me more about the mission."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for modern software development, allowing teams to automate testing and deployment processes, thus reducing manual effort and minimizing errors. In this mission, you will learn how to use GitHub Actions to create a CI/CD pipeline that automatically builds, tests, and deploys the Project Management application to Google Cloud Run whenever changes are pushed to the main branch.\n\nUsing AI-powered tools like GitHub Copilot can significantly streamline this process by providing real-time suggestions, generating configuration files, and troubleshooting issues. By the end of this mission, you will have a fully functional CI/CD pipeline that deploys your application to Google Cloud Run automatically.\n\nReady to get started?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This task guides the user through setting up the necessary prerequisites for the mission. It ensures the user has a basic understanding of CI/CD concepts, familiarity with Docker and GitHub, access to the Project Management GitHub repository, and a Google Cloud project with billing enabled. It then walks the user through setting up a Google Cloud account, creating a service account, enabling required APIs, and storing the service account key in GitHub Secrets, all of which are essential steps for deploying the application to Google Cloud Run.",
+      "id": "2",
+      "name": "Setting Up Prerequisites",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Before you begin this mission, ensure you have the following prerequisites in place:\n\n- **Basic Understanding of CI/CD Concepts:** Familiarity with the principles of continuous integration and continuous deployment.\n- **Familiarity with Docker and GitHub:** Experience with Docker for containerization and GitHub for version control.\n- **Access to the Project Management GitHub Repository:** Ensure you have access to the repository with a Dockerfile already set up.\n- **Google Cloud Project with Billing Enabled:** A Google Cloud project with billing enabled to use Google Cloud Run.\n\nShall we proceed with setting up your Google Cloud account and service account?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "Yes, let's set up Google Cloud!"
+            },
+            {
+              "target_node_id": "screen2a",
+              "text": "Tell me more about Google Cloud."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Google Cloud provides a suite of cloud computing services that run on the same infrastructure that Google uses internally for its end-user products. Google Cloud Run, a fully managed compute platform, enables you to run stateless containers that are invocable via HTTP requests.\n\nWould you like to set up your Google Cloud account now?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3",
+              "text": "Yes, let's set up Google Cloud!"
+            }
+          ],
+          "id": "screen2a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's start by setting up your Google Cloud account and creating a service account with the necessary permissions for deploying your application to Google Cloud Run.\n\nReady to proceed?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3a",
+              "text": "Yes, let's create the Google Cloud account!"
+            }
+          ],
+          "id": "screen3",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "To create a Google Cloud account, visit [Google Cloud](https://cloud.google.com/) and follow the sign-up instructions. Make sure to set up billing to use Google Cloud services.\n\n**Steps to Follow:**\n\n1. **Create a Google Cloud Account:**\n    - Sign up at [Google Cloud](https://cloud.google.com/).\n    - Set up billing for your account to enable the use of Google Cloud Run services.\n\nHave you completed this step?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3b",
+              "text": "Yes, I've created the account!"
+            },
+            {
+              "target_node_id": "screen3c",
+              "text": "I need help."
+            }
+          ],
+          "id": "screen3a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, let's create a new project in Google Cloud.\n\n**Steps to Follow:**\n\n1. **Create a New Project:**\n    - Go to the [Google Cloud Console](https://console.cloud.google.com/).\n    - Click on the project dropdown menu at the top of the page and select **New Project**.\n    - Enter a name for your project and click **Create**.\n\nHave you created the new project?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3c",
+              "text": "Yes, I've created the project!"
+            },
+            {
+              "target_node_id": "screen3d",
+              "text": "I need help."
+            }
+          ],
+          "id": "screen3b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now, let's enable the required APIs.\n\n**Steps to Follow:**\n\n1. **Enable Required APIs:**\n    - Navigate to **APIs & Services** > **Library**.\n    - Enable the following APIs:\n        - Cloud Run API\n        - Cloud Build API\n        - Container Registry API\n\nHave you enabled the required APIs?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3d",
+              "text": "Yes, APIs are enabled!"
+            }
+          ],
+          "id": "screen3c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's create a service account in Google Cloud Console.\n\n**Steps to Follow:**\n\n1. **Create a Service Account:**\n    - In the Google Cloud Console, go to **IAM & Admin** > **Service Accounts**.\n    - Click **Create Service Account**.\n    - Enter a name for your service account and click **Create**.\n    - Assign the following roles to the service account:\n        - **Cloud Run Admin**\n        - **Service Account User**\n        - **Storage Admin**\n    - Click **Done**.\n\nHave you created the service account?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3e",
+              "text": "Yes, I've created the service account!"
+            }
+          ],
+          "id": "screen3d",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, we need to generate and download a JSON key for the service account.\n\n**Steps to Follow:**\n\n1. **Generate and Download a JSON Key:**\n    - Find your newly created service account in the list.\n    - Click on the **Actions** column (three vertical dots) and select **Manage Keys**.\n    - Click **Add Key** > **Create New Key**.\n    - Select **JSON** and click **Create** to download the key file to your local machine.\n\nHave you generated and downloaded the JSON key?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen3f",
+              "text": "Yes, I've downloaded the JSON key!"
+            }
+          ],
+          "id": "screen3e",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Now, let's store the service account key in GitHub Secrets.\n\n**Steps to Follow:**\n\n1. **Store the Service Account Key in GitHub Secrets:**\n    - In your GitHub repository, navigate to **Settings** > **Secrets** > **Actions**.\n    - Click **New repository secret**.\n    - Add a new secret with the name `GCP_SA_KEY`.\n    - Open the downloaded JSON key file, copy its contents, and paste it into the value field of the secret.\n\nHave you added the service account key to GitHub Secrets?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, I've added the secret!"
+            }
+          ],
+          "id": "screen3f",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Thank you for completing the prerequisites setup. You are now ready to proceed with setting up the CI/CD pipeline using GitHub Actions to deploy the Project Management application to Google Cloud Run.\n\nShall we continue with the mission?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This task guides the user through setting up a GitHub Actions workflow that triggers a deployment to Google Cloud Run when a pull request is merged into the main branch. It involves creating the necessary directory structure, defining the workflow trigger, adding jobs to the workflow for checking out code, setting up Google Cloud SDK, building and pushing a Docker image, and deploying to Google Cloud Run. The task ensures that the user creates and commits the workflow YAML file correctly.",
+      "id": "3",
+      "name": "GitHub Actions Workflow Setup",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's set up a GitHub Actions workflow that triggers a deployment to Google Cloud Run when a pull request is merged into the main branch.\n\nReady to proceed?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4a",
+              "text": "Yes, let's create the workflow!"
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "First, we need to create the GitHub Actions directory.\n\n**Steps to Follow:**\n\n1. **Navigate to Your Repository:**\n    - Open your GitHub repository in a web browser.\n2. **Create the GitHub Actions Directory:**\n    - In the root directory of your repository, create a new directory named `.github/workflows`.\n\nHave you created the directory?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4b",
+              "text": "Yes, I've created the directory!"
+            }
+          ],
+          "id": "screen4a",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, let's create the workflow YAML file.\n\n**Steps to Follow:**\n\n1. **Create the Workflow YAML File:**\n    - Inside the `.github/workflows` directory, create a new file named `deploy.yml`.\n\nHave you created the YAML file?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4c",
+              "text": "Yes, I've created the file!"
+            }
+          ],
+          "id": "screen4b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's define the workflow trigger.\n\n**Steps to Follow:**\n\n1. **Open the `deploy.yml` file in your code editor.**\n2. **Add the following configuration to specify that the workflow should trigger on a pull request merge to the `main` branch:**\n\n```yaml\nname: Deploy to Google Cloud Run\n\non:\n  pull_request:\n    types: [closed]\n    branches:\n      - main\n```\n\nHave you added the workflow trigger?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4d",
+              "text": "Yes, I've added the trigger!"
+            }
+          ],
+          "id": "screen4c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Next, let's add jobs to the workflow.\n\n**Steps to Follow:**\n\n1. **Define the jobs that will run when the workflow is triggered. Add the following configuration to the `deploy.yml` file:**\n```yaml\njobs:\n  deploy:\n    name: Deploy\n    runs-on: ubuntu-latest\n\n    steps:\n    - name: Checkout code\n      uses: actions/checkout@v2\n\n    - name: Set up Google Cloud SDK\n      uses: google-github-actions/setup-gcloud@master\n      with:\n        version: 'latest'\n        project_id: ${{ secrets.GCP_PROJECT_ID }}\n        service_account_key: ${{ secrets.GCP_SA_KEY }}\n\n    - name: Build Docker image\n      run: |\n        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/project-management-app:${{ github.sha }} .\n        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/project-management-app:${{ github.sha }}\n\n    - name: Deploy to Google Cloud Run\n      run: |\n        gcloud run deploy project-management-app \\\\\n          --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/project-management-app:${{ github.sha }} \\\\\n          --platform managed \\\\\n          --region us-central1 \\\\\n          --allow-unauthenticated\n```\n\nHave you added the jobs?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen4e",
+              "text": "Yes, I've added the jobs!"
+            }
+          ],
+          "id": "screen4d",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Finally, let's save and commit the workflow file.\n\n**Steps to Follow:**\n\n1. **Save the `deploy.yml` file.**\n2. **Commit and push the file to the repository.**\n\n```bash\ngit add .github/workflows/deploy.yml\ngit commit -m \"Add GitHub Actions workflow for deploying to Google Cloud Run\"\ngit push origin main\n```\n\nHave you committed the workflow file?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "Yes, I've committed the file!"
+            }
+          ],
+          "id": "screen4e",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's ensure that the GitHub Actions workflow correctly triggers on a pull request merge to the main branch, and validate that the deployment to Google Cloud Run occurs as expected.\n\nReady to test the pipeline?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    },
+    {
+      "context": "This task guides the user through testing and troubleshooting the CI/CD pipeline. It involves pushing changes to trigger the workflow, monitoring the execution, and verifying the deployment. If issues arise during the workflow execution, the task provides steps for troubleshooting, including checking for errors in logs, verifying configuration, and inspecting Google Cloud Run logs. The task ensures the user can identify and resolve issues, ensuring a reliable CI/CD process.",
+      "id": "4",
+      "name": "Testing and Troubleshooting",
+      "nodes": [
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's push changes to trigger the workflow.\n\n**Steps to Follow:**\n\n1. **Create a Test Branch:**\n    - Create a new branch in your local repository. For example:\n    ```bash\n    git checkout -b test-ci-cd\n    ```\n\n2. **Make a Test Change:**\n    - Make a minor change to a file in your repository (e.g., update a README or add a simple comment).\n    - Commit the change and push it to the remote repository:\n    \n    ```bash\n    git add .\n    git commit -m \"Test CI/CD pipeline\"\n    git push origin test-ci-cd\n    ```\n\n3. **Create a Pull Request:**\n    - Open your GitHub repository and create a pull request from `test-ci-cd` to `main`.\n    - Complete the pull request process to merge the changes.\n\nHave you completed these steps?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen5b",
+              "text": "Yes, I've done this!"
+            },
+            {
+              "target_node_id": "screen5c",
+              "text": "I need help."
+            }
+          ],
+          "id": "START",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Let's monitor the workflow execution.\n\n**Steps to Follow:**\n\n1. **Access GitHub Actions:**\n    - Go to the **Actions** tab in your GitHub repository.\n    - Find the workflow run triggered by your pull request merge.\n2. **Check Workflow Logs:**\n    - Click on the workflow run to view detailed logs.\n    - Ensure that all steps in the workflow (such as building the Docker image, deploying to Google Cloud Run) are completed successfully.\n3. **Verify Deployment:**\n    - Once the workflow has completed, navigate to Google Cloud Console.\n    - Go to **Cloud Run** and verify that the new revision of your application is deployed and running.\n\nHave you monitored the workflow execution and verified the deployment?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6",
+              "text": "Yes, everything looks good!"
+            },
+            {
+              "target_node_id": "screen5c",
+              "text": "I ran into an error."
+            }
+          ],
+          "id": "screen5b",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "If you encounter issues during the workflow execution, let's troubleshoot them.\n\n**Steps to Follow:**\n\n1. **Check for Errors in Logs:**\n    - Look for any errors or failed steps in the GitHub Actions logs. Common issues might include authentication errors, deployment failures, or misconfigured steps.\n2. **Verify Configuration:**\n    - Ensure that the GitHub Actions YAML file is correctly configured. Double-check the secrets and environment variables used in the workflow.\n3. **Inspect Google Cloud Run Logs:**\n    - Check the logs in Google Cloud Run for any deployment issues or errors related to the application.\n\nHave you resolved the issues?\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "screen6",
+              "text": "Yes, I've resolved the issues!"
+            }
+          ],
+          "id": "screen5c",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Congratulations on successfully completing this mission! You have gained valuable hands-on experience in setting up a CI/CD pipeline, deploying a Dockerized Python application to Google Cloud Run using GitHub Actions, and troubleshooting any issues that arose during the process.\n\n**Summary of Key Learning Points:**\n\n1. **Configured GitHub Actions Workflow:**\n    - Created a GitHub Actions workflow file that defines the steps required to build and deploy your Dockerized application automatically when changes are merged into the main branch.\n2. **Set Up GitHub Secrets:**\n    - Added necessary secrets to your GitHub repository, ensuring that your workflow can authenticate and interact securely with Google Cloud Run.\n3. **Validated Workflow Execution:**\n    - Pushed changes to trigger the CI/CD pipeline, verified the workflow execution, and ensured successful deployment to Google Cloud Run.\n4. **Troubleshot Issues:**\n    - Used GitHub Actions and Google Cloud Run logs to identify and resolve issues, ensuring a reliable CI/CD process.\n\n**Looking Ahead:**\n\nIn the next mission, we will learn to further improve our CI/CD pipeline by adding pre-checks for security. This will enhance our ability to maintain secure and robust cloud-based applications.\n\nThank you for participating in this mission. Your ability to set up and manage a CI/CD pipeline will greatly enhance your development workflow and support the continuous delivery of high-quality software.\n",
+                "type": "text"
+              }
+            ]
+          },
+          "edges": [
+            {
+              "target_node_id": "END",
+              "text": "End Mission"
+            }
+          ],
+          "id": "screen6",
+          "type": "message"
+        },
+        {
+          "body": {
+            "parts": [
+              {
+                "content": "Thank you for completing the mission. Keep up the good work!\n",
+                "type": "text"
+              }
+            ]
+          },
+          "id": "END",
+          "type": "message"
+        }
+      ]
+    }
+  ]
+}
