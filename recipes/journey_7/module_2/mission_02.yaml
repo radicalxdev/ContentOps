@@ -1,0 +1,293 @@
+tasks:
+- context: In this set, learners are introduced to the process of creating a database
+    schema for the automated ticket assignment system using generative AI tools. They
+    start by creating a new file in their workspace and preparing the dashboard for
+    document and diagram integration.
+  id: '1'
+  name: Introduction and Setup
+  nodes:
+  - body:
+      parts:
+      - content: 'Hello, {username}! With the visual mapping of the automated ticket
+          assignment system complete, it''s time to move forward with development.
+          Imagine you''re developing the database for this new system. The first step
+          is creating the database schema. Normally this would involve a lot of work
+          in creating the data model for a database schema and then ensuring it adheres
+          to normalization standards. But with generative AI tools like Eraser, we
+          can simplify that process!
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Ready to start!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Create a new file from your workspace dashboard. Then, if not already,\
+          \ select the \u201Cboth\u201D option. This will split the dashboard, displaying\
+          \ the documents on the left side and the diagramming canvas on the right.\
+          \ Once you're ready, let me know!\n"
+        type: text
+    id: END
+    type: message
+- context: In this set, learners are introduced to the process of creating a database
+    schema for the automated ticket assignment system using generative AI tools. They
+    start by creating a new file in their workspace and preparing the dashboard for
+    document and diagram integration.
+  id: '2'
+  name: Technical Design Documents with Eraser AI
+  nodes:
+  - body:
+      parts:
+      - content: "In the Diagram Generation Prompt, input the detailed technical design\
+          \ document you previously created. If you don't have it, use the following\
+          \ document:\n\n```\n# Technical Design Document\n## 1. Introduction\n- **Purpose**:\
+          \ Describe the purpose of the document.\n- **Scope**: Define the scope of\
+          \ the ticket assignment system.\n- **Definitions, Acronyms, and Abbreviations**:\
+          \ List and define any terms used in the document.\n## 2. System Overview\n\
+          - **Objective**: The goal is to develop a robust and functional ticket assignment\
+          \ system for AI TaskMaster, ensuring seamless collaboration and ideation\
+          \ within the internal team before presenting the final approach to stakeholders.\n\
+          - **Components of the System**:\n    - Automated Ticket Routing\n    - Dynamic\
+          \ Workload Balancing\n    - Skill Matching\n    - Real-Time Analytics\n\
+          \    - Collaboration Tools\n## 3. System Architecture\n- **High-Level Architecture\
+          \ Diagram**: Include a diagram showing the overall system architecture.\n\
+          - **Technology Stack**:\n    - Python\n    - Next.js\n    - MySQL\n    -\
+          \ TensorFlow\n    - Third-party analytics service (e.g., Google Analytics,\
+          \ Mixpanel)\n    - Open-source analytics tools (e.g., Grafana, Kibana)\n\
+          \    - OAuth\n    - Integration with existing tools (e.g., Slack, Microsoft\
+          \ Teams)\n## 4. Component Design\n### 4.1 Automated Ticket Routing\n- **Description**:\
+          \ Explain how AI will categorize and assign tickets.\n- **Criteria**: Priority,\
+          \ complexity, team expertise.\n- **AI/ML Framework**: TensorFlow.\n### 4.2\
+          \ Dynamic Workload Balancing\n- **Description**: Explain how the system\
+          \ will monitor and adjust workloads.\n- **Mechanism**: Describe the algorithm\
+          \ or method used for balancing.\n### 4.3 Skill Matching\n- **Description**:\
+          \ Explain how the system will match skills to tickets.\n- **Mechanism**:\
+          \ Describe the skill analysis and matching process.\n### 4.4 Real-Time Analytics\n\
+          - **Description**: Explain the real-time analytics features.\n- **Platform**:\
+          \ Third-party analytics service (e.g., Google Analytics, Mixpanel), Open-source\
+          \ analytics tools (e.g., Grafana, Kibana).\n### 4.5 Collaboration Tools\n\
+          - **Description**: Explain the integrated chat and discussion forums.\n\
+          - **Tools**: Integration with existing tools (e.g., Slack, Microsoft Teams).\n\
+          ## 5. Data Design\n- **Database Schema**: Provide the schema for MySQL.\n\
+          - **Data Flow**: Describe how data will flow through the system.\n## 6.\
+          \ Security Considerations\n- **User Authentication and Authorization**:\
+          \ OAuth.\n- **Data Security**: Data encryption, regular security audits.\n\
+          - **Compliance**: GDPR/CCPA, role-based access control.\n## 7. Performance\
+          \ Metrics\n- **Response Times**: Define acceptable response times.\n- **Resolution\
+          \ Rates**: Define acceptable resolution rates.\n## 8. Testing Strategy\n\
+          - **Unit Testing**: Describe the approach for unit testing.\n- **Integration\
+          \ Testing**: Describe the approach for integration testing.\n- **End-to-End\
+          \ Testing**: Describe the approach for end-to-end testing.\n- **Load Testing**:\
+          \ Describe the approach for load testing.\n## 9. Deployment Plan\n- **Environment**:\
+          \ Cloud-based.\n- **Steps**: Outline the steps for deploying the system.\n\
+          ## 10. Maintenance and Support\n- **Maintenance Plan**: Describe the plan\
+          \ for maintaining the system.\n- **Support Resources**: List resources available\
+          \ for support.\n## 11. Appendices\n- **Glossary**: Define any additional\
+          \ terms used in the document.\n- **References**: List any references or\
+          \ external documents used.\n\n```\n"
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: Entered the prompt
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Select "Entity Relationship" as the Diagram type and click on Generate.
+          The entity relationship diagram is common for defining how items within
+          the database relate to one another such as `one-to-many`.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Selected Entity Relationship and generated the diagram
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: "Review the generated entity-relationship diagram. You may notice\
+          \ that the database is not fully normalized. So while the generative AI\
+          \ can craft the template for us, we still have to remember that context\
+          \ is what drives its output. We\u2019ll spend some time to normalize the\
+          \ diagram.\n\nOne workaround with this is that we can create the template\
+          \ with a general prompt and then use feedback through natural language to\
+          \ modify the generated output as it goes to make it more refined. This increases\
+          \ the prompts we send but helps build from the ground-up in terms of our\
+          \ custom context where a very large prompt with many instructions may not\
+          \ perfectly capture everything we want. Iterative processes with generative\
+          \ AI are highly effective!\n"
+        type: text
+    id: END
+    type: message
+- context: In this set, learners are introduced to the process of creating a database
+    schema for the automated ticket assignment system using generative AI tools. They
+    start by creating a new file in their workspace and preparing the dashboard for
+    document and diagram integration.
+  id: '3'
+  name: Normalize Database Schema with Eraser AI
+  nodes:
+  - body:
+      parts:
+      - content: 'Database normalization is the process of organizing the fields and
+          tables of a relational database to minimize redundancy and dependency. It
+          ensures the database is efficient, scalable, and easily maintainable. Normalization
+          involves dividing large tables into smaller ones and defining relationships
+          between them.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen8
+      text: Understood database normalization
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'To normalize the database, enter the following prompt into the Diagram
+          Edit Prompt:
+
+
+          ```
+
+          Normalize this database to 5NF.
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9
+      text: Normalized the database
+    id: screen8
+    type: message
+  - body:
+      parts:
+      - content: 'Here are the common normal forms in database normalization:
+
+
+          1. **First Normal Form (1NF)**: Ensures that the table is flat with atomic
+          values.
+
+          2. **Second Normal Form (2NF)**: Ensures all non-key attributes are fully
+          functionally dependent on the primary key.
+
+          3. **Third Normal Form (3NF)**: Ensures all non-key attributes are not transitively
+          dependent on other non-key attributes.
+
+          4. **Boyce-Codd Normal Form (BCNF)**: A stricter version of 3NF where every
+          determinant must be a candidate key.
+
+          5. **Fourth Normal Form (4NF)**: Ensures no multi-valued dependencies.
+
+          6. **Fifth Normal Form (5NF)**: Ensures no join dependencies not implied
+          by the candidate keys.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10
+      text: Understood the normal forms
+    id: screen9
+    type: message
+  - body:
+      parts:
+      - content: 'Review the normalized database schema generated by Eraser AI. Ensure
+          it meets your requirements for efficiency and scalability.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Reviewed the normalized schema
+    id: screen10
+    type: message
+  - body:
+      parts:
+      - content: 'While higher normal forms like 4NF and 5NF offer benefits in terms
+          of reducing redundancy and improving data integrity, they also have drawbacks
+          such as complexity, performance overhead, and increased storage requirements.
+          Balancing normalization and practicality is key.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: This set covers the final steps of denormalizing a database schema using
+    Eraser AI and summarizes the importance of context-aware generative AI in documentation
+    and planning. It emphasizes the practical balance between normalization and denormalization,
+    highlighting how Eraser AI can aid in making informed design decisions.
+  id: '4'
+  name: Denormalize a Database Schema with Eraser AI
+  nodes:
+  - body:
+      parts:
+      - content: 'While 4NF and 5NF offer theoretical advantages in terms of data
+          integrity and redundancy elimination, it is important to balance these benefits
+          with the practical needs of the application. In many cases, achieving 3NF
+          or BCNF (Boyce-Codd Normal Form) provides sufficient normalization without
+          introducing excessive complexity. Database designers often use denormalization
+          techniques strategically to optimize performance and simplify query writing,
+          especially in read-heavy applications where speed is critical.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen14
+      text: Understood
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Eraser AI also allows you to denormalize a database schema if it
+          has been normalized to a higher form.
+
+
+          From the same editor, enter the following prompt into the Diagram Edit Prompt:
+
+
+          ```
+
+          Denormalize this database to an applicable form.
+
+          ```
+
+
+          You may notice some differences in this denormalized form and the 3NF normalized
+          form. While AI is good at context awareness, it is still recommended to
+          manually review the generated content for discrepancies.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen15
+      text: Denormalized the database
+    id: screen14
+    type: message
+  - body:
+      parts:
+      - content: 'Review the denormalized database schema. Ensure it meets your needs
+          for practical application and performance.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Reviewed the denormalized schema
+    id: screen15
+    type: message
+  - body:
+      parts:
+      - content: 'Now that you''ve learned how to design entity-relationship diagrams
+          using Eraser Al, take the time to practice further to create more detailed
+          and refined diagrams. Remember, the effectiveness of Al tools depends on
+          the quality of the prompts you provide. Ready to proceed to more technical
+          areas, such as architectural diagrams and data flows?
+
+          '
+        type: text
+    id: END
+    type: message

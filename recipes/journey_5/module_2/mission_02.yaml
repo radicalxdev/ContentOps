@@ -1,354 +1,312 @@
 tasks:
-  - name: "Introduction"
-    context: "In this hands-on lab, the user will learn to leverage Snyk and GitHub Actions to automate advanced security checks. Each step will guide the user in understanding and implementing security measures in their CI/CD processes. The task begins with a welcome message and an overview of the mission, emphasizing the importance of automating security checks using Snyk and GitHub Actions."
-    id: "1"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Gif of an AI assistant welcoming with a friendly wave."
-            - type: "text"
-              content: |
-                Welcome to Alfred AI's Project Management application security lab! In this hands-on lab, you'll learn to leverage Snyk and GitHub Actions to automate advanced security checks. Each step will guide you in understanding and implementing security measures in your CI/CD processes.
+- context: In this hands-on lab, the user will learn to leverage Snyk and GitHub Actions
+    to automate advanced security checks. Each step will guide the user in understanding
+    and implementing security measures in their CI/CD processes. The task begins with
+    a welcome message and an overview of the mission, emphasizing the importance of
+    automating security checks using Snyk and GitHub Actions.
+  id: '1'
+  name: Introduction
+  nodes:
+  - body:
+      parts:
+      - content: 'Welcome to the second mission in streamlining CI/CD with AI! In
+          this hands-on lab, you''ll learn to leverage Snyk and GitHub Actions to
+          automate advanced security checks within the context of the Alfred AI Project
+          Management application. Each step will guide you in understanding and implementing
+          security measures in your CI/CD processes.
 
-                Are you ready to embark on this journey to enhance the security of your application?
-        edges:
-          - text: "Yes, let's get started!"
-            target_node_id: "screen2"
-      - id: screen2
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of CI/CD and security tools."
-            - type: "text"
-              content: |
-                Let's start by understanding the role of CI/CD in modern software development and how Snyk enhances security in these processes.
 
-                **Benefits of Snyk:**
+          Are you ready to embark on this journey to enhance the security of your
+          application?
 
-                - **Automated Security Checks:** Snyk continuously monitors your code, dependencies, container images, and infrastructure as code (IaC) for vulnerabilities.
-                - **Actionable Insights:** Snyk provides detailed information about vulnerabilities and how to fix them.
-                - **Seamless Integration:** Snyk integrates easily with popular CI/CD tools, including GitHub Actions, making it easy to incorporate security into your workflow.
+          '
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s start by understanding the role of CI/CD in modern software
+          development and how Snyk enhances security in these processes.
 
-                Ready to set up your Snyk account?
-        edges:
-          - text: "What are the Prerequisites for the Mission?"
-            target_node_id: "screen3"
-          - text: "I need more details on the benefits of Snyk."
-            target_node_id: "screen2a"
-      - id: screen2a
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of Snyk's features."
-            - type: "text"
-              content: |
-                Snyk's automated security checks help you stay ahead of potential threats by continuously monitoring for vulnerabilities. It provides actionable insights that include detailed information about vulnerabilities and remediation steps, helping you fix issues quickly. Additionally, Snyk's seamless integration with CI/CD tools like GitHub Actions ensures that security checks are a natural part of your development workflow, reducing the chances of introducing vulnerabilities into your codebase.
 
-                Ready to set up your Snyk account?
-        edges:
-          - text: "Yes, let's set up Snyk!"
-            target_node_id: "END"
-          - text: "What are the Prerequisites for the Mission?"
-            target_node_id: "screen3"
-      - id: screen3
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of prerequisites."
-            - type: "text"
-              content: |
-                Before we dive into this mission, make sure you have the following:
+          **Benefits of Snyk:**
 
-                - Basic understanding of CI/CD concepts.
-                - Familiarity with Docker and GitHub.
-                - Access to the Project Management GitHub repository with a basic CI/CD setup.
-                - A Snyk account with appropriate permissions.
-                - A Snyk API token.
 
-                Ready to set up your Snyk account?
-        edges:
-          - text: "Yes, let's set up Snyk!"
-            target_node_id: "END"
-          - text: "I need help with prerequisites."
-            target_node_id: "screen3a"
-      - id: screen3a
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of assistance."
-            - type: "text"
-              content: |
-                If you need help with any of the prerequisites, ensure you have the necessary accounts and permissions. Visit the GitHub and Snyk documentation for detailed setup guides. If you encounter issues, check community forums or contact support.
+          - **Automated Security Checks:** Snyk continuously monitors your code, dependencies,
+          container images, and infrastructure as code (IaC) for vulnerabilities.
 
-                Ready to set up your Snyk account?
-        edges:
-          - text: "Yes, let's set up Snyk!"
-            target_node_id: "END"
-          - text: "Still need help."
-            target_node_id: "screen3b"
-      - id: screen3b
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of troubleshooting."
-            - type: "text"
-              content: |
-                For further assistance, you can explore detailed setup guides on GitHub and Snyk documentation. Additionally, you can seek help from community forums or reach out to the support teams for both platforms. You can also prompt GitHub Copilot or other AI tools to help you.
+          - **Actionable Insights:** Snyk provides detailed information about vulnerabilities
+          and how to fix them.
 
-                Shall we move on to setting up Snyk?
-        edges:
-          - text: "Yes, let's continue!"
-            target_node_id: "END"
+          - **Seamless Integration:** Snyk integrates easily with popular CI/CD tools,
+          including GitHub Actions, making it easy to incorporate security into your
+          workflow.
 
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of troubleshooting."
-            - type: "text"
-              content: |
-                Let's set up your Snyk account and prepare it for integration with GitHub Actions.
 
-                Ready to move on to setting up Snyk?
+          Ready to set up your Snyk account?
 
-  - name: "Setting Up Snyk and GitHub Actions"
-    context: "In this mission, the user will set up their Snyk account and integrate it with GitHub Actions to automate security checks in their CI/CD pipeline. The task includes detailed steps to create a Snyk account, generate a Snyk API token, add the token to GitHub Secrets, and create a GitHub Actions workflow for Snyk. By completing this task, the user will have a secure CI/CD pipeline that automatically performs security checks on their codebase during pull requests."
-    id: "2"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of Snyk account setup."
-            - type: "text"
-              content: |
-                Let's set up your Snyk account and prepare it for integration with GitHub Actions.
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: What are the Prerequisites for the Mission?
+    - target_node_id: screen2a
+      text: I need more details on the benefits of Snyk.
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: 'Snyk''s automated security checks help you stay ahead of potential
+          threats by continuously monitoring for vulnerabilities. It provides actionable
+          insights that include detailed information about vulnerabilities and remediation
+          steps, helping you fix issues quickly. Additionally, Snyk''s seamless integration
+          with CI/CD tools like GitHub Actions ensures that security checks are a
+          natural part of your development workflow, reducing the chances of introducing
+          vulnerabilities into your codebase.
 
-                **Steps:**
 
-                1. **Create a Snyk Account:**
-                    - Visit the [Snyk website](https://snyk.io/) and sign up for an account.
-                    - Follow the on-screen instructions to complete the setup process, including verifying your email address and logging in.
-                2. **Generate Snyk API Token:**
-                    - Navigate to your Snyk account settings.
-                    - Under the "API token" section, click on the "Generate" button to create a new API token.
-                    - Copy the generated API token as you will need it for the integration with GitHub Actions.
-                3. **Add Snyk API Token to GitHub Secrets:**
-                    - Go to your GitHub repository.
-                    - Navigate to Settings > Secrets > Actions.
-                    - Click on the "New repository secret" button.
-                    - Add a new secret named `SNYK_TOKEN` and paste the API token you generated from Snyk.
-                    - Click "Add secret" to save it.
+          Ready to set up your Snyk account?
 
-                Ready to integrate Snyk with GitHub Actions?
-        edges:
-          - text: "Yes, let's integrate Snyk!"
-            target_node_id: "screen5"
-      - id: screen5
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of GitHub Actions setup."
-            - type: "text"
-              content: |
-                Integrate Snyk into your GitHub Actions workflow to automatically perform security checks on your codebase during pull requests.
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's set up Snyk!
+    - target_node_id: screen3
+      text: What are the Prerequisites for the Mission?
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: 'Before we dive into this mission, make sure you have the following:
 
-                **Steps:**
 
-                1. **Create a Separate GitHub Actions Workflow for Snyk:**
-                    - Create a new file named `snyk-analysis.yml` in the `.github/workflows` directory of your repository.
-                2. **Add the Following Configuration to `snyk-analysis.yml`:**
+          - Basic understanding of CI/CD concepts.
 
-                ```yaml
-                name: Snyk Analysis
-                on:
-                  pull_request:
-                    branches:
-                      - main
+          - Familiarity with Docker and GitHub.
 
-                jobs:
-                  snyk:
-                    runs-on: ubuntu-latest
-                    steps:
-                      - name: Checkout repository
-                        uses: actions/checkout@v2
+          - Access to the Project Management GitHub repository with a basic CI/CD
+          setup.
 
-                      - name: Set up Python
-                        uses: actions/setup-python@v2
-                        with:
-                          python-version: '3.8'
+          - A Snyk account with appropriate permissions.
 
-                      - name: Install dependencies
-                        run: |
-                          python -m pip install --upgrade pip
-                          pip install -r requirements.txt
+          - A Snyk API token.
 
-                      - name: Run Snyk
-                        uses: snyk/actions/python@master
-                        env:
-                          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-                        with:
-                          args: --file=requirements.txt
-                ```
 
-                Notice how GitHub Copilot helps break down each step into clear actions. Always validate the generated workflow to ensure it meets your project needs.
+          Ready to set up your Snyk account?
 
-                Ready to run security checks with Snyk?
-        edges:
-          - text: "Yes, let's run security checks!"
-            target_node_id: "END"
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of monitoring GitHub Actions."
-            - type: "text"
-              content: |
-                Execute the GitHub Actions workflow to perform security checks using Snyk whenever a pull request is made.
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's set up Snyk!
+    - target_node_id: screen3a
+      text: I need help with prerequisites.
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: 'If you need help with any of the prerequisites, ensure you have
+          the necessary accounts and permissions. Visit the GitHub and Snyk documentation
+          for detailed setup guides. If you encounter issues, check community forums
+          or contact support.
 
-                **Steps:**
 
-                1. **Create a Pull Request:**
-                    - Make changes to your codebase and push them to a new branch.
-                    - Open a pull request to merge these changes into the main branch.
-                2. **Monitor the Workflow:**
-                    - Go to the Actions tab in your GitHub repository.
-                    - Select the "Snyk Analysis" workflow to monitor the execution of the security checks.
-                    - Ensure that the Snyk security checks are executed successfully and review the output for any identified vulnerabilities.
+          Ready to set up your Snyk account?
 
-                Notice how Snyk provides detailed reports on identified vulnerabilities. Always review and validate these reports to ensure your codebase remains secure.
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's set up Snyk!
+    - target_node_id: screen3b
+      text: Still need help.
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: 'For further assistance, you can explore detailed setup guides on
+          GitHub and Snyk documentation. Additionally, you can seek help from community
+          forums or reach out to the support teams for both platforms. You can also
+          prompt GitHub Copilot or other AI tools to help you.
 
-                Ready to review and fix security issues?
 
-  - name: "Reviewing and Fixing Security Issues"
-    context: "Identify and resolve security issues found by Snyk during the CI/CD process. The user will review the detailed Snyk report generated by the GitHub Actions workflow, follow Snyk's recommendations to fix identified vulnerabilities, and re-run security checks to ensure all issues are resolved. This task helps the user maintain a secure codebase by addressing potential vulnerabilities proactively."
-    id: "3"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of Snyk security reports."
-            - type: "text"
-              content: |
-                Identify and resolve security issues found by Snyk during the CI/CD process.
+          Shall we move on to setting up Snyk?
 
-                **Steps:**
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's continue!
+    id: screen3b
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s set up your Snyk account and prepare it for integration with
+          GitHub Actions.
 
-                1. **Review Security Reports:**
-                    - Access the detailed Snyk report generated by the GitHub Actions workflow.
-                    - Review the identified vulnerabilities, including their severity and potential impact on your application.
-                2. **Fix Identified Issues:**
-                    - Follow Snyk's recommendations to resolve the vulnerabilities.
-                    - Update dependencies, modify code, or apply patches as suggested.
-                    - Commit and push the changes to the branch associated with the pull request.
-                3. **Re-run Security Checks:**
-                    - After addressing the identified vulnerabilities, re-run the Snyk analysis by updating the pull request.
-                    - Ensure that the security checks pass without any critical issues.
 
-                In our case, Snyk is set to identify vulnerabilities in the `requirements.txt` file. For example, by incorporating Langchain into your requirements, Snyk would generate a report detailing any potential security vulnerabilities associated with Langchain, enabling you to address these issues proactively and maintain a secure codebase.
+          Ready to move on to setting up Snyk?
 
-                Ready to optimize the security configuration?
-        edges:
-          - text: "Yes, let's optimize!"
-            target_node_id: "screen8"
-
-      - id: screen8
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of optimizing security settings."
-            - type: "text"
-              content: |
-                Enhance the security configuration of your CI/CD pipeline for better performance and comprehensive coverage.
-
-                **Steps:**
-
-                1. **Refine Security Checks:**
-                    - Adjust the GitHub Actions workflow to include more comprehensive security checks.
-                    - Example additions could include testing for vulnerabilities in container images or infrastructure as code files.
-                2. **Example Configuration for Comprehensive Security Checks:**
-                ```yaml
-                name: Snyk Analysis
-                on:
-                  pull_request:
-                    branches:
-                      - main
-
-                jobs:
-                  snyk:
-                    runs-on: ubuntu-latest
-                    steps:
-                      - name: Checkout repository
-                        uses: actions/checkout@v2
-
-                      - name: Set up Python
-                        uses: actions/setup-python@v2
-                        with:
-                          python-version: '3.8'
-
-                      - name: Install dependencies
-                        run: |
-                          python -m pip install --upgrade pip
-                          pip install -r requirements.txt
-
-                      - name: Run Snyk to check for vulnerabilities in code and dependencies
-                        uses: snyk/actions/python@master
-                        env:
-                          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-                        with:
-                          args: --file=requirements.txt
-
-                      - name: Run Snyk to check for vulnerabilities in Docker images
-                        uses: snyk/actions/docker@master
-                        env:
-                          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-                        with:
-                          args: <your_docker_image> --file=Dockerfile
-                ```
-
-                3. **Update Dependencies and Versions:**
-                    - Regularly update your dependencies to ensure they are free from known vulnerabilities.
-                    - Use Snyk’s monitoring feature to receive alerts about new vulnerabilities in your dependencies.
-
-                Notice how the configuration now includes additional checks for Docker images. This ensures a more comprehensive security analysis of your entire project.
-
-                Ready for the final steps?
-        edges:
-          - text: "Yes, let's document and reflect!"
-            target_node_id: "END"
-
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "Visual of documentation"
-            - type: "text"
-              content: |
-                Document the improvements made to the CI/CD pipeline and reflect on the integration process.
-
-                **Steps:**
-
-                1. **Document the Changes:**
-                    - Record the updates made to the CI/CD pipeline, including the integration of Snyk and any changes to the workflow files.
-                    - Include details about the identified vulnerabilities and the steps taken to resolve them.
-                2. **Reflect on the Benefits:**
-                    - Consider the benefits of integrating Snyk into your CI/CD process, such as improved security posture and automated vulnerability management.
-                    - Evaluate the ease of use and the effectiveness of Snyk in identifying and resolving security issues.
-
-                By following these detailed steps and focusing on leveraging Snyk for advanced security checks, you will gain hands-on experience in setting up and enhancing a secure CI/CD pipeline tailored to Alfred AI's Project Management application.
+          '
+        type: text
+    id: END
+    type: message
+- context: In this mission, the user will set up their Snyk account and integrate
+    it with GitHub Actions to automate security checks in their CI/CD pipeline. The
+    task includes detailed steps to create a Snyk account, generate a Snyk API token,
+    add the token to GitHub Secrets, and create a GitHub Actions workflow for Snyk.
+    By completing this task, the user will have a secure CI/CD pipeline that automatically
+    performs security checks on their codebase during pull requests.
+  id: '2'
+  name: Setting Up Snyk and GitHub Actions
+  nodes:
+  - body:
+      parts:
+      - content: "Let's set up your Snyk account and prepare it for integration with\
+          \ GitHub Actions.\n\n**Steps:**\n\n1. **Create a Snyk Account:**\n    -\
+          \ Visit the [Snyk website](https://snyk.io/) and sign up for an account.\n\
+          \    - Follow the on-screen instructions to complete the setup process,\
+          \ including verifying your email address and logging in.\n2. **Generate\
+          \ Snyk API Token:**\n    - Navigate to your Snyk account settings.\n   \
+          \ - Under the \"API token\" section, click on the \"Generate\" button to\
+          \ create a new API token.\n    - Copy the generated API token as you will\
+          \ need it for the integration with GitHub Actions.\n3. **Add Snyk API Token\
+          \ to GitHub Secrets:**\n    - Go to your GitHub repository.\n    - Navigate\
+          \ to Settings > Secrets > Actions.\n    - Click on the \"New repository\
+          \ secret\" button.\n    - Add a new secret named `SNYK_TOKEN` and paste\
+          \ the API token you generated from Snyk.\n    - Click \"Add secret\" to\
+          \ save it.\n\nReady to integrate Snyk with GitHub Actions?\n"
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: Yes, let's integrate Snyk!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Integrate Snyk into your GitHub Actions workflow to automatically\
+          \ perform security checks on your codebase during pull requests.\n\n**Steps:**\n\
+          \n1. **Create a Separate GitHub Actions Workflow for Snyk:**\n    - Create\
+          \ a new file named `snyk-analysis.yml` in the `.github/workflows` directory\
+          \ of your repository.\n2. **Add the Following Configuration to `snyk-analysis.yml`:**\n\
+          \n```yaml\nname: Snyk Analysis\non:\n  pull_request:\n    branches:\n  \
+          \    - main\n\njobs:\n  snyk:\n    runs-on: ubuntu-latest\n    steps:\n\
+          \      - name: Checkout repository\n        uses: actions/checkout@v2\n\n\
+          \      - name: Set up Python\n        uses: actions/setup-python@v2\n  \
+          \      with:\n          python-version: '3.8'\n\n      - name: Install dependencies\n\
+          \        run: |\n          python -m pip install --upgrade pip\n       \
+          \   pip install -r requirements.txt\n\n      - name: Run Snyk\n        uses:\
+          \ snyk/actions/python@master\n        env:\n          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN\
+          \ }}\n        with:\n          args: --file=requirements.txt\n```\n\nNotice\
+          \ how GitHub Copilot helps break down each step into clear actions. Always\
+          \ validate the generated workflow to ensure it meets your project needs.\n\
+          \nReady to run security checks with Snyk?\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's run security checks!
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: "Execute the GitHub Actions workflow to perform security checks using\
+          \ Snyk whenever a pull request is made.\n\n**Steps:**\n\n1. **Create a Pull\
+          \ Request:**\n    - Make changes to your codebase and push them to a new\
+          \ branch.\n    - Open a pull request to merge these changes into the main\
+          \ branch.\n2. **Monitor the Workflow:**\n    - Go to the Actions tab in\
+          \ your GitHub repository.\n    - Select the \"Snyk Analysis\" workflow to\
+          \ monitor the execution of the security checks.\n    - Ensure that the Snyk\
+          \ security checks are executed successfully and review the output for any\
+          \ identified vulnerabilities.\n\nNotice how Snyk provides detailed reports\
+          \ on identified vulnerabilities. Always review and validate these reports\
+          \ to ensure your codebase remains secure.\n\nReady to review and fix security\
+          \ issues?\n"
+        type: text
+    id: END
+    type: message
+- context: Identify and resolve security issues found by Snyk during the CI/CD process.
+    The user will review the detailed Snyk report generated by the GitHub Actions
+    workflow, follow Snyk's recommendations to fix identified vulnerabilities, and
+    re-run security checks to ensure all issues are resolved. This task helps the
+    user maintain a secure codebase by addressing potential vulnerabilities proactively.
+  id: '3'
+  name: Reviewing and Fixing Security Issues
+  nodes:
+  - body:
+      parts:
+      - content: "Identify and resolve security issues found by Snyk during the CI/CD\
+          \ process.\n\n**Steps:**\n\n1. **Review Security Reports:**\n    - Access\
+          \ the detailed Snyk report generated by the GitHub Actions workflow.\n \
+          \   - Review the identified vulnerabilities, including their severity and\
+          \ potential impact on your application.\n2. **Fix Identified Issues:**\n\
+          \    - Follow Snyk's recommendations to resolve the vulnerabilities.\n \
+          \   - Update dependencies, modify code, or apply patches as suggested.\n\
+          \    - Commit and push the changes to the branch associated with the pull\
+          \ request.\n3. **Re-run Security Checks:**\n    - After addressing the identified\
+          \ vulnerabilities, re-run the Snyk analysis by updating the pull request.\n\
+          \    - Ensure that the security checks pass without any critical issues.\n\
+          \nIn our case, Snyk is set to identify vulnerabilities in the `requirements.txt`\
+          \ file. For example, by incorporating Langchain into your requirements,\
+          \ Snyk would generate a report detailing any potential security vulnerabilities\
+          \ associated with Langchain, enabling you to address these issues proactively\
+          \ and maintain a secure codebase.\n\nReady to optimize the security configuration?\n"
+        type: text
+    edges:
+    - target_node_id: screen8
+      text: Yes, let's optimize!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Enhance the security configuration of your CI/CD pipeline for better\
+          \ performance and comprehensive coverage.\n\n**Steps:**\n\n1. **Refine Security\
+          \ Checks:**\n    - Adjust the GitHub Actions workflow to include more comprehensive\
+          \ security checks.\n    - Example additions could include testing for vulnerabilities\
+          \ in container images or infrastructure as code files.\n2. **Example Configuration\
+          \ for Comprehensive Security Checks:**\n```yaml\nname: Snyk Analysis\non:\n\
+          \  pull_request:\n    branches:\n      - main\n\njobs:\n  snyk:\n    runs-on:\
+          \ ubuntu-latest\n    steps:\n      - name: Checkout repository\n       \
+          \ uses: actions/checkout@v2\n\n      - name: Set up Python\n        uses:\
+          \ actions/setup-python@v2\n        with:\n          python-version: '3.8'\n\
+          \n      - name: Install dependencies\n        run: |\n          python -m\
+          \ pip install --upgrade pip\n          pip install -r requirements.txt\n\
+          \n      - name: Run Snyk to check for vulnerabilities in code and dependencies\n\
+          \        uses: snyk/actions/python@master\n        env:\n          SNYK_TOKEN:\
+          \ ${{ secrets.SNYK_TOKEN }}\n        with:\n          args: --file=requirements.txt\n\
+          \n      - name: Run Snyk to check for vulnerabilities in Docker images\n\
+          \        uses: snyk/actions/docker@master\n        env:\n          SNYK_TOKEN:\
+          \ ${{ secrets.SNYK_TOKEN }}\n        with:\n          args: <your_docker_image>\
+          \ --file=Dockerfile\n```\n\n3. **Update Dependencies and Versions:**\n \
+          \   - Regularly update your dependencies to ensure they are free from known\
+          \ vulnerabilities.\n    - Use Snyk\u2019s monitoring feature to receive\
+          \ alerts about new vulnerabilities in your dependencies.\n\nNotice how the\
+          \ configuration now includes additional checks for Docker images. This ensures\
+          \ a more comprehensive security analysis of your entire project.\n\nReady\
+          \ for the final steps?\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's document and reflect!
+    id: screen8
+    type: message
+  - body:
+      parts:
+      - content: "Document the improvements made to the CI/CD pipeline and reflect\
+          \ on the integration process.\n\n**Steps:**\n\n1. **Document the Changes:**\n\
+          \    - Record the updates made to the CI/CD pipeline, including the integration\
+          \ of Snyk and any changes to the workflow files.\n    - Include details\
+          \ about the identified vulnerabilities and the steps taken to resolve them.\n\
+          2. **Reflect on the Benefits:**\n    - Consider the benefits of integrating\
+          \ Snyk into your CI/CD process, such as improved security posture and automated\
+          \ vulnerability management.\n    - Evaluate the ease of use and the effectiveness\
+          \ of Snyk in identifying and resolving security issues.\n\nBy following\
+          \ these detailed steps and focusing on leveraging Snyk for advanced security\
+          \ checks, you will gain hands-on experience in setting up and enhancing\
+          \ a secure CI/CD pipeline tailored to Alfred AI's Project Management application.\n"
+        type: text
+    id: END
+    type: message

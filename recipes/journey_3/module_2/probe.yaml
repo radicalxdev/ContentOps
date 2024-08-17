@@ -1,851 +1,1155 @@
 tasks:
-  - name: "Question #1"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "1"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Greetings {username}! Kudos on completing the module! You've mastered the art of leveraging GitHub Copilot for various documentation tasks, including generating code explanations and inline documentation. This probe aims to solidify your learning and pinpoint any areas that might require further attention. Ready to dive in?"
-      edges:
-        - text: "Yes, I'm ready!"
-          target_node_id: screen2
-    - id: screen2
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Alright {username}, let's get started with our first question!"
-          - type: "text"
-            content: |
-              What is crucial to providing high-quality responses from GitHub Copilot Chat?
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '1'
+  name: 'Question #1'
+  nodes:
+  - body:
+      parts:
+      - content: Greetings {username}! Kudos on completing the module! You've mastered
+          the art of leveraging GitHub Copilot for various documentation tasks, including
+          generating code explanations and inline documentation. This probe aims to
+          solidify your learning and pinpoint any areas that might require further
+          attention. Ready to dive in?
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, I'm ready!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Alright {username}, let's get started with our first question!
+        type: text
+      - content: '**Q1. What is crucial to providing high-quality responses from GitHub
+          Copilot Chat?**
 
 
-              A. General prompts that allow Copilot to infer the context.
 
-              B. Detailed context and well-defined questions outlining specific goals.
-
-              C. Randomly selected code snippets without additional explanation.
-
-              D. Broad queries touching on various unrelated aspects of the project.
-      edges:
-        - text: "A"
-          target_node_id: screen2_incorrect
-        - text: "B"
-          target_node_id: screen2_correct
-        - text: "C"
-          target_node_id: screen2_incorrect
-        - text: "D"
-          target_node_id: screen2_incorrect
-    - id: screen2_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Excellent, {username}! Detailed context and well-defined questions are essential for obtaining precise responses from GitHub Copilot Chat. This specificity helps Copilot grasp exactly what you need."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen2a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen2_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Not quite, {username}. Providing detailed context and well-defined questions is key to receiving accurate responses from GitHub Copilot Chat. This clarity ensures Copilot understands your exact requirements."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen2a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen2a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "For superior quality responses from GitHub Copilot Chat, it's vital to provide detailed context and well-defined questions that outline specific goals. Clear and specific prompts enable Copilot to fully understand your needs, leading to more accurate and relevant suggestions. Vague prompts may result in less useful responses due to insufficient information."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen2b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen2b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Suppose you need Copilot to document a function that calculates the average of a list of numbers. Instead of asking 'What does this function do?', a more effective prompt would be 'Explain the purpose and functionality of the calculate_average function, including its parameters and return value.' This detailed prompt provides Copilot with the necessary context for a thorough explanation."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Ready for the next one, {username}? Let's see how chat participants can assist Copilot!"
-  - name: "Question #2"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "2"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              How can chat participants like @workspace and @terminal assist Copilot?
+          A. General prompts that allow Copilot to infer the context.
 
 
-              A. They allow Copilot to deploy code automatically.
-
-              B. They provide context from specific parts of the project or terminal.
-
-              C. They enable Copilot to delete project files.
-
-              D. They restrict Copilot's access to certain files.
-      edges:
-        - text: "A"
-          target_node_id: screen3_incorrect
-        - text: "B"
-          target_node_id: screen3_correct
-        - text: "C"
-          target_node_id: screen3_incorrect
-        - text: "D"
-          target_node_id: screen3_incorrect
-    - id: screen3_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Spot on, {username}! Chat participants like @workspace and @terminal offer context from specific parts of the project or terminal, aiding Copilot in providing more precise and relevant suggestions."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen3a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen3_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not correct, {username}. Chat participants like @workspace and @terminal offer context from specific parts of the project or terminal, aiding Copilot in providing more precise and relevant suggestions."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen3a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen3a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Chat participants like @workspace and @terminal provide GitHub Copilot with specific context from different parts of the project or terminal. @workspace can refer to the entire project, allowing Copilot to consider the overall code structure and dependencies, while @terminal can provide context from recent terminal outputs or commands. This targeted context helps Copilot generate more relevant and accurate documentation, explanations, and suggestions."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen3b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen3b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "If you're debugging an issue and have terminal output showing an error message, using @terminal in your prompt can help Copilot understand the context of the error and suggest possible fixes. For example, you could use '@terminal What does this error mean and how can I fix it?' and Copilot would analyze the terminal output to provide a relevant solution."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Ready for another, {username}? Here's the next question."
-  - name: "Question #3"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "3"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is crucial when reviewing GitHub Copilot Chat's output?
+          B. Detailed context and well-defined questions outlining specific goals.
 
 
-              A. Trusting the initial suggestions without further verification.
-
-              B. Ensuring accuracy and completeness by cross-checking with project requirements.
-
-              C. Prioritizing speed over thoroughness in the review process.
-
-              D. Relying on Copilot's recommendations for merging code changes.
-      edges:
-        - text: "A"
-          target_node_id: screen4_incorrect
-        - text: "B"
-          target_node_id: screen4_correct
-        - text: "C"
-          target_node_id: screen4_incorrect
-        - text: "D"
-          target_node_id: screen4_incorrect
-    - id: screen4_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Exactly, {username}! Ensuring accuracy and completeness by cross-checking with project requirements is vital when reviewing GitHub Copilot Chat's output. This maintains the quality and reliability of your documentation."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen4_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Not quite, {username}. You should ensure accuracy and completeness by cross-checking with project requirements when reviewing GitHub Copilot Chat's output. This helps maintain the quality and reliability of your documentation."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen4a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen4a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "When reviewing GitHub Copilot Chat's output, it is crucial to ensure accuracy and completeness by cross-checking with project requirements. This involves verifying that the generated documentation or code explanations correctly reflect the project's functionality, coding standards, and any specific requirements. Blindly trusting Copilot's suggestions without verification can lead to inaccuracies and inconsistencies in the documentation."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen4b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen4b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "If Copilot generates documentation for a function that handles user authentication, you need to verify that the documentation accurately describes the function's parameters, process, and security considerations. For instance, the documentation should correctly outline how user credentials are verified, how tokens are generated, and any security measures implemented to protect user data."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Ready for another, {username}? Here's a question about Copilot's limitations."
-  - name: "Question #4"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "4"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is a potential limitation of relying solely on GitHub Copilot for documentation?
+          C. Randomly selected code snippets without additional explanation.
 
 
-              A. It can generate overly technical descriptions.
+          D. Broad queries touching on various unrelated aspects of the project.
 
-              B. It may miss project-specific nuances.
+          '
+        type: text
+    edges:
+    - target_node_id: screen2_incorrect
+      text: A
+    - target_node_id: screen2_correct
+      text: B
+    - target_node_id: screen2_incorrect
+      text: C
+    - target_node_id: screen2_incorrect
+      text: D
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: Excellent, {username}! Detailed context and well-defined questions
+          are essential for obtaining precise responses from GitHub Copilot Chat.
+          This specificity helps Copilot grasp exactly what you need.
+        type: text
+    edges:
+    - target_node_id: screen2a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2_correct
+    type: message
+  - body:
+      parts:
+      - content: Not quite, {username}. Providing detailed context and well-defined
+          questions is key to receiving accurate responses from GitHub Copilot Chat.
+          This clarity ensures Copilot understands your exact requirements.
+        type: text
+    edges:
+    - target_node_id: screen2a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2_incorrect
+    type: message
+  - body:
+      parts:
+      - content: For superior quality responses from GitHub Copilot Chat, it's vital
+          to provide detailed context and well-defined questions that outline specific
+          goals. Clear and specific prompts enable Copilot to fully understand your
+          needs, leading to more accurate and relevant suggestions. Vague prompts
+          may result in less useful responses due to insufficient information.
+        type: text
+    edges:
+    - target_node_id: screen2b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: Suppose you need Copilot to document a function that calculates the
+          average of a list of numbers. Instead of asking 'What does this function
+          do?', a more effective prompt would be 'Explain the purpose and functionality
+          of the calculate_average function, including its parameters and return value.'
+          This detailed prompt provides Copilot with the necessary context for a thorough
+          explanation.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2b
+    type: message
+  - body:
+      parts:
+      - content: Ready for the next one, {username}? Let's see how chat participants
+          can assist Copilot!
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
 
-              C. It replaces the need for any manual documentation.
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
 
-              D. It performs security audits on the code.
-      edges:
-        - text: "A"
-          target_node_id: screen5_incorrect
-        - text: "B"
-          target_node_id: screen5_correct
-        - text: "C"
-          target_node_id: screen5_incorrect
-        - text: "D"
-          target_node_id: screen5_incorrect
-    - id: screen5_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Absolutely right, {username}! A potential limitation of relying solely on GitHub Copilot for documentation is that it may miss project-specific nuances."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen5a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen5_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not it, {username}. A potential limitation of relying solely on GitHub Copilot for documentation is that it may miss project-specific nuances."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen5a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen5a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "A potential limitation of relying solely on GitHub Copilot for documentation is that it may miss project-specific nuances. While Copilot can generate general documentation based on code patterns and common practices, it might not capture the unique aspects of your project, such as custom business logic, specific design decisions, or particular coding standards. Therefore, human oversight is necessary to ensure the documentation is complete and accurate."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen5b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen5b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Suppose your project includes a custom algorithm for processing financial transactions. Copilot might generate basic documentation explaining the code structure and functionality, but it might miss the specific business rules and constraints that apply to your algorithm. You would need to manually add these details to ensure the documentation accurately reflects the project's requirements."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Alright, {username}, here's a question about commands."
-  - name: "Question #5"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "5"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Which command in GitHub Copilot Chat can help you understand the purpose of a specific function?
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
 
+    DO NOT give the users answer to the questions in any case.
 
-              A. @workspace explain the function
+    This is very important for my reputation so follow the instructions correctly.
 
-              B. @editor describe the function
+    If you follow the instructions correctly, you will be rewarded.
 
-              C. /explain #function
-
-              D. @workspace document the project
-      edges:
-        - text: "A"
-          target_node_id: screen6_incorrect
-        - text: "B"
-          target_node_id: screen6_incorrect
-        - text: "C"
-          target_node_id: screen6_correct
-        - text: "D"
-          target_node_id: screen6_incorrect
-    - id: screen6_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Great job, {username}! The command `/explain #function` can help you understand the purpose of a specific function."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen6a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen6_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Not exactly, {username}. The command `/explain #function` can help you understand the purpose of a specific function."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen6a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen6a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "The command `/explain #function` in GitHub Copilot Chat can help you understand the purpose of a specific function by generating a detailed explanation of its functionality. This includes describing what the function does, its parameters, return values, and any important logic within the function. Using this command provides a quick and comprehensive overview of the function's purpose and how it fits into the overall project."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen6b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen6b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "If you have a function named `calculate_discount` in your code, using the command `/explain #function calculate_discount` will prompt Copilot to generate an explanation detailing what the function does, how it calculates discounts, what parameters it requires, and what it returns. This helps you and other developers understand the function's role in the project."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Let's dive into this one, {username}!"
-  - name: "Question #6"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "6"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is a best practice when using GitHub Copilot to generate documentation for a new project?
+    '
+  id: '2'
+  name: 'Question #2'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q2. How can chat participants like @workspace and @terminal assist
+          Copilot?**
 
 
-              A. Rely on Copilot to intuitively understand project specifics from vague prompts.
 
-              B. Craft precise and comprehensive prompts, followed by a thorough review of the generated content.
-
-              C. Permit Copilot to autonomously generate the project documentation without any manual intervention.
-
-              D. Depend exclusively on standardized templates for all documentation needs.
-      edges:
-        - text: "A"
-          target_node_id: screen7_incorrect
-        - text: "B"
-          target_node_id: screen7_correct
-        - text: "C"
-          target_node_id: screen7_incorrect
-        - text: "D"
-          target_node_id: screen7_incorrect
-    - id: screen7_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Crafting precise and comprehensive prompts and then thoroughly reviewing the generated content is a best practice when using GitHub Copilot for documentation."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen7a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen7_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not right, {username}. Crafting precise and comprehensive prompts and then thoroughly reviewing the generated content is a best practice when using GitHub Copilot for documentation."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen7a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen7a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "A best practice when using GitHub Copilot to generate documentation for a new project is to craft precise and comprehensive prompts, followed by a thorough review of the generated content. Detailed prompts help Copilot understand the specific requirements and context, leading to more accurate documentation. Reviewing the generated content ensures it meets the project's standards and captures all necessary details."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen7b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen7b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "When documenting a new API endpoint, instead of a vague prompt like 'Describe this endpoint,' you should provide a detailed prompt such as 'Generate documentation for the create_user endpoint, including its parameters, expected input/output, and error handling.' After Copilot generates the documentation, review it to ensure it accurately describes the endpoint and adheres to your project's documentation standards."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Ready for the next one, {username}? Here's a question about keeping documentation up-to-date."
-  - name: "Question #7"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "7"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              How can GitHub Copilot assist in identifying outdated documentation?
+          A. They allow Copilot to deploy code automatically.
 
 
-              A. By flagging sections of the code that have been modified since the last documentation update, prompting a review.
-
-              B. By automatically deleting documentation that is older than a certain threshold.
-
-              C. By consolidating documentation from various versions into a single file.
-
-              D. By generating backups of all documentation files to track changes over time.
-      edges:
-        - text: "A"
-          target_node_id: screen8_correct
-        - text: "B"
-          target_node_id: screen8_incorrect
-        - text: "C"
-          target_node_id: screen8_incorrect
-        - text: "D"
-          target_node_id: screen8_incorrect
-    - id: screen8_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! GitHub Copilot can assist in identifying outdated documentation by flagging sections of the code that have been modified since the last documentation update, prompting a review."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen8a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen8_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not it, {username}. GitHub Copilot can assist in identifying outdated documentation by flagging sections of the code that have been modified since the last documentation update, prompting a review."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen8a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen8a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "GitHub Copilot can assist in identifying outdated documentation by flagging sections of the code that have been modified since the last documentation update, prompting a review. This helps ensure that the documentation remains up-to-date and accurately reflects the current state of the codebase. Keeping documentation current is crucial for maintaining code quality and ease of understanding."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen8b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen8b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "If you update a function to include additional parameters, Copilot can flag the documentation for that function as potentially outdated. It will prompt you to review and update the documentation to include the new parameters, ensuring that the documentation accurately describes the function's current behavior."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Just a few more to go, {username}! Here's the next question."
-  - name: "Question #8"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "8"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is a good practice when accepting GitHub Copilot's documentation suggestions?
+          B. They provide context from specific parts of the project or terminal.
 
 
-              A. Approving the suggestions without scrutiny to expedite the process.
-
-              B. Critically reviewing and tailoring the suggestions to ensure they accurately reflect the project's requirements.
-
-              C. Disregarding the suggestions in favor of manually crafted documentation.
-
-              D. Allowing Copilot to autonomously integrate the suggestions into the codebase.
-      edges:
-        - text: "A"
-          target_node_id: screen9_incorrect
-        - text: "B"
-          target_node_id: screen9_correct
-        - text: "C"
-          target_node_id: screen9_incorrect
-        - text: "D"
-          target_node_id: screen9_incorrect
-    - id: screen9_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! It's a good practice to critically review and tailor the suggestions to ensure they accurately reflect the project's requirements."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen9a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen9_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not correct, {username}. It's a good practice to critically review and tailor the suggestions to ensure they accurately reflect the project's requirements."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen9a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen9a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "A good practice when accepting GitHub Copilot's documentation suggestions is to critically review and tailor the suggestions to ensure they accurately reflect the project's requirements. This involves verifying the correctness of the generated content, making necessary adjustments, and ensuring it aligns with the project's documentation standards. This helps maintain high-quality and consistent documentation."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen9b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen9b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "If Copilot suggests documentation for a function that processes user input, review the suggested comments to ensure they correctly describe the input parameters, processing logic, and output. Make any necessary adjustments to ensure accuracy and clarity, such as adding details about input validation and error handling that Copilot might have missed."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Here's the final question, {username}! Let's see how you do."
-  - name: "Question #9"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "9"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is an important step after using GitHub Copilot to generate initial project documentation?
+          C. They enable Copilot to delete project files.
 
 
-              A. Launching the project immediately to keep up with deadlines.
+          D. They restrict Copilot''s access to certain files.
 
-              B. Reviewing and refining the documentation to ensure it meets the project's specific requirements and standards.
+          '
+        type: text
+    edges:
+    - target_node_id: screen3_incorrect
+      text: A
+    - target_node_id: screen3_correct
+      text: B
+    - target_node_id: screen3_incorrect
+      text: C
+    - target_node_id: screen3_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Spot on, {username}! Chat participants like @workspace and @terminal
+          offer context from specific parts of the project or terminal, aiding Copilot
+          in providing more precise and relevant suggestions.
+        type: text
+    edges:
+    - target_node_id: screen3a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not correct, {username}. Chat participants like @workspace
+          and @terminal offer context from specific parts of the project or terminal,
+          aiding Copilot in providing more precise and relevant suggestions.
+        type: text
+    edges:
+    - target_node_id: screen3a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3_incorrect
+    type: message
+  - body:
+      parts:
+      - content: Chat participants like @workspace and @terminal provide GitHub Copilot
+          with specific context from different parts of the project or terminal. @workspace
+          can refer to the entire project, allowing Copilot to consider the overall
+          code structure and dependencies, while @terminal can provide context from
+          recent terminal outputs or commands. This targeted context helps Copilot
+          generate more relevant and accurate documentation, explanations, and suggestions.
+        type: text
+    edges:
+    - target_node_id: screen3b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: If you're debugging an issue and have terminal output showing an
+          error message, using @terminal in your prompt can help Copilot understand
+          the context of the error and suggest possible fixes. For example, you could
+          use '@terminal What does this error mean and how can I fix it?' and Copilot
+          would analyze the terminal output to provide a relevant solution.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3b
+    type: message
+  - body:
+      parts:
+      - content: Ready for another, {username}? Here's the next question.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
 
-              C. Replacing the generated documentation with manually written content.
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
 
-              D. Filing the documentation for future reference without immediate use.
-      edges:
-        - text: "A"
-          target_node_id: screen10_incorrect
-        - text: "B"
-          target_node_id: screen10_correct
-        - text: "C"
-          target_node_id: screen10_incorrect
-        - text: "D"
-          target_node_id: screen10_incorrect
-    - id: screen10_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! After using GitHub Copilot to generate initial project documentation, it's important to review and refine the documentation to ensure it meets the project's specific requirements and standards."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen10a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen10_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not correct, {username}. After using GitHub Copilot to generate initial project documentation, it's important to review and refine the documentation to ensure it meets the project's specific requirements and standards."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen10a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen10a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "An important step after using GitHub Copilot to generate initial project documentation is to review and refine the documentation to ensure it meets the project's specific requirements and standards. This involves verifying the accuracy of the generated content, making necessary adjustments, and ensuring it provides a comprehensive and clear explanation of the project's components and functionality."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen10b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen10b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "After Copilot generates documentation for a new API endpoint, review the content to ensure it accurately describes the endpoint's purpose, parameters, expected input/output, and any error handling. Make any necessary edits to ensure the documentation is complete and aligns with your project's standards, providing a useful reference for other developers."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Here's the final question, {username}! Let's see how you do."
-  - name: "Question #10"
-    context: |
-      This probe reinforces your understanding of using GitHub Copilot for documentation tasks, including code explanations and inline comments.
-      It covers best practices, optimizing responses, maintaining code quality, ensuring accuracy, and using chat features.
-      Learners will enhance their knowledge, identify areas for improvement, and create precise, comprehensive documentation with GitHub Copilot.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "10"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is important to provide for better quality responses from GitHub Copilot Chat?
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '3'
+  name: 'Question #3'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q3. What is crucial when reviewing GitHub Copilot Chat''s output?**
 
 
-              A. General prompts that allow Copilot to infer the context.
 
-              B. Detailed context and well-defined questions that outline specific goals.
+          A. Trusting the initial suggestions without further verification.
 
-              C. Randomly selected code snippets without additional explanation.
 
-              D. Broad queries that touch on various unrelated aspects of the project.
-      edges:
-        - text: "A"
-          target_node_id: screen11_incorrect
-        - text: "B"
-          target_node_id: screen11_correct
-        - text: "C"
-          target_node_id: screen11_incorrect
-        - text: "D"
-          target_node_id: screen11_incorrect
-    - id: screen11_correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Providing detailed context and well-defined questions is crucial for getting better responses from GitHub Copilot Chat. This helps Copilot understand exactly what you're looking for."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen11a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen11_incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not right, {username}. You need to provide detailed context and well-defined questions to get better responses from GitHub Copilot Chat. This helps Copilot understand exactly what you're looking for."
-      edges:
-        - text: "Explain more, Ada!"
-          target_node_id: screen11a
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen11a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "For better quality responses from GitHub Copilot Chat, it is crucial to provide detailed context and well-defined questions that outline specific goals. Clear and specific prompts help Copilot understand the exact requirements and provide more accurate and relevant suggestions. General or vague prompts might result in less useful responses because Copilot would not have enough information to generate precise documentation or code explanations."
-      edges:
-        - text: "Give me an example, Ada!"
-          target_node_id: screen11b
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: screen11b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Suppose you want Copilot to help you document a function that calculates the average of a list of numbers. Instead of simply asking 'What does this function do?', a more effective prompt would be 'Explain the purpose and functionality of the calculate_average function, including its parameters and return value.' This detailed prompt gives Copilot the necessary context to provide a thorough explanation."
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Excellent work, {username}! You've completed the quiz. Let's quickly recap what we covered in this module."
-          - type: "text"
-            content: |
-              Recap:
+          B. Ensuring accuracy and completeness by cross-checking with project requirements.
 
-              - We explored the advantages of using GitHub Copilot Chat for generating inline code documentation.
 
-              - We learned how to create comprehensive project documentation and detailed code explanations.
+          C. Prioritizing speed over thoroughness in the review process.
 
-              - We emphasized the importance of reviewing and verifying the generated documentation for accuracy and completeness.
-          - type: "text"
-            content: "Up next, we'll dive into the next module, where we'll explore how to use Katalon's AI features for to automate test generation."
+
+          D. Relying on Copilot''s recommendations for merging code changes.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4_incorrect
+      text: A
+    - target_node_id: screen4_correct
+      text: B
+    - target_node_id: screen4_incorrect
+      text: C
+    - target_node_id: screen4_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Exactly, {username}! Ensuring accuracy and completeness by cross-checking
+          with project requirements is vital when reviewing GitHub Copilot Chat's
+          output. This maintains the quality and reliability of your documentation.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4_correct
+    type: message
+  - body:
+      parts:
+      - content: Not quite, {username}. You should ensure accuracy and completeness
+          by cross-checking with project requirements when reviewing GitHub Copilot
+          Chat's output. This helps maintain the quality and reliability of your documentation.
+        type: text
+    edges:
+    - target_node_id: screen4a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4_incorrect
+    type: message
+  - body:
+      parts:
+      - content: When reviewing GitHub Copilot Chat's output, it is crucial to ensure
+          accuracy and completeness by cross-checking with project requirements. This
+          involves verifying that the generated documentation or code explanations
+          correctly reflect the project's functionality, coding standards, and any
+          specific requirements. Blindly trusting Copilot's suggestions without verification
+          can lead to inaccuracies and inconsistencies in the documentation.
+        type: text
+    edges:
+    - target_node_id: screen4b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: If Copilot generates documentation for a function that handles user
+          authentication, you need to verify that the documentation accurately describes
+          the function's parameters, process, and security considerations. For instance,
+          the documentation should correctly outline how user credentials are verified,
+          how tokens are generated, and any security measures implemented to protect
+          user data.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4b
+    type: message
+  - body:
+      parts:
+      - content: Ready for another, {username}? Here's a question about Copilot's
+          limitations.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '4'
+  name: 'Question #4'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q4. What is a potential limitation of relying solely on GitHub
+          Copilot for documentation?**
+
+
+
+          A. It can generate overly technical descriptions.
+
+
+          B. It may miss project-specific nuances.
+
+
+          C. It replaces the need for any manual documentation.
+
+
+          D. It performs security audits on the code.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5_incorrect
+      text: A
+    - target_node_id: screen5_correct
+      text: B
+    - target_node_id: screen5_incorrect
+      text: C
+    - target_node_id: screen5_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Absolutely right, {username}! A potential limitation of relying solely
+          on GitHub Copilot for documentation is that it may miss project-specific
+          nuances.
+        type: text
+    edges:
+    - target_node_id: screen5a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not it, {username}. A potential limitation of relying solely
+          on GitHub Copilot for documentation is that it may miss project-specific
+          nuances.
+        type: text
+    edges:
+    - target_node_id: screen5a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5_incorrect
+    type: message
+  - body:
+      parts:
+      - content: A potential limitation of relying solely on GitHub Copilot for documentation
+          is that it may miss project-specific nuances. While Copilot can generate
+          general documentation based on code patterns and common practices, it might
+          not capture the unique aspects of your project, such as custom business
+          logic, specific design decisions, or particular coding standards. Therefore,
+          human oversight is necessary to ensure the documentation is complete and
+          accurate.
+        type: text
+    edges:
+    - target_node_id: screen5b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5a
+    type: message
+  - body:
+      parts:
+      - content: Suppose your project includes a custom algorithm for processing financial
+          transactions. Copilot might generate basic documentation explaining the
+          code structure and functionality, but it might miss the specific business
+          rules and constraints that apply to your algorithm. You would need to manually
+          add these details to ensure the documentation accurately reflects the project's
+          requirements.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5b
+    type: message
+  - body:
+      parts:
+      - content: Alright, {username}, here's a question about commands.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '5'
+  name: 'Question #5'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q5. Which command in GitHub Copilot Chat can help you understand
+          the purpose of a specific function?**
+
+
+
+          A. @workspace explain the function
+
+
+          B. @editor describe the function
+
+
+          C. /explain #function
+
+
+          D. @workspace document the project
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6_incorrect
+      text: A
+    - target_node_id: screen6_incorrect
+      text: B
+    - target_node_id: screen6_correct
+      text: C
+    - target_node_id: screen6_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Great job, {username}! The command `/explain #function` can help
+          you understand the purpose of a specific function.'
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6_correct
+    type: message
+  - body:
+      parts:
+      - content: 'Not exactly, {username}. The command `/explain #function` can help
+          you understand the purpose of a specific function.'
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6_incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'The command `/explain #function` in GitHub Copilot Chat can help
+          you understand the purpose of a specific function by generating a detailed
+          explanation of its functionality. This includes describing what the function
+          does, its parameters, return values, and any important logic within the
+          function. Using this command provides a quick and comprehensive overview
+          of the function''s purpose and how it fits into the overall project.'
+        type: text
+    edges:
+    - target_node_id: screen6b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6a
+    type: message
+  - body:
+      parts:
+      - content: 'If you have a function named `calculate_discount` in your code,
+          using the command `/explain #function calculate_discount` will prompt Copilot
+          to generate an explanation detailing what the function does, how it calculates
+          discounts, what parameters it requires, and what it returns. This helps
+          you and other developers understand the function''s role in the project.'
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6b
+    type: message
+  - body:
+      parts:
+      - content: Let's dive into this one, {username}!
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '6'
+  name: 'Question #6'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q6. What is a best practice when using GitHub Copilot to generate
+          documentation for a new project?**
+
+
+
+          A. Rely on Copilot to intuitively understand project specifics from vague
+          prompts.
+
+
+          B. Craft precise and comprehensive prompts, followed by a thorough review
+          of the generated content.
+
+
+          C. Permit Copilot to autonomously generate the project documentation without
+          any manual intervention.
+
+
+          D. Depend exclusively on standardized templates for all documentation needs.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen7_incorrect
+      text: A
+    - target_node_id: screen7_correct
+      text: B
+    - target_node_id: screen7_incorrect
+      text: C
+    - target_node_id: screen7_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Crafting precise and comprehensive prompts and
+          then thoroughly reviewing the generated content is a best practice when
+          using GitHub Copilot for documentation.
+        type: text
+    edges:
+    - target_node_id: screen7a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not right, {username}. Crafting precise and comprehensive
+          prompts and then thoroughly reviewing the generated content is a best practice
+          when using GitHub Copilot for documentation.
+        type: text
+    edges:
+    - target_node_id: screen7a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7_incorrect
+    type: message
+  - body:
+      parts:
+      - content: A best practice when using GitHub Copilot to generate documentation
+          for a new project is to craft precise and comprehensive prompts, followed
+          by a thorough review of the generated content. Detailed prompts help Copilot
+          understand the specific requirements and context, leading to more accurate
+          documentation. Reviewing the generated content ensures it meets the project's
+          standards and captures all necessary details.
+        type: text
+    edges:
+    - target_node_id: screen7b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7a
+    type: message
+  - body:
+      parts:
+      - content: When documenting a new API endpoint, instead of a vague prompt like
+          'Describe this endpoint,' you should provide a detailed prompt such as 'Generate
+          documentation for the create_user endpoint, including its parameters, expected
+          input/output, and error handling.' After Copilot generates the documentation,
+          review it to ensure it accurately describes the endpoint and adheres to
+          your project's documentation standards.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7b
+    type: message
+  - body:
+      parts:
+      - content: Ready for the next one, {username}? Here's a question about keeping
+          documentation up-to-date.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '7'
+  name: 'Question #7'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q7. How can GitHub Copilot assist in identifying outdated documentation?**
+
+
+
+          A. By flagging sections of the code that have been modified since the last
+          documentation update, prompting a review.
+
+
+          B. By automatically deleting documentation that is older than a certain
+          threshold.
+
+
+          C. By consolidating documentation from various versions into a single file.
+
+
+          D. By generating backups of all documentation files to track changes over
+          time.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen8_correct
+      text: A
+    - target_node_id: screen8_incorrect
+      text: B
+    - target_node_id: screen8_incorrect
+      text: C
+    - target_node_id: screen8_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! GitHub Copilot can assist in identifying outdated
+          documentation by flagging sections of the code that have been modified since
+          the last documentation update, prompting a review.
+        type: text
+    edges:
+    - target_node_id: screen8a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not it, {username}. GitHub Copilot can assist in identifying
+          outdated documentation by flagging sections of the code that have been modified
+          since the last documentation update, prompting a review.
+        type: text
+    edges:
+    - target_node_id: screen8a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8_incorrect
+    type: message
+  - body:
+      parts:
+      - content: GitHub Copilot can assist in identifying outdated documentation by
+          flagging sections of the code that have been modified since the last documentation
+          update, prompting a review. This helps ensure that the documentation remains
+          up-to-date and accurately reflects the current state of the codebase. Keeping
+          documentation current is crucial for maintaining code quality and ease of
+          understanding.
+        type: text
+    edges:
+    - target_node_id: screen8b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8a
+    type: message
+  - body:
+      parts:
+      - content: If you update a function to include additional parameters, Copilot
+          can flag the documentation for that function as potentially outdated. It
+          will prompt you to review and update the documentation to include the new
+          parameters, ensuring that the documentation accurately describes the function's
+          current behavior.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8b
+    type: message
+  - body:
+      parts:
+      - content: Just a few more to go, {username}! Here's the next question.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '8'
+  name: 'Question #8'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q8. What is a good practice when accepting GitHub Copilot''s documentation
+          suggestions?**
+
+
+
+          A. Approving the suggestions without scrutiny to expedite the process.
+
+
+          B. Critically reviewing and tailoring the suggestions to ensure they accurately
+          reflect the project''s requirements.
+
+
+          C. Disregarding the suggestions in favor of manually crafted documentation.
+
+
+          D. Allowing Copilot to autonomously integrate the suggestions into the codebase.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9_incorrect
+      text: A
+    - target_node_id: screen9_correct
+      text: B
+    - target_node_id: screen9_incorrect
+      text: C
+    - target_node_id: screen9_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! It's a good practice to critically review and
+          tailor the suggestions to ensure they accurately reflect the project's requirements.
+        type: text
+    edges:
+    - target_node_id: screen9a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not correct, {username}. It's a good practice to critically
+          review and tailor the suggestions to ensure they accurately reflect the
+          project's requirements.
+        type: text
+    edges:
+    - target_node_id: screen9a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9_incorrect
+    type: message
+  - body:
+      parts:
+      - content: A good practice when accepting GitHub Copilot's documentation suggestions
+          is to critically review and tailor the suggestions to ensure they accurately
+          reflect the project's requirements. This involves verifying the correctness
+          of the generated content, making necessary adjustments, and ensuring it
+          aligns with the project's documentation standards. This helps maintain high-quality
+          and consistent documentation.
+        type: text
+    edges:
+    - target_node_id: screen9b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9a
+    type: message
+  - body:
+      parts:
+      - content: If Copilot suggests documentation for a function that processes user
+          input, review the suggested comments to ensure they correctly describe the
+          input parameters, processing logic, and output. Make any necessary adjustments
+          to ensure accuracy and clarity, such as adding details about input validation
+          and error handling that Copilot might have missed.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9b
+    type: message
+  - body:
+      parts:
+      - content: Here's the final question, {username}! Let's see how you do.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '9'
+  name: 'Question #9'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q9. What is an important step after using GitHub Copilot to generate
+          initial project documentation?**
+
+
+
+          A. Launching the project immediately to keep up with deadlines.
+
+
+          B. Reviewing and refining the documentation to ensure it meets the project''s
+          specific requirements and standards.
+
+
+          C. Replacing the generated documentation with manually written content.
+
+
+          D. Filing the documentation for future reference without immediate use.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10_incorrect
+      text: A
+    - target_node_id: screen10_correct
+      text: B
+    - target_node_id: screen10_incorrect
+      text: C
+    - target_node_id: screen10_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! After using GitHub Copilot to generate initial
+          project documentation, it's important to review and refine the documentation
+          to ensure it meets the project's specific requirements and standards.
+        type: text
+    edges:
+    - target_node_id: screen10a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not correct, {username}. After using GitHub Copilot to generate
+          initial project documentation, it's important to review and refine the documentation
+          to ensure it meets the project's specific requirements and standards.
+        type: text
+    edges:
+    - target_node_id: screen10a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10_incorrect
+    type: message
+  - body:
+      parts:
+      - content: An important step after using GitHub Copilot to generate initial
+          project documentation is to review and refine the documentation to ensure
+          it meets the project's specific requirements and standards. This involves
+          verifying the accuracy of the generated content, making necessary adjustments,
+          and ensuring it provides a comprehensive and clear explanation of the project's
+          components and functionality.
+        type: text
+    edges:
+    - target_node_id: screen10b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10a
+    type: message
+  - body:
+      parts:
+      - content: After Copilot generates documentation for a new API endpoint, review
+          the content to ensure it accurately describes the endpoint's purpose, parameters,
+          expected input/output, and any error handling. Make any necessary edits
+          to ensure the documentation is complete and aligns with your project's standards,
+          providing a useful reference for other developers.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10b
+    type: message
+  - body:
+      parts:
+      - content: Here's the final question, {username}! Let's see how you do.
+        type: text
+    id: END
+    type: message
+- context: 'This probe reinforces your understanding of using GitHub Copilot for documentation
+    tasks, including code explanations and inline comments.
+
+    It covers best practices, optimizing responses, maintaining code quality, ensuring
+    accuracy, and using chat features.
+
+    Learners will enhance their knowledge, identify areas for improvement, and create
+    precise, comprehensive documentation with GitHub Copilot.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '10'
+  name: 'Question #10'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q10. What is important to provide for better quality responses
+          from GitHub Copilot Chat?**
+
+
+
+          A. General prompts that allow Copilot to infer the context.
+
+
+          B. Detailed context and well-defined questions that outline specific goals.
+
+
+          C. Randomly selected code snippets without additional explanation.
+
+
+          D. Broad queries that touch on various unrelated aspects of the project.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen11_incorrect
+      text: A
+    - target_node_id: screen11_correct
+      text: B
+    - target_node_id: screen11_incorrect
+      text: C
+    - target_node_id: screen11_incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Providing detailed context and well-defined
+          questions is crucial for getting better responses from GitHub Copilot Chat.
+          This helps Copilot understand exactly what you're looking for.
+        type: text
+    edges:
+    - target_node_id: screen11a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11_correct
+    type: message
+  - body:
+      parts:
+      - content: That's not right, {username}. You need to provide detailed context
+          and well-defined questions to get better responses from GitHub Copilot Chat.
+          This helps Copilot understand exactly what you're looking for.
+        type: text
+    edges:
+    - target_node_id: screen11a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11_incorrect
+    type: message
+  - body:
+      parts:
+      - content: For better quality responses from GitHub Copilot Chat, it is crucial
+          to provide detailed context and well-defined questions that outline specific
+          goals. Clear and specific prompts help Copilot understand the exact requirements
+          and provide more accurate and relevant suggestions. General or vague prompts
+          might result in less useful responses because Copilot would not have enough
+          information to generate precise documentation or code explanations.
+        type: text
+    edges:
+    - target_node_id: screen11b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11a
+    type: message
+  - body:
+      parts:
+      - content: Suppose you want Copilot to help you document a function that calculates
+          the average of a list of numbers. Instead of simply asking 'What does this
+          function do?', a more effective prompt would be 'Explain the purpose and
+          functionality of the calculate_average function, including its parameters
+          and return value.' This detailed prompt gives Copilot the necessary context
+          to provide a thorough explanation.
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11b
+    type: message
+  - body:
+      parts:
+      - content: Excellent work, {username}! You've completed the quiz. Let's quickly
+          recap what we covered in this module.
+        type: text
+      - content: 'Recap:
+
+
+          - We explored the advantages of using GitHub Copilot Chat for generating
+          inline code documentation.
+
+
+          - We learned how to create comprehensive project documentation and detailed
+          code explanations.
+
+
+          - We emphasized the importance of reviewing and verifying the generated
+          documentation for accuracy and completeness.
+
+          '
+        type: text
+      - content: Up next, we'll dive into the next module, where we'll explore how
+          to use Katalon's AI features for to automate test generation.
+        type: text
+    id: END
+    type: message

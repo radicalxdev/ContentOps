@@ -1,294 +1,443 @@
 tasks:
-  - name: "Mission Introduction and Understanding Visual Documentation"
-    context: "In this initial task, the learner will be introduced to the mission \"Generating Code Explanations Using GitHub Copilot Chat.\" The goal is to understand the importance of visual documentation, such as diagrams and flowcharts, in enhancing clarity, communication, problem-solving, and efficiency in software development. The learner will see how visual documentation helps team members understand complex systems, enhances cross-team communication, and assists in identifying and resolving issues."
-    id: "1"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: image
-            content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-          - type: text
-            content: |
-              Hello, {username}! Imagine you're working on a new ticket assignment system in AI TaskMaster, which involves many interconnected components. Before starting development, you need to collaborate with your internal team to brainstorm how to develop the feature for maximum robustness and functionality. Ready to use Eraser to expedite the process?
-      edges:
-        - text: "Ready to start!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Visual documentation, such as diagrams and flowcharts, offers several benefits:
-              
-              1. **Clarity**: Helps team members understand complex systems easily.
-              2. **Communication**: Enhances communication across teams by providing a clear visual representation.
-              3. **Problem-Solving**: Assists in identifying and resolving issues by visualizing workflows and dependencies.
-              4. **Efficiency**: Streamlines the development process by providing a quick reference.
-  - name: "Creating an Account and Setting Up the Workspace"
-    context: "This task focuses on helping the learner create an account on Eraser and navigate to the workspace dashboard. The learner will follow step-by-step instructions to sign up, choose a team name, and explore the dashboard. This setup is crucial for understanding how Eraser works and preparing for the subsequent steps of creating and managing files for documentation."
-    id: "2"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Begin by creating an account on Eraser. Follow these steps:
-              
-              1. Visit the Eraser sign-up page: [Eraser Sign-Up](https://app.eraser.io/auth/sign-up)
-              2. Sign up using your Google or Microsoft account.
-              3. Choose a name for your team.
-              4. On the teammate invitation page, click "Continue."
-              5. Select your preferences and click "Get Started."
-              
-              You will then be taken to your dashboard.
-      edges:
-        - text: "Created an account"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Navigate to your workspace dashboard. Here, you can create new files or explore existing ones to understand how Eraser works."
-  - name: "Creating and Opening a New File"
-    context: "In this task, the learner will create a new file from the workspace dashboard and open it. The learner will receive detailed instructions on how to create the file and troubleshoot any issues that may arise during this process. This step is essential for preparing the workspace where the learner will generate and manage documentation using AI tools."
-    id: "3"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Click the 'New File' button in the sidebar to create a new file. Open the newly created file."
-      edges:
-        - text: "Created and opened the new file"
-          target_node_id: END
-        - text: "Need help with creating a new file"
-          target_node_id: screen5a
-    - id: screen5a
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Having trouble creating a new file? Follow these steps:
-              
-              1. Click on the "New File" button in the sidebar.
-              2. Name your file appropriately.
-              3. Open the newly created file by double-clicking on it.
-      edges:
-        - text: "File created and opened"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "In the top toolbar, select the 'Both' option. This will split the dashboard, displaying the document on the left side and the diagramming canvas on the right."
-  - name: "Generating and Using Planning Documents"
-    context: "This task involves guiding the learner to split the dashboard to display the document and diagramming canvas, generate an outline using AI, and understand the purpose of planning documents. The learner will enter a provided prompt to generate a planning document that outlines the objectives and components of a new feature. This task helps the learner create structured and high-level documentation to communicate the project roadmap to the team effectively."
-    id: "4"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "On the document side, click the 'Generate Outline' button. This will open the AI document panel."
-      edges:
-        - text: "Opened the AI document panel"
-          target_node_id: screen8
-    - id: screen8
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              A "Planning" document outlines the objectives, components, and overall approach for a project. It serves as a roadmap to ensure all team members understand the goals and steps needed to achieve them. Planning documents are essential for organizing tasks, assigning responsibilities, and setting timelines.
-      edges:
-        - text: "Understood planning documents"
-          target_node_id: screen9
-    - id: screen9
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              On the right side, choose "Planning" and enter the following prompt:
-              
-              ```
-              Objective:
-              
-              The goal is to develop a robust and functional ticket assignment system for AI TaskMaster, ensuring seamless collaboration and ideation within the internal team before presenting the final approach to stakeholders.
-              
-              Components of the System:
-              
-              1. Automated Ticket Routing:
-              - Uses AI to categorize and assign tickets based on predefined criteria such as priority, complexity, and team expertise.
-              
-              2. Dynamic Workload Balancing:
-              - Continuously monitors team members' workloads and adjusts ticket assignments to maintain balance and efficiency.
-              
-              3. Skill Matching:
-              - Analyzes the skills required for each ticket and matches them with the team's expertise, ensuring tickets are handled by the most qualified individuals.
-              
-              4. Real-Time Analytics:
-              - Provides insights into ticket trends, response times, and resolution rates to optimize performance and resource allocation.
-              
-              5. Collaboration Tools:
-              - Integrated chat and discussion forums for team members to collaborate on complex tickets, share knowledge, and provide peer support.
-              
-              ```
-      edges:
-        - text: "Entered the prompt"
-          target_node_id: screen10
-    - id: screen10
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Document the technology stack used to develop the features. In the Technology Stack field, list: 'Python', 'Next.js', and 'MySQL'."
-      edges:
-        - text: "Specified the technology stack"
-          target_node_id: screen11
-    - id: screen11
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Click on the "Next" button at the end. Respond to any follow-up questions from the AI as they appear. Remember, the follow-up will differ with each AI prompt, and its accuracy will depend on how effective the prompt is.
-              
-              If the AI asks follow-up questions, respond by explaining the high-level purpose of the document, such as:
-              
-              - This document is meant to outline the key features and architecture of the ticket assignment system.
-              - The goal is to provide a clear roadmap for development and ensure all team members understand their roles.
-      edges:
-        - text: "Follow-up questions answered"
-          target_node_id: screen12
-    - id: screen12
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Once the outline is generated, click "Use Outline" to create a planning document. Notice how the AI-generated document is more abstract and high-level compared to the planning document, making it ideal for cross-functional teams and technical teams to stay informed about development and changing requirements. This helps improve communication and ensures everyone is on the same page.
-      edges:
-        - text: "Used the outline"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Combine written and visual elements using the Canvas feature in Eraser. Go to the 'Both' tab and click on 'AI Diagram' on the right side. Copy the entire document generated by the AI into the Diagram Generation Prompt."
-  - name: "Creating and Reviewing Workflow Diagrams"
-    context: "In this task, the learner will combine written and visual elements by creating a workflow diagram in Eraser. The learner will generate a diagram using the AI tool, ensuring all components are accurately represented. They will review the generated diagram to ensure it aligns with the planning document and includes any necessary components, such as assigning multiple people to one ticket. This task emphasizes the importance of visual documentation in conveying complex workflows and dependencies."
-    id: "5"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Click 'Generate' to automatically create the diagram. The AI will generate a diagram with the relevant tools and technologies. Notice how using generative AI for creating visual documentation helps streamline the process and ensures all components are accurately represented."
-      edges:
-        - text: "Generated the diagram"
-          target_node_id: screen15
-    - id: screen15
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Review the generated diagram to ensure it accurately represents the planning document and the flow of technical components."
-      edges:
-        - text: "Reviewed the diagram"
-          target_node_id: screen16
-        - text: "Need help with reviewing the diagram"
-          target_node_id: screen15a
-    - id: screen15a
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Not sure how to review the updated diagram? Look for the following:
-              
-              1. Ensure all components are represented accurately.
-              2. Check that the new component for assigning multiple people to one ticket is added correctly.
-              3. Make any necessary revisions for accuracy.
-      edges:
-        - text: "Diagram reviewed"
-          target_node_id: screen16
-    - id: screen16
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              As software development requirements constantly change, continuous refinement is crucial. Quickly make edits to visual components by going to Canvas, clicking on the diagram, and selecting Open Editor. Enter the following in the Diagram Edit Prompt field:
-              
-              ```
-              Add a new component for assigning multiple people to one ticket.
-              
-              ```
-      edges:
-        - text: "Made the edits"
-          target_node_id: screen17
-        - text: "Need help with editing the diagram"
-          target_node_id: screen16a
-    - id: screen16a
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Need help with editing the diagram? Follow these steps:
-              
-              1. Go to Canvas and click on the diagram.
-              2. Select Open Editor.
-              3. Enter the prompt to add a new component.
-      edges:
-        - text: "Diagram edited"
-          target_node_id: screen17
-    - id: screen17
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Click Generate Edits. This will automatically edit the existing diagram and add the new component where applicable."
-      edges:
-        - text: "Generated the edits"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: text
-            content: "Review the updated diagram to ensure that the new component for assigning multiple people to one ticket has been correctly added."
-  - name: "Understanding the Importance of Documentation"
-    context: "In this final task, the learner will understand the critical role of documentation in software engineering. Quality documentation facilitates understanding among technical team members, cross-functional teams, and internal stakeholders. It aids in managing frequently changing requirements and ensures all team members are aligned. By reflecting on these points, the learner will appreciate the value of thorough and up-to-date documentation in the software development lifecycle."
-    id: "6"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Documentation is crucial in software engineering. Quality documentation facilitates understanding of the software development processes for technical team members, cross-functional teams, and internal stakeholders. It also aids in managing frequently changing requirements, a common occurrence in the software development lifecycle.
-      edges:
-        - text: "Understood the importance"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: text
-            content: |
-              Now that you understand how to use AI to expedite the planning process with internal teams, the next step is to document the process for internal stakeholders and cross-functional teams. This documentation helps keep everyone updated with changing requirements and components. Ready to proceed to more technical areas, such as architectural diagrams and data flows?
+- context: In this initial task, the learner will be introduced to the mission "Generating
+    Code Explanations Using GitHub Copilot Chat." The goal is to understand the importance
+    of visual documentation, such as diagrams and flowcharts, in enhancing clarity,
+    communication, problem-solving, and efficiency in software development. The learner
+    will see how visual documentation helps team members understand complex systems,
+    enhances cross-team communication, and assists in identifying and resolving issues.
+  id: '1'
+  name: Mission Introduction and Understanding Visual Documentation
+  nodes:
+  - body:
+      parts:
+      - content: 'Hello, {username}! Imagine you''re working on a new ticket assignment
+          system in AI TaskMaster, which involves many interconnected components.
+          Before starting development, you need to collaborate with your internal
+          team to brainstorm how to develop the feature for maximum robustness and
+          functionality. Ready to use Eraser to expedite the process?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Ready to start!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Visual documentation, such as diagrams and flowcharts, offers several
+          benefits:
+
+
+          1. **Clarity**: Helps team members understand complex systems easily.
+
+          2. **Communication**: Enhances communication across teams by providing a
+          clear visual representation.
+
+          3. **Problem-Solving**: Assists in identifying and resolving issues by visualizing
+          workflows and dependencies.
+
+          4. **Efficiency**: Streamlines the development process by providing a quick
+          reference.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: This task focuses on helping the learner create an account on Eraser and
+    navigate to the workspace dashboard. The learner will follow step-by-step instructions
+    to sign up, choose a team name, and explore the dashboard. This setup is crucial
+    for understanding how Eraser works and preparing for the subsequent steps of creating
+    and managing files for documentation.
+  id: '2'
+  name: Creating an Account and Setting Up the Workspace
+  nodes:
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_1.png?alt=media&token=3cdb885c-6269-4ff8-a213-3f94d96b929a
+        type: image
+      - content: 'Begin by creating an account on Eraser. Follow these steps:
+
+
+          1. Visit the Eraser sign-up page: [Eraser Sign-Up](https://app.eraser.io/auth/sign-up)
+
+          2. Sign up using your Google or Microsoft account.
+
+          3. Choose a name for your team.
+
+          4. On the teammate invitation page, click "Continue."
+
+          5. Select your preferences and click "Get Started."
+
+
+          You will then be taken to your dashboard.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Created an account
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Navigate to your workspace dashboard. Here, you can create new files
+          or explore existing ones to understand how Eraser works.
+        type: text
+    id: END
+    type: message
+- context: In this task, the learner will create a new file from the workspace dashboard
+    and open it. The learner will receive detailed instructions on how to create the
+    file and troubleshoot any issues that may arise during this process. This step
+    is essential for preparing the workspace where the learner will generate and manage
+    documentation using AI tools.
+  id: '3'
+  name: Creating and Opening a New File
+  nodes:
+  - body:
+      parts:
+      - content: Click the 'New File' button in the sidebar to create a new file.
+          Open the newly created file.
+        type: text
+    edges:
+    - target_node_id: END
+      text: Created and opened the new file
+    - target_node_id: screen5a
+      text: Need help with creating a new file
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Having trouble creating a new file? Follow these steps:
+
+
+          1. Click on the "New File" button in the sidebar.
+
+          2. Name your file appropriately.
+
+          3. Open the newly created file by double-clicking on it.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: File created and opened
+    id: screen5a
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_2.png?alt=media&token=7ed49ff4-90f0-4516-8383-e692366b27bf
+        type: image
+      - content: In the top toolbar, select the 'Both' option. This will split the
+          dashboard, displaying the document on the left side and the diagramming
+          canvas on the right.
+        type: text
+    id: END
+    type: message
+- context: This task involves guiding the learner to split the dashboard to display
+    the document and diagramming canvas, generate an outline using AI, and understand
+    the purpose of planning documents. The learner will enter a provided prompt to
+    generate a planning document that outlines the objectives and components of a
+    new feature. This task helps the learner create structured and high-level documentation
+    to communicate the project roadmap to the team effectively.
+  id: '4'
+  name: Generating and Using Planning Documents
+  nodes:
+  - body:
+      parts:
+      - content: On the document side, click the 'Generate Outline' button. This will
+          open the AI document panel.
+        type: text
+    edges:
+    - target_node_id: screen8
+      text: Opened the AI document panel
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'A "Planning" document outlines the objectives, components, and overall
+          approach for a project. It serves as a roadmap to ensure all team members
+          understand the goals and steps needed to achieve them. Planning documents
+          are essential for organizing tasks, assigning responsibilities, and setting
+          timelines.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9
+      text: Understood planning documents
+    id: screen8
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_3.png?alt=media&token=203c586b-b8dc-4ac4-b9c9-9f3d24a0948c
+        type: image
+      - content: 'On the right side, choose "Planning" and enter the following prompt:
+
+
+          ```
+
+          Objective:
+
+
+          The goal is to develop a robust and functional ticket assignment system
+          for AI TaskMaster, ensuring seamless collaboration and ideation within the
+          internal team before presenting the final approach to stakeholders.
+
+
+          Components of the System:
+
+
+          1. Automated Ticket Routing:
+
+          - Uses AI to categorize and assign tickets based on predefined criteria
+          such as priority, complexity, and team expertise.
+
+
+          2. Dynamic Workload Balancing:
+
+          - Continuously monitors team members'' workloads and adjusts ticket assignments
+          to maintain balance and efficiency.
+
+
+          3. Skill Matching:
+
+          - Analyzes the skills required for each ticket and matches them with the
+          team''s expertise, ensuring tickets are handled by the most qualified individuals.
+
+
+          4. Real-Time Analytics:
+
+          - Provides insights into ticket trends, response times, and resolution rates
+          to optimize performance and resource allocation.
+
+
+          5. Collaboration Tools:
+
+          - Integrated chat and discussion forums for team members to collaborate
+          on complex tickets, share knowledge, and provide peer support.
+
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10
+      text: Entered the prompt
+    id: screen9
+    type: message
+  - body:
+      parts:
+      - content: 'Document the technology stack used to develop the features. In the
+          Technology Stack field, list: ''Python'', ''Next.js'', and ''MySQL''.'
+        type: text
+    edges:
+    - target_node_id: screen11
+      text: Specified the technology stack
+    id: screen10
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_4.png?alt=media&token=617f30fb-4dad-4d71-a9cd-71aa661e0a38
+        type: image
+      - content: 'Click on the "Next" button at the end. Respond to any follow-up
+          questions from the AI as they appear. Remember, the follow-up will differ
+          with each AI prompt, and its accuracy will depend on how effective the prompt
+          is.
+
+
+          If the AI asks follow-up questions, respond by explaining the high-level
+          purpose of the document, such as:
+
+
+          - This document is meant to outline the key features and architecture of
+          the ticket assignment system.
+
+          - The goal is to provide a clear roadmap for development and ensure all
+          team members understand their roles.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen12
+      text: Follow-up questions answered
+    id: screen11
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_5.png?alt=media&token=f73c3077-37b2-40ff-aad2-7c6a17166a6b
+        type: image
+      - content: 'Once the outline is generated, click "Use Outline" to create a planning
+          document. Notice how the AI-generated document is more abstract and high-level
+          compared to the planning document, making it ideal for cross-functional
+          teams and technical teams to stay informed about development and changing
+          requirements. This helps improve communication and ensures everyone is on
+          the same page.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Used the outline
+    id: screen12
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_6.png?alt=media&token=b9da4aaf-4759-43aa-aea6-2d2a8c2830f6
+        type: image
+      - content: Combine written and visual elements using the Canvas feature in Eraser.
+          Go to the 'Both' tab and click on 'AI Diagram' on the right side. Copy the
+          entire document generated by the AI into the Diagram Generation Prompt.
+        type: text
+    id: END
+    type: message
+- context: In this task, the learner will combine written and visual elements by creating
+    a workflow diagram in Eraser. The learner will generate a diagram using the AI
+    tool, ensuring all components are accurately represented. They will review the
+    generated diagram to ensure it aligns with the planning document and includes
+    any necessary components, such as assigning multiple people to one ticket. This
+    task emphasizes the importance of visual documentation in conveying complex workflows
+    and dependencies.
+  id: '5'
+  name: Creating and Reviewing Workflow Diagrams
+  nodes:
+  - body:
+      parts:
+      - content: Click 'Generate' to automatically create the diagram. The AI will
+          generate a diagram with the relevant tools and technologies. Notice how
+          using generative AI for creating visual documentation helps streamline the
+          process and ensures all components are accurately represented.
+        type: text
+    edges:
+    - target_node_id: screen15
+      text: Generated the diagram
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%207%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_7.png?alt=media&token=5f2fec34-197f-4f0f-b8ed-37d02509748d
+        type: image
+      - content: Review the generated diagram to ensure it accurately represents the
+          planning document and the flow of technical components.
+        type: text
+    edges:
+    - target_node_id: screen16
+      text: Reviewed the diagram
+    - target_node_id: screen15a
+      text: Need help with reviewing the diagram
+    id: screen15
+    type: message
+  - body:
+      parts:
+      - content: 'Not sure how to review the updated diagram? Look for the following:
+
+
+          1. Ensure all components are represented accurately.
+
+          2. Check that the new component for assigning multiple people to one ticket
+          is added correctly.
+
+          3. Make any necessary revisions for accuracy.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen16
+      text: Diagram reviewed
+    id: screen15a
+    type: message
+  - body:
+      parts:
+      - content: 'As software development requirements constantly change, continuous
+          refinement is crucial. Quickly make edits to visual components by going
+          to Canvas, clicking on the diagram, and selecting Open Editor. Enter the
+          following in the Diagram Edit Prompt field:
+
+
+          ```
+
+          Add a new component for assigning multiple people to one ticket.
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen17
+      text: Made the edits
+    - target_node_id: screen16a
+      text: Need help with editing the diagram
+    id: screen16
+    type: message
+  - body:
+      parts:
+      - content: 'Need help with editing the diagram? Follow these steps:
+
+
+          1. Go to Canvas and click on the diagram.
+
+          2. Select Open Editor.
+
+          3. Enter the prompt to add a new component.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen17
+      text: Diagram edited
+    id: screen16a
+    type: message
+  - body:
+      parts:
+      - content: Click Generate Edits. This will automatically edit the existing diagram
+          and add the new component where applicable.
+        type: text
+    edges:
+    - target_node_id: END
+      text: Generated the edits
+    id: screen17
+    type: message
+  - body:
+      parts:
+      - content: Review the updated diagram to ensure that the new component for assigning
+          multiple people to one ticket has been correctly added.
+        type: text
+    id: END
+    type: message
+- context: In this final task, the learner will understand the critical role of documentation
+    in software engineering. Quality documentation facilitates understanding among
+    technical team members, cross-functional teams, and internal stakeholders. It
+    aids in managing frequently changing requirements and ensures all team members
+    are aligned. By reflecting on these points, the learner will appreciate the value
+    of thorough and up-to-date documentation in the software development lifecycle.
+  id: '6'
+  name: Understanding the Importance of Documentation
+  nodes:
+  - body:
+      parts:
+      - content: 'Documentation is crucial in software engineering. Quality documentation
+          facilitates understanding of the software development processes for technical
+          team members, cross-functional teams, and internal stakeholders. It also
+          aids in managing frequently changing requirements, a common occurrence in
+          the software development lifecycle.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Understood the importance
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Now that you understand how to use AI to expedite the planning process
+          with internal teams, the next step is to document the process for internal
+          stakeholders and cross-functional teams. This documentation helps keep everyone
+          updated with changing requirements and components. Ready to proceed to more
+          technical areas, such as architectural diagrams and data flows?
+
+          '
+        type: text
+    id: END
+    type: message

@@ -1,0 +1,294 @@
+tasks:
+- context: "This module introduces learners to the 'AI-Driven Monitoring with New\
+    \ Relic' mission, where they will integrate New Relic into the TaskMaster application\u2014\
+    a Python web app using FastAPI and Uvicorn. The goal is to monitor, troubleshoot,\
+    \ and optimize the application's performance in real-time. It outlines the prerequisites,\
+    \ including access to the GitHub repository, a New Relic account, and Docker installation,\
+    \ along with the necessary technical skills in Python, Docker, and Git. The module\
+    \ guides learners through setting up a New Relic account to begin the monitoring\
+    \ process."
+  id: '1'
+  name: Set Up New Relic Account
+  nodes:
+  - body:
+      parts:
+      - content: "Hello, {username}! Welcome to the 'Integrating New Relic for Real-Time\
+          \ Monitoring' mission. Imagine a scenario where every millisecond of downtime\
+          \ affects your bottom line and user satisfaction. In today\u2019s fast-paced\
+          \ digital world, understanding the inner workings of your application isn\u2019\
+          t just a benefit\u2014it\u2019s a necessity. This is where Application Performance\
+          \ Monitoring (APM) tools like New Relic become indispensable.\n\nIn this\
+          \ mission, you'll integrate New Relic into the TaskMaster application, a\
+          \ Python web app running with FastAPI and Uvicorn. This setup will empower\
+          \ you to monitor, troubleshoot, and optimize the application's performance\
+          \ in real-time. Ready to begin?\n"
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Before we dive into the core activities, here are the essentials\
+          \ you'll need:\n\n- **Access Requirements**:\n    - **GitHub Repository**:\
+          \ Access to the pre-configured GitHub repository for TaskMaster: [GitHub\
+          \ Repository Link](https://github.com/alfred-ai-co/Improve-Code-Quality-with-Copilot).\n\
+          \    - **New Relic Account**: Sign up at New Relic's website if you don't\
+          \ have an account.\n    - **Docker**: Ensure Docker is installed on your\
+          \ machine.\n- **Technical Skills**:\n    - **Basic Understanding of Python**:\
+          \ Familiarity with Python programming.\n    - **Familiarity with Docker**:\
+          \ Basic knowledge of Docker commands and operations.\n    - **Version Control\
+          \ with Git**: Basic skills in Git for version control.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Got it! Let's continue!
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: "Let's start by setting up your New Relic account to begin monitoring\
+          \ your Python application.\n\n**Steps**:\n\n1. **Sign Up for a New Relic\
+          \ Account**:\n    - Visit the [New Relic Sign-Up Page](https://newrelic.com/signup).\n\
+          \    - Fill in the required details, such as your name, email address, and\
+          \ company information.\n"
+        type: text
+    id: END
+    type: message
+- context: In this module, learners continue the 'AI-Driven Monitoring with New Relic'
+    mission by integrating monitoring capabilities into the TaskMaster application.
+    They log in to their New Relic account, navigate the onboarding process, select
+    Python as the tech stack, and choose Docker as the instrumentation method. Finally,
+    they define the application type as a web app, setting the stage for detailed
+    monitoring and optimization.
+  id: '2'
+  name: Select Application Stack in New Relic
+  nodes:
+  - body:
+      parts:
+      - content: "Select Python as your application stack to integrate monitoring\
+          \ capabilities into the API application.\n\n**Steps**:\n\n1. **Log in to\
+          \ New Relic**:\n    - Access your New Relic account and log in.\n2. **Onboarding\
+          \ Screen**:\n    - Upon logging in for the first time, you will be directed\
+          \ to the onboarding screen.\n3. **Select Your Host**:\n    - Click \u201C\
+          Continue\u201D without selecting any of the hosts.\n"
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: Next step!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Now, let's select the tech stack and instrumentation method for\
+          \ your application.\n\n**Steps**:\n\n1. **Select Your Tech Stack**:\n  \
+          \  - From the list of available options, select **'Python'**.\n2. **Select\
+          \ Instrumentation Method**:\n    - Choose **'Docker'** as your application\
+          \ runs in Docker containers.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Got it! What's next?
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: "Define whether your application is a web app or a non-web app.\n\
+          \n**Steps**:\n\n1. **Define Application Type**:\n    - For the API, select\
+          \ **'Web app'**.\n\nBy completing this task, you will have set up the initial\
+          \ configuration needed to monitor your Python application with New Relic.\
+          \ This will enable you to collect detailed performance data and insights\
+          \ specific to your application stack.\n"
+        type: text
+    id: END
+    type: message
+- context: In this module, learners create the directory structure for their project
+    and install the New Relic APM agent. They ensure the requirements.txt file includes
+    the necessary dependencies and verify its contents. Next, they generate and customize
+    the New Relic configuration file (newrelic.ini) with their license key and application
+    name, setting up the foundation for effective monitoring and performance management
+    of their Python web application.
+  id: '3'
+  name: Installing the New Relic Agent
+  nodes:
+  - body:
+      parts:
+      - content: "Let's create the directory structure and install the New Relic APM\
+          \ agent.\n\n**Steps**:\n\n1. **Create the Directory Structure**:\n    -\
+          \ Ensure your project directory is structured appropriately like so,\n \
+          \   ```\n    project-management-system/\n    \u251C\u2500\u2500 newrelic/\n\
+          \    \u2502   \u251C\u2500\u2500 Dockerfile\n    \u251C\u2500\u2500 app/\n\
+          \    \u2502   \u251C\u2500\u2500 api/\n    \u2502   \u251C\u2500\u2500 core/\n\
+          \    \u2502   \u251C\u2500\u2500 db_models/\n    \u2502   \u251C\u2500\u2500\
+          \ main.py\n    \u251C\u2500\u2500 README.md\n    \u251C\u2500\u2500 requirements.txt\n\
+          \    ```\n2. **Install the APM Agent**:\n    - Use `pip` to install the\
+          \ New Relic Python agent:\n      \n      ```bash\n      pip install newrelic\n\
+          \      ```\n"
+        type: text
+    edges:
+    - target_node_id: screen8
+      text: Next step!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Let's ensure your `requirements.txt` file includes the New Relic\
+          \ package.\n\n**Steps**:\n\n1. **Create the `requirements.txt` File**:\n\
+          \    - Ensure your `requirements.txt` includes the New Relic package:\n\
+          \      \n      ```bash\n      pip freeze > requirements.txt\n      ```\n\
+          2. **Verify the File**:\n    - The file should look something like this:\n\
+          \      \n      ```makefile\n      fastapi==0.65.2\n      newrelic==5.28.0.149\n\
+          \      uvicorn==0.13.4\n      ```\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Done! What's next?
+    id: screen8
+    type: message
+  - body:
+      parts:
+      - content: "Generate and customize the New Relic configuration file.\n\n**Steps**:\n\
+          \n1. **Generate the Configuration File**:\n    - Run the command to generate\
+          \ the `newrelic.ini` file:\n      \n      ```bash\n      newrelic-admin\
+          \ generate-config YOUR_NEW_RELIC_LICENSE_KEY newrelic.ini\n      ```\n2.\
+          \ **Customize the Configuration File**:\n    - Open `newrelic.ini` and insert\
+          \ the appropriate license key and application name:\n      \n      ```ini\n\
+          \      license_key = YOUR_NEW_RELIC_LICENSE_KEY\n      app_name = Project\
+          \ Management API\n      ```\n"
+        type: text
+      - content: By following these steps, you will have successfully installed and
+          configured the New Relic APM agent for your Project Management API. The
+          next step involves integrating this setup within your Docker environment
+          and ensuring it runs smoothly.
+        type: text
+    id: END
+    type: message
+- context: In this module, learners configure their Docker environment to include
+    the New Relic agent for monitoring the Project Management API. They update the
+    Dockerfile to install the New Relic agent and set it as the entry point. Next,
+    they build the base Docker container and update the main Dockerfile to incorporate
+    the New Relic agent, ensuring the application runs with monitoring capabilities
+    enabled. This setup provides real-time insights and performance monitoring for
+    the Python web application running in Docker containers.
+  id: '4'
+  name: Build and Test Application Container
+  nodes:
+  - body:
+      parts:
+      - content: "Configure your Docker environment to include the New Relic agent.\n\
+          \n**Steps**:\n\n1. **Review Framework Information**:\n    - Choose the framework\
+          \ you are using. For the Project Management API, select `FastAPI`.\n2. **Create\
+          \ Base Docker Container**:\n    - Update the `Dockerfile` to include New\
+          \ Relic agent instructions:\n      \n      ```dockerfile\n      FROM python:3.9.14-alpine3.16\n\
+          \      RUN pip install --no-cache-dir newrelic\n      ENTRYPOINT [\"newrelic-admin\"\
+          , \"run-program\"]\n      ```\n"
+        type: text
+    edges:
+    - target_node_id: screen11
+      text: Done! Next step!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Build and update Docker files for the New Relic agent.\n\n**Steps**:\n\
+          \n1. **Build the Base Container**:\n    - Use the command:\n      \n   \
+          \   ```bash\n      docker build -t python_newrelic:latest .\n      ```\n\
+          2. **Update Application Dockerfile**:\n    - Include the New Relic agent\
+          \ in the main `Dockerfile`:\n      \n      ```dockerfile\n      FROM python_newrelic:latest\n\
+          \      # Additional instructions...\n      CMD [\"newrelic-admin\", \"run-program\"\
+          , \"uvicorn\", \"app.main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"\
+          8000\"]\n      ```\n3. **Update main Dockerfile**\n    - Update the main\
+          \ `Dockerfile` in the project root to include the New Relic agent.\n   \
+          \   \n      ```dockerfile\n      # Dockerfile for your Python application\n\
+          \      FROM python_newrelic:latest\n\n      RUN apk add --no-cache bzip2-dev\
+          \ \\\\\n                  coreutils \\\\\n                  gcc \\\\\n \
+          \                 libc-dev \\\\\n                  libffi-dev \\\\\n   \
+          \               libressl-dev \\\\\n                  linux-headers\n\n \
+          \     WORKDIR /app\n      COPY requirements.txt .\n      RUN pip install\
+          \ --no-cache-dir -r requirements.txt\n\n      COPY . .\n      COPY newrelic.ini\
+          \ /app/newrelic.ini\n\n      ENV NEW_RELIC_CONFIG_FILE=/app/newrelic.ini\n\
+          \n      EXPOSE 8000\n      CMD [\"newrelic-admin\", \"run-program\", \"\
+          uvicorn\", \"app.main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"\
+          ]\n      ```\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Got it! What's next?
+    id: screen11
+    type: message
+  - body:
+      parts:
+      - content: "Now we can build and test the application container with the New\
+          \ Relic Agent.\n\n**Steps**: \n1. Build the application container\n\n```bash\n\
+          docker build -t my_python_api .\n```\n2. Run the application container\n\
+          \n```bash\ndocker run -d -p 8000:8000 my_python_api\n```\nFrom here we should\
+          \ be able to see the application running in the browser with localhost:8000.\
+          \ We can see the logs for our container with `docker logs <container_id>`.\n"
+        type: text
+    id: END
+    type: message
+- context: In this final section of the module, learners verify that data from their
+    FastAPI application is being reported to the New Relic dashboard by generating
+    traffic and checking the dashboard for incoming data. They then review key metrics
+    such as response time, throughput, and error rate to understand their application's
+    performance. Learners summarize their insights, reflecting on patterns or anomalies
+    indicating performance issues. Finally, the mission concludes with learners having
+    successfully integrated New Relic for monitoring, setting the stage for exploring
+    AI-driven insights in the next mission.
+  id: '5'
+  name: 'Verify Data in New Relic '
+  nodes:
+  - body:
+      parts:
+      - content: "Verify that data is being reported to the New Relic dashboard.\n\
+          \n**Steps**:\n\n1. **Generate Traffic**:\n    - Use `/docs` page or postman\
+          \ to make requests to your API endpoints and generate traffic.\n    - We\
+          \ can also utilize `docker logs <container_id>` to see the logs of our project.\n\
+          2. **Verify Data in Dashboard**:\n    - Go to your New Relic dashboard and\
+          \ check for incoming data.\n"
+        type: text
+    edges:
+    - target_node_id: screen14
+      text: Done! Next step!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "In this final task, you will review the key metrics gathered from\
+          \ New Relic APM and summarize the insights obtained from monitoring your\
+          \ FastAPI project. This will help you understand how New Relic can enhance\
+          \ your application's performance and reliability.\n\n**Steps**:\n\n1. **Navigate\
+          \ to APM Dashboard**:\n    - Go to the APM section in your New Relic dashboard.\
+          \ Here, you will find a summary of your application\u2019s performance.\n\
+          2. **Monitor Key Metrics**:\n    - **Response Time**: Average time for your\
+          \ application to respond to requests.\n    - **Throughput**: Number of requests\
+          \ handled per minute.\n    - **Error Rate**: Percentage of requests resulting\
+          \ in errors.\n"
+        type: text
+    edges:
+    - target_node_id: screen15
+      text: Got it! What's next?
+    id: screen14
+    type: message
+  - body:
+      parts:
+      - content: "Summarize the insights obtained.\n\n**Steps**:\n\n1. **Summarize\
+          \ Insights**:\n    - Reflect on the data and metrics observed. Note patterns\
+          \ or anomalies indicating performance issues.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Great, what's next?
+    id: screen15
+    type: message
+  - body:
+      parts:
+      - content: "You have completed the mission successfully! Your FastAPI application\
+          \ is now monitored by New Relic, providing valuable insights to maintain\
+          \ and improve your application\u2019s performance. In the next mission,\
+          \ you will enhance your monitoring setup by exploring AI-driven insights\
+          \ in New Relic.\n"
+        type: text
+    id: END
+    type: message

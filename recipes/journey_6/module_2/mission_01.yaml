@@ -1,0 +1,807 @@
+tasks:
+- context: In this mission, learners are tasked with analyzing errors, outages, and
+    latency in the Project Management API using New Relic AI. They start by setting
+    up their environment with Docker, then navigate to the New Relic dashboard's APM
+    section to select and monitor the Project Management API. The module guides learners
+    through the process of identifying performance issues, such as high CPU usage
+    and long-running processes, emphasizing the use of AI-powered tools for effective
+    troubleshooting and performance analysis.
+  id: '1'
+  name: Introduction & Setup
+  nodes:
+  - body:
+      parts:
+      - content: "Welcome to Mission 1: Analyze Errors, Outages, and Latency with\
+          \ New Relic AI! As a part of the Alfred AI team managing the Project Management\
+          \ API, you've received reports of performance issues, specifically high\
+          \ CPU usage and long-running processes. Your task is to use New Relic\u2019\
+          s AI-powered tools to identify and understand these performance issues.\n\
+          \nAre you ready to begin troubleshooting?\n"
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    - target_node_id: screen2a
+      text: Tell me more about the performance issues.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'To begin troubleshooting, let''s first set up your environment.
+          Switch to the `test/outage` branch and build the Docker image within the
+          root directory using `docker build -t my_python_api .`. Once the image is
+          built, run the container with `docker run -p 8000:8000 my_python_api` to
+          start up the FastAPI server.
+
+
+          Once your server is running, we can move on to the New Relic dashboard.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: My server is running. What's next?
+    - target_node_id: screen2a
+      text: I need help with Docker commands.
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: "Here\u2019s a quick guide to help you set up Docker:\n\n1. Switch\
+          \ to the `test/outage` branch.\n2. Build the Docker image with the command:\
+          \ `docker build -t my_python_api .`\n3. Run the Docker container with the\
+          \ command: `docker run -p 8000:8000 my_python_api`\n\nThis will start up\
+          \ your FastAPI server on port 8000.\n"
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: My server is running. What's next?
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: 'Now that your server is running, let''s navigate to the New Relic
+          dashboard. On the New Relic website, go to the Application Performance Monitoring
+          (APM) section. This is where we can start analyzing the performance of your
+          Project Management API.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I'm in the APM section. What's next?
+    - target_node_id: screen3a
+      text: Show me how to navigate to APM.
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: "To navigate to APM on the New Relic website:\n\n1. From the main\
+          \ dashboard, find and click on the \"APM\" section in the menu.\n2. This\
+          \ will take you to the Application Performance Monitoring page where you\
+          \ can see a list of monitored applications.\n\nOnce you\u2019re in the APM\
+          \ section, you\u2019re ready to select the Project Management API.\n"
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I'm in the APM section. What's next?
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: 'In the APM section, locate and select the Project Management API
+          from the list of monitored applications. This will take you to the detailed
+          performance monitoring page for your API.
+
+
+          Here, we can start our analysis by looking at the performance metrics, error
+          rates, and any anomalies detected by New Relic AI.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: I've selected the API. What's next?
+    - target_node_id: screen4a
+      text: I need help selecting the API.
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: "To select the Project Management API:\n\n1. In the APM section,\
+          \ browse through the list of applications.\n2. Find \"Project Management\
+          \ API\" and click on it.\n\nThis will bring you to the detailed performance\
+          \ page where you can start analyzing your API\u2019s performance.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: I've selected the API. What's next?
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: "That\u2019s the initial setup for Mission 1: Analyze Errors, Outages,\
+          \ and Latency with New Relic AI. If you have any questions or need further\
+          \ clarification, feel free to ask. Let's ensure we effectively troubleshoot\
+          \ the performance issues with the Project Management API!\n"
+        type: text
+    id: END
+    type: message
+- context: In this section, learners simulate performance issues in the Project Management
+    API to understand how New Relic AI can help in analyzing these issues. They start
+    by reviewing and invoking the simulate_outage route on the API's /docs page to
+    create various performance problems, such as long processes and high CPU loads.
+    Learners can also automate this process using a Python script to simulate heavy
+    traffic and monitor the impact on the API's performance. The module emphasizes
+    hands-on interaction with the API to generate meaningful data for analysis in
+    New Relic.
+  id: '2'
+  name: Simulating Performance Issues
+  nodes:
+  - body:
+      parts:
+      - content: "Now that we\u2019re all set up, we want to simulate a few issues.\
+          \ After switching to the `test/outage` branch, we can see that the `/docs`\
+          \ API shows us that there exist new routes for us. Let\u2019s simulate some\
+          \ of this and use New Relic AI\u2019s to analyze!\n\nAre you ready to start\
+          \ simulating performance issues?\n"
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    - target_node_id: screen2a
+      text: Tell me more about simulating performance issues.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "First, let's review the `simulate_outage` route. You can find this\
+          \ route on the `/docs` page of your API. This route allows us to simulate\
+          \ a variety of long processes and CPU loads, as well as an \u201Coutage\u201D\
+          \ which returns a 500 error.\n"
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I've reviewed the route. What's next?
+    - target_node_id: screen2a
+      text: Show me more about the /docs page.
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: 'To navigate to the `/docs` page:
+
+
+          1. Start your FastAPI server if it''s not already running.
+
+          2. Open your web browser and go to `http://localhost:8000/docs`.
+
+          3. Look for the `simulate_outage` route in the list of available endpoints.
+
+
+          This page provides an interface to interact with and test your API endpoints.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I've reviewed the route. What's next?
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: 'Now, let''s invoke the `GET` requests under the `simulate_outage`
+          tab. This allows us to simulate long processes and CPU loads, as well as
+          trigger an outage by returning a 500 error.
+
+
+          You can send these requests manually through the `/docs` page.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've sent some requests. What's next?
+    - target_node_id: screen3a
+      text: How do I send these requests?
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: 'To send requests on the `/docs` page:
+
+
+          1. Find the `simulate_outage` route.
+
+          2. Expand the route to see the available `GET` requests.
+
+          3. Click on "Try it out" for each request type.
+
+          4. Execute the requests to simulate different performance issues.
+
+
+          This will generate traffic and simulate performance problems for your API.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've sent some requests. What's next?
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: 'You can also automate this process by using a Python script to send
+          requests to these endpoints, simulating heavy traffic, poor performance,
+          or outages. This can help you see how your API handles various load conditions
+          over time. Or, you can do the old-fashioned way, with a bunch of clicking.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4a
+      text: I've simulated the traffic. What's next?
+    - target_node_id: screen4a
+      text: How do I write a Python script for this?
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: "Here\u2019s a basic example of how you can write a Python script\
+          \ to simulate traffic:\n\n```python\nimport requests\n\nendpoints = [\n\
+          \    'http://localhost:8000/simulate_outage/long_process',\n    'http://localhost:8000/simulate_outage/cpu_load',\n\
+          \    'http://localhost:8000/simulate_outage/error'\n]\n\nfor endpoint in\
+          \ endpoints:\n    response = requests.get(endpoint)\n    print(f'Response\
+          \ from {endpoint}: {response.status_code}')\n```\n\nRunning this script\
+          \ will send requests to your API, simulating different performance issues.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: I've simulated the traffic. What's next?
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: 'Send a few of these requests either manually or have a python script
+          send a request to these endpoints to simulate heavy traffic, poor performance,
+          or outages to an endpoint. This should populate on New Relic and will appear
+          as part of the error logs on the APM as well as latency spikes.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: In this section, learners explore New Relic's Lookout and Navigator tools
+    to identify and analyze performance issues in the Project Management API. They
+    start by accessing Lookout to view recent performance changes and significant
+    deviations, then use Navigator for a high-density view of all entities, focusing
+    on those marked with traffic light indicators. The module guides learners through
+    identifying and analyzing performance issues, emphasizing the importance of metrics,
+    logs, and AI-driven insights for effective troubleshooting and optimization.
+  id: '3'
+  name: Using New Relic Lookout & Navigator
+  nodes:
+  - body:
+      parts:
+      - content: "Let\u2019s checkout our changes on New Relic! It has a few features\
+          \ like Lookout and Navigator that can be helpful to identify problems with\
+          \ our application. Lookout helps identify recent changes in performance,\
+          \ while Navigator provides a high-density view of all entities.\n\nAre you\
+          \ ready to explore these powerful tools?\n"
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    - target_node_id: screen2a
+      text: Tell me more about Lookout and Navigator.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'First, let''s open New Relic Lookout. On the New Relic website,
+          switch to Lookout to see recent changes in performance. This tool helps
+          identify any entities with significant deviations from their normal behavior,
+          providing a clear view of what might be causing issues.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I'm in Lookout. What's next?
+    - target_node_id: screen2a
+      text: How do I access Lookout?
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: 'To access Lookout in New Relic:
+
+
+          1. Log in to your New Relic account.
+
+          2. Navigate to the main dashboard.
+
+          3. Find and click on the "Lookout" section in the menu.
+
+
+          Lookout will display recent performance changes and highlight any anomalies.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I'm in Lookout. What's next?
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: 'In Lookout, you can see a list of entities with recent performance
+          changes. Look for entities with significant deviations from their normal
+          behavior. These anomalies could indicate potential performance issues that
+          need your attention.
+
+
+          Take note of any entities that stand out as they may require further investigation.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've identified some deviations. What's next?
+    - target_node_id: screen3a
+      text: Show me an example of deviations.
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: 'In Lookout, entities with significant deviations are often highlighted
+          in red or orange. These colors indicate issues such as increased response
+          times, higher error rates, or unusual CPU usage.
+
+
+          By focusing on these highlighted entities, you can quickly pinpoint areas
+          that need further investigation.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've identified some deviations. What's next?
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: 'Next, let''s use New Relic Navigator. Access Navigator for a high-density
+          view of all entities. This tool provides a visual representation of your
+          entire system, with entities marked with traffic light colors indicating
+          performance issues.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: I'm in Navigator. What's next?
+    - target_node_id: screen4a
+      text: How do I access Navigator?
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: 'To access Navigator in New Relic:
+
+
+          1. Log in to your New Relic account.
+
+          2. From the main dashboard, navigate to the "Navigator" section in the menu.
+
+
+          Navigator will display a high-density view of all entities, making it easier
+          to spot performance issues.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: I'm in Navigator. What's next?
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: 'In Navigator, look for entities marked with traffic light colors.
+          Green indicates healthy performance, yellow indicates warnings, and red
+          indicates critical issues. By focusing on entities marked with yellow and
+          red, you can identify areas that require immediate attention.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5a
+      text: I've identified some issues. What's next?
+    - target_node_id: screen5a
+      text: Show me an example of traffic light indicators.
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: 'In Navigator, entities with performance issues are clearly marked
+          with traffic light indicators. Red marks critical issues that need urgent
+          attention, while yellow indicates warnings that could develop into more
+          serious problems if not addressed.
+
+
+          Use these indicators to prioritize your troubleshooting efforts.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6
+      text: I've identified some issues. What's next?
+    id: screen5a
+    type: message
+  - body:
+      parts:
+      - content: 'Now that you''ve identified entities with performance issues in
+          Lookout and Navigator, it''s time to analyze these issues further. Look
+          into the metrics and logs provided by New Relic for these entities to understand
+          the root causes of the problems.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Understood, let's analyze the issues.
+    - target_node_id: screen6a
+      text: I need more guidance on analyzing issues.
+    id: screen6
+    type: message
+  - body:
+      parts:
+      - content: 'To analyze the identified issues:
+
+
+          1. Review the performance metrics such as response times, error rates, and
+          CPU usage for the problematic entities.
+
+          2. Check the logs for any errors or unusual activities that coincide with
+          the performance issues.
+
+          3. Use the insights from New Relic AI to help interpret the data and suggest
+          potential fixes.
+
+
+          This thorough analysis will help you understand and resolve the performance
+          issues effectively.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Got it, what's next?
+    id: screen6a
+    type: message
+  - body:
+      parts:
+      - content: "Let's leverage these tools to gain valuable insights and optimize\
+          \ our Project Management API's performance! When you\u2019re ready, let\u2019\
+          s start using New Relic AI to draw insights.\n"
+        type: text
+    id: END
+    type: message
+- context: In this section, learners engage with New Relic AI to analyze performance
+    issues in the Project Management API. They start by accessing the Ask AI feature
+    and using sample prompts to query the AI for insights on recent incidents, high
+    CPU usage, and error rates. The module emphasizes the importance of analyzing
+    AI responses to identify patterns and specific transactions causing issues. By
+    leveraging AI-generated insights, learners can investigate and address performance
+    problems more effectively, utilizing New Relic AI as a copilot for maintaining
+    application performance.
+  id: '4'
+  name: Engaging Inquiries with New Relic AI
+  nodes:
+  - body:
+      parts:
+      - content: "As before, we can utilize New Relic\u2019s AI to not only look through\
+          \ the data we have on our application, but also use natural language to\
+          \ get a better understanding of the issue at hand. In this case, we sent\
+          \ some traffic to problematic endpoints and we want to analyze some of these.\
+          \ It\u2019s like finding where the performance issue is.\n\nAre you ready\
+          \ to start engaging with New Relic AI?\n"
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    - target_node_id: screen2a
+      text: Tell me more about New Relic AI.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'To start, click on the Ask AI button on the New Relic dashboard.
+          This will open up a chat interface where you can ask questions and get detailed
+          insights from New Relic AI.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I've clicked on Ask AI. What's next?
+    - target_node_id: screen2a
+      text: How do I find the Ask AI button?
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: 'To find the Ask AI button:
+
+
+          1. Log in to your New Relic account.
+
+          2. Navigate to the main dashboard.
+
+          3. Look for the Ask AI button typically located in the top right corner
+          of the dashboard.
+
+
+          Clicking this button will open the AI chat interface.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I've clicked on Ask AI. What's next?
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: "Here are some sample prompts you can use to engage with New Relic\
+          \ AI:\n\n- \u201CWhat are some recent incidents in the Project Management\
+          \ API?\u201D\n- \u201CWhich transactions are causing high CPU usage?\u201D\
+          \n- \u201CCan you provide insights on the error rates for the past 24 hours?\u201D\
+          \n\nThese prompts will help you get detailed insights into your application's\
+          \ performance issues.\n"
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've asked a question. What's next?
+    - target_node_id: screen3a
+      text: Show me more example prompts.
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: "Here are some more sample prompts you can use with New Relic AI:\n\
+          \n- \u201CWhat are the top three performance bottlenecks in the Project\
+          \ Management API?\u201D\n- \u201CHow has the response time changed over\
+          \ the past week?\u201D\n- \u201CWhat errors have been most frequent in the\
+          \ last 48 hours?\u201D\n\nThese questions can help you gain a deeper understanding\
+          \ of various performance aspects.\n"
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've asked a question. What's next?
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: "Once you\u2019ve asked your questions, New Relic AI will provide\
+          \ detailed responses. Analyze these responses to understand the insights\
+          \ and suggestions offered by the AI. Look for patterns, unusual activities,\
+          \ or specific transactions that might be causing issues.\n"
+        type: text
+    edges:
+    - target_node_id: screen4a
+      text: I've analyzed the responses. What's next?
+    - target_node_id: screen4a
+      text: Show me an example response.
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: "An example response from New Relic AI might look like this:\n\n\
+          - **Question**: \u201CWhich transactions are causing high CPU usage?\u201D\
+          \n- **Response**: \u201CThe transactions `/api/project/create` and `/api/ticket/update`\
+          \ are showing higher than normal CPU usage, particularly during peak hours.\
+          \ This might be due to inefficient database queries or heavy computational\
+          \ tasks.\u201D\n\nUse this information to investigate further and make necessary\
+          \ adjustments to improve performance.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: I've analyzed the responses. What's next?
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: "Lastly, let\u2019s take a deeper look into some of its responses\
+          \ and see what insights we can draw. This can give us an idea of how to\
+          \ work with the AI like a copilot to keep the application up and running\
+          \ smoothly.\n"
+        type: text
+    id: END
+    type: message
+- context: In this final section, learners use New Relic AI to analyze logs, errors,
+    and latency in the Project Management API. They start by asking AI about recent
+    errors and summarizing the results to gain insights into error types, messages,
+    status codes, and more. They then examine latency variance by querying AI and
+    analyzing response time percentiles. The module guides learners through documenting
+    findings and planning next steps to address performance issues, emphasizing the
+    importance of structured analysis and proactive monitoring for maintaining application
+    health.
+  id: '5'
+  name: Analyzing New Relic AI Assistant
+  nodes:
+  - body:
+      parts:
+      - content: 'Our objective is to examine logs and errors to understand the root
+          cause of performance issues, and analyze latency to identify its variance.
+          We''ll use New Relic AI to make this process efficient and insightful.
+
+
+          Are you ready to start analyzing logs and latency?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, let's get started!
+    - target_node_id: screen2a
+      text: Tell me more about these tasks.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=9b7f0ddd-dcdf-46d9-bd45-0313869cc336
+        type: image
+      - content: 'Let''s start by asking New Relic AI about recent errors. Use the
+          prompt, `What are some recent errors?` This will provide a detailed table
+          of the latest errors in your application.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I've asked about recent errors. What's next?
+    - target_node_id: screen2a
+      text: Show me more about asking this question.
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: "To ask about recent errors:\n\n1. Open the AI chat interface in\
+          \ New Relic.\n2. Type the prompt, \u201CWhat are some recent errors?\u201D\
+          \n3. Submit the prompt and wait for the AI to provide the response.\n\n\
+          This will give you a table of recent errors, including error type, message,\
+          \ status code, transaction names, duration, and user agent.\n"
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: I've asked about recent errors. What's next?
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=0dab1c65-2d32-46e8-a468-7115f8e40800
+        type: image
+      - content: 'Next, click on the `Summarize the Results` button in the AI interface.
+          New Relic AI will not only convert your question into a valid query but
+          also summarize and analyze the issue for you. This includes insights such
+          as error types, messages, status codes, transaction names, durations, and
+          user agents.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've summarized the results. What's next?
+    - target_node_id: screen3a
+      text: Show me an example summary.
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: "Here\u2019s an example of how New Relic AI summarizes recent errors:\n\
+          \n- **Error Types**: Various errors that occurred.\n- **Messages**: Specific\
+          \ error messages.\n- **Status Codes**: HTTP status codes associated with\
+          \ errors.\n- **Transaction Names**: Affected transactions.\n- **Durations**:\
+          \ Time taken for each error.\n- **User Agents**: Details of the clients\
+          \ causing errors.\n\nThis makes debugging and analyzing error logs a breeze\
+          \ for developers.\n"
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: I've summarized the results. What's next?
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=151613b4-9bce-44e8-8ca4-09d159923db6
+        type: image
+      - content: 'Now let''s examine the variance in latency. Use the prompt, `What
+          is the cause of higher response times lately?` This will help us identify
+          the transactions causing increased latency.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: I've asked about latency. What's next?
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%206%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=1494d520-2a57-4263-8990-46153dc497f4
+        type: image
+      - content: "Next, click on the `Summarize the Results` button in the AI interface.\
+          \ New Relic AI will analyze the statistics behind the latency, presenting\
+          \ metrics like the 95th percentile response time for transactions.\n\nIn\
+          \ this case, notice how New Relic AI analyzed the statistics behind the\
+          \ latency by presenting the 95th percentile response time for the \u2018\
+          web\u2019 transactions. In our simulation, we brought the response time\
+          \ up to 1.91 seconds whereas average response times were usually 0.49 seconds.\
+          \ So by further analyzing these, notice the insights derived. Although we\
+          \ shouldn\u2019t completely rely on the analysis alone, it does give maintainers\
+          \ hints as to where to isolate the problem and potentially find requests\
+          \ that cause outliers (and their subsequent sources hopefully.)\n"
+        type: text
+    edges:
+    - target_node_id: screen6
+      text: I've summarized the results. What's next?
+    - target_node_id: screen5a
+      text: Show me an example summary.
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: "Here\u2019s an example of how New Relic AI summarizes latency issues:\n\
+          \n- **Response Time Percentiles**: 95th percentile response times for transactions.\n\
+          - **Comparison**: Differences between current and average response times.\n\
+          - **Insights**: Possible causes for the increase in response times.\n\n\
+          These insights help maintainers isolate the problem and find requests causing\
+          \ outliers.\n"
+        type: text
+    edges:
+    - target_node_id: screen6
+      text: I've summarized the results. What's next?
+    id: screen5a
+    type: message
+  - body:
+      parts:
+      - content: "With all the information gathered, let's summarize our findings\
+          \ and outline the next steps. Note down the key insights from New Relic\u2019\
+          s tools and AI responses. Plan steps to address the identified issues, such\
+          \ as optimizing specific transactions or scaling resources.\n\nNotice how\
+          \ New Relic AI not only was able to convert the question into a valid query\
+          \ which returns a table of the recent errors, it was able to also summarize\
+          \ and help analyze the issue such as error type, message, status code, transaction\
+          \ names, duration, and which user agent. This is incredibly useful for debugging\
+          \ an issue and analyzing the error logs becomes a breeze for developers.\n"
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: I've summarized the findings. What's next?
+    - target_node_id: screen6a
+      text: How do I document the findings?
+    id: screen6
+    type: message
+  - body:
+      parts:
+      - content: "To document findings:\n\n1. Note down key insights from New Relic\u2019\
+          s tools and AI responses.\n2. List specific performance issues, their causes,\
+          \ and affected transactions.\n3. Outline next steps, such as optimizing\
+          \ code, improving queries, or scaling resources.\n\nThis structured approach\
+          \ ensures you have a clear plan for addressing performance issues.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: I've documented the findings. What's next?
+    id: screen6a
+    type: message
+  - body:
+      parts:
+      - content: "Let\u2019s recap the key points. Using New Relic\u2019s AI-powered\
+          \ tools, you can effectively troubleshoot performance issues by analyzing\
+          \ logs, errors, and latency. Proactive monitoring and quick issue resolution\
+          \ are crucial for maintaining a healthy application.\n"
+        type: text
+    id: END
+    type: message

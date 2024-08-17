@@ -1,371 +1,498 @@
 tasks:
-  - name: "Introduction to AI Tools for Visual Documentation"
-    context: "This introduction module welcomes learners to the Expedition on using AI tools for visual documentation, focusing on improving efficiency and collaboration in the development of Alfred AI's ticket assignment system. Initially, visual documentation improved clarity, but constant updates became time-consuming. AI tools like Eraser AI and Lucidchart can automate updates, keeping documentation accurate with less manual effort. The module highlights Eraser AI's automatic capture, clear visualization, and workflow integration, as well as Lucidchart's diagram creation, real-time collaboration, and tool integrations. Learners will explore how to use Eraser AI for visual documentation, streamlining the process and enhancing collaboration."
-    id: "1"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Welcome to the Expedition on using AI tools to enhance your visual documentation! Imagine you and your team at Alfred AI are developing a ticket assignment system in AI TaskMaster. This involves complex components like user authentication, ticket lifecycle management, notifications, and analytics.
-
-                To streamline communication, you've implemented visual documentation—diagrams, flowcharts, and dashboards—which initially improved clarity and collaboration. However, constant changes in requirements and feedback are making it difficult to keep the visual documentation up to date. The time and effort required to maintain these updates are significantly cutting into your development time, delaying progress, and increasing pressure on the team. Imagine if there was an easier way of maintaining visual documentation.
-
-                Are you ready to explore how AI tools can simplify this process?
-        edges:
-          - text: "Yes, let's get started!"
-            target_node_id: "END"
-          - text: "Tell me more about these AI tools."
-            target_node_id: "screen2"
-
-      - id: screen2
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Keeping visual documentation up-to-date can be a major challenge. AI tools like Eraser AI and Lucidchart can automate many aspects of this process, reducing the manual effort required. These tools can dynamically update your diagrams and flowcharts based on real-time changes in your project, ensuring your documentation stays accurate without consuming too much of your time.
-        edges:
-          - text: "Got it!"
-            target_node_id: "END"
-
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Let’s dive into two powerful AI tools for visual documentation:
-
-                ### Eraser AI
-
-                - **Automatic Capture:** Gathers and organizes visual information.
-                - **Clear Visualization:** Ensures accurate and transparent visual documentation.
-                - **Workflow Integration:** Fits seamlessly into existing workflows.
-
-                ### Lucidchart
-
-                - **Diagram Creation:** Intuitive tools for various visual diagrams.
-                - **Collaboration:** Real-time collaborative editing and sharing.
-                - **Tool Integrations:** Works with Google Drive, Microsoft Office, Slack, etc.
-
-                These tools streamline visual documentation, making it clear, collaborative, and efficient.
-
-                For this journey, we will explore how to use Eraser AI for visual documentation.
-
-  - name: "Use Cases for Eraser AI"
-    context: "This section provides an overview of the diverse use cases for Eraser AI, illustrating its potential to enhance documentation processes across various scenarios. Eraser AI is showcased as a valuable tool in system design and planning, where it aids in creating detailed architecture and data flow diagrams, ensuring thorough planning and clear understanding among team members. In API documentation, Eraser AI generates comprehensive documentation for each endpoint, including HTTP methods, request parameters, and response formats, which facilitates easier integration and reduces miscommunication. Additionally, Eraser AI proves useful in generating technical reports by compiling data from various sources and creating visual reports with system architecture diagrams and performance metrics, making complex technical information more accessible to stakeholders and aiding in decision-making. The section emphasizes the benefits of Eraser AI in enhancing clarity, improving understanding, and supporting better planning and communication within teams."
-    id: "2"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Eraser AI can be used in various scenarios to improve your documentation process:
-
-                1. **System Design and Planning:** Planning a new system or application.
-                2. **API Documentation:** A team needs to document a new API.
-                3. **Technical Reports:** A team needs to create a technical report for stakeholders.
-        edges:
-          - text: "Can you give me a more detailed example?"
-            target_node_id: "screen5"
-          - text: "Tell me about the benefits of using Eraser AI"
-            target_node_id: "screen8"
-
-      - id: screen5
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                **System Design and Planning**
-
-                **Scenario:** Planning a new system or application.
-
-                **Use Case:** Eraser AI assists in creating architecture and data flow diagrams during the design phase.
-
-                **Example:**
-                You are designing a new user authentication system. With Eraser AI, you can automatically generate diagrams that illustrate the entire authentication flow, including user login, verification, and session management. These diagrams help your team visualize the system's structure, identify potential bottlenecks, and ensure everyone understands the plan before development begins.
-
-                **Benefits:** Facilitates thorough planning, ensures clear understanding, and aids in identifying potential issues early.
-        edges:
-          - text: "Show me an example of API documentation."
-            target_node_id: "screen6"
-          - text: "Show me an example of a technical report."
-            target_node_id: "END"
+- context: This introduction module welcomes learners to the Quest on using AI tools
+    for visual documentation, focusing on improving efficiency and collaboration in
+    the development of Alfred AI's ticket assignment system. Initially, visual documentation
+    improved clarity, but constant updates became time-consuming. AI tools like Eraser
+    AI and Lucidchart can automate updates, keeping documentation accurate with less
+    manual effort. The module highlights Eraser AI's automatic capture, clear visualization,
+    and workflow integration, as well as Lucidchart's diagram creation, real-time
+    collaboration, and tool integrations. Learners will explore how to use Eraser
+    AI for visual documentation, streamlining the process and enhancing collaboration.
+  id: '1'
+  name: Introduction to AI Tools for Visual Documentation
+  nodes:
+  - body:
+      parts:
+      - content: "Welcome to the Quest on using AI tools to enhance your visual documentation!\
+          \ Imagine you and your team at Alfred AI are developing a ticket assignment\
+          \ system in AI TaskMaster. This involves complex components like user authentication,\
+          \ ticket lifecycle management, notifications, and analytics.\n\nTo streamline\
+          \ communication, you've implemented visual documentation\u2014diagrams,\
+          \ flowcharts, and dashboards\u2014which initially improved clarity and collaboration.\
+          \ However, constant changes in requirements and feedback are making it difficult\
+          \ to keep the visual documentation up to date. The time and effort required\
+          \ to maintain these updates are significantly cutting into your development\
+          \ time, delaying progress, and increasing pressure on the team. Imagine\
+          \ if there was an easier way of maintaining visual documentation.\n\nAre\
+          \ you ready to explore how AI tools can simplify this process?\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's get started!
+    - target_node_id: screen2
+      text: Tell me more about these AI tools.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Keeping visual documentation up-to-date can be a major challenge.
+          AI tools like Eraser AI and Lucidchart can automate many aspects of this
+          process, reducing the manual effort required. These tools can dynamically
+          update your diagrams and flowcharts based on real-time changes in your project,
+          ensuring your documentation stays accurate without consuming too much of
+          your time.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Got it!
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: "Let\u2019s dive into two powerful AI tools for visual documentation:\n\
+          \n### Eraser AI\n\n- **Automatic Capture:** Gathers and organizes visual\
+          \ information.\n- **Clear Visualization:** Ensures accurate and transparent\
+          \ visual documentation.\n- **Workflow Integration:** Fits seamlessly into\
+          \ existing workflows.\n\n### Lucidchart\n\n- **Diagram Creation:** Intuitive\
+          \ tools for various visual diagrams.\n- **Collaboration:** Real-time collaborative\
+          \ editing and sharing.\n- **Tool Integrations:** Works with Google Drive,\
+          \ Microsoft Office, Slack, etc.\n\nThese tools streamline visual documentation,\
+          \ making it clear, collaborative, and efficient.\n\nFor this journey, we\
+          \ will explore how to use Eraser AI for visual documentation.\n"
+        type: text
+    id: END
+    type: message
+- context: This section provides an overview of the diverse use cases for Eraser AI,
+    illustrating its potential to enhance documentation processes across various scenarios.
+    Eraser AI is showcased as a valuable tool in system design and planning, where
+    it aids in creating detailed architecture and data flow diagrams, ensuring thorough
+    planning and clear understanding among team members. In API documentation, Eraser
+    AI generates comprehensive documentation for each endpoint, including HTTP methods,
+    request parameters, and response formats, which facilitates easier integration
+    and reduces miscommunication. Additionally, Eraser AI proves useful in generating
+    technical reports by compiling data from various sources and creating visual reports
+    with system architecture diagrams and performance metrics, making complex technical
+    information more accessible to stakeholders and aiding in decision-making. The
+    section emphasizes the benefits of Eraser AI in enhancing clarity, improving understanding,
+    and supporting better planning and communication within teams.
+  id: '2'
+  name: Use Cases for Eraser AI
+  nodes:
+  - body:
+      parts:
+      - content: 'Eraser AI can be used in various scenarios to improve your documentation
+          process:
+
+
+          1. **System Design and Planning:** Planning a new system or application.
+
+          2. **API Documentation:** A team needs to document a new API.
+
+          3. **Technical Reports:** A team needs to create a technical report for
+          stakeholders.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: Can you give me a more detailed example?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: '**System Design and Planning**
 
-      - id: screen6
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                **API Documentation**
 
-                **Scenario:** A team needs to document a new API.
+          **Scenario:** Planning a new system or application.
 
-                **Use Case:** Eraser AI generates detailed API documentation, including endpoint descriptions and data flow diagrams.
 
-                **Example:**
-                Your team is developing a new RESTful API for a ticketing system. Eraser AI can generate comprehensive documentation for each endpoint, including HTTP methods, request parameters, and response formats. Additionally, it can create data flow diagrams that show how data moves through the API, helping developers understand how different endpoints interact.
-
-                **Benefits:** Ensures clear and comprehensive API documentation, facilitates easier integration, and reduces miscommunication.
-        edges:
-          - text: "Show me an example of a technical report."
-            target_node_id: "END"
-
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                **Technical Reports**
-
-                **Scenario:** A team needs to create a technical report for stakeholders.
-
-                **Use Case:** Eraser AI generates visual technical reports, including system architecture diagrams and performance metrics.
-
-                **Example:**
-                Your team needs to present a technical report on the performance of your ticket assignment system to stakeholders. Eraser AI can compile data from various sources and generate visual reports that include system architecture diagrams, performance metrics, and usage statistics. These reports make it easier for stakeholders to grasp complex technical information, aiding in decision-making.
-
-                **Benefits:** Enhances clarity, improves stakeholder understanding, and facilitates better decision-making.
-
-                Would you like to explore the benefits of using Eraser AI for visual documentation?
-
-  - name: "Benefits of Using Eraser AI"
-    context: "This section outlines the significant benefits of using Eraser AI for visual documentation, emphasizing its impact on accuracy, productivity, collaboration, and adaptability. **Improved Accuracy and Consistency**: Eraser AI reduces human error and ensures uniformity across all documentation, leading to more reliable and consistent outputs. **Increased Productivity**: By automating tasks, Eraser AI accelerates the documentation process, optimizes resource allocation, and allows engineers to focus on more critical design and development activities. **Enhanced Collaboration and Communication**: The tool facilitates better onboarding and knowledge sharing through comprehensive and clear documentation, improving stakeholder engagement and understanding. **Adaptability to Changes**: Eraser AI dynamically updates documentation to reflect project changes, offering flexibility to accommodate new requirements or scope adjustments. Overall, Eraser AI enhances the documentation process by improving accuracy, boosting productivity, fostering better communication, and providing the adaptability needed for evolving projects."
-    id: "3"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Here are some benefits of using Eraser AI for Visual Documentation:
-
-                ### 1. Improved Accuracy and Consistency
-
-                - Eraser AI minimizes errors and ensures uniformity across all documentation.
-
-                ### 2. Increased Productivity
-
-                - Eraser AI automates tasks, speeding up processes and optimizing resource allocation.
-
-                ### 3. Enhanced Collaboration and Communication
-
-                - Eraser AI facilitates better onboarding and stakeholder engagement with clear, comprehensive documentation.
-
-                ### 4. Adaptability to Changes
-
-                - Eraser AI dynamically updates documentation, easily accommodating project changes.
-        edges:
-          - text: "Tell me more about the benefits."
-            target_node_id: "END"
-
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Let’s dive deeper into the benefits of using Eraser AI for Visual Documentation:
-
-                ### Improved Accuracy and Consistency:
-
-                - **Reduced Human Error:** Minimizes errors in documenting and interpreting requirements.
-                - **Consistent Documentation:** Ensures uniformity across all documents and diagrams.
-
-                ### Increased Productivity:
-
-                - **Faster Turnaround:** Speeds up the process from requirement gathering to visual documentation.
-                - **Resource Optimization:** Allows engineers to focus more on design and development activities.
-                - **Automation:** Reduces the time needed to create detailed plans and visual documentation.
-
-                ### Enhanced Collaboration and Communication:
-
-                - **Comprehensive Documentation:** Speeds up onboarding and knowledge sharing with thorough and clear documentation.
-                - **Stakeholder Engagement:** Improves clarity and understanding for stakeholders through clear and accurate documentation.
-
-                ### Adaptability to Changes:
-
-                - **Dynamic Adaptation:** Quickly updates documentation and visuals as project requirements change.
-                - **Flexibility:** Easily accommodates new requirements or changes in project scope.
-
-  - name: "Best Practices for Using Eraser AI"
-    context: "This section highlights best practices for optimizing the use of Eraser AI for visual documentation, focusing on effective prompt engineering. **Be Specific**: Clearly define tasks with precise instructions to ensure Eraser AI understands and executes the desired outputs accurately. **Provide Context**: Include relevant background information and context to guide Eraser AI in generating more accurate and relevant documentation. **Use Correct Terminology**: Utilize appropriate technical terms to ensure clarity and precision in the generated outputs. **Break Down Complex Requests**: Divide complex tasks into smaller, manageable prompts to facilitate better results from Eraser AI. **Iterate and Refine**: Review initial outputs and provide feedback for iterative improvements, enhancing the overall quality and accuracy of the documentation. By following these practices, users can achieve accurate, efficient, and collaborative documentation processes with Eraser AI. The section emphasizes the importance of clear communication, context provision, and continuous refinement to maximize the tool's potential."
-    id: "4"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                To get the most out of Eraser AI for your visual documentation, consider these best practices:
-
-                To ensure optimal responses from Eraser AI, recall the guidelines for prompt engineering covered earlier:
-
-                - **Be Specific:** Clearly define what needs to be created with precise instructions.
-                - **Provide Context:** Include relevant background information and context for the task.
-                - **Use Correct Terminology:** Ensure that the correct technical terms are used.
-                - **Break Down Complex Requests:** Split complex tasks into smaller, manageable prompts.
-                - **Iterate and Refine:** Review the initial outputs and provide feedback for iterative improvements.
-
-                Following these practices will help you achieve accurate, efficient, and collaborative documentation processes with Eraser AI.
-        edges:
-          - text: "Show me examples of being specific with prompts."
-            target_node_id: "screen11"
-
-      - id: screen11
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                To get the best results from Eraser AI, it's important to be specific in your prompts. Here are some examples:
-
-                - **General Prompt:** "Create a diagram for the user authentication system."
-                - **Specific Prompt:** "Create a flowchart for the user authentication system, including user login, verification, session management, and error handling steps."
-        edges:
-          - text: "Can you give me an example about providing context?"
-            target_node_id: "screen12"
-
-      - id: screen12
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Providing context helps Eraser AI generate more accurate documentation. Here are some examples:
-
-                - **General Prompt:** "Document the API endpoints."
-                - **Contextual Prompt:** "Document the API endpoints for the ticketing system, including the methods for creating, updating, and deleting tickets, with sample request and response bodies."
-        edges:
-          - text: "Show me examples of using correct terminology."
-            target_node_id: "screen13"
-
-      - id: screen13
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Using correct terminology ensures that Eraser AI understands your requirements accurately. Here are some examples:
-
-                - **General Prompt:** "Create a diagram of the database."
-                - **Terminology-Specific Prompt:** "Create an Entity-Relationship Diagram (ERD) for the database, including tables for users, tickets, and transactions, and their relationships."
-        edges:
-          - text: "Show me examples of breaking down complex requests."
-            target_node_id: "screen14"
-
-      - id: screen14
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Breaking down complex tasks into smaller, manageable prompts helps Eraser AI provide better results. Here are some examples:
-
-                - **General Prompt:** "Create documentation for the entire ticketing system."
-                - **Broken-Down Prompts:**
-                    1. "Create a flowchart for the ticket creation process, including user input, validation, and database entry."
-                    2. "Generate a sequence diagram for the ticket assignment process, detailing the interactions between the user, system, and agents."
-                    3. "Document the notification system, including triggers for email and SMS alerts."
-        edges:
-          - text: "Show me examples of iterating and refining."
-            target_node_id: "END"
-
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Iterating and refining your prompts helps improve the quality of the outputs. Here are some examples:
-
-                - **Initial Prompt:** "Create a flowchart for the user authentication process."
-                - **Refined Prompt after Review:** "Update the flowchart to include multi-factor authentication steps and error handling for failed login attempts."
-
-  - name: "Conclusion and Takeaways"
-    context: "This section concludes the expedition on using Eraser AI for visual documentation and outlines the key takeaways and next steps. **Key Takeaways**: 1. **Use Cases**: Eraser AI excels in system design, API documentation, and technical report creation. 2. **Benefits**: The tool improves accuracy, boosts productivity, enhances collaboration, and adapts to project changes. 3. **Best Practices**: Effective use involves being specific, providing context, using correct terminology, breaking down tasks, and iterating and refining outputs. Following these guidelines will help streamline your documentation process using Eraser AI. **Next Steps**: The upcoming Mission focuses on generating technical documents for planning with Eraser AI, offering deeper practical applications to enhance your documentation skills. Users are encouraged to continue their learning journey to create detailed, accurate, and efficient project documentation."
-    id: "5"
-    nodes:
-      - id: START
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Congratulations on completing the Expedition on using Eraser AI for visual documentation! Here are your key takeaways:
-
-                1. **Use Cases**: Eraser AI is great for system design, API documentation, and technical reports.
-                2. **Benefits**: It improves accuracy, boosts productivity, enhances collaboration, and adapts to changes.
-                3. **Best Practices**: Be specific, provide context, use correct terminology, break down tasks, and iterate and refine.
-
-                By following these guidelines, you can effectively use Eraser AI to streamline your documentation process.
-        edges:
-          - text: "What's coming up next?"
-            target_node_id: "screen17"
-
-      - id: screen17
-        type: message
-        body:
-          parts:
-            - type: "image"
-              content: "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
-            - type: "text"
-              content: |
-                Great job completing this Expedition! Up next, we have an exciting Mission where you'll learn to generate technical documents for planning using Eraser AI.
-
-                Get ready to dive deeper into practical applications and enhance your skills in creating detailed, accurate, and efficient documentation for your projects.
-
-                Are you excited to get started on the next Mission?
-        edges:
-          - text: "Yes, I'm ready!"
-            target_node_id: "END"
-
-      - id: END
-        type: message
-        body:
-          parts:
-            - type: "text"
-              content: |
-                Congratulations! You've completed the Expedition on using AI tools for visual documentation. Keep exploring and enhancing your skills with AI-powered tools. Happy documenting!
+          **Use Case:** Eraser AI assists in creating architecture and data flow diagrams
+          during the design phase.
+
+
+          **Example:**
+
+          You are designing a new user authentication system. With Eraser AI, you
+          can automatically generate diagrams that illustrate the entire authentication
+          flow, including user login, verification, and session management. These
+          diagrams help your team visualize the system''s structure, identify potential
+          bottlenecks, and ensure everyone understands the plan before development
+          begins.
+
+
+          **Benefits:** Facilitates thorough planning, ensures clear understanding,
+          and aids in identifying potential issues early.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6
+      text: Show me an example of API documentation.
+    - target_node_id: END
+      text: Show me an example of a technical report.
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: '**API Documentation**
+
+
+          **Scenario:** A team needs to document a new API.
+
+
+          **Use Case:** Eraser AI generates detailed API documentation, including
+          endpoint descriptions and data flow diagrams.
+
+
+          **Example:**
+
+          Your team is developing a new RESTful API for a ticketing system. Eraser
+          AI can generate comprehensive documentation for each endpoint, including
+          HTTP methods, request parameters, and response formats. Additionally, it
+          can create data flow diagrams that show how data moves through the API,
+          helping developers understand how different endpoints interact.
+
+
+          **Benefits:** Ensures clear and comprehensive API documentation, facilitates
+          easier integration, and reduces miscommunication.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Show me an example of a technical report.
+    id: screen6
+    type: message
+  - body:
+      parts:
+      - content: '**Technical Reports**
+
+
+          **Scenario:** A team needs to create a technical report for stakeholders.
+
+
+          **Use Case:** Eraser AI generates visual technical reports, including system
+          architecture diagrams and performance metrics.
+
+
+          **Example:**
+
+          Your team needs to present a technical report on the performance of your
+          ticket assignment system to stakeholders. Eraser AI can compile data from
+          various sources and generate visual reports that include system architecture
+          diagrams, performance metrics, and usage statistics. These reports make
+          it easier for stakeholders to grasp complex technical information, aiding
+          in decision-making.
+
+
+          **Benefits:** Enhances clarity, improves stakeholder understanding, and
+          facilitates better decision-making.
+
+
+          Would you like to explore the benefits of using Eraser AI for visual documentation?
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This section outlines the significant benefits of using Eraser AI for
+    visual documentation, emphasizing its impact on accuracy, productivity, collaboration,
+    and adaptability. **Improved Accuracy and Consistency**: Eraser AI reduces human
+    error and ensures uniformity across all documentation, leading to more reliable
+    and consistent outputs. **Increased Productivity**: By automating tasks, Eraser
+    AI accelerates the documentation process, optimizes resource allocation, and allows
+    engineers to focus on more critical design and development activities. **Enhanced
+    Collaboration and Communication**: The tool facilitates better onboarding and
+    knowledge sharing through comprehensive and clear documentation, improving stakeholder
+    engagement and understanding. **Adaptability to Changes**: Eraser AI dynamically
+    updates documentation to reflect project changes, offering flexibility to accommodate
+    new requirements or scope adjustments. Overall, Eraser AI enhances the documentation
+    process by improving accuracy, boosting productivity, fostering better communication,
+    and providing the adaptability needed for evolving projects.'
+  id: '3'
+  name: Benefits of Using Eraser AI
+  nodes:
+  - body:
+      parts:
+      - content: 'Here are some benefits of using Eraser AI for Visual Documentation:
+
+
+          ### 1. Improved Accuracy and Consistency
+
+
+          - Eraser AI minimizes errors and ensures uniformity across all documentation.
+
+
+          ### 2. Increased Productivity
+
+
+          - Eraser AI automates tasks, speeding up processes and optimizing resource
+          allocation.
+
+
+          ### 3. Enhanced Collaboration and Communication
+
+
+          - Eraser AI facilitates better onboarding and stakeholder engagement with
+          clear, comprehensive documentation.
+
+
+          ### 4. Adaptability to Changes
+
+
+          - Eraser AI dynamically updates documentation, easily accommodating project
+          changes.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen1
+      text: Tell me more about the benefits.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Let\u2019s dive deeper into the benefits of using Eraser AI for\
+          \ Visual Documentation:\n\n### Improved Accuracy and Consistency:\n\n- **Reduced\
+          \ Human Error:** Minimizes errors in documenting and interpreting requirements.\n\
+          - **Consistent Documentation:** Ensures uniformity across all documents\
+          \ and diagrams.\n\n### Increased Productivity:\n\n- **Faster Turnaround:**\
+          \ Speeds up the process from requirement gathering to visual documentation.\n\
+          - **Resource Optimization:** Allows engineers to focus more on design and\
+          \ development activities.\n- **Automation:** Reduces the time needed to\
+          \ create detailed plans and visual documentation.\n\n### Enhanced Collaboration\
+          \ and Communication:\n\n- **Comprehensive Documentation:** Speeds up onboarding\
+          \ and knowledge sharing with thorough and clear documentation.\n- **Stakeholder\
+          \ Engagement:** Improves clarity and understanding for stakeholders through\
+          \ clear and accurate documentation.\n\n### Adaptability to Changes:\n\n\
+          - **Dynamic Adaptation:** Quickly updates documentation and visuals as project\
+          \ requirements change.\n- **Flexibility:** Easily accommodates new requirements\
+          \ or changes in project scope.\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Tell me more about the best practices.
+    id: screen1
+    type: message
+  - body:
+      parts:
+      - content: Now, let's take a minute to talk about the best practices for optimizing
+          the usage of Eraser AI for visual documentation.
+        type: text
+    id: END
+    type: message
+- context: 'This section highlights best practices for optimizing the use of Eraser
+    AI for visual documentation, focusing on effective prompt engineering. **Be Specific**:
+    Clearly define tasks with precise instructions to ensure Eraser AI understands
+    and executes the desired outputs accurately. **Provide Context**: Include relevant
+    background information and context to guide Eraser AI in generating more accurate
+    and relevant documentation. **Use Correct Terminology**: Utilize appropriate technical
+    terms to ensure clarity and precision in the generated outputs. **Break Down Complex
+    Requests**: Divide complex tasks into smaller, manageable prompts to facilitate
+    better results from Eraser AI. **Iterate and Refine**: Review initial outputs
+    and provide feedback for iterative improvements, enhancing the overall quality
+    and accuracy of the documentation. By following these practices, users can achieve
+    accurate, efficient, and collaborative documentation processes with Eraser AI.
+    The section emphasizes the importance of clear communication, context provision,
+    and continuous refinement to maximize the tool''s potential.'
+  id: '4'
+  name: Best Practices for Using Eraser AI
+  nodes:
+  - body:
+      parts:
+      - content: 'To get the most out of Eraser AI for your visual documentation,
+          consider these best practices:
+
+
+          To ensure optimal responses from Eraser AI, recall the guidelines for prompt
+          engineering covered earlier:
+
+
+          - **Be Specific:** Clearly define what needs to be created with precise
+          instructions.
+
+          - **Provide Context:** Include relevant background information and context
+          for the task.
+
+          - **Use Correct Terminology:** Ensure that the correct technical terms are
+          used.
+
+          - **Break Down Complex Requests:** Split complex tasks into smaller, manageable
+          prompts.
+
+          - **Iterate and Refine:** Review the initial outputs and provide feedback
+          for iterative improvements.
+
+
+          Following these practices will help you achieve accurate, efficient, and
+          collaborative documentation processes with Eraser AI.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen11
+      text: Show me examples of being specific with prompts.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'To get the best results from Eraser AI, it''s important to be specific
+          in your prompts. Here are some examples:
+
+
+          - **General Prompt:** "Create a diagram for the user authentication system."
+
+          - **Specific Prompt:** "Create a flowchart for the user authentication system,
+          including user login, verification, session management, and error handling
+          steps."
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen12
+      text: Can you give me an example about providing context?
+    id: screen11
+    type: message
+  - body:
+      parts:
+      - content: 'Providing context helps Eraser AI generate more accurate documentation.
+          Here are some examples:
+
+
+          - **General Prompt:** "Document the API endpoints."
+
+          - **Contextual Prompt:** "Document the API endpoints for the ticketing system,
+          including the methods for creating, updating, and deleting tickets, with
+          sample request and response bodies."
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen13
+      text: Show me examples of using correct terminology.
+    id: screen12
+    type: message
+  - body:
+      parts:
+      - content: 'Using correct terminology ensures that Eraser AI understands your
+          requirements accurately. Here are some examples:
+
+
+          - **General Prompt:** "Create a diagram of the database."
+
+          - **Terminology-Specific Prompt:** "Create an Entity-Relationship Diagram
+          (ERD) for the database, including tables for users, tickets, and transactions,
+          and their relationships."
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen14
+      text: Show me examples of breaking down complex requests.
+    id: screen13
+    type: message
+  - body:
+      parts:
+      - content: "Breaking down complex tasks into smaller, manageable prompts helps\
+          \ Eraser AI provide better results. Here are some examples:\n\n- **General\
+          \ Prompt:** \"Create documentation for the entire ticketing system.\"\n\
+          - **Broken-Down Prompts:**\n    1. \"Create a flowchart for the ticket creation\
+          \ process, including user input, validation, and database entry.\"\n   \
+          \ 2. \"Generate a sequence diagram for the ticket assignment process, detailing\
+          \ the interactions between the user, system, and agents.\"\n    3. \"Document\
+          \ the notification system, including triggers for email and SMS alerts.\"\
+          \n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Show me examples of iterating and refining.
+    id: screen14
+    type: message
+  - body:
+      parts:
+      - content: 'Iterating and refining your prompts helps improve the quality of
+          the outputs. Here are some examples:
+
+
+          - **Initial Prompt:** "Create a flowchart for the user authentication process."
+
+          - **Refined Prompt after Review:** "Update the flowchart to include multi-factor
+          authentication steps and error handling for failed login attempts."
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This section concludes the Quest on using Eraser AI for visual documentation
+    and outlines the key takeaways and next steps. **Key Takeaways**: 1. **Use Cases**:
+    Eraser AI excels in system design, API documentation, and technical report creation.
+    2. **Benefits**: The tool improves accuracy, boosts productivity, enhances collaboration,
+    and adapts to project changes. 3. **Best Practices**: Effective use involves being
+    specific, providing context, using correct terminology, breaking down tasks, and
+    iterating and refining outputs. Following these guidelines will help streamline
+    your documentation process using Eraser AI. **Next Steps**: The upcoming Mission
+    focuses on generating technical documents for planning with Eraser AI, offering
+    deeper practical applications to enhance your documentation skills. Users are
+    encouraged to continue their learning journey to create detailed, accurate, and
+    efficient project documentation.'
+  id: '5'
+  name: Conclusion and Takeaways
+  nodes:
+  - body:
+      parts:
+      - content: 'Congratulations on completing the Quest on using Eraser AI for visual
+          documentation! Here are your key takeaways:
+
+
+          1. **Use Cases**: Eraser AI is great for system design, API documentation,
+          and technical reports.
+
+          2. **Benefits**: It improves accuracy, boosts productivity, enhances collaboration,
+          and adapts to changes.
+
+          3. **Best Practices**: Be specific, provide context, use correct terminology,
+          break down tasks, and iterate and refine.
+
+
+          By following these guidelines, you can effectively use Eraser AI to streamline
+          your documentation process.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen17
+      text: What's coming up next?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Great job completing this Quest! Up next, we have an exciting Mission
+          where you''ll learn to generate technical documents for planning using Eraser
+          AI.
+
+
+          Get ready to dive deeper into practical applications and enhance your skills
+          in creating detailed, accurate, and efficient documentation for your projects.
+
+
+          Are you excited to get started on the next Mission?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, I'm ready!
+    id: screen17
+    type: message
+  - body:
+      parts:
+      - content: 'Congratulations! You''ve completed the Quest on using AI tools for
+          visual documentation. Keep exploring and enhancing your skills with AI-powered
+          tools. Happy documenting!
+
+          '
+        type: text
+    id: END
+    type: message

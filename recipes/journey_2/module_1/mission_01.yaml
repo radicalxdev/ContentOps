@@ -1,0 +1,340 @@
+tasks:
+- context: In this mission, learners are introduced to their task of enhancing the
+    Project Management API with robust CRUD operations as new members of the Alfred
+    AI development team. They are guided through the objectives, which include leveraging
+    GitHub Copilot to accelerate development, improve code quality, and reduce errors.
+    The mission covers the benefits of using GitHub Copilot, such as enhanced coding
+    speed, improved code quality and consistency, and advanced error handling. Additionally,
+    learners receive instructions on setting up their development environment with
+    Visual Studio Code, GitHub Copilot, and necessary extensions. This comprehensive
+    approach prepares them to effectively utilize GitHub Copilot in their development
+    tasks.
+  id: '1'
+  name: Introduction and Setup
+  nodes:
+  - body:
+      parts:
+      - content: 'Hello, {username}! As a recent addition to the Alfred AI development
+          team, your task is to enhance the functionality of the Project Management
+          API. This API is crucial for managing project and ticket data efficiently,
+          which involves implementing robust CRUD operations. Ready to begin?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's get started!
+    - target_node_id: screen1a
+      text: Tell me more about the objectives.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'The objective of this mission is to effectively leverage GitHub
+          Copilot for accelerating the development process, improving code quality,
+          and reducing potential errors in implementing CRUD operations for projects
+          and tickets. You''ll learn how to use GitHub Copilot to generate code from
+          comments or based on the existing code context. Ready to proceed?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's move on!
+    - target_node_id: screen1b
+      text: I'd like to know more about the benefits and implementation.
+    id: screen1a
+    type: message
+  - body:
+      parts:
+      - content: 'GitHub Copilot offers several benefits for your development process:
+
+          - **Enhanced Coding Speed**: GitHub Copilot suggests complete blocks of
+          CRUD operations based on your descriptions, speeding up coding.
+
+          - **Improved Code Quality and Consistency**: Copilot helps maintain consistency
+          and best practices by suggesting code that aligns with your tech stack.
+
+          - **Error Handling and Optimization**: Copilot can generate suggestions
+          for advanced error handling and transaction management strategies.
+
+          '
+        type: text
+      - content: Ready to proceed?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's continue!
+    - target_node_id: screen1c
+      text: How do I set up my development environment?
+    id: screen1b
+    type: message
+  - body:
+      parts:
+      - content: 'To get started, ensure your development environment is set up with
+          the following:
+
+          - Install Visual Studio Code along with the Python extension.
+
+          - Integrate GitHub Copilot and GitHub Copilot Chat extensions in Visual
+          Studio Code.
+
+          - Ensure your GitHub account has an active subscription to GitHub Copilot.
+
+          - Navigate to the `crud.py` file in your project
+
+          '
+        type: text
+      - content: Ready to proceed with the mission?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's proceed!
+    id: screen1c
+    type: message
+  - body:
+      parts:
+      - content: Awesome! Don't forget to `pip install` any dependencies and activate
+          your virtual environment before you begin. Let's get into the code!
+        type: text
+    id: END
+    type: message
+- context: In this mission module, learners enhance the Project Management API by
+    using GitHub Copilot to generate code completions from comments. They start by
+    creating a function create_project to add a new project record to the database,
+    using Copilot's suggestions. After reviewing and accepting the code, they proceed
+    to implement another function, get_project, to retrieve a project by its ID. Throughout
+    the process, learners review and refine the suggested code to ensure it meets
+    the specified requirements. This hands-on approach demonstrates how to leverage
+    Copilot for efficient and accurate code generation in CRUD operations.
+  id: '2'
+  name: Understand the New Feature Request and Current Codebase
+  nodes:
+  - body:
+      parts:
+      - content: 'Let''s start by using GitHub Copilot to generate code completions
+          from comments. Follow these steps:
+
+          1. In `crud.py`, create two empty lines below the library imports.
+
+          2. Add the following comment and press Enter:
+
+
+          ```python
+
+          ''''''Define a function called create_project that creates a new record
+          in the database. The function should take a database session and two parameters:
+          ''name'' and ''description''. The function should create a new instance
+          of the ''Project'' model with the provided ''name'' and ''description'',
+          add it to the database session, commit the transaction, refresh the instance,
+          and return the newly created project.''''''
+
+          ```
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_1.png?alt=media&token=7261c36d-470e-4ad4-87b0-300aa26b7113
+        type: image
+      - content: Review the suggestions provided by GitHub Copilot.
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: Yes, let's review!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Take a moment to review the code completion suggestions from GitHub
+          Copilot. You can cycle through the suggestions by selecting the arrows next
+          to the **Accept** button. Once you''ve found a suitable suggestion, you
+          can accept it.
+
+          '
+        type: text
+      - content: "Here's the final implementation after reviewing and modifying as\
+          \ necessary:\n\n```python\ndef create_project(db: Session, name: str, description:\
+          \ str):\n    new_project = Project(name=name, description=description)\n\
+          \    db.add(new_project)\n    db.commit()\n    db.refresh(new_project)\n\
+          \    return new_project\n```\n"
+        type: text
+      - content: Ready to proceed to the next task?
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: Yes, let's continue!
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: 'Now let''s create a function to retrieve a project by its ID. Follow
+          these steps:
+
+          1. Create two empty lines below the `create_project` function.
+
+          2. Add the following comment and press Enter:
+
+
+          ```python
+
+          ''''''Define a function called get_project, which retrieves a project record
+          from the database by its ID. The function should take a database session
+          and a project ID as parameters. The function should query the database for
+          a project record with the provided ID and return the first result.''''''
+
+          ```
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_2.png?alt=media&token=98a8e694-01e4-4951-8fb1-63614dd42223
+        type: image
+      - content: Review the code suggestions provided by GitHub Copilot.
+        type: text
+    edges:
+    - target_node_id: screen4b
+      text: Yes, let's review!
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: "Take a moment to review the code completion suggestions for the\
+          \ `get_project` function. Here's the final implementation:\n\n```python\n\
+          def get_project(db: Session, project_id: int):\n    return db.query(Project).filter(Project.id\
+          \ == project_id).first()\n```\n"
+        type: text
+      - content: Have you reviewed the suggestions?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes!
+    id: screen4b
+    type: message
+  - body:
+      parts:
+      - content: Perfect! Let's move on to the next task.
+        type: text
+    id: END
+    type: message
+- context: In this task, learners focus on generating an update operation for the
+    Project Management API using GitHub Copilot. They are guided to create a function
+    update_project that updates a project's name and description in the database.
+    Following the provided comment, they review the code suggestions from Copilot,
+    ensuring the function retrieves the project by its ID, updates the necessary fields,
+    commits the transaction, and returns the updated project. This step-by-step process
+    helps learners understand how to effectively use Copilot to implement CRUD operations,
+    reinforcing their coding skills and improving development efficiency.
+  id: '3'
+  name: Interview Pattern Q&A in Action
+  nodes:
+  - body:
+      parts:
+      - content: 'Next, let''s create a function to update a project. Follow these
+          steps:
+
+          1. Create two empty lines below the `get_project` function.
+
+          2. Add the following comment and press Enter:
+
+
+          ```python
+
+          ''''''Define a function called update_project, which updates a project record
+          in the database. The function should take a database session, a project
+          ID, and two parameters: ''name'' and ''description''. The function should
+          retrieve the project by its ID, update its ''name'' and ''description'',
+          commit the transaction, and return the updated project.''''''
+
+          ```
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_3.png?alt=media&token=387fba0c-0e12-4a64-bc2a-f6235a2b4519
+        type: image
+      - content: Review the code suggestions provided by GitHub Copilot.
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's review!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Take a moment to review the code completion suggestions for the\
+          \ `update_project` function. Here's the final implementation:\n\n```python\n\
+          def update_project(db: Session, project_id: int, name: str, description:\
+          \ str):\n    project = db.query(Project).filter(Project.id == project_id).first()\n\
+          \    if project:\n        project.name = name\n        project.description\
+          \ = description\n        db.commit()\n        db.refresh(project)\n    return\
+          \ project\n```\n"
+        type: text
+      - content: Have you reviewed the suggestions?
+        type: text
+    id: END
+    type: message
+- context: In this task, learners focus on generating an update operation for the
+    Project Management API using GitHub Copilot. They are guided to create a function
+    update_project that updates a project's name and description in the database.
+    Following the provided comment, they review the code suggestions from Copilot,
+    ensuring the function retrieves the project by its ID, updates the necessary fields,
+    commits the transaction, and returns the updated project. This step-by-step process
+    helps learners understand how to effectively use Copilot to implement CRUD operations,
+    reinforcing their coding skills and improving development efficiency.
+  id: '4'
+  name: Generate a Delete Operation
+  nodes:
+  - body:
+      parts:
+      - content: 'Finally, let''s create a function to delete a project. Follow these
+          steps:
+
+          1. Create two empty lines below the `update_project` function.
+
+          2. Add the following comment and press Enter:
+
+
+          ```python
+
+          ''''''Define a function called delete_project, which deletes a project record
+          from the database by its ID. The function should take a database session
+          and a project ID as parameters. The function should query the database for
+          a project record with the provided ID, delete the record, and commit the
+          transaction.''''''
+
+          ```
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%202%2Fmission_1_4.png?alt=media&token=5398c6fc-e87a-49a5-8fb3-3baaa7f14b21
+        type: image
+      - content: Review the code suggestions provided by GitHub Copilot.
+        type: text
+    edges:
+    - target_node_id: screen9
+      text: Yes, let's review!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Take a moment to review the code completion suggestions for the\
+          \ `delete_project` function. Here's the final implementation:\n\n```python\n\
+          def delete_project(db: Session, project_id: int):\n    project = db.query(Project).filter(Project.id\
+          \ == project_id).first()\n    if project:\n        db.delete(project)\n\
+          \        db.commit()\n```\n"
+        type: text
+      - content: Ready to move on?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yep! Let's move on.
+    id: screen9
+    type: message
+  - body:
+      parts:
+      - content: 'Congratulations, {username}! You''ve successfully implemented CRUD
+          operations using GitHub Copilot. This process has demonstrated how Copilot
+          can accelerate development, improve code quality, and reduce errors. Excellent
+          work!
+
+          '
+        type: text
+    id: END
+    type: message

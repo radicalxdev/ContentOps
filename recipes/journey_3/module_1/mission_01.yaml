@@ -1,0 +1,332 @@
+tasks:
+- context: In this mission, learners focus on creating unit tests using GitHub Copilot
+    Chat. They start by understanding the importance of unit testing, which verifies
+    that individual parts of the code work as intended, catches bugs early, ensures
+    code reliability, and facilitates easier refactoring. The mission guides learners
+    through using Copilot Chat to generate unit tests, making the process more efficient.
+    It also highlights the benefits of unit testing, such as early bug detection,
+    improved code reliability, easier refactoring, and serving as documentation. By
+    appreciating these benefits, learners are prepared to enhance their code's functionality
+    and reliability through effective unit testing.
+  id: '1'
+  name: Introduction and Setup
+  nodes:
+  - body:
+      parts:
+      - content: 'Hello, {username}! Welcome to the mission on creating unit tests
+          using GitHub Copilot Chat. Imagine you''re developing a new scheduling feature
+          in AI TaskMaster that automatically assigns projects based on priority and
+          deadlines. How will you ensure the code is functional and reliable? This
+          mission will guide you through using GitHub Copilot Chat to create unit
+          tests, ensuring your code performs as expected. Ready to start?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's get started!
+    - target_node_id: screen1a
+      text: Tell me more about unit testing with GitHub Copilot Chat.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Unit testing is essential for verifying that individual parts of
+          your code work as intended. By writing unit tests, you can catch bugs early,
+          ensure code reliability, and facilitate easier refactoring. GitHub Copilot
+          Chat can assist in generating these tests, making the process more efficient.
+          Ready to proceed?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's move on!
+    - target_node_id: screen1b
+      text: I'd like to know more about the benefits.
+    id: screen1a
+    type: message
+  - body:
+      parts:
+      - content: 'The benefits of unit testing include:
+
+          - **Early Bug Detection**: Identifies issues early in the development process.
+
+          - **Code Reliability**: Ensures your code works as expected.
+
+          - **Facilitates Refactoring**: Makes it easier to update and improve code
+          without introducing new bugs.
+
+          - **Documentation**: Serves as documentation for your code''s expected behavior.
+
+          '
+        type: text
+      - content: Understanding these benefits can help you appreciate the importance
+          of unit testing. Ready to proceed?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's proceed!
+    - target_node_id: screen1c
+      text: How does unit testing improve code quality?
+    id: screen1b
+    type: message
+  - body:
+      parts:
+      - content: 'Unit testing improves code quality by ensuring that each part of
+          your codebase functions correctly. It allows you to make changes with confidence,
+          knowing that existing functionality remains intact. This leads to more robust
+          and maintainable code. Ready to start the mission?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's start!
+    id: screen1c
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s clone the repostitory and start the mission with this link:
+          https://github.com/alfred-ai-co/python-unit-tests-using-github-copilot-tools
+
+          Once cloned and ready to go, let me know!
+
+          '
+        type: text
+    id: END
+    type: message
+- context: In this part of the mission, learners focus on setting up their environment
+    and understanding the scheduler.py file using GitHub Copilot Chat. They start
+    by using the @workspace command to get an overview of the code. Next, they ask
+    follow-up questions to understand the inputs, outputs, and expected behaviors
+    of the functions in the file. This helps narrow down the cases needed for unit
+    testing. Finally, they take a sneak peek at Copilot's analysis on how to properly
+    unit test the file, using the pytest framework. This step-by-step approach ensures
+    they have a clear understanding before writing unit tests.
+  id: '2'
+  name: Code Explanations with Copilot Chat
+  nodes:
+  - body:
+      parts:
+      - content: 'Great! Let''s head to the `scheduler.py` file and use the `@workspace`
+          command to understand the program better. Type the following command:
+
+
+          ```python
+
+          @workspace #file:scheduler.py What does the code do?
+
+          ```
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_1.png?alt=media&token=1925749a-f81e-4528-8f3c-6086f801090e
+        type: image
+      - content: Take a minute to review the response from GitHub Copilot.
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: Got it, let's continue!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s ask follow-up questions to get a better understanding before
+          writing unit tests. We should start with understanding inputs and outputs.
+          Then, we can narrow down the number of cases we need to create. Use the
+          following prompt:
+
+
+          ```python
+
+          #file:scheduler.py Come up with what is needed to properly unit test the
+          file. Let''s think about this step-by-step. What are the inputs and outputs
+          of this file? What are the function''s expected behaviors? What are the
+          function''s expected outputs?
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Got it, let's proceed!
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: 'Finally, let''s take a sneak peek at Copilot''s analysis on how
+          to properly unit test the `scheduler.py` file. We''ll write the tests using
+          the `pytest` framework.
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_2.png?alt=media&token=98c0bfb1-5f68-4184-b2bd-30f338da550f
+        type: image
+      - content: Take a minute to review the response from Github Copilot and then
+          let's get into unit testing!
+        type: text
+    id: END
+    type: message
+- context: In this part of the mission, learners use GitHub Copilot Chat to generate
+    and refine unit tests for the scheduler.py file. They start by specifying the
+    file to be tested, and Copilot generates initial unit tests using the unittest
+    framework. Learners then prompt Copilot to rewrite the tests using the pytest
+    framework, ensuring compatibility with their preferred testing environment. After
+    generating the pytest unit tests, learners create a test file in the tests/ folder
+    and run the tests using pytest, with optional flags for detailed output. This
+    process helps them ensure the functionality and reliability of their code through
+    effective unit testing.
+  id: '3'
+  name: Writing Tests with Github Copilot Chat
+  nodes:
+  - body:
+      parts:
+      - content: 'So far, we''ve analyzed the function we want to unit test and identified
+          a few requirements, such as expected behaviors, inputs, and outputs. Now
+          we can use Copilot to generate tests. Here is an example where we specify
+          the file we want to unit test using the `#file` command:
+
+
+          ```python
+
+          Write unit tests for the #file:scheduler.py based on the expected outputs
+          and behaviors
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6
+      text: Got it, let's see the output!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_6.png?alt=media&token=2b2932b9-01ee-4043-95ab-6e3569659480
+        type: image
+      - content: 'Let''s take a minute to analyze Copilot''s output. Notice how Copilot
+          didn''t receive instructions on what framework to use and defaulted to the
+          `unittest` library. In this case, we want to use `pytest`. Let''s ask Copilot
+          to rewrite the tests using the `pytest` framework by prompting:
+
+
+          ```python
+
+          Make the tests using the pytest framework
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Understood, let's move on!
+    id: screen6
+    type: message
+  - body:
+      parts:
+      - content: 'After the prompt, you should see the `pytest` unit tests ready to
+          go. Create a file within the `tests/` folder as `tests/test_scheduler.py`.
+          Then run the test with:
+
+
+          ```python
+
+          pytest tests/test_scheduler.py
+
+          ```
+
+          '
+        type: text
+      - content: 'Optionally, you may set flags like `vv` or `s` to see debug outputs
+          and logs respectively.
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_4.png?alt=media&token=4fd38402-da57-4cb7-953b-97b0d88b4588
+        type: image
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%203%2FModule%201%2FUnit%202%2Fmodule_1_mission_1_3.png?alt=media&token=923b783b-f03a-4465-9d0d-421f1dd5a078
+        type: image
+      - content: 'After reviewing, let me know if you are ready to move on!
+
+          '
+        type: text
+    id: END
+    type: message
+- context: In this final part of the mission, learners explore using GitHub Copilot's
+    inline chat feature to generate unit tests as they develop the application. They
+    begin by comparing the scheduler.py and scheduler_feature.py files to understand
+    their differences. Using Copilot, they generate unit tests for the schedule_projects
+    function in pytest. After reviewing Copilot's output, which includes comments
+    explaining the assertions, learners modify and finalize the tests as needed. The
+    mission concludes with a summary, highlighting the importance of understanding
+    function behavior and leveraging Copilot to create reliable unit tests, ensuring
+    the code performs as expected.
+  id: '4'
+  name: Inline Test Case Generation with GitHub Copilot Chat
+  nodes:
+  - body:
+      parts:
+      - content: 'While we can write tests using Copilot Chat, we can also use the
+          inline chat feature to write unit tests as we build the application. Let''s
+          head to the `scheduler_feature.py` file, which is similar to `scheduler.py`
+          but now allows multiple assignees. Verify this by asking Copilot:
+
+
+          ```python
+
+          @workspace what is the difference between #file:scheduler.py and #file:scheduler_feature.py
+
+          ```
+
+          '
+        type: text
+      - content: Open inline chat using `Ctrl + I` and clicking within the `scheduler_feature.py`
+          file for context.
+        type: text
+      - content: 'Use the following prompt to generate unit tests for the `schedule_projects`
+          function in `pytest`:
+
+
+          ```python
+
+          Write unit tests for the schedule_projects function in pytest
+
+          ```
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9
+      text: Let's review the output!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Take a minute to review Copilot''s output. Notice how it modifies
+          the file and provides a preview of the output. This lets us use natural
+          language to modify the tests if needed. Copilot also includes comments to
+          explain its assertions, which are crucial for understanding test logic.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Understood, let's proceed!
+    id: screen9
+    type: message
+  - body:
+      parts:
+      - content: 'We utilized GitHub Copilot to write and analyze unit tests. Generating
+          these tests is important for ensuring code functionality, but it''s crucial
+          to start with understanding the function''s behavior and inputs/outputs.
+          This mission has taught you how to leverage Copilot to create reliable unit
+          tests, ensuring your code performs as expected. Excellent work!
+
+          '
+        type: text
+    id: END
+    type: message

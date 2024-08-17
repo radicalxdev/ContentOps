@@ -1,0 +1,942 @@
+tasks:
+- context: This section introduces the quest on 'Advanced Prompt Engineering Techniques,'
+    designed for developers and engineers seeking to enhance their skills in crafting
+    effective prompts for generative AI models. The lesson focuses on improving the
+    reliability, specificity, and quality of AI responses through advanced techniques.
+    It provides an overview of key methods, including the Text-to-Text Approach for
+    guiding language models, the Interview Pattern Approach for conversational prompts,
+    the Chain-of-Thought Approach for sequential reasoning, and the Tree-of-Thought
+    Approach for hierarchical reasoning. Learners are invited to delve into these
+    techniques to produce more accurate and contextually relevant outputs.
+  id: '1'
+  name: Introduction
+  nodes:
+  - body:
+      parts:
+      - content: 'Welcome! In this quest, you will explore advanced techniques for
+          crafting effective prompts to optimize the performance of generative AI
+          models. This lesson is specifically designed for developers and engineers,
+          focusing on methods to improve the reliability, specificity, and quality
+          of AI-generated responses.
+
+
+          Are you ready to begin?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's start.
+    - target_node_id: END
+      text: What will I learn in this quest?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: '### Overview of the Quest
+
+
+          In this lesson, you will learn about:
+
+
+          - **Text-to-Text Approach**: Techniques to craft effective text prompts
+          for guiding LLMs.
+
+          - **Interview Pattern Approach**: Designing prompts that simulate a conversation
+          with the model.
+
+          - **Chain-of-Thought Approach**: Constructing a sequence of prompts for
+          coherent responses.
+
+          - **Tree-of-Thought Approach**: Using hierarchical structuring of prompts
+          for advanced reasoning.
+
+
+          These techniques will help you produce more accurate and contextually appropriate
+          outputs.
+
+
+          Shall we dive into the first part?
+
+          '
+        type: text
+    id: END
+    type: message
+- context: This series of screens introduces and explores the Text-to-Text Approach
+    in prompt engineering for Large Language Models (LLMs). It begins with a general
+    overview of how text prompts and responses are utilized to guide LLMs effectively.
+    The screens cover key techniques for crafting effective prompts, including Task
+    Specification, Contextual Guidance, Domain Expertise, Bias Mitigation, Framing,
+    Zero-Shot Prompting, Few-Shot Prompting, and the User Feedback Loop. Each technique
+    is explained with examples and discussed in terms of its benefits and limitations.
+    The tutorial concludes by highlighting the benefits of using text prompts with
+    LLMs, such as enhanced explainability, increased reliability, and building user
+    trust. The interactive nature of the content includes various call-to-action options
+    to explore each topic further or proceed to subsequent sections.
+  id: '2'
+  name: Text to text prompting
+  nodes:
+  - body:
+      parts:
+      - content: 'Now we will explore the Text-to-Text Approach to prompt engineering.
+          This approach focuses on crafting effective text prompts to guide LLMs (Large
+          Language Models) to produce relevant and accurate outputs.
+
+
+          Are you ready to learn about the techniques for effective text prompts?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: Yes, let's start.
+    - target_node_id: screen4
+      text: What techniques are involved?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'The text-to-text approach in the context of large language models
+          (LLMs) refers to a method of interacting with these models where both the
+          input (prompt) and output (response) are in text form. This approach relies
+          on crafting specific prompts that guide the model to generate text-based
+          outputs aligned with the user''s intentions.
+
+
+          Ready to learn about the techniques involved?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: Yes, let's continue.
+    - target_node_id: screen5
+      text: Can you give an overview of the techniques?
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: 'Here are the key techniques for effective text prompts:
+
+
+          - **Task Specification**: Explicitly specifying the objective.
+
+          - **Contextual Guidance**: Providing specific instructions and context.
+
+          - **Domain Expertise**: Using domain-specific terminology.
+
+          - **Bias Mitigation**: Crafting neutral prompts.
+
+          - **Framing**: Guiding responses within specific boundaries.
+
+          - **Zero-Shot Prompting**: Handling tasks without prior training.
+
+          - **Few-Shot Prompting**: Providing demonstrations within prompts.
+
+          - **User Feedback Loop**: Iteratively refining prompts.
+
+
+          Would you like to dive into each technique or skip to the benefits?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6
+      text: Let's dive into each technique.
+    - target_node_id: screen6
+      text: Skip to the benefits.
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: 'Explicitly specifying the objective to the LLM increases the accuracy
+          of responses.
+
+
+          - **Example**: "Generate a Python function that sorts a list of dictionaries
+          by a specific key."
+
+
+          **Benefit**: Clear directives help the model understand and execute the
+          task accurately.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Sure, let's look at the limitations.
+    - target_node_id: screen7
+      text: Let's learn about the next technique.
+    id: screen6
+    type: message
+  - body:
+      parts:
+      - content: 'When using the task specification technique, striking the right
+          balance between specificity and flexibility may be challenging. Overly specific
+          prompts may limit the AI''s creativity, while too flexible prompts can lead
+          to vague or irrelevant responses.
+
+
+          Shall we move on to the next technique, contextual guidance?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen7
+      text: Yes, let's continue.
+    - target_node_id: screen7
+      text: Ready for the next technique.
+    id: screen6a
+    type: message
+  - body:
+      parts:
+      - content: 'Providing specific instructions and context ensures the model generates
+          relevant output.
+
+
+          - **Example**: "Write a SQL query to retrieve all users who have logged
+          in within the last 30 days, including their names and last login dates."
+
+
+          **Benefit**: Including context results in more detailed and appropriate
+          responses.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen7a
+      text: Yes, let's explore the limitations.
+    - target_node_id: screen8
+      text: Tell me about the next technique.
+    id: screen7
+    type: message
+  - body:
+      parts:
+      - content: 'When using contextual guidance, providing the right amount of context
+          is crucial. Including too much context can overwhelm the AI and lead to
+          unnecessary details, whereas insufficient context may result in incomplete
+          or inaccurate responses.
+
+
+          Shall we move on to the next technique, domain expertise?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen8
+      text: Yes, let's continue.
+    - target_node_id: screen8
+      text: Let's move on to domain expertise.
+    id: screen7a
+    type: message
+  - body:
+      parts:
+      - content: 'Using domain-specific terminology enhances the accuracy of content
+          in specialized fields.
+
+
+          - **Example**: "Explain how to implement OAuth2 authentication in a Node.js
+          application, considering both authorization code flow and client credentials
+          flow."
+
+
+          **Benefit**: Ensures precision and reliability in technical fields.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen8a
+      text: Sure, let's consider the limitations.
+    - target_node_id: screen9
+      text: Tell me about the next technique.
+    id: screen8
+    type: message
+  - body:
+      parts:
+      - content: 'When using domain expertise, ensuring accurate use of technical
+          jargon is important. Incorrect or overly complex terminology can confuse
+          the AI, leading to errors. Ensuring accuracy and appropriateness of the
+          terminology requires deep subject matter expertise.
+
+
+          Shall we move on to the next technique, bias mitigation?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9
+      text: Yes, let's continue.
+    - target_node_id: screen9
+      text: Ready for the next technique.
+    id: screen8a
+    type: message
+  - body:
+      parts:
+      - content: 'Crafting prompts to generate neutral responses helps reduce bias.
+
+
+          - **Example**: "Describe the advantages and disadvantages of different software
+          development methodologies without favoring any particular one."
+
+
+          **Benefit**: Promotes balanced and inclusive outputs.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9a
+      text: Yes, let's explore the limitations.
+    - target_node_id: screen10
+      text: No, let's proceed to the next technique.
+    id: screen9
+    type: message
+  - body:
+      parts:
+      - content: 'When using bias mitigation, eliminating all biases is challenging
+          due to the inherent biases present in training data. Crafting neutral prompts
+          can be difficult and may not fully address all biases.
+
+
+          Shall we move on to the next technique, framing?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10
+      text: Yes, let's continue.
+    - target_node_id: screen10
+      text: Let's move on to framing.
+    id: screen9a
+    type: message
+  - body:
+      parts:
+      - content: 'Guiding the model to generate responses within specific boundaries.
+
+
+          - **Example**: "Summarize the main differences between relational and NoSQL
+          databases in 150 words."
+
+
+          **Benefit**: Helps maintain focus on key points and limits extraneous information.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10a
+      text: Sure, let's check out the limitations.
+    - target_node_id: screen11
+      text: Tell me about the next technique.
+    id: screen10
+    type: message
+  - body:
+      parts:
+      - content: 'When using framing, setting appropriate boundaries is crucial. Boundaries
+          that are too narrow can result in overly concise responses, while broad
+          boundaries may lead to off-topic or excessive information. Finding the right
+          scope is essential.
+
+
+          Shall we move on to the next technique, zero-shot prompting?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen11
+      text: Yes, let's continue.
+    - target_node_id: screen11
+      text: Ready for the next technique.
+    id: screen10a
+    type: message
+  - body:
+      parts:
+      - content: 'Generative AI models can perform tasks without prior training on
+          specific prompts.
+
+
+          - **Example**: "Identify the design pattern used in this Java code snippet."
+
+
+          **Benefit**: Allows models to handle new tasks without extensive retraining.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen11a
+      text: Yes, let's explore the limitations.
+    - target_node_id: screen12
+      text: Tell me about the next technique.
+    id: screen11
+    type: message
+  - body:
+      parts:
+      - content: 'When using zero-shot prompting, handling unfamiliar tasks can be
+          challenging. The AI may struggle with tasks it has no prior training for,
+          leading to less accurate or relevant outputs. Zero-shot prompting relies
+          heavily on the model''s generalization capabilities.
+
+
+          Shall we move on to the next technique, few-shot prompting?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen12
+      text: Yes, let's continue.
+    - target_node_id: screen12
+      text: Let's move on to few-shot prompting.
+    id: screen11a
+    type: message
+  - body:
+      parts:
+      - content: 'Providing demonstrations within prompts to guide the model to better
+          performance.
+
+
+          - **Example**: "Here is a function to connect to a MySQL database. Now,
+          write a similar function to connect to a PostgreSQL database."
+
+
+          **Benefit**: Enables the model to generalize from examples and generate
+          appropriate responses for similar tasks.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen12a
+      text: Sure, let's understand the limitations.
+    - target_node_id: screen13
+      text: Tell me about the next technique.
+    id: screen12
+    type: message
+  - body:
+      parts:
+      - content: 'When using few-shot prompting, balancing the number of examples
+          is important. Providing too few examples may not give the AI enough context
+          to perform well, while too many examples can lead to overfitting or excessive
+          reliance on the provided examples.
+
+
+          Shall we move on to the next technique, user feedback loop?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen13
+      text: Yes, let's continue.
+    - target_node_id: screen13
+      text: Ready for the next technique.
+    id: screen12a
+    type: message
+  - body:
+      parts:
+      - content: 'Iteratively refining prompts based on user feedback to improve the
+          model''s output quality.
+
+
+          - **Example**: "Generate a Dockerfile for a Flask application. (Refine)
+          Ensure the Dockerfile uses the latest Python base image and includes necessary
+          environment variables."
+
+
+          **Benefit**: Incrementally enhances output quality through continuous improvement.
+
+
+          Do you want to know about the limitations of this technique?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen13a
+      text: Yes, let's explore the limitations.
+    - target_node_id: END
+      text: Tell me about the benefits of using text prompts with LLMs.
+    id: screen13
+    type: message
+  - body:
+      parts:
+      - content: 'When using the user feedback loop, iteratively refining prompts
+          can be time-consuming. This process can be slow and resource-intensive,
+          requiring continuous monitoring and adjustment to achieve optimal results.
+
+
+          Shall we move on to the benefits of using text prompts with LLMs?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's continue.
+    - target_node_id: END
+      text: Ready to learn the benefits.
+    id: screen13a
+    type: message
+  - body:
+      parts:
+      - content: 'Using text prompts with LLMs offers several advantages:
+
+
+          1. **Enhanced Explainability**: Increases transparency and trust in the
+          model''s behavior, addressing ethical and legal concerns.
+
+          2. **Increased Reliability**: Ensures the model can be trusted for various
+          applications, enhancing its dependability.
+
+          3. **Building User Trust**: Leads to more meaningful and reliable outputs.
+
+
+          Would you like to proceed to the next part?
+
+          '
+        type: text
+    id: END
+    type: message
+- context: This section introduces the Interview Pattern Approach in prompt engineering,
+    focusing on simulating a conversational interaction with the model to enhance
+    prompt specificity and relevance. It begins with an overview of the approach,
+    detailing how prompts are optimized and how follow-up questions are used to refine
+    and gather necessary information. An example of this approach is provided, demonstrating
+    a project planning session where the model asks detailed questions to develop
+    a comprehensive project plan. The benefits of this method include dynamic interaction,
+    enhanced specificity, and more precise outputs. However, challenges such as the
+    time-consuming nature of optimization and potential inefficiencies from redundant
+    questions are also addressed. The tutorial concludes with an invitation to explore
+    additional prompt engineering approaches.
+  id: '3'
+  name: Interview Pattern Approach
+  nodes:
+  - body:
+      parts:
+      - content: 'The next prompt-engineering approach we will discuss is the Interview
+          Pattern Approach. This involves designing prompts that simulate a conversation
+          with the model to enhance specificity and relevance. You will get the chance
+          to experiment with this approach in your upcoming mission.
+
+
+          Are you ready to learn how the Interview Pattern Approach works?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen16
+      text: Yes, let's start.
+    - target_node_id: screen16
+      text: How does this approach work?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: '### How the Interview Pattern Approach Works
+
+
+          1. **Optimization**: Meticulously optimize the prompt to ensure the model
+          generates responses that meet your objectives.
+
+          2. **Follow-up Questions**: The model asks necessary follow-up questions
+          based on the initial prompt, gathering relevant information and providing
+          optimized outputs.
+
+
+          Shall we see an example of this approach in action?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen17
+      text: Yes, let's continue.
+    - target_node_id: screen17
+      text: Can you provide an example?
+    id: screen16
+    type: message
+  - body:
+      parts:
+      - content: '### Example: Project Planning
+
+
+          **Prompt Instruction**: "You will act as a seasoned project manager. Your
+          objective is to engage in a comprehensive project planning session with
+          me. Begin by asking a series of detailed questions, one at a time, to gather
+          all the essential information required to craft a project plan for developing
+          a web application."
+
+
+          **Model''s Follow-up Questions**: Tailored to gather detailed and specific
+          information.
+
+
+          - "What are the core features you want to include in the web application?"
+
+          - "Do you have any specific technology stack preferences?"
+
+          - "What is the estimated timeline for the project?"
+
+          - "Are there any specific security requirements we need to consider?"
+
+          - "What is your budget for this project?"
+
+
+          **Result**: A project plan that aligns with your preferences and needs.
+
+
+          Ready to explore the benefits of this approach?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen18
+      text: Yes, let's continue.
+    id: screen17
+    type: message
+  - body:
+      parts:
+      - content: '### Benefits of the Interview Pattern Approach
+
+
+          - **Dynamic Interaction**: Allows for a more dynamic and iterative conversation
+          with the AI model.
+
+          - **Enhanced Specificity**: Gathers detailed and specific information.
+
+          - **Optimization**: Leads to more precise and relevant outputs.
+
+
+          Would you like to learn about the challenges of this approach?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's continue.
+    - target_node_id: END
+      text: Can you provide more details on the benefits?
+    id: screen18
+    type: message
+  - body:
+      parts:
+      - content: '### Challenges
+
+
+          - **Optimization**: Time-consuming and may require extensive trial and error.
+
+          - **Follow-up Questions**: Irrelevant or redundant questions can lead to
+          inefficiency.
+
+
+          Understanding these challenges helps in effectively implementing the Interview
+          Pattern Approach.
+
+
+          Ready to move on to learn about the next approach?
+
+          '
+        type: text
+    id: END
+    type: message
+- context: This section introduces the Chain of Thought Approach in prompt engineering,
+    which involves creating a sequence of prompts to guide AI models toward coherent
+    and contextually accurate responses. The approach breaks complex tasks into smaller,
+    manageable prompts and feeds the model with related questions and solutions before
+    posing the final question. An example provided demonstrates debugging code by
+    first addressing related issues to build context before tackling the main problem.
+    The benefits of this approach include enhanced cognitive abilities, improved accuracy,
+    and a transparent reasoning process. However, challenges such as capturing the
+    complexity of problems and ensuring logical sequence in prompts are also noted.
+    The tutorial concludes with an invitation to explore the final prompt engineering
+    approach.
+  id: '4'
+  name: Chain of Thought Approach
+  nodes:
+  - body:
+      parts:
+      - content: 'Great! Now we will explore the Chain of Thought Approach. This approach
+          involves constructing a sequence of prompts to guide AI models toward coherent
+          and contextually accurate responses.
+
+
+          Are you ready to learn how the Chain of Thought Approach works?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen21
+      text: Yes, let's start.
+    - target_node_id: screen21
+      text: How does this approach work?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: '### How the Chain-of-Thought Approach Works
+
+
+          1. **Concept**: Breaks down complex tasks into smaller, manageable ones
+          through a series of straightforward prompts.
+
+          2. **Methodology**: Feed the model with related questions along with their
+          corresponding solutions before posing a direct question.
+
+
+          Shall we see an example of this approach in action?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen22
+      text: Yes, let's continue.
+    - target_node_id: screen22
+      text: Can you provide an example?
+    id: screen21
+    type: message
+  - body:
+      parts:
+      - content: '### Example: Debugging Code
+
+
+          **Complex Problem**: "The application crashes when submitting the form.
+          How do I fix this?"
+
+          **Training the Model**: Provide a related question with its logical solution.
+
+
+          - **Question**: "The application throws a ''NullPointerException'' when
+          trying to access user data. How do I fix this?"
+
+          - **Solution**: "Check if the user data object is null before accessing
+          its properties."
+
+          **Final Prompt**: Include the related question and solution, followed by
+          the new question.
+
+          - "The application throws a ''NullPointerException'' when trying to access
+          user data. How do I fix this? Check if the user data object is null before
+          accessing its properties. The application crashes when submitting the form.
+          How do I fix this?"
+
+
+          Ready to explore the benefits of this approach?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen23
+      text: Yes, let's continue.
+    id: screen22
+    type: message
+  - body:
+      parts:
+      - content: '### Benefits of the Chain-of-Thought Approach
+
+
+          - **Enhanced Cognitive Abilities**: Strengthens the model''s ability to
+          process information and reason through problems step-by-step.
+
+          - **Improved Accuracy**: Provides context and step-by-step reasoning.
+
+          - **Demonstrated Reasoning Process**: Transparent and understandable reasoning
+          process.
+
+
+          Would you like to learn about the challenges of this approach?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's continue.
+    - target_node_id: END
+      text: Can you provide more details on the benefits?
+    id: screen23
+    type: message
+  - body:
+      parts:
+      - content: '### Challenges
+
+
+          - **Complex Task Breakdown**: May not always capture the complexity of the
+          problem.
+
+          - **Methodology**: Ensuring that the sequence of prompts logically builds
+          upon each other requires careful planning.
+
+
+          Understanding these challenges helps in effectively implementing the Chain
+          of Thought Approach.
+
+
+          Would you like to know about the last prompt engineering approach?
+
+          '
+        type: text
+    id: END
+    type: message
+- context: "This section introduces the Tree of Thought Approach in prompt engineering,\
+    \ which uses a hierarchical structuring of prompts to enable advanced reasoning\
+    \ capabilities in AI models. It involves generating multiple lines of thought,\
+    \ akin to a decision tree, to explore various possibilities and ideas. An example\
+    \ of this approach is provided through a system architecture design task where\
+    \ multiple perspectives are considered, with each \u201Carchitect\u201D contributing\
+    \ step-by-step reasoning. The benefits include enhanced reasoning, maximized capabilities,\
+    \ and structured thinking that builds on intermediate thoughts. However, challenges\
+    \ such as managing complex hierarchical structures and evaluating multiple paths\
+    \ are noted. The tutorial concludes with an invitation to proceed further."
+  id: '5'
+  name: 'Tree of Thought Approach '
+  nodes:
+  - body:
+      parts:
+      - content: 'The last approach we will discuss is the Tree of Thought Approach.
+          This approach involves using hierarchical structuring of prompts to enable
+          advanced reasoning capabilities in AI models.
+
+
+          Are you ready to learn how the Tree of Thought Approach works?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen26
+      text: Yes, let's start.
+    - target_node_id: screen26
+      text: How does this approach work?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: '### How the Tree-of-Thought Approach Works
+
+
+          1. **Concept**: Generates multiple lines of thought, resembling a decision
+          tree, to explore different possibilities and ideas.
+
+          2. **Methodology**: Each thought or idea branches out, creating a treelike
+          structure of interconnected thoughts.
+
+
+          Shall we see an example of this approach in action?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen27
+      text: Yes, let's continue.
+    - target_node_id: screen27
+      text: Can you provide an example?
+    id: screen26
+    type: message
+  - body:
+      parts:
+      - content: '### Example: System Architecture Design
+
+
+          **Prompt Instruction**: "Imagine three different architects answering this
+          question. Each architect will write down one step of their thinking and
+          then share it with the group. Then all architects will proceed to the next
+          step, and so on. If any architect realizes they are wrong at any point,
+          they will leave the process."
+
+
+          **Original Question**: "Design the system architecture for a scalable e-commerce
+          platform that supports microservices, high availability, and robust security
+          measures."
+
+
+          **Process**: The model follows the prompt instruction, considering multiple
+          experts'' perspectives and step-by-step reasoning.
+
+
+          Ready to explore the benefits of this approach?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen28
+      text: Yes, let's continue.
+    id: screen27
+    type: message
+  - body:
+      parts:
+      - content: '### Benefits of the Tree-of-Thought Approach
+
+
+          - **Enhanced Reasoning**: Enhances the model''s ability to process complex
+          problems.
+
+          - **Maximized Capabilities**: Leads to more nuanced and comprehensive results.
+
+          - **Structured Thinking**: Allows the model to logically consider each step,
+          build upon intermediate thoughts, and explore branches that may or may not
+          lead to desired outcomes.
+
+
+          Would you like to learn about the challenges of this approach?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen29
+      text: Yes, let's continue.
+    - target_node_id: screen29
+      text: Can you provide more details on the benefits?
+    id: screen28
+    type: message
+  - body:
+      parts:
+      - content: '### Challenges
+
+
+          - **Hierarchical Structuring**: Complex and hard to manage.
+
+          - **Evaluating Multiple Paths**: Computationally intensive and may require
+          advanced heuristics.
+
+
+          Understanding these challenges helps in effectively implementing the Tree
+          of Thought Approach.
+
+
+          Are you ready to proceed?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Let's continue.
+    id: screen29
+    type: message
+  - body:
+      parts:
+      - content: "Great work! You have now covered advanced prompt engineering techniques\
+          \ and are ready to apply these to enhance your current workflow. Here's\
+          \ a summary of what we've learned so far: \n\n- **Text-to-Text Approach**:\
+          \ Focuses on crafting effective text prompts to produce relevant and accurate\
+          \ outputs.\n- **Interview Pattern Approach**: Tailors responses through\
+          \ interactive dialogues and follow-up questions.\n- **Chain of Thought Approach**:\
+          \ Breaks down complex tasks into manageable prompts, improving cognitive\
+          \ abilities and reasoning.\n- **Tree of Thought Approach**: Uses hierarchical\
+          \ structuring to explore multiple lines of thought, enhancing reasoning\
+          \ and comprehensive results.\n\nMastering these techniques ensures accurate,\
+          \ relevant, and trustworthy AI outputs, essential for future advancements\
+          \ in AI-driven software development.\n\nReady to apply what you've learned?\n"
+        type: text
+    id: END
+    type: message

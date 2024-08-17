@@ -1,0 +1,346 @@
+tasks:
+- context: In this mission, learners focus on improving code reliability and performance
+    using GitHub Copilot Chat. They start by understanding the learning objectives,
+    which include collaborating with Copilot to enhance code reliability and implementing
+    asynchronous APIs for better performance. Learners are guided to prepare the repository
+    by cloning it from GitHub, creating environment files, and activating the shell
+    script to set up the development or production environment. This setup prepares
+    them for the upcoming exercises, where they will use Copilot Chat to generate
+    and evaluate suggestions for improving code reliability and performance.
+  id: '1'
+  name: Introduction and Setup
+  nodes:
+  - body:
+      parts:
+      - content: 'Hello, {username}! Welcome to the ''Optimizing Code Reliability
+          and Performance with AI Insights'' mission. This training focuses on using
+          GitHub Copilot Chat to generate suggestions for improving code reliability
+          and performance in a sample application. Remember, the suggestions from
+          Copilot do not represent best practices or comprehensive solutions. Use
+          your judgment and expertise to evaluate and implement these suggestions.
+          Ready to start?
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's get started!
+    - target_node_id: screen1a
+      text: Tell me more about the objectives.
+    - target_node_id: screen1b
+      text: What is code reliability?
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Developers should strive for a balance between code reliability
+          and performance. A successful balance produces the following mutually beneficial
+          results:
+
+          - Applications meet functional requirements
+
+          - Applications that deliver a seamless and efficient user experience.
+
+          That''s why in this mission, you''ll use GitHub Copilot to generate suggestions
+          that help improve code reliability and performance in a sample application.
+          The learning objectives are to demonstrate how to collaborate with Copilot
+          to implement code reliability and use Copilot to implement asynchronous
+          API for improving code performance.
+
+          '
+        type: text
+      - content: Are you ready to proceed?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's move on!
+    - target_node_id: screen1b
+      text: What is code reliability?
+    id: screen1a
+    type: message
+  - body:
+      parts:
+      - content: 'Code reliability refers to the likelihood that software functions
+          correctly under specific conditions and for a certain period of time. Improving
+          code reliability helps to ensure that your software performs as expected
+          and meets user requirements. In this exercise, you use Github Copilot Chat
+          to generate suggestions that help you improve code reliability and performance
+          in a sample application.
+
+          '
+        type: text
+      - content: Ready to proceed?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, let's move on!
+    id: screen1b
+    type: message
+  - body:
+      parts:
+      - content: "Let's prepare the repository for this exercise. Follow these steps:\n\
+          1. Clone the GitHub repository found at: https://github.com/alfred-ai-co/Improve-Code-Quality-with-Copilot\n\
+          2. Create a `dev.env` and `prod.env` file based on the `env.example`, setting\
+          \ the variable `APP_ENV` to \u201Cdev\u201D or \u201Cprod\u201D respectively.\n\
+          3. In the terminal, activate the shell script `start.sh` with the command:\
+          \ `/start.sh <args>`, where you may set `dev` or `prod` as the argument.\
+          \ By default, a `dev` environment is instantiated.\n"
+        type: text
+      - content: Ready to continue?
+        type: text
+    id: END
+    type: message
+- context: In this segment of the mission, learners focus on collaborating with GitHub
+    Copilot to enhance code reliability. They start by prompting Copilot to analyze
+    and suggest improvements for code reliability, including error handling and type
+    management. After reviewing the suggestions, they specifically focus on handling
+    database errors with SQLAlchemy. Copilot provides advanced methods such as transaction
+    management and connection pooling. Learners then prompt Copilot for a detailed
+    implementation strategy to handle SQLAlchemy exceptions, observing how Copilot
+    suggests modifications and demonstrates specific strategies based on the project's
+    configuration. This exercise emphasizes the practical use of Copilot in improving
+    code reliability through collaborative problem-solving.
+  id: '2'
+  name: Collaborate with Copilot to implement Code Reliability
+  nodes:
+  - body:
+      parts:
+      - content: 'To get started, enter the following prompt with a variety of chat
+          participants or commands to help describe the context to Copilot:
+
+          '
+        type: text
+      - content: 'Enter the following prompt with a variety of chat participants or
+          commands to help describe the context to Copilot:
+
+
+          ```python
+
+          @workspace /explain Analyze and show me how I can improve code reliability
+          in the repository such as error handling or managing types
+
+          ```
+
+          '
+        type: text
+      - content: Ready to proceed?
+        type: text
+    edges:
+    - target_node_id: screen3a
+      text: Command entered!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Examine Copilot''s response. It may suggest strategies such as `error
+          handling` with exceptions, `type checking` or annotations, unit and integration
+          testing, and logging among others.
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_1.png?alt=media&token=5d9fc893-b946-45de-926f-cb1065733579
+        type: image
+      - content: Ready to focus on handling database errors with SQLAlchemy?
+        type: text
+    edges:
+    - target_node_id: screen3b
+      text: Yes, let's continue!
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s focus on handling database errors with SQLAlchemy. Use this
+          prompt:
+
+
+          ```python
+
+          @workspace /explain Show me how I can improve the reliability of my API
+          in handling any database problems with SQLAlchemy
+
+          ```
+
+          '
+        type: text
+      - content: Ready to proceed?
+        type: text
+    edges:
+    - target_node_id: screen3c
+      text: Command entered!
+    id: screen3b
+    type: message
+  - body:
+      parts:
+      - content: 'Review Copilot''s suggestions for advanced methods such as transaction
+          management and connection pooling.
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_2.png?alt=media&token=51e25ac0-2af0-4d07-9052-6eede9052bc9
+        type: image
+      - content: Ready to implement a strategy for handling SQLAlchemy exceptions?
+        type: text
+    edges:
+    - target_node_id: screen3d
+      text: Yes, let's continue!
+    id: screen3c
+    type: message
+  - body:
+      parts:
+      - content: 'Send a more specific prompt to implement a strategy for handling
+          SQLAlchemy exceptions:
+
+
+          ```python
+
+          @workspace Show me how I can implement a strategy to handle error handling
+          by following the API patterns currently implemented in files like #file:crud.py
+          #file:http_error.py #file:tickets.py where we specifically handle SQLAlchemy
+          exceptions and handle them appropriately in the API
+
+          ```
+
+          '
+        type: text
+      - content: Ready to review Copilot's detailed implementation suggestions?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Command entered!
+    id: screen3d
+    type: message
+  - body:
+      parts:
+      - content: 'Observe how Copilot suggests new files, modifies files, and demonstrates
+          highly specific suggestions based on your project''s configuration.
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_3.png?alt=media&token=bb08eda0-b5ea-42bd-91d5-e484a37812a9
+        type: image
+      - content: Ready to proceed to improving code performance?
+        type: text
+    id: END
+    type: message
+- context: In this segment of the mission, learners focus on improving code performance
+    using GitHub Copilot Chat by managing synchronous and asynchronous events in the
+    API. They start by prompting Copilot for general suggestions on performance improvements,
+    then narrow down to implementing asynchronous handlers for routes. Copilot provides
+    recommendations for handling multiple requests simultaneously, enhancing the application's
+    performance. Learners review and implement these suggestions, noting the focus
+    on asynchronous route handling due to SQLAlchemy's non-native async support. The
+    mission concludes with a summary, emphasizing the importance of reviewing and
+    evaluating Copilot's suggestions before implementation, showcasing how Copilot
+    can assist in enhancing code reliability and performance.
+  id: '3'
+  name: Collaborate with Copilot to implement an Asynchronistic API for Code Performance
+  nodes:
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_4.png?alt=media&token=91a6d853-1b91-447e-9931-df705a430dbf
+        type: image
+      - content: 'Similar to code reliability, we can have conversations with Copilot
+          to improve the performance of our code. To the experienced eye, the routes
+          defined in the current API implementation are synchronous events within
+          the FastAPI server, meaning concurrent requests will be done one-by-one
+          and expensive requests will require the rest of the line to wait.
+
+
+          ```python
+
+          @workspace How can I improve my program''s performance by managing synchronous
+          and asynchronous events in the API?
+
+          ```
+
+          '
+        type: text
+      - content: One thing to note is that the library, `SQLAlchemy`, is not natively
+          async which means it can still block the event loop. For demonstration purposes,
+          this exercise focuses on modifying the route handling with FastAPI to be
+          asynchronous rather than synchronous.
+        type: text
+      - content: Ready to proceed?
+        type: text
+    edges:
+    - target_node_id: screen4a
+      text: Command entered!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Examine Copilot''s response. It may suggest using asynchronous handlers,
+          background tasks, and other methods. We will focus on asynchronous handlers
+          for routes.
+
+          '
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%202%2FUnit%203%2Fmodule_2_mission_2_5.png?alt=media&token=9eca98f1-3f5e-49d5-8732-edf93932b2cd
+        type: image
+      - content: Ready to implement asynchronous handlers?
+        type: text
+    edges:
+    - target_node_id: screen4b
+      text: Yes, let's continue!
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s ask a more specific command to utilize the framework''s support
+          for asynchronism:
+
+
+          ```python
+
+          @workspace #file:api.py #file:projects.py How do I use asynchronous handlers
+          to improve the performance of my application?
+
+          ```
+
+          '
+        type: text
+      - content: Ready to review Copilot's recommendations?
+        type: text
+    edges:
+    - target_node_id: screen4c
+      text: Command entered!
+    id: screen4b
+    type: message
+  - body:
+      parts:
+      - content: 'Review Copilot''s recommendations for asynchronous handlers for
+          all routes, which can handle multiple requests simultaneously without waiting
+          for other requests to complete.
+
+          '
+        type: text
+      - content: 'Notice how Copilot recommends the asynchronous handlers for all
+          of the routes such as projects.py where it can handle multiple requests
+          at the same time without waiting for other requests to complete. In our
+          case, because we are using SQLAlchemy which does not natively support asynchronous
+          operations, this would not be a major change for the app''s performance.
+          But this would allow the API to handle multiple requests by returning a
+          coroutine per route and allow the API to accept requests while processing
+          them at the same time.
+
+          '
+        type: text
+      - content: Ready to move on?
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes!
+    id: screen4c
+    type: message
+  - body:
+      parts:
+      - content: 'Congratulations, {username}! You''ve successfully used GitHub Copilot
+          Chat to generate suggestions for improving code reliability and performance.
+          This exercise demonstrated how to interact with Copilot to enhance code
+          stability and efficiency. Remember, always review and assess the suggestions
+          before implementing them.
+
+          '
+        type: text
+    id: END
+    type: message

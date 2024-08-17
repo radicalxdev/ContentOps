@@ -1,925 +1,1284 @@
 tasks:
-  - name: "Question #1"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "1"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Hello {username}! You're about to dive into a probe that will test and reinforce your understanding of Advanced Deployment Pipeline Automation. Are you ready to explore and solidify your knowledge?"
-      edges:
-        - text: "Yes, I'm ready!"
-          target_node_id: screen2
-    - id: screen2
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Excellent, {username}! Let's start with the first question."
-          - type: "text"
-            content: |
-              What is a significant advantage of incorporating AI-driven testing tools into CI/CD workflows?
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '1'
+  name: 'Question #1'
+  nodes:
+  - body:
+      parts:
+      - content: Hello {username}! You're about to dive into a probe that will test
+          and reinforce your understanding of Advanced Deployment Pipeline Automation.
+          Are you ready to explore and solidify your knowledge?
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Yes, I'm ready!
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Excellent, {username}! Let's start with the first question.
+        type: text
+      - content: '**Q1. What is a significant advantage of incorporating AI-driven
+          testing tools into CI/CD workflows?**
 
 
-              A. Increased manual testing effort
 
-              B. Reduced testing time and manual effort
-
-              C. Slower development process
-
-              D. Increased number of bugs
-      edges:
-        - text: "A"
-          target_node_id: screen2incorrect
-        - text: "B"
-          target_node_id: screen2correct
-        - text: "C"
-          target_node_id: screen2incorrect
-        - text: "D"
-          target_node_id: screen2incorrect
-    - id: screen2correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! AI-driven testing tools reduce the time and effort required for manual testing in CI/CD workflows."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen2a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen2incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Not quite, {username}. Incorporating AI-driven testing tools into CI/CD workflows significantly reduces testing time and manual effort. Let's explore this further."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen2a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen2a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Incorporating AI-driven testing tools into CI/CD workflows significantly reduces testing time and manual effort.
-              These tools can automate various testing tasks, such as unit tests, integration tests, and regression tests, ensuring faster and more efficient testing processes.
-              This automation allows developers to focus on more complex and value-added activities while maintaining high-quality code standards and reducing the likelihood of human error.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen2b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen2b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, an AI tool can automatically run a suite of regression tests on every code commit,
-              quickly identifying any issues introduced by recent changes without requiring manual intervention from developers.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Good job, {username}! You've successfully answered the first question. Let's move on to the next one.
-  - name: "Question #2"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "2"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Which of the following is a common challenge developers face with CI/CD processes?
-
-              A. Automated testing
-
-              B. Consistent code quality
-
-              C. Manual testing and quality assurance
-
-              D. Predictable deployment
-      edges:
-        - text: "A"
-          target_node_id: screen3incorrect
-        - text: "B"
-          target_node_id: screen3incorrect
-        - text: "C"
-          target_node_id: screen3correct
-        - text: "D"
-          target_node_id: screen3incorrect
-    - id: screen3correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Manual testing and quality assurance are common challenges in CI/CD processes due to their time-consuming nature and potential for human error."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen3a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen3incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Not quite, {username}. One of the common challenges developers face with CI/CD processes is the reliance on manual testing and quality assurance. Let's explore this further."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen3a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen3a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              One of the common challenges developers face with CI/CD processes is the reliance on manual testing and quality assurance.
-              Manual testing can be time-consuming, error-prone, and inconsistent, leading to potential delays and variability in the quality of code deployments.
-              Automating these processes can help mitigate these issues, ensuring more reliable and efficient testing and quality assurance practices.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen3b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen3b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, manually testing every feature before a release can slow down the deployment process and increase the risk of overlooking critical bugs.
-              Automated testing tools can streamline this process, ensuring thorough and consistent testing across all code changes.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, manually testing every feature before a release can slow down the deployment process and increase the risk of overlooking critical bugs.
-              Automated testing tools can streamline this process, ensuring thorough and consistent testing across all code changes.
-  - name: "Question #3"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "3"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              How can AI tools enhance code analysis and optimization in CI/CD pipelines?
+          A. Increased manual testing effort
 
 
-              A. By ignoring code issues
-
-              B. By manually identifying code issues
-
-              C. By detecting patterns and recommending optimizations
-
-              D. By increasing code complexity
-      edges:
-        - text: "A"
-          target_node_id: screen4incorrect
-        - text: "B"
-          target_node_id: screen4incorrect
-        - text: "C"
-          target_node_id: screen4correct
-        - text: "D"
-          target_node_id: screen4incorrect
-    - id: screen4correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! AI tools detect patterns in code and recommend optimizations, enhancing code quality and performance."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen4a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen4incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not right, {username}. AI tools can enhance code analysis and optimization in CI/CD pipelines by detecting patterns and recommending optimizations. Let's dive deeper."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen4a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen4a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              AI tools can enhance code analysis and optimization in CI/CD pipelines by detecting patterns and recommending optimizations.
-              These tools analyze the codebase to identify potential inefficiencies, security vulnerabilities, and areas for improvement.
-              By providing actionable insights and recommendations, AI tools help developers optimize their code, improve performance, and maintain higher code quality standards.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen4b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen4b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, an AI code analysis tool might identify a pattern of inefficient database queries and recommend more optimized query structures,
-              thereby improving the application's performance and reducing resource usage.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Awesome! Let's move on to the next question, {username}.
-  - name: "Question #4"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "4"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is one benefit of predictive deployment analytics provided by AI?
+          B. Reduced testing time and manual effort
 
 
-              A. Increased deployment failures
-
-              B. Proactive issue resolution
-
-              C. Reduced code quality
-
-              D. Manual risk management
-      edges:
-        - text: "A"
-          target_node_id: screen5incorrect
-        - text: "B"
-          target_node_id: screen5correct
-        - text: "C"
-          target_node_id: screen5incorrect
-        - text: "D"
-          target_node_id: screen5incorrect
-    - id: screen5correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Predictive deployment analytics provided by AI enable proactive issue resolution, improving deployment reliability."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen5a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen5incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not it, {username}. One benefit of predictive deployment analytics provided by AI is proactive issue resolution. Let's explore this further."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen5a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen5a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              One benefit of predictive deployment analytics provided by AI is proactive issue resolution.
-              AI tools can analyze deployment data and identify potential risks and issues before they occur.
-              By predicting these problems, developers can address them proactively, reducing the likelihood of deployment failures and ensuring smoother, more reliable releases.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen5b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen5b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, an AI tool might analyze historical deployment data and detect patterns that typically lead to failures.
-              By identifying these patterns, the tool can alert developers to potential issues, allowing them to make necessary adjustments before deploying the new code.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Great job, {username}! You've completed the fourth question successfully. Let's move on to the next one.
-  - name: "Question #5"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "5"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              How does AI reduce the error rate in CI/CD processes?
-
-              A. By automating repetitive tasks
-              B. By increasing human intervention
-              C. By complicating the process
-              D. By ignoring potential errors
-      edges:
-        - text: "A"
-          target_node_id: screen6correct
-        - text: "B"
-          target_node_id: screen6incorrect
-        - text: "C"
-          target_node_id: screen6incorrect
-        - text: "D"
-          target_node_id: screen6incorrect
-    - id: screen6correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! AI reduces errors in CI/CD processes by automating repetitive tasks, minimizing human error."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen6a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen6incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not exactly right, {username}. AI reduces the error rate in CI/CD processes by automating repetitive tasks that are prone to human error. Let me explain more."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen6a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen6a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              AI reduces the error rate in CI/CD processes by automating repetitive tasks that are prone to human error.
-              This automation ensures consistent execution of tasks such as code compilation, testing, deployment, and monitoring.
-              By eliminating the need for manual intervention in these repetitive tasks, AI tools help maintain higher accuracy, reliability, and efficiency in the CI/CD pipeline.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen6b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen6b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, an AI tool can automatically run build scripts, execute test cases, and deploy code to staging environments,
-              reducing the risk of manual errors that could occur during these steps and ensuring a more streamlined and error-free CI/CD process.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Let's go! You've successfully answered another question. Ready for the next one, {username}?
-  - name: "Question #6"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "6"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Which of the following is NOT a benefit of integrating AI into CI/CD pipelines?
+          C. Slower development process
 
 
-              A. Increased efficiency
+          D. Increased number of bugs
 
-              B. Higher quality code
+          '
+        type: text
+    edges:
+    - target_node_id: screen2incorrect
+      text: A
+    - target_node_id: screen2correct
+      text: B
+    - target_node_id: screen2incorrect
+      text: C
+    - target_node_id: screen2incorrect
+      text: D
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! AI-driven testing tools reduce the time and
+          effort required for manual testing in CI/CD workflows.
+        type: text
+    edges:
+    - target_node_id: screen2a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2correct
+    type: message
+  - body:
+      parts:
+      - content: Not quite, {username}. Incorporating AI-driven testing tools into
+          CI/CD workflows significantly reduces testing time and manual effort. Let's
+          explore this further.
+        type: text
+    edges:
+    - target_node_id: screen2a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'Incorporating AI-driven testing tools into CI/CD workflows significantly
+          reduces testing time and manual effort.
 
-              C. Reduced manual effort
+          These tools can automate various testing tasks, such as unit tests, integration
+          tests, and regression tests, ensuring faster and more efficient testing
+          processes.
 
-              D. Increased testing complexity
-      edges:
-        - text: "A"
-          target_node_id: screen7incorrect
-        - text: "B"
-          target_node_id: screen7incorrect
-        - text: "C"
-          target_node_id: screen7incorrect
-        - text: "D"
-          target_node_id: screen7correct
-    - id: screen7correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Integrating AI into CI/CD pipelines simplifies processes and reduces complexity, rather than increasing testing complexity."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen7a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen7incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not quite right, {username}. Integrating AI into CI/CD pipelines offers several benefits, including increased efficiency, higher quality code, and reduced manual effort. Let's explore this further."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen7a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen7a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Integrating AI into CI/CD pipelines offers several benefits, including increased efficiency, higher quality code, and reduced manual effort.
-              These tools help streamline and automate various aspects of the CI/CD process, such as testing, code analysis, and deployment.
-              As a result, AI reduces the overall complexity and manual labor involved, rather than increasing testing complexity.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen7b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen7b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, AI-driven testing tools can automatically generate and execute test cases,
-              reducing the need for manual intervention and simplifying the overall testing process.
-              This leads to more efficient and reliable CI/CD workflows.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Great job! You've completed another question successfully. Let's move on to the next one.
-  - name: "Question #7"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "7"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              What is a key practice for implementing AI in CI/CD processes?
+          This automation allows developers to focus on more complex and value-added
+          activities while maintaining high-quality code standards and reducing the
+          likelihood of human error.
 
+          '
+        type: text
+    edges:
+    - target_node_id: screen2b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, an AI tool can automatically run a suite of regression
+          tests on every code commit,
 
-              A. Start large and scale down gradually
+          quickly identifying any issues introduced by recent changes without requiring
+          manual intervention from developers.
 
-              B. Integrate AI tools without considering existing tools
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen2b
+    type: message
+  - body:
+      parts:
+      - content: 'Good job, {username}! You''ve successfully answered the first question.
+          Let''s move on to the next one.
 
-              C. Focus on data quality
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
 
-              D. Ignore continuous learning and improvement
-      edges:
-        - text: "A"
-          target_node_id: screen8incorrect
-        - text: "B"
-          target_node_id: screen8incorrect
-        - text: "C"
-          target_node_id: screen8correct
-        - text: "D"
-          target_node_id: screen8incorrect
-    - id: screen8correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Focusing on data quality is crucial for effective AI implementation in CI/CD processes."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen8a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen8incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not quite right, {username}. A key practice for implementing AI in CI/CD processes is focusing on data quality. Let's explore this further."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen8a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen8a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              A key practice for implementing AI in CI/CD processes is focusing on data quality.
-              High-quality data is essential for training AI models and ensuring accurate and reliable outputs.
-              Poor data quality can lead to incorrect predictions and recommendations, undermining the effectiveness of AI tools.
-              Therefore, it is crucial to ensure that the data used for training and operating AI tools is clean, accurate, and relevant to achieve the best results.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen8b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen8b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, when using AI to optimize build processes,
-              ensuring that the historical build data is accurate and complete will help the AI model make better predictions and recommendations for future builds.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Great work, {username}! You've successfully answered another question. Let's move on to the next one.
-  - name: "Question #8"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "8"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Why is it important to monitor AI performance in CI/CD pipelines?
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '2'
+  name: 'Question #2'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q2. Which of the following is a common challenge developers face
+          with CI/CD processes?**
 
 
-              A. To ignore the impact of AI tools
-
-              B. To ensure AI tools deliver expected results
-
-              C. To reduce transparency in the process
-
-              D. To complicate the deployment strategy
-      edges:
-        - text: "A"
-          target_node_id: screen9incorrect
-        - text: "B"
-          target_node_id: screen9correct
-        - text: "C"
-          target_node_id: screen9incorrect
-        - text: "D"
-          target_node_id: screen9incorrect
-    - id: screen9correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Monitoring AI performance ensures that AI tools are delivering the expected results in CI/CD pipelines."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen9a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen9incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not correct, {username}. It is important to monitor AI performance in CI/CD pipelines to ensure that AI tools deliver the expected results. Let's explore this further."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen9a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen9a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              It is important to monitor AI performance in CI/CD pipelines to ensure that AI tools deliver the expected results.
-              Continuous monitoring helps identify any deviations from expected behavior, allowing for timely adjustments and improvements.
-              This ensures that AI tools contribute positively to the CI/CD process, maintaining high standards of efficiency, accuracy, and reliability.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen9b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen9b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For example, monitoring an AI-driven code analysis tool can help detect if the tool is consistently identifying code issues and providing useful recommendations.
-              If the tool's performance declines, developers can investigate and address the underlying issues to restore optimal functionality.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Perfect! You've successfully answered another question. Let's move on to the next one.
-  - name: "Question #9"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "9"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Why is it important to integrate AI tools with existing CI/CD pipelines?
+          A. Automated testing
 
 
-              A. To replace all existing tools
-
-              B. To ensure seamless operation and leverage existing infrastructure
-
-              C. To increase the complexity of integration
-
-              D. To complicate the deployment process
-      edges:
-        - text: "A"
-          target_node_id: screen10incorrect
-        - text: "B"
-          target_node_id: screen10correct
-        - text: "C"
-          target_node_id: screen10incorrect
-        - text: "D"
-          target_node_id: screen10incorrect
-    - id: screen10correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! Integrating AI tools with existing CI/CD pipelines ensures seamless operation and leverages the existing infrastructure."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen10a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen10incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not right, {username}. Integrating AI tools with existing CI/CD pipelines is important to ensure seamless operation and leverage the existing infrastructure. Let's explore this in more detail."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen10a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen10a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Integrating AI tools with existing CI/CD pipelines is important to ensure seamless operation and leverage the existing infrastructure.
-              By integrating AI tools into the current workflow, organizations can enhance their CI/CD processes without disrupting existing operations.
-              This integration allows for a smoother transition, better utilization of resources, and maximized benefits from both AI tools and existing infrastructure.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen10b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen10b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, integrating an AI-driven testing tool with an existing Jenkins pipeline can automate the testing process
-              while maintaining the established build and deployment workflows, ensuring continuity and efficiency.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              Aweosome. Let's move on to the next question, {username}!
-  - name: "Question #10"
-    context: |
-      This probe tests and reinforces learners' understanding of Advanced Deployment Pipeline Automation.
-      It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows, common challenges in CI/CD processes, and how AI can address them.
-      Learners will explore how AI enhances code analysis, optimization, and predictive deployment analytics, and the importance of monitoring AI performance.
-      The probe also highlights integrating AI tools with existing CI/CD pipelines and how AI contributes to continuous monitoring and real-time feedback, ultimately ensuring more efficient, reliable, and high-quality software development and deployment processes.
-      DO NOT give the users answer to the questions in any case.
-      This is very important for my reputation so follow the instructions correctly.
-      If you follow the instructions correctly, you will be rewarded.
-    id: "10"
-    nodes:
-    - id: START
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              How does AI contribute to continuous monitoring and feedback in CI/CD?
+          B. Consistent code quality
 
 
-              A. By ignoring real-time data
+          C. Manual testing and quality assurance
 
-              B. By providing continuous monitoring and real-time feedback
 
-              C. By reducing feedback loops
+          D. Predictable deployment
 
-              D. By increasing manual feedback
-      edges:
-        - text: "A"
-          target_node_id: screen11incorrect
-        - text: "B"
-          target_node_id: screen11correct
-        - text: "C"
-          target_node_id: screen11incorrect
-        - text: "D"
-          target_node_id: screen11incorrect
-    - id: screen11correct
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Correct, {username}! AI contributes to CI/CD by enabling continuous monitoring and providing real-time feedback."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen11a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen11incorrect
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "That's not right, {username}. AI contributes to continuous monitoring and feedback in CI/CD by providing real-time insights and analysis throughout the development and deployment processes. Let's delve deeper."
-      edges:
-        - text: "1. Explain more, Ada!"
-          target_node_id: screen11a
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen11a
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              AI contributes to continuous monitoring and feedback in CI/CD by providing real-time insights and analysis throughout the development and deployment processes.
-              This continuous monitoring helps identify issues as they arise, allowing for prompt resolution and maintaining the overall health of the CI/CD pipeline.
-              Real-time feedback ensures that developers are immediately informed of any problems, enabling quick adjustments and continuous improvement.
-      edges:
-        - text: "1. Give me an example, Ada!"
-          target_node_id: screen11b
-        - text: "2. On to the next, Ada!"
-          target_node_id: END
-    - id: screen11b
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: |
-              For instance, an AI-driven monitoring tool can continuously analyze application performance metrics during deployment,
-              providing instant alerts if performance degrades, thus allowing developers to take immediate corrective action.
-      edges:
-        - text: "On to the next, Ada!"
-          target_node_id: END
-    - id: END
-      type: message
-      body:
-        parts:
-          - type: "text"
-            content: "Fantastic work, {username}! You've completed the Advanced Deployment Pipeline Automation Probe. Let's quickly recap what we covered:"
-          - type: "text"
-            content: "Recap:"
-          - type: "text"
-            content: "- We discussed the advantages of incorporating AI-driven testing tools into CI/CD workflows."
-          - type: "text"
-            content: "- We explored common challenges developers face with CI/CD processes and how AI can address them."
-          - type: "text"
-            content: "- We examined how AI tools enhance code analysis and optimization in CI/CD pipelines."
-          - type: "text"
-            content: "- We looked at the benefits of predictive deployment analytics provided by AI."
-          - type: "text"
-            content: "- We identified the importance of monitoring AI performance and integrating AI tools with existing CI/CD pipelines."
-          - type: "text"
-            content: "- We covered how AI contributes to continuous monitoring and real-time feedback in CI/CD."
-          - type: "text"
-            content: "Up next, we'll dive into the next module where we'll explore advanced techniques for optimizing AI-driven CI/CD workflows for better performance and reliability."
+          '
+        type: text
+    edges:
+    - target_node_id: screen3incorrect
+      text: A
+    - target_node_id: screen3incorrect
+      text: B
+    - target_node_id: screen3correct
+      text: C
+    - target_node_id: screen3incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Manual testing and quality assurance are common
+          challenges in CI/CD processes due to their time-consuming nature and potential
+          for human error.
+        type: text
+    edges:
+    - target_node_id: screen3a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3correct
+    type: message
+  - body:
+      parts:
+      - content: Not quite, {username}. One of the common challenges developers face
+          with CI/CD processes is the reliance on manual testing and quality assurance.
+          Let's explore this further.
+        type: text
+    edges:
+    - target_node_id: screen3a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'One of the common challenges developers face with CI/CD processes
+          is the reliance on manual testing and quality assurance.
+
+          Manual testing can be time-consuming, error-prone, and inconsistent, leading
+          to potential delays and variability in the quality of code deployments.
+
+          Automating these processes can help mitigate these issues, ensuring more
+          reliable and efficient testing and quality assurance practices.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen3b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, manually testing every feature before a release can
+          slow down the deployment process and increase the risk of overlooking critical
+          bugs.
+
+          Automated testing tools can streamline this process, ensuring thorough and
+          consistent testing across all code changes.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen3b
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, manually testing every feature before a release can
+          slow down the deployment process and increase the risk of overlooking critical
+          bugs.
+
+          Automated testing tools can streamline this process, ensuring thorough and
+          consistent testing across all code changes.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '3'
+  name: 'Question #3'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q3. How can AI tools enhance code analysis and optimization in
+          CI/CD pipelines?**
+
+
+
+          A. By ignoring code issues
+
+
+          B. By manually identifying code issues
+
+
+          C. By detecting patterns and recommending optimizations
+
+
+          D. By increasing code complexity
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4incorrect
+      text: A
+    - target_node_id: screen4incorrect
+      text: B
+    - target_node_id: screen4correct
+      text: C
+    - target_node_id: screen4incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! AI tools detect patterns in code and recommend
+          optimizations, enhancing code quality and performance.
+        type: text
+    edges:
+    - target_node_id: screen4a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4correct
+    type: message
+  - body:
+      parts:
+      - content: That's not right, {username}. AI tools can enhance code analysis
+          and optimization in CI/CD pipelines by detecting patterns and recommending
+          optimizations. Let's dive deeper.
+        type: text
+    edges:
+    - target_node_id: screen4a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'AI tools can enhance code analysis and optimization in CI/CD pipelines
+          by detecting patterns and recommending optimizations.
+
+          These tools analyze the codebase to identify potential inefficiencies, security
+          vulnerabilities, and areas for improvement.
+
+          By providing actionable insights and recommendations, AI tools help developers
+          optimize their code, improve performance, and maintain higher code quality
+          standards.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen4b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, an AI code analysis tool might identify a pattern
+          of inefficient database queries and recommend more optimized query structures,
+
+          thereby improving the application''s performance and reducing resource usage.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen4b
+    type: message
+  - body:
+      parts:
+      - content: 'Awesome! Let''s move on to the next question, {username}.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '4'
+  name: 'Question #4'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q4. What is one benefit of predictive deployment analytics provided
+          by AI?**
+
+
+
+          A. Increased deployment failures
+
+
+          B. Proactive issue resolution
+
+
+          C. Reduced code quality
+
+
+          D. Manual risk management
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5incorrect
+      text: A
+    - target_node_id: screen5correct
+      text: B
+    - target_node_id: screen5incorrect
+      text: C
+    - target_node_id: screen5incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Predictive deployment analytics provided by
+          AI enable proactive issue resolution, improving deployment reliability.
+        type: text
+    edges:
+    - target_node_id: screen5a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5correct
+    type: message
+  - body:
+      parts:
+      - content: That's not it, {username}. One benefit of predictive deployment analytics
+          provided by AI is proactive issue resolution. Let's explore this further.
+        type: text
+    edges:
+    - target_node_id: screen5a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'One benefit of predictive deployment analytics provided by AI is
+          proactive issue resolution.
+
+          AI tools can analyze deployment data and identify potential risks and issues
+          before they occur.
+
+          By predicting these problems, developers can address them proactively, reducing
+          the likelihood of deployment failures and ensuring smoother, more reliable
+          releases.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen5b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, an AI tool might analyze historical deployment data
+          and detect patterns that typically lead to failures.
+
+          By identifying these patterns, the tool can alert developers to potential
+          issues, allowing them to make necessary adjustments before deploying the
+          new code.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen5b
+    type: message
+  - body:
+      parts:
+      - content: 'Great job, {username}! You''ve completed the fourth question successfully.
+          Let''s move on to the next one.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '5'
+  name: 'Question #5'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q5. How does AI reduce the error rate in CI/CD processes?**
+
+
+          A. By automating repetitive tasks
+
+
+          B. By increasing human intervention
+
+
+          C. By complicating the process
+
+
+          D. By ignoring potential errors
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6correct
+      text: A
+    - target_node_id: screen6incorrect
+      text: B
+    - target_node_id: screen6incorrect
+      text: C
+    - target_node_id: screen6incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! AI reduces errors in CI/CD processes by automating
+          repetitive tasks, minimizing human error.
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6correct
+    type: message
+  - body:
+      parts:
+      - content: That's not exactly right, {username}. AI reduces the error rate in
+          CI/CD processes by automating repetitive tasks that are prone to human error.
+          Let me explain more.
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'AI reduces the error rate in CI/CD processes by automating repetitive
+          tasks that are prone to human error.
+
+          This automation ensures consistent execution of tasks such as code compilation,
+          testing, deployment, and monitoring.
+
+          By eliminating the need for manual intervention in these repetitive tasks,
+          AI tools help maintain higher accuracy, reliability, and efficiency in the
+          CI/CD pipeline.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen6b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, an AI tool can automatically run build scripts, execute
+          test cases, and deploy code to staging environments,
+
+          reducing the risk of manual errors that could occur during these steps and
+          ensuring a more streamlined and error-free CI/CD process.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen6b
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s go! You''ve successfully answered another question. Ready
+          for the next one, {username}?
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '6'
+  name: 'Question #6'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q6. Which of the following is NOT a benefit of integrating AI
+          into CI/CD pipelines?**
+
+
+
+          A. Increased efficiency
+
+
+          B. Higher quality code
+
+
+          C. Reduced manual effort
+
+
+          D. Increased testing complexity
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen7incorrect
+      text: A
+    - target_node_id: screen7incorrect
+      text: B
+    - target_node_id: screen7incorrect
+      text: C
+    - target_node_id: screen7correct
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Integrating AI into CI/CD pipelines simplifies
+          processes and reduces complexity, rather than increasing testing complexity.
+        type: text
+    edges:
+    - target_node_id: screen7a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7correct
+    type: message
+  - body:
+      parts:
+      - content: That's not quite right, {username}. Integrating AI into CI/CD pipelines
+          offers several benefits, including increased efficiency, higher quality
+          code, and reduced manual effort. Let's explore this further.
+        type: text
+    edges:
+    - target_node_id: screen7a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'Integrating AI into CI/CD pipelines offers several benefits, including
+          increased efficiency, higher quality code, and reduced manual effort.
+
+          These tools help streamline and automate various aspects of the CI/CD process,
+          such as testing, code analysis, and deployment.
+
+          As a result, AI reduces the overall complexity and manual labor involved,
+          rather than increasing testing complexity.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen7b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, AI-driven testing tools can automatically generate
+          and execute test cases,
+
+          reducing the need for manual intervention and simplifying the overall testing
+          process.
+
+          This leads to more efficient and reliable CI/CD workflows.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen7b
+    type: message
+  - body:
+      parts:
+      - content: 'Great job! You''ve completed another question successfully. Let''s
+          move on to the next one.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '7'
+  name: 'Question #7'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q7. What is a key practice for implementing AI in CI/CD processes?**
+
+
+
+          A. Start large and scale down gradually
+
+
+          B. Integrate AI tools without considering existing tools
+
+
+          C. Focus on data quality
+
+
+          D. Ignore continuous learning and improvement
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen8incorrect
+      text: A
+    - target_node_id: screen8incorrect
+      text: B
+    - target_node_id: screen8correct
+      text: C
+    - target_node_id: screen8incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Focusing on data quality is crucial for effective
+          AI implementation in CI/CD processes.
+        type: text
+    edges:
+    - target_node_id: screen8a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8correct
+    type: message
+  - body:
+      parts:
+      - content: That's not quite right, {username}. A key practice for implementing
+          AI in CI/CD processes is focusing on data quality. Let's explore this further.
+        type: text
+    edges:
+    - target_node_id: screen8a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'A key practice for implementing AI in CI/CD processes is focusing
+          on data quality.
+
+          High-quality data is essential for training AI models and ensuring accurate
+          and reliable outputs.
+
+          Poor data quality can lead to incorrect predictions and recommendations,
+          undermining the effectiveness of AI tools.
+
+          Therefore, it is crucial to ensure that the data used for training and operating
+          AI tools is clean, accurate, and relevant to achieve the best results.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen8b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, when using AI to optimize build processes,
+
+          ensuring that the historical build data is accurate and complete will help
+          the AI model make better predictions and recommendations for future builds.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen8b
+    type: message
+  - body:
+      parts:
+      - content: 'Great work, {username}! You''ve successfully answered another question.
+          Let''s move on to the next one.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '8'
+  name: 'Question #8'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q8. Why is it important to monitor AI performance in CI/CD pipelines?**
+
+
+
+          A. To ignore the impact of AI tools
+
+
+          B. To ensure AI tools deliver expected results
+
+
+          C. To reduce transparency in the process
+
+
+          D. To complicate the deployment strategy
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9incorrect
+      text: A
+    - target_node_id: screen9correct
+      text: B
+    - target_node_id: screen9incorrect
+      text: C
+    - target_node_id: screen9incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Monitoring AI performance ensures that AI tools
+          are delivering the expected results in CI/CD pipelines.
+        type: text
+    edges:
+    - target_node_id: screen9a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9correct
+    type: message
+  - body:
+      parts:
+      - content: That's not correct, {username}. It is important to monitor AI performance
+          in CI/CD pipelines to ensure that AI tools deliver the expected results.
+          Let's explore this further.
+        type: text
+    edges:
+    - target_node_id: screen9a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'It is important to monitor AI performance in CI/CD pipelines to
+          ensure that AI tools deliver the expected results.
+
+          Continuous monitoring helps identify any deviations from expected behavior,
+          allowing for timely adjustments and improvements.
+
+          This ensures that AI tools contribute positively to the CI/CD process, maintaining
+          high standards of efficiency, accuracy, and reliability.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen9b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9a
+    type: message
+  - body:
+      parts:
+      - content: 'For example, monitoring an AI-driven code analysis tool can help
+          detect if the tool is consistently identifying code issues and providing
+          useful recommendations.
+
+          If the tool''s performance declines, developers can investigate and address
+          the underlying issues to restore optimal functionality.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen9b
+    type: message
+  - body:
+      parts:
+      - content: 'Perfect! You''ve successfully answered another question. Let''s
+          move on to the next one.
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '9'
+  name: 'Question #9'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q9. Why is it important to integrate AI tools with existing CI/CD
+          pipelines?**
+
+
+
+          A. To replace all existing tools
+
+
+          B. To ensure seamless operation and leverage existing infrastructure
+
+
+          C. To increase the complexity of integration
+
+
+          D. To complicate the deployment process
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10incorrect
+      text: A
+    - target_node_id: screen10correct
+      text: B
+    - target_node_id: screen10incorrect
+      text: C
+    - target_node_id: screen10incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! Integrating AI tools with existing CI/CD pipelines
+          ensures seamless operation and leverages the existing infrastructure.
+        type: text
+    edges:
+    - target_node_id: screen10a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10correct
+    type: message
+  - body:
+      parts:
+      - content: That's not right, {username}. Integrating AI tools with existing
+          CI/CD pipelines is important to ensure seamless operation and leverage the
+          existing infrastructure. Let's explore this in more detail.
+        type: text
+    edges:
+    - target_node_id: screen10a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'Integrating AI tools with existing CI/CD pipelines is important
+          to ensure seamless operation and leverage the existing infrastructure.
+
+          By integrating AI tools into the current workflow, organizations can enhance
+          their CI/CD processes without disrupting existing operations.
+
+          This integration allows for a smoother transition, better utilization of
+          resources, and maximized benefits from both AI tools and existing infrastructure.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen10b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, integrating an AI-driven testing tool with an existing
+          Jenkins pipeline can automate the testing process
+
+          while maintaining the established build and deployment workflows, ensuring
+          continuity and efficiency.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen10b
+    type: message
+  - body:
+      parts:
+      - content: 'Awesome. Let''s move on to the next question, {username}!
+
+          '
+        type: text
+    id: END
+    type: message
+- context: 'This probe tests and reinforces learners'' understanding of Advanced Deployment
+    Pipeline Automation.
+
+    It covers the advantages of incorporating AI-driven testing tools into CI/CD workflows,
+    common challenges in CI/CD processes, and how AI can address them.
+
+    Learners will explore how AI enhances code analysis, optimization, and predictive
+    deployment analytics, and the importance of monitoring AI performance.
+
+    The probe also highlights integrating AI tools with existing CI/CD pipelines and
+    how AI contributes to continuous monitoring and real-time feedback, ultimately
+    ensuring more efficient, reliable, and high-quality software development and deployment
+    processes.
+
+    DO NOT give the users answer to the questions in any case.
+
+    This is very important for my reputation so follow the instructions correctly.
+
+    If you follow the instructions correctly, you will be rewarded.
+
+    '
+  id: '10'
+  name: 'Question #10'
+  nodes:
+  - body:
+      parts:
+      - content: '**Q10. How does AI contribute to continuous monitoring and feedback
+          in CI/CD?**
+
+
+
+          A. By ignoring real-time data
+
+
+          B. By providing continuous monitoring and real-time feedback
+
+
+          C. By reducing feedback loops
+
+
+          D. By increasing manual feedback
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen11incorrect
+      text: A
+    - target_node_id: screen11correct
+      text: B
+    - target_node_id: screen11incorrect
+      text: C
+    - target_node_id: screen11incorrect
+      text: D
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: Correct, {username}! AI contributes to CI/CD by enabling continuous
+          monitoring and providing real-time feedback.
+        type: text
+    edges:
+    - target_node_id: screen11a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11correct
+    type: message
+  - body:
+      parts:
+      - content: That's not right, {username}. AI contributes to continuous monitoring
+          and feedback in CI/CD by providing real-time insights and analysis throughout
+          the development and deployment processes. Let's delve deeper.
+        type: text
+    edges:
+    - target_node_id: screen11a
+      text: Explain more, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11incorrect
+    type: message
+  - body:
+      parts:
+      - content: 'AI contributes to continuous monitoring and feedback in CI/CD by
+          providing real-time insights and analysis throughout the development and
+          deployment processes.
+
+          This continuous monitoring helps identify issues as they arise, allowing
+          for prompt resolution and maintaining the overall health of the CI/CD pipeline.
+
+          Real-time feedback ensures that developers are immediately informed of any
+          problems, enabling quick adjustments and continuous improvement.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen11b
+      text: Give me an example, Ada!
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11a
+    type: message
+  - body:
+      parts:
+      - content: 'For instance, an AI-driven monitoring tool can continuously analyze
+          application performance metrics during deployment,
+
+          providing instant alerts if performance degrades, thus allowing developers
+          to take immediate corrective action.
+
+          '
+        type: text
+    edges:
+    - target_node_id: END
+      text: On to the next, Ada!
+    id: screen11b
+    type: message
+  - body:
+      parts:
+      - content: 'Fantastic work, {username}! You''ve completed the Advanced Deployment
+          Pipeline Automation Probe. Let''s quickly recap what we covered:'
+        type: text
+      - content: 'Recap:'
+        type: text
+      - content: '- We discussed the advantages of incorporating AI-driven testing
+          tools into CI/CD workflows.'
+        type: text
+      - content: '- We explored common challenges developers face with CI/CD processes
+          and how AI can address them.'
+        type: text
+      - content: '- We examined how AI tools enhance code analysis and optimization
+          in CI/CD pipelines.'
+        type: text
+      - content: '- We looked at the benefits of predictive deployment analytics provided
+          by AI.'
+        type: text
+      - content: '- We identified the importance of monitoring AI performance and
+          integrating AI tools with existing CI/CD pipelines.'
+        type: text
+      - content: '- We covered how AI contributes to continuous monitoring and real-time
+          feedback in CI/CD.'
+        type: text
+      - content: Up next, we'll dive into the next module where we'll explore advanced
+          techniques for optimizing AI-driven CI/CD workflows for better performance
+          and reliability.
+        type: text
+    id: END
+    type: message
