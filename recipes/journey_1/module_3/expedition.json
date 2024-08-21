@@ -1,0 +1,468 @@
+{
+    "tasks": [
+        {
+            "context": "In this project expedition, learners will utilize a myriad of prompting techniques such as zero-shot prompting, few-shot prompting, role-based prompting, and other prompting methods to create a customer support chatbot utilizing Google Gemini and Streamlit. For the introduction and setup, learners will understand the objective of the project and receive a link to the Github repository. This expedition is part of Journey 1 where learners are applying their newly acquired knowledge in Prompt Engineering within the software development context, and by doing this expedition they will learn the process of iterative prompt engineering.\n",
+            "id": "1",
+            "name": "Introduction & Setup",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Welcome to the first expedition in this journey! I'm glad to have you here and excited to get started!\n\n\nSo far, we've talked about prompt engineering techniques and why they're incredibly important to work with generative AI models. Now that we've learned about some techniques, I think you're ready to experiment and try out which ones work best for your use case. \n\n\nReady to start or would you like a refresher? To gauge your understanding, feel free to tell me what you know. Otherwise, let's get started!\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen2",
+                            "text": "Ready to start"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "To kick things off, let's take a look at our scenario. Alfred AI's team has been growing their interest in the newly emerging field of generative AI, particularly in its usefulness to seamlessly handle natural language questions intelligently! \n\n\n'There must be a way to utilize this to be something useful!' is the general sentiment in your team. \n\n\nIn order to explore the capabilities of generative AI, your team has decided to create a customer support chatbot that can answer questions about the product. This chatbot will be utilized by your team to provide support to customers and answer their questions. Your coworker will pass a simple Streamlit application script for you to bring in some prompt engineering techniques to make the chatbot more useful.\n\n\nIt's definitely still a proof-of-concept and not expected to be in production, but its an exciting experiment to be part of! Any questions?\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "github_setup",
+                            "text": "Let's see the repository"
+                        }
+                    ],
+                    "id": "screen2",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Setting up GitHub repository...",
+                                "type": "text"
+                            },
+                            {
+                                "condition": {
+                                    "args": [
+                                        "github_onboard",
+                                        "proof-of-concept-customer-support-bot"
+                                    ],
+                                    "func": "handle_action"
+                                },
+                                "status": [
+                                    {
+                                        "content": "GitHub setup completed successfully.",
+                                        "type": "success"
+                                    },
+                                    {
+                                        "content": "GitHub setup failed. Please try again later.",
+                                        "extra_edges": [
+                                            {
+                                                "target_node_id": "github_setup",
+                                                "text": "Retry"
+                                            },
+                                            {
+                                                "target_node_id": "screen3",
+                                                "text": "Finish"
+                                            }
+                                        ],
+                                        "type": "failure"
+                                    }
+                                ],
+                                "type": "conditional"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen3",
+                            "text": "Finish"
+                        }
+                    ],
+                    "id": "github_setup",
+                    "type": "github_setup"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Now that we've got the repository, let's spin it up! Luckily, your coworker left some information in the `README.md` file to help us get started. \n\n\nFollow the instructions, and we'll be ready to go!\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen4",
+                            "text": "All set"
+                        }
+                    ],
+                    "id": "screen3",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "That's great. Lastly, we'll need to hook onto the Gemini API by Google. There's many different LLMs we could utilize and Gemini exists as a good starting point for the proof-of-concept. In order to do so, we'll need to set up a google cloud account.\n\n\nThe great thing is that Google offers a free trial with a gmail account! Head over to [Google Cloud](https://cloud.google.com/) and follow the sign-up instructions. Make sure to set up billing to use Google Cloud services and the free trial is yours. \n\n\nLet me know once you're all set!\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "End",
+                            "text": "Ready to go"
+                        }
+                    ],
+                    "id": "screen3",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Awesome! We were able to get your coworkers code to set up a Streamlit application for our proof-of-concept. We also started setting up a google cloud account so that we can leverage the Gemini API as our LLM powering the support chatbot.\n\n\nNext, we'll take a look at how to add the API key to the Streamlit application and play with the base prompt. See you there!\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
+            ]
+        },
+        {
+            "context": "In this project expedition, learners will utilize a myriad of prompting techniques such as zero-shot prompting, few-shot prompting, role-based prompting, and other prompting methods to create a customer support chatbot utilizing Google Gemini and Streamlit. This task is for learners to create a Google API Key and add it to the Streamlit application. They will need to do so by creating one within the Google AI Studio https://aistudio.google.com/app/u/1/apikey and adding the generated key to the `.env` file in the root directory. This expedition is part of Journey 1 where learners are applying their newly acquired knowledge in Prompt Engineering within the software development context, and by doing this expedition they will learn the process of iterative prompt engineering.\n",
+            "id": "2",
+            "name": "Create a Google AI Studio API Key",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Let's now create the API key for the Gemini API. An API key is a unique identifier that allows you to access a service or API. It's a way to authenticate your requests and ensure that you're authorized to use the service.\n\n\nHead over to [Google AI Studio](https://aistudio.google.com/app/u/1/apikey) and create an API key. Once you have the key, add it to the `.env` file in the root directory. It's very likely you'll be requested to activate the Gemini API on Google Cloud if you haven't done so already.\n\n\nLet me know if you have any questions placing the API key!\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen2",
+                            "text": "I'm set and ready."
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Cool! We should be able to spin up the Streamlit application and see the chatbot in action! Go ahead and try it out using the terminal command, `streamlit run app.py`. Try asking general questions and also any questions about Alfred AI or the product. It's likely not going to know! \n\n\nWhat do you currently notice about its behavior when you ask it questions? Does it assume any roles or answer appropriately?\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen3",
+                            "text": "How do we resolve this?"
+                        }
+                    ],
+                    "id": "screen2",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Let's take a moment to also consider how a customer support chatbot should function. Tell me, what do you think are some defining characteristics of a customer support chatbot? What are some things it should be able to do for our proof-of-concept?\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "Ready to move on"
+                        }
+                    ],
+                    "id": "screen3",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Great work. That wraps up getting the application working once the API key is added. It should be functional as a chat system and able to receive and respond to questions. When you're ready, we can also check out the acceptance criteria for the proof-of-concept and start working on defining the behavior of the chatbot.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
+            ]
+        },
+        {
+            "context": "In this project expedition, learners will utilize a myriad of prompting techniques such as zero-shot prompting, few-shot prompting, role-based prompting, and other prompting methods to create a customer support chatbot utilizing Google Gemini and Streamlit. This task is for learners to define the behavior of the chatbot. They will need to do so by defining the roles and the behavior of the chatbot within a system prompt defined in the `prompts.py` file in the root directory. This expedition is part of Journey 1 where learners are applying their newly acquired knowledge in Prompt Engineering within the software development context, and by doing this expedition they will learn the process of iterative prompt engineering.\n",
+            "id": "3",
+            "name": "Define a personality for the Support Chatbot",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Check out the acceptance criteria for the proof-of-concept:\n\n\n1. **Role Awareness**\n    - The LLM must consistently acknowledge its role as a customer support chatbot, clearly communicating that it assists with queries related to the project management API.\n2. **Tone and Language**\n    - The LLM should use a professional, friendly, and neutral tone in all interactions, ensuring clarity and maintaining a supportive demeanor without being overly casual or overly formal.\n3. **Conciseness**\n    - The LLM must provide concise and to-the-point answers, avoiding unnecessary elaboration unless specifically requested by the user for more details.\n4. **Transparency**\n    - The LLM should be transparent about its limitations, acknowledging when it does not know an answer or when a query needs to be escalated to a human agent.\n5. **Proactive Guidance**\n    - When appropriate, the LLM should proactively guide users by suggesting relevant next steps, additional resources, or clarifying questions if the initial query is ambiguous.\n6. **Consistency**\n    - The LLM should consistently provide uniform responses to similar queries, ensuring that users receive reliable and predictable information.\n7. **Politeness and Patience**\n    - The LLM must always respond politely, even to repeated or unclear questions, and maintain patience, guiding users through their queries without displaying frustration.\n8. **User Acknowledgement**\n    - The LLM should acknowledge user inputs appropriately, confirming understanding before providing an answer, especially in multi-step or complex interactions.\n\n\nYou'll need to use any of the techniques you've learned to define the behavior of the chatbot. Feel free to ask me for any help regarding the prompts! You'll make changes to the `prompts.py` file in the root directory specifically to the `BEHAVIOR` variable.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen2",
+                            "text": "I am ready to get feedback on my work."
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "I can give feedback on your work when you make a pull request. To help me find your pull request, be sure to name your PR as `Task # -` where # is the task number displayed on the progress bar on the right. For this task, it would be 3. You can add any text after the # for your own reference and the task number is so that I can find your PR.\n\n\nIn the pull request itself, be sure to describe the prompt engineering techniques you used and the reasoning behind them. it would also be incredibly helpful for me when you include question and answer pairs in the description of the pull request so I can also evaluate the responses to make sure the behavior of the chatbot is in line with the acceptance criteria.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "pr_review",
+                            "text": "Pull Request ready to be reviewed"
+                        }
+                    ],
+                    "id": "screen2",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Cool! Give me a minute to read your PR...",
+                                "type": "text"
+                            },
+                            {
+                                "condition": {
+                                    "args": [
+                                        "pr_feedback",
+                                        "When evaluating the pull request, start by examining the prompts the learner has created, ensuring they guide the chatbot to demonstrate clear role awareness, consistently identifying itself and its purpose in interactions. Review whether these prompts instruct the chatbot to maintain a professional, friendly tone and to deliver concise, direct answers. Evaluate if the prompts effectively direct the chatbot to acknowledge its limitations transparently, particularly when escalation to a human agent is necessary. Check that the prompts encourage proactive guidance, prompting the chatbot to suggest next steps or additional resources when relevant. Assess if the prompts lead to consistent responses across similar queries and ensure the chatbot is guided to maintain politeness and patience, especially in cases of repeated or unclear questions. Additionally, carefully review the question-answer pairs provided in the PR to evaluate whether the responses align with the intended behavior, confirming that the chatbot acknowledges user inputs appropriately and confirms understanding before proceeding with complex or multi-step interactions. Your goal is to ensure that both the prompts and the sample responses create a positive and supportive user experience while adhering to the specified acceptance criteria."
+                                    ],
+                                    "func": "handle_action"
+                                },
+                                "status": [
+                                    {
+                                        "content": "PR Reviewed successfully!",
+                                        "type": "success"
+                                    },
+                                    {
+                                        "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR.",
+                                        "extra_edges": [
+                                            {
+                                                "target_node_id": "pr_review",
+                                                "text": "Retry PR submission"
+                                            }
+                                        ],
+                                        "type": "no_matches"
+                                    },
+                                    {
+                                        "content": "Seems to be an error. Please try again later.",
+                                        "extra_edges": [
+                                            {
+                                                "target_node_id": "pr_review",
+                                                "text": "Retry PR submission"
+                                            }
+                                        ],
+                                        "type": "error"
+                                    }
+                                ],
+                                "type": "conditional"
+                            },
+                            {
+                                "content": "Ready to go? Let's move on",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "I am good to go, let's move on"
+                        },
+                        {
+                            "target_node_id": "pr_review",
+                            "text": "Retry PR submission"
+                        }
+                    ],
+                    "id": "pr_review",
+                    "type": "pr_feedback"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Great! We've defined the behavior for the chatbot according to a set of acceptance criteria using prompt engineering. Next up, we'll add more knowledge to the chatbot!\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
+            ]
+        },
+        {
+            "context": "In this project expedition, learners will utilize a myriad of prompting techniques such as zero-shot prompting, few-shot prompting, role-based prompting, and other prompting methods to create a customer support chatbot utilizing Google Gemini and Streamlit. In this task, learners will generate a mock-up a small knowledgebase for the chatbot and this may include FAQs or other resources. As for the exact documents, it is up to the learner to decide what they want to include and how detailed they want to make it; it's generally better to have more than less within reason. Ideally the knowledgebase should only be within 2 to 3 paragraphs. This expedition is part of Journey 1 where learners are applying their newly acquired knowledge in Prompt Engineering within the software development context, and by doing this expedition they will learn the process of iterative prompt engineering.",
+            "id": "4",
+            "name": "Optimize instructional behavior for support queries",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "After defining the base behavior of the chatbot, we'll now optimize it for specific support queries. This will involve creating a knowledgebase for the chatbot to use when answering support queries. This knowledgebase can include FAQs, resources, or other relevant information. The exact documents included in the knowledgebase are up to the learner to decide, but it's generally better to have more than less within reason.\n\nDid you know you can use the AI Studio to generate a knowledgebase for your chatbot? It's a very useful way to get started. You can share the generated knowledgebase with me here for general feedback. When you're ready to proceed, let me know!",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen2",
+                            "text": "Ready to proceed"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Let's now take this knowledgebase and place it within the prompt we've created for the behavior. For simplicity, you can simply append it to the `BEHAVIOR` variable in the `prompts.py` file in the root directory. Feel free to also experiment with different prompting techniques to see which one works best for your use case.\n\n\nFor example, it is generally better to have definitions of role and behavior at the top preceding the knowledgebase. Once inserted, what do you notice about the behavior of the chatbot? Has it improved? Keep experimenting and see what works best, then when you're ready I can review your work.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen3",
+                            "text": "Ready to start the review!"
+                        }
+                    ],
+                    "id": "screen2",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Okay great! Just like before, I can give feedback on your work when you make a pull request. To help me find your pull request, be sure to name your PR as `Task # -` where # is the task number displayed on the progress bar on the right. For this task, it would be 4. You can add any text after the # for your own reference and the task number is so that I can find your PR.\n\n\nIn the pull request itself, be sure to describe the prompt engineering techniques you used and the reasoning behind them. it would also be incredibly helpful for me when you include question and answer pairs in the description of the pull request. Also, it should be separate from the previous pull request we made for the previous task.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "pr_review",
+                            "text": "Ready for review"
+                        }
+                    ],
+                    "id": "screen2a",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Cool! Give me a minute to read your PR...",
+                                "type": "text"
+                            },
+                            {
+                                "condition": {
+                                    "args": [
+                                        "pr_feedback",
+                                        "When evaluating the pull request, start by examining the prompts the learner has created, ensuring they guide the chatbot to demonstrate clear role awareness, consistently identifying itself and its purpose in interactions. Review whether these prompts instruct the chatbot to maintain a professional, friendly tone and to deliver concise, direct answers. Evaluate if the prompts effectively direct the chatbot to acknowledge its limitations transparently, particularly when escalation to a human agent is necessary. Check that the prompts encourage proactive guidance, prompting the chatbot to suggest next steps or additional resources when relevant. Assess if the prompts lead to consistent responses across similar queries and ensure the chatbot is guided to maintain politeness and patience, especially in cases of repeated or unclear questions. Additionally, carefully review the question-answer pairs provided in the PR to evaluate whether the responses align with the intended behavior, confirming that the chatbot acknowledges user inputs appropriately and confirms understanding before proceeding with complex or multi-step interactions. After assessing behavior, focus on how the prompts and responses leverage a knowledge base, ensuring the chatbot correctly references and integrates information from it to improve the accuracy and depth of its answers. Evaluate if the knowledge base integration enhances the chatbot's ability to provide detailed, contextually relevant, and accurate information, contributing to a more informed and effective user experience. Your goal is to ensure that both the behavior and knowledge integration aspects in the prompts and responses work together to create a positive and supportive user experience while adhering to the specified acceptance criteria."
+                                    ],
+                                    "func": "handle_action"
+                                },
+                                "status": [
+                                    {
+                                        "content": "PR Reviewed successfully!",
+                                        "type": "success"
+                                    },
+                                    {
+                                        "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # -' where # is the task number followed by the name of your PR.",
+                                        "extra_edges": [
+                                            {
+                                                "target_node_id": "pr_review",
+                                                "text": "Retry PR submission"
+                                            }
+                                        ],
+                                        "type": "no_matches"
+                                    },
+                                    {
+                                        "content": "Seems to be an error. Please try again later.",
+                                        "extra_edges": [
+                                            {
+                                                "target_node_id": "pr_review",
+                                                "text": "Retry PR submission"
+                                            }
+                                        ],
+                                        "type": "error"
+                                    }
+                                ],
+                                "type": "conditional"
+                            },
+                            {
+                                "content": "Ready to go? Let's move on",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "I am good to go, let's move on"
+                        },
+                        {
+                            "target_node_id": "pr_review",
+                            "text": "Retry PR submission"
+                        }
+                    ],
+                    "id": "pr_review",
+                    "type": "pr_feedback"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Things are really shaping up for this proof-of-concept! We took a minute to utilize a generative AI tool from the AI Studio to generate a sample mock-up of the knowledgebase for the chatbot. Then, we modified the `prompts.py` file to include the knowledgebase in the prompt and examined its new behavior.\n\n\nThat wraps up this expedition! We've successfully created a customer support chatbot that can answer questions about the product. This chatbot will be utilized by your team to provide support to customers and answer their questions. Later iterations will definitely have much more functionalities as a chatbot, but this proof-of-concept is a great start where we demonstrate how prompt engineering can be used to create a useful chatbot.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
+            ]
+        }
+    ]
+}
