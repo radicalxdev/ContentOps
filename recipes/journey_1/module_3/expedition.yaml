@@ -89,9 +89,9 @@ tasks:
                 Let me know once you're all set!
               type: text
         edges:
-          - target_node_id: End
+          - target_node_id: END
             text: Ready to go
-        id: screen3
+        id: screen4
         type: message
       - body:
           parts:
@@ -286,7 +286,7 @@ tasks:
         edges:
           - target_node_id: pr_review
             text: Ready for review
-        id: screen2a
+        id: screen3
         type: message
       - body:
           parts:
