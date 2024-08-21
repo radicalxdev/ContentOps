@@ -1,415 +1,455 @@
 {
-  "tasks": [
-    {
-      "context": "In this initial task, learners are introduced to the mission of using Katalon Studio for automated Web UI testing. They are welcomed by Ada AI and given a scenario where they need to ensure the functionality and reliability of a new scheduling feature in AI TaskMaster. The task emphasizes the importance of Web UI testing, which includes verifying the functionality, usability, and performance of web application interfaces. Learners are then guided through the process of signing up for a free trial of Katalon Studio Enterprise, downloading, and installing the software. They are provided with a Git repository link to clone a sample project into Katalon Studio, which sets the foundation for the subsequent tasks. The task aims to familiarize learners with the Katalon Studio environment and prepare them for automated testing.",
-      "id": "1",
-      "name": "Welcome and Setup",
-      "nodes": [
+    "tasks": [
         {
-          "body": {
-            "parts": [
-              {
-                "content": "Hello, {username}! Imagine you're developing the new scheduling feature in AI TaskMaster that automatically assigns projects based on priority and deadlines. To ensure this feature is functional and reliable, we need to perform Web UI testing. Let's dive in and explore how we can automate this process using Katalon Studio.",
-                "type": "text"
-              }
+            "context": "In this initial task, learners are introduced to the mission of using Katalon Studio for automated Web UI testing. They are welcomed by Ada AI and given a scenario where they need to ensure the functionality and reliability of a new scheduling feature in AI TaskMaster. The task emphasizes the importance of Web UI testing, which includes verifying the functionality, usability, and performance of web application interfaces. Learners are then guided through the process of signing up for a free trial of Katalon Studio Enterprise, downloading, and installing the software. They are provided with a Git repository link to clone a sample project into Katalon Studio, which sets the foundation for the subsequent tasks. The task aims to familiarize learners with the Katalon Studio environment and prepare them for automated testing.",
+            "id": "1",
+            "name": "Welcome and Setup",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Hello, {username}! Imagine you're developing the new scheduling feature in AI TaskMaster that automatically assigns projects based on priority and deadlines. To ensure this feature is functional and reliable, we need to perform Web UI testing. Let's dive in and explore how we can automate this process using Katalon Studio.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen2",
+                            "text": "Let's start!"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Web UI testing ensures the functionality, usability, and performance of a web application's interface. It covers:\n\n- **Functionality Testing:** Verifying interactive elements (buttons, links, forms, menus) work correctly.\n- **Compatibility Testing:** Ensuring the web application works across different browsers, devices, and operating systems.\n\nWeb UI testing can be done manually, but we will automate this process using Katalon Studio to save time and improve accuracy. Ready to get started?",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen3",
+                            "text": "Ready to learn!"
+                        }
+                    ],
+                    "id": "screen2",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Sign up for a free 30-day trial of Katalon Studio Enterprise using the following link:\n\n```\nhttps://katalon.com/free-trial\n```\n\nAfter creating your account, download and install Katalon Studio Enterprise. You may need to sign into your account again from within Katalon Studio Enterprise.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen4",
+                            "text": "Let's go!"
+                        }
+                    ],
+                    "id": "screen3",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "To clone the Git repository containing the Web UI project in Katalon Studio, follow these steps:\n\n1. Click on Clone Git Project.\n2. In the Repository URL field, enter the following link:\n\n```\nhttps://github.com/alfred-ai-co/create-and-execute-test-cases-using-script-mode-with-katalon-studioassist\n```\n\n3. Click **Finish**.\n\nThe project will begin cloning in Katalon Studio and will be ready for use shortly.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen5",
+                            "text": "Project cloned"
+                        }
+                    ],
+                    "id": "screen4",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Katalon Studio is a powerful tool for automated Web UI testing. It helps simulate user interactions like clicking buttons and filling out forms, ensuring your application functions correctly across different browsers and devices.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "Tell me more about Katalon Studio features."
+                        }
+                    ],
+                    "id": "screen5",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Katalon Studio offers several key features:\n\n- **Functionality Testing**: Verifies all interactive elements work as intended.\n- **Compatibility Testing**: Ensures the application works across different browsers and devices.\n- **StudioAssist**: AI-powered assistant for intelligent code generation and explanations.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
             ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen2",
-              "text": "Let's start!"
-            }
-          ],
-          "id": "START",
-          "type": "message"
         },
         {
-          "body": {
-            "parts": [
-              {
-                "content": "Web UI testing ensures the functionality, usability, and performance of a web application's interface. It covers:\n\n- **Functionality Testing:** Verifying interactive elements (buttons, links, forms, menus) work correctly.\n- **Compatibility Testing:** Ensuring the web application works across different browsers, devices, and operating systems.\n\nWeb UI testing can be done manually, but we will automate this process using Katalon Studio to save time and improve accuracy. Ready to get started?",
-                "type": "text"
-              }
+            "context": "This task focuses on guiding learners through the setup of functionality testing in Katalon Studio. Learners will create and execute test cases to verify that all interactive elements on their web application work as intended. The task is broken down into two main steps: creating new test cases and adding them to the project. Learners will navigate to the 'Test Cases' section, create a new test case, and generate automated test cases. The task also introduces StudioAssist, an AI-powered assistant integrated into Katalon Studio, designed to enhance the efficiency of writing automated tests. StudioAssist offers features like intelligent code generation, code explanation, and context-based suggestions. Learners will configure their OpenAI credentials to use StudioAssist, and learn how to use it to generate and explain test scripts. The task aims to equip learners with the skills to automate functionality testing and leverage AI tools to improve their testing processes.",
+            "id": "2",
+            "name": "Functionality Testing",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=385b97cd-4f4b-47dc-8910-679d4a5974a5",
+                                "type": "image"
+                            },
+                            {
+                                "content": "Let's start by setting up functionality testing in Katalon Studio. We'll create and execute test cases to verify that all interactive elements on your web application work as intended.\n\n**Step 1: Create New Test Cases**:\n\n1. Navigate to \"Test Cases\" under \"Tests Explorer\".\n2. Right-click on \"Test Cases\" and select \"Create New Test Case\".\n3. Enter a name for your Test Case and click \"OK\".\n\n**Step 2: Add Test Cases**:\n\n1. Click the \"Add\" button to generate an automated test case.\n2. Modify the test case if needed by selecting a different automated test case from the drop-down menu.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen7",
+                            "text": "Let's move on"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "StudioAssist in Katalon is an AI-powered assistant integrated into Katalon Studio, designed to enhance the efficiency of writing automated tests. Built on OpenAI's GPT API, StudioAssist offers several key features:\n\n- **Intelligent Code Generation**: StudioAssist can generate test scripts based on natural language prompts provided by the user. This allows testers to describe the steps they want in plain text, which StudioAssist then translates into executable test code.\n- **Code Explanation**: Users can highlight a snippet of code and use StudioAssist to generate explanations.\n- **Context-Based Suggestions**: StudioAssist provides context-aware code suggestions, helping to streamline the coding process and reduce the time required to develop test cases.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen8",
+                            "text": "Let's set it up!"
+                        }
+                    ],
+                    "id": "screen7",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "To use this feature, we first need to configure our OpenAI credentials.\n\n\nClick on the StudioAssist button located between the `Create new Test Case` and `Back` buttons on the uppermost toolbar.\n\nIn the StudioAssist settings, choose the `User personal OpenAI key` option and input your OpenAI API key.\nUse the model `gpt-3.5-turbo` or `gpt-4o-mini`, as vision capabilities are not required.\nClick `Apply and Close`.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen9",
+                            "text": "What's next?"
+                        },
+                        {
+                            "target_node_id": "screen8a",
+                            "text": "I don't have an OpenAI API Key."
+                        }
+                    ],
+                    "id": "screen8",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Here's how you can procure your own API key:\n\n\nSteps to Procure an API Key:\n1. Visit the OpenAI website and sign up for an account if you don't have one.\n2. Once logged in, navigate to the API keys section under your account settings.\n3. Click on `Create new API key` and copy the generated key.\n4. Visit the billing section and ensure you have enough credits to cover the usage of 2000 tokens This amount is necessary to complete the task successfully.\n5. Return here and click `Done` to proceed.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen9",
+                            "text": "Done!"
+                        }
+                    ],
+                    "id": "screen8a",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Now, let's configure your OpenAI API key in StudioAssist\n\n\nSteps:\n1. Click on the StudioAssist button located between the `Create new Test Case` and `Back` buttons on the uppermost toolbar.\n2. In the StudioAssist settings, choose the `User personal OpenAI key` option and input your OpenAI API key.\n3. Use the model `gpt-3.5-turbo` or `gpt-4o-mini`, as vision capabilities are not required.\n4. Click `Apply and Close`.\n",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen9",
+                            "text": "Okay, let's continue"
+                        }
+                    ],
+                    "id": "screen8a",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "AI-generated test cases can sometimes be difficult to comprehend. We will now use Katalon StudioAssist to clarify the generated test cases. To explain the code using Katalon StudioAssist:\n\n1. Highlight the script or specific methods.\n2. Right-click and select \"StudioAssist\".\n3. Choose \"Explain Code\" to generate comments explaining each method.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen10",
+                            "text": "Run test cases"
+                        }
+                    ],
+                    "id": "screen9",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=ddd1a67f-f926-41de-a279-6a4f4124744e",
+                                "type": "image"
+                            },
+                            {
+                                "content": "To execute test cases:\n\n1. Switch to Script mode by clicking \"Script\" in the bottom toolbar.\n2. Highlight the script or specific methods, right-click, and select \"Run\".\n3. Observe the browser window as Katalon Studio performs the automated actions.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen11",
+                            "text": "Got it, what's next?"
+                        }
+                    ],
+                    "id": "screen10",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=62cd4c4b-bb60-45f2-8654-54b0e13589e9",
+                                "type": "image"
+                            },
+                            {
+                                "content": "Review the test results to ensure all test cases passed:\n\n- Passed tests indicate that parts of the code are working correctly.\n- Failed tests highlight areas that need fixing.\n\nIf necessary, add or modify test cases using StudioAssist and rerun the tests. Think about potential edge cases that might not be covered and add tests for those scenarios.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "Understood"
+                        }
+                    ],
+                    "id": "screen11",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=aa9fa3d5-60c1-4f55-b216-9ed1c8a9dd1d",
+                                "type": "image"
+                            },
+                            {
+                                "content": "The best feature of StudioAssist is its ability to automatically generate test cases from code comments. To do this:\n\n- Highlight the commented explanation.\n- Click on \"Generate Code\" in StudioAssist.\n\nThis will create new test cases that can be executed again.\n\nNotice that the newly generated test cases differ from the predefined ones. These cases might also fail initially since they are templates and may require some modifications to run correctly. Therefore, consider the AI-generated code as a starting point that may need adjustments.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
             ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen3",
-              "text": "Ready to learn!"
-            }
-          ],
-          "id": "screen2",
-          "type": "message"
         },
         {
-          "body": {
-            "parts": [
-              {
-                "content": "Sign up for a free 30-day trial of Katalon Studio Enterprise using the following link:\n\n```\nhttps://katalon.com/free-trial\n```\n\nAfter creating your account, download and install Katalon Studio Enterprise. You may need to sign into your account again from within Katalon Studio Enterprise.",
-                "type": "text"
-              }
+            "context": "This task covers advanced testing techniques, including data-driven testing and compatibility testing, in Katalon Studio. Learners will understand how to perform data-driven tests by adjusting variables and their values to test multiple form inputs. They will learn the concept of data-driven testing, which involves running test scripts multiple times with different sets of input data to enhance test coverage, reliability, and efficiency. The task also guides learners through setting up compatibility testing to ensure their web application works across different browsers and devices. Learners will create a new test suite, add test cases, and choose the browsers and platforms to test on. The goal of this task is to provide learners with comprehensive testing skills, ensuring their applications perform well in various environments and under different data scenarios.",
+            "id": "3",
+            "name": "Advanced Testing",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_5.png?alt=media&token=62777c1c-392e-4f6c-8eb7-6912fa51fc1a",
+                                "type": "image"
+                            },
+                            {
+                                "content": "For data-driven tests, you may need to test multiple form inputs. To adjust your variables and their values:\n\n- Go to the \"Variables\" tab next to the \"Script\" tab.\n- Adjust your variables and their values, then rerun your test cases.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen13a",
+                            "text": "What are data-driven tests?"
+                        },
+                        {
+                            "target_node_id": "screen14",
+                            "text": "Start with compatibility testing"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Data-driven tests in software testing involve running test scripts multiple times with different sets of input data stored externally, such as in a database or spreadsheet. This approach allows for:\n\n1. **Reusability**: Same test logic with different data sets.\n2. **Maintainability**: Easy updates to test data without altering scripts.\n3. **Efficiency**: Quick execution of multiple scenarios.\n4. **Scalability**: Coverage of various data combinations and edge cases.\n\nThis methodology enhances test coverage, reliability, and efficiency.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen14",
+                            "text": "Start with compatibility testing"
+                        }
+                    ],
+                    "id": "screen13a",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_6.png?alt=media&token=96fbf3f3-c083-4fcf-9121-a1d824630f0d",
+                                "type": "image"
+                            },
+                            {
+                                "content": "Let's set up compatibility testing to ensure your web application works across different browsers and devices.\n\n1. Go to \"Test Suites\" under \"Test Explorer\".\n2. Right-click and select \"Create New Test Suite\".\n3. Click the \"Add\" button in the \"Execution Information\" menu.\n4. Select and add all desired test cases.\n5. Choose which browsers and platforms to test on.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "Execute the test suite"
+                        }
+                    ],
+                    "id": "screen14",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "To execute the test suite:\n\n1. Choose Sequential mode to run tests individually.\n2. View the final report after all tests are completed.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
             ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen4",
-              "text": "Let's go!"
-            }
-          ],
-          "id": "screen3",
-          "type": "message"
         },
         {
-          "body": {
-            "parts": [
-              {
-                "content": "To clone the Git repository containing the Web UI project in Katalon Studio, follow these steps:\n\n1. Click on Clone Git Project.\n2. In the Repository URL field, enter the following link:\n\n```\nhttps://github.com/alfred-ai-co/create-and-execute-test-cases-using-script-mode-with-katalon-studioassist\n```\n\n3. Click **Finish**.\n\nThe project will begin cloning in Katalon Studio and will be ready for use shortly.",
-                "type": "text"
-              }
+            "context": "In this task, learners will learn how to conduct load testing using Katalon Studio by running tests in parallel mode. Load testing evaluates the application's performance under specific levels of concurrent users and transactions, ensuring it performs reliably under normal and peak conditions. Learners will set parameters for maximum concurrent instances and delay between instances to manage system load and avoid resource conflicts. The task emphasizes the importance of load testing in identifying performance bottlenecks and ensuring the application can handle high user traffic. By the end of this task, learners will understand how to speed up the testing process by running multiple tests simultaneously and gain insights into the application's reliability under different conditions.",
+            "id": "4",
+            "name": "Load Testing",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Load testing evaluates your application's performance under specific levels of concurrent users and transactions.\n\n1. Choose Parallel mode in the \"Execution Information\".\n2. Set `Max concurrent instances` and `Delay between instances`.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "How do I set the parameters?"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "To set parameters:\n\n**Max Concurrent Instances**:\n\n- Specifies the maximum number of test cases running simultaneously.\n- Speeds up testing by running multiple tests at once.\n\n**Delay Between Instances**:\n\n- Defines the pause time between starting each test instance.\n- Manages system load and avoids resource conflicts.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
             ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen5",
-              "text": "Project cloned"
-            }
-          ],
-          "id": "screen4",
-          "type": "message"
         },
         {
-          "body": {
-            "parts": [
-              {
-                "content": "Katalon Studio is a powerful tool for automated Web UI testing. It helps simulate user interactions like clicking buttons and filling out forms, ensuring your application functions correctly across different browsers and devices.",
-                "type": "text"
-              }
+            "context": "This final task summarizes the mission and highlights best practices for using Katalon Studio. Learners will review the key points covered in the mission, including Web UI testing for functionality and compatibility, creating and cloning projects, automating test cases, implementing advanced testing techniques, and conducting load testing. The task encourages learners to keep practicing these steps to enhance their web application testing skills. It also emphasizes the importance of exploring additional features in Katalon Studio and staying updated with new testing techniques to continuously improve the testing process. The task aims to reinforce the knowledge gained throughout the mission and motivate learners to apply best practices in their testing workflows.",
+            "id": "5",
+            "name": "Summary and Best Practices",
+            "nodes": [
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Great job! Here's a summary of what we covered:\n\n- **Web UI Testing:** Ensuring functionality and compatibility.\n- **Creating Projects:** Cloning or creating sample projects.\n- **Functionality Testing:** Automating test cases with Katalon Studio.\n- **Advanced Testing:** Implementing advanced test cases.\n- **Compatibility Testing:** Testing across multiple platforms.\n- **Load Testing:** Running tests in Parallel mode.\n\nCongratulations on completing the mission, {username}! Keep practicing these steps to enhance your web application testing skills. Explore additional features in Katalon Studio and stay updated with new testing techniques to continuously improve your testing process.",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "Finish"
+                        }
+                    ],
+                    "id": "START",
+                    "type": "message"
+                },
+                {
+                    "body": {
+                        "parts": [
+                            {
+                                "content": "Mission completed successfully!",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "id": "END",
+                    "type": "message"
+                }
             ]
-          },
-          "edges": [
-            {
-              "target_node_id": "END",
-              "text": "Tell me more about Katalon Studio features."
-            }
-          ],
-          "id": "screen5",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "Katalon Studio offers several key features:\n\n- **Functionality Testing**: Verifies all interactive elements work as intended.\n- **Compatibility Testing**: Ensures the application works across different browsers and devices.\n- **StudioAssist**: AI-powered assistant for intelligent code generation and explanations.",
-                "type": "text"
-              }
-            ]
-          },
-          "id": "END",
-          "type": "message"
         }
-      ]
-    },
-    {
-      "context": "This task focuses on guiding learners through the setup of functionality testing in Katalon Studio. Learners will create and execute test cases to verify that all interactive elements on their web application work as intended. The task is broken down into two main steps: creating new test cases and adding them to the project. Learners will navigate to the 'Test Cases' section, create a new test case, and generate automated test cases. The task also introduces StudioAssist, an AI-powered assistant integrated into Katalon Studio, designed to enhance the efficiency of writing automated tests. StudioAssist offers features like intelligent code generation, code explanation, and context-based suggestions. Learners will configure their OpenAI credentials to use StudioAssist, and learn how to use it to generate and explain test scripts. The task aims to equip learners with the skills to automate functionality testing and leverage AI tools to improve their testing processes.",
-      "id": "2",
-      "name": "Functionality Testing",
-      "nodes": [
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_1.png?alt=media&token=385b97cd-4f4b-47dc-8910-679d4a5974a5",
-                "type": "image"
-              },
-              {
-                "content": "Let's start by setting up functionality testing in Katalon Studio. We'll create and execute test cases to verify that all interactive elements on your web application work as intended.\n\n**Step 1: Create New Test Cases**:\n\n1. Navigate to \"Test Cases\" under \"Tests Explorer\".\n2. Right-click on \"Test Cases\" and select \"Create New Test Case\".\n3. Enter a name for your Test Case and click \"OK\".\n\n**Step 2: Add Test Cases**:\n\n1. Click the \"Add\" button to generate an automated test case.\n2. Modify the test case if needed by selecting a different automated test case from the drop-down menu.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen7",
-              "text": "Let's move on"
-            }
-          ],
-          "id": "START",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "StudioAssist in Katalon is an AI-powered assistant integrated into Katalon Studio, designed to enhance the efficiency of writing automated tests. Built on OpenAI's GPT API, StudioAssist offers several key features:\n\n- **Intelligent Code Generation**: StudioAssist can generate test scripts based on natural language prompts provided by the user. This allows testers to describe the steps they want in plain text, which StudioAssist then translates into executable test code.\n- **Code Explanation**: Users can highlight a snippet of code and use StudioAssist to generate explanations.\n- **Context-Based Suggestions**: StudioAssist provides context-aware code suggestions, helping to streamline the coding process and reduce the time required to develop test cases.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen8",
-              "text": "Let's set it up!"
-            }
-          ],
-          "id": "screen7",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "To use this feature, we first need to configure our OpenAI credentials.\n\n- Click on the StudioAssist button located between the \"Create new Test Case\" and \"Back\" buttons on the uppermost toolbar.\n- In the StudioAssist settings, choose the \"User personal OpenAI key\" option and input the following OpenAI API key:\n\n```\n\n```\n\nWe will use the model `gpt-3.5-turbo`, as vision capabilities are not required for our purposes.\n\n- Click the \"Apply and Close\" button.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen9",
-              "text": "What's next?"
-            }
-          ],
-          "id": "screen8",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "AI-generated test cases can sometimes be difficult to comprehend. We will now use Katalon StudioAssist to clarify the generated test cases. To explain the code using Katalon StudioAssist:\n\n1. Highlight the script or specific methods.\n2. Right-click and select \"StudioAssist\".\n3. Choose \"Explain Code\" to generate comments explaining each method.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen10",
-              "text": "Run test cases"
-            }
-          ],
-          "id": "screen9",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_2.png?alt=media&token=ddd1a67f-f926-41de-a279-6a4f4124744e",
-                "type": "image"
-              },
-              {
-                "content": "To execute test cases:\n\n1. Switch to Script mode by clicking \"Script\" in the bottom toolbar.\n2. Highlight the script or specific methods, right-click, and select \"Run\".\n3. Observe the browser window as Katalon Studio performs the automated actions.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen11",
-              "text": "Got it, what's next?"
-            }
-          ],
-          "id": "screen10",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_3.png?alt=media&token=62cd4c4b-bb60-45f2-8654-54b0e13589e9",
-                "type": "image"
-              },
-              {
-                "content": "Review the test results to ensure all test cases passed:\n\n- Passed tests indicate that parts of the code are working correctly.\n- Failed tests highlight areas that need fixing.\n\nIf necessary, add or modify test cases using StudioAssist and rerun the tests. Think about potential edge cases that might not be covered and add tests for those scenarios.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "END",
-              "text": "Understood"
-            }
-          ],
-          "id": "screen11",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_4.png?alt=media&token=aa9fa3d5-60c1-4f55-b216-9ed1c8a9dd1d",
-                "type": "image"
-              },
-              {
-                "content": "The best feature of StudioAssist is its ability to automatically generate test cases from code comments. To do this:\n\n- Highlight the commented explanation.\n- Click on \"Generate Code\" in StudioAssist.\n\nThis will create new test cases that can be executed again.\n\nNotice that the newly generated test cases differ from the predefined ones. These cases might also fail initially since they are templates and may require some modifications to run correctly. Therefore, consider the AI-generated code as a starting point that may need adjustments.",
-                "type": "text"
-              }
-            ]
-          },
-          "id": "END",
-          "type": "message"
-        }
-      ]
-    },
-    {
-      "context": "This task covers advanced testing techniques, including data-driven testing and compatibility testing, in Katalon Studio. Learners will understand how to perform data-driven tests by adjusting variables and their values to test multiple form inputs. They will learn the concept of data-driven testing, which involves running test scripts multiple times with different sets of input data to enhance test coverage, reliability, and efficiency. The task also guides learners through setting up compatibility testing to ensure their web application works across different browsers and devices. Learners will create a new test suite, add test cases, and choose the browsers and platforms to test on. The goal of this task is to provide learners with comprehensive testing skills, ensuring their applications perform well in various environments and under different data scenarios.",
-      "id": "3",
-      "name": "Advanced Testing",
-      "nodes": [
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_5.png?alt=media&token=62777c1c-392e-4f6c-8eb7-6912fa51fc1a",
-                "type": "image"
-              },
-              {
-                "content": "For data-driven tests, you may need to test multiple form inputs. To adjust your variables and their values:\n\n- Go to the \"Variables\" tab next to the \"Script\" tab.\n- Adjust your variables and their values, then rerun your test cases.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen13a",
-              "text": "What are data-driven tests?"
-            },
-            {
-              "target_node_id": "screen14",
-              "text": "Start with compatibility testing"
-            }
-          ],
-          "id": "START",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "Data-driven tests in software testing involve running test scripts multiple times with different sets of input data stored externally, such as in a database or spreadsheet. This approach allows for:\n\n1. **Reusability**: Same test logic with different data sets.\n2. **Maintainability**: Easy updates to test data without altering scripts.\n3. **Efficiency**: Quick execution of multiple scenarios.\n4. **Scalability**: Coverage of various data combinations and edge cases.\n\nThis methodology enhances test coverage, reliability, and efficiency.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "screen14",
-              "text": "Start with compatibility testing"
-            }
-          ],
-          "id": "screen13a",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%204%2FModule%202%2FUnit%202%2Fmodule_2_mission_1_6.png?alt=media&token=96fbf3f3-c083-4fcf-9121-a1d824630f0d",
-                "type": "image"
-              },
-              {
-                "content": "Let's set up compatibility testing to ensure your web application works across different browsers and devices.\n\n1. Go to \"Test Suites\" under \"Test Explorer\".\n2. Right-click and select \"Create New Test Suite\".\n3. Click the \"Add\" button in the \"Execution Information\" menu.\n4. Select and add all desired test cases.\n5. Choose which browsers and platforms to test on.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "END",
-              "text": "Execute the test suite"
-            }
-          ],
-          "id": "screen14",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "To execute the test suite:\n\n1. Choose Sequential mode to run tests individually.\n2. View the final report after all tests are completed.",
-                "type": "text"
-              }
-            ]
-          },
-          "id": "END",
-          "type": "message"
-        }
-      ]
-    },
-    {
-      "context": "In this task, learners will learn how to conduct load testing using Katalon Studio by running tests in parallel mode. Load testing evaluates the application's performance under specific levels of concurrent users and transactions, ensuring it performs reliably under normal and peak conditions. Learners will set parameters for maximum concurrent instances and delay between instances to manage system load and avoid resource conflicts. The task emphasizes the importance of load testing in identifying performance bottlenecks and ensuring the application can handle high user traffic. By the end of this task, learners will understand how to speed up the testing process by running multiple tests simultaneously and gain insights into the application's reliability under different conditions.",
-      "id": "4",
-      "name": "Load Testing",
-      "nodes": [
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "Load testing evaluates your application's performance under specific levels of concurrent users and transactions.\n\n1. Choose Parallel mode in the \"Execution Information\".\n2. Set `Max concurrent instances` and `Delay between instances`.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "END",
-              "text": "How do I set the parameters?"
-            }
-          ],
-          "id": "START",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "To set parameters:\n\n**Max Concurrent Instances**:\n\n- Specifies the maximum number of test cases running simultaneously.\n- Speeds up testing by running multiple tests at once.\n\n**Delay Between Instances**:\n\n- Defines the pause time between starting each test instance.\n- Manages system load and avoids resource conflicts.",
-                "type": "text"
-              }
-            ]
-          },
-          "id": "END",
-          "type": "message"
-        }
-      ]
-    },
-    {
-      "context": "This final task summarizes the mission and highlights best practices for using Katalon Studio. Learners will review the key points covered in the mission, including Web UI testing for functionality and compatibility, creating and cloning projects, automating test cases, implementing advanced testing techniques, and conducting load testing. The task encourages learners to keep practicing these steps to enhance their web application testing skills. It also emphasizes the importance of exploring additional features in Katalon Studio and staying updated with new testing techniques to continuously improve the testing process. The task aims to reinforce the knowledge gained throughout the mission and motivate learners to apply best practices in their testing workflows.",
-      "id": "5",
-      "name": "Summary and Best Practices",
-      "nodes": [
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "Great job! Here's a summary of what we covered:\n\n- **Web UI Testing:** Ensuring functionality and compatibility.\n- **Creating Projects:** Cloning or creating sample projects.\n- **Functionality Testing:** Automating test cases with Katalon Studio.\n- **Advanced Testing:** Implementing advanced test cases.\n- **Compatibility Testing:** Testing across multiple platforms.\n- **Load Testing:** Running tests in Parallel mode.\n\nCongratulations on completing the mission, {username}! Keep practicing these steps to enhance your web application testing skills. Explore additional features in Katalon Studio and stay updated with new testing techniques to continuously improve your testing process.",
-                "type": "text"
-              }
-            ]
-          },
-          "edges": [
-            {
-              "target_node_id": "END",
-              "text": "Finish"
-            }
-          ],
-          "id": "START",
-          "type": "message"
-        },
-        {
-          "body": {
-            "parts": [
-              {
-                "content": "Mission completed successfully!",
-                "type": "text"
-              }
-            ]
-          },
-          "id": "END",
-          "type": "message"
-        }
-      ]
-    }
-  ]
+    ]
 }
