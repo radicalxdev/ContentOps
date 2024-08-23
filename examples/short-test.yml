@@ -13,6 +13,9 @@ tasks:
         edges:
           - text: "finish"
             target_node_id: "END"
+          - text: "__NEXT_TASK__"
+            target_node_id: "EXIT"
+            mask_text: "Let's go to the next task"
 
       - id: END
         type: message
