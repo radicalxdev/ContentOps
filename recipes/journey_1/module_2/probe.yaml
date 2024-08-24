@@ -63,8 +63,9 @@ tasks:
     edges:
     - target_node_id: screen2a
       text: Explain more, Ada!
-    - target_node_id: END
-      text: On to the next!
+    - target_node_id: EXIT
+      text: __NEXT_TASK__
+      mask_text: "Next Question"
     id: screen2_correct
     type: message
   - body:
@@ -76,8 +77,9 @@ tasks:
     edges:
     - target_node_id: screen2a
       text: Explain more, Ada!
-    - target_node_id: END
-      text: On to the next!
+    - target_node_id: EXIT
+      text: __NEXT_TASK__
+      mask_text: "Next Question"
     id: screen2_incorrect
     type: message
   - body:
@@ -165,8 +167,9 @@ tasks:
     edges:
     - target_node_id: screen3a
       text: Explain more, Ada!
-    - target_node_id: END
-      text: On to the next!
+    - target_node_id: EXIT
+      text: __NEXT_TASK__
+      mask_text: "Next Question"
     id: screen3_correct
     type: message
   - body:
@@ -178,8 +181,9 @@ tasks:
     edges:
     - target_node_id: screen3a
       text: Explain more, Ada!
-    - target_node_id: END
-      text: On to the next!
+    - target_node_id: EXIT
+      text: __NEXT_TASK__
+      mask_text: "Next Question"
     id: screen3_incorrect
     type: message
   - body:

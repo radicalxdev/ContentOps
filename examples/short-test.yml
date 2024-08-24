@@ -24,6 +24,14 @@ tasks:
             - type: "text"
               content: |
                 That’s the overview of the Status Update API Service project. If you have any questions or need further clarification, feel free to ask. Let's make this a seamless addition to our project management tool!
+        edges:
+          - text: "__NEXT_TASK__"
+            target_node_id: "EXIT"
+            mask_text: "Let's go to the next task"
+
+
+
+
   - name: "Welcome to the Journey 2"
     context: "In this journey, learners will develop a Status Update API Service for a Project Management System. The project involves planning and designing a comprehensive history trail feature, implementing it within the existing codebase, conducting thorough testing, and deploying the application to Google Cloud Run. The Status Updates feature will include a new history table in the SQLAlchemy database, capturing all modifications with timestamps and user details. Learners will produce design documents, conduct various tests, and containerize the application for deployment. The final module emphasizes integrating AI-powered tools and best practices to enhance software development processes."
     id: "2"
