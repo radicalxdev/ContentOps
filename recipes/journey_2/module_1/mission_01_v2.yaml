@@ -60,6 +60,8 @@ tasks:
 
                   'As a project manager, I want to be able to create, view, update, and delete tickets 
                   within a project, so that I can keep track of tasks, deadlines, and team assignments.'
+
+                  What other user stories do you see?
               type: text
         edges:
           - target_node_id: screen5
@@ -248,10 +250,10 @@ tasks:
         body:
           parts:
             - content: |
-                "Now that your environment is ready, it's time to dive into your first coding task for the 
+                Now that your environment is ready, it's time to dive into your first coding task for the 
                 Project Management API. This API is a vital tool that Alfred AI's enterprise clients rely on 
                 daily, and your contributions will play a key role in its continued success. Ready to take the 
-                first step?"
+                first step?
               type: text
         edges:
           - target_node_id: screen14
@@ -262,7 +264,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Let's start by adding the `create_project` function. This function will allow project managers to add new projects to the system. How would you describe this function in a comment? Your comment will guide Copilot to generate the code."
+                Let's start by adding the `create_project` function. This function will allow project managers to add new projects to the system. How would you describe this function in a comment? Your comment will guide Copilot to generate the code.
               type: text
         edges:
           - target_node_id: screen15
@@ -294,7 +296,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Great! What do you see? How does the suggested code look to you?"
+                Great! What do you see? How does the suggested code look to you?
               type: text
         edges:
           - target_node_id: screen17
@@ -305,29 +307,25 @@ tasks:
         body:
           parts:
             - content: |
-                "If you like what Copilot suggested, go ahead and accept it. If not, you can tweak the comment or explore more suggestions. What would you like to do next?"
+                If you like what Copilot suggested, go ahead and accept it. If not, you can tweak the comment or explore more suggestions. What would you like to do next?
               type: text
         edges:
           - target_node_id: screen18
-            text: Accept
-          - target_node_id: screen14
-            text: Tweak the comment
-          - target_node_id: screen16
-            text: Explore more suggestions
+            text: Let's continue
 
       - id: screen18
         type: message
         body:
           parts:
             - content: |
-                "Your `create_project` function is looking solid! How about creating a Pull Request so I can review the changes? Remember to name the PR as “Task 2 - <name of your PR>” so it can be reviewed."
+                Your `create_project` function is looking solid! How about creating a Pull Request so I can review the changes? Remember to name the PR as “Task 2 - <name of your PR>” so it can be reviewed.
               type: text
         edges:
           - target_node_id: EXIT
             text: __NEXT_TASK__
-            mask-text: "Let's go to the next task"
+            mask_text: "Let's go to the next task"
           - target_node_id: pr_review
-            text: Let's create the Pull Request.
+            text: Created the Pull Request.
 
       - id: pr_review
         type: pr_feedback
@@ -384,7 +382,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Great job on creating the `create_project` function! Now, let's move on to our next task: creating a function to retrieve projects from the database by their ID. This is crucial for project managers who need to quickly access specific project details. Ready to dive in?"
+                Great job on creating the `create_project` function! Now, let's move on to our next task: creating a function to retrieve projects from the database by their ID. This is crucial for project managers who need to quickly access specific project details. Ready to dive in?
               type: text
         edges:
           - target_node_id: screen20
@@ -395,7 +393,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Let's think about what this `get_project` function needs to do. It should take a database session and a project ID as inputs, query the database for a project with that ID, and then return the result. How would you describe this function in a comment?"
+                Let's think about what this `get_project` function needs to do. It should take a database session and a project ID as inputs, query the database for a project with that ID, and then return the result. How would you describe this function in a comment?
               type: text
         edges:
           - target_node_id: screen21
@@ -406,7 +404,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Nice! Here's a sample comment that might guide Copilot more effectively. Compare it with 
+                Nice! Here's a sample comment that might guide Copilot more effectively. Compare it with 
                 what you wrote:
 
                 ```python
@@ -416,7 +414,7 @@ tasks:
                 first result.'''
                 ```
 
-                Would you like to use your comment or try this one?"
+                Would you like to use your comment or try this one?
               type: text
         edges:
           - target_node_id: screen22
@@ -439,7 +437,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Take a minute to review the suggestions provided by GitHub Copilot. How does the generated `get_project` function look? Does it match your expectations?"
+                Take a minute to review the suggestions provided by GitHub Copilot. How does the generated `get_project` function look? Does it match your expectations?
               type: text
         edges:
           - target_node_id: screen24
@@ -450,7 +448,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Remember, it's important to review Copilot's suggestions carefully. Even if the code looks correct, consider how it fits into your overall codebase. Would you like to accept this suggestion, see more options, or refine the comment for better results?"
+                Remember, it's important to review Copilot's suggestions carefully. Even if the code looks correct, consider how it fits into your overall codebase. Would you like to accept this suggestion, see more options, or refine the comment for better results?
               type: text
         edges:
           - target_node_id: screen25
@@ -465,7 +463,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Awesome! You've successfully created the `get_project` function, which will help retrieve specific project details from the database. This is a vital part of making our API efficient and user-friendly. Before we move on, do you want to review your work or submit a Pull Request? Be sure to name your PR as “Task 3 - <name of your PR>” so it can be reviewed."
+                Awesome! You've successfully created the `get_project` function, which will help retrieve specific project details from the database. This is a vital part of making our API efficient and user-friendly. Before we move on, do you want to review your work or submit a Pull Request? Be sure to name your PR as “Task 3 - <name of your PR>” so it can be reviewed.
               type: text
         edges:
           - target_node_id: EXIT
@@ -515,10 +513,10 @@ tasks:
         body:
           parts:
             - content: |
-                "Great work so far! Your `get_project` function is now ready and integrated. Let's continue 
+                Great work so far! Your `get_project` function is now ready and integrated. Let's continue 
                 to enhance the API by implementing the next crucial function. Ready to dive into the next task?
 
-                This concludes the current task. You are now prepared to tackle the next function in the API."
+                This concludes the current task. You are now prepared to tackle the next function in the API.
               type: text
 
   - context: |
@@ -531,7 +529,7 @@ tasks:
         body:
           parts:
             - content: |
-                "As we continue building the Project Management API, it's important to ensure that project details can be updated easily by our users. This functionality is essential for project managers who need to keep project information current as tasks and requirements evolve. Let's start by setting up the `update_project` function. How would you begin writing a function that updates project details in your database?"
+                As we continue building the Project Management API, it's important to ensure that project details can be updated easily by our users. This functionality is essential for project managers who need to keep project information current as tasks and requirements evolve. Let's start by setting up the `update_project` function. How would you begin writing a function that updates project details in your database?
               type: text
         edges:
           - target_node_id: screen28
@@ -559,7 +557,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Now, here's where it gets interesting. Place your cursor on the next line, start typing `project`, and then pause to see what Copilot suggests. Based on your experience so far, what do you think Copilot might suggest?"
+                Now, here's where it gets interesting. Place your cursor on the next line, start typing `project`, and then pause to see what Copilot suggests. Based on your experience so far, what do you think Copilot might suggest?
               type: text
         edges:
           - target_node_id: screen30
@@ -570,7 +568,7 @@ tasks:
         body:
           parts:
             - content: |
-                "How does Copilot's suggestion compare to what you were expecting? Do you think it covers everything needed to query and update the project?"
+                How does Copilot's suggestion compare to what you were expecting? Do you think it covers everything needed to query and update the project?
               type: text
         edges:
           - target_node_id: screen31
@@ -585,7 +583,7 @@ tasks:
         body:
           parts:
             - content: |
-                "Once you're satisfied with the suggestion, go ahead and press Tab to accept it. Here's what a 
+                Once you're satisfied with the suggestion, go ahead and press Tab to accept it. Here's what a 
                 typical `update_project` function might look like:
 
                 ```python
@@ -599,7 +597,7 @@ tasks:
                     return project
                 ```
 
-                Does this function cover everything we need?"
+                Does this function cover everything we need?
               type: text
         edges:
           - target_node_id: END
@@ -623,100 +621,100 @@ tasks:
         type: message
         body:
           parts:
-          - content: |
-              You're on the home stretch! The final CRUD operation we need to implement is the `delete_project` 
-              function. This function is crucial for allowing project managers to remove projects that are no 
-              longer needed. Let's get started!
-            type: text
+            - content: |
+                You're on the home stretch! The final CRUD operation we need to implement is the `delete_project` 
+                function. This function is crucial for allowing project managers to remove projects that are no 
+                longer needed. Let's get started!
+              type: text
         edges:
-        - target_node_id: screen33
-          text: Let's set up the function.
+          - target_node_id: screen33
+            text: Let's set up the function.
 
       - id: screen33
         type: message
         body:
           parts:
-          - content: |
-              First, let's set up the space for our `delete_project` function. Create two blank lines right 
-              below the `update_project` function in your `crud.py` file.
-            type: text
+            - content: |
+                First, let's set up the space for our `delete_project` function. Create two blank lines right 
+                below the `update_project` function in your `crud.py` file.
+              type: text
         edges:
-        - target_node_id: screen34
-          text: Now let's guide Copilot.
+          - target_node_id: screen34
+            text: Now let's guide Copilot.
 
       - id: screen34
         type: message
         body:
           parts:
-          - content: "Now, you can either start by typing `def` to see what Copilot suggests, or you can write a comment to guide the AI. Which approach would you like to take?"
-            type: text
+            - content: "Now, you can either start by typing `def` to see what Copilot suggests, or you can write a comment to guide the AI. Which approach would you like to take?"
+              type: text
         edges:
-        - target_node_id: screen35
-          text: Type `def` and see the suggestion.
-        - target_node_id: screen35
-          text: Write a comment first.
+          - target_node_id: screen35
+            text: Type `def` and see the suggestion.
+          - target_node_id: screen35
+            text: Write a comment first.
 
       - id: screen35
         type: message
         body:
           parts:
-          - content: "Let's review the suggestion that Copilot has generated for the `delete_project` function. How does it look to you?"
-            type: text
+            - content: "Let's review the suggestion that Copilot has generated for the `delete_project` function. How does it look to you?"
+              type: text
         edges:
-        - target_node_id: screen36
-          text: Finalize the function.
+          - target_node_id: screen36
+            text: Finalize the function.
 
       - id: screen36
         type: message
         body:
           parts:
-          - content: |
-              Here's what the complete `delete_project` function might look like after accepting Copilot's 
-              suggestion:
+            - content: |
+                Here's what the complete `delete_project` function might look like after accepting Copilot's 
+                suggestion:
 
-              ```python
-              def delete_project(db: Session, project_id: int):
-                  project = db.query(Project).filter(Project.id == project_id).first()
-                  if project:
-                      db.delete(project)
-                      db.commit()
-              ```
+                ```python
+                def delete_project(db: Session, project_id: int):
+                    project = db.query(Project).filter(Project.id == project_id).first()
+                    if project:
+                        db.delete(project)
+                        db.commit()
+                ```
 
-              Does this function look right to you? Is there anything you'd like to tweak?
-            type: text
+                Does this function look right to you? Is there anything you'd like to tweak?
+              type: text
         edges:
-        - target_node_id: screen37
-          text: Review the complete CRUD operations.
+          - target_node_id: screen37
+            text: Review the complete CRUD operations.
 
       - id: screen37
         type: message
         body:
           parts:
-          - content: |
-              To see these CRUD operations in action, let's run the app. Open your terminal in Visual Studio 
-              Code and enter the following command:
+            - content: |
+                To see these CRUD operations in action, let's run the app. Open your terminal in Visual Studio 
+                Code and enter the following command:
 
-              ```bash
-              fastapi dev app/main.py
-              ```
+                ```bash
+                fastapi dev app/main.py
+                ```
 
-              This will start your app, and you'll be able to see the output on your localhost address. Ready to give it a try?
-            type: text
+                This will start your app, and you'll be able to see the output on your localhost address. Ready to give it a try?
+              type: text
         edges:
-        - target_node_id: screen38
-          text: "What's next?"
+          - target_node_id: screen38
+            text: "What's next?"
 
       - id: screen38
         type: message
         body:
           parts:
-          - content: |
-              Great! Now that everything looks good, let's create a Pull Request to review your changes with 
-              the team. Remember to name the PR as “Task 5 - <name of your PR>” so I can review it.
-            type: text
+            - content: |
+                Great! Now that everything looks good, let's create a Pull Request to review your changes with 
+                the team. Remember to name the PR as “Task 5 - <name of your PR>” so I can review it.
+              type: text
         edges:
-        - target_node_id: pr_review
-          text: PR ready to review.
+          - target_node_id: pr_review
+            text: PR ready to review.
 
       - id: pr_review
         type: pr_feedback
@@ -758,57 +756,57 @@ tasks:
         type: message
         body:
           parts:
-          - content: |
-              Fantastic! You've now implemented all the CRUD operations needed for our Project Management API. 
-              Here's a quick recap of what your `crud.py` file might look like:
+            - content: |
+                Fantastic! You've now implemented all the CRUD operations needed for our Project Management API. 
+                Here's a quick recap of what your `crud.py` file might look like:
 
-              ```python
-              from sqlalchemy.orm import Session
-              from app.db_models.base import Project, Ticket
+                ```python
+                from sqlalchemy.orm import Session
+                from app.db_models.base import Project, Ticket
 
-              def create_project(db: Session, name: str, description: str):
-                  new_project = Project(name=name, description=description)
-                  db.add(new_project)
-                  db.commit()
-                  db.refresh(new_project)
-                  return new_project
+                def create_project(db: Session, name: str, description: str):
+                    new_project = Project(name=name, description=description)
+                    db.add(new_project)
+                    db.commit()
+                    db.refresh(new_project)
+                    return new_project
 
-              def get_project(db: Session, project_id: int):
-                  return db.query(Project).filter(Project.id == project_id).first()
+                def get_project(db: Session, project_id: int):
+                    return db.query(Project).filter(Project.id == project_id).first()
 
-              def update_project(db: Session, project_id: int, name: str, description: str):
-                  project = db.query(Project).filter(Project.id == project_id).first()
-                  if project:
-                      project.name = name
-                      project.description = description
-                      db.commit()
-                      db.refresh(project)
-                  return project
+                def update_project(db: Session, project_id: int, name: str, description: str):
+                    project = db.query(Project).filter(Project.id == project_id).first()
+                    if project:
+                        project.name = name
+                        project.description = description
+                        db.commit()
+                        db.refresh(project)
+                    return project
 
-              def delete_project(db: Session, project_id: int):
-                  project = db.query(Project).filter(Project.id == project_id).first()
-                  if project:
-                      db.delete(project)
-                      db.commit()
-              ```
+                def delete_project(db: Session, project_id: int):
+                    project = db.query(Project).filter(Project.id == project_id).first()
+                    if project:
+                        db.delete(project)
+                        db.commit()
+                ```
 
-              Does everything look good to you?
-            type: text
+                Does everything look good to you?
+              type: text
         edges:
-        - target_node_id: END
-          text: Yes, looks good!
+          - target_node_id: END
+            text: Yes, looks good!
 
       - id: END
         type: message
         body:
           parts:
-          - content: |
-              You've done an impressive job implementing all the CRUD operations for Alfred AI's Project 
-              Management API. With these core functionalities in place, the API is now better equipped to handle 
-              the complex project management needs of our enterprise clients. This is a significant step forward 
-              in ensuring that the tool remains both reliable and scalable.
+            - content: |
+                You've done an impressive job implementing all the CRUD operations for Alfred AI's Project 
+                Management API. With these core functionalities in place, the API is now better equipped to handle 
+                the complex project management needs of our enterprise clients. This is a significant step forward 
+                in ensuring that the tool remains both reliable and scalable.
 
-              In the next mission, we'll shift our focus to optimizing the API for reliability and performance—key 
-              factors that will ensure the API meets the high standards expected by Alfred AI's clients. Ready to 
-              tackle the next challenge?
-            type: text
+                In the next mission, we'll shift our focus to optimizing the API for reliability and performance—key 
+                factors that will ensure the API meets the high standards expected by Alfred AI's clients. Ready to 
+                tackle the next challenge?
+              type: text

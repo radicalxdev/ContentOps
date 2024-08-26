@@ -65,7 +65,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "To give you some context, here are the key user stories we're focusing on:\n\n- **User Story 1: Project Creation**\n\n  'As a project manager, I need to create new projects within the system, including \n  setting a project name, description, and assigning it to a team, so that I can \n  start organizing tasks and resources efficiently.'\n\n- **User Story 2: Ticket Management**\n\n  'As a project manager, I want to be able to create, view, update, and delete tickets \n  within a project, so that I can keep track of tasks, deadlines, and team assignments.'\n",
+                                "content": "To give you some context, here are the key user stories we're focusing on:\n\n- **User Story 1: Project Creation**\n\n  'As a project manager, I need to create new projects within the system, including \n  setting a project name, description, and assigning it to a team, so that I can \n  start organizing tasks and resources efficiently.'\n\n- **User Story 2: Ticket Management**\n\n  'As a project manager, I want to be able to create, view, update, and delete tickets \n  within a project, so that I can keep track of tasks, deadlines, and team assignments.'\n\n  What other user stories do you see?\n",
                                 "type": "text"
                             }
                         ]
@@ -338,7 +338,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Now that your environment is ready, it's time to dive into your first coding task for the \nProject Management API. This API is a vital tool that Alfred AI's enterprise clients rely on \ndaily, and your contributions will play a key role in its continued success. Ready to take the \nfirst step?\"\n",
+                                "content": "Now that your environment is ready, it's time to dive into your first coding task for the \nProject Management API. This API is a vital tool that Alfred AI's enterprise clients rely on \ndaily, and your contributions will play a key role in its continued success. Ready to take the \nfirst step?\n",
                                 "type": "text"
                             }
                         ]
@@ -356,7 +356,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Let's start by adding the `create_project` function. This function will allow project managers to add new projects to the system. How would you describe this function in a comment? Your comment will guide Copilot to generate the code.\"\n",
+                                "content": "Let's start by adding the `create_project` function. This function will allow project managers to add new projects to the system. How would you describe this function in a comment? Your comment will guide Copilot to generate the code.\n",
                                 "type": "text"
                             }
                         ]
@@ -392,7 +392,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Great! What do you see? How does the suggested code look to you?\"\n",
+                                "content": "Great! What do you see? How does the suggested code look to you?\n",
                                 "type": "text"
                             }
                         ]
@@ -410,7 +410,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"If you like what Copilot suggested, go ahead and accept it. If not, you can tweak the comment or explore more suggestions. What would you like to do next?\"\n",
+                                "content": "If you like what Copilot suggested, go ahead and accept it. If not, you can tweak the comment or explore more suggestions. What would you like to do next?\n",
                                 "type": "text"
                             }
                         ]
@@ -418,15 +418,7 @@
                     "edges": [
                         {
                             "target_node_id": "screen18",
-                            "text": "Accept"
-                        },
-                        {
-                            "target_node_id": "screen14",
-                            "text": "Tweak the comment"
-                        },
-                        {
-                            "target_node_id": "screen16",
-                            "text": "Explore more suggestions"
+                            "text": "Let's continue"
                         }
                     ]
                 },
@@ -436,7 +428,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Your `create_project` function is looking solid! How about creating a Pull Request so I can review the changes? Remember to name the PR as \u201cTask 2 - <name of your PR>\u201d so it can be reviewed.\"\n",
+                                "content": "Your `create_project` function is looking solid! How about creating a Pull Request so I can review the changes? Remember to name the PR as \u201cTask 2 - <name of your PR>\u201d so it can be reviewed.\n",
                                 "type": "text"
                             }
                         ]
@@ -445,11 +437,11 @@
                         {
                             "target_node_id": "EXIT",
                             "text": "__NEXT_TASK__",
-                            "mask-text": "Let's go to the next task"
+                            "mask_text": "Let's go to the next task"
                         },
                         {
                             "target_node_id": "pr_review",
-                            "text": "Let's create the Pull Request."
+                            "text": "Created the Pull Request."
                         }
                     ]
                 },
@@ -541,7 +533,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Great job on creating the `create_project` function! Now, let's move on to our next task: creating a function to retrieve projects from the database by their ID. This is crucial for project managers who need to quickly access specific project details. Ready to dive in?\"\n",
+                                "content": "Great job on creating the `create_project` function! Now, let's move on to our next task: creating a function to retrieve projects from the database by their ID. This is crucial for project managers who need to quickly access specific project details. Ready to dive in?\n",
                                 "type": "text"
                             }
                         ]
@@ -559,7 +551,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Let's think about what this `get_project` function needs to do. It should take a database session and a project ID as inputs, query the database for a project with that ID, and then return the result. How would you describe this function in a comment?\"\n",
+                                "content": "Let's think about what this `get_project` function needs to do. It should take a database session and a project ID as inputs, query the database for a project with that ID, and then return the result. How would you describe this function in a comment?\n",
                                 "type": "text"
                             }
                         ]
@@ -577,7 +569,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Nice! Here's a sample comment that might guide Copilot more effectively. Compare it with \nwhat you wrote:\n\n```python\n'''Define a function called get_project, which retrieves a project record from the database \nby its ID. The function should take a database session and a project ID as parameters. The \nfunction should query the database for a project record with the provided ID and return the \nfirst result.'''\n```\n\nWould you like to use your comment or try this one?\"\n",
+                                "content": "Nice! Here's a sample comment that might guide Copilot more effectively. Compare it with \nwhat you wrote:\n\n```python\n'''Define a function called get_project, which retrieves a project record from the database \nby its ID. The function should take a database session and a project ID as parameters. The \nfunction should query the database for a project record with the provided ID and return the \nfirst result.'''\n```\n\nWould you like to use your comment or try this one?\n",
                                 "type": "text"
                             }
                         ]
@@ -613,7 +605,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Take a minute to review the suggestions provided by GitHub Copilot. How does the generated `get_project` function look? Does it match your expectations?\"\n",
+                                "content": "Take a minute to review the suggestions provided by GitHub Copilot. How does the generated `get_project` function look? Does it match your expectations?\n",
                                 "type": "text"
                             }
                         ]
@@ -631,7 +623,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Remember, it's important to review Copilot's suggestions carefully. Even if the code looks correct, consider how it fits into your overall codebase. Would you like to accept this suggestion, see more options, or refine the comment for better results?\"\n",
+                                "content": "Remember, it's important to review Copilot's suggestions carefully. Even if the code looks correct, consider how it fits into your overall codebase. Would you like to accept this suggestion, see more options, or refine the comment for better results?\n",
                                 "type": "text"
                             }
                         ]
@@ -657,7 +649,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Awesome! You've successfully created the `get_project` function, which will help retrieve specific project details from the database. This is a vital part of making our API efficient and user-friendly. Before we move on, do you want to review your work or submit a Pull Request? Be sure to name your PR as \u201cTask 3 - <name of your PR>\u201d so it can be reviewed.\"\n",
+                                "content": "Awesome! You've successfully created the `get_project` function, which will help retrieve specific project details from the database. This is a vital part of making our API efficient and user-friendly. Before we move on, do you want to review your work or submit a Pull Request? Be sure to name your PR as \u201cTask 3 - <name of your PR>\u201d so it can be reviewed.\n",
                                 "type": "text"
                             }
                         ]
@@ -743,7 +735,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Great work so far! Your `get_project` function is now ready and integrated. Let's continue \nto enhance the API by implementing the next crucial function. Ready to dive into the next task?\n\nThis concludes the current task. You are now prepared to tackle the next function in the API.\"\n",
+                                "content": "Great work so far! Your `get_project` function is now ready and integrated. Let's continue \nto enhance the API by implementing the next crucial function. Ready to dive into the next task?\n\nThis concludes the current task. You are now prepared to tackle the next function in the API.\n",
                                 "type": "text"
                             }
                         ]
@@ -762,7 +754,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"As we continue building the Project Management API, it's important to ensure that project details can be updated easily by our users. This functionality is essential for project managers who need to keep project information current as tasks and requirements evolve. Let's start by setting up the `update_project` function. How would you begin writing a function that updates project details in your database?\"\n",
+                                "content": "As we continue building the Project Management API, it's important to ensure that project details can be updated easily by our users. This functionality is essential for project managers who need to keep project information current as tasks and requirements evolve. Let's start by setting up the `update_project` function. How would you begin writing a function that updates project details in your database?\n",
                                 "type": "text"
                             }
                         ]
@@ -798,7 +790,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Now, here's where it gets interesting. Place your cursor on the next line, start typing `project`, and then pause to see what Copilot suggests. Based on your experience so far, what do you think Copilot might suggest?\"\n",
+                                "content": "Now, here's where it gets interesting. Place your cursor on the next line, start typing `project`, and then pause to see what Copilot suggests. Based on your experience so far, what do you think Copilot might suggest?\n",
                                 "type": "text"
                             }
                         ]
@@ -816,7 +808,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"How does Copilot's suggestion compare to what you were expecting? Do you think it covers everything needed to query and update the project?\"\n",
+                                "content": "How does Copilot's suggestion compare to what you were expecting? Do you think it covers everything needed to query and update the project?\n",
                                 "type": "text"
                             }
                         ]
@@ -842,7 +834,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "\"Once you're satisfied with the suggestion, go ahead and press Tab to accept it. Here's what a \ntypical `update_project` function might look like:\n\n```python\ndef update_project(db: Session, project_id: int, name: str, description: str):\n    project = db.query(Project).filter(Project.id == project_id).first()\n    if project:\n        project.name = name\n        project.description = description\n        db.commit()\n        db.refresh(project)\n    return project\n```\n\nDoes this function cover everything we need?\"\n",
+                                "content": "Once you're satisfied with the suggestion, go ahead and press Tab to accept it. Here's what a \ntypical `update_project` function might look like:\n\n```python\ndef update_project(db: Session, project_id: int, name: str, description: str):\n    project = db.query(Project).filter(Project.id == project_id).first()\n    if project:\n        project.name = name\n        project.description = description\n        db.commit()\n        db.refresh(project)\n    return project\n```\n\nDoes this function cover everything we need?\n",
                                 "type": "text"
                             }
                         ]
