@@ -1,0 +1,594 @@
+{
+    "tasks": [
+        {
+            "context": "This mission is focused on enhancing a Project Management API by incorporating ticket management functionalities. It begins with a welcoming message that acknowledges the learner's previous work on CRUD operations and introduces the new task of implementing ticket management, which is essential for tracking tasks and issues within projects. The dialogue progresses through three screens, guiding the learner to prepare their development environment by creating a new file named tickets.py in the specified directory. It then delves into the specifics of the project, presenting two critical user stories: one for creating tickets, which involves defining attributes like title and description, and another for tracking tickets, allowing project managers to view, update, and delete them. The learner is prompted to implement the necessary routes and data operations based on these user stories, fostering an interactive and practical learning experience in API development.\n",
+            "id": "1",
+            "name": "Introduction and Environment Setup",
+            "nodes": [
+                {
+                    "id": "START",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Welcome back, {username}! Your work on the CRUD operations for projects was impressive. Now, we\u2019re taking a crucial step forward in developing our Project Management API by adding ticket management. Tickets are key to tracking tasks and issues within projects. Let\u2019s ensure our project managers can manage their tickets efficiently. Are you ready to dive in?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen2",
+                            "text": "Yes, let\u2019s start!"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen2",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Before we start, let's make sure your environment is ready. We\u2019ll be using the same GitHub repository from Mission 1. Navigate to the `app/api_models/` folder in the project directory. Here, we\u2019ll create a new file named `tickets.py` where we\u2019ll define the structures for our ticket data. This setup will be the foundation for the ticket management feature.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen3",
+                            "text": "Opens the folder and creates `tickets.py`"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen3",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Now, let's get into the specifics. The **Project Management API** is being expanded to include ticket management, which is crucial for project managers who need to keep track of every detail within their projects. Here are two key user stories we\u2019re focusing on:\n\n- **User Story 1: Ticket Creation**\n    - 'As a project manager, I need to create new tickets within the system, including setting a title, description, and assigning it to a project, so that I can track tasks efficiently.'\n- **User Story 2: Ticket Tracking**\n    - 'As a project manager, I want to be able to view, update, and delete tickets within a project, so that I can manage ongoing tasks and issues.'\n\nYour task is to implement the necessary routes and data operations for ticket management based on these user stories. Ready to start with the data models?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "EXIT",
+                            "text": "__NEXT_TASK__",
+                            "mask_text": "Let's get started!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "In this mission, learners are guided through the process of defining and implementing data models for a ticket management system within a Project Management API. The task begins with the creation of the TicketCreate model, which structures the data necessary for project managers to track tasks and issues. Learners are encouraged to utilize GitHub Copilot's inline chat feature to generate the model, prompting them to think critically about its structure and attributes, such as project ID, title, description, status, and priority. As they progress, they review and refine the generated model, ensuring it meets their expectations before creating a Pull Request for team review. The mission continues with the development of the TicketResponse model, which extends the TicketCreate model by adding fields for ID and creation timestamp. Throughout the exercise, learners are prompted to engage with Copilot, fostering an interactive coding experience that emphasizes collaboration and code quality. The mission concludes with the submission of Pull Requests for both models, reinforcing best practices in software development and teamwork.\n",
+            "id": "2",
+            "name": "Creating Pydantic Models with Github Copilot Inline Chat",
+            "nodes": [
+                {
+                    "id": "START",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Let\u2019s define the `TicketCreate` model first. This model will structure the data for creating new tickets within a project. Imagine a project manager tracking issues or tasks\u2014this model will define how that data is structured. How would you describe this model in a comment to guide GitHub Copilot?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen5",
+                            "text": "Go to Screen 5"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen5",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Great! Let\u2019s use Copilot\u2019s inline chat to generate the `TicketCreate` model. Press `Ctrl + I` to open the chat and enter the following prompt:\n\n```\nCreate a TicketCreate model with project_id: int, title: str, as well as description, status, and priority as optional strings with default values of None.\n```\n\nThis model is key for project managers to add new tasks and issues. What do you think Copilot will generate?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen7",
+                            "text": "I generated the model."
+                        }
+                    ]
+                },
+                {
+                    "id": "screen7",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "image",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_1.png?alt=media&token=72722f73-d943-44bd-a1f7-1b442c1ea152"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Now that you've reviewed the model, you can make any necessary adjustments that we've outlined. Just in case, I've also added an example generated output for reference. Notice how the model includes the attributes we specified in the prompt as well as hopefully utilizing the Pydantic `BaseModel` class which allows us to validate and serialize data. It's quite comparable to an @dataclass.\n\nAre you satisfied with how the model is structured?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen9",
+                            "text": "Yes, ready to move forward"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen9",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Next, we\u2019ll create the `TicketResponse` model. This model will extend the `TicketCreate` model and add fields for `id` (an integer) and `created_at` (a datetime). How would you structure the prompt for this model?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen10",
+                            "text": "How would you structure the prompt?"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen10",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Here\u2019s a prompt you can use to guide Copilot:\n\n```\nCreate a Pydantic model named TicketResponse that is a subclass of TicketCreate and adds fields: id (integer) and created_at (datetime).\n```\n\nLet\u2019s enter this into Copilot and see what it generates.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen11",
+                            "text": "Generated the model."
+                        }
+                    ]
+                },
+                {
+                    "id": "screen11",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "image",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_2.png?alt=media&token=088a4cde-ad87-47e6-b02c-b54ecb192ae5"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Let's review the suggestions from GitHub Copilot. I've added an example generated output for reference as well. In this case, it should also pick up on the fact that `TicketResponse` is a subclass of `TicketCreate`. This is in part because we want to ensure that the `TicketResponse` model has all the fields of the `TicketCreate` model within the prompt that we passed. \n\nWant to test copilot here? Try requesting Copilot to regenerate the model, but this time be a bit more vague in your prompt. Depending on the context, Copilot may generate a different model, or even pick up on the fact that we want to create a subclass of `TicketCreate`!\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen12",
+                            "text": "What's next?"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen12",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "This concludes the second task. So far, we used Copilot to help us generate two models for our ticket management system. We also used Copilot to help us refine the models and ensure they met our expectations. I encourage you to experiment with Copilot here to see how different prompting techniques and context can affect the suggestions.\n\nIf you'd like for me to review your work, please submit a pull request for both models. Please name your pull request as `Task 2 - Ticket Models` and I can give you some feedback!\n\nOtherwise, we can move on to the next task.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "EXIT",
+                            "text": "__NEXT_TASK__",
+                            "mask_text": "Next Task"
+                        },
+                        {
+                            "target_node_id": "pr_review",
+                            "text": "Submit Pull Request."
+                        }
+                    ]
+                },
+                {
+                    "id": "pr_review",
+                    "type": "pr_feedback",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Cool! Give me a minute to read your PR..."
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": {
+                                    "func": "handle_action",
+                                    "args": [
+                                        "pr_feedback",
+                                        "Does the PR include creating a `TicketCreate` model with project_id: int, title: str, as well as description, status, and priority as optional strings with default values of None. Does the PR include creating a `TicketResponse` model which is a subclass of `TicketCreate` and adds fields: id (integer) and created_at (datetime). Does code include best practices and error handling?",
+                                        "w2-python-code-generation-and-completion"
+                                    ]
+                                },
+                                "status": [
+                                    {
+                                        "type": "success",
+                                        "content": "PR Reviewed successfully!"
+                                    },
+                                    {
+                                        "type": "no_matches",
+                                        "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task 2 - <name of your PR>'",
+                                        "extra_edges": [
+                                            {
+                                                "text": "Resubmitted PR",
+                                                "target_node_id": "pr_review"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "error",
+                                        "content": "Seems to be an error. Please try again later.",
+                                        "extra_edges": [
+                                            {
+                                                "text": "Resubmitted PR",
+                                                "target_node_id": "pr_review"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "text",
+                                "content": "Ready to go? Let's move on"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "text": "__NEXT_TASK__",
+                            "target_node_id": "EXIT",
+                            "mask_text": "I am good to go, let's move on"
+                        },
+                        {
+                            "text": "Resubmitted PR",
+                            "target_node_id": "pr_review"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "In this mission, learners are guided through the implementation of database operations for ticket management within a Project Management API, focusing on the essential CRUD (Create, Read, Update, Delete) functionalities. The journey begins with a prompt to implement these operations, emphasizing their importance in helping project managers efficiently track tasks and issues. As learners navigate to the designated crud.py file, they are encouraged to create a create_ticket function using GitHub Copilot's inline chat feature, which facilitates the coding process by generating suggestions based on user prompts. The mission progresses with learners reviewing the generated code, creating a Pull Request for team feedback, and then moving on to implement the remaining CRUD operations. This interactive experience not only enhances learners' coding skills but also demonstrates the practical application of collaborative tools in software development, ultimately preparing them for real-world API management scenarios.\n",
+            "id": "3",
+            "name": "Generating Database Operations for Tickets with Github Copilot Inline Chat",
+            "nodes": [
+                {
+                    "id": "START",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Now that we have our data models, it\u2019s time to implement the database operations that will power ticket management in our API. These operations\u2014Create, Read, Update, Delete (CRUD)\u2014will allow our API to manage ticket data efficiently, helping project managers keep their projects on track. Ready to start?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen13",
+                            "text": "Yes, let\u2019s start!"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen13",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Let\u2019s navigate to the `app/db_models/crud.py` file. This is where we\u2019ll implement the CRUD operations for tickets, just as you did for projects. First up, let\u2019s create the `create_ticket` function. How do you think we should start?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen14",
+                            "text": "Show me how with Copilot inline chat?"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen14",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Great! Let\u2019s use Copilot\u2019s inline chat to generate the `create_ticket` function. Enter this prompt into the chat:\n\n```\nCreate a function named create_ticket that takes db (Session), project_id (int), title (str), description (str), status (str), and priority (str) as parameters and creates a new Ticket in the database.\n```\n\nThis will allow project managers to add tasks and issues to their projects seamlessly. You can also try refining this prompt or coming up with your own prompt to see how Copilot responds.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen15",
+                            "text": "Yes, ready to see the suggestion!"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen15",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Copilot has generated a suggestion for the `create_ticket` function and this function is critical for creating new tickets in the database. Notice how the suggested code adheres to the instrucitons but also picks up on the context of the project. How does the suggested code look to you? Does it seem to cover everything we need?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen17",
+                            "text": "Ready to move on"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen17",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Now that the `create_ticket` function is ready, let\u2019s move on to the other CRUD operations\u2014Read, Update, and Delete. Just like before, we\u2019ll use Copilot\u2019s inline chat to assist. How do you plan to approach these functions?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen17a",
+                            "text": "Let\u2019s start"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen17a",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "I encourage you to try different prompts here to build the other CRUD functions. Remember to use the prompting methods that you know or learned in the previous mission. Under one constraint, try to create these functions using Copilot inline chat.\n\nHint! Inline chat is great when used with comments and good prompting strategies. When you're ready, you can make a pull request for the generated code and I can give you some feedback! Be sure to name it as 'Task 3 - <name of your PR>' so I can find it.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "pr_review",
+                            "text": "Submit Pull Request."
+                        }
+                    ]
+                },
+                {
+                    "id": "pr_review",
+                    "type": "pr_feedback",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Cool! Give me a minute to read your PR..."
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": {
+                                    "func": "handle_action",
+                                    "args": [
+                                        "pr_feedback",
+                                        "Does the PR include the CRUD operations for tickets which includes create, read, update, and delete. Does code include best practices and error handling?",
+                                        "w2-python-code-generation-and-completion"
+                                    ]
+                                },
+                                "status": [
+                                    {
+                                        "type": "success",
+                                        "content": "PR Reviewed successfully!"
+                                    },
+                                    {
+                                        "type": "no_matches",
+                                        "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task 3 - <name of your PR>'",
+                                        "extra_edges": [
+                                            {
+                                                "text": "Resubmitted PR",
+                                                "target_node_id": "pr_review"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "error",
+                                        "content": "Seems to be an error. Please try again later.",
+                                        "extra_edges": [
+                                            {
+                                                "text": "Resubmitted PR",
+                                                "target_node_id": "pr_review"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "text",
+                                "content": "Ready to go? Let's move on"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "text": "__NEXT_TASK__",
+                            "target_node_id": "EXIT",
+                            "mask_text": "I am good to go, let's move on"
+                        },
+                        {
+                            "text": "Resubmitted PR",
+                            "target_node_id": "pr_review"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "In this mission, learners are guided through the process of implementing API routes for ticket management within a Project Management API. The journey begins with a prompt to set up the necessary routes that will enable project managers to interact with the ticketing features effectively. Learners are instructed to create or navigate to a dedicated file named tickets.py, which will serve as the central hub for all ticket-related functionalities. They are then encouraged to utilize GitHub Copilot's inline chat feature to generate the essential CRUD (Create, Read, Update, Delete) methods for managing tickets. As they review the generated routes, learners are prompted to ensure that these methods adhere to RESTful API standards. Once satisfied with the output, they finalize the routes and prepare to test them, culminating in a practical exercise that reinforces their understanding of API development and the integration of ticket management functionalities. This mission emphasizes hands-on learning and the application of coding tools to enhance development workflows.\n",
+            "id": "4",
+            "name": "Adding API Routes with GitHub Copilot Inline Chat",
+            "nodes": [
+                {
+                    "id": "START",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "With the database operations in place, it\u2019s time to expose these functionalities through API routes. These routes will allow project managers to interact with the tickets feature of our Project Management API. This lets other services within the organization to consume these functionalities. Ready to set up the routes?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen20",
+                            "text": "Yes, I\u2019m ready!"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen20",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Let\u2019s make sure you have a dedicated file for ticket routes in:\n\n```\napp/api/routes/tickets.py\n```\n\nThis file will serve as the entry point for all ticket management functionalities in the API. \n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen21",
+                            "text": "Opened the file"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen21",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Now, let\u2019s generate the CRUD routes for tickets. Open Copilot\u2019s inline chat and enter this prompt:\n\n```\nGenerate the create, read, update, and delete methods for Tickets routes.\n```\n\nThese routes will allow project managers to manage their tickets effectively. What do you expect Copilot to generate? Try to experiment with this prompt to see how Copilot responds.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen22",
+                            "text": "Makes a prediction"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen22",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "image",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_4.png?alt=media&token=133a95b0-9578-4ddc-afeb-18cab2d8c8ea"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Review the routes Copilot has generated. Notice how the routes adhere to RESTful API standards and Copilot picked up on the context of the project that we define routes using FastAPI's syntax. Do they correctly reference the appropriate CRUD functions and is there anything that you would change?\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen23",
+                            "text": "All set"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen23",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Once you\u2019re satisfied with the generated routes, finalize them by accepting Copilot\u2019s suggestions. These routes are now ready to handle ticket management requests. We can actually also test them locally! Let's check that out.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "screen23A",
+                            "text": "Yes, let\u2019s test them!"
+                        }
+                    ]
+                },
+                {
+                    "id": "screen23A",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "image",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_5.png?alt=media&token=0705ca23-5b3a-41db-abae-b417f0bdcaf0"
+                            },
+                            {
+                                "type": "image",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/reality-ai-b2b-sandbox.appspot.com/o/Program%2FJourney%202%2FModule%201%2FUnit%203%2Fmission_2_6.png?alt=media&token=504ca9ca-f6f7-47e1-94a3-f0ad9e783663"
+                            },
+                            {
+                                "type": "text",
+                                "content": "I've added some reference screenshots of how the router should look like both implementing the code and the /docs page.\n\nWe can run the file by using the fastapi cli commands as follows at the root directory: fastapi dev app/main.py and visit the /docs page typically found at http://127.0.0.1:8000/docs. Check to make sure that the tickets are added as a route within the api.py file which tells FastAPI that there exists a new route with the .include_router method as below:\n```python\napi.include_router(tickets.router)\n```\n\nThis shows that the tickets route is now available within the /docs page! We can send requests to the API and see how the routes work.\n"
+                            }
+                        ]
+                    },
+                    "edges": [
+                        {
+                            "target_node_id": "END",
+                            "text": "Let's wrap up!"
+                        }
+                    ]
+                },
+                {
+                    "id": "END",
+                    "type": "message",
+                    "body": {
+                        "parts": [
+                            {
+                                "type": "text",
+                                "content": "Great work on the routes! That concludes this mission. We\u2019ve successfully implemented ticket routes and their respective data operations using GitHub Copilot\u2019s inline chat feature. We created data validation models, wrote the database operations, and built the API routes. "
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
