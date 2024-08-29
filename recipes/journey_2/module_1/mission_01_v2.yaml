@@ -1,6 +1,6 @@
 tasks:
   - context: |
-      The content outlined in the YAML is an interactive educational module aimed at onboarding new developers into the Alfred AI team, specifically focusing on the enhancement of the Project Management API, which is essential for overseeing large-scale projects across diverse sectors. This module provides a comprehensive introduction to the API's fundamental features, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and associated tickets. As learners navigate through the module, they face practical challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-powered coding assistant, to support learners by offering intelligent code suggestions that adhere to industry best practices. The onboarding experience includes detailed instructions for setting up the development environment, which involves cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to replicate a real-world project management context, thereby providing a practical and engaging learning journey for new team members.
+      The content outlined in the YAML is an interactive educational module aimed at onboarding new developers into the Alfred AI team, specifically focusing on the enhancement of the Project Management API, which is essential for overseeing large-scale projects across diverse sectors. This module provides a comprehensive introduction to the API's fundamental features, particularly emphasizing CRUD operations (Create, Read, Update, Delete) with the Python FastAPI librarty that are vital for managing projects and associated tickets. As learners navigate through the module, they face practical challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-powered coding assistant, to support learners by offering intelligent code suggestions that adhere to industry best practices. The onboarding experience includes detailed instructions for setting up the development environment, which involves cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to replicate a real-world project management context, thereby providing a practical and engaging learning journey for new team members.
     id: "1"
     name: Introduction and Setup
     nodes:
@@ -104,7 +104,7 @@ tasks:
               type: text
         edges:
           - target_node_id: screen7
-            text: Show me Copilot in action.
+            text: Let's see how Copilot can help.
 
       - id: screen6b
         type: message
@@ -243,7 +243,7 @@ tasks:
               type: text
 
   - context: |
-      The content described is an interactive learning module aimed at onboarding new members of the Alfred AI development team, specifically focusing on the enhancement of the Project Management API, which is essential for managing large-scale projects across diverse industries. This educational module provides a comprehensive introduction to the API's fundamental functionalities, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and tickets. As learners navigate through the module, they face various challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-driven tool that offers code suggestions aligned with industry best practices, to assist learners in their development tasks. The learning experience is further enriched by guiding participants through the setup of their development environment, which includes cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to simulate a realistic project management scenario, thereby providing a practical and immersive educational experience.
+      The content described is an interactive learning module aimed at onboarding new members of the Alfred AI development team, specifically focusing on the enhancement of the Project Management API, which is essential for managing large-scale projects across diverse industries. The API is built with FastAPI, a Python library. This educational module provides a comprehensive introduction to the API's fundamental functionalities, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and tickets. As learners navigate through the module, they face various challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-driven tool that offers code suggestions aligned with industry best practices, to assist learners in their development tasks. The learning experience is further enriched by guiding participants through the setup of their development environment, which includes cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to simulate a realistic project management scenario, thereby providing a practical and immersive educational experience.
     id: "2"
     name: Use GitHub Copilot to Generate Code Line Completions from a Comment
     nodes:
@@ -377,7 +377,7 @@ tasks:
               type: text
 
   - context: |
-      The content is an interactive educational module aimed at onboarding new developers into the Alfred AI team, specifically focusing on the enhancement of the Project Management API, which is essential for overseeing large-scale projects across diverse sectors. This module provides a comprehensive introduction to the API's fundamental features, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and associated tickets. As learners navigate through the module, they face practical challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-powered tool that offers code suggestions aligned with industry best practices, to assist learners in their development tasks. The onboarding experience includes detailed instructions for setting up the development environment, which involves cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to replicate a real-world project management environment, thereby providing a practical and engaging learning experience for new team members.
+      The content is an interactive educational module aimed at onboarding new developers into the Alfred AI team, specifically focusing on the enhancement of the Project Management API, which is essential for overseeing large-scale projects across diverse sectors. The API is built with FastAPI, a Python library. This module provides a comprehensive introduction to the API's fundamental features, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and associated tickets. As learners navigate through the module, they face practical challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-powered tool that offers code suggestions aligned with industry best practices, to assist learners in their development tasks. The onboarding experience includes detailed instructions for setting up the development environment, which involves cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to replicate a real-world project management environment, thereby providing a practical and engaging learning experience for new team members.
     id: "3"
     name: Use GitHub Copilot to Generate the get_project Function
     nodes:
@@ -390,7 +390,7 @@ tasks:
               type: text
         edges:
           - target_node_id: screen20
-            text: Let's start the `get_project` function.
+            text: Let's start the get_project function.
 
       - id: screen20
         type: message
@@ -447,7 +447,7 @@ tasks:
               type: text
         edges:
           - target_node_id: screen24
-            text: Make a decision on the suggestion.
+            text: Ready to move on!
 
       - id: screen24
         type: message
@@ -458,11 +458,7 @@ tasks:
               type: text
         edges:
           - target_node_id: screen25
-            text: Accept the suggestion.
-          - target_node_id: screen23
-            text: See more suggestions.
-          - target_node_id: screen20
-            text: Refine the comment for better results.
+            text: I'm satisfied and ready to move on!
 
       - id: screen25
         type: message
@@ -476,7 +472,7 @@ tasks:
             text: __NEXT_TASK__
             mask-text: "Let's go to the next task"
           - target_node_id: pr_review
-            text: Submit Pull Request.
+            text: Submitted Pull Request.
 
       - id: pr_review
         type: pr_feedback
@@ -528,7 +524,7 @@ tasks:
               type: text
 
   - context: |
-      The content described is an interactive learning module aimed at onboarding new members of the Alfred AI development team, specifically focusing on enhancing the Project Management API, which is essential for managing large-scale projects across diverse industries. This educational module provides a comprehensive introduction to the API's core functionalities, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and tickets. As learners navigate through the module, they face various challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module introduces GitHub Copilot as a supportive tool that offers AI-driven code suggestions aligned with industry best practices. Learners are guided through the setup of their development environment, which includes cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. The structure of the content not only imparts technical knowledge about API development but also immerses learners in a realistic project management scenario, thereby providing a practical and engaging learning experience.
+      The content described is an interactive learning module aimed at onboarding new members of the Alfred AI development team, specifically focusing on enhancing the Project Management API, which is essential for managing large-scale projects across diverse industries. The API is built with FastAPI, a Python library. This educational module provides a comprehensive introduction to the API's core functionalities, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and tickets. As learners navigate through the module, they face various challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module introduces GitHub Copilot as a supportive tool that offers AI-driven code suggestions aligned with industry best practices. Learners are guided through the setup of their development environment, which includes cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. The structure of the content not only imparts technical knowledge about API development but also immerses learners in a realistic project management scenario, thereby providing a practical and engaging learning experience.
     id: "4"
     name: Use GitHub Copilot to Generate Code Line Completions for update_project
     nodes:
@@ -569,7 +565,7 @@ tasks:
               type: text
         edges:
           - target_node_id: screen30
-            text: Type `project` and review the suggestion.
+            text: Typed and ready to review the suggestion
 
       - id: screen30
         type: message
@@ -580,11 +576,7 @@ tasks:
               type: text
         edges:
           - target_node_id: screen31
-            text: Yes, it looks good!
-          - target_node_id: screen31
-            text: I think something's missing.
-          - target_node_id: screen31
-            text: "I'm not sure—can you guide me?"
+            text: Ready to move on!
 
       - id: screen31
         type: message
@@ -623,7 +615,7 @@ tasks:
               type: text
 
   - context: |
-      The content described in the YAML output is an interactive learning module aimed at onboarding new members of the Alfred AI development team, specifically focusing on enhancing the Project Management API, which is essential for managing large-scale projects across diverse industries. This educational module provides a comprehensive introduction to the API's fundamental functionalities, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and tickets. As learners navigate through the module, they face various challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-driven tool that offers code suggestions aligned with industry best practices, to assist learners in their development tasks. The onboarding process includes detailed instructions for setting up the development environment, which involves cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to replicate a real-world project management scenario, thereby providing a practical and immersive learning experience for the participants.
+      The content described in the YAML output is an interactive learning module aimed at onboarding new members of the Alfred AI development team, specifically focusing on enhancing the Project Management API, which is essential for managing large-scale projects across diverse industries. The API is built with FastAPI, a Python library. This educational module provides a comprehensive introduction to the API's fundamental functionalities, particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are vital for managing projects and tickets. As learners navigate through the module, they face various challenges related to CRUD development, such as optimizing operation structures, ensuring code consistency, and effectively managing errors. Additionally, the module incorporates GitHub Copilot, an AI-driven tool that offers code suggestions aligned with industry best practices, to assist learners in their development tasks. The onboarding process includes detailed instructions for setting up the development environment, which involves cloning the project repository, configuring necessary settings, and installing essential tools like GitHub Copilot. Overall, the content is designed to not only impart technical knowledge about API development but also to replicate a real-world project management scenario, thereby providing a practical and immersive learning experience for the participants.
     id: "5"
     name: Use GitHub Copilot to Generate Code Line Completions for update_project
     nodes:
@@ -656,19 +648,19 @@ tasks:
         type: message
         body:
           parts:
-            - content: "Now, you can either start by typing `def` to see what Copilot suggests, or you can write a comment to guide the AI. Which approach would you like to take?"
+            - content: "Now, you can either start by typing `def` to see what Copilot suggests, or you can write a comment to guide the AI. Which approach would you like to take? Give it a try first and then we can review the results together!"
               type: text
         edges:
           - target_node_id: screen35
-            text: Type `def` and see the suggestion.
+            text: I used autocomplete by typing 'def'
           - target_node_id: screen35
-            text: Write a comment first.
+            text: I wrote using a comment
 
       - id: screen35
         type: message
         body:
           parts:
-            - content: "Let's review the suggestion that Copilot has generated for the `delete_project` function. How does it look to you?"
+            - content: "Let's review the suggestion that Copilot has generated for the `delete_project` function. How does it look to you? Anything that you would change?"
               type: text
         edges:
           - target_node_id: screen36
