@@ -11,7 +11,15 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Welcome aboard, {username}! It's great to have you on the Alfred AI development team. I've been assigned to help get you up to speed on one of our most critical projects: the **Project Management API**. This API is the backbone of Alfred AI's new project management tool. It's designed to streamline project and task management for teams across various industries by allowing them to efficiently manage project data, assign tasks, track progress, and meet deadlines.\n",
+                                "content": "\ud83d\udc4b Welcome aboard, {username}! It's great to have you on the Alfred AI development team. I've been assigned to help get you up to speed on one of our most critical projects: the Project Management API. This API is the backbone of Alfred AI's new project management tool. It's designed to streamline project and task management for teams across various industries by allowing them to efficiently manage project data, assign tasks, track progress, and meet deadlines.\n",
+                                "type": "text"
+                            },
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316885.png?alt=media&token=35b205a3-3cc4-4f03-a4b4-f89f218063bb",
+                                "type": "image"
+                            },
+                            {
+                                "content": "What do you think makes a great project management tool? \ud83d\udca1\n",
                                 "type": "text"
                             }
                         ]
@@ -46,6 +54,10 @@
                     "type": "message",
                     "body": {
                         "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316886.png?alt=media&token=b295207f-22f9-4ceb-aff0-57dfb2b32ab9",
+                                "type": "image"
+                            },
                             {
                                 "content": "Your immediate task is to enhance the API by refining the CRUD operations\u2014Create, \nRead, Update, Delete\u2014for managing projects and tickets. These operations are the \nbackbone of the API's functionality, and they must be robust, scalable, and secure \nto meet our clients' needs.\n",
                                 "type": "text"
@@ -109,7 +121,11 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "That's a challenge many developers face. GitHub Copilot is designed to tackle exactly this issue. \nIt can quickly suggest the foundational blocks of CRUD operations based on simple comments you write, \nsaving you time and allowing you to focus on the more complex parts of the development.\n",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF-1.gif?alt=media&token=cbd6455e-fed2-4da0-9ea2-1a19b9a269a6",
+                                "type": "image"
+                            },
+                            {
+                                "content": "That's a challenge many developers face. GitHub Copilot is designed to tackle exactly this issue. Here's a GIF showing Copilot in action! \n\nIt can quickly suggest the foundational blocks of CRUD operations based on simple comments you write, saving you time and allowing you to focus on the more complex parts of the development.\n",
                                 "type": "text"
                             }
                         ]
@@ -127,7 +143,11 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Consistency is key, especially in large projects. Copilot helps by suggesting code that aligns \nwith best practices, ensuring that your CRUD operations not only work but are also up to standard \nwith the rest of your codebase.\n",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF-1.gif?alt=media&token=cbd6455e-fed2-4da0-9ea2-1a19b9a269a6",
+                                "type": "image"
+                            },
+                            {
+                                "content": "Consistency is key, especially in large projects. GitHub Copilot is designed to tackle exactly this issue. Here's a GIF showing Copilot in action! \n\nCopilot helps by suggesting code that aligns with best practices, ensuring that your CRUD operations not only work but are also up to standard with the rest of your codebase.\n",
                                 "type": "text"
                             }
                         ]
@@ -145,7 +165,11 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Error handling can be tricky, and it's crucial to get it right. Copilot can assist by generating \nrobust error-handling code, helping you manage edge cases effectively without adding unnecessary \ncomplexity to your code.\n",
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FMP4%20to%20GIF%20conversion%20(2).gif?alt=media&token=34c6fc54-8451-4171-be6a-bfc05ba79e32",
+                                "type": "image"
+                            },
+                            {
+                                "content": "Error handling can be tricky, and it's crucial to get it right. GitHub Copilot is designed to tackle exactly this issue. Here's a GIF showing Copilot in action! \n\nCopilot can assist by generating robust error-handling code, helping you manage edge cases effectively without adding unnecessary complexity to your code.\n",
                                 "type": "text"
                             }
                         ]
@@ -163,7 +187,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Before we dive into development setup, let's make sure you have the project repository ready. I will make a clone of the repository for you. This is where your team's work is already underway. We'll be picking up where they left off and the great thing is that I can review your work as you go when you make pull requests on this repository.\n\nPlease keep the link in a safe place for future reference!\n",
+                                "content": "Before we dive into development setup, let's make sure you have the project repository ready. I will make a clone of the repository for you. This is where your team's work is already underway. We'll be picking up where they left off and the great thing is that I can review your work as you go when you make pull requests on this repository.\n",
                                 "type": "text"
                             }
                         ]
@@ -177,7 +201,7 @@
                 },
                 {
                     "id": "github_setup",
-                    "type": "github_setup",
+                    "type": "message",
                     "body": {
                         "parts": [
                             {
@@ -185,34 +209,8 @@
                                 "content": "Setting up GitHub repository..."
                             },
                             {
-                                "type": "conditional",
-                                "condition": {
-                                    "func": "handle_action",
-                                    "args": [
-                                        "github_onboard",
-                                        "w2-python-code-generation-and-completion"
-                                    ]
-                                },
-                                "status": [
-                                    {
-                                        "type": "success",
-                                        "content": "GitHub setup completed successfully."
-                                    },
-                                    {
-                                        "type": "failure",
-                                        "content": "GitHub setup failed. Please try again later.",
-                                        "extra_edges": [
-                                            {
-                                                "text": "Retry",
-                                                "target_node_id": "github_setup"
-                                            },
-                                            {
-                                                "text": "Finish",
-                                                "target_node_id": "screen8"
-                                            }
-                                        ]
-                                    }
-                                ]
+                                "type": "text",
+                                "content": "Repository cloned successfully! Here's the link: [Project Management API Repository](https://github.com/alfred-ai-co/w2-python-code-generation-and-completion-pat-x3321) Please keep the link in a safe place for future reference!"
                             }
                         ]
                     },
@@ -282,6 +280,14 @@
                     "type": "message",
                     "body": {
                         "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF%20of%20Activate%20Env%2C%20Install%20Requirements%2C%20Run%20Server.gif?alt=media&token=d65a708a-e2d8-4147-9093-2439d46b79cd",
+                                "type": "image"
+                            },
+                            {
+                                "content": "Here is a GIF showing a preview of how to activate the environment, install requirements, and run the server from the terminal.",
+                                "type": "text"
+                            },
                             {
                                 "content": "In the terminal, activate the shell script with the command: `fastapi dev app/main.py`, this will get your \nenvironment up and running.\n",
                                 "type": "text"
@@ -474,7 +480,11 @@
                                         "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task # - ' where # is the task number followed by the name of your PR.",
                                         "extra_edges": [
                                             {
-                                                "text": "Resubmitted PR",
+                                                "text": "I am good to go, let's move on.",
+                                                "target_node_id": "END"
+                                            },
+                                            {
+                                                "text": "Resubmitted PR.",
                                                 "target_node_id": "pr_review"
                                             }
                                         ]
@@ -484,7 +494,7 @@
                                         "content": "Seems to be an error. Please try again later.",
                                         "extra_edges": [
                                             {
-                                                "text": "Resubmitted PR",
+                                                "text": "Resubmitted PR.",
                                                 "target_node_id": "pr_review"
                                             }
                                         ]
@@ -499,11 +509,11 @@
                     },
                     "edges": [
                         {
-                            "text": "I am good to go, let's move on",
+                            "text": "I am good to go, let's move on.",
                             "target_node_id": "END"
                         },
                         {
-                            "text": "Resubmitted PR",
+                            "text": "Resubmitted PR.",
                             "target_node_id": "pr_review"
                         }
                     ]
@@ -514,7 +524,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Awesome work, {username}! You've successfully created a `create_project` function using GitHub Copilot. \nLet's move on to the next task.\n",
+                                "content": "Awesome, {username}! You've successfully created a `create_project` function using GitHub Copilot. \nLet's move on to the next task.\n",
                                 "type": "text"
                             }
                         ]
@@ -533,7 +543,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Great job on creating the `create_project` function! Now, let's move on to our next task: creating a function to retrieve projects from the database by their ID. This is crucial for project managers who need to quickly access specific project details. Ready to dive in?\n",
+                                "content": "Next up, we'll be creating a function to retrieve projects from the database by their ID. This is crucial for project managers who need to quickly access specific project details. We'll overcome this challenge using GitHub Copilot! Ready to dive in?\n",
                                 "type": "text"
                             }
                         ]
@@ -568,6 +578,10 @@
                     "type": "message",
                     "body": {
                         "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316887.png?alt=media&token=b893ac84-48ee-4219-ac9b-7e927fbf29da",
+                                "type": "image"
+                            },
                             {
                                 "content": "Nice! Here's a sample comment that might guide Copilot more effectively. Compare it with \nwhat you wrote:\n\n```python\n'''Define a function called get_project, which retrieves a project record from the database \nby its ID. The function should take a database session and a project ID as parameters. The \nfunction should query the database for a project record with the provided ID and return the \nfirst result.'''\n```\n\nWould you like to use your comment or try this one?\n",
                                 "type": "text"
@@ -695,7 +709,11 @@
                                         "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task 3 - ' where # is the task number followed by the name of your PR.",
                                         "extra_edges": [
                                             {
-                                                "text": "Resubmitted PR",
+                                                "text": "I am good to go, let's move on.",
+                                                "target_node_id": "END"
+                                            },
+                                            {
+                                                "text": "Resubmitted PR.",
                                                 "target_node_id": "pr_review"
                                             }
                                         ]
@@ -705,7 +723,7 @@
                                         "content": "Seems to be an error. Please try again later.",
                                         "extra_edges": [
                                             {
-                                                "text": "Resubmitted PR",
+                                                "text": "Resubmitted PR.",
                                                 "target_node_id": "pr_review"
                                             }
                                         ]
@@ -720,11 +738,11 @@
                     },
                     "edges": [
                         {
-                            "text": "I am good to go, let's move on",
+                            "text": "I am good to go, let's move on.",
                             "target_node_id": "END"
                         },
                         {
-                            "text": "Resubmitted PR",
+                            "text": "Resubmitted PR.",
                             "target_node_id": "pr_review"
                         }
                     ]
@@ -735,7 +753,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Great work so far! Your `get_project` function is now ready and integrated. Let's continue \nto enhance the API by implementing the next crucial function. Ready to dive into the next task?\n\nThis concludes the current task. You are now prepared to tackle the next function in the API.\n",
+                                "content": "Great! Your `get_project` function is now ready and integrated. Let's continue \nto enhance the API by implementing the next crucial function. Ready to dive into the next task?\n\nThis concludes the current task. You are now prepared to tackle the next function in the API.\n",
                                 "type": "text"
                             }
                         ]
@@ -833,6 +851,10 @@
                     "type": "message",
                     "body": {
                         "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316887.png?alt=media&token=b893ac84-48ee-4219-ac9b-7e927fbf29da",
+                                "type": "image"
+                            },
                             {
                                 "content": "Once you're satisfied with the suggestion, go ahead and press Tab to accept it. Here's what a \ntypical `update_project` function might look like:\n\n```python\ndef update_project(db: Session, project_id: int, name: str, description: str):\n    project = db.query(Project).filter(Project.id == project_id).first()\n    if project:\n        project.name = name\n        project.description = description\n        db.commit()\n        db.refresh(project)\n    return project\n```\n\nDoes this function cover everything we need?\n",
                                 "type": "text"
@@ -947,6 +969,10 @@
                     "body": {
                         "parts": [
                             {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316887.png?alt=media&token=b893ac84-48ee-4219-ac9b-7e927fbf29da",
+                                "type": "image"
+                            },
+                            {
                                 "content": "Here's what the complete `delete_project` function might look like after accepting Copilot's \nsuggestion:\n\n```python\ndef delete_project(db: Session, project_id: int):\n    project = db.query(Project).filter(Project.id == project_id).first()\n    if project:\n        db.delete(project)\n        db.commit()\n```\n\nDoes this function look right to you? Is there anything you'd like to tweak?\n",
                                 "type": "text"
                             }
@@ -964,6 +990,10 @@
                     "type": "message",
                     "body": {
                         "parts": [
+                            {
+                                "content": "https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF%20of%20Activate%20Env%2C%20Install%20Requirements%2C%20Run%20Server.gif?alt=media&token=d65a708a-e2d8-4147-9093-2439d46b79cd",
+                                "type": "image"
+                            },
                             {
                                 "content": "To see these CRUD operations in action, let's run the app. Open your terminal in Visual Studio \nCode and enter the following command:\n\n```bash\nfastapi dev app/main.py\n```\n\nThis will start your app, and you'll be able to see the output on your localhost address. Ready to give it a try?\n",
                                 "type": "text"
@@ -983,7 +1013,7 @@
                     "body": {
                         "parts": [
                             {
-                                "content": "Great! Now that everything looks good, let's create a Pull Request to review your changes with \nthe team. Remember to name the PR as \u201cTask 5 - <name of your PR>\u201d so I can review it.\n",
+                                "content": "Great! Now that everything looks good, let's create a Pull Request to review your changes with the team. Remember to name the PR as \u201cTask 5 - <name of your PR>\u201d so I can review it.\n",
                                 "type": "text"
                             }
                         ]
@@ -1024,7 +1054,11 @@
                                         "content": "I couldn't seem to find the PR. Please make sure you name your PR as 'Task 5 - ' where # is the task number followed by the name of your PR.",
                                         "extra_edges": [
                                             {
-                                                "text": "Resubmitted PR",
+                                                "text": "I am good to go, let's move on.",
+                                                "target_node_id": "screen39"
+                                            },
+                                            {
+                                                "text": "Resubmitted PR.",
                                                 "target_node_id": "pr_review"
                                             }
                                         ]
@@ -1034,7 +1068,7 @@
                                         "content": "Seems to be an error. Please try again later.",
                                         "extra_edges": [
                                             {
-                                                "text": "Resubmitted PR",
+                                                "text": "Resubmitted PR.",
                                                 "target_node_id": "pr_review"
                                             }
                                         ]
@@ -1049,11 +1083,11 @@
                     },
                     "edges": [
                         {
-                            "text": "I am good to go, let's move on",
+                            "text": "I am good to go, let's move on.",
                             "target_node_id": "screen39"
                         },
                         {
-                            "text": "Resubmitted PR",
+                            "text": "Resubmitted PR.",
                             "target_node_id": "pr_review"
                         }
                     ]
