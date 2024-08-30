@@ -23,8 +23,20 @@ def convert_all_json_to_yaml(root_dir):
         # Convert the JSON file to YAML
         json_to_yaml(json_file_path, yaml_file_path)
 
+def convert_single_json_to_yaml(json_file_path):
+    # Replace the file extension from .json to .yaml
+    yaml_file_path = os.path.splitext(json_file_path)[0] + '.yaml'
+    # Convert the JSON file to YAML
+    json_to_yaml(json_file_path, yaml_file_path)
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert JSON to YAML")
-    parser.add_argument("root_dir", type=str, help="Root directory containing the JSON files")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-f', '--file', type=str, help="Path to a single JSON file")
+    group.add_argument('-d', '--directory', type=str, help="Root directory containing JSON files")
     args = parser.parse_args()
-    convert_all_json_to_yaml(args.root_dir)
+
+    if args.file:
+        convert_single_json_to_yaml(args.file)
+    else:
+        convert_all_json_to_yaml(args.directory)
