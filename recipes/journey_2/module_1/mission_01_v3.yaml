@@ -1,0 +1,882 @@
+tasks:
+- context: 'The content outlined in the YAML is an interactive educational module
+    aimed at onboarding new developers into the Alfred AI team, specifically focusing
+    on the enhancement of the Project Management API, which is essential for overseeing
+    large-scale projects across diverse sectors. This module provides a comprehensive
+    introduction to the API''s fundamental features, particularly emphasizing CRUD
+    operations (Create, Read, Update, Delete) with the Python FastAPI librarty that
+    are vital for managing projects and associated tickets. As learners navigate through
+    the module, they face practical challenges related to CRUD development, such as
+    optimizing operation structures, ensuring code consistency, and effectively managing
+    errors. Additionally, the module incorporates GitHub Copilot, an AI-powered coding
+    assistant, to support learners by offering intelligent code suggestions that adhere
+    to industry best practices. The onboarding experience includes detailed instructions
+    for setting up the development environment, which involves cloning the project
+    repository, configuring necessary settings, and installing essential tools like
+    GitHub Copilot. Overall, the content is designed to not only impart technical
+    knowledge about API development but also to replicate a real-world project management
+    context, thereby providing a practical and engaging learning journey for new team
+    members.
+
+    '
+  id: '1'
+  name: Introduction and Setup
+  nodes:
+  - body:
+      parts:
+      - content: "\U0001F44B Welcome aboard, {username}! It's great to have you on\
+          \ the Alfred AI development team. I've been assigned to help get you up\
+          \ to speed on one of our most critical projects: the Project Management\
+          \ API. This API is the backbone of Alfred AI's new project management tool.\
+          \ It's designed to streamline project and task management for teams across\
+          \ various industries by allowing them to efficiently manage project data,\
+          \ assign tasks, track progress, and meet deadlines.\n"
+        type: text
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316885.png?alt=media&token=35b205a3-3cc4-4f03-a4b4-f89f218063bb&width=700px&height=440px
+        type: image
+      - content: "What do you think makes a great project management tool? \U0001F4A1\
+          \n"
+        type: text
+    edges:
+    - target_node_id: screen2
+      text: Continue
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "Now that you're on board, let's dive into your first mission. The\
+          \ **Project Management API** \nis vital for our enterprise clients who manage\
+          \ large-scale projects with multiple teams. \nTo ensure the success of this\
+          \ tool, it needs to handle complex project data with high \nefficiency and\
+          \ reliability.\n"
+        type: text
+    edges:
+    - target_node_id: screen3
+      text: Tell me more about the task.
+    id: screen2
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316886.png?alt=media&token=b295207f-22f9-4ceb-aff0-57dfb2b32ab9&width=700px&height=440px
+        type: image
+      - content: "Your immediate task is to enhance the API by refining the CRUD operations\u2014\
+          Create, \nRead, Update, Delete\u2014for managing projects and tickets. These\
+          \ operations are the \nbackbone of the API's functionality, and they must\
+          \ be robust, scalable, and secure \nto meet our clients' needs.\n"
+        type: text
+    edges:
+    - target_node_id: screen4
+      text: What are the specific user stories?
+    id: screen3
+    type: message
+  - body:
+      parts:
+      - content: "To give you some context, here are the key user stories we're focusing\
+          \ on:\n\n- **User Story 1: Project Creation**\n\n  'As a project manager,\
+          \ I need to create new projects within the system, including \n  setting\
+          \ a project name, description, and assigning it to a team, so that I can\
+          \ \n  start organizing tasks and resources efficiently.'\n\n- **User Story\
+          \ 2: Ticket Management**\n\n  'As a project manager, I want to be able to\
+          \ create, view, update, and delete tickets \n  within a project, so that\
+          \ I can keep track of tasks, deadlines, and team assignments.'\n\n  What\
+          \ other user stories do you see?\n"
+        type: text
+    edges:
+    - target_node_id: screen5
+      text: I'm ready to start!
+    id: screen4
+    type: message
+  - body:
+      parts:
+      - content: "Before we jump into the implementation, let's talk about some common\
+          \ challenges you might face \nwhen developing CRUD operations. From your\
+          \ experience, what aspects of building these operations \ndo you find most\
+          \ time-consuming or frustrating?\n"
+        type: text
+    edges:
+    - target_node_id: screen6a
+      text: Honestly, getting the basic structure right without wasting time.
+    - target_node_id: screen6b
+      text: Maintaining consistency and quality across the codebase.
+    - target_node_id: screen6c
+      text: Handling error cases efficiently without cluttering the code.
+    id: screen5
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF-1.gif?alt=media&token=cbd6455e-fed2-4da0-9ea2-1a19b9a269a6&width=700px&height=440px
+        type: image
+      - content: "That's a challenge many developers face. GitHub Copilot is designed\
+          \ to tackle exactly this issue. Here's a GIF showing Copilot in action!\
+          \ \n\nIt can quickly suggest the foundational blocks of CRUD operations\
+          \ based on simple comments you write, saving you time and allowing you to\
+          \ focus on the more complex parts of the development.\n"
+        type: text
+    edges:
+    - target_node_id: screen7
+      text: Let's see how Copilot can help.
+    id: screen6a
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF-1.gif?alt=media&token=cbd6455e-fed2-4da0-9ea2-1a19b9a269a6&width=700px&height=440px
+        type: image
+      - content: "Consistency is key, especially in large projects. GitHub Copilot\
+          \ is designed to tackle exactly this issue. Here's a GIF showing Copilot\
+          \ in action! \n\nCopilot helps by suggesting code that aligns with best\
+          \ practices, ensuring that your CRUD operations not only work but are also\
+          \ up to standard with the rest of your codebase.\n"
+        type: text
+    edges:
+    - target_node_id: screen7
+      text: Let's see how Copilot can help.
+    id: screen6b
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FMP4%20to%20GIF%20conversion%20(2).gif?alt=media&token=34c6fc54-8451-4171-be6a-bfc05ba79e32&width=700px&height=440px
+        type: image
+      - content: "Error handling can be tricky, and it's crucial to get it right.\
+          \ GitHub Copilot is designed to tackle exactly this issue. Here's a GIF\
+          \ showing Copilot in action! \n\nCopilot can assist by generating robust\
+          \ error-handling code, helping you manage edge cases effectively without\
+          \ adding unnecessary complexity to your code.\n"
+        type: text
+    edges:
+    - target_node_id: screen7
+      text: I'm ready to try this out.
+    id: screen6c
+    type: message
+  - body:
+      parts:
+      - content: 'Before we dive into development setup, let''s make sure you have
+          the project repository ready. I will make a clone of the repository for
+          you. This is where your team''s work is already underway. We''ll be picking
+          up where they left off and the great thing is that I can review your work
+          as you go when you make pull requests on this repository.
+
+          '
+        type: text
+    edges:
+    - target_node_id: github_setup
+      text: Let's see the repository.
+    id: screen7
+    type: message
+  - body:
+      parts:
+      - content: Setting up GitHub repository...
+        type: text
+      - content: 'Repository cloned successfully! Here''s the link: [Project Management
+          API Repository](https://github.com/alfred-ai-co/w2-python-code-generation-and-completion-pat-x3321)
+          Please keep the link in a safe place for future reference!'
+        type: text
+    edges:
+    - target_node_id: screen8
+      text: Finish
+    id: github_setup
+    type: message
+  - body:
+      parts:
+      - content: "Your team has already made significant contributions to the Project\
+          \ Management API on GitHub, \nand now it's your turn to dive in! Our goal\
+          \ is to contribute the CRUD operations and eventually \ncreate a pull request\
+          \ for review. Let's start by making sure your development environment is\
+          \ ready.\n"
+        type: text
+    edges:
+    - target_node_id: screen9
+      text: Let's set up the environment.
+    id: screen8
+    type: message
+  - body:
+      parts:
+      - content: "We'll be using Visual Studio Code, which offers excellent support\
+          \ for Python development and \nseamless integration with GitHub Copilot.\
+          \ Make sure the Python extension is installed and active. \nTo streamline\
+          \ your workflow, I recommend using a Python Virtual Environment for managing\
+          \ dependencies. \nThis is also outlined in the project's [README.md](http://readme.md/)\
+          \ file.\n"
+        type: text
+    edges:
+    - target_node_id: screen10
+      text: Environment is set up.
+    id: screen9
+    type: message
+  - body:
+      parts:
+      - content: "Within the repository, set up your environment according to the\
+          \ `README.md` file. Ensure that you've \ncreated a `dev.env` and `prod.env`\
+          \ file based on the `env.example` inside of the `/app` folder, setting the\
+          \ `APP_ENV` variable \nto either 'dev' or 'prod'. By default, we'll work\
+          \ in the `dev` environment.\n"
+        type: text
+    edges:
+    - target_node_id: screen11
+      text: Environment configured.
+    id: screen10
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF%20of%20Activate%20Env%2C%20Install%20Requirements%2C%20Run%20Server.gif?alt=media&token=d65a708a-e2d8-4147-9093-2439d46b79cd&width=700px&height=440px
+        type: image
+      - content: Here is a GIF showing a preview of how to activate the environment,
+          install requirements, and run the server from the terminal.
+        type: text
+      - content: "In the terminal, activate the shell script with the command: `fastapi\
+          \ dev app/main.py`, this will get your \nenvironment up and running.\n"
+        type: text
+    edges:
+    - target_node_id: screen12
+      text: Everything's set up.
+    id: screen11
+    type: message
+  - body:
+      parts:
+      - content: "Before we dive into the code, let's make sure everything is ready\
+          \ to go. Please confirm the following:\n\n1. **GitHub Copilot Subscription**:\
+          \ Ensure your GitHub account is subscribed to GitHub Copilot. \n  You can\
+          \ use the free trial if you haven't already.\n2. **Extensions Installed**:\
+          \ Verify that the GitHub Copilot and Copilot Chat extensions are installed\
+          \ \n  and active in Visual Studio Code.\n\nOnce you've confirmed these steps,\
+          \ we'll be all set to move forward!\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Let's dive into the code.
+    id: screen12
+    type: message
+  - body:
+      parts:
+      - content: "This concludes the setup process. You are now ready to start contributing\
+          \ to the Project Management API. \nLet's dive into the code and start enhancing\
+          \ the CRUD operations.\n"
+        type: text
+    id: END
+    type: message
+- context: 'The content described is an interactive learning module aimed at onboarding
+    new members of the Alfred AI development team, specifically focusing on the enhancement
+    of the Project Management API, which is essential for managing large-scale projects
+    across diverse industries. The API is built with FastAPI, a Python library. This
+    educational module provides a comprehensive introduction to the API''s fundamental
+    functionalities, particularly emphasizing CRUD operations (Create, Read, Update,
+    Delete) that are vital for managing projects and tickets. As learners navigate
+    through the module, they face various challenges related to CRUD development,
+    such as optimizing operation structures, ensuring code consistency, and effectively
+    managing errors. Additionally, the module incorporates GitHub Copilot, an AI-driven
+    tool that offers code suggestions aligned with industry best practices, to assist
+    learners in their development tasks. The learning experience is further enriched
+    by guiding participants through the setup of their development environment, which
+    includes cloning the project repository, configuring necessary settings, and installing
+    essential tools like GitHub Copilot. Overall, the content is designed to not only
+    impart technical knowledge about API development but also to simulate a realistic
+    project management scenario, thereby providing a practical and immersive educational
+    experience.
+
+    '
+  id: '2'
+  name: Use GitHub Copilot to Generate Code Line Completions from a Comment
+  nodes:
+  - body:
+      parts:
+      - content: "Now that your environment is ready, it's time to dive into your\
+          \ first coding task for the \nProject Management API. This API is a vital\
+          \ tool that Alfred AI's enterprise clients rely on \ndaily, and your contributions\
+          \ will play a key role in its continued success. Ready to take the \nfirst\
+          \ step?\n"
+        type: text
+    edges:
+    - target_node_id: screen14
+      text: Let's start coding.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s start by adding the `create_project` function. This function
+          will allow project managers to add new projects to the system. How would
+          you describe this function in a comment? Your comment will guide Copilot
+          to generate the code.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen15
+      text: Let's see what Copilot suggests.
+    id: screen14
+    type: message
+  - body:
+      parts:
+      - content: "Nice try! Here's a sample comment that might guide Copilot more\
+          \ effectively:\n\n```python\n'''Define a function called create_project\
+          \ that creates a new record in the database. The \nfunction should take\
+          \ a database session and two parameters: 'name' and 'description'. The \n\
+          function should create a new instance of the 'Project' model with the provided\
+          \ 'name' and \n'description', add it to the database session, commit the\
+          \ transaction, refresh the instance, \nand return the newly created project.'''\n\
+          ```\n\nCopy this into your `crud.py` file and hit Enter. Let's see what\
+          \ Copilot suggests!\n"
+        type: text
+    edges:
+    - target_node_id: screen16
+      text: Review Copilot's suggestion.
+    id: screen15
+    type: message
+  - body:
+      parts:
+      - content: 'Great! What do you see? How does the suggested code look to you?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen17
+      text: Let's finalize the function.
+    id: screen16
+    type: message
+  - body:
+      parts:
+      - content: 'If you like what Copilot suggested, go ahead and accept it. If not,
+          you can tweak the comment or explore more suggestions. What would you like
+          to do next?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen18
+      text: Let's continue
+    id: screen17
+    type: message
+  - body:
+      parts:
+      - content: "Your `create_project` function is looking solid! How about creating\
+          \ a Pull Request so I can review the changes? Remember to name the PR as\
+          \ \u201CTask 2 - <name of your PR>\u201D so it can be reviewed.\n"
+        type: text
+    edges:
+    - mask_text: Let's go to the next task
+      target_node_id: EXIT
+      text: __NEXT_TASK__
+    - target_node_id: pr_review
+      text: Created the Pull Request.
+    id: screen18
+    type: message
+  - body:
+      parts:
+      - content: Cool! Give me a minute to read your PR...
+        type: text
+      - condition:
+          args:
+          - pr_feedback
+          - 'Does the PR include creating a `create_project` function which creates
+            a new record in the database by taking a database session and two parameters:
+            `name` and `description`. The function should create a new instance of
+            the `Project` model with the provided `name` and `description`, add it
+            to the database session, commit the transaction, refresh the instance,
+            and return the newly created project. Does code include best practices
+            and error handling?'
+          - w2-python-code-generation-and-completion
+          func: handle_action
+        status:
+        - content: PR Reviewed successfully!
+          type: success
+        - content: 'I couldn''t seem to find the PR. Please make sure you name your
+            PR as ''Task # - '' where # is the task number followed by the name of
+            your PR.'
+          extra_edges:
+          - target_node_id: END
+            text: I am good to go, let's move on.
+          - target_node_id: pr_review
+            text: Resubmitted PR.
+          type: no_matches
+        - content: Seems to be an error. Please try again later.
+          extra_edges:
+          - target_node_id: pr_review
+            text: Resubmitted PR.
+          type: error
+        type: conditional
+      - content: Ready to go? Let's move on
+        type: text
+    edges:
+    - target_node_id: END
+      text: I am good to go, let's move on.
+    - target_node_id: pr_review
+      text: Resubmitted PR.
+    id: pr_review
+    type: pr_feedback
+  - body:
+      parts:
+      - content: "Awesome, {username}! You've successfully created a `create_project`\
+          \ function using GitHub Copilot. \nLet's move on to the next task.\n"
+        type: text
+    id: END
+    type: message
+- context: 'The content is an interactive educational module aimed at onboarding new
+    developers into the Alfred AI team, specifically focusing on the enhancement of
+    the Project Management API, which is essential for overseeing large-scale projects
+    across diverse sectors. The API is built with FastAPI, a Python library. This
+    module provides a comprehensive introduction to the API''s fundamental features,
+    particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are
+    vital for managing projects and associated tickets. As learners navigate through
+    the module, they face practical challenges related to CRUD development, such as
+    optimizing operation structures, ensuring code consistency, and effectively managing
+    errors. Additionally, the module incorporates GitHub Copilot, an AI-powered tool
+    that offers code suggestions aligned with industry best practices, to assist learners
+    in their development tasks. The onboarding experience includes detailed instructions
+    for setting up the development environment, which involves cloning the project
+    repository, configuring necessary settings, and installing essential tools like
+    GitHub Copilot. Overall, the content is designed to not only impart technical
+    knowledge about API development but also to replicate a real-world project management
+    environment, thereby providing a practical and engaging learning experience for
+    new team members.
+
+    '
+  id: '3'
+  name: Use GitHub Copilot to Generate the get_project Function
+  nodes:
+  - body:
+      parts:
+      - content: 'Next up, we''ll be creating a function to retrieve projects from
+          the database by their ID. This is crucial for project managers who need
+          to quickly access specific project details. We''ll overcome this challenge
+          using GitHub Copilot! Ready to dive in?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen20
+      text: Let's start the get_project function.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Let''s think about what this `get_project` function needs to do.
+          It should take a database session and a project ID as inputs, query the
+          database for a project with that ID, and then return the result. How would
+          you describe this function in a comment?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen21
+      text: Let's compare comments.
+    id: screen20
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316887.png?alt=media&token=b893ac84-48ee-4219-ac9b-7e927fbf29da&width=480px&height=620px
+        type: image
+      - content: "Nice! Here's a sample comment that might guide Copilot more effectively.\
+          \ Compare it with \nwhat you wrote:\n\n```python\n'''Define a function called\
+          \ get_project, which retrieves a project record from the database \nby its\
+          \ ID. The function should take a database session and a project ID as parameters.\
+          \ The \nfunction should query the database for a project record with the\
+          \ provided ID and return the \nfirst result.'''\n```\n\nWould you like to\
+          \ use your comment or try this one?\n"
+        type: text
+    edges:
+    - target_node_id: screen22
+      text: Proceed with Copilot's suggestion.
+    id: screen21
+    type: message
+  - body:
+      parts:
+      - content: "Great choice! Now, let's copy the comment into your `crud.py` file\
+          \ and see what GitHub \nCopilot suggests. Once you've done that, hit Enter\
+          \ and review the suggestions.\n"
+        type: text
+    edges:
+    - target_node_id: screen23
+      text: Review Copilot's suggestions.
+    id: screen22
+    type: message
+  - body:
+      parts:
+      - content: 'Take a minute to review the suggestions provided by GitHub Copilot.
+          How does the generated `get_project` function look? Does it match your expectations?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen24
+      text: Ready to move on!
+    id: screen23
+    type: message
+  - body:
+      parts:
+      - content: 'Remember, it''s important to review Copilot''s suggestions carefully.
+          Even if the code looks correct, consider how it fits into your overall codebase.
+          Would you like to accept this suggestion, see more options, or refine the
+          comment for better results?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen25
+      text: I'm satisfied and ready to move on!
+    id: screen24
+    type: message
+  - body:
+      parts:
+      - content: "Awesome! You've successfully created the `get_project` function,\
+          \ which will help retrieve specific project details from the database. This\
+          \ is a vital part of making our API efficient and user-friendly. Before\
+          \ we move on, do you want to review your work or submit a Pull Request?\
+          \ Be sure to name your PR as \u201CTask 3 - <name of your PR>\u201D so it\
+          \ can be reviewed.\n"
+        type: text
+    edges:
+    - mask-text: Let's go to the next task
+      target_node_id: EXIT
+      text: __NEXT_TASK__
+    - target_node_id: pr_review
+      text: Submitted Pull Request.
+    id: screen25
+    type: message
+  - body:
+      parts:
+      - content: Cool! Give me a minute to read your PR...
+        type: text
+      - condition:
+          args:
+          - pr_feedback
+          - Does the PR include creating a `get_project` function which retrieves
+            a project record from the database by its ID. The function should take
+            a database session and a project ID as parameters. The function should
+            query the database for a project record with the provided ID and return
+            the first result. Does code include best practices and error handling?
+          - w2-python-code-generation-and-completion
+          func: handle_action
+        status:
+        - content: PR Reviewed successfully!
+          type: success
+        - content: 'I couldn''t seem to find the PR. Please make sure you name your
+            PR as ''Task 3 - '' where # is the task number followed by the name of
+            your PR.'
+          extra_edges:
+          - target_node_id: END
+            text: I am good to go, let's move on.
+          - target_node_id: pr_review
+            text: Resubmitted PR.
+          type: no_matches
+        - content: Seems to be an error. Please try again later.
+          extra_edges:
+          - target_node_id: pr_review
+            text: Resubmitted PR.
+          type: error
+        type: conditional
+      - content: Ready to go? Let's move on
+        type: text
+    edges:
+    - target_node_id: END
+      text: I am good to go, let's move on.
+    - target_node_id: pr_review
+      text: Resubmitted PR.
+    id: pr_review
+    type: pr_feedback
+  - body:
+      parts:
+      - content: "Great! Your `get_project` function is now ready and integrated.\
+          \ Let's continue \nto enhance the API by implementing the next crucial function.\
+          \ Ready to dive into the next task?\n\nThis concludes the current task.\
+          \ You are now prepared to tackle the next function in the API.\n"
+        type: text
+    id: END
+    type: message
+- context: 'The content described is an interactive learning module aimed at onboarding
+    new members of the Alfred AI development team, specifically focusing on enhancing
+    the Project Management API, which is essential for managing large-scale projects
+    across diverse industries. The API is built with FastAPI, a Python library. This
+    educational module provides a comprehensive introduction to the API''s core functionalities,
+    particularly emphasizing CRUD operations (Create, Read, Update, Delete) that are
+    vital for managing projects and tickets. As learners navigate through the module,
+    they face various challenges related to CRUD development, such as optimizing operation
+    structures, ensuring code consistency, and effectively managing errors. Additionally,
+    the module introduces GitHub Copilot as a supportive tool that offers AI-driven
+    code suggestions aligned with industry best practices. Learners are guided through
+    the setup of their development environment, which includes cloning the project
+    repository, configuring necessary settings, and installing essential tools like
+    GitHub Copilot. The structure of the content not only imparts technical knowledge
+    about API development but also immerses learners in a realistic project management
+    scenario, thereby providing a practical and engaging learning experience.
+
+    '
+  id: '4'
+  name: Use GitHub Copilot to Generate Code Line Completions for update_project
+  nodes:
+  - body:
+      parts:
+      - content: 'As we continue building the Project Management API, it''s important
+          to ensure that project details can be updated easily by our users. This
+          functionality is essential for project managers who need to keep project
+          information current as tasks and requirements evolve. Let''s start by setting
+          up the `update_project` function. How would you begin writing a function
+          that updates project details in your database?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen28
+      text: Let's continue.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: 'Good thinking! Here''s how we can start it off:
+
+
+          ```python
+
+          def update_project(db: Session, project_id: int, name: str, description:
+          str):
+
+          ```
+
+
+          Go ahead and add this to your `crud.py` file.
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen29
+      text: Let's see what Copilot suggests.
+    id: screen28
+    type: message
+  - body:
+      parts:
+      - content: 'Now, here''s where it gets interesting. Place your cursor on the
+          next line, start typing `project`, and then pause to see what Copilot suggests.
+          Based on your experience so far, what do you think Copilot might suggest?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen30
+      text: Typed and ready to review the suggestion
+    id: screen29
+    type: message
+  - body:
+      parts:
+      - content: 'How does Copilot''s suggestion compare to what you were expecting?
+          Do you think it covers everything needed to query and update the project?
+
+          '
+        type: text
+    edges:
+    - target_node_id: screen31
+      text: Ready to move on!
+    id: screen30
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316887.png?alt=media&token=b893ac84-48ee-4219-ac9b-7e927fbf29da&width=480px&height=620px
+        type: image
+      - content: "Once you're satisfied with the suggestion, go ahead and press Tab\
+          \ to accept it. Here's what a \ntypical `update_project` function might\
+          \ look like:\n\n```python\ndef update_project(db: Session, project_id: int,\
+          \ name: str, description: str):\n    project = db.query(Project).filter(Project.id\
+          \ == project_id).first()\n    if project:\n        project.name = name\n\
+          \        project.description = description\n        db.commit()\n      \
+          \  db.refresh(project)\n    return project\n```\n\nDoes this function cover\
+          \ everything we need?\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Ready for the final CRUD operation.
+    id: screen31
+    type: message
+  - body:
+      parts:
+      - content: "This concludes the setup for the `update_project` function. You\
+          \ are now ready to implement \nthe final CRUD operation. Once that is implemented,\
+          \ we can make a pull request. Let's proceed!\n"
+        type: text
+    id: END
+    type: message
+- context: 'The content described in the YAML output is an interactive learning module
+    aimed at onboarding new members of the Alfred AI development team, specifically
+    focusing on enhancing the Project Management API, which is essential for managing
+    large-scale projects across diverse industries. The API is built with FastAPI,
+    a Python library. This educational module provides a comprehensive introduction
+    to the API''s fundamental functionalities, particularly emphasizing CRUD operations
+    (Create, Read, Update, Delete) that are vital for managing projects and tickets.
+    As learners navigate through the module, they face various challenges related
+    to CRUD development, such as optimizing operation structures, ensuring code consistency,
+    and effectively managing errors. Additionally, the module incorporates GitHub
+    Copilot, an AI-driven tool that offers code suggestions aligned with industry
+    best practices, to assist learners in their development tasks. The onboarding
+    process includes detailed instructions for setting up the development environment,
+    which involves cloning the project repository, configuring necessary settings,
+    and installing essential tools like GitHub Copilot. Overall, the content is designed
+    to not only impart technical knowledge about API development but also to replicate
+    a real-world project management scenario, thereby providing a practical and immersive
+    learning experience for the participants.
+
+    '
+  id: '5'
+  name: Use GitHub Copilot to Generate Code Line Completions for update_project
+  nodes:
+  - body:
+      parts:
+      - content: "You're on the home stretch! The final CRUD operation we need to\
+          \ implement is the `delete_project` \nfunction. This function is crucial\
+          \ for allowing project managers to remove projects that are no \nlonger\
+          \ needed. Let's get started!\n"
+        type: text
+    edges:
+    - target_node_id: screen33
+      text: Let's set up the function.
+    id: START
+    type: message
+  - body:
+      parts:
+      - content: "First, let's set up the space for our `delete_project` function.\
+          \ Create two blank lines right \nbelow the `update_project` function in\
+          \ your `crud.py` file.\n"
+        type: text
+    edges:
+    - target_node_id: screen34
+      text: Now let's guide Copilot.
+    id: screen33
+    type: message
+  - body:
+      parts:
+      - content: Now, you can either start by typing `def` to see what Copilot suggests,
+          or you can write a comment to guide the AI. Which approach would you like
+          to take? Give it a try first and then we can review the results together!
+        type: text
+    edges:
+    - target_node_id: screen35
+      text: I used autocomplete by typing 'def'
+    - target_node_id: screen35
+      text: I wrote using a comment
+    id: screen34
+    type: message
+  - body:
+      parts:
+      - content: Let's review the suggestion that Copilot has generated for the `delete_project`
+          function. How does it look to you? Anything that you would change?
+        type: text
+    edges:
+    - target_node_id: screen36
+      text: Finalize the function.
+    id: screen35
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FFrame%201321316887.png?alt=media&token=b893ac84-48ee-4219-ac9b-7e927fbf29da&width=480px&height=620px
+        type: image
+      - content: "Here's what the complete `delete_project` function might look like\
+          \ after accepting Copilot's \nsuggestion:\n\n```python\ndef delete_project(db:\
+          \ Session, project_id: int):\n    project = db.query(Project).filter(Project.id\
+          \ == project_id).first()\n    if project:\n        db.delete(project)\n\
+          \        db.commit()\n```\n\nDoes this function look right to you? Is there\
+          \ anything you'd like to tweak?\n"
+        type: text
+    edges:
+    - target_node_id: screen37
+      text: Review the complete CRUD operations.
+    id: screen36
+    type: message
+  - body:
+      parts:
+      - content: https://firebasestorage.googleapis.com/v0/b/radicalx-development.appspot.com/o/Chat%20Images%2FGIF%20of%20Activate%20Env%2C%20Install%20Requirements%2C%20Run%20Server.gif?alt=media&token=d65a708a-e2d8-4147-9093-2439d46b79cd&width=700px&height=440px
+        type: image
+      - content: "To see these CRUD operations in action, let's run the app. Open\
+          \ your terminal in Visual Studio \nCode and enter the following command:\n\
+          \n```bash\nfastapi dev app/main.py\n```\n\nThis will start your app, and\
+          \ you'll be able to see the output on your localhost address. Ready to give\
+          \ it a try?\n"
+        type: text
+    edges:
+    - target_node_id: screen38
+      text: What's next?
+    id: screen37
+    type: message
+  - body:
+      parts:
+      - content: "Great! Now that everything looks good, let's create a Pull Request\
+          \ to review your changes with the team. Remember to name the PR as \u201C\
+          Task 5 - <name of your PR>\u201D so I can review it.\n"
+        type: text
+    edges:
+    - target_node_id: pr_review
+      text: PR ready to review.
+    id: screen38
+    type: message
+  - body:
+      parts:
+      - content: Cool! Give me a minute to read your PR...
+        type: text
+      - condition:
+          args:
+          - pr_feedback
+          - Does the PR include creating a `delete_project` function which deletes
+            a project record from the database by its ID. The function should take
+            a database session and a project ID as parameters. The function should
+            query the database for a project record with the provided ID and delete
+            it. Does code include best practices and error handling?
+          - w2-python-code-generation-and-completion
+          func: handle_action
+        status:
+        - content: PR Reviewed successfully!
+          type: success
+        - content: 'I couldn''t seem to find the PR. Please make sure you name your
+            PR as ''Task 5 - '' where # is the task number followed by the name of
+            your PR.'
+          extra_edges:
+          - target_node_id: screen39
+            text: I am good to go, let's move on.
+          - target_node_id: pr_review
+            text: Resubmitted PR.
+          type: no_matches
+        - content: Seems to be an error. Please try again later.
+          extra_edges:
+          - target_node_id: pr_review
+            text: Resubmitted PR.
+          type: error
+        type: conditional
+      - content: Ready to go? Let's move on
+        type: text
+    edges:
+    - target_node_id: screen39
+      text: I am good to go, let's move on.
+    - target_node_id: pr_review
+      text: Resubmitted PR.
+    id: pr_review
+    type: pr_feedback
+  - body:
+      parts:
+      - content: "Fantastic! You've now implemented all the CRUD operations needed\
+          \ for our Project Management API. \nHere's a quick recap of what your `crud.py`\
+          \ file might look like:\n\n```python\nfrom sqlalchemy.orm import Session\n\
+          from app.db_models.base import Project, Ticket\n\ndef create_project(db:\
+          \ Session, name: str, description: str):\n    new_project = Project(name=name,\
+          \ description=description)\n    db.add(new_project)\n    db.commit()\n \
+          \   db.refresh(new_project)\n    return new_project\n\ndef get_project(db:\
+          \ Session, project_id: int):\n    return db.query(Project).filter(Project.id\
+          \ == project_id).first()\n\ndef update_project(db: Session, project_id:\
+          \ int, name: str, description: str):\n    project = db.query(Project).filter(Project.id\
+          \ == project_id).first()\n    if project:\n        project.name = name\n\
+          \        project.description = description\n        db.commit()\n      \
+          \  db.refresh(project)\n    return project\n\ndef delete_project(db: Session,\
+          \ project_id: int):\n    project = db.query(Project).filter(Project.id ==\
+          \ project_id).first()\n    if project:\n        db.delete(project)\n   \
+          \     db.commit()\n```\n\nDoes everything look good to you?\n"
+        type: text
+    edges:
+    - target_node_id: END
+      text: Yes, looks good!
+    id: screen39
+    type: message
+  - body:
+      parts:
+      - content: "You've done an impressive job implementing all the CRUD operations\
+          \ for Alfred AI's Project \nManagement API. With these core functionalities\
+          \ in place, the API is now better equipped to handle \nthe complex project\
+          \ management needs of our enterprise clients. This is a significant step\
+          \ forward \nin ensuring that the tool remains both reliable and scalable.\n\
+          \nIn the next mission, we'll shift our focus to optimizing the API for reliability\
+          \ and performance\u2014key \nfactors that will ensure the API meets the\
+          \ high standards expected by Alfred AI's clients. Ready to \ntackle the\
+          \ next challenge?\n"
+        type: text
+    id: END
+    type: message
