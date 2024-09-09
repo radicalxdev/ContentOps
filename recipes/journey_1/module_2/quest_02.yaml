@@ -428,8 +428,6 @@ tasks:
     edges:
     - target_node_id: screen21
       text: Yes, let's continue.
-    - target_node_id: screen21
-      text: Can you provide another example?
     id: screen20
     type: message
   - body:
@@ -868,14 +866,12 @@ tasks:
         type: text
     edges:
     - target_node_id: END
-      text: "Got it, let\u2019s proceed"
-    - target_node_id: END
-      text: Can you give me more details about this?
+      text: What are some final considerations?
     id: START
     type: message
   - body:
       parts:
-      - content: "Sure, here is a more detailed guide:\n\n- **Functionality**: Ensuring\
+      - content: "Lastly, we have a more detailed guide:\n\n- **Functionality**: Ensuring\
           \ the tool offers the necessary functionalities for your project.\n- **Integration**:\
           \ Checking if the tool integrates seamlessly with your existing systems.\n\
           - **Model Accuracy**: Assess the accuracy of the AI models to ensure reliable\
